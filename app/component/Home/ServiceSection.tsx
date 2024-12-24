@@ -22,7 +22,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({ serviceData }) => {
         <Title title={headertitle} />
       </div>
 
-      <div className=" w-full grid grid-cols-1 lg:grid-cols-3 gap-5 px-10 lg:px-0 mt-10 mb-10 lg:mb-0 ">
+      <div className="w-full flex flex-wrap justify-center gap-5 px-10 lg:px-0 mt-10 mb-10 lg:mb-0">
         {serviceData &&
           serviceData?.slice(0, 6)?.map((data, index) => (
             <div

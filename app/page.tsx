@@ -1,11 +1,14 @@
 import React from "react";
 import Banner from "./component/Home/Banner";
-import { bannerData, brandData, serviceData } from "../api/Dummy";
+import { bannerData, blogData, brandData, projectData, serviceData, techData } from "../api/Dummy";
 import Brands from "./component/Home/Brands";
 import ServiceSection from "./component/Home/ServiceSection";
 import IndustrySection from "./component/Home/IndustrySection";
 import Footer from "./component/Common/Footer";
 import Contact from "./component/Contact/Contact";
+import BlogSection from "./component/Home/BlogSection";
+import OperationsSections from "./component/Home/OperationsSections";
+import ProjectSection from "./component/Home/ProjectSection";
 const page = () => {
   // console.log(brandData)
   return (
@@ -24,9 +27,20 @@ const page = () => {
           {/* <IndustrySection /> */}
         </div>
 
+        <div className=" my-[30px]">
+          <OperationsSections techData={techData} />
+        </div>
+        <div>
+          <ProjectSection projectData={projectData}/>
+        </div>
+        <div className=" my-[30px]">
+          <BlogSection blogData={blogData}/>
+        </div>
         <div className=" mt-24 container mx-auto">
           <Contact/>
         </div>
+
+
         <div className=" bg-footerBg">
           <div className=" container mx-auto">
           <Footer />

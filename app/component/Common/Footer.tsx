@@ -118,9 +118,9 @@ const Footer: React.FC = () => {
                   d="M10 1.40039C19 1.40039 19 1.40039 19 8.40039C19 15.4004 19 15.4004 10 15.4004C1 15.4004 1 15.4004 1 8.40039C1 1.40039 1 1.40039 10 1.40039Z"
                   fill="white"
                   stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M8 4.90039L14 8.40039L8 11.9004V4.90039Z"
