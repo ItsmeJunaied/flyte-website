@@ -1,3 +1,141 @@
+//navbar
+
+export const navbarData ={
+  "menu": [
+    {
+      "name": "Hire",
+      "type": "dropdown",
+      "path": "/hire",
+      "description": "Explore opportunities to work with us.",
+      "features": [
+        {
+          "name": "Job Openings",
+          "icon": "fa-briefcase",
+          "description": "Find the latest job opportunities at our company.",
+          "path": "/hire/job-openings"
+        },
+        {
+          "name": "Freelance Opportunities",
+          "icon": "fa-user-tie",
+          "description": "Join us as a freelancer and work on exciting projects.",
+          "path": "/hire/freelance-opportunities"
+        }
+      ]
+    },
+    {
+      "name": "Industries",
+      "type": "dropdown",
+      "path": "/industries",
+      "description": "Discover the industries we serve.",
+      "features": [
+        {
+          "name": "Healthcare",
+          "icon": "fa-heartbeat",
+          "description": "Solutions for the healthcare sector to improve patient care.",
+          "path": "/industries/healthcare"
+        },
+        {
+          "name": "Finance",
+          "icon": "fa-university",
+          "description": "Innovative financial tools and services for the modern world.",
+          "path": "/industries/finance"
+        },
+        {
+          "name": "Retail",
+          "icon": "fa-store",
+          "description": "Transforming retail experiences with technology-driven solutions.",
+          "path": "/industries/retail"
+        }
+      ]
+    },
+    {
+      "name": "Services",
+      "type": "dropdown",
+      "path": "/services",
+      "description": "Explore the range of services we offer.",
+      "features": [
+        {
+          "name": "Consulting",
+          "icon": "fa-lightbulb",
+          "description": "Expert advice and strategic planning for your business.",
+          "path": "/services/consulting"
+        },
+        {
+          "name": "Development",
+          "icon": "fa-cogs",
+          "description": "End-to-end software development services for every industry.",
+          "path": "/services/development"
+        },
+        {
+          "name": "Support",
+          "icon": "fa-headset",
+          "description": "24/7 customer support to assist with any challenges.",
+          "path": "/services/support"
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "type": "dropdown",
+      "path": "/products",
+      "description": "Discover our range of innovative products.",
+      "features": [
+        {
+          "name": "Product A",
+          "icon": "fa-box",
+          "description": "Our flagship product designed to streamline operations.",
+          "path": "/products/product-a"
+        },
+        {
+          "name": "Product B",
+          "icon": "fa-cogs",
+          "description": "A cutting-edge tool for improving productivity.",
+          "path": "/products/product-b"
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "type": "link",
+      "path": "/case-studies",
+      "description": "Read about the success stories of our clients."
+    },
+    {
+      "name": "Company",
+      "type": "dropdown",
+      "path": "/company",
+      "description": "Learn more about our company.",
+      "features": [
+        {
+          "name": "About Us",
+          "icon": "fa-info-circle",
+          "description": "Get to know our mission, vision, and values.",
+          "path": "/company/about-us"
+        },
+        {
+          "name": "Our Team",
+          "icon": "fa-users",
+          "description": "Meet the talented individuals behind our success.",
+          "path": "/company/our-team"
+        },
+        {
+          "name": "Contact",
+          "icon": "fa-envelope",
+          "description": "Get in touch with us for inquiries or support.",
+          "path": "/company/contact"
+        }
+      ]
+    },
+    {
+      "name": "Career",
+      "type": "link",
+      "path": "/career",
+      "description": "Explore career opportunities and join our team."
+    }
+  ]
+}
+
+
 // banner
 export const bannerData = {
   title: "Trusted Experts in Custom Software",
@@ -464,5 +602,52 @@ export const projectData=[
     "button": "Explore Now"
   }
 ]
+
+//industry data
+
+export const industrydata = {
+  sectionTitle: "Driving innovation across industries, from start-ups to global leaders",
+  industries: [
+    { name: "Fintech", icon: "fa-solid fa-gauge" },
+    { name: "Startup", icon: "fas fa-lightbulb" },
+    { name: "Logistics", icon: "fas fa-truck" },
+    { name: "Retail & Manufacturing", icon: "fas fa-store" },
+    { name: "Enterprise", icon: "fas fa-building" },
+    { name: "Education", icon: "fas fa-graduation-cap" },
+    { name: "Real Estate", icon: "fas fa-home" },
+    { name: "Medical & Healthcare", icon: "fas fa-heartbeat" },
+    { name: "Technology Company", icon: "fas fa-laptop-code" },
+    { name: "Media & Entertainment", icon: "fas fa-film" },
+    { name: "NGO", icon: "fas fa-hand-holding-heart" }
+  ],
+  features: [
+    {
+      icon: "fas fa-coins fa-2xl",
+      title: "Disruptive FinTech Solutions",
+      description: "Empowering financial innovation and growth."
+    },
+    {
+      icon: "fas fa-cogs fa-2xl",
+      title: "Business & Operational Support",
+      description: "Streamlining business processes efficiently."
+    },
+    {
+      icon: "fas fa-bullhorn fa-2xl",
+      title: "Marketing, Customer Experience & Engagement",
+      description: "Enhancing customer journeys and brand presence."
+    },
+    {
+      icon: "fas fa-database fa-2xl",
+      title: "Data Management & Analysis",
+      description: "Transforming data into actionable insights."
+    },
+    {
+      icon: "fas fa-shield-alt fa-2xl",
+      title: "Risk, Compliance & Fraud",
+      description: "Ensuring security and regulatory compliance."
+    }
+  ]
+};
+
 
 

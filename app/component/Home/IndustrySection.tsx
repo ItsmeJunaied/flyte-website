@@ -1,14 +1,33 @@
 import React from "react";
-import Title from "../Common/Title";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChartBar, faWallet } from "@fortawesome/duotone-regular-svg-icons";
+import Title from "../Common/Title";
 
-const IndustrySection: React.FC = () => {
-  const headertitle: string =
-    "Driving innovation across industries, from start-ups to global leaders";
+// Type alias for Industry
+type Industry = {
+  name: string;
+  icon?: any; // Use string to hold class names like "fas fa-chart-line"
+};
+
+// Type alias for Feature
+type Feature = {
+  icon?: any;
+  title: string;
+  description: string;
+};
+
+// Type alias for IndustryData
+type IndustryData = {
+  sectionTitle: string;
+  industries: Industry[];
+  features: Feature[];
+};
+
+const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({
+  industrydata,
+}) => {
   return (
     <div
-      className="bg-white "
+      className="bg-white"
       style={{
         backgroundImage: "url('/images/world-map.png')",
         backgroundRepeat: "no-repeat",
@@ -17,78 +36,94 @@ const IndustrySection: React.FC = () => {
         backgroundPositionY: "-75px",
       }}
     >
-      <div className=" container mx-auto py-[40px] my-[24px]">
-        <div className=" mb-[64px]">
-          <Title title={headertitle} />
+      <div className="container mx-auto py-[40px] my-[24px]">
+        <div className="mb-[64px] flex w-full justify-center text-center">
+          {/* <h1 className="text-xl font-semibold">{industrydata.sectionTitle}</h1> */}
+          <Title title={industrydata.sectionTitle} />
         </div>
 
-        <div className=" hidden lg:flex flex-col lg:flex-row justify-between items-center gap-5  ">
-          <div className=" w-full lg:w-1/3  px-[34px] py-[24px] border-2 border-[#006FBA] rounded-2xl flex flex-col gap-3 ">
-            <div className=" text-[#718096] hover:text-[#2B6CB0] flex flex-row gap-2 text-[16px] ">
-              <FontAwesomeIcon
-                icon={faWallet}
-                className=" w-5 text-[#718096] hover:text-[#2B6CB0]"
-              />
-              <h1 className=" text-[16px]">Fintech</h1>
-            </div>
-            <div className=" text-[#718096] hover:text-[#2B6CB0] flex flex-row gap-2 text-[16px] ">
-              <FontAwesomeIcon
-                icon={faWallet}
-                className=" w-5 text-[#718096] hover:text-[#2B6CB0]"
-              />
-              <h1 className=" text-[16px]">Fintech</h1>
-            </div>
-            <div className=" text-[#718096] hover:text-[#2B6CB0] flex flex-row gap-2 text-[16px] ">
-              <FontAwesomeIcon
-                icon={faWallet}
-                className=" w-5 text-[#718096] hover:text-[#2B6CB0]"
-              />
-              <h1 className=" text-[16px]">Fintech</h1>
-            </div>
-            <div className=" text-[#718096] hover:text-[#2B6CB0] flex flex-row gap-2 text-[16px] ">
-              <FontAwesomeIcon
-                icon={faWallet}
-                className=" w-5 text-[#718096] hover:text-[#2B6CB0]"
-              />
-              <h1 className=" text-[16px]">Fintech</h1>
-            </div>
-          </div>
-          <div className=" w-full lg:w-2/3 grid grid-cols-2">
-            <div className="h-[116.59px] px-6 py-8 bg-[#f6f8fa] rounded-[10px] border border-[#d0d8df] justify-start items-center gap-6 inline-flex">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="41"
-                viewBox="0 0 40 41"
-                fill="none"
+        <div className=" lg:hidden flex flex-row flex-wrap justify-start items-center gap-5 px-9">
+        {industrydata.industries.map((industry, index) => (
+              <div
+                key={index}
+                className="h-9 p-2.5 bg-[#f6f8fa] rounded-[10px] border border-[#d0d8df] justify-start items-center gap-2.5 inline-flex"
               >
-                <g clip-path="url(#clip0_1806_59894)">
+                {industry.icon && <i className={`${industry.icon} icon3 text-[#2B6CB0]`}></i>}
+                <h1 className="text-[16px] text-[#2F4F4F]">{industry.name}</h1>
+              </div>
+            ))}
+          {/* <div className="h-9 p-2.5 bg-[#f6f8fa] rounded-[10px] border border-[#d0d8df] justify-start items-center gap-2.5 inline-flex">
+            <div className="w-4 h-4 relative  overflow-hidden" />
+            <div className="self-stretch flex-col justify-start items-start gap-1.5 inline-flex">
+              <div className="self-stretch text-[#2f4f4f] text-[10px] font-bold font-['Nunito']">
+                Fintech
+              </div>
+            </div>
+          </div> */}
+        </div>
+        <div className="hidden lg:flex flex-col lg:flex-row justify-between items-center gap-5">
+          <div className="w-full lg:w-1/3 px-[34px] py-[24px] border-2 border-[#006FBA] rounded-2xl flex flex-col gap-3">
+            {industrydata.industries.map((industry, index) => (
+              <div
+                key={index}
+                className="text-[#718096] hover:text-[#2B6CB0] flex flex-row gap-2 items-center text-[16px]"
+              >
+                {industry.icon && <i className={`${industry.icon} icon`}></i>}
+                <h1 className="text-[16px]">{industry.name}</h1>
+              </div>
+            ))}
+          </div>
+
+          <div className="w-full lg:w-2/3 grid grid-cols-2 gap-4 items-start">
+            {industrydata.features.map((feature, index) => (
+              <div
+                key={index}
+                className="h-[116.59px] px-6 py-8 bg-[#f6f8fa] rounded-[10px] border border-[#d0d8df] justify-start items-center gap-6 inline-flex"
+              >
+                {feature.icon && <i className={`${feature.icon} icon2`}></i>}
+                <div className="self-stretch flex-col justify-start items-start gap-1.5 inline-flex">
+                  <div className="self-stretch text-[#2f4f4f] text-[15px] font-bold ">
+                    {feature.title}
+                  </div>
+                  <div className="w-full text-[#838383] text-xs font-normal ">
+                    {feature.description}
+                  </div>
+                </div>
+              </div>
+            ))}
+
+            <div className="h-[116.59px] px-6 py-8 bg-[#2c3e50] hover:bg-[#2B6CB0] rounded-[10px] border border-[#d0d8df] justify-center items-center gap-6 inline-flex transition-all duration-500 ease-in-out">
+              <div className="justify-center items-center gap-1.5 flex flex-row">
+                <h1 className="self-stretch text-white text-[15px] font-extrabold transition-colors duration-500 ease-in-out hover:text-[#2B6CB0]">
+                  See All Expertise
+                </h1>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="19"
+                  viewBox="0 0 32 19"
+                  fill="none"
+                  className="transition-colors duration-500 ease-in-out hover:fill-[#2B6CB0]"
+                >
                   <path
-                    d="M35.625 6.13401C35.1952 5.85597 34.7037 5.68776 34.1937 5.64417C33.6837 5.60057 33.1707 5.68294 32.7 5.88401L17.275 11.959C16.9102 12.1089 16.5194 12.1853 16.125 12.184H6.25C5.4212 12.184 4.62634 12.5133 4.04029 13.0993C3.45424 13.6854 3.125 14.4802 3.125 15.309V15.559H0V23.059H3.125V23.384C3.14458 24.1997 3.48245 24.9755 4.06639 25.5454C4.65033 26.1153 5.43403 26.4342 6.25 26.434L10 34.384C10.2539 34.9194 10.6537 35.3723 11.1534 35.6907C11.6531 36.009 12.2325 36.18 12.825 36.184H14.4C15.2245 36.1774 16.0129 35.8453 16.5936 35.2599C17.1742 34.6746 17.5 33.8835 17.5 33.059V26.734L32.7 32.809C33.0744 32.9561 33.4728 33.0324 33.875 33.034C34.499 33.0225 35.1066 32.8316 35.625 32.484C36.0362 32.2064 36.3754 31.8348 36.6145 31.4001C36.8536 30.9654 36.9857 30.48 37 29.984V8.70901C36.9977 8.2003 36.8713 7.69984 36.6316 7.2511C36.392 6.80235 36.0465 6.41889 35.625 6.13401ZM14.375 15.309V23.384H6.25V15.309H14.375ZM14.375 33.059H12.8L9.725 26.434H14.375V33.059ZM18.425 23.759C18.1281 23.6074 17.8186 23.482 17.5 23.384V15.134C17.8155 15.0684 18.1249 14.9764 18.425 14.859L33.875 8.70901V29.909L18.425 23.759ZM37.075 16.184V22.434C37.9038 22.434 38.6987 22.1048 39.2847 21.5187C39.8708 20.9327 40.2 20.1378 40.2 19.309C40.2 18.4802 39.8708 17.6854 39.2847 17.0993C38.6987 16.5133 37.9038 16.184 37.075 16.184Z"
-                    fill="#006FBA"
+                    d="M25 10.4746H7C6.44 10.4746 6 10.0346 6 9.47461C6 8.91461 6.44 8.47461 7 8.47461H25C25.56 8.47461 26 8.91461 26 9.47461C26 10.0346 25.56 10.4746 25 10.4746Z"
+                    fill="white"
                   />
-                </g>
-                <defs>
-                  <clipPath id="clip0_1806_59894">
-                    <rect
-                      width="40"
-                      height="40"
-                      fill="white"
-                      transform="translate(0 0.884766)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-              <div className="self-stretch flex-col justify-start items-start gap-1.5 inline-flex">
-                <div className="self-stretch text-[#2f4f4f] text-[15px] font-bold ">
-                  Disruptive FinTech Solutions
-                </div>
-                <div className="w-[270px] text-[#838383] text-xs font-normal ">
-                  Lorem Ipsum is simply dummy text simply dummy
-                </div>
+                  <path
+                    d="M20 17.4755C19.8688 17.4771 19.7388 17.4513 19.6183 17.3996C19.4977 17.3479 19.3893 17.2716 19.3 17.1755C18.9 16.7755 18.9 16.1555 19.3 15.7555L25.6 9.45555L19.3 3.15555C18.9 2.75555 18.9 2.13555 19.3 1.73555C19.7 1.33555 20.32 1.33555 20.72 1.73555L27.72 8.73555C28.12 9.13555 28.12 9.75555 27.72 10.1555L20.72 17.1555C20.52 17.3555 20.26 17.4555 20.02 17.4555L20 17.4755Z"
+                    fill="white"
+                  />
+                </svg>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="w-full  bg-white  overflow-hidden flex justify-center items-center">
+          <h1 className="text-[#191919] text-sm font-semibold bg-white rounded-md  border border-[#dddddd]  gap-2.5 px-6 py-2.5 mt-8  ">
+            See All Industries
+          </h1>
         </div>
       </div>
     </div>

@@ -1,205 +1,247 @@
-"use client"
-import React from "react";
-import {
-  Navbar,
-  Collapse,
-  Typography,
-  IconButton,
-  List,
-  ListItem,
-  Menu,
-  MenuHandler,
-  MenuList,
-  MenuItem,
-} from "@material-tailwind/react";
-import {
-  ChevronDownIcon,
-  Bars3Icon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
-import {
-  Bars4Icon,
-  GlobeAmericasIcon,
-  PhoneIcon,
-  SquaresPlusIcon,
-  SunIcon,
-  UserGroupIcon,
-} from "@heroicons/react/24/solid";
- 
-const navListMenuItems = [
-  {
-    title: "Products",
-    description: "Find the perfect solution for your needs.",
-    icon: SquaresPlusIcon,
-  },
-  {
-    title: "About Us",
-    description: "Meet and learn about our dedication",
-    icon: UserGroupIcon,
-  },
-  {
-    title: "Blog",
-    description: "Find the perfect solution for your needs.",
-    icon: Bars4Icon,
-  },
-  {
-    title: "Services",
-    description: "Learn how we can help you achieve your goals.",
-    icon: SunIcon,
-  },
-  {
-    title: "Support",
-    description: "Reach out to us for assistance or inquiries",
-    icon: GlobeAmericasIcon,
-  },
-  {
-    title: "Contact",
-    description: "Find the perfect solution for your needs.",
-    icon: PhoneIcon,
-  },
-];
- 
-function NavListMenu() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-  const renderItems = navListMenuItems.map(
-    ({ icon, title, description }, key) => (
-      <a href="#" key={key}>
-        <MenuItem className="flex items-center gap-3 rounded-lg"   placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
-            {" "}
-            {React.createElement(icon, {
-              strokeWidth: 2,
-              className: "h-6 text-gray-900 w-6",
-            })}
-          </div>
-          <div>
-            <Typography
-              variant="h6"
-              color="blue-gray"
-              className="flex items-center text-sm font-bold"   placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
-              {title}
-            </Typography>
-            <Typography
-              variant="paragraph"
-              className="text-xs !font-medium text-blue-gray-500"   placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
-              {description}
-            </Typography>
-          </div>
-        </MenuItem>
-      </a>
-    ),
-  );
- 
+"use client";
+import React, { useEffect, useState } from "react";
+
+const Nav = () => {
+  
   return (
-    <React.Fragment>
-      <Menu
-        open={isMenuOpen}
-        handler={setIsMenuOpen}
-        offset={{ mainAxis: 20 }}
-        placement="top"
-        allowHover={true}
-      >
-        <MenuHandler>
-          <Typography as="div" variant="small" className="font-medium"   placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-            <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
-              selected={isMenuOpen || isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen((cur) => !cur)}   placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
-              Resources
-              <ChevronDownIcon
-                strokeWidth={2.5}
-                className={`hidden h-3 w-3 transition-transform lg:block ${
-                  isMenuOpen ? "rotate-180" : ""
-                }`}
-              />
-              <ChevronDownIcon
-                strokeWidth={2.5}
-                className={`block h-3 w-3 transition-transform lg:hidden ${
-                  isMobileMenuOpen ? "rotate-180" : ""
-                }`}
-              />
-            </ListItem>
-          </Typography>
-        </MenuHandler>
-        <MenuList className="hidden w-full rounded-xl lg:block"   placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
-            {renderItems}
-          </ul>
-        </MenuList>
-      </Menu>
-      <div className="block lg:hidden">
-        <Collapse open={isMobileMenuOpen}>{renderItems}</Collapse>
-      </div>
-    </React.Fragment>
-  );
-}
- 
-function NavList() {
-  return (
-    <List className=" mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1"   placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-      <Typography
-        as="a"
-        href="#"
-        variant="small"
-        color="blue-gray"
-        className="font-medium"   placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4"   placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>Hire</ListItem>
-      </Typography>
-      <NavListMenu />
-      <NavListMenu />
-      <Typography
-        as="a"
-        href="#"
-        variant="small"
-        color="blue-gray"
-        className="font-medium"   placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white bg-[#5856D6]  px-4 rounded-md"   placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          Contact Us
-        </ListItem>
-      </Typography>
-    </List>
-  );
-}
- 
-export function Nav() {
-  const [openNav, setOpenNav] = React.useState(false);
- 
-  React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false),
-    );
-  }, []);
- 
-  return (
-    <Navbar className=" custom-navbar  px-0 py-2 shadow-none"   placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-      <div className="flex items-center justify-between text-blue-gray-900">
-        <Typography
-          as="a"
-          href="#"
-          variant="h6"
-          className="mr-4 cursor-pointer py-1.5 lg:ml-2"   placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
-          <img src="/images/flyte-logo.png" alt="Flyte Logo" />
-        </Typography>
-        <div className="hidden lg:block">
-          <NavList />
+    <div className="header">
+            <nav className="nav container">
+                <div className="nav__data">
+                    <a href="#" className="nav__logo">
+                        <i className="ri-code-s-slash-line"></i> CodeBox
+                    </a>
+    
+                    <div className="nav__toggle" id="nav-toggle">
+                      Menu
+                        {/* <i className="ri-menu-line nav__toggle-menu"></i> */}
+                        {/* <i className="fa-solid fa-bars"></i> */}
+                        {/* <i className="ri-close-line nav__toggle-close"></i> */}
+                        {/* <i className="fa-solid fa-x nav__toggle-close"></i> */}
+                    </div>
+                </div>
+
+                {/* <!--=============== NAV MENU ===============--> */}
+                <div className="nav__menu" id="nav-menu">
+                    <ul className="nav__list">
+                        <li>
+                            <a href="#" className="nav__link">Home</a>
+                        </li>
+
+                        {/* <!--=============== DROPDOWN 1 ===============--> */}
+                        <li className="dropdown__item">                      
+                            <div className="nav__link dropdown__button">
+                                Discover <i className="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div className="dropdown__container">
+                                <div className="dropdown__content">
+                                    <div className="dropdown__group">
+                                        <div className="dropdown__icon">
+                                            <i className="ri-flashlight-line"></i>
+                                        </div>
+    
+                                        <span className="dropdown__title">Most viewed courses</span>
+    
+                                        <ul className="dropdown__list">
+                                            <li>
+                                                <a href="#" className="dropdown__link">HTML for beginners</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown__link">Advanced CSS</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown__link">JavaScript OOP</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div className="dropdown__group">
+                                        <div className="dropdown__icon">
+                                            <i className="ri-heart-3-line"></i>
+                                        </div>
+    
+                                        <span className="dropdown__title">Popular courses</span>
+    
+                                        <ul className="dropdown__list">
+                                            <li>
+                                                <a href="#" className="dropdown__link">Development with Flutter</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown__link">Web development with React</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown__link">Backend development expert</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div className="dropdown__group">
+                                        <div className="dropdown__icon">
+                                            <i className="ri-book-mark-line"></i>
+                                        </div>
+    
+                                        <span className="dropdown__title">Careers</span>
+    
+                                        <ul className="dropdown__list">
+                                            <li>
+                                                <a href="#" className="dropdown__link">Web development</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown__link">Applications development</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown__link">UI/UX design</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown__link">Informatic security</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div className="dropdown__group">
+                                        <div className="dropdown__icon">
+                                            <i className="ri-file-paper-2-line"></i>
+                                        </div>
+    
+                                        <span className="dropdown__title">Certifications</span>
+    
+                                        <ul className="dropdown__list">
+                                            <li>
+                                                <a href="#" className="dropdown__link">Course certificates</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown__link">Free certifications</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        {/* <!--=============== DROPDOWN 2 ===============--> */}
+                        <li className="dropdown__item">
+                            <div className="nav__link dropdown__button">
+                                Resources <i className="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div className="dropdown__container">
+                                <div className="dropdown__content">
+                                    <div className="dropdown__group">
+                                        <div className="dropdown__icon">
+                                            <i className="ri-code-line"></i>
+                                        </div>
+    
+                                        <span className="dropdown__title">Web templates</span>
+    
+                                        <ul className="dropdown__list">
+                                            <li>
+                                                <a href="#" className="dropdown__link">Free templates</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown__link">Premium templates</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div className="dropdown__group">
+                                        <div className="dropdown__icon">
+                                            <i className="ri-pen-nib-line"></i>
+                                        </div>
+    
+                                        <span className="dropdown__title">Designs</span>
+    
+                                        <ul className="dropdown__list">
+                                            <li>
+                                                <a href="#" className="dropdown__link">Web designs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown__link">App designs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown__link">Component design</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div className="dropdown__group">
+                                        <div className="dropdown__icon">
+                                            <i className="ri-apps-2-line"></i>
+                                        </div>
+    
+                                        <span className="dropdown__title">Others</span>
+    
+                                        <ul className="dropdown__list">
+                                            <li>
+                                                <a href="#" className="dropdown__link">Recent blogs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown__link">Tutorial videos</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown__link">Webinar</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" className="nav__link">Pricing</a>
+                        </li>
+
+                        {/* <!--=============== DROPDOWN 3 ===============--> */}
+                        <li className="dropdown__item">                        
+                            <div className="nav__link dropdown__button">
+                                Company <i className="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div className="dropdown__container">
+                                <div className="dropdown__content">
+                                    <div className="dropdown__group">
+                                        <div className="dropdown__icon">
+                                            <i className="ri-community-line"></i>
+                                        </div>
+    
+                                        <span className="dropdown__title">About us</span>
+    
+                                        <ul className="dropdown__list">
+                                            <li>
+                                                <a href="#" className="dropdown__link">About us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown__link">Support</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown__link">Contact us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div className="dropdown__group">
+                                        <div className="dropdown__icon">
+                                            <i className="ri-shield-line"></i>
+                                        </div>
+    
+                                        <span className="dropdown__title">Safety and quality</span>
+    
+                                        <ul className="dropdown__list">
+                                            <li>
+                                                <a href="#" className="dropdown__link">Cookie settings</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="dropdown__link">Privacy Policy</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <IconButton
-          variant="text"
-          color="blue-gray"
-          className="lg:hidden"
-          onClick={() => setOpenNav(!openNav)}   placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
-          {openNav ? (
-            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-          ) : (
-            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-          )}
-        </IconButton>
-      </div>
-      <Collapse open={openNav}>
-        <NavList />
-      </Collapse>
-    </Navbar>
   );
-}
+};
+
+export default Nav;

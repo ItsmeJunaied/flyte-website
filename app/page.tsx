@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "./component/Home/Banner";
-import { bannerData, blogData, brandData, projectData, serviceData, techData } from "../api/Dummy";
+import { bannerData, blogData, brandData, industrydata, projectData, serviceData, techData } from "../api/Dummy";
 import Brands from "./component/Home/Brands";
 import ServiceSection from "./component/Home/ServiceSection";
 import IndustrySection from "./component/Home/IndustrySection";
@@ -24,7 +24,7 @@ const page = () => {
           <ServiceSection serviceData={serviceData} />
         </div>
         <div className=" bg-white">
-          {/* <IndustrySection /> */}
+          <IndustrySection industrydata={industrydata} />
         </div>
 
         <div className=" my-[30px]">

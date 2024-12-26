@@ -30,7 +30,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ projectData }) => {
         <Title title={headerTitle} />
       </div>
 
-      <div className="flex flex-col justify-center items-center gap-5 mx-44">
+      <div className="  flex flex-col justify-center items-center gap-5 mx-44">
         {projectData.map((project, index) => (
           <div
             key={index}
@@ -108,10 +108,10 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ projectData }) => {
           </div>
         ))}
       </div>
-      
+
+
     </div>
   );
 };
 
 export default ProjectSection;
-
