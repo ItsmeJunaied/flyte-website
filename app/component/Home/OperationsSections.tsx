@@ -30,7 +30,7 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({
   techData,
 }) => {
   const headerTitle: string =
-    "Innovative technology that transforms the way you operate";
+    "Innovative technology that transforms";
 
   // Section titles
   const sections = [
@@ -52,13 +52,13 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({
         width: "100%",
       }}
     >
-      <div className="text-center w-full flex justify-center">
+      <div className=" container mx-auto">
         <Title title={headerTitle} />
       </div>
 
       <div className="container mx-auto flex flex-wrap gap-5 py-10 px-5 lg:px-0 justify-center">
         {sections.map((section) => {
-          const category = techData[section.key as keyof TechData]; // Access the category
+          const category = techData[section.key as keyof TechData]; 
 
           return (
             <div

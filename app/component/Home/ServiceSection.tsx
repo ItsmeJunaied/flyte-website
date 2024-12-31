@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "../Common/Title";
 import { strict } from "assert";
+import Subtitle from "../Common/Subtitle";
 
 type Keywords = string[];
 type ServiceData = {
@@ -15,12 +16,14 @@ type ServiceSectionProps = {
 };
 const ServiceSection: React.FC<ServiceSectionProps> = ({ serviceData }) => {
   const headertitle: string =
-    "Empowering your vision through a range of professional services";
+    "Empowering your vision through a range";
   return (
     <div className="  flex flex-col gap-5">
-      <div className="w-full flex justify-center items-center  text-center   ">
+      <div className="  ">
+        <Subtitle Subtitle="Our Services" />
         <Title title={headertitle} />
       </div>
+
 
       <div className="w-full flex flex-wrap justify-center gap-5 px-10 lg:px-0 mt-10 mb-10 lg:mb-0">
         {serviceData &&

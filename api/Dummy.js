@@ -6,7 +6,7 @@ export const navbarData ={
       "name": "Hire",
       "type": "dropdown",
       "path": "/hire",
-      "description": "Explore opportunities to work with us.",
+      "description": "Explore innovative solutions designed to simplify processes . ",
       "features": [
         {
           "name": "Job Openings",
@@ -126,12 +126,12 @@ export const navbarData ={
         }
       ]
     },
-    {
-      "name": "Career",
-      "type": "link",
-      "path": "/career",
-      "description": "Explore career opportunities and join our team."
-    }
+    // {
+    //   "name": "Career",
+    //   "type": "link",
+    //   "path": "/career",
+    //   "description": "Explore career opportunities and join our team."
+    // }
   ]
 }
 
@@ -606,7 +606,8 @@ export const projectData=[
 //industry data
 
 export const industrydata = {
-  sectionTitle: "Driving innovation across industries, from start-ups to global leaders",
+  subTitle:"Our Industries",
+  sectionTitle: "Driving innovation across industries",
   industries: [
     { name: "Fintech", icon: "fa-solid fa-gauge" },
     { name: "Startup", icon: "fas fa-lightbulb" },

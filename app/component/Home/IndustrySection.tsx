@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Title from "../Common/Title";
+import Subtitle from "../Common/Subtitle";
 
 // Type alias for Industry
 type Industry = {
@@ -11,6 +12,7 @@ type Industry = {
 // Type alias for Feature
 type Feature = {
   icon?: any;
+  
   title: string;
   description: string;
 };
@@ -18,6 +20,7 @@ type Feature = {
 // Type alias for IndustryData
 type IndustryData = {
   sectionTitle: string;
+  subTitle: string;
   industries: Industry[];
   features: Feature[];
 };
@@ -36,9 +39,10 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({
         backgroundPositionY: "-75px",
       }}
     >
-      <div className="container mx-auto py-[40px] my-[24px]">
-        <div className="mb-[64px] flex w-full justify-center text-center">
+      <div className="container mx-auto py-[40px] ">
+        <div className="mb-[64px] ">
           {/* <h1 className="text-xl font-semibold">{industrydata.sectionTitle}</h1> */}
+          <Subtitle Subtitle={industrydata.subTitle} />
           <Title title={industrydata.sectionTitle} />
         </div>
 

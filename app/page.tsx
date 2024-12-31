@@ -9,39 +9,46 @@ import Contact from "./component/Contact/Contact";
 import BlogSection from "./component/Home/BlogSection";
 import OperationsSections from "./component/Home/OperationsSections";
 import ProjectSection from "./component/Home/ProjectSection";
+import AboutUs from "./component/Home/AboutUs";
+import ServiceMarquee from "./component/Home/ServiceMarquee";
 const page = () => {
   // console.log(brandData)
   return (
-    <div className=" bg-[#E6E6E6]">
+    <div className=" bg-[#F7F8FD]">
       <div className=" ">
-        <div className=" mb-[400px] lg:mb-56">
+        <div className=" ">
           <Banner bannerData={bannerData} />
         </div>
         <div className="  flex flex-col justify-center items-center ">
           <Brands title={brandData.title} brands={brandData.brands} />
         </div>
+        <div className="  bg-white">
+          <AboutUs/>
+        </div>
         <div className=" mt-24 container mx-auto">
           <ServiceSection serviceData={serviceData} />
+        </div>
+        <div>
+          <ServiceMarquee/>
         </div>
         <div className=" bg-white">
           <IndustrySection industrydata={industrydata} />
         </div>
-
-        <div className=" my-[30px]">
+        <div className=" ">
           <OperationsSections techData={techData} />
         </div>
-        <div>
+        <div className=" bg-black">
           <ProjectSection projectData={projectData}/>
         </div>
-        <div className=" my-[30px]">
+        {/* <div className=" my-[30px]">
           <BlogSection blogData={blogData}/>
-        </div>
+        </div> */}
         <div className=" mt-24 container mx-auto">
           <Contact/>
         </div>
 
 
-        <div className=" bg-footerBg">
+        <div className=" bg-[#1A1A1A]">
           <div className=" container mx-auto">
           <Footer />
           </div>

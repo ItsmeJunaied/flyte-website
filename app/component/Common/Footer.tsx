@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="footer bg-footerBg text-base-content py-10">
+    <footer className="footer  text-base-content py-10">
       <aside className=" flex flex-col gap-4">
         <img src="/images/flyte-logo.png" alt="" />
         <h6 className="footer-title text-[#F5F5F5]">Contact</h6>

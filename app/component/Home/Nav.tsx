@@ -1,246 +1,124 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import { navbarData } from "@/api/Dummy";
+import Link from "next/link";
+import React from "react";
 
-const Nav = () => {
-  
+type NavData = {
+  menu: {
+    name: string;
+    type: string;
+    path: string;
+    description: string;
+    features?: {
+      name: string;
+      icon: string;
+      description: string;
+      path: string;
+    }[];
+  }[];
+};
+
+const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
   return (
     <div className="header">
-            <nav className="nav container">
-                <div className="nav__data">
-                    <a href="#" className="nav__logo">
-                        <i className="ri-code-s-slash-line"></i> CodeBox
-                    </a>
-    
-                    <div className="nav__toggle" id="nav-toggle">
-                      Menu
-                        {/* <i className="ri-menu-line nav__toggle-menu"></i> */}
-                        {/* <i className="fa-solid fa-bars"></i> */}
-                        {/* <i className="ri-close-line nav__toggle-close"></i> */}
-                        {/* <i className="fa-solid fa-x nav__toggle-close"></i> */}
-                    </div>
-                </div>
+      <nav className="nav container">
+        <div className="nav__data">
+          <Link href="/">
+            <img src="/images/flyte-logo.png" alt="flyte solutions Ltd." />
+          </Link>
 
-                {/* <!--=============== NAV MENU ===============--> */}
-                <div className="nav__menu" id="nav-menu">
-                    <ul className="nav__list">
-                        <li>
-                            <a href="#" className="nav__link">Home</a>
-                        </li>
-
-                        {/* <!--=============== DROPDOWN 1 ===============--> */}
-                        <li className="dropdown__item">                      
-                            <div className="nav__link dropdown__button">
-                                Discover <i className="ri-arrow-down-s-line dropdown__arrow"></i>
-                            </div>
-
-                            <div className="dropdown__container">
-                                <div className="dropdown__content">
-                                    <div className="dropdown__group">
-                                        <div className="dropdown__icon">
-                                            <i className="ri-flashlight-line"></i>
-                                        </div>
-    
-                                        <span className="dropdown__title">Most viewed courses</span>
-    
-                                        <ul className="dropdown__list">
-                                            <li>
-                                                <a href="#" className="dropdown__link">HTML for beginners</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="dropdown__link">Advanced CSS</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="dropdown__link">JavaScript OOP</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-    
-                                    <div className="dropdown__group">
-                                        <div className="dropdown__icon">
-                                            <i className="ri-heart-3-line"></i>
-                                        </div>
-    
-                                        <span className="dropdown__title">Popular courses</span>
-    
-                                        <ul className="dropdown__list">
-                                            <li>
-                                                <a href="#" className="dropdown__link">Development with Flutter</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="dropdown__link">Web development with React</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="dropdown__link">Backend development expert</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-    
-                                    <div className="dropdown__group">
-                                        <div className="dropdown__icon">
-                                            <i className="ri-book-mark-line"></i>
-                                        </div>
-    
-                                        <span className="dropdown__title">Careers</span>
-    
-                                        <ul className="dropdown__list">
-                                            <li>
-                                                <a href="#" className="dropdown__link">Web development</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="dropdown__link">Applications development</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="dropdown__link">UI/UX design</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="dropdown__link">Informatic security</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-    
-                                    <div className="dropdown__group">
-                                        <div className="dropdown__icon">
-                                            <i className="ri-file-paper-2-line"></i>
-                                        </div>
-    
-                                        <span className="dropdown__title">Certifications</span>
-    
-                                        <ul className="dropdown__list">
-                                            <li>
-                                                <a href="#" className="dropdown__link">Course certificates</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="dropdown__link">Free certifications</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        {/* <!--=============== DROPDOWN 2 ===============--> */}
-                        <li className="dropdown__item">
-                            <div className="nav__link dropdown__button">
-                                Resources <i className="ri-arrow-down-s-line dropdown__arrow"></i>
-                            </div>
-
-                            <div className="dropdown__container">
-                                <div className="dropdown__content">
-                                    <div className="dropdown__group">
-                                        <div className="dropdown__icon">
-                                            <i className="ri-code-line"></i>
-                                        </div>
-    
-                                        <span className="dropdown__title">Web templates</span>
-    
-                                        <ul className="dropdown__list">
-                                            <li>
-                                                <a href="#" className="dropdown__link">Free templates</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="dropdown__link">Premium templates</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-    
-                                    <div className="dropdown__group">
-                                        <div className="dropdown__icon">
-                                            <i className="ri-pen-nib-line"></i>
-                                        </div>
-    
-                                        <span className="dropdown__title">Designs</span>
-    
-                                        <ul className="dropdown__list">
-                                            <li>
-                                                <a href="#" className="dropdown__link">Web designs</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="dropdown__link">App designs</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="dropdown__link">Component design</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-    
-                                    <div className="dropdown__group">
-                                        <div className="dropdown__icon">
-                                            <i className="ri-apps-2-line"></i>
-                                        </div>
-    
-                                        <span className="dropdown__title">Others</span>
-    
-                                        <ul className="dropdown__list">
-                                            <li>
-                                                <a href="#" className="dropdown__link">Recent blogs</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="dropdown__link">Tutorial videos</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="dropdown__link">Webinar</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="#" className="nav__link">Pricing</a>
-                        </li>
-
-                        {/* <!--=============== DROPDOWN 3 ===============--> */}
-                        <li className="dropdown__item">                        
-                            <div className="nav__link dropdown__button">
-                                Company <i className="ri-arrow-down-s-line dropdown__arrow"></i>
-                            </div>
-
-                            <div className="dropdown__container">
-                                <div className="dropdown__content">
-                                    <div className="dropdown__group">
-                                        <div className="dropdown__icon">
-                                            <i className="ri-community-line"></i>
-                                        </div>
-    
-                                        <span className="dropdown__title">About us</span>
-    
-                                        <ul className="dropdown__list">
-                                            <li>
-                                                <a href="#" className="dropdown__link">About us</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="dropdown__link">Support</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="dropdown__link">Contact us</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-    
-                                    <div className="dropdown__group">
-                                        <div className="dropdown__icon">
-                                            <i className="ri-shield-line"></i>
-                                        </div>
-    
-                                        <span className="dropdown__title">Safety and quality</span>
-    
-                                        <ul className="dropdown__list">
-                                            <li>
-                                                <a href="#" className="dropdown__link">Cookie settings</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="dropdown__link">Privacy Policy</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+          <div className="nav__toggle" id="nav-toggle">
+            <i className="fa-solid fa-bars nav__toggle-menu"></i>
+            <i className="fa-solid fa-x nav__toggle-close"></i>
+          </div>
         </div>
+
+        <div className="nav__menu" id="nav-menu">
+          <ul className="nav__list">
+            {navData.menu.map((item, index) => (
+              <li
+                key={index}
+                className={item.type === "dropdown" ? "dropdown__item" : ""}
+              >
+                {item.type === "dropdown" ? (
+                  <>
+                    <div className="nav__link dropdown__button">
+                      {item.name}{" "}
+                      <i className="fa-solid fa-chevron-down fa-2xs"></i>
+                    </div>
+                    <div className="dropdown__container bg-[#F4F2F0]">
+                      <div className="dropdown__content">
+                        <div className="flex flex-col lg:flex-row gap-10 container mx-auto">
+                          <div className=" w-full h-full lg:w-1/3 hidden lg:flex flex-col gap-4 flex-shrink-0 ">
+                            {/* {navData.menu.map((item, index) => (
+                              <div key={index}> */}
+
+                            <h1 className="text-lg text-btnColor ">
+                              {item.name}
+                            </h1>
+
+                            <p className="text-xs text-[#131313B2]">
+                              {item.description}
+                            </p>
+
+                            <Link
+                              className="bg-btnColor w-fit h-fit text-white px-6 py-3 rounded-lg"
+                              href={item.path}
+                            >
+                              <p className="">Learn more</p>
+                            </Link>
+                            {/* </div> */}
+                            {/* ))} */}
+                          </div>
+                          <div className=" w-full h-full lg:w-2/3 rounded-lg flex-shrink-0 ">
+                            <div className=" grid grid-cols-1 lg:grid-cols-2 gap-2 ">
+                              {item.features?.map((feature, featureIndex) => (
+                                <div
+                                  className=" flex flex-row  items-center gap-4  bg-white p-4 rounded-lg"
+                                  key={featureIndex}
+                                >
+                                  <div className=" w-fit  ">
+                                    <p className=" text-xl">
+                                      <i
+                                        className={`fa ${feature.icon} fa-2xl`}
+                                        style={{ color: "#5856d6" }}
+                                      ></i>
+                                    </p>
+                                  </div>
+                                  <div className=" w-fit ">
+                                    <p className=" text-btnColor">
+                                      {feature.name}
+                                    </p>
+                                    <p className=" text-[#131313B2] text-xs">
+                                      {feature.description}
+                                    </p>
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <Link className="h-full flex items-center" href={item.path}>
+                    <p className="nav__link">{item.name}</p>
+                  </Link>
+                )}
+              </li>
+            ))}
+            {/* Hardcoded Contact Us link */}
+            <li>
+              <Link href="/contact" className="h-full flex items-center">
+                <p className="bg-btnColor h-fit text-white px-6 py-3 rounded-lg">
+                  Contact Us
+                </p>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   );
 };
 

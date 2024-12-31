@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html, body {
+  overflow-x: hidden;
+}
 
 .custom-navbar {
   width: 100%; /* Full width */
@@ -119,6 +122,7 @@
   background-color: white !important;
 }
 .nav {
+
   height: var(--header-height);
 }
 .nav__data {
@@ -162,16 +166,16 @@
 @media screen and (max-width: 1118px) {
   .nav__menu {
     background-color: var(--body-color);
-    position: absolute;
-    left: 0;
-    top: 2.5rem;
-    width: 100%;
-    height: calc(100vh - 3.5rem);
-    overflow: auto;
-    padding-block: 1.5rem 4rem;
-    pointer-events: none;
-    opacity: 0;
-    transition: top 0.4s, opacity 0.3s;
+    position: fixed; /* Make sidebar fixed to the viewport */
+    top: 0;
+    left: -100%; /* Initially hidden outside the viewport */
+    height: 100vh; /* Full height of the viewport */
+    width: 80%; /* Sidebar width is 80% of the viewport */
+    overflow-y: auto; /* Enable vertical scrolling inside the sidebar */
+    padding: 1.5rem; /* Optional padding for content */
+    pointer-events: none; /* Prevent interaction when hidden */
+    transition: left 0.4s ease; /* Smooth slide-in effect */
+    z-index: var(--z-fixed); /* Ensure it stays above other content */
   }
   .nav__menu::-webkit-scrollbar {
     width: 0.5rem;
@@ -195,10 +199,10 @@
 
 /* Show menu */
 .show-menu {
-  opacity: 1;
-  top: 3.5rem;
+  left: 0; /* Move into view */
   pointer-events: initial;
 }
+
 
 /* Show icon */
 .show-icon .nav__toggle-menu {
@@ -224,7 +228,7 @@
   display: grid;
 }
 .dropdown__container {
-  background-color: white;
+  /* background-color: white; */
   height: 0;
   overflow: hidden;
   transition: height 0.4s;
@@ -269,6 +273,12 @@
   transform: rotate(180deg);
 }
 
+@media screen and (max-width: 1117px){
+.dropdown__container{
+  padding-top: 0px;
+}
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 300px) {
@@ -278,7 +288,12 @@
 }
 /* For large devices */
 @media screen and (min-width: 1118px) {
+  .dropdown__container{
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
   /* Nav */
+
   .nav {
     height: 100px;
     display: flex;
@@ -312,18 +327,18 @@
     left: 0;
     right: 0;
     top: 6.5rem;
-    background-color: white;
+    /* background-color: white; */
     box-shadow: 0 6px 8px hsla(220, 68%, 12%, 0.05);
     pointer-events: none;
     opacity: 0;
     transition: top 0.4s, opacity 0.3s;
   }
-  .dropdown__content {
+  /* .dropdown__content {
     grid-template-columns: repeat(4, max-content);
     column-gap: 6rem;
     max-width: 1120px;
     margin-inline: auto;
-  }
+  } */
   .dropdown__group {
     padding: 4rem 0;
     align-content: baseline;
@@ -379,4 +394,81 @@
   .container {
     margin-inline: auto;
   }
+}
+
+.feature__card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.feature__card:hover {
+  transform: translateY(-5px);
+}
+
+.feature__icon {
+  font-size: 2rem;
+  color: #6366f1; /* Purple tone for icon */
+  margin-bottom: 0.5rem;
+}
+
+.feature__name {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.feature__description {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+
+html {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #6366f1 transparent; /* For Firefox */
+}
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+::-webkit-scrollbar-thumb {
+  background-color: #6366f1; /* Thumb color */
+  border-radius: 6px; /* Rounded edges */
+}
+
+.shine {
+	position: relative;
+	overflow: hidden;
+
+	&::before {
+		background: linear-gradient(
+			to right,
+			fade_out(#fff, 1) 0%,
+			fade_out(#fff, 0.7) 100%
+		);
+		content: "";
+		display: block;
+		height: 100%;
+		left: -75%;
+		position: absolute;
+		top: 0;
+		transform: skewX(-25deg);
+		width: 50%;
+		z-index: 2;
+	}
+
+	&:hover,
+	&:focus {
+		&::before {
+			animation: shine 0.85s;
+		}
+	}
+
+	@keyframes shine {
+		100% {
+			left: 125%;
+		}
+	}
 }

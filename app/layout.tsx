@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Nav from "./component/Home/Nav";
+import { navbarData } from "@/api/Dummy";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,10 +31,10 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         />
-        
+        <script src="/script.js" defer></script>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Nav/>
+        <Nav navData={navbarData}/>
         {children}
       </body>
     </html>
