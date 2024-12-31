@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Title from "../Common/Title";
-import { strict } from "assert";
 import Subtitle from "../Common/Subtitle";
 
 type Keywords = string[];
@@ -30,7 +30,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({ serviceData }) => {
           serviceData?.slice(0, 6)?.map((data, index) => (
             <div
               key={index}
-              className=" w-[350px] lg:w-[408px] h-[200px] px-6 py-8 bg-white rounded-[15px] shadow-[0px_0px_10px_10px_rgba(233,233,233,0.25)] justify-start items-center gap-3 inline-flex overflow-hidden"
+              className=" w-[350px] lg:w-[408px] h-[200px] px-6 py-8 bg-white rounded-[15px] shadow-[0px_0px_10px_10px_rgba(230,230,230,0.25)] justify-start items-center gap-3 inline-flex overflow-hidden"
             >
               <div className=" w-2/3 grow shrink basis-0 self-stretch flex-col justify-center items-start gap-6 inline-flex overflow-hidden">
                 <div className="self-stretch h-[122px] flex-col justify-start items-start gap-4 flex">

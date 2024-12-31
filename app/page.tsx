@@ -1,12 +1,11 @@
 import React from "react";
 import Banner from "./component/Home/Banner";
-import { bannerData, blogData, brandData, industrydata, projectData, serviceData, techData } from "../api/Dummy";
+import { bannerData,  brandData, industrydata, serviceData, techData } from "../api/Dummy";
 import Brands from "./component/Home/Brands";
 import ServiceSection from "./component/Home/ServiceSection";
 import IndustrySection from "./component/Home/IndustrySection";
 import Footer from "./component/Common/Footer";
 import Contact from "./component/Contact/Contact";
-import BlogSection from "./component/Home/BlogSection";
 import OperationsSections from "./component/Home/OperationsSections";
 import ProjectSection from "./component/Home/ProjectSection";
 import AboutUs from "./component/Home/AboutUs";
@@ -38,8 +37,9 @@ const page = () => {
           <OperationsSections techData={techData} />
         </div>
         <div className=" bg-black">
-          <ProjectSection projectData={projectData}/>
+          <ProjectSection />
         </div>
+        {/* <ScrollSection/> */}
         {/* <div className=" my-[30px]">
           <BlogSection blogData={blogData}/>
         </div> */}

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Title from "../Common/Title";
 import Subtitle from "../Common/Subtitle";
@@ -13,7 +14,7 @@ const AboutUs: React.FC = () => {
         <div className="container mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div className="flex flex-col gap-8 justify-center w-full  items-center ">
-            <div className="relative max-w-[280px] lg:max-w-[450px] max-h-[600px]  ">
+            <div className="relative max-w-[280px] lg:max-w-[400px] max-h-[650px]  ">
               {/* Main Image */}
               <img
                 src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/about-us-img.jpg"

@@ -73,7 +73,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                             <div className=" grid grid-cols-1 lg:grid-cols-2 gap-2 ">
                               {item.features?.map((feature, featureIndex) => (
                                 <div
-                                  className=" flex flex-row  items-center gap-4  bg-white p-4 rounded-lg"
+                                  className=" flex flex-row  items-center gap-4  bg-white border-2 border-white hover:border-btnColor p-4 rounded-lg"
                                   key={featureIndex}
                                 >
                                   <div className=" w-fit  ">
