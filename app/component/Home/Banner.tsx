@@ -36,7 +36,7 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
         -{bannerData.title}
       </h1>
       <div className=" w-full flex justify-center items-center">
-        <h2 className=" max-w-[1000px] text-center text-white text-6xl font-bold font-['DM Sans'] leading-[80px] ">
+        <h2 className=" max-w-[1000px] text-center text-white text-3xl lg:text-6xl font-bold font-['DM Sans'] leading-[40px]  lg:leading-[80px] ">
           {bannerData.subtitle}
         </h2>
       </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import Title from "../Common/Title";
 import Marquee from "react-fast-marquee";
 type Brand = {
   src: string;
@@ -11,9 +10,8 @@ type BrandData = {
   brands: Brand[];
 };
 
-const Brands: React.FC<BrandData> = ({ title, brands }) => {
-  const headertitle: string =
-    "Trusted by top brands to deliver excellence every time";
+const Brands: React.FC<BrandData> = ({  brands }) => {
+  
   return (
     <div className="  bg-[#F4F5F8] pt-4 pb-6  w-full  ">
       <Marquee  direction="left" speed={30}>

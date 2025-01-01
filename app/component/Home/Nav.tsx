@@ -1,4 +1,3 @@
-import { navbarData } from "@/api/Dummy";
 import Link from "next/link";
 import React from "react";
 
@@ -19,8 +18,8 @@ type NavData = {
 
 const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
   return (
-    <div className="header">
-      <nav className="nav container">
+    <div className="header border-b-2 border-[#F4F2F0]">
+      <nav className="nav container ">
         <div className="nav__data">
           <Link href="/">
             <img src="/images/flyte-logo.png" alt="flyte solutions Ltd." />
@@ -41,10 +40,13 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
               >
                 {item.type === "dropdown" ? (
                   <>
+                  
+                    <Link className=" flex justify-center items-center h-full" href={item.path} passHref>
                     <div className="nav__link dropdown__button">
                       {item.name}{" "}
                       <i className="fa-solid fa-chevron-down fa-2xs"></i>
                     </div>
+                    </Link>
                     <div className="dropdown__container bg-[#F4F2F0]">
                       <div className="dropdown__content">
                         <div className="flex flex-col lg:flex-row gap-10 container mx-auto">
@@ -109,7 +111,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
             ))}
             {/* Hardcoded Contact Us link */}
             <li>
-              <Link href="/contact" className="h-full flex items-center">
+              <Link href="/contact-us" className="h-full flex items-center">
                 <p className="bg-btnColor h-fit text-white px-6 py-3 rounded-lg">
                   Contact Us
                 </p>

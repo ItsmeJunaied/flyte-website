@@ -9,17 +9,42 @@ export const navbarData ={
       "description": "Explore innovative solutions designed to simplify processes . ",
       "features": [
         {
-          "name": "Job Openings",
+          "name": "Frontend Developers",
           "icon": "fa-briefcase",
-          "description": "Find the latest job opportunities at our company.",
+          "description": "Design and develop user-friendly interfaces for web applications.",
           "path": "/hire/job-openings"
         },
         {
-          "name": "Freelance Opportunities",
+          "name": "Backend Developers",
           "icon": "fa-user-tie",
           "description": "Join us as a freelancer and work on exciting projects.",
           "path": "/hire/freelance-opportunities"
+        },
+        {
+          "name": "Mobile App Developers",
+          "icon": "fa-mobile-alt",
+          "description": "Create mobile applications for iOS and Android platforms.",
+          "path": "/hire/contract-roles"
+        },
+        {
+          "name": "QA Engineers",
+          "icon": "fa-bug",
+          "description": "Test software applications to ensure quality and performance.",
+          "path": "/hire/qa-roles"
+        },
+        {
+          "name": "DevOps Engineers",
+          "icon": "fa-tools",
+          "description": "Streamline development processes and infrastructure with DevOps practices.",
+          "path": "/hire/devops-roles"
+        },
+        {
+          "name": "AI & ML Specialists",
+          "icon": "fa-robot",
+          "description": "Leverage AI and ML technologies to build smart applications.",
+          "path": "/hire/ai-ml-roles"
         }
+
       ]
     },
     {
@@ -29,23 +54,37 @@ export const navbarData ={
       "description": "Discover the industries we serve.",
       "features": [
         {
-          "name": "Healthcare",
+          "name": "Fintech",
           "icon": "fa-heartbeat",
           "description": "Solutions for the healthcare sector to improve patient care.",
           "path": "/industries/healthcare"
         },
         {
-          "name": "Finance",
+          "name": "Education",
           "icon": "fa-university",
           "description": "Innovative financial tools and services for the modern world.",
           "path": "/industries/finance"
         },
         {
-          "name": "Retail",
+          "name": "Logistics",
           "icon": "fa-store",
           "description": "Transforming retail experiences with technology-driven solutions.",
           "path": "/industries/retail"
-        }
+        },
+        {
+          "name": "Manufacturing",
+          "icon": "fa-store",
+          "description": "Transforming retail experiences with technology-driven solutions.",
+          "path": "/industries/retail"
+        },
+
+        { "name": "Enterprise", "icon": "fa-building", "description": "Innovative solutions for businesses of all sizes.", "path": "/industries/enterprise" },
+        { "name": "Education", "icon": "fa-graduation-cap", "description": "Empowering educators and students with technology.", "path": "/industries/education" },
+        { "name": "Real Estate", "icon": "fa-home", "description": "Revolutionizing the real estate industry with tech solutions.", "path": "/industries/real-estate" },
+        { "name": "Medical & Healthcare", "icon": "fa-heartbeat", "description": "Enhancing healthcare services with technology.", "path": "/industries/healthcare" },
+        { "name": "Technology Company", "icon": "fa-laptop-code", "description": "Tech solutions for companies looking to innovate.", "path": "/industries/technology" },
+        { "name": "Media & Entertainment", "icon": "fa-film", "description": "Transforming media and entertainment with tech.", "path": "/industries/media-entertainment" },
+        { "name": "NGO", "icon": "fa-hand-holding-heart", "description": "Supporting NGOs with technology-driven solutions.", "path": "/industries/ngo" }
       ]
     },
     {
@@ -55,23 +94,29 @@ export const navbarData ={
       "description": "Explore the range of services we offer.",
       "features": [
         {
-          "name": "Consulting",
+          "name": "Team Extension",
           "icon": "fa-lightbulb",
           "description": "Expert advice and strategic planning for your business.",
           "path": "/services/consulting"
         },
         {
-          "name": "Development",
+          "name": "Custom Software Development",
           "icon": "fa-cogs",
           "description": "End-to-end software development services for every industry.",
           "path": "/services/development"
         },
         {
-          "name": "Support",
+          "name": "Enterprise Software Development",
           "icon": "fa-headset",
           "description": "24/7 customer support to assist with any challenges.",
           "path": "/services/support"
-        }
+        },
+        {
+          "name": "MVP Development",
+          "icon": "fa-headset",
+          "description": "24/7 customer support to assist with any challenges.",
+          "path": "/services/support"
+        },
       ]
     },
     {
@@ -81,17 +126,30 @@ export const navbarData ={
       "description": "Discover our range of innovative products.",
       "features": [
         {
-          "name": "Product A",
+          "name": "Time2Task",
           "icon": "fa-box",
           "description": "Our flagship product designed to streamline operations.",
           "path": "/products/product-a"
         },
         {
-          "name": "Product B",
+          "name": "Cloud Clock In",
           "icon": "fa-cogs",
           "description": "A cutting-edge tool for improving productivity.",
           "path": "/products/product-b"
-        }
+        },
+        {
+          "name": "Flyte CRM",
+          "icon": "fa-cogs",
+          "description": "A cutting-edge tool for improving productivity.",
+          "path": "/products/product-b"
+        },
+        {
+          "name": "Flyte POS",
+          "icon": "fa-cogs",
+          "description": "A cutting-edge tool for improving productivity.",
+          "path": "/products/product-b"
+        },
+
       ]
     },
     {
@@ -606,49 +664,224 @@ export const projectData=[
 //industry data
 
 export const industrydata = {
-  subTitle:"Our Industries",
+  subTitle: "Our Industries",
   sectionTitle: "Driving innovation across industries",
   industries: [
-    { name: "Fintech", icon: "fa-solid fa-gauge" },
-    { name: "Startup", icon: "fas fa-lightbulb" },
-    { name: "Logistics", icon: "fas fa-truck" },
-    { name: "Retail & Manufacturing", icon: "fas fa-store" },
-    { name: "Enterprise", icon: "fas fa-building" },
-    { name: "Education", icon: "fas fa-graduation-cap" },
-    { name: "Real Estate", icon: "fas fa-home" },
-    { name: "Medical & Healthcare", icon: "fas fa-heartbeat" },
-    { name: "Technology Company", icon: "fas fa-laptop-code" },
-    { name: "Media & Entertainment", icon: "fas fa-film" },
-    { name: "NGO", icon: "fas fa-hand-holding-heart" }
-  ],
-  features: [
     {
-      icon: "fas fa-coins fa-2xl",
-      title: "Disruptive FinTech Solutions",
-      description: "Empowering financial innovation and growth."
+      name: "Fintech",
+      icon: "fa-solid fa-gauge",
+      features: [
+        { icon: "fas fa-coins fa-2xl", title: "Disruptive FinTech Solutions", description: "Empowering financial innovation and growth." },
+        { icon: "fas fa-credit-card fa-2xl", title: "Digital Payments", description: "Revolutionizing the way payments are made." },
+        { icon: "fas fa-chart-line fa-2xl", title: "Investment Strategies", description: "Providing innovative investment solutions." },
+        { icon: "fas fa-shield-alt fa-2xl", title: "Fraud Prevention", description: "Safeguarding transactions from malicious activities." },
+        { icon: "fas fa-lock fa-2xl", title: "Data Security", description: "Ensuring the security of sensitive financial data." }
+      ]
     },
     {
-      icon: "fas fa-cogs fa-2xl",
-      title: "Business & Operational Support",
-      description: "Streamlining business processes efficiently."
+      name: "Startup",
+      icon: "fas fa-lightbulb",
+      features: [
+        { icon: "fas fa-users fa-2xl", title: "Team Building", description: "Assembling innovative teams for success." },
+        { icon: "fas fa-bullhorn fa-2xl", title: "Brand Awareness", description: "Creating strong brand recognition in the market." },
+        { icon: "fas fa-chart-pie fa-2xl", title: "Market Strategy", description: "Identifying and targeting the right market." },
+        { icon: "fas fa-cogs fa-2xl", title: "Product Development", description: "Turning ideas into functional products." },
+        { icon: "fas fa-hand-holding-usd fa-2xl", title: "Investment & Funding", description: "Securing capital for business growth." }
+      ]
     },
     {
-      icon: "fas fa-bullhorn fa-2xl",
-      title: "Marketing, Customer Experience & Engagement",
-      description: "Enhancing customer journeys and brand presence."
+      name: "Logistics",
+      icon: "fas fa-truck",
+      features: [
+        { icon: "fas fa-route fa-2xl", title: "Supply Chain Management", description: "Optimizing the flow of goods and services." },
+        { icon: "fas fa-truck-moving fa-2xl", title: "Fleet Management", description: "Managing transportation logistics efficiently." },
+        { icon: "fas fa-box-open fa-2xl", title: "Inventory Tracking", description: "Monitoring inventory in real-time." },
+        { icon: "fas fa-shipping-fast fa-2xl", title: "Fast Delivery Solutions", description: "Ensuring on-time delivery to customers." },
+        { icon: "fas fa-chart-line fa-2xl", title: "Logistics Optimization", description: "Improving operational efficiencies in logistics." }
+      ]
     },
     {
-      icon: "fas fa-database fa-2xl",
-      title: "Data Management & Analysis",
-      description: "Transforming data into actionable insights."
+      name: "Retail & Manufacturing",
+      icon: "fas fa-store",
+      features: [
+        { icon: "fas fa-cogs fa-2xl", title: "Manufacturing Optimization", description: "Streamlining production processes." },
+        { icon: "fas fa-tags fa-2xl", title: "Retail Management", description: "Managing retail operations effectively." },
+        { icon: "fas fa-truck-loading fa-2xl", title: "Supply Chain Solutions", description: "Ensuring smooth product flow." },
+        { icon: "fas fa-box fa-2xl", title: "Product Packaging", description: "Enhancing packaging solutions for retail." },
+        { icon: "fas fa-percent fa-2xl", title: "Sales Growth", description: "Driving revenue through retail strategies." }
+      ]
     },
     {
-      icon: "fas fa-shield-alt fa-2xl",
-      title: "Risk, Compliance & Fraud",
-      description: "Ensuring security and regulatory compliance."
+      name: "Enterprise",
+      icon: "fas fa-building",
+      features: [
+        { icon: "fas fa-network-wired fa-2xl", title: "Network Infrastructure", description: "Building robust IT networks for enterprise." },
+        { icon: "fas fa-users-cog fa-2xl", title: "Enterprise Resource Planning", description: "Integrating business functions with ERP systems." },
+        { icon: "fas fa-chart-bar fa-2xl", title: "Business Analytics", description: "Leveraging data to drive business decisions." },
+        { icon: "fas fa-lock fa-2xl", title: "Security Solutions", description: "Providing enterprise-level security services." },
+        { icon: "fas fa-cloud fa-2xl", title: "Cloud Computing", description: "Empowering businesses with scalable cloud solutions." }
+      ]
+    },
+    {
+      name: "Education",
+      icon: "fas fa-graduation-cap",
+      features: [
+        { icon: "fas fa-laptop fa-2xl", title: "E-learning Solutions", description: "Providing online learning platforms." },
+        { icon: "fas fa-chalkboard-teacher fa-2xl", title: "Teacher Collaboration", description: "Improving collaboration among educators." },
+        { icon: "fas fa-book-open fa-2xl", title: "Curriculum Development", description: "Designing innovative learning curricula." },
+        { icon: "fas fa-certificate fa-2xl", title: "Certification Programs", description: "Offering credentialing for online learning." },
+        { icon: "fas fa-users fa-2xl", title: "Student Engagement", description: "Enhancing student participation and interaction." }
+      ]
+    },
+    {
+      name: "Real Estate",
+      icon: "fas fa-home",
+      features: [
+        { icon: "fas fa-building fa-2xl", title: "Property Development", description: "Developing and managing residential and commercial properties." },
+        { icon: "fas fa-search fa-2xl", title: "Market Research", description: "Analyzing market trends and property values." },
+        { icon: "fas fa-handshake fa-2xl", title: "Investment Opportunities", description: "Connecting investors with profitable properties." },
+        { icon: "fas fa-cogs fa-2xl", title: "Property Management", description: "Managing real estate properties efficiently." },
+        { icon: "fas fa-chart-line fa-2xl", title: "Real Estate Analytics", description: "Providing data-driven insights for real estate decisions." }
+      ]
+    },
+    {
+      name: "Medical & Healthcare",
+      icon: "fas fa-heartbeat",
+      features: [
+        { icon: "fas fa-stethoscope fa-2xl", title: "Telemedicine Solutions", description: "Providing remote healthcare services." },
+        { icon: "fas fa-pills fa-2xl", title: "Pharmaceutical Services", description: "Offering medical and pharmaceutical support." },
+        { icon: "fas fa-ambulance fa-2xl", title: "Emergency Care", description: "Ensuring fast and efficient emergency services." },
+        { icon: "fas fa-heart fa-2xl", title: "Patient Care", description: "Improving patient health and well-being." },
+        { icon: "fas fa-chart-medical fa-2xl", title: "Health Data Analytics", description: "Using data to enhance healthcare delivery." }
+      ]
+    },
+    {
+      name: "Technology Company",
+      icon: "fas fa-laptop-code",
+      features: [
+        { icon: "fas fa-code fa-2xl", title: "Software Development", description: "Building custom software solutions for businesses." },
+        { icon: "fas fa-cloud fa-2xl", title: "Cloud Solutions", description: "Enabling businesses with scalable cloud computing." },
+        { icon: "fas fa-digital-tachograph fa-2xl", title: "Tech Consulting", description: "Providing expert guidance for technology adoption." },
+        { icon: "fas fa-mobile-alt fa-2xl", title: "Mobile Development", description: "Creating mobile applications for various platforms." },
+        { icon: "fas fa-network-wired fa-2xl", title: "IT Infrastructure", description: "Designing and implementing tech infrastructures." }
+      ]
+    },
+    {
+      name: "Media & Entertainment",
+      icon: "fas fa-film",
+      features: [
+        { icon: "fas fa-video fa-2xl", title: "Film Production", description: "Producing high-quality films and content." },
+        { icon: "fas fa-headphones-alt fa-2xl", title: "Music Production", description: "Creating and producing original music." },
+        { icon: "fas fa-camera fa-2xl", title: "Media Coverage", description: "Providing media coverage and advertising services." },
+        { icon: "fas fa-tv fa-2xl", title: "Broadcasting", description: "Delivering media content across various platforms." },
+        { icon: "fas fa-play-circle fa-2xl", title: "Streaming Services", description: "Offering on-demand content to audiences." }
+      ]
+    },
+    {
+      name: "NGO",
+      icon: "fas fa-hand-holding-heart",
+      features: [
+        { icon: "fas fa-donate fa-2xl", title: "Fundraising", description: "Raising funds to support social causes." },
+        { icon: "fas fa-globe-americas fa-2xl", title: "Global Outreach", description: "Expanding social impact globally." },
+        { icon: "fas fa-users fa-2xl", title: "Community Support", description: "Building and supporting local communities." },
+        { icon: "fas fa-hands-helping fa-2xl", title: "Volunteer Coordination", description: "Engaging volunteers for community projects." },
+        { icon: "fas fa-handshake fa-2xl", title: "Partnerships", description: "Creating strategic partnerships for social good." }
+      ]
     }
   ]
 };
 
 
 
+
+// footer data
+
+export const footerData = {
+  "footer": {
+    "contactUs": {
+      "location": "Flyte Solutions Ltd, The Reeve, House 11, Road 33, Gulshan-1, Dhaka-1212, Bangladesh.",
+      "companyLogo": "/images/flyte-logo.png",
+      "successLogos": [
+        "/images/clip.png",
+        "/images/goodfirms.png",
+        "/images/Untitled-design.png",
+        "/images/iso1.png",
+        "/images/iso2.png",
+      ],
+      "phoneNumbers": ["+880-171-320-3656 ", "+880-179-353-2035 "],
+      "emails": ["info@flytesolutions.com ", "sales@flytesolutions.com "],
+      "socialLinks": [
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/@flytesoft/",
+          "icon": "fa-facebook"
+        },
+        {
+          "platform": "Twitter",
+          "url": "https://twitter.com/example",
+          "icon": "fa-twitter"
+        },
+        {
+          "platform": "LinkedIn",
+          "url": "https://www.linkedin.com/company/flytesolutions/posts/?feedView=all",
+          "icon": "fa-linkedin"
+        }
+      ],
+      "paymentMethods": [
+        {
+          "method": "Visa",
+          "icon": "/images/visa.png"
+        },
+        {
+          "method": "MasterCard",
+          "icon": "/images/mastercard.png"
+        },
+        {
+          "method": "Amex",
+          "icon": "/images/amex.png"
+        }
+      ]
+    },
+    "services": [
+      { "name": "Custom Software Development", "path": "/services/custom-software-development" },
+      { "name": "Mobile Application Development", "path": "/services/mobile-application-development" },
+      { "name": "MVP Development", "path": "/services/mvp-development" },
+      { "name": "Enterprise Software Development", "path": "/services/enterprise-software-development" },
+      { "name": "Team Extension", "path": "/services/team-extension" },
+      { "name": "IT Consultancy", "path": "/services/it-consultancy" },
+      { "name": "UI/UX Design", "path": "/services/ui-ux-design" },
+      { "name": "QA & Testing", "path": "/services/qa-testing" },
+      { "name": "DevOps", "path": "/services/devops" },
+      { "name": "Legacy Application", "path": "/services/legacy-application" },
+      { "name": "SaaS Development", "path": "/services/saas-development" },
+      { "name": "IT Outsourcing", "path": "/services/it-outsourcing" }
+    ],
+    "products": [
+      { "name": "Time2Task", "demoLink": "https://example.com/time2task" },
+      { "name": "Cloud ClockIn", "demoLink": "https://example.com/cloud-clockin" },
+      { "name": "Flyte Queue", "demoLink": "https://example.com/flyte-queue" },
+      { "name": "Flyte ERP", "demoLink": "https://example.com/flyte-erp" },
+      { "name": "Flyte CRM", "demoLink": "https://example.com/flyte-crm" },
+      { "name": "Flyte POS", "demoLink": "https://example.com/flyte-pos" },
+      { "name": "Inventory Management System", "demoLink": "https://example.com/inventory-management" },
+      { "name": "AI Chatbot", "demoLink": "https://example.com/ai-chatbot" },
+      { "name": "Board Meeting Management", "demoLink": "https://example.com/board-meeting" },
+      { "name": "Help Desk Management", "demoLink": "https://example.com/help-desk" },
+      { "name": "Clinic & Hospital Management", "demoLink": "https://example.com/clinic-hospital" },
+      { "name": "Document Management System", "demoLink": "https://example.com/document-management" }
+    ],
+    "industry": [
+      "Fintech",
+      "Startup",
+      "Logistics",
+      "Retail & Manufacturing",
+      "Enterprise",
+      "Education",
+      "Real Estate",
+      "Medical & Healthcare",
+      "Technology Company",
+      "Media & Entertainment",
+      "NGO"
+    ]
+  }
+}

@@ -51,6 +51,8 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({
         backgroundPosition: "center",
         width: "100%",
       }}
+      data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom"
     >
       <div className=" container mx-auto">
         <Title title={headerTitle} />

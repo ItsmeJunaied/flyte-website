@@ -18,14 +18,16 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({ serviceData }) => {
   const headertitle: string =
     "Empowering your vision through a range";
   return (
-    <div className="  flex flex-col gap-5">
+    <div className="  flex flex-col gap-5 " data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
       <div className="  ">
         <Subtitle Subtitle="Our Services" />
         <Title title={headertitle} />
       </div>
 
 
-      <div className="w-full flex flex-wrap justify-center gap-5 px-10 lg:px-0 mt-10 mb-10 lg:mb-0">
+      <div className="w-full flex flex-wrap justify-center gap-5 px-10 lg:px-0 mt-10 mb-10 lg:mb-0" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
         {serviceData &&
           serviceData?.slice(0, 6)?.map((data, index) => (
             <div

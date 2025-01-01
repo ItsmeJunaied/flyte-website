@@ -4,7 +4,6 @@ import { bannerData,  brandData, industrydata, serviceData, techData } from "../
 import Brands from "./component/Home/Brands";
 import ServiceSection from "./component/Home/ServiceSection";
 import IndustrySection from "./component/Home/IndustrySection";
-import Footer from "./component/Common/Footer";
 import Contact from "./component/Contact/Contact";
 import OperationsSections from "./component/Home/OperationsSections";
 import ProjectSection from "./component/Home/ProjectSection";
@@ -13,7 +12,7 @@ import ServiceMarquee from "./component/Home/ServiceMarquee";
 const page = () => {
   // console.log(brandData)
   return (
-    <div className=" bg-[#F7F8FD]">
+    <div className=" ">
       <div className=" ">
         <div className=" ">
           <Banner bannerData={bannerData} />
@@ -43,16 +42,12 @@ const page = () => {
         {/* <div className=" my-[30px]">
           <BlogSection blogData={blogData}/>
         </div> */}
-        <div className=" mt-24 container mx-auto">
+        <div className="  container mx-auto">
           <Contact/>
         </div>
 
 
-        <div className=" bg-[#1A1A1A]">
-          <div className=" container mx-auto">
-          <Footer />
-          </div>
-        </div>
+
       </div>
     </div>
   );
