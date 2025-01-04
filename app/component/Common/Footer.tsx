@@ -4,7 +4,7 @@ import React from "react";
 const Footer: React.FC = () => {
   const { contactUs, services, products, industry } = footerData.footer;
   return (
-    <footer className="footer text-base-content py-10">
+    <footer className="footer text-base-content py-10 px-5">
       {/* Contact Section */}
       <aside className="flex flex-col gap-4">
         <img src={contactUs.companyLogo} alt="Company Logo" />

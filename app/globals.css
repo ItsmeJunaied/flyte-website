@@ -247,6 +247,7 @@ body::-webkit-scrollbar-thumb {
   height: 0;
   overflow: hidden;
   transition: height 0.4s;
+  z-index: 100;
 }
 .dropdown__content {
   row-gap: 1.75rem;

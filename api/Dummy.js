@@ -791,11 +791,7 @@ export const industrydata = {
   ]
 };
 
-
-
-
 // footer data
-
 export const footerData = {
   "footer": {
     "contactUs": {
@@ -885,3 +881,177 @@ export const footerData = {
     ]
   }
 }
+
+// case study
+
+export const caseStudyData= [
+  {
+    "id":1,
+    "image": "/images/FuelPro.png",
+    "title": "Time Tracker",
+    "description": "A task management tool to plan, assign, and track project tasks efficiently.",
+    "tags": ["Time Tracking", "Project Management", "Task Assignment"]
+  },
+  {
+    "id":2,
+    "image": "/images/FuelPro.png",
+    "title": "Project X",
+    "description": "A powerful tool to manage complex projects with ease and efficiency.",
+    "tags": ["Project Management", "Collaboration", "Productivity"]
+  },
+  {
+    "id":3,
+    "image": "/images/FuelPro.png",
+    "title": "Task Master",
+    "description": "An intuitive task management app that helps teams stay organized and on track.",
+    "tags": ["Task Management", "Organization", "Teamwork"]
+  },
+  {
+    "id":4,
+    "image": "/images/FuelPro.png",
+    "title": "Collab Hub",
+    "description": "A collaboration platform for teams to communicate, share files, and track progress.",
+    "tags": ["Collaboration", "Communication", "File Sharing"]
+  },
+  {
+    "id":5,
+    "image": "/images/FuelPro.png",
+    "title": "Time Saver",
+    "description": "A time management app that helps you save time with automated scheduling and reminders.",
+    "tags": ["Time Management", "Scheduling", "Reminders"]
+  },
+  {
+    "id":6,
+    "image": "/images/FuelPro.png",
+    "title": "Team Up",
+    "description": "A team management app that fosters communication and collaboration among team members.",
+    "tags": ["Team Management", "Collaboration", "Communication"]
+  },
+  {
+    "id":7,
+    "image": "/images/FuelPro.png",
+    "title": "Work Flow Pro",
+    "description": "A work management tool to streamline workflows, automate tasks, and boost productivity.",
+    "tags": ["Workflow", "Automation", "Productivity"]
+  },
+  {
+    "id":8,
+    "image": "/images/FuelPro.png",
+    "title": "Focus Time",
+    "description": "A productivity app designed to keep you focused by blocking distractions.",
+    "tags": ["Productivity", "Focus", "Distraction-Free"]
+  },
+  {
+    "id":9,
+    "image": "/images/FuelPro.png",
+    "title": "Smart Scheduler",
+    "description": "An intelligent scheduling app that adjusts to your work habits and preferences.",
+    "tags": ["Scheduling", "Automation", "Productivity"]
+  },
+  {
+    "id":10,
+    "image": "/images/FuelPro.png",
+    "title": "Work Mate",
+    "description": "A collaborative workspace for teams to track tasks, share documents, and meet deadlines.",
+    "tags": ["Collaboration", "Workspace", "Teamwork"]
+  },
+  {
+    "id":11,
+    "image": "/images/FuelPro.png",
+    "title": "Pro Planner",
+    "description": "A professional planner to organize tasks, appointments, and goals efficiently.",
+    "tags": ["Planning", "Task Management", "Goal Setting"]
+  },
+  {
+    "id":12,
+    "image": "/images/FuelPro.png",
+    "title": "Team Sync",
+    "description": "A tool that synchronizes teams across time zones, making collaboration easy and efficient.",
+    "tags": ["Teamwork", "Time Zones", "Collaboration"]
+  },
+  {
+    "id":13,
+    "image": "/images/FuelPro.png",
+    "title": "Task Flow",
+    "description": "A task management solution to track tasks from start to finish with clear deadlines.",
+    "tags": ["Task Management", "Deadline Tracking", "Organization"]
+  },
+  {
+    "id":14,
+    "image": "/images/FuelPro.png",
+    "title": "Quick Task",
+    "description": "An app for quick task organization and tracking, ensuring high productivity.",
+    "tags": ["Task Organization", "Quick Tasks", "Efficiency"]
+  },
+  {
+    "id":15,
+    "image": "/images/FuelPro.png",
+    "title": "Meeting Planner",
+    "description": "A meeting scheduling app that optimizes team calendars and time slots.",
+    "tags": ["Scheduling", "Meetings", "Team Coordination"]
+  },
+  {
+    "id":16,
+    "image": "/images/FuelPro.png",
+    "title": "Team Organizer",
+    "description": "An app that organizes team tasks, schedules, and milestones to improve workflow.",
+    "tags": ["Team Management", "Task Scheduling", "Team Collaboration"]
+  },
+  {
+    "id":17,
+    "image": "/images/FuelPro.png",
+    "title": "Project Manager",
+    "description": "A project management tool to plan, organize, and execute projects effectively.",
+    "tags": ["Project Management", "Planning", "Execution"]
+  },
+  {
+    "id":18,
+    "image": "/images/FuelPro.png",
+    "title": "Sync Pro",
+    "description": "A synchronization tool for teams to coordinate tasks and share updates in real-time.",
+    "tags": ["Syncing", "Collaboration", "Real-time"]
+  },
+  {
+    "id":19,
+    "image": "/images/FuelPro.png",
+    "title": "Task Genie",
+    "description": "A magical task manager that adapts to your needs and keeps you on track.",
+    "tags": ["Task Management", "Productivity", "Adaptability"]
+  },
+  {
+    "id":20,
+    "image": "/images/FuelPro.png",
+    "title": "Time Master",
+    "description": "A time management tool that tracks, analyzes, and improves your time usage.",
+    "tags": ["Time Management", "Analytics", "Productivity"]
+  },
+  {
+    "id":21,
+    "image": "/images/FuelPro.png",
+    "title": "Team Vision",
+    "description": "A strategic planning app for teams to align on goals, timelines, and progress.",
+    "tags": ["Strategic Planning", "Team Alignment", "Goal Setting"]
+  },
+  {
+    "id":22,
+    "image": "/images/FuelPro.png",
+    "title": "Focus Pro",
+    "description": "A focused environment app that helps you stay on task and avoid distractions.",
+    "tags": ["Focus", "Productivity", "Distraction-Free"]
+  },
+  {
+    "id":23,
+    "image": "/images/FuelPro.png",
+    "title": "Task Hub",
+    "description": "A hub for organizing and managing all your tasks, deadlines, and projects.",
+    "tags": ["Task Management", "Organization", "Deadline Tracking"]
+  },
+  {
+    "id":24,
+    "image": "/images/FuelPro.png",
+    "title": "Work Force",
+    "description": "A workforce management app designed for teams to track work hours and productivity.",
+    "tags": ["Workforce Management", "Time Tracking", "Productivity"]
+  }
+]
+

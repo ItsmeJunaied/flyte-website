@@ -1,10 +1,15 @@
 import React from 'react';
-import CommingSoon from '../component/Common/CommingSoon';
+import CaseStudies from '../component/CaseStudies/CaseStudies';
+import CaseStudiesCards from '../component/CaseStudies/CaseStudiesCards';
+import { caseStudyData } from '@/api/Dummy';
+import Corevalues from '../component/CaseStudies/Corevalues';
 
 const page = () => {
     return (
-        <div>
-            <CommingSoon/>
+        <div className=' '>
+            <CaseStudies/>
+            <CaseStudiesCards caseStudyData={caseStudyData} />
+            <Corevalues/>
         </div>
     );
 };
