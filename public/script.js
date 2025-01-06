@@ -8,6 +8,7 @@ const showMenu = (toggleId, navId) =>{
         nav.classList.toggle('show-menu')
         // Add show-icon to show and hide menu icon
         toggle.classList.toggle('show-icon')
+        document.body.classList.toggle('no-scroll', nav.classList.contains('show-menu'));
     })
  }
  
@@ -68,7 +69,9 @@ const showMenu = (toggleId, navId) =>{
          dropdownItems.forEach((e) =>{
              e.classList.remove('show-dropdown')
          })
+         document.body.classList.remove("no-scroll");
      }
+
  }
  
  addEventListener('resize', removeStyle)

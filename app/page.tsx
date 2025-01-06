@@ -1,14 +1,14 @@
 import React from "react";
-import Banner from "./component/Home/Banner";
+import Banner from "../component/Home/Banner";
 import { bannerData,  brandData, industrydata, serviceData, techData } from "../api/Dummy";
-import Brands from "./component/Home/Brands";
-import ServiceSection from "./component/Home/ServiceSection";
-import IndustrySection from "./component/Home/IndustrySection";
-import Contact from "./component/Contact/Contact";
-import OperationsSections from "./component/Home/OperationsSections";
-import ProjectSection from "./component/Home/ProjectSection";
-import AboutUs from "./component/Home/AboutUs";
-import ServiceMarquee from "./component/Home/ServiceMarquee";
+import Brands from "../component/Home/Brands";
+import ServiceSection from "../component/Home/ServiceSection";
+import IndustrySection from "../component/Home/IndustrySection";
+import Contact from "../component/Contact/Contact";
+import OperationsSections from "../component/Home/OperationsSections";
+import ProjectSection from "../component/Home/ProjectSection";
+import AboutUs from "../component/Home/AboutUs";
+import ServiceMarquee from "../component/Home/ServiceMarquee";
 const page = () => {
   // console.log(brandData)
   return (

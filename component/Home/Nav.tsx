@@ -1,3 +1,4 @@
+import { navbarData } from "@/api/Dummy";
 import Link from "next/link";
 import React from "react";
 
@@ -18,9 +19,9 @@ type NavData = {
 
 const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
   return (
-    <div className="header border-b-2 border-[#F4F2F0]">
-      <nav className="nav container ">
-        <div className="nav__data">
+    <div className="header">
+      <nav className="nav container mx-auto">
+        <div className="nav__data px-5">
           <Link href="/">
             <img src="/images/flyte-logo.png" alt="flyte solutions Ltd." />
           </Link>
@@ -40,13 +41,10 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
               >
                 {item.type === "dropdown" ? (
                   <>
-                  
-                    <Link className=" flex justify-center items-center h-full" href={item.path} passHref>
                     <div className="nav__link dropdown__button">
                       {item.name}{" "}
                       <i className="fa-solid fa-chevron-down fa-2xs"></i>
                     </div>
-                    </Link>
                     <div className="dropdown__container bg-[#F4F2F0]">
                       <div className="dropdown__content">
                         <div className="flex flex-col lg:flex-row gap-10 container mx-auto">

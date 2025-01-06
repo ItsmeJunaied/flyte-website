@@ -1,6 +1,6 @@
-"use client"
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+
 import React from "react";
+import PlaneLottieBanner from "./HomeSubComponents.tsx/PlaneLottieBanner";
 
 type BannerProps = {
   bannerData: {
@@ -33,21 +33,11 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
       }}
       className="flex flex-col justify-center items-center gap-5 "
     >
-
       <div className="relative pt-3">
         <h1 className="text-[#6ec1ff] text-lg font-bold font-['DM Sans'] uppercase leading-tight tracking-widest">
           -{bannerData.title}
         </h1>
-        <DotLottieReact
-          src="/plane.lottie"
-          loop
-          autoplay
-          style={{
-            width: "200px", // Adjust size as needed
-            height: "200px", // Adjust size as needed
-          }}
-          className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2"
-        />
+        <PlaneLottieBanner />
       </div>
 
       <div className=" w-full flex justify-center items-center">
@@ -62,11 +52,12 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
         </h2>
       </div>
 
-      <button id="alertButton" className=" uppercase px-6 py-2 bg-btnColor text-white rounded-md">
+      <button
+        id="alertButton"
+        className=" uppercase px-6 py-2 bg-btnColor text-white rounded-md"
+      >
         Book A Consultation
       </button>
-
-
     </div>
   );
 };

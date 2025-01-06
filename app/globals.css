@@ -15,6 +15,10 @@ body::-webkit-scrollbar-track {
   background: orange;        /* color of the tracking area */
 }
 
+.no-scroll {
+  overflow: hidden; 
+  height: 100vh; 
+}
 body::-webkit-scrollbar-thumb {
   background-color: blue;    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
@@ -178,14 +182,14 @@ body::-webkit-scrollbar-thumb {
 .nav__toggle-close {
   opacity: 0;
 }
-@media screen and (max-width: 1118px) {
+@media screen and (max-width: 980px) {
   .nav__menu {
     background-color: var(--body-color);
     position: fixed; /* Make sidebar fixed to the viewport */
-    top: 0;
+    top: 55px;
     left: -100%; /* Initially hidden outside the viewport */
     height: 100vh; /* Full height of the viewport */
-    width: 80%; /* Sidebar width is 80% of the viewport */
+    width: 100%; /* Sidebar width is 80% of the viewport */
     overflow-y: auto; /* Enable vertical scrolling inside the sidebar */
     padding: 1.5rem; /* Optional padding for content */
     pointer-events: none; /* Prevent interaction when hidden */
@@ -199,6 +203,8 @@ body::-webkit-scrollbar-thumb {
     background-color: hsl(220, 12%, 70%);
   }
 }
+
+
 .nav__link {
   color: black;
   font-weight: var(--font-semi-bold);
@@ -214,7 +220,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Show menu */
 .show-menu {
-  left: 0; /* Move into view */
+  left: 0;
   pointer-events: initial;
 }
 
@@ -247,7 +253,7 @@ body::-webkit-scrollbar-thumb {
   height: 0;
   overflow: hidden;
   transition: height 0.4s;
-  z-index: 100;
+  z-index: 1000;
 }
 .dropdown__content {
   row-gap: 1.75rem;
@@ -303,7 +309,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 /* For large devices */
-@media screen and (min-width: 1118px) {
+@media screen and (min-width: 981px) {
   .dropdown__container{
     padding-top: 32px;
     padding-bottom: 32px;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Contact from '../component/Contact/Contact';
+import Contact from '../../component/Contact/Contact';
 
 export const metadata = {
     title: "Contact Us | Flyte Solutions Ltd.",

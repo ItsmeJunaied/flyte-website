@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-"use client"
+
 import React from "react";
 import Title from "../Common/Title";
 import Subtitle from "../Common/Subtitle";
 import { FaCheckCircle } from "react-icons/fa";
 import Link from "next/link";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import PlaneLottieAboutUs from "./HomeSubComponents.tsx/PlaneLottieAboutUs";
 const AboutUs: React.FC = () => {
   return (
     <div className="container mx-auto pt-12">
@@ -21,7 +22,7 @@ const AboutUs: React.FC = () => {
               <img
                 src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/about-us-img.jpg"
                 alt="Team Collaboration"
-                className="rounded-lg shadow-lg  "
+                className="rounded-lg shadow-lg"
               />
 
               {/* Top-Left Badge */}
@@ -54,20 +55,24 @@ const AboutUs: React.FC = () => {
           {/* Right Content */}
           <div className="relative max-w-[450px] max-h-[600px] flex flex-col gap-4">
             {/* Lottie Animation */}
-            <DotLottieReact
-              src="/plane2.lottie"
-              loop
-              autoplay
-             
-              className="absolute -top-20 -left-32"
-            />
+            <PlaneLottieAboutUs />
 
             {/* Content */}
             <p className="text-[#6c757d] text-base leading-7 mb-6">
-              <span className=" text-[#24B0E4] text-xl font-semibold">Flyte</span> Solutions is a trusted global provider of cutting-edge IT services, dedicated to empowering businesses with innovative and efficient solutions. From system integration to cloud technologies, we tailor our expertise to meet the evolving needs of diverse industries.
+              <span className=" text-[#24B0E4] text-xl font-semibold">
+                Flyte
+              </span>{" "}
+              Solutions is a trusted global provider of cutting-edge IT
+              services, dedicated to empowering businesses with innovative and
+              efficient solutions. From system integration to cloud
+              technologies, we tailor our expertise to meet the evolving needs
+              of diverse industries.
             </p>
             <p className="text-[#6c757d] text-base leading-7 mb-8">
-              With a focus on quality and customer satisfaction, Flyte has earned global recognition, including ISO certification. Our commitment to excellence drives operational success, ensuring reliability and top-tier service at every step.
+              With a focus on quality and customer satisfaction, Flyte has
+              earned global recognition, including ISO certification. Our
+              commitment to excellence drives operational success, ensuring
+              reliability and top-tier service at every step.
             </p>
 
             {/* Features List */}
@@ -76,27 +81,35 @@ const AboutUs: React.FC = () => {
                 <span className="text-btnColor text-lg px-1 py-0.5 rounded-full">
                   <FaCheckCircle />
                 </span>
-                <span className="text-[#15161B] font-semibold">Client Satisfaction</span>
+                <span className="text-[#15161B] font-semibold">
+                  Client Satisfaction
+                </span>
               </div>
 
               <div className="flex items-center gap-2">
                 <span className="text-btnColor text-lg px-1 py-0.5 rounded-full">
                   <FaCheckCircle />
                 </span>
-                <span className="text-[#15161B] font-semibold">Full Flexibility</span>
+                <span className="text-[#15161B] font-semibold">
+                  Full Flexibility
+                </span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-btnColor text-lg px-1 py-0.5 rounded-full">
                   <FaCheckCircle />
                 </span>
-                <span className="text-[#15161B] font-semibold">Time Zone Aligned</span>
+                <span className="text-[#15161B] font-semibold">
+                  Time Zone Aligned
+                </span>
               </div>
 
               <div className="flex items-center gap-2">
                 <span className="text-btnColor text-lg px-1 py-0.5 rounded-full">
                   <FaCheckCircle />
                 </span>
-                <span className="text-[#15161B] font-semibold">24/7 Availability</span>
+                <span className="text-[#15161B] font-semibold">
+                  24/7 Availability
+                </span>
               </div>
             </div>
 
@@ -107,12 +120,8 @@ const AboutUs: React.FC = () => {
               </Link>
             </div>
           </div>
-
         </div>
       </div>
-
-
-
     </div>
   );
 };

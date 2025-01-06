@@ -72,32 +72,13 @@ const ProjectSection: React.FC = () => {
     },
   ];
 
-  useEffect(() => {
-    const container = containerRef.current;
-    const scroll = scrollRef.current;
 
-    if (container && scroll) {
-      const scrollWidth = scroll.scrollWidth - container.offsetWidth;
-
-      gsap.to(scroll, {
-        x: -scrollWidth,
-        ease: "none",
-        scrollTrigger: {
-          trigger: container,
-          start: "top top",
-          end: () => `+=${scrollWidth}`,
-          scrub: true,
-          pin: true,
-        },
-      });
-    }
-  }, []);
 
   return (
     <div ref={containerRef} className="relative overflow-hidden bg-black py-10">
       <div className="container mx-auto py-12">
         <Subtitle Subtitle="Our Work" />
-        <Title title="Featured Case Studies" />
+        <Title fontColor="text-white" title="Featured Case Studies" />
       </div>
       <div ref={scrollRef} className="flex gap-10">
         {projectData.map((project, index) => (

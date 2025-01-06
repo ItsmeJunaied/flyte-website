@@ -27,10 +27,10 @@ const CaseStudiesCards: React.FC<CaseStudyProps> = ({ caseStudyData }) => {
   
 
   return (
-    <div className='bg-black rounded-t-[60px] py-10 px-10 lg:px-0'>
+    <div className='bg-whiterounded-t-[60px] py-10 px-10 lg:px-0'>
       <div className='container mx-auto'>
         <Subtitle Subtitle={subtitle} />
-        <Title title={title} fontSize="text-3xl" fontColor="text-white" />
+        <Title title={title} fontSize="text-3xl" fontColor="text-black" />
 
         <div className="py-20 ">
           {/* Loop through caseStudyData to create each row of case study */}
@@ -51,7 +51,7 @@ const CaseStudiesCards: React.FC<CaseStudyProps> = ({ caseStudyData }) => {
                   </div>
                   <div className="flex flex-row items-center">
                     <div className="pt-2">
-                      <h1 className="text-3xl font-semibold text-white">{caseStudy.title}</h1>
+                      <h1 className="text-3xl font-semibold text-black">{caseStudy.title}</h1>
                     </div>
                    
                   </div>
@@ -79,7 +79,7 @@ const CaseStudiesCards: React.FC<CaseStudyProps> = ({ caseStudyData }) => {
                   </div>
                   <div className="flex flex-row items-center">
                     <div className="pt-2">
-                      <h1 className="text-3xl font-semibold text-white">{caseStudy.title}</h1>
+                      <h1 className="text-3xl font-semibold text-black">{caseStudy.title}</h1>
                     </div>
 
                   </div>
