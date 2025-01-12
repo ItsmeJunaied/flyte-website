@@ -4,6 +4,7 @@ import { useForm, FormProvider } from "react-hook-form";
 import OverviewStep from "./OverviewStep";
 import ServicesStep from "./ServicesStep";
 import TechStackStep from "./TechStackStep";
+import FormStepHeader from "./FormStepHeader";
 
 const ApplicationForm = () => {
   const methods = useForm({
@@ -33,7 +34,7 @@ const ApplicationForm = () => {
   return (
     <div>
       <div className="text-center">
-        
+        {/* <FormStepHeader currentStep={currentStep} /> */}
       </div>
       <FormProvider {...methods}>
         <form onSubmit={methods.handleSubmit(onSubmit)}>
