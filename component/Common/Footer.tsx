@@ -186,8 +186,7 @@ const Footer: React.FC = () => {
       <footer className="footer footer-center  text-base-content p-4">
         <aside>
           <p>
-            Copyright © 2012 - {new Date().getFullYear()} - All right reserved by ACME
-            Industries Ltd
+            Copyright © 2012 - {new Date().getFullYear()} - All right reserved by Flyte Solutions Ltd.
           </p>
         </aside>
       </footer>
