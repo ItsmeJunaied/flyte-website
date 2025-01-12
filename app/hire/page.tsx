@@ -1,5 +1,5 @@
 import React from 'react';
-import CommingSoon from '../../component/Common/CommingSoon';
+import HireBanner from '@/component/Hire/HireBanner';
 
 export const metadata = {
     title: "Hire | Flyte Solutions Ltd.",
@@ -9,7 +9,7 @@ const page = () => {
     
     return (
         <div>
-            <CommingSoon/>
+            <HireBanner/>
         </div>
     );
 };
