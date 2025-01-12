@@ -1,8 +1,9 @@
 import React from "react";
 
 const FormStepHeader: React.FC<{ currentStep: number }> = ({ currentStep }) => {
+  console.log(currentStep)
   return (
-    <div className="flex justify-between w-96 mx-auto">
+    <div className="flex justify-between w-96 mx-auto mb-8">
       <div className="flex flex-col items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
           <path

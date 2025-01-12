@@ -14,11 +14,11 @@ const OverviewStep: React.FC<OverviewStepProps> = ({ agreeToggle, onToggle }) =>
 
   return (
     <div>
-      <p className="text-[#4a4a4a] text-center text-base font-semibold mb-10">
+      <p className="text-[#4a4a4a] md:text-center text-base font-semibold mb-5 md:mb-10">
         Provide your basic details and project requirements.
       </p>
 
-      <div className="grid grid-cols-2 gap-8">
+      <div className="md:grid md:grid-cols-2 gap-8 space-y-3 md:space-y-0">
         {/* name  */}
         <div>
           <label className="text-[#666666] text-xs font-semibold mb-2">Name</label>
@@ -175,10 +175,9 @@ const OverviewStep: React.FC<OverviewStepProps> = ({ agreeToggle, onToggle }) =>
             >
               {/* Toggle Button */}
               <div
-               
                 className={`${
                   agreeToggle ? "bg-[#5856d6]" : "bg-white"
-                } w-[49px] h-6 relative rounded-[32px] border border-[#cccccc] cursor-pointer`}
+                } w-[80px] md:w-[49px] h-6 relative rounded-[32px] border border-[#cccccc] cursor-pointer`}
               >
                 {/* Toggle Indicator */}
                 <div
@@ -187,7 +186,7 @@ const OverviewStep: React.FC<OverviewStepProps> = ({ agreeToggle, onToggle }) =>
                   } w-[18px] h-[18px] top-[2px] absolute  rounded-[32px] border border-[#cccccc]`}
                 />
               </div>
-              <span>
+              <span className="text-xs md:text-base">
                 I agree to the Non-Disclosure Agreement (NDA) and confirm that all shared information will
                 remain confidential.
               </span>
