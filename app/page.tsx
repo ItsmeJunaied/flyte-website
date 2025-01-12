@@ -43,11 +43,8 @@ const page = () => {
           <BlogSection blogData={blogData}/>
         </div> */}
         <div className="  container mx-auto">
-          <Contact/>
+          <Contact  />
         </div>
-
-
-
       </div>
     </div>
   );
