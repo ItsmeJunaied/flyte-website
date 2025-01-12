@@ -181,8 +181,8 @@ export const navbarData = {
         },
         {
           name: "Cloud Clock In",
-          icon: "fa-cogs",
-          description: "A cutting-edge tool for improving productivity.",
+          icon: "fa-cogs", 
+          description: "A cutting-edge tool for improving productivity..",
           path: "/products/product-b",
         },
         {
