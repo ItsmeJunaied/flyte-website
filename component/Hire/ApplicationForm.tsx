@@ -10,7 +10,7 @@ const ApplicationForm = () => {
   const methods = useForm({
     mode: "onChange",
   });
-  console.log("methods", methods);
+
   const [currentStep, setCurrentStep] = useState(1);
   const [agreeToggle, setAgreeToggle] = useState<boolean>(false);
 
