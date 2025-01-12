@@ -26,7 +26,7 @@ const HireBanner = () => {
 
           {/* <Link href="/job-application-wizard" className="px-2 md:px-8 py-1 md:py-3 text-sm bg-[#5856d6] hover:bg-[#3d3b98] rounded-md mt-3 md:mt-8">Build Your Development Team</Link> */}
           
-          <CustomNavigateButton 
+          <CustomNavigateButton
             btnName="Build Your Development Team"
             textColor="white"
             textHoverColor="white"
