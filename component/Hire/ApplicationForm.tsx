@@ -34,7 +34,7 @@ const ApplicationForm = () => {
   return (
     <div>
       <div className="text-center">
-        {/* <FormStepHeader currentStep={currentStep} /> */}
+        <FormStepHeader currentStep={currentStep} />
       </div>
       <FormProvider {...methods}>
         <form onSubmit={methods.handleSubmit(onSubmit)}>
