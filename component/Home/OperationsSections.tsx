@@ -29,8 +29,7 @@ interface OperationsSectionsProps {
 const OperationsSections: React.FC<OperationsSectionsProps> = ({
   techData,
 }) => {
-  const headerTitle: string =
-    "Innovative technology that transforms";
+  const headerTitle: string = "Innovative technology that transforms";
 
   // Section titles
   const sections = [
@@ -44,7 +43,7 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({
 
   return (
     <div
-      className="py-[40px]"
+      className="py-[40px] "
       style={{
         backgroundImage: "url('/images/operationsBg.png')",
         backgroundSize: "cover",
@@ -52,56 +51,60 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({
         width: "100%",
       }}
       data-aos="fade-up"
-    data-aos-anchor-placement="top-bottom"
     >
       <div className=" container mx-auto">
-        <Title title={headerTitle} />
-      </div>
+        <div className=" ">
+          <Title title={headerTitle} />
+        </div>
 
-      <div className="container mx-auto flex flex-wrap gap-5 py-10 px-5 lg:px-0 justify-center">
-        {sections.map((section) => {
-          const category = techData[section.key as keyof TechData]; 
+        <div
+          className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 py-10 px-5 lg:px-0 justify-center "
+          data-aos-anchor-placement="top-bottom"
+        >
+          {sections.map((section) => {
+            const category = techData[section.key as keyof TechData];
 
-          return (
-            <div
-              key={section.key}
-              className=" w-[400px] p-[24px] bg-white shadow-[0px_0px_10px_10px_rgba(235,235,235,0.25)] flex-col justify-start items-start gap-4 inline-flex overflow-hidden"
-            >
-              <div className="text-black text-base font-bold">
-                {category.title} {/* Use category.title here */}
-              </div>
-              <div className="self-stretch text-[#9c9c9c] text-xs font-normal">
-                {category.description}
-              </div>
+            return (
+              <div
+                key={section.key}
+                className=" h-auto p-[24px] bg-white shadow-[0px_0px_10px_10px_rgba(235,235,235,0.25)] flex-col justify-start items-stretch gap-4 inline-flex overflow-hidden"
+              >
+                <div className="text-black text-base font-bold">
+                  {category.title} {/* Use category.title here */}
+                </div>
+                <div className="self-stretch text-[#9c9c9c] text-xs font-normal">
+                  {category.description}
+                </div>
 
-              <div className="flex-col justify-start items-start gap-2.5 flex">
-                <div className="grid grid-cols-3 gap-6">
-                  {category.technologies.map((tech, idx) => (
-                    <div
-                      key={idx}
-                      className="w-fit px-2 py-1 rounded-[15px] border border-[#e9e9e9] justify-start items-center gap-1.5 flex"
-                    >
-                      <img
-                        src={tech.image}
-                        alt={tech.name}
-                        className="w-3 h-3"
-                      />
-                      <div className="text-center text-[#5e5e5e] text-[10px] font-medium">
-                        {tech.name}
+                <div className="flex-col justify-start items-start gap-2.5 flex">
+                  <div className="grid grid-cols-3 gap-6">
+                    {category.technologies.map((tech, idx) => (
+                      <div
+                        key={idx}
+                        className="w-fit px-2 py-1 rounded-[15px] border border-[#e9e9e9] justify-start items-center gap-1.5 flex"
+                      >
+                        <img
+                          src={tech.image}
+                          alt={tech.name}
+                          className="w-3 h-3"
+                        />
+                        <div className="text-center text-[#5e5e5e] text-[10px] font-medium">
+                          {tech.name}
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
 
-      <div className="w-full h-[42px] justify-center items- gap-2.5 inline-flex overflow-hidden">
-        <button className="text-white bg-[#5856d6] rounded-md px-8 py-3 text-sm font-semibold">
-          Learn More
-        </button>
+        <div className="w-full h-[42px] justify-center items- gap-2.5 inline-flex overflow-hidden">
+          <button className="text-white bg-[#5856d6] rounded-md px-8 py-3 text-sm font-semibold">
+            Learn More
+          </button>
+        </div>
       </div>
     </div>
   );

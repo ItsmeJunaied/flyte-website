@@ -1,188 +1,235 @@
 //navbar
 
-export const navbarData ={
-  "menu": [
+export const navbarData = {
+  menu: [
     {
-      "name": "Hire",
-      "type": "dropdown",
-      "path": "/hire",
-      "description": "Explore innovative solutions designed to simplify processes . ",
-      "features": [
+      name: "Hire",
+      type: "dropdown",
+      path: "/hire",
+      description:
+        "Explore innovative solutions designed to simplify processes . ",
+      features: [
         {
-          "name": "Frontend Developers",
-          "icon": "fa-briefcase",
-          "description": "Design and develop user-friendly interfaces for web applications.",
-          "path": "/hire/job-openings"
+          name: "Frontend Developers",
+          icon: "fa-briefcase",
+          description:
+            "Design and develop user-friendly interfaces for web applications.",
+          path: "/hire/job-openings",
         },
         {
-          "name": "Backend Developers",
-          "icon": "fa-user-tie",
-          "description": "Join us as a freelancer and work on exciting projects.",
-          "path": "/hire/freelance-opportunities"
+          name: "Backend Developers",
+          icon: "fa-user-tie",
+          description: "Join us as a freelancer and work on exciting projects.",
+          path: "/hire/freelance-opportunities",
         },
         {
-          "name": "Mobile App Developers",
-          "icon": "fa-mobile-alt",
-          "description": "Create mobile applications for iOS and Android platforms.",
-          "path": "/hire/contract-roles"
+          name: "Mobile App Developers",
+          icon: "fa-mobile-alt",
+          description:
+            "Create mobile applications for iOS and Android platforms.",
+          path: "/hire/contract-roles",
         },
         {
-          "name": "QA Engineers",
-          "icon": "fa-bug",
-          "description": "Test software applications to ensure quality and performance.",
-          "path": "/hire/qa-roles"
+          name: "QA Engineers",
+          icon: "fa-bug",
+          description:
+            "Test software applications to ensure quality and performance.",
+          path: "/hire/qa-roles",
         },
         {
-          "name": "DevOps Engineers",
-          "icon": "fa-tools",
-          "description": "Streamline development processes and infrastructure with DevOps practices.",
-          "path": "/hire/devops-roles"
+          name: "DevOps Engineers",
+          icon: "fa-tools",
+          description:
+            "Streamline development processes and infrastructure with DevOps practices.",
+          path: "/hire/devops-roles",
         },
         {
-          "name": "AI & ML Specialists",
-          "icon": "fa-robot",
-          "description": "Leverage AI and ML technologies to build smart applications.",
-          "path": "/hire/ai-ml-roles"
-        }
-
-      ]
+          name: "AI & ML Specialists",
+          icon: "fa-robot",
+          description:
+            "Leverage AI and ML technologies to build smart applications.",
+          path: "/hire/ai-ml-roles",
+        },
+      ],
     },
     {
-      "name": "Industries",
-      "type": "dropdown",
-      "path": "/industries",
-      "description": "Discover the industries we serve.",
-      "features": [
+      name: "Industries",
+      type: "dropdown",
+      path: "/industries",
+      description: "Discover the industries we serve.",
+      features: [
         {
-          "name": "Fintech",
-          "icon": "fa-heartbeat",
-          "description": "Solutions for the healthcare sector to improve patient care.",
-          "path": "/industries/healthcare"
+          name: "Fintech",
+          icon: "fa-heartbeat",
+          description:
+            "Solutions for the healthcare sector to improve patient care.",
+          path: "/industries/healthcare",
         },
         {
-          "name": "Education",
-          "icon": "fa-university",
-          "description": "Innovative financial tools and services for the modern world.",
-          "path": "/industries/finance"
+          name: "Education",
+          icon: "fa-university",
+          description:
+            "Innovative financial tools and services for the modern world.",
+          path: "/industries/finance",
         },
         {
-          "name": "Logistics",
-          "icon": "fa-store",
-          "description": "Transforming retail experiences with technology-driven solutions.",
-          "path": "/industries/retail"
+          name: "Logistics",
+          icon: "fa-store",
+          description:
+            "Transforming retail experiences with technology-driven solutions.",
+          path: "/industries/retail",
         },
         {
-          "name": "Manufacturing",
-          "icon": "fa-store",
-          "description": "Transforming retail experiences with technology-driven solutions.",
-          "path": "/industries/retail"
-        },
-
-        { "name": "Enterprise", "icon": "fa-building", "description": "Innovative solutions for businesses of all sizes.", "path": "/industries/enterprise" },
-        { "name": "Education", "icon": "fa-graduation-cap", "description": "Empowering educators and students with technology.", "path": "/industries/education" },
-        { "name": "Real Estate", "icon": "fa-home", "description": "Revolutionizing the real estate industry with tech solutions.", "path": "/industries/real-estate" },
-        { "name": "Medical & Healthcare", "icon": "fa-heartbeat", "description": "Enhancing healthcare services with technology.", "path": "/industries/healthcare" },
-        { "name": "Technology Company", "icon": "fa-laptop-code", "description": "Tech solutions for companies looking to innovate.", "path": "/industries/technology" },
-        { "name": "Media & Entertainment", "icon": "fa-film", "description": "Transforming media and entertainment with tech.", "path": "/industries/media-entertainment" },
-        { "name": "NGO", "icon": "fa-hand-holding-heart", "description": "Supporting NGOs with technology-driven solutions.", "path": "/industries/ngo" }
-      ]
-    },
-    {
-      "name": "Services",
-      "type": "dropdown",
-      "path": "/services",
-      "description": "Explore the range of services we offer.",
-      "features": [
-        {
-          "name": "Team Extension",
-          "icon": "fa-lightbulb",
-          "description": "Expert advice and strategic planning for your business.",
-          "path": "/services/consulting"
-        },
-        {
-          "name": "Custom Software Development",
-          "icon": "fa-cogs",
-          "description": "End-to-end software development services for every industry.",
-          "path": "/services/development"
-        },
-        {
-          "name": "Enterprise Software Development",
-          "icon": "fa-headset",
-          "description": "24/7 customer support to assist with any challenges.",
-          "path": "/services/support"
-        },
-        {
-          "name": "MVP Development",
-          "icon": "fa-headset",
-          "description": "24/7 customer support to assist with any challenges.",
-          "path": "/services/support"
-        },
-      ]
-    },
-    {
-      "name": "Products",
-      "type": "dropdown",
-      "path": "/products",
-      "description": "Discover our range of innovative products.",
-      "features": [
-        {
-          "name": "Time2Task",
-          "icon": "fa-box",
-          "description": "Our flagship product designed to streamline operations.",
-          "path": "/products/product-a"
-        },
-        {
-          "name": "Cloud Clock In",
-          "icon": "fa-cogs",
-          "description": "A cutting-edge tool for improving productivity.",
-          "path": "/products/product-b"
-        },
-        {
-          "name": "Flyte CRM",
-          "icon": "fa-cogs",
-          "description": "A cutting-edge tool for improving productivity.",
-          "path": "/products/product-b"
-        },
-        {
-          "name": "Flyte POS",
-          "icon": "fa-cogs",
-          "description": "A cutting-edge tool for improving productivity.",
-          "path": "/products/product-b"
+          name: "Manufacturing",
+          icon: "fa-store",
+          description:
+            "Transforming retail experiences with technology-driven solutions.",
+          path: "/industries/retail",
         },
 
-      ]
-    },
-    {
-      "name": "Case Studies",
-      "type": "link",
-      "path": "/case-studies",
-      "description": "Read about the success stories of our clients."
-    },
-    {
-      "name": "Company",
-      "type": "dropdown",
-      "path": "/company",
-      "description": "Learn more about our company.",
-      "features": [
         {
-          "name": "About Us",
-          "icon": "fa-info-circle",
-          "description": "Get to know our mission, vision, and values.",
-          "path": "/company/about-us"
+          name: "Enterprise",
+          icon: "fa-building",
+          description: "Innovative solutions for businesses of all sizes.",
+          path: "/industries/enterprise",
         },
         {
-          "name": "Our Team",
-          "icon": "fa-users",
-          "description": "Meet the talented individuals behind our success.",
-          "path": "/company/our-team"
+          name: "Education",
+          icon: "fa-graduation-cap",
+          description: "Empowering educators and students with technology.",
+          path: "/industries/education",
         },
         {
-          "name": "Contact",
-          "icon": "fa-envelope",
-          "description": "Get in touch with us for inquiries or support.",
-          "path": "/company/contact"
-        }
-      ]
+          name: "Real Estate",
+          icon: "fa-home",
+          description:
+            "Revolutionizing the real estate industry with tech solutions.",
+          path: "/industries/real-estate",
+        },
+        {
+          name: "Medical & Healthcare",
+          icon: "fa-heartbeat",
+          description: "Enhancing healthcare services with technology.",
+          path: "/industries/healthcare",
+        },
+        {
+          name: "Technology Company",
+          icon: "fa-laptop-code",
+          description: "Tech solutions for companies looking to innovate.",
+          path: "/industries/technology",
+        },
+        {
+          name: "Media & Entertainment",
+          icon: "fa-film",
+          description: "Transforming media and entertainment with tech.",
+          path: "/industries/media-entertainment",
+        },
+        {
+          name: "NGO",
+          icon: "fa-hand-holding-heart",
+          description: "Supporting NGOs with technology-driven solutions.",
+          path: "/industries/ngo",
+        },
+      ],
+    },
+    {
+      name: "Services",
+      type: "dropdown",
+      path: "/services",
+      description: "Explore the range of services we offer.",
+      features: [
+        {
+          name: "Team Extension",
+          icon: "fa-lightbulb",
+          description:
+            "Expert advice and strategic planning for your business.",
+          path: "/services/consulting",
+        },
+        {
+          name: "Custom Software Development",
+          icon: "fa-cogs",
+          description:
+            "End-to-end software development services for every industry.",
+          path: "/services/development",
+        },
+        {
+          name: "Enterprise Software Development",
+          icon: "fa-headset",
+          description: "24/7 customer support to assist with any challenges.",
+          path: "/services/support",
+        },
+        {
+          name: "MVP Development",
+          icon: "fa-headset",
+          description: "24/7 customer support to assist with any challenges.",
+          path: "/services/support",
+        },
+      ],
+    },
+    {
+      name: "Products",
+      type: "dropdown",
+      path: "/products",
+      description: "Discover our range of innovative products.",
+      features: [
+        {
+          name: "Time2Task",
+          icon: "fa-box",
+          description:
+            "Our flagship product designed to streamline operations.",
+          path: "/products/product-a",
+        },
+        {
+          name: "Cloud Clock In",
+          icon: "fa-cogs",
+          description: "A cutting-edge tool for improving productivity.",
+          path: "/products/product-b",
+        },
+        {
+          name: "Flyte CRM",
+          icon: "fa-cogs",
+          description: "A cutting-edge tool for improving productivity.",
+          path: "/products/product-b",
+        },
+        {
+          name: "Flyte POS",
+          icon: "fa-cogs",
+          description: "A cutting-edge tool for improving productivity.",
+          path: "/products/product-b",
+        },
+      ],
+    },
+    {
+      name: "Case Studies",
+      type: "link",
+      path: "/case-studies",
+      description: "Read about the success stories of our clients.",
+    },
+    {
+      name: "Company",
+      type: "dropdown",
+      path: "/company",
+      description: "Learn more about our company.",
+      features: [
+        {
+          name: "About Us",
+          icon: "fa-info-circle",
+          description: "Get to know our mission, vision, and values.",
+          path: "/company/about-us",
+        },
+        {
+          name: "Our Team",
+          icon: "fa-users",
+          description: "Meet the talented individuals behind our success.",
+          path: "/company/our-team",
+        },
+        {
+          name: "Contact",
+          icon: "fa-envelope",
+          description: "Get in touch with us for inquiries or support.",
+          path: "/company/contact",
+        },
+      ],
     },
     // {
     //   "name": "Career",
@@ -190,9 +237,8 @@ export const navbarData ={
     //   "path": "/career",
     //   "description": "Explore career opportunities and join our team."
     // }
-  ]
-}
-
+  ],
+};
 
 // banner
 export const bannerData = {
@@ -339,7 +385,7 @@ export const blogData = {
   cards: [
     {
       title: "Flyte Secures ISO Certification",
-      image:"/images/blog-flyte-iso.png",
+      image: "/images/blog-flyte-iso.png",
       description:
         "Flyte, a leading cloud-based platform, has recently secured its ISO certification, further enhancing its commitment to data security and customer trust.",
       keywords: [
@@ -360,7 +406,7 @@ export const blogData = {
     },
     {
       title: "DevOps Best Practices",
-      image:"/images/blog-flyte-devops.png",
+      image: "/images/blog-flyte-devops.png",
       description:
         "This article covers key DevOps practices that help streamline software development processes, improve collaboration, and increase deployment frequency.",
       keywords: [
@@ -381,7 +427,7 @@ export const blogData = {
     },
     {
       title: "Info Session on Cloud Management",
-      image:"/images/blog-flyte-cloudManagement.png",
+      image: "/images/blog-flyte-cloudManagement.png",
       description:
         "Join us for an informative session on best practices in cloud management, focusing on scaling, cost optimization, and security in the cloud.",
       keywords: [
@@ -402,7 +448,7 @@ export const blogData = {
     },
     {
       title: "The Future of DevOps Tools",
-      image:"/images/blog-flyte-devops.png",
+      image: "/images/blog-flyte-devops.png",
       description:
         "This article discusses the evolving landscape of DevOps tools and technologies, focusing on emerging tools and trends that are reshaping the industry.",
       keywords: [
@@ -423,7 +469,7 @@ export const blogData = {
     },
     {
       title: "How Cloud Infrastructure is Changing IT",
-      image:"/images/blog-flyte-iso.png",
+      image: "/images/blog-flyte-iso.png",
       description:
         "Cloud infrastructure is revolutionizing the IT industry. This article covers how organizations are adopting cloud solutions to improve flexibility and reduce costs.",
       keywords: [
@@ -448,218 +494,239 @@ export const blogData = {
 // operations techs
 
 export const techData = {
-  "frontend": {
+  frontend: {
     title: "Frontend Development",
-    description: "Creating responsive and dynamic user interfaces using modern frontend technologies.",
+    description:
+      "Creating responsive and dynamic user interfaces using modern frontend technologies.",
     technologies: [
       {
-        "name": "HTML",
-        "image": "/images/html.png"
+        name: "HTML",
+        image: "/images/html.png",
       },
       {
-        "name": "CSS",
-        "image": "/images/css.png"
+        name: "CSS",
+        image: "/images/css.png",
       },
       {
-        "name": "JavaScript",
-        "image": "/images/js.png"
+        name: "JavaScript",
+        image: "/images/js.png",
       },
       {
-        "name": "React",
-        "image": "/images/react.png"
+        name: "React",
+        image: "/images/react.png",
       },
       {
-        "name": "Angular",
-        "image": "/images/angular.png"
+        name: "Angular",
+        image: "/images/angular.png",
       },
       {
-        "name": "Vue.js",
-        "image": "/images/vue.png"
-      }
-    ]
+        name: "Vue.js",
+        image: "/images/vue.png",
+      },
+    ],
   },
-  "backend": {
+  backend: {
     title: "Backend Development",
-    description: "Building a robust and scalable backend that supports various features, requirements, and experiences for your users.",
+    description:
+      "Building a robust and scalable backend that supports various features, requirements, and experiences for your users.",
     technologies: [
       {
-        "name": "Node.js",
-        "image": "/images/node.png"
+        name: "Node.js",
+        image: "/images/node.png",
       },
       {
-        "name": "PHP(Laravel)",
-        "image": "/images/laravel.png"
+        name: "PHP(Laravel)",
+        image: "/images/laravel.png",
       },
       {
-        "name": "Python",
-        "image": "/images/python.png"
+        name: "Python",
+        image: "/images/python.png",
       },
       {
-        "name": "Django",
-        "image": "/images/django.png"
+        name: "Django",
+        image: "/images/django.png",
       },
       {
-        "name": "Ruby",
-        "image": "/images/ruby.jpg"
+        name: "Ruby",
+        image: "/images/ruby.jpg",
       },
       {
-        "name": "Java(Spring)",
-        "image": "/images/java.png"
-      }
-    ]
+        name: "Java(Spring)",
+        image: "/images/java.png",
+      },
+    ],
   },
-  "mobileDevelopment": {
+  mobileDevelopment: {
     title: "Mobile Development",
-    description: "Developing cross-platform and native mobile apps with cutting-edge frameworks.",
+    description:
+      "Developing cross-platform and native mobile apps with cutting-edge frameworks.",
     technologies: [
       {
-        "name": "React Native",
-        "image": "/images/react.png"
+        name: "React Native",
+        image: "/images/react.png",
       },
       {
-        "name": "Flutter",
-        "image": "/images/flutter.png"
+        name: "Flutter",
+        image: "/images/flutter.png",
       },
       {
-        "name": "Swift",
-        "image": "/images/swift.jpg"
+        name: "Swift",
+        image: "/images/swift.jpg",
       },
       {
-        "name": "Kotlin",
-        "image": "/images/kotlin.svg"
+        name: "Kotlin",
+        image: "/images/kotlin.svg",
       },
       {
-        "name": "iOS",
-        "image": "/images/iOS.png"
-      }
-    ]
+        name: "iOS",
+        image: "/images/iOS.png",
+      },
+    ],
   },
-  "qualityAssurance": {
+  qualityAssurance: {
     title: "Quality Assurance",
-    description: "Delivering quality applications with advanced testing and QA tools.",
+    description:
+      "Delivering quality applications with advanced testing and QA tools.",
     technologies: [
       {
-        "name": "Selenium",
-        "image": "/images/selenium.png"
+        name: "Selenium",
+        image: "/images/selenium.png",
       },
       {
-        "name": "Jest",
-        "image": "/images/jest.png"
+        name: "Jest",
+        image: "/images/jest.png",
       },
       {
-        "name": "Jmeter",
-        "image": "/images/jmeter.png"
+        name: "Jmeter",
+        image: "/images/jmeter.png",
       },
       {
-        "name": "Postman",
-        "image": "/images/postman.png"
+        name: "Postman",
+        image: "/images/postman.png",
       },
       {
-        "name": "OWASP",
-        "image": "/images/owasp.png"
-      }
-    ]
+        name: "OWASP",
+        image: "/images/owasp.png",
+      },
+    ],
   },
-  "devOps": {
+  devOps: {
     title: "DevOps",
-    description: "Streamlining development processes and infrastructure with DevOps practices and tools.",
+    description:
+      "Streamlining development processes and infrastructure with DevOps practices and tools.",
     technologies: [
       {
-        "name": "Docker",
-        "image": "/images/docker.png"
+        name: "Docker",
+        image: "/images/docker.png",
       },
       {
-        "name": "Kubernetes",
-        "image": "/images/kubernetes.png"
+        name: "Kubernetes",
+        image: "/images/kubernetes.png",
       },
       {
-        "name": "AWS",
-        "image": "/images/jenkins.png"
+        name: "AWS",
+        image: "/images/jenkins.png",
       },
       {
-        "name": "Azure",
-        "image": "/images/azure.png"
+        name: "Azure",
+        image: "/images/azure.png",
       },
       {
-        "name": "Jenkins",
-        "image": "/images/jenkins.png"
-      }
-    ]
+        name: "Jenkins",
+        image: "/images/jenkins.png",
+      },
+    ],
   },
-  "aiML": {
+  aiML: {
     title: "AI & ML",
-    description: "Leveraging artificial intelligence and machine learning to build smart applications.",
+    description:
+      "Leveraging artificial intelligence and machine learning to build smart applications.",
     technologies: [
       {
-        "name": "TensorFlow",
-        "image": "/images/tensorflow.png"
+        name: "TensorFlow",
+        image: "/images/tensorflow.png",
       },
       {
-        "name": "PyTorch",
-        "image": "/images/pytorch.png"
+        name: "PyTorch",
+        image: "/images/pytorch.png",
       },
       {
-        "name": "Keras",
-        "image": "/images/keras.png"
+        name: "Keras",
+        image: "/images/keras.png",
       },
       {
-        "name": "Scikit-learn",
-        "image": "/images/scikit-learn.png"
+        name: "Scikit-learn",
+        image: "/images/scikit-learn.png",
       },
       {
-        "name": "OpenCV",
-        "image": "/images/opencv.png"
-      }
-    ]
-  }
+        name: "OpenCV",
+        image: "/images/opencv.png",
+      },
+    ],
+  },
 };
 
 // project data
 
-export const projectData=[
+export const projectData = [
   {
-    "logo": "https://via.placeholder.com/40x40",
-    "tags": ["FINTECH", "STARTUP"],
-    "title": "Innovating Financial Solutions Globally",
-    "description": "Their ability to simplify complex financial processes was outstanding. They exceeded expectations.",
-    "testimonial": {
-      "name": "Jane Doe",
-      "role": "CFO at FinTech Corp",
-      "profileImage": "https://via.placeholder.com/40x40"
+    logo: "https://via.placeholder.com/40x40",
+    tags: ["FINTECH", "STARTUP"],
+    title: "Innovating Financial Solutions Globally",
+    description:
+      "Their ability to simplify complex financial processes was outstanding. They exceeded expectations.",
+    testimonial: {
+      name: "Jane Doe",
+      role: "CFO at FinTech Corp",
+      profileImage: "https://via.placeholder.com/40x40",
     },
-    "features": ["Seamless Integration", "AI-Powered Insights", "Secure Transactions"],
-    "mainImage": "https://via.placeholder.com/500x375",
-    "button": "Discover More"
+    features: [
+      "Seamless Integration",
+      "AI-Powered Insights",
+      "Secure Transactions",
+    ],
+    mainImage: "https://via.placeholder.com/500x375",
+    button: "Discover More",
   },
   {
-    "logo": "https://via.placeholder.com/40x40",
-    "tags": ["HEALTHCARE", "TECH"],
-    "title": "Pioneering Healthtech Advancements",
-    "description": "Their commitment to improving healthcare through technology was remarkable and inspiring.",
-    "testimonial": {
-      "name": "Michael Smith",
-      "role": "Director at HealthPlus",
-      "profileImage": "https://via.placeholder.com/40x40"
+    logo: "https://via.placeholder.com/40x40",
+    tags: ["HEALTHCARE", "TECH"],
+    title: "Pioneering Healthtech Advancements",
+    description:
+      "Their commitment to improving healthcare through technology was remarkable and inspiring.",
+    testimonial: {
+      name: "Michael Smith",
+      role: "Director at HealthPlus",
+      profileImage: "https://via.placeholder.com/40x40",
     },
-    "features": ["Patient-Centric Solutions", "Real-Time Monitoring", "Data-Driven Care"],
-    "mainImage": "https://via.placeholder.com/500x375",
-    "button": "Learn More"
+    features: [
+      "Patient-Centric Solutions",
+      "Real-Time Monitoring",
+      "Data-Driven Care",
+    ],
+    mainImage: "https://via.placeholder.com/500x375",
+    button: "Learn More",
   },
   {
-    "logo": "https://via.placeholder.com/40x40",
-    "tags": ["TRAVEL", "HOSPITALITY"],
-    "title": "Revolutionizing Travel Experiences",
-    "description": "Their attention to detail and focus on customer satisfaction stood out in every aspect.",
-    "testimonial": {
-      "name": "Emily Johnson",
-      "role": "CEO at Wanderlust Co.",
-      "profileImage": "https://via.placeholder.com/40x40"
+    logo: "https://via.placeholder.com/40x40",
+    tags: ["TRAVEL", "HOSPITALITY"],
+    title: "Revolutionizing Travel Experiences",
+    description:
+      "Their attention to detail and focus on customer satisfaction stood out in every aspect.",
+    testimonial: {
+      name: "Emily Johnson",
+      role: "CEO at Wanderlust Co.",
+      profileImage: "https://via.placeholder.com/40x40",
     },
-    "features": ["Personalized Itineraries", "24/7 Customer Support", "Sustainable Travel"],
-    "mainImage": "https://via.placeholder.com/500x375",
-    "button": "Explore Now"
-  }
-]
+    features: [
+      "Personalized Itineraries",
+      "24/7 Customer Support",
+      "Sustainable Travel",
+    ],
+    mainImage: "https://via.placeholder.com/500x375",
+    button: "Explore Now",
+  },
+];
 
 //industry data
 
@@ -671,387 +738,779 @@ export const industrydata = {
       name: "Fintech",
       icon: "fa-solid fa-gauge",
       features: [
-        { icon: "fas fa-coins fa-2xl", title: "Disruptive FinTech Solutions", description: "Empowering financial innovation and growth." },
-        { icon: "fas fa-credit-card fa-2xl", title: "Digital Payments", description: "Revolutionizing the way payments are made." },
-        { icon: "fas fa-chart-line fa-2xl", title: "Investment Strategies", description: "Providing innovative investment solutions." },
-        { icon: "fas fa-shield-alt fa-2xl", title: "Fraud Prevention", description: "Safeguarding transactions from malicious activities." },
-        { icon: "fas fa-lock fa-2xl", title: "Data Security", description: "Ensuring the security of sensitive financial data." }
-      ]
+        {
+          icon: "fas fa-coins fa-2xl",
+          title: "Disruptive FinTech Solutions",
+          description: "Empowering financial innovation and growth.",
+        },
+        {
+          icon: "fas fa-credit-card fa-2xl",
+          title: "Digital Payments",
+          description: "Revolutionizing the way payments are made.",
+        },
+        {
+          icon: "fas fa-chart-line fa-2xl",
+          title: "Investment Strategies",
+          description: "Providing innovative investment solutions.",
+        },
+        {
+          icon: "fas fa-shield-alt fa-2xl",
+          title: "Fraud Prevention",
+          description: "Safeguarding transactions from malicious activities.",
+        },
+        {
+          icon: "fas fa-lock fa-2xl",
+          title: "Data Security",
+          description: "Ensuring the security of sensitive financial data.",
+        },
+      ],
     },
     {
       name: "Startup",
       icon: "fas fa-lightbulb",
       features: [
-        { icon: "fas fa-users fa-2xl", title: "Team Building", description: "Assembling innovative teams for success." },
-        { icon: "fas fa-bullhorn fa-2xl", title: "Brand Awareness", description: "Creating strong brand recognition in the market." },
-        { icon: "fas fa-chart-pie fa-2xl", title: "Market Strategy", description: "Identifying and targeting the right market." },
-        { icon: "fas fa-cogs fa-2xl", title: "Product Development", description: "Turning ideas into functional products." },
-        { icon: "fas fa-hand-holding-usd fa-2xl", title: "Investment & Funding", description: "Securing capital for business growth." }
-      ]
+        {
+          icon: "fas fa-users fa-2xl",
+          title: "Team Building",
+          description: "Assembling innovative teams for success.",
+        },
+        {
+          icon: "fas fa-bullhorn fa-2xl",
+          title: "Brand Awareness",
+          description: "Creating strong brand recognition in the market.",
+        },
+        {
+          icon: "fas fa-chart-pie fa-2xl",
+          title: "Market Strategy",
+          description: "Identifying and targeting the right market.",
+        },
+        {
+          icon: "fas fa-cogs fa-2xl",
+          title: "Product Development",
+          description: "Turning ideas into functional products.",
+        },
+        {
+          icon: "fas fa-hand-holding-usd fa-2xl",
+          title: "Investment & Funding",
+          description: "Securing capital for business growth.",
+        },
+      ],
     },
     {
       name: "Logistics",
       icon: "fas fa-truck",
       features: [
-        { icon: "fas fa-route fa-2xl", title: "Supply Chain Management", description: "Optimizing the flow of goods and services." },
-        { icon: "fas fa-truck-moving fa-2xl", title: "Fleet Management", description: "Managing transportation logistics efficiently." },
-        { icon: "fas fa-box-open fa-2xl", title: "Inventory Tracking", description: "Monitoring inventory in real-time." },
-        { icon: "fas fa-shipping-fast fa-2xl", title: "Fast Delivery Solutions", description: "Ensuring on-time delivery to customers." },
-        { icon: "fas fa-chart-line fa-2xl", title: "Logistics Optimization", description: "Improving operational efficiencies in logistics." }
-      ]
+        {
+          icon: "fas fa-route fa-2xl",
+          title: "Supply Chain Management",
+          description: "Optimizing the flow of goods and services.",
+        },
+        {
+          icon: "fas fa-truck-moving fa-2xl",
+          title: "Fleet Management",
+          description: "Managing transportation logistics efficiently.",
+        },
+        {
+          icon: "fas fa-box-open fa-2xl",
+          title: "Inventory Tracking",
+          description: "Monitoring inventory in real-time.",
+        },
+        {
+          icon: "fas fa-shipping-fast fa-2xl",
+          title: "Fast Delivery Solutions",
+          description: "Ensuring on-time delivery to customers.",
+        },
+        {
+          icon: "fas fa-chart-line fa-2xl",
+          title: "Logistics Optimization",
+          description: "Improving operational efficiencies in logistics.",
+        },
+      ],
     },
     {
       name: "Retail & Manufacturing",
       icon: "fas fa-store",
       features: [
-        { icon: "fas fa-cogs fa-2xl", title: "Manufacturing Optimization", description: "Streamlining production processes." },
-        { icon: "fas fa-tags fa-2xl", title: "Retail Management", description: "Managing retail operations effectively." },
-        { icon: "fas fa-truck-loading fa-2xl", title: "Supply Chain Solutions", description: "Ensuring smooth product flow." },
-        { icon: "fas fa-box fa-2xl", title: "Product Packaging", description: "Enhancing packaging solutions for retail." },
-        { icon: "fas fa-percent fa-2xl", title: "Sales Growth", description: "Driving revenue through retail strategies." }
-      ]
+        {
+          icon: "fas fa-cogs fa-2xl",
+          title: "Manufacturing Optimization",
+          description: "Streamlining production processes.",
+        },
+        {
+          icon: "fas fa-tags fa-2xl",
+          title: "Retail Management",
+          description: "Managing retail operations effectively.",
+        },
+        {
+          icon: "fas fa-truck-loading fa-2xl",
+          title: "Supply Chain Solutions",
+          description: "Ensuring smooth product flow.",
+        },
+        {
+          icon: "fas fa-box fa-2xl",
+          title: "Product Packaging",
+          description: "Enhancing packaging solutions for retail.",
+        },
+        {
+          icon: "fas fa-percent fa-2xl",
+          title: "Sales Growth",
+          description: "Driving revenue through retail strategies.",
+        },
+      ],
     },
     {
       name: "Enterprise",
       icon: "fas fa-building",
       features: [
-        { icon: "fas fa-network-wired fa-2xl", title: "Network Infrastructure", description: "Building robust IT networks for enterprise." },
-        { icon: "fas fa-users-cog fa-2xl", title: "Enterprise Resource Planning", description: "Integrating business functions with ERP systems." },
-        { icon: "fas fa-chart-bar fa-2xl", title: "Business Analytics", description: "Leveraging data to drive business decisions." },
-        { icon: "fas fa-lock fa-2xl", title: "Security Solutions", description: "Providing enterprise-level security services." },
-        { icon: "fas fa-cloud fa-2xl", title: "Cloud Computing", description: "Empowering businesses with scalable cloud solutions." }
-      ]
+        {
+          icon: "fas fa-network-wired fa-2xl",
+          title: "Network Infrastructure",
+          description: "Building robust IT networks for enterprise.",
+        },
+        {
+          icon: "fas fa-users-cog fa-2xl",
+          title: "Enterprise Resource Planning",
+          description: "Integrating business functions with ERP systems.",
+        },
+        {
+          icon: "fas fa-chart-bar fa-2xl",
+          title: "Business Analytics",
+          description: "Leveraging data to drive business decisions.",
+        },
+        {
+          icon: "fas fa-lock fa-2xl",
+          title: "Security Solutions",
+          description: "Providing enterprise-level security services.",
+        },
+        {
+          icon: "fas fa-cloud fa-2xl",
+          title: "Cloud Computing",
+          description: "Empowering businesses with scalable cloud solutions.",
+        },
+      ],
     },
     {
       name: "Education",
       icon: "fas fa-graduation-cap",
       features: [
-        { icon: "fas fa-laptop fa-2xl", title: "E-learning Solutions", description: "Providing online learning platforms." },
-        { icon: "fas fa-chalkboard-teacher fa-2xl", title: "Teacher Collaboration", description: "Improving collaboration among educators." },
-        { icon: "fas fa-book-open fa-2xl", title: "Curriculum Development", description: "Designing innovative learning curricula." },
-        { icon: "fas fa-certificate fa-2xl", title: "Certification Programs", description: "Offering credentialing for online learning." },
-        { icon: "fas fa-users fa-2xl", title: "Student Engagement", description: "Enhancing student participation and interaction." }
-      ]
+        {
+          icon: "fas fa-laptop fa-2xl",
+          title: "E-learning Solutions",
+          description: "Providing online learning platforms.",
+        },
+        {
+          icon: "fas fa-chalkboard-teacher fa-2xl",
+          title: "Teacher Collaboration",
+          description: "Improving collaboration among educators.",
+        },
+        {
+          icon: "fas fa-book-open fa-2xl",
+          title: "Curriculum Development",
+          description: "Designing innovative learning curricula.",
+        },
+        {
+          icon: "fas fa-certificate fa-2xl",
+          title: "Certification Programs",
+          description: "Offering credentialing for online learning.",
+        },
+        {
+          icon: "fas fa-users fa-2xl",
+          title: "Student Engagement",
+          description: "Enhancing student participation and interaction.",
+        },
+      ],
     },
     {
       name: "Real Estate",
       icon: "fas fa-home",
       features: [
-        { icon: "fas fa-building fa-2xl", title: "Property Development", description: "Developing and managing residential and commercial properties." },
-        { icon: "fas fa-search fa-2xl", title: "Market Research", description: "Analyzing market trends and property values." },
-        { icon: "fas fa-handshake fa-2xl", title: "Investment Opportunities", description: "Connecting investors with profitable properties." },
-        { icon: "fas fa-cogs fa-2xl", title: "Property Management", description: "Managing real estate properties efficiently." },
-        { icon: "fas fa-chart-line fa-2xl", title: "Real Estate Analytics", description: "Providing data-driven insights for real estate decisions." }
-      ]
+        {
+          icon: "fas fa-building fa-2xl",
+          title: "Property Development",
+          description:
+            "Developing and managing residential and commercial properties.",
+        },
+        {
+          icon: "fas fa-search fa-2xl",
+          title: "Market Research",
+          description: "Analyzing market trends and property values.",
+        },
+        {
+          icon: "fas fa-handshake fa-2xl",
+          title: "Investment Opportunities",
+          description: "Connecting investors with profitable properties.",
+        },
+        {
+          icon: "fas fa-cogs fa-2xl",
+          title: "Property Management",
+          description: "Managing real estate properties efficiently.",
+        },
+        {
+          icon: "fas fa-chart-line fa-2xl",
+          title: "Real Estate Analytics",
+          description:
+            "Providing data-driven insights for real estate decisions.",
+        },
+      ],
     },
     {
       name: "Medical & Healthcare",
       icon: "fas fa-heartbeat",
       features: [
-        { icon: "fas fa-stethoscope fa-2xl", title: "Telemedicine Solutions", description: "Providing remote healthcare services." },
-        { icon: "fas fa-pills fa-2xl", title: "Pharmaceutical Services", description: "Offering medical and pharmaceutical support." },
-        { icon: "fas fa-ambulance fa-2xl", title: "Emergency Care", description: "Ensuring fast and efficient emergency services." },
-        { icon: "fas fa-heart fa-2xl", title: "Patient Care", description: "Improving patient health and well-being." },
-        { icon: "fas fa-chart-medical fa-2xl", title: "Health Data Analytics", description: "Using data to enhance healthcare delivery." }
-      ]
+        {
+          icon: "fas fa-stethoscope fa-2xl",
+          title: "Telemedicine Solutions",
+          description: "Providing remote healthcare services.",
+        },
+        {
+          icon: "fas fa-pills fa-2xl",
+          title: "Pharmaceutical Services",
+          description: "Offering medical and pharmaceutical support.",
+        },
+        {
+          icon: "fas fa-ambulance fa-2xl",
+          title: "Emergency Care",
+          description: "Ensuring fast and efficient emergency services.",
+        },
+        {
+          icon: "fas fa-heart fa-2xl",
+          title: "Patient Care",
+          description: "Improving patient health and well-being.",
+        },
+        {
+          icon: "fas fa-chart-medical fa-2xl",
+          title: "Health Data Analytics",
+          description: "Using data to enhance healthcare delivery.",
+        },
+      ],
     },
     {
       name: "Technology Company",
       icon: "fas fa-laptop-code",
       features: [
-        { icon: "fas fa-code fa-2xl", title: "Software Development", description: "Building custom software solutions for businesses." },
-        { icon: "fas fa-cloud fa-2xl", title: "Cloud Solutions", description: "Enabling businesses with scalable cloud computing." },
-        { icon: "fas fa-digital-tachograph fa-2xl", title: "Tech Consulting", description: "Providing expert guidance for technology adoption." },
-        { icon: "fas fa-mobile-alt fa-2xl", title: "Mobile Development", description: "Creating mobile applications for various platforms." },
-        { icon: "fas fa-network-wired fa-2xl", title: "IT Infrastructure", description: "Designing and implementing tech infrastructures." }
-      ]
+        {
+          icon: "fas fa-code fa-2xl",
+          title: "Software Development",
+          description: "Building custom software solutions for businesses.",
+        },
+        {
+          icon: "fas fa-cloud fa-2xl",
+          title: "Cloud Solutions",
+          description: "Enabling businesses with scalable cloud computing.",
+        },
+        {
+          icon: "fas fa-digital-tachograph fa-2xl",
+          title: "Tech Consulting",
+          description: "Providing expert guidance for technology adoption.",
+        },
+        {
+          icon: "fas fa-mobile-alt fa-2xl",
+          title: "Mobile Development",
+          description: "Creating mobile applications for various platforms.",
+        },
+        {
+          icon: "fas fa-network-wired fa-2xl",
+          title: "IT Infrastructure",
+          description: "Designing and implementing tech infrastructures.",
+        },
+      ],
     },
     {
       name: "Media & Entertainment",
       icon: "fas fa-film",
       features: [
-        { icon: "fas fa-video fa-2xl", title: "Film Production", description: "Producing high-quality films and content." },
-        { icon: "fas fa-headphones-alt fa-2xl", title: "Music Production", description: "Creating and producing original music." },
-        { icon: "fas fa-camera fa-2xl", title: "Media Coverage", description: "Providing media coverage and advertising services." },
-        { icon: "fas fa-tv fa-2xl", title: "Broadcasting", description: "Delivering media content across various platforms." },
-        { icon: "fas fa-play-circle fa-2xl", title: "Streaming Services", description: "Offering on-demand content to audiences." }
-      ]
+        {
+          icon: "fas fa-video fa-2xl",
+          title: "Film Production",
+          description: "Producing high-quality films and content.",
+        },
+        {
+          icon: "fas fa-headphones-alt fa-2xl",
+          title: "Music Production",
+          description: "Creating and producing original music.",
+        },
+        {
+          icon: "fas fa-camera fa-2xl",
+          title: "Media Coverage",
+          description: "Providing media coverage and advertising services.",
+        },
+        {
+          icon: "fas fa-tv fa-2xl",
+          title: "Broadcasting",
+          description: "Delivering media content across various platforms.",
+        },
+        {
+          icon: "fas fa-play-circle fa-2xl",
+          title: "Streaming Services",
+          description: "Offering on-demand content to audiences.",
+        },
+      ],
     },
     {
       name: "NGO",
       icon: "fas fa-hand-holding-heart",
       features: [
-        { icon: "fas fa-donate fa-2xl", title: "Fundraising", description: "Raising funds to support social causes." },
-        { icon: "fas fa-globe-americas fa-2xl", title: "Global Outreach", description: "Expanding social impact globally." },
-        { icon: "fas fa-users fa-2xl", title: "Community Support", description: "Building and supporting local communities." },
-        { icon: "fas fa-hands-helping fa-2xl", title: "Volunteer Coordination", description: "Engaging volunteers for community projects." },
-        { icon: "fas fa-handshake fa-2xl", title: "Partnerships", description: "Creating strategic partnerships for social good." }
-      ]
-    }
-  ]
+        {
+          icon: "fas fa-donate fa-2xl",
+          title: "Fundraising",
+          description: "Raising funds to support social causes.",
+        },
+        {
+          icon: "fas fa-globe-americas fa-2xl",
+          title: "Global Outreach",
+          description: "Expanding social impact globally.",
+        },
+        {
+          icon: "fas fa-users fa-2xl",
+          title: "Community Support",
+          description: "Building and supporting local communities.",
+        },
+        {
+          icon: "fas fa-hands-helping fa-2xl",
+          title: "Volunteer Coordination",
+          description: "Engaging volunteers for community projects.",
+        },
+        {
+          icon: "fas fa-handshake fa-2xl",
+          title: "Partnerships",
+          description: "Creating strategic partnerships for social good.",
+        },
+      ],
+    },
+  ],
 };
 
 // footer data
 export const footerData = {
-  "footer": {
-    "contactUs": {
-      "location": "Flyte Solutions Ltd, The Reeve, House 11, Road 33, Gulshan-1, Dhaka-1212, Bangladesh.",
-      "companyLogo": "/images/flyte-logo.png",
-      "successLogos": [
+  footer: {
+    contactUs: {
+      location:
+        "Flyte Solutions Ltd, The Reeve, House 11, Road 33, Gulshan-1, Dhaka-1212, Bangladesh.",
+      companyLogo: "/images/flyte-logo.png",
+      successLogos: [
         "/images/clip.png",
         "/images/goodfirms.png",
         "/images/Untitled-design.png",
         "/images/iso1.png",
         "/images/iso2.png",
       ],
-      "phoneNumbers": ["+880-171-320-3656 ", "+880-179-353-2035 "],
-      "emails": ["info@flytesolutions.com ", "sales@flytesolutions.com "],
-      "socialLinks": [
+      phoneNumbers: ["+880-171-320-3656 ", "+880-179-353-2035 "],
+      emails: ["info@flytesolutions.com ", "sales@flytesolutions.com "],
+      socialLinks: [
         {
-          "platform": "Facebook",
-          "url": "https://www.facebook.com/@flytesoft/",
-          "icon": "fa-facebook"
+          platform: "Facebook",
+          url: "https://www.facebook.com/@flytesoft/",
+          icon: "fa-facebook",
         },
         {
-          "platform": "Twitter",
-          "url": "https://twitter.com/example",
-          "icon": "fa-twitter"
+          platform: "Twitter",
+          url: "https://twitter.com/example",
+          icon: "fa-twitter",
         },
         {
-          "platform": "LinkedIn",
-          "url": "https://www.linkedin.com/company/flytesolutions/posts/?feedView=all",
-          "icon": "fa-linkedin"
-        }
+          platform: "LinkedIn",
+          url: "https://www.linkedin.com/company/flytesolutions/posts/?feedView=all",
+          icon: "fa-linkedin",
+        },
       ],
-      "paymentMethods": [
+      paymentMethods: [
         {
-          "method": "Visa",
-          "icon": "/images/visa.png"
+          method: "Visa",
+          icon: "/images/visa.png",
         },
         {
-          "method": "MasterCard",
-          "icon": "/images/mastercard.png"
+          method: "MasterCard",
+          icon: "/images/mastercard.png",
         },
         {
-          "method": "Amex",
-          "icon": "/images/amex.png"
-        }
-      ]
+          method: "Amex",
+          icon: "/images/amex.png",
+        },
+      ],
     },
-    "services": [
-      { "name": "Custom Software Development", "path": "/services/custom-software-development" },
-      { "name": "Mobile Application Development", "path": "/services/mobile-application-development" },
-      { "name": "MVP Development", "path": "/services/mvp-development" },
-      { "name": "Enterprise Software Development", "path": "/services/enterprise-software-development" },
-      { "name": "Team Extension", "path": "/services/team-extension" },
-      { "name": "IT Consultancy", "path": "/services/it-consultancy" },
-      { "name": "UI/UX Design", "path": "/services/ui-ux-design" },
-      { "name": "QA & Testing", "path": "/services/qa-testing" },
-      { "name": "DevOps", "path": "/services/devops" },
-      { "name": "Legacy Application", "path": "/services/legacy-application" },
-      { "name": "SaaS Development", "path": "/services/saas-development" },
-      { "name": "IT Outsourcing", "path": "/services/it-outsourcing" }
-    ],
-    "products": [
-      { "name": "Time2Task", "demoLink": "https://example.com/time2task" },
-      { "name": "Cloud ClockIn", "demoLink": "https://example.com/cloud-clockin" },
-      { "name": "Flyte Queue", "demoLink": "https://example.com/flyte-queue" },
-      { "name": "Flyte ERP", "demoLink": "https://example.com/flyte-erp" },
-      { "name": "Flyte CRM", "demoLink": "https://example.com/flyte-crm" },
-      { "name": "Flyte POS", "demoLink": "https://example.com/flyte-pos" },
-      { "name": "Inventory Management System", "demoLink": "https://example.com/inventory-management" },
-      { "name": "AI Chatbot", "demoLink": "https://example.com/ai-chatbot" },
-      { "name": "Board Meeting Management", "demoLink": "https://example.com/board-meeting" },
-      { "name": "Help Desk Management", "demoLink": "https://example.com/help-desk" },
-      { "name": "Clinic & Hospital Management", "demoLink": "https://example.com/clinic-hospital" },
-      { "name": "Document Management System", "demoLink": "https://example.com/document-management" }
-    ],
-    "industry": [
-      "Fintech",
-      "Startup",
-      "Logistics",
-      "Retail & Manufacturing",
-      "Enterprise",
-      "Education",
-      "Real Estate",
-      "Medical & Healthcare",
-      "Technology Company",
-      "Media & Entertainment",
-      "NGO"
-    ]
-  }
-}
+    services: {
+      sectionName: "Services",
+      subsections: [
+        {
+          name: "Software Development",
+          id: "software-development",
+          items: [
+            "Product Design",
+            "Web Development",
+            "MVP Development",
+            "Mobile Development",
+            "Quality Assurance",
+            "Support & Maintenance",
+            "Cloud & DevOps",
+          ],
+        },
+        {
+          name: "Team Extension",
+          id: "team-extension",
+          items: [
+            "Python & Django Developer",
+            "Next/React Developer",
+            "VueJS Developer",
+            "NodeJS Developer",
+            "React Native Developer",
+            "Flutter Developer",
+            "ASP.NET Developer",
+          ],
+        },
+        {
+          name: "IT Consulting & Advisory",
+          id: "it-consulting-advisory",
+          items: [
+            "Technology Consulting",
+            "For Startups",
+            "Digital Transformation",
+            "IT Infrastructure Optimization",
+            "Quality Assurance",
+            "Outsourced IT Support",
+            "IT Helpdesk Consulting",
+          ],
+        },
+        {
+          name: "ML & AI Services",
+          id: "ml-ai-services",
+          items: [
+            "Data Analytics and Visualization",
+            "AI-Driven Workflow Automation",
+            "Intelligent Chatbots and Virtual Assistants",
+            "Speech Recognition and Conversational AI",
+            "Text Summarization and Translation",
+          ],
+        },
+      ],
+    },
+    expertise: {
+      sectionName: "Expertise",
+      subsections: [
+        {
+          name: "Industry",
+          id: "industry",
+          items: [
+            { name: "Fintech", path: "/industry/fintech" },
+            { name: "Startup", path: "/industry/startup" },
+            { name: "Logistics", path: "/industry/logistics" },
+            { name: "Retail & Manufacturing", path: "/industry/retail-manufacturing" },
+            { name: "Enterprise", path: "/industry/enterprise" },
+            { name: "Education", path: "/industry/education" },
+          ],
+        },
+        {
+          name: "Product",
+          id: "product",
+          items: [
+            { name: "Time2Task", path: "/product/time2task" },
+            { name: "Cloud ClockIn", path: "/product/cloud-clockin" },
+            { name: "Flyte Queue", path: "/product/flyte-queue" },
+            { name: "Flyte ERP", path: "/product/flyte-erp" },
+            { name: "Flyte CRM", path: "/product/flyte-crm" },
+            { name: "Flyte POS", path: "/product/flyte-pos" },
+          ],
+        },
+        {
+          name: "Case Studies",
+          id: "case-studies",
+          items: [
+            { name: "Time Tracker", path: "/case-studies/time-tracker" },
+            { name: "Rostering System", path: "/case-studies/rostering-system" },
+            { name: "Queue Management System", path: "/case-studies/queue-management-system" },
+            { name: "ERP Software", path: "/case-studies/erp-software" },
+            { name: "CRM Software", path: "/case-studies/crm-software" },
+            { name: "POS Software", path: "/case-studies/pos-software" },
+          ],
+        },
+        {
+          name: "Company",
+          id: "company",
+          items: [
+            { name: "About Us", path: "/company/about-us" },
+            { name: "News & Blogs", path: "/company/news-blogs" },
+            { name: "Privacy Policy", path: "/company/privacy-policy" },
+            { name: "Partner With Us", path: "/company/partner-with-us" },
+          ],
+        },
+      ],
+    },
+  },
+};
+
 
 // case study
 
-export const caseStudyData= [
+export const caseStudyData = [
   {
-    "id":1,
-    "image": "/images/FuelPro.png",
-    "title": "Time Tracker",
-    "description": "A task management tool to plan, assign, and track project tasks efficiently.",
-    "tags": ["Time Tracking", "Project Management", "Task Assignment"]
+    id: 1,
+    image: "/images/FuelPro.png",
+    title: "Time Tracker",
+    description:
+      "A task management tool to plan, assign, and track project tasks efficiently.",
+    tags: ["Time Tracking", "Project Management", "Task Assignment"],
   },
   {
-    "id":2,
-    "image": "/images/FuelPro.png",
-    "title": "Project X",
-    "description": "A powerful tool to manage complex projects with ease and efficiency.",
-    "tags": ["Project Management", "Collaboration", "Productivity"]
+    id: 2,
+    image: "/images/FuelPro.png",
+    title: "Project X",
+    description:
+      "A powerful tool to manage complex projects with ease and efficiency.",
+    tags: ["Project Management", "Collaboration", "Productivity"],
   },
   {
-    "id":3,
-    "image": "/images/FuelPro.png",
-    "title": "Task Master",
-    "description": "An intuitive task management app that helps teams stay organized and on track.",
-    "tags": ["Task Management", "Organization", "Teamwork"]
+    id: 3,
+    image: "/images/FuelPro.png",
+    title: "Task Master",
+    description:
+      "An intuitive task management app that helps teams stay organized and on track.",
+    tags: ["Task Management", "Organization", "Teamwork"],
   },
   {
-    "id":4,
-    "image": "/images/FuelPro.png",
-    "title": "Collab Hub",
-    "description": "A collaboration platform for teams to communicate, share files, and track progress.",
-    "tags": ["Collaboration", "Communication", "File Sharing"]
+    id: 4,
+    image: "/images/FuelPro.png",
+    title: "Collab Hub",
+    description:
+      "A collaboration platform for teams to communicate, share files, and track progress.",
+    tags: ["Collaboration", "Communication", "File Sharing"],
   },
   {
-    "id":5,
-    "image": "/images/FuelPro.png",
-    "title": "Time Saver",
-    "description": "A time management app that helps you save time with automated scheduling and reminders.",
-    "tags": ["Time Management", "Scheduling", "Reminders"]
+    id: 5,
+    image: "/images/FuelPro.png",
+    title: "Time Saver",
+    description:
+      "A time management app that helps you save time with automated scheduling and reminders.",
+    tags: ["Time Management", "Scheduling", "Reminders"],
   },
   {
-    "id":6,
-    "image": "/images/FuelPro.png",
-    "title": "Team Up",
-    "description": "A team management app that fosters communication and collaboration among team members.",
-    "tags": ["Team Management", "Collaboration", "Communication"]
+    id: 6,
+    image: "/images/FuelPro.png",
+    title: "Team Up",
+    description:
+      "A team management app that fosters communication and collaboration among team members.",
+    tags: ["Team Management", "Collaboration", "Communication"],
   },
   {
-    "id":7,
-    "image": "/images/FuelPro.png",
-    "title": "Work Flow Pro",
-    "description": "A work management tool to streamline workflows, automate tasks, and boost productivity.",
-    "tags": ["Workflow", "Automation", "Productivity"]
+    id: 7,
+    image: "/images/FuelPro.png",
+    title: "Work Flow Pro",
+    description:
+      "A work management tool to streamline workflows, automate tasks, and boost productivity.",
+    tags: ["Workflow", "Automation", "Productivity"],
   },
   {
-    "id":8,
-    "image": "/images/FuelPro.png",
-    "title": "Focus Time",
-    "description": "A productivity app designed to keep you focused by blocking distractions.",
-    "tags": ["Productivity", "Focus", "Distraction-Free"]
+    id: 8,
+    image: "/images/FuelPro.png",
+    title: "Focus Time",
+    description:
+      "A productivity app designed to keep you focused by blocking distractions.",
+    tags: ["Productivity", "Focus", "Distraction-Free"],
   },
   {
-    "id":9,
-    "image": "/images/FuelPro.png",
-    "title": "Smart Scheduler",
-    "description": "An intelligent scheduling app that adjusts to your work habits and preferences.",
-    "tags": ["Scheduling", "Automation", "Productivity"]
+    id: 9,
+    image: "/images/FuelPro.png",
+    title: "Smart Scheduler",
+    description:
+      "An intelligent scheduling app that adjusts to your work habits and preferences.",
+    tags: ["Scheduling", "Automation", "Productivity"],
   },
   {
-    "id":10,
-    "image": "/images/FuelPro.png",
-    "title": "Work Mate",
-    "description": "A collaborative workspace for teams to track tasks, share documents, and meet deadlines.",
-    "tags": ["Collaboration", "Workspace", "Teamwork"]
+    id: 10,
+    image: "/images/FuelPro.png",
+    title: "Work Mate",
+    description:
+      "A collaborative workspace for teams to track tasks, share documents, and meet deadlines.",
+    tags: ["Collaboration", "Workspace", "Teamwork"],
   },
   {
-    "id":11,
-    "image": "/images/FuelPro.png",
-    "title": "Pro Planner",
-    "description": "A professional planner to organize tasks, appointments, and goals efficiently.",
-    "tags": ["Planning", "Task Management", "Goal Setting"]
+    id: 11,
+    image: "/images/FuelPro.png",
+    title: "Pro Planner",
+    description:
+      "A professional planner to organize tasks, appointments, and goals efficiently.",
+    tags: ["Planning", "Task Management", "Goal Setting"],
   },
   {
-    "id":12,
-    "image": "/images/FuelPro.png",
-    "title": "Team Sync",
-    "description": "A tool that synchronizes teams across time zones, making collaboration easy and efficient.",
-    "tags": ["Teamwork", "Time Zones", "Collaboration"]
+    id: 12,
+    image: "/images/FuelPro.png",
+    title: "Team Sync",
+    description:
+      "A tool that synchronizes teams across time zones, making collaboration easy and efficient.",
+    tags: ["Teamwork", "Time Zones", "Collaboration"],
   },
   {
-    "id":13,
-    "image": "/images/FuelPro.png",
-    "title": "Task Flow",
-    "description": "A task management solution to track tasks from start to finish with clear deadlines.",
-    "tags": ["Task Management", "Deadline Tracking", "Organization"]
+    id: 13,
+    image: "/images/FuelPro.png",
+    title: "Task Flow",
+    description:
+      "A task management solution to track tasks from start to finish with clear deadlines.",
+    tags: ["Task Management", "Deadline Tracking", "Organization"],
   },
   {
-    "id":14,
-    "image": "/images/FuelPro.png",
-    "title": "Quick Task",
-    "description": "An app for quick task organization and tracking, ensuring high productivity.",
-    "tags": ["Task Organization", "Quick Tasks", "Efficiency"]
+    id: 14,
+    image: "/images/FuelPro.png",
+    title: "Quick Task",
+    description:
+      "An app for quick task organization and tracking, ensuring high productivity.",
+    tags: ["Task Organization", "Quick Tasks", "Efficiency"],
   },
   {
-    "id":15,
-    "image": "/images/FuelPro.png",
-    "title": "Meeting Planner",
-    "description": "A meeting scheduling app that optimizes team calendars and time slots.",
-    "tags": ["Scheduling", "Meetings", "Team Coordination"]
+    id: 15,
+    image: "/images/FuelPro.png",
+    title: "Meeting Planner",
+    description:
+      "A meeting scheduling app that optimizes team calendars and time slots.",
+    tags: ["Scheduling", "Meetings", "Team Coordination"],
   },
   {
-    "id":16,
-    "image": "/images/FuelPro.png",
-    "title": "Team Organizer",
-    "description": "An app that organizes team tasks, schedules, and milestones to improve workflow.",
-    "tags": ["Team Management", "Task Scheduling", "Team Collaboration"]
+    id: 16,
+    image: "/images/FuelPro.png",
+    title: "Team Organizer",
+    description:
+      "An app that organizes team tasks, schedules, and milestones to improve workflow.",
+    tags: ["Team Management", "Task Scheduling", "Team Collaboration"],
   },
   {
-    "id":17,
-    "image": "/images/FuelPro.png",
-    "title": "Project Manager",
-    "description": "A project management tool to plan, organize, and execute projects effectively.",
-    "tags": ["Project Management", "Planning", "Execution"]
+    id: 17,
+    image: "/images/FuelPro.png",
+    title: "Project Manager",
+    description:
+      "A project management tool to plan, organize, and execute projects effectively.",
+    tags: ["Project Management", "Planning", "Execution"],
   },
   {
-    "id":18,
-    "image": "/images/FuelPro.png",
-    "title": "Sync Pro",
-    "description": "A synchronization tool for teams to coordinate tasks and share updates in real-time.",
-    "tags": ["Syncing", "Collaboration", "Real-time"]
+    id: 18,
+    image: "/images/FuelPro.png",
+    title: "Sync Pro",
+    description:
+      "A synchronization tool for teams to coordinate tasks and share updates in real-time.",
+    tags: ["Syncing", "Collaboration", "Real-time"],
   },
   {
-    "id":19,
-    "image": "/images/FuelPro.png",
-    "title": "Task Genie",
-    "description": "A magical task manager that adapts to your needs and keeps you on track.",
-    "tags": ["Task Management", "Productivity", "Adaptability"]
+    id: 19,
+    image: "/images/FuelPro.png",
+    title: "Task Genie",
+    description:
+      "A magical task manager that adapts to your needs and keeps you on track.",
+    tags: ["Task Management", "Productivity", "Adaptability"],
   },
   {
-    "id":20,
-    "image": "/images/FuelPro.png",
-    "title": "Time Master",
-    "description": "A time management tool that tracks, analyzes, and improves your time usage.",
-    "tags": ["Time Management", "Analytics", "Productivity"]
+    id: 20,
+    image: "/images/FuelPro.png",
+    title: "Time Master",
+    description:
+      "A time management tool that tracks, analyzes, and improves your time usage.",
+    tags: ["Time Management", "Analytics", "Productivity"],
   },
   {
-    "id":21,
-    "image": "/images/FuelPro.png",
-    "title": "Team Vision",
-    "description": "A strategic planning app for teams to align on goals, timelines, and progress.",
-    "tags": ["Strategic Planning", "Team Alignment", "Goal Setting"]
+    id: 21,
+    image: "/images/FuelPro.png",
+    title: "Team Vision",
+    description:
+      "A strategic planning app for teams to align on goals, timelines, and progress.",
+    tags: ["Strategic Planning", "Team Alignment", "Goal Setting"],
   },
   {
-    "id":22,
-    "image": "/images/FuelPro.png",
-    "title": "Focus Pro",
-    "description": "A focused environment app that helps you stay on task and avoid distractions.",
-    "tags": ["Focus", "Productivity", "Distraction-Free"]
+    id: 22,
+    image: "/images/FuelPro.png",
+    title: "Focus Pro",
+    description:
+      "A focused environment app that helps you stay on task and avoid distractions.",
+    tags: ["Focus", "Productivity", "Distraction-Free"],
   },
   {
-    "id":23,
-    "image": "/images/FuelPro.png",
-    "title": "Task Hub",
-    "description": "A hub for organizing and managing all your tasks, deadlines, and projects.",
-    "tags": ["Task Management", "Organization", "Deadline Tracking"]
+    id: 23,
+    image: "/images/FuelPro.png",
+    title: "Task Hub",
+    description:
+      "A hub for organizing and managing all your tasks, deadlines, and projects.",
+    tags: ["Task Management", "Organization", "Deadline Tracking"],
   },
   {
-    "id":24,
-    "image": "/images/FuelPro.png",
-    "title": "Work Force",
-    "description": "A workforce management app designed for teams to track work hours and productivity.",
-    "tags": ["Workforce Management", "Time Tracking", "Productivity"]
-  }
-]
+    id: 24,
+    image: "/images/FuelPro.png",
+    title: "Work Force",
+    description:
+      "A workforce management app designed for teams to track work hours and productivity.",
+    tags: ["Workforce Management", "Time Tracking", "Productivity"],
+  },
+];
 
+//project section
+
+export const projectSliderData = [
+  {
+    title: "Marketing Material Design",
+    description:
+      "Effective marketing materials are key to capturing attention. We design assets that reflect your brand while drawing your audience in with compelling visuals.",
+    image:
+      "https://cdn.prod.website-files.com/643f7373d3f6653157617339/66e2f5e167d7e3c31600a32a_Marketing%20image-p-800.png",
+    tags: [
+      "Digital ads",
+      "Marketing materials",
+      "Email templates",
+      "Motion graphics",
+      "Social media design",
+    ],
+  },
+  {
+    title: "Marketing Material Design",
+    description:
+      "Effective marketing materials are key to capturing attention. We design assets that reflect your brand while drawing your audience in with compelling visuals.",
+    image:
+      "https://cdn.prod.website-files.com/643f7373d3f6653157617339/66e2f5e167d7e3c31600a32a_Marketing%20image-p-800.png",
+    tags: [
+      "Digital ads",
+      "Marketing materials",
+      "Email templates",
+      "Motion graphics",
+      "Social media design",
+    ],
+  },
+  {
+    title: "Marketing Material Design",
+    description:
+      "Effective marketing materials are key to capturing attention. We design assets that reflect your brand while drawing your audience in with compelling visuals.",
+    image:
+      "https://cdn.prod.website-files.com/643f7373d3f6653157617339/66e2f5e167d7e3c31600a32a_Marketing%20image-p-800.png",
+    tags: [
+      "Digital ads",
+      "Marketing materials",
+      "Email templates",
+      "Motion graphics",
+      "Social media design",
+    ],
+  },
+  {
+    title: "Marketing Material Design",
+    description:
+      "Effective marketing materials are key to capturing attention. We design assets that reflect your brand while drawing your audience in with compelling visuals.",
+    image:
+      "https://cdn.prod.website-files.com/643f7373d3f6653157617339/66e2f5e167d7e3c31600a32a_Marketing%20image-p-800.png",
+    tags: [
+      "Digital ads",
+      "Marketing materials",
+      "Email templates",
+      "Motion graphics",
+      "Social media design",
+    ],
+  },
+];
+
+export const contactUsKeyPoints = [
+  {
+    id: 1,
+    title: "Your request has been received and is currently under review.",
+  },
+  {
+    id: 2,
+    title: "A solution advisor will analyze your requirements and provide a response within 3 business days.",
+  },
+  {
+    id: 3,
+    title: "If required, a mutual NDA can be arranged within 1-2 business days to ensure confidentiality.",
+  },
+  {
+    id: 4,
+    title: "Project estimates or recommendations will be presented within 3-5 business days.",
+  },
+];

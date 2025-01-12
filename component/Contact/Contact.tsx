@@ -8,19 +8,33 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { FaRegPaperPlane } from "react-icons/fa";
+import { contactUsKeyPoints } from "@/api/Dummy";
 
-const Contact: React.FC = () => {
-  const headertitle: string = "Get in Touch";
+type contsctUsData = {
+  id: number;
+  title: string;
+};
+type contactUsKeyPointsProps = {
+  contsctUsData: contsctUsData[];
+};
+const Contact: React.FC<contactUsKeyPointsProps> = () => {
+  const headertitle: string = "Get in Touch with Us";
+  const KeyPoints = contactUsKeyPoints;
   return (
     <div className=" flex flex-col lg:flex-row justify-between items-start gap-10 py-12">
       <div className=" w-full ">
-        <div className="  mb-5 ">
-          <Subtitle Subtitle="Contact Us" />
-          <Title title={headertitle} />
-        </div>
-
-        <div className=" flex flex-col lg:flex-row justify-start lg:justify-between items-start lg:items-center gap-4 ">
-          <div className=" flex-col justify-start items-start gap-4 inline-flex px-10 lg:px-0 pb-10 lg:pb-0" >
+        <div className=" h-full flex flex-col lg:flex-row justify-start lg:justify-between items-start lg:items-center gap-4 ">
+          {/* form section */}
+          <div className=" h-full flex-col justify-start items-start gap-4 inline-flex px-10 lg:px-0 pb-10 lg:pb-0">
+            <div className="  mb-5 flex w-full items-center justify-center ">
+              {/* <Subtitle Subtitle="Contact Us" /> */}
+              <Title
+                width="w-full"
+                fontSize="text-lg lg:text-2xl"
+                title={headertitle}
+              />
+            </div>
             <div className=" w-full flex flex-col lg:flex-row justify-start items-start gap-8 ">
               <div className=" w-full   flex-col justify-start items-start gap-2 inline-flex">
                 <label className="self-stretch text-[#666666] text-xs font-semibold font-['DM Sans'] leading-[18px]">
@@ -181,19 +195,33 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          {/* ceo */}
-          <div className=" w-full lg:w-1/3 flex flex-col justify-center items-center gap-5 bg-[#4a2b35] py-[24px] px-20">
+          {/* key section */}
+          <div className="h-full w-full lg:w-1/3 flex flex-col justify-center items-center gap-5 bg-[#FFFFFF]  px-10 rounded-[30px] py-20 ">
             <div>
-              <img src="/images/Ceo_saiful_sumon.png" alt="CEO Saiful Sumon" />
+              <p className="text-center text-black text-2xl font-semibold font-['Open Sans']">
+                What's Next With Flyte?
+              </p>
             </div>
 
-            <div className=" flex flex-col justify-center items-center w-full">
-              <h1 className="w-[438px] text-center text-[#fffbfb] text-[26px] font-semibold font-['Open Sans'] leading-[34.19px]">
-                Saiful Sumon
-              </h1>
-              <p className="w-[386px] text-center text-[#fffefe] text-base font-normal font-['Open Sans'] leading-7">
-                Managing Director & CEO
-              </p>
+            <div className=" flex flex-col gap-4">
+              {KeyPoints &&
+                KeyPoints?.map((points) => (
+                  <div
+                    key={points?.id}
+                    className=" flex flex-row justify-between items-center w-full gap-3"
+                  >
+                    <div className="w-1/6 ">
+                      <div className=" w-10 h-10 bg-[#5856d6] rounded-xl flex justify-center items-center text-white">
+                        <FaRegPaperPlane />
+                      </div>
+                    </div>
+                    <div className=" w-5/6 ">
+                      <h1 className="text-black text-base font-normal font-['Open Sans']">
+                        {points?.title}
+                      </h1>
+                    </div>
+                  </div>
+                ))}
             </div>
 
             <div className=" w-full flex justify-center">

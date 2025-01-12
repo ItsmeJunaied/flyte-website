@@ -39,7 +39,7 @@ export default function RootLayout({
         <AOSComponent />
         <Nav navData={navbarData} />
         {children}
-        <div className=" bg-[#1A1A1A]">
+        <div className=" bg-[#2A3342]">
           <div className=" container mx-auto">
             <Footer />
           </div>
