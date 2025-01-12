@@ -10,7 +10,7 @@ import ProjectSection from "../component/Home/ProjectSection";
 import AboutUs from "../component/Home/AboutUs";
 import ServiceMarquee from "../component/Home/ServiceMarquee";
 const page = () => {
-  // console.log(brandData)
+  // console.log(brandData)nlkmkj
   return (
     <div className=" ">
       <div className=" ">
