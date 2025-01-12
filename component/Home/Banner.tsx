@@ -37,7 +37,7 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
         <h1 className="text-[#6ec1ff] text-lg font-bold font-['DM Sans'] uppercase leading-tight tracking-widest">
           -{bannerData.title}
         </h1>
-        <PlaneLottieBanner />
+        {/* <PlaneLottieBanner /> */}
       </div>
 
       <div className=" w-full flex justify-center items-center">
