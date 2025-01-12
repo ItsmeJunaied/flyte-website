@@ -1,6 +1,7 @@
 import React from "react";
+import { serviceHighlightsData } from "../../api/Dummy";
 
-type ServiceHighlightsData = {
+type ServiceHighlight = {
   id: number;
   category: string;
   title: string;
@@ -9,9 +10,7 @@ type ServiceHighlightsData = {
   backgroundImage: string;
 };
 
-const ServiceFitHighlights: React.FC<{ serviceHighlightsData: ServiceHighlightsData[] }> = ({
-  serviceHighlightsData,
-}) => {
+const ServiceFitHighlights: React.FC = () => {
   return (
     <div className="px-5 lg:px-10 bg-[#FAFAFA] pb-10">
       <div className="container mx-auto">
@@ -20,7 +19,7 @@ const ServiceFitHighlights: React.FC<{ serviceHighlightsData: ServiceHighlightsD
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {serviceHighlightsData?.map((service, index) => (
+          {serviceHighlightsData?.map((service: ServiceHighlight, index: number) => (
             <div
               key={index}
               className="p-5 w-full md:max-w-80 h-[350px] md:h-[400px] bg-[#002347]/80 rounded-2xl"
