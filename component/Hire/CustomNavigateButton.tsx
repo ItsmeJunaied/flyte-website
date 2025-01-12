@@ -26,7 +26,7 @@ const CustomNavigateButton: React.FC<CustomNavigateButtonProps> = ({
     <button
       onClick={handleClick}
       type="button"
-      className={`px-2 md:px-8 py-1 md:py-3 text-sm rounded-md text-[${textColor}] hover:text-[${textHoverColor}] bg-[${bgColor}] hover:bg-[${bgHover}]`}
+      className={`max-w-[265px] px-2 md:px-8 py-1 md:py-3 text-sm rounded-md text-[${textColor}] hover:text-[${textHoverColor}] bg-[${bgColor}] hover:bg-[${bgHover}]`}
     >
       {btnName}
     </button>
