@@ -23,7 +23,10 @@ type IndustryData = {
   industries: Industry[];
 };
 
-const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({
+const 
+
+
+IndustrySection: React.FC<{ industrydata: IndustryData }> = ({
   industrydata,
 }) => {
   // State to track the selected industry
