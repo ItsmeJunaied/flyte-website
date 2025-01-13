@@ -8,9 +8,48 @@ import FormStepHeader from "./FormStepHeader";
 import HireSuccessModal from "./HireSuccessModal";
 import { useRouter } from "next/navigation";
 
+type FormData = {
+  userName: string;
+  company: string;
+  email: string;
+  phone: string;
+  teamSize: string;
+  projectDuration: string;
+  experienceLevel: string;
+  onboardTime: string;
+  agree: boolean;
+
+  frontend?: boolean;
+  backend?: boolean;
+  qualityAssurance?: boolean;
+  projectManagement?: boolean;
+  mobileApplication?: boolean;
+  devOps?: boolean;
+  AIAndML?: boolean;
+
+  htmlCss?: boolean;
+  react?: boolean;
+  angular?: boolean;
+  vuejs?: boolean;
+  nextjs?: boolean;
+  frontendOthers?: boolean;
+
+  nodejs?: boolean;
+  javaSpring?: boolean;
+  phpLaravel?: boolean;
+  dotNet?: boolean;
+  python?: boolean;
+  go?: boolean;
+  backendOthers?: boolean;
+
+  flutter?: boolean;
+  reactNative?: boolean;
+  mobileAppOthers?: boolean;
+}
+
 const ApplicationForm = () => {
   const router = useRouter();
-  const methods = useForm({
+  const methods = useForm<FormData>({
     mode: "onChange",
   });
 
@@ -31,7 +70,7 @@ const ApplicationForm = () => {
 
   const prevStep = () => setCurrentStep((prevStep) => prevStep - 1);
 
-  const onSubmit = (data) => {
+  const onSubmit = (data: FormData) => {
     setIsModalOpen(true);
     console.log("Form Data:", data);
   };
