@@ -6,8 +6,10 @@ import ServicesStep from "./ServicesStep";
 import TechStackStep from "./TechStackStep";
 import FormStepHeader from "./FormStepHeader";
 import HireSuccessModal from "./HireSuccessModal";
+import { useRouter } from "next/navigation";
 
 const ApplicationForm = () => {
+  const router = useRouter();
   const methods = useForm({
     mode: "onChange",
   });
@@ -20,7 +22,6 @@ const ApplicationForm = () => {
     setAgreeToggle((prev) => !prev);
   };
 
-  // const nextStep = () => setCurrentStep((prevStep) => prevStep + 1);
   const nextStep = async () => {
     const isValid = await methods.trigger();
     if (isValid) {
@@ -34,6 +35,12 @@ const ApplicationForm = () => {
     setIsModalOpen(true);
     console.log("Form Data:", data);
   };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+    router.push("/hire");
+  };
+
   return (
     <div>
       <div>
@@ -81,7 +88,7 @@ const ApplicationForm = () => {
           </form>
         </FormProvider>
       </div>
-      <div>{isModalOpen && <HireSuccessModal />}</div>
+      <div>{isModalOpen && <HireSuccessModal onClose = {handleModalClose} />}</div>
     </div>
   );
 };

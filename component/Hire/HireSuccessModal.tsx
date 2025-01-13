@@ -1,10 +1,11 @@
 import React from "react";
-import Title from "../Common/Title";
 
-const HireSuccessModal = () => {
+type OnClose = { onClose: () => void };
+
+const HireSuccessModal: React.FC<OnClose> = ({ onClose }) => {
   return (
     <div className="fixed top-0 inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center z-10">
-      <div className="bg-[#FAFAFA] w-[600px] h-[400px] shadow-lg rounded-md p-5">
+      <div className="bg-[#FAFAFA] w-[600px] shadow-lg rounded-md p-5">
         <div className="space-y-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -19,17 +20,15 @@ const HireSuccessModal = () => {
               fill="#5856D6"
             />
           </svg>
-          <span className="flex justify-center">
-            <Title title="Success! Your Request Has Been Received" width="full" fontSize="text-2xl" />
-          </span>
-          <p className="text-[#5F5F5F] text-center">
+          <h2 className="md:text-center text-lg md:text-2xl font-bold">Success! Your Request Has Been Received</h2>
+          <p className="text-[#5F5F5F] md:text-center">
             Thank you for reaching out. Our team will review your submission and get in touch with you shortly
             to discuss the next steps.
           </p>
         </div>
 
         <div className="space-y-2 py-8">
-          <div className="self-stretch flex items-center gap-2.5">
+          <div className="self-stretch flex gap-2.5">
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                 <path
@@ -38,13 +37,13 @@ const HireSuccessModal = () => {
                 />
               </svg>
             </span>
-            <div className="grow shrink basis-0 text-[#161616] text-xs font-medium font-['DM Sans'] leading-tight tracking-tight">
-              <strong>What happens next:</strong> We’ll match you with the perfect developers and share
+            <div className="text-xs">
+              <strong className="text-sm">What happens next :</strong> We’ll match you with the perfect developers and share
               project details.
             </div>
           </div>
 
-          <div className="self-stretch flex items-center gap-2.5">
+          <div className="self-stretch flex gap-2.5">
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                 <path
@@ -53,12 +52,12 @@ const HireSuccessModal = () => {
                 />
               </svg>
             </span>
-            <div className="grow shrink basis-0 text-[#161616] text-xs font-medium font-['DM Sans'] leading-tight tracking-tight">
-              <strong>Estimated Response Time:</strong>Within 24 hours.
+            <div className="text-xs">
+              <strong className="text-sm">Estimated Response Time :</strong> Within 24 hours.
             </div>
           </div>
 
-          <div className="self-stretch flex items-center gap-2.5">
+          <div className="self-stretch flex gap-2.5">
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                 <path
@@ -67,8 +66,8 @@ const HireSuccessModal = () => {
                 />
               </svg>
             </span>
-            <div className="grow shrink basis-0 text-[#161616] text-xs font-medium font-['DM Sans'] leading-tight tracking-tight">
-              <strong>Need help?</strong> Feel free to reach out to our support team at
+            <div className="text-xs">
+              <strong className="text-sm">Need help?</strong> Feel free to reach out to our support team at
               <a href="mailto:info@flytesolutions.com" className="text-blue-700 hover:underline ml-1">
                 info@flytesolutions.com
               </a>
@@ -77,7 +76,10 @@ const HireSuccessModal = () => {
         </div>
 
         <div className="flex justify-center items-center">
-          <button className="px-5 h-10 bg-[#5856d6] hover:bg-[#4a46bc] rounded-md text-white text-sm font-semibold">
+          <button
+            onClick={onClose}
+            className="px-5 h-10 bg-[#5856d6] hover:bg-[#4a46bc] rounded-md text-white text-sm font-semibold"
+          >
             Close
           </button>
         </div>
