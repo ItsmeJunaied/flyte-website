@@ -218,11 +218,18 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: background-color 0.3s;
+  transition: color 0.3s ease;  /* Change background-color to color */
 }
+
 .nav__link:hover {
-  background-color: var(--first-color-lighten);
+  color: #2B6CB0 !important;  /* Text color change on hover */
 }
+
+/* Optional: Apply the same hover effect to the dropdown button */
+.dropdown__button:hover {
+  color: #2B6CB0 !important;  /* Text color change on hover for dropdown */
+}
+
 
 /* Show menu */
 .show-menu {

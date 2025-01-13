@@ -182,7 +182,7 @@ export const navbarData = {
         {
           name: "Cloud Clock In",
           icon: "fa-cogs",
-          description: "A cutting-edge tool for improving productivity.",
+          description: "A cutting-edge tool for improving productivity..",
           path: "/products/product-b",
         },
         {
@@ -1193,7 +1193,10 @@ export const footerData = {
             { name: "Fintech", path: "/industry/fintech" },
             { name: "Startup", path: "/industry/startup" },
             { name: "Logistics", path: "/industry/logistics" },
-            { name: "Retail & Manufacturing", path: "/industry/retail-manufacturing" },
+            {
+              name: "Retail & Manufacturing",
+              path: "/industry/retail-manufacturing",
+            },
             { name: "Enterprise", path: "/industry/enterprise" },
             { name: "Education", path: "/industry/education" },
           ],
@@ -1215,8 +1218,14 @@ export const footerData = {
           id: "case-studies",
           items: [
             { name: "Time Tracker", path: "/case-studies/time-tracker" },
-            { name: "Rostering System", path: "/case-studies/rostering-system" },
-            { name: "Queue Management System", path: "/case-studies/queue-management-system" },
+            {
+              name: "Rostering System",
+              path: "/case-studies/rostering-system",
+            },
+            {
+              name: "Queue Management System",
+              path: "/case-studies/queue-management-system",
+            },
             { name: "ERP Software", path: "/case-studies/erp-software" },
             { name: "CRM Software", path: "/case-studies/crm-software" },
             { name: "POS Software", path: "/case-studies/pos-software" },
@@ -1236,7 +1245,6 @@ export const footerData = {
     },
   },
 };
-
 
 // case study
 
@@ -1503,15 +1511,18 @@ export const contactUsKeyPoints = [
   },
   {
     id: 2,
-    title: "A solution advisor will analyze your requirements and provide a response within 3 business days.",
+    title:
+      "A solution advisor will analyze your requirements and provide a response within 3 business days.",
   },
   {
     id: 3,
-    title: "If required, a mutual NDA can be arranged within 1-2 business days to ensure confidentiality.",
+    title:
+      "If required, a mutual NDA can be arranged within 1-2 business days to ensure confidentiality.",
   },
   {
     id: 4,
-    title: "Project estimates or recommendations will be presented within 3-5 business days.",
+    title:
+      "Project estimates or recommendations will be presented within 3-5 business days.",
   },
 ];
 
@@ -1557,7 +1568,8 @@ export const serviceOverviewData = [
 
   {
     title: "Flexible Team Management",
-    description: "Easily scale your team based on project demands for short-term or long-term support.",
+    description:
+      "Easily scale your team based on project demands for short-term or long-term support.",
     icon: {
       path: "M28 12.834C30.1659 12.834 32.2432 13.6944 33.7747 15.2259C35.3063 16.7575 36.1667 18.8347 36.1667 21.0007C36.1667 23.1666 35.3063 25.2438 33.7747 26.7754C32.2432 28.3069 30.1659 29.1673 28 29.1673C25.8341 29.1673 23.7568 28.3069 22.2253 26.7754C20.6937 25.2438 19.8333 23.1666 19.8333 21.0007C19.8333 18.8347 20.6937 16.7575 22.2253 15.2259C23.7568 13.6944 25.8341 12.834 28 12.834ZM11.6667 18.6673C12.9733 18.6673 14.1867 19.0173 15.2367 19.6473C14.8867 22.984 15.8667 26.2973 17.8733 28.8873C16.7067 31.1273 14.3733 32.6673 11.6667 32.6673C9.81015 32.6673 8.02967 31.9298 6.71692 30.6171C5.40416 29.3043 4.66667 27.5238 4.66667 25.6673C4.66667 23.8108 5.40416 22.0303 6.71692 20.7176C8.02967 19.4048 9.81015 18.6673 11.6667 18.6673ZM44.3333 18.6673C46.1898 18.6673 47.9703 19.4048 49.2831 20.7176C50.5958 22.0303 51.3333 23.8108 51.3333 25.6673C51.3333 27.5238 50.5958 29.3043 49.2831 30.6171C47.9703 31.9298 46.1898 32.6673 44.3333 32.6673C41.6267 32.6673 39.2933 31.1273 38.1267 28.8873C40.1333 26.2973 41.1133 22.984 40.7633 19.6473C41.8133 19.0173 43.0267 18.6673 44.3333 18.6673ZM12.8333 42.584C12.8333 37.754 19.6233 33.834 28 33.834C36.3767 33.834 43.1667 37.754 43.1667 42.584V46.6673H12.8333V42.584ZM0 46.6673V43.1673C0 39.924 4.41 37.194 10.3833 36.4007C9.00667 37.9873 8.16667 40.1807 8.16667 42.584V46.6673H0ZM56 46.6673H47.8333V42.584C47.8333 40.1807 46.9933 37.9873 45.6167 36.4007C51.59 37.194 56 39.924 56 43.1673V46.6673Z",
       fill: "#3B82F6",
@@ -1582,25 +1594,27 @@ export const serviceHighlightsData = [
     id: 1,
     category: "Speed",
     title: "High Velocity Product Development",
-    description: "Accelerate time-to-market with our specialized offshore IT experts.",
+    description:
+      "Accelerate time-to-market with our specialized offshore IT experts.",
     features: [
       "Rapid product development",
       "Cost-effective scaling",
-      "Time zone advantage"
+      "Time zone advantage",
     ],
-    backgroundImage: "https://i.ibb.co.com/DLFqKr5/Rectangle-3841.png"
+    backgroundImage: "https://i.ibb.co.com/DLFqKr5/Rectangle-3841.png",
   },
   {
     id: 2,
     category: "Expertise",
     title: "Access to Specialized IT Experts",
-    description: "Leverage top-tier talent for niche and challenging tech projects.",
+    description:
+      "Leverage top-tier talent for niche and challenging tech projects.",
     features: [
       "Highly skilled offshore teams",
       "Expertise in emerging tech",
-      "Global resource availability"
+      "Global resource availability",
     ],
-    backgroundImage: "https://i.ibb.co.com/DLFqKr5/Rectangle-3842.png"
+    backgroundImage: "https://i.ibb.co.com/DLFqKr5/Rectangle-3842.png",
   },
   {
     id: 3,
@@ -1610,20 +1624,158 @@ export const serviceHighlightsData = [
     features: [
       "On-demand scaling",
       "Diverse tech capabilities",
-      "Customized solutions"
+      "Customized solutions",
     ],
-    backgroundImage: "https://i.ibb.co.com/DLFqKr5/Rectangle-3843.png"
+    backgroundImage: "https://i.ibb.co.com/DLFqKr5/Rectangle-3843.png",
   },
   {
     id: 4,
     category: "Control",
     title: "Organizations Requiring Managed Offshore IT Experts",
-    description: "Maintain control over development while we handle administrative tasks.",
+    description:
+      "Maintain control over development while we handle administrative tasks.",
     features: [
       "Full control over development",
       "Reduced administrative overhead",
-      "Efficient resource management"
+      "Efficient resource management",
     ],
-    backgroundImage: "https://i.ibb.co.com/DLFqKr5/Rectangle-3844.png"
-  }
+    backgroundImage: "https://i.ibb.co.com/DLFqKr5/Rectangle-3844.png",
+  },
 ];
+
+// induscried bannerData
+
+export const induscriedBannerData = {
+  bgImage: "https://i.ibb.co.com/bH3K5FL/Rectangle-3843-2x.png",
+  subtitle: "EXPLORE OUR PRODUCTS, DESIGNED FOR YOUR SUCCESS!",
+  title: "Discover Innovative Solutions Built for Your Business",
+  description:
+    "Explore our range of products designed to enhance your operations, boost productivity, and help you achieve your goals effortlessly.",
+  btnName: "Book A Consultation",
+  btnPath: "/hire/application-form",
+};
+
+// product cards
+
+export const ProductCardsData = [
+  {
+    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    productTitle: "Cloud ClockIn",
+    ProductDetails:
+      "A digital system for tracking employee attendance and work hours in real time.",
+    tags: ["Attendance Management", "Real-Time Tracking", "SaaS"],
+  },
+  {
+    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    productTitle: "Time2Task",
+    ProductDetails:
+      "A task management tool to plan, assign, and track project tasks efficiently.",
+    tags: ["Project Management", "Real-Time Tracking", "SaaS"],
+  },
+  {
+    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    productTitle: "Flyte Queue",
+    ProductDetails:
+      "A digital queue management system to streamline customer flow and reduce waiting times.",
+    tags: ["Queue Management", "Real-Time Tracking", "SaaS"],
+  },
+  {
+    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    productTitle: "Flyte ERP",
+    ProductDetails:
+      "A comprehensive platform that integrates and streamlines core business processes for enhanced productivity.",
+    tags: ["Enterprise Solutions", "Real-Time Tracking", "SaaS"],
+  },
+  {
+    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    productTitle: "Flyte CRM",
+    ProductDetails:
+      "A customer relationship management tool designed to optimize sales, marketing, and customer support operations.",
+    tags: ["Customer Management", "Real-Time Tracking", "SaaS"],
+  },
+  {
+    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    productTitle: "Flyte POS",
+    ProductDetails:
+      "A reliable point-of-sale system for efficient retail transactions and inventory tracking.",
+    tags: ["Retail Management", "Real-Time Tracking", "SaaS"],
+  },
+  {
+    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    productTitle: "Inventory Management System",
+    ProductDetails:
+      "A solution for tracking, managing, and optimizing stock levels across locations.",
+    tags: ["Stock Control", "Real-Time Tracking", "SaaS"],
+  },
+  {
+    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    productTitle: "Board Meeting Management",
+    ProductDetails:
+      "A system to organize, schedule, and document board meetings effectively.",
+    tags: ["Corporate Governance", "Real-Time Tracking", "Single Page Application"],
+  },
+  {
+    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    productTitle: "Help Desk Management",
+    ProductDetails:
+      "A platform for tracking, resolving, and managing customer support requests.",
+    tags: ["Customer Support", "Help Desk", "Single Page Application"],
+  },
+  {
+    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    productTitle: "Clinic & Hospital Management",
+    ProductDetails:
+      "A solution to streamline patient records, appointments, billing, and medical workflows.",
+    tags: ["Healthcare Solutions", "Doctor", "Single Page Application"],
+  },
+  {
+    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    productTitle: "Document Management System",
+    ProductDetails:
+      "A secure platform for storing, managing, and retrieving organizational documents.",
+    tags: ["File Organization", "FTP", "Single Page Application"],
+  },
+   
+   
+];
+
+
+// product cards
+
+export const successStories=[
+  {
+    companyName:"uber",
+    description: "Their dedication and willingness to help were impressive. They were efficient and kept everyone on-task.",
+    image: "https://via.placeholder.com/40x40",
+    AuthorName: "John Abraham",
+    AuthorTag: "CEO"
+  },
+  {
+    companyName: "Google",
+    description: "Their innovative solutions and expertise helped us achieve our goals efficiently.",
+    image: "https://via.placeholder.com/40x40",
+    AuthorName: "Jane Smith",
+    AuthorTag: "CTO"
+  },
+  {
+    companyName: "Microsoft",
+    description: "The team was highly professional and delivered exceptional results on time.",
+    image: "https://via.placeholder.com/40x40",
+    AuthorName: "Michael Johnson",
+    AuthorTag: "Project Manager"
+  },
+  {
+    companyName: "Amazon",
+    description: "Their ability to understand our needs and provide tailored solutions was remarkable.",
+    image: "https://via.placeholder.com/40x40",
+    AuthorName: "Emily Davis",
+    AuthorTag: "Operations Manager"
+  },
+  {
+    companyName: "Apple",
+    description: "The collaboration was seamless, and the quality of work exceeded our expectations.",
+    image: "https://via.placeholder.com/40x40",
+    AuthorName: "David Wilson",
+    AuthorTag: "Head of Development"
+  }
+]

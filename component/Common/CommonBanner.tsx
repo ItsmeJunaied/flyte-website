@@ -1,5 +1,6 @@
 import React from "react";
 import CustomNavigateButton from "../Hire/CustomNavigateButton";
+import Link from "next/link";
 
 type BannerData = {
   bgImage: string;
@@ -7,10 +8,6 @@ type BannerData = {
   title: string;
   description: string;
   btnName: string;
-  btnTextColor: string;
-  btnTextHoverColor: string;
-  btnBgColor: string;
-  btnBgHover: string;
   btnPath: string;
 };
 
@@ -36,13 +33,14 @@ const CommonBanner: React.FC<{ bannerData: BannerData }> = ({ bannerData }) => {
             {bannerData?.description}
           </p>
 
-          <CustomNavigateButton
-            btnName={bannerData?.btnName}
-            textColor={bannerData?.btnTextColor}
-            textHoverColor={bannerData?.btnTextHoverColor}
-            bgColor={bannerData?.btnBgColor}
-            bgHover={bannerData?.btnBgHover}
-          />
+          <Link
+            href={bannerData?.btnPath}
+            className="h-[42px] w-fit px-8 py-3 bg-[#5856d6] rounded-md justify-start items-start gap-2.5 inline-flex overflow-hidden"
+          >
+            <div className="text-white text-sm font-semibold font-['DM Sans']">
+            {bannerData?.btnName}
+            </div>
+          </Link>
         </div>
       </div>
     </div>

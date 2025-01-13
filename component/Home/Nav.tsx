@@ -1,4 +1,3 @@
-import { navbarData } from "@/api/Dummy";
 import Link from "next/link";
 import React from "react";
 
@@ -41,16 +40,14 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
               >
                 {item.type === "dropdown" ? (
                   <>
-                    <div className="nav__link dropdown__button">
-                      {item.name}{" "}
+                    <div className="nav__link dropdown__button  ">
+                      <p className=" text-black hover:text-[#2B6CB0]">{item.name}</p>
                       <i className="fa-solid fa-chevron-down fa-2xs"></i>
                     </div>
                     <div className="dropdown__container bg-[#F4F2F0]">
                       <div className="dropdown__content">
                         <div className="flex flex-col lg:flex-row gap-10 container mx-auto">
                           <div className=" w-full h-full lg:w-1/3 hidden lg:flex flex-col gap-4 flex-shrink-0 ">
-                            {/* {navData.menu.map((item, index) => (
-                              <div key={index}> */}
 
                             <h1 className="text-lg text-btnColor ">
                               {item.name}
