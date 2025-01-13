@@ -1,4 +1,5 @@
 import CommonBanner from "@/component/Common/CommonBanner";
+import ServiceCard from "@/component/Services/ServiceCard";
 import React from "react";
 
 const servicesBannerData = {
@@ -19,6 +20,8 @@ const page = () => {
   return (
     <div>
       <CommonBanner bannerData={servicesBannerData} />
+      <ServiceCard reverse={true}/>
+      <ServiceCard reverse={false}/>
     </div>
   );
 };
