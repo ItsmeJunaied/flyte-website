@@ -1,5 +1,4 @@
 import React from "react";
-import CustomNavigateButton from "../Hire/CustomNavigateButton";
 import Link from "next/link";
 
 type BannerData = {
