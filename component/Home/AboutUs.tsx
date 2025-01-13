@@ -55,11 +55,11 @@ const AboutUs: React.FC = () => {
           {/* Right Content */}
           <div className="relative max-w-[450px] max-h-[600px] flex flex-col gap-4">
             {/* Lottie Animation */}
-            <PlaneLottieAboutUs />
+            {/* <PlaneLottieAboutUs /> */}
 
             {/* Content */}
             <p className="text-[#6c757d] text-base leading-7 mb-6">
-              <span className=" text-[#24B0E4] text-xl font-semibold">
+              <span className="  text-xl font-semibold">
                 Flyte
               </span>{" "}
               Solutions is a trusted global provider of cutting-edge IT

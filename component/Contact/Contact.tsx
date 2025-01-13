@@ -20,12 +20,12 @@ const Contact: React.FC<contactUsKeyPointsProps> = ({ contsctUsData }) => {
         <div className=" h-full flex flex-col lg:flex-row justify-start lg:justify-between items-start lg:items-center gap-8 ">
           {/* form section */}
 
-          <div className=" w-2/3">
+          <div className=" w-full lg:w-2/3">
             <ContactUsFormComp headertitle={headertitle} />
           </div>
 
           {/* key section */}
-          <div className=" w-1/3">
+          <div className=" w-full lg:w-1/3 px-5 lg:px-0">
             <ContactUsKeyPointComp KeyPoints={KeyPoints} />
           </div>
         </div>
