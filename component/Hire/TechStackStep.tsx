@@ -8,8 +8,8 @@ const TechStackStep = () => {
         Select the technologies and tools your project requires.
       </p>
       {/* Frontend Development  */}
-      <div className="bg-white rounded-lg border border-[#efefef] p-6 m-3 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8 md:w-[800px]">
-        <p className="col-span-1 text-[#373737] text-sm font-semibold text-center">Frontend Development</p>
+      <div className="bg-white p-5 rounded-lg border border-[#efefef] grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8 md:w-[800px] mb-2">
+        <p className="col-span-1 text-[#373737] text-sm font-semibold md:text-center">Frontend Development</p>
         <div className="space-y-2 col-span-1 md:col-span-2 flex flex-col items-start">
           <CustomCheckBox id="html-css" registerName="htmlCss" label="HTML & CSS" />
           <CustomCheckBox id="react" registerName="react" label="React" />
@@ -21,8 +21,8 @@ const TechStackStep = () => {
       </div>
 
       {/* Backend Development */}
-      <div className="bg-white rounded-lg border border-[#efefef] p-6 m-3 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8 md:w-[800px]">
-        <p className="col-span-1 text-[#373737] text-sm font-semibold text-center">Backend Development</p>
+      <div className="bg-white p-5 rounded-lg border border-[#efefef] grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8 md:w-[800px] mb-2">
+        <p className="col-span-1 text-[#373737] text-sm font-semibold md:text-center">Backend Development</p>
         <div className="space-y-2 col-span-1 md:col-span-2 flex flex-col items-start">
           <CustomCheckBox id="nodejs" registerName="nodejs" label="Node.js" />
           <CustomCheckBox id="java-spring" registerName="javaSpring" label="Java (Spring)" />
@@ -35,8 +35,8 @@ const TechStackStep = () => {
       </div>
 
       {/* Mobile Application */}
-      <div className="bg-white rounded-lg border border-[#efefef] p-6 m-3 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8 md:w-[800px]">
-        <p className="col-span-1 text-[#373737] text-sm font-semibold text-center">Mobile Application</p>
+      <div className="bg-white p-5 rounded-lg border border-[#efefef] grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8 md:w-[800px] mb-2">
+        <p className="col-span-1 text-[#373737] text-sm font-semibold md:text-center">Mobile Application</p>
         <div className="space-y-2 col-span-1 md:col-span-2 flex flex-col items-start">
           <CustomCheckBox id="flutter" registerName="flutter" label="Flutter" />
           <CustomCheckBox id="react-native" registerName="reactNative" label="React Native" />

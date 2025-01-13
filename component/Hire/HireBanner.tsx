@@ -7,10 +7,6 @@ const hireBannerData = {
   title: "Hire a dedicated development team built for your needs",
   description: "Expand your team with dedicated developers who integrate smoothly and enhance your project’s success.",
   btnName: "Build Your Development Team",
-  btnTextColor: "white",
-  btnTextHoverColor: "white",
-  btnBgColor: "#5856d6",
-  btnBgHover: "#3d3b98",
   btnPath: "/hire/application-form",
 };
 
