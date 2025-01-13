@@ -8,7 +8,7 @@ export const metadata = {
   title: "Hire | Flyte Solutions Ltd.",
   description: "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
 };
-const page = () => {
+const Hire = () => {
   return (
     <div>
       <HireBanner />
@@ -19,4 +19,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Hire;
