@@ -20,8 +20,12 @@ const page = () => {
   return (
     <div>
       <CommonBanner bannerData={servicesBannerData} />
-      <ServiceCard reverse={true}/>
-      <ServiceCard reverse={false}/>
+      <div className="mb-5">
+        <ServiceCard reverse={true} />
+        <ServiceCard reverse={false} />
+        <ServiceCard reverse={true} />
+        <ServiceCard reverse={false} />
+      </div>
     </div>
   );
 };
