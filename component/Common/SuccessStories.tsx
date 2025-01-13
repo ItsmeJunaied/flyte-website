@@ -3,7 +3,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "@/styles/globals.css"; // Ensure global styles are imported
 import Title from "./Title";
 import { successStories } from "@/api/Dummy";
 
@@ -23,35 +22,35 @@ const SuccessStories: React.FC<successStoryProps> = () => {
   const successStory = successStories;
 
   const settings = {
-    infinite: true, // Set to true to enable infinite scrolling
+    infinite: true,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1545,
+        breakpoint: 1545, // When screen is smaller than 1545px
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 1020,
+        breakpoint: 1020, // When screen is smaller than 1020px
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 2, // Change this based on your desired layout for smaller screens
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 600, // For even smaller screens (tablets or phones)
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 320,
+        breakpoint: 320, // For the smallest screens
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -61,50 +60,85 @@ const SuccessStories: React.FC<successStoryProps> = () => {
   };
 
   return (
-    <div>
-      <div className="w-full flex flex-col justify-center items-center">
+    <div className=" container mx-auto mt-20">
+      <div className="w-full flex flex-col justify-center items-center ">
         {/* Title Section */}
-        <Title fontSize="text-lg" title="Real stories of success and partnership" />
-        <p className="w-[492px] text-center text-neutral-500 text-sm font-normal font-['Open Sans']">
-          Discover how our solutions have empowered businesses to grow, adapt, and thrive
+        <Title
+        width=" lg:w-full"
+          fontSize="text-3xl"
+          title="Real stories of success and partnership"
+        />
+        <p className=" text-center text-neutral-500 text-sm font-normal mt-3  mb-10">
+          Discover how our solutions have empowered businesses to grow, adapt,
+          and thrive
         </p>
 
         {/* Carousel Section */}
-        <Slider {...settings}>
-          {successStory.map((story, index) => (
-            <div key={index} className="w-[560px] h-[261.89px] px-20 py-6 bg-gradient-to-r from-[#5c5c5c] to-[#ffb5a8] flex-col justify-start items-start gap-10 inline-flex">
-              {/* Background Decoration */}
-              <div className="w-10 h-[13.89px] relative overflow-hidden" />
-              <div className="w-10 h-10 relative opacity-20 overflow-hidden" />
-              {/* Story Content */}
-              <div className="self-stretch h-40 flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch text-white text-sm font-semibold font-['Nunito']">
-                  {story.description}
-                </div>
-                <div className="justify-center items-center gap-2.5 inline-flex">
-                  <img
-                    className="w-10 h-10 relative rounded-[30px]"
-                    src={story.image || "https://via.placeholder.com/40x40"}
-                    alt={story.AuthorName}
-                  />
-                  <div className="flex-col justify-center items-start inline-flex">
-                    <div className="text-white text-xs font-medium font-['Nunito']">
-                      {story.AuthorName}
+        <div className="w-full ">
+          <Slider {...settings}>
+            {successStory.map((story, index) => (
+              <div
+                key={index}
+                className=" h-[280px]   w-full flex justify-center items-center px-2 lg:px-20 "
+              >
+                <div className=" py-4  lg:py-6 bg-[#DDDDDD] rounded-md px-20 flex flex-col justify-start items-start gap-3">
+                  <h1 className="text-[#131313] text-xl">
+                    {story.companyName}
+                  </h1>
+
+                  <div className=" flex flex-col">
+                    <div className=" relative -ml-4">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="40"
+                        height="41"
+                        viewBox="0 0 40 41"
+                        fill="none"
+                      >
+                        <g opacity="0.2">
+                          <path
+                            d="M33.848 30.1709C36.993 26.7576 36.6763 22.3742 36.6663 22.3242V8.99089C36.6663 8.54886 36.4907 8.12494 36.1781 7.81237C35.8656 7.49981 35.4417 7.32422 34.9996 7.32422H24.9996C23.1613 7.32422 21.6663 8.81922 21.6663 10.6576V22.3242C21.6663 22.7662 21.8419 23.1902 22.1544 23.5027C22.467 23.8153 22.8909 23.9909 23.333 23.9909H28.463C28.427 24.8147 28.1809 25.6157 27.748 26.3176C26.9013 27.6526 25.3063 28.5642 23.0046 29.0242L21.6663 29.2909V33.9909H23.333C27.9713 33.9909 31.5096 32.7059 33.848 30.1709ZM15.503 30.1709C18.6496 26.7576 18.3313 22.3742 18.3213 22.3242V8.99089C18.3213 8.54886 18.1457 8.12494 17.8331 7.81237C17.5206 7.49981 17.0967 7.32422 16.6546 7.32422H6.65462C4.81629 7.32422 3.32129 8.81922 3.32129 10.6576V22.3242C3.32129 22.7662 3.49688 23.1902 3.80944 23.5027C4.122 23.8153 4.54593 23.9909 4.98796 23.9909H10.118C10.082 24.8147 9.83587 25.6157 9.40296 26.3176C8.55629 27.6526 6.96129 28.5642 4.65962 29.0242L3.32129 29.2909V33.9909H4.98796C9.62629 33.9909 13.1646 32.7059 15.503 30.1709Z"
+                            fill="black"
+                          />
+                        </g>
+                      </svg>
                     </div>
-                    <div className="text-white text-[10px] font-normal font-['Nunito']">
-                      {story.AuthorTag}
+                    <div className=" -mt-5">
+                      <p className="text-[#121212] text-sm font-semibold ">
+                        {story.description}
+                      </p>
                     </div>
                   </div>
-                </div>
-                <div className="px-4 py-2 bg-white rounded-md shadow-[0px_0px_10px_10px_rgba(230,230,230,0.25)] border border-[#dddddd] justify-start items-start gap-2.5 inline-flex overflow-hidden">
-                  <div className="text-[#191919] text-sm font-semibold font-['DM Sans']">
-                    View Case Study
+
+                  <div className=" flex flex-row justify-center items-center gap-3">
+                    <div className=" w-[50px] h-[50px]">
+                      <img
+                        className="rounded-full"
+                        src="https://via.placeholder.com/40x40"
+                        alt=""
+                      />
+                    </div>
+
+                    <div>
+                      <h1 className="text-[#121212] text-xs font-medium  ">
+                        John Abraham
+                      </h1>
+                      <p className="text-[#121212] text-[10px] font-normal font-['DM Sans']">
+                        CEO at Uber
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className=" px-4 py-2 bg-white rounded-md shadow-[0px_0px_10px_10px_rgba(230,230,230,0.25)] border border-[#dddddd] justify-start items-start gap-2.5 inline-flex overflow-hidden">
+                    <h1 className="text-[#191919] text-sm font-semibold ">
+                      View Case Study
+                    </h1>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import CommonBanner from "@/component/Common/CommonBanner";
-import { induscriedBannerData } from "@/api/Dummy";
+import { productBannerData } from "@/api/Dummy";
 import ProductsSections from "@/component/Products/ProductsSections";
 import Contact from "@/component/Contact/Contact";
 import SuccessStories from "@/component/Common/SuccessStories";
@@ -11,16 +11,16 @@ export const metadata = {
     "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
 };
 
-const page = () => {
-  const industriesBannerData = induscriedBannerData;
+const page:React.FC = () => {
+  const productsBannerData = productBannerData;
   return (
     <div>
-      <CommonBanner bannerData={industriesBannerData} />
+      <CommonBanner bannerData={productsBannerData} />
 
       <ProductsSections />
 
       <div className=" container mx-auto">
-        {/* <SuccessStories/> */}
+        <SuccessStories/>
         <Contact />
       </div>
     </div>

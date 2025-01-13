@@ -15,14 +15,7 @@ type ContactUsFormCompProps = {
   const ContactUsFormComp: React.FC<ContactUsFormCompProps> = ({ headertitle }) => {
   return (
     <div className=" w-full h-full flex-col justify-start items-start gap-4 inline-flex px-10 lg:px-0 pb-10 lg:pb-0">
-      <div className="  mb-5 flex w-full items-center justify-center ">
-        {/* <Subtitle Subtitle="Contact Us" /> */}
-        <Title
-          width="w-full"
-          fontSize="text-lg lg:text-2xl"
-          title={headertitle}
-        />
-      </div>
+
       <div className=" w-full flex flex-col lg:flex-row justify-start items-start gap-8 ">
         <div className=" w-full   flex-col justify-start items-start gap-2 inline-flex">
           <label className="self-stretch text-[#666666] text-xs font-semibold font-['DM Sans'] leading-[18px]">

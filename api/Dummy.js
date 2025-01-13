@@ -1,5 +1,7 @@
 //navbar
 
+
+
 export const navbarData = {
   menu: [
     {
@@ -1647,6 +1649,17 @@ export const serviceHighlightsData = [
 
 export const induscriedBannerData = {
   bgImage: "https://i.ibb.co.com/bH3K5FL/Rectangle-3843-2x.png",
+  subtitle: "Explore Our Expertise Across Diverse Industries!",
+  title: "Innovative Solutions for Your Industry",
+  description:
+    "We deliver solutions designed to meet industry-specific needs and help you achieve your goals.",
+  btnName: "Book A Consultation",
+  btnPath: "/contact-us",
+};
+
+// product
+export const productBannerData = {
+  bgImage: "https://i.ibb.co.com/bH3K5FL/Rectangle-3843-2x.png",
   subtitle: "EXPLORE OUR PRODUCTS, DESIGNED FOR YOUR SUCCESS!",
   title: "Discover Innovative Solutions Built for Your Business",
   description:
@@ -1712,7 +1725,11 @@ export const ProductCardsData = [
     productTitle: "Board Meeting Management",
     ProductDetails:
       "A system to organize, schedule, and document board meetings effectively.",
-    tags: ["Corporate Governance", "Real-Time Tracking", "Single Page Application"],
+    tags: [
+      "Corporate Governance",
+      "Real-Time Tracking",
+      "Single Page Application",
+    ],
   },
   {
     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
@@ -1735,47 +1752,293 @@ export const ProductCardsData = [
       "A secure platform for storing, managing, and retrieving organizational documents.",
     tags: ["File Organization", "FTP", "Single Page Application"],
   },
-   
-   
 ];
 
+// industries page
 
+export const IndustriesCardsData = [
+  {
+    industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
+    industryLogo: "fa-solid fa-chart-area",
+    industryName: "Fintech",
+    industryDescription:
+      "Drive innovation with secure, scalable, and customer-centric fintech solutions. From payment gateways to digital banking, empower your business with cutting-edge technology.",
+    industryReview:
+      "The team's dedication and expertise in FinTech solutions were impressive, ensuring efficiency and keeping everyone aligned throughout the project.",
+    reviewerName: "John Doe",
+    reviewerImage: "https://via.placeholder.com/40x40",
+    reviewerPosition: "CEO",
+    reviewerCompany: "Uber",
+
+    services: [
+      "Digital Payments Solutions",
+      "Blockchain Technology Integration",
+      "Mobile Banking Applications",
+      "Peer-to-Peer Lending Platforms",
+      "Wealth & Asset Management Tools",
+      "Fraud Detection & Prevention Systems",
+      "Cryptocurrency Platforms",
+      "Regulatory Compliance Solutions",
+    ],
+  },
+  {
+    industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
+    industryLogo: "fa-solid fa-lightbulb",
+    industryName: "Startup",
+    industryDescription:
+      "Empower your startup with innovative solutions that drive growth and efficiency. From MVP development to scaling, we provide the tools you need to succeed.",
+    industryReview:
+      "Their expertise in startup solutions was invaluable. They helped us launch quickly and scale efficiently.",
+    reviewerName: "Alice Brown",
+    reviewerImage: "https://via.placeholder.com/40x40",
+    reviewerPosition: "Founder",
+    reviewerCompany: "TechStart",
+
+    services: [
+      "MVP Development",
+      "Product Design & Prototyping",
+      "Market Research & Analysis",
+      "Growth Hacking Strategies",
+      "Investor Pitch Decks",
+      "Scalable Cloud Solutions",
+      "Agile Development",
+      "Startup Mentorship",
+    ],
+  },
+  {
+    industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
+    industryLogo: "fa-solid fa-truck",
+    industryName: "Logistics",
+    industryDescription:
+      "Optimize your logistics operations with advanced technology solutions. From supply chain management to real-time tracking, enhance efficiency and reduce costs.",
+    industryReview:
+      "Their logistics solutions streamlined our operations and significantly improved our delivery times.",
+    reviewerName: "Robert Green",
+    reviewerImage: "https://via.placeholder.com/40x40",
+    reviewerPosition: "Logistics Manager",
+    reviewerCompany: "FastTrack Logistics",
+
+    services: [
+      "Supply Chain Management",
+      "Fleet Management Systems",
+      "Inventory Tracking Solutions",
+      "Real-Time Shipment Tracking",
+      "Warehouse Management",
+      "Route Optimization",
+      "Logistics Analytics",
+      "Automated Order Processing",
+    ],
+  },
+  {
+    industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
+    industryLogo: "fa-solid fa-store",
+    industryName: "Retail & Manufacturing",
+    industryDescription:
+      "Transform your retail and manufacturing processes with technology-driven solutions. From inventory management to customer engagement, drive growth and efficiency.",
+    industryReview:
+      "Their solutions for retail and manufacturing helped us streamline our processes and improve customer satisfaction.",
+    reviewerName: "Laura White",
+    reviewerImage: "https://via.placeholder.com/40x40",
+    reviewerPosition: "Operations Director",
+    reviewerCompany: "RetailPro",
+
+    services: [
+      "Inventory Management Systems",
+      "Customer Relationship Management (CRM)",
+      "Point of Sale (POS) Systems",
+      "E-commerce Platforms",
+      "Manufacturing Process Automation",
+      "Supply Chain Optimization",
+      "Retail Analytics",
+      "Customer Engagement Solutions",
+    ],
+  },
+  {
+    industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
+    industryLogo: "fa-solid fa-building",
+    industryName: "Enterprise",
+    industryDescription:
+      "Empower your enterprise with scalable and secure technology solutions. From ERP systems to cloud computing, enhance productivity and drive innovation.",
+    industryReview:
+      "Their enterprise solutions provided us with the tools we needed to scale and innovate effectively.",
+    reviewerName: "James Black",
+    reviewerImage: "https://via.placeholder.com/40x40",
+    reviewerPosition: "CIO",
+    reviewerCompany: "EnterpriseCorp",
+
+    services: [
+      "Enterprise Resource Planning (ERP)",
+      "Business Intelligence & Analytics",
+      "Cloud Computing Solutions",
+      "Cybersecurity Services",
+      "IT Infrastructure Management",
+      "Enterprise Mobility Solutions",
+      "Data Management & Integration",
+      "Custom Software Development",
+    ],
+  },
+  {
+    industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
+    industryLogo: "fa-solid fa-graduation-cap",
+    industryName: "Education",
+    industryDescription:
+      "Enhance the learning experience with innovative education technology solutions. From e-learning platforms to student management systems, empower educators and students.",
+    industryReview:
+      "Their education technology solutions transformed our learning environment and improved student engagement.",
+    reviewerName: "Sarah Blue",
+    reviewerImage: "https://via.placeholder.com/40x40",
+    reviewerPosition: "Principal",
+    reviewerCompany: "EduTech School",
+
+    services: [
+      "E-learning Platforms",
+      "Student Information Systems",
+      "Learning Management Systems (LMS)",
+      "Virtual Classrooms",
+      "Educational Content Development",
+      "Teacher Collaboration Tools",
+      "Student Engagement Solutions",
+      "Assessment & Evaluation Tools",
+    ],
+  },
+  {
+    industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
+    industryLogo: "fa-solid fa-home",
+    industryName: "Real Estate",
+    industryDescription:
+      "Revolutionize the real estate industry with technology solutions that enhance property management, sales, and customer engagement.",
+    industryReview:
+      "Their real estate solutions helped us manage properties more efficiently and improve client satisfaction.",
+    reviewerName: "David Grey",
+    reviewerImage: "https://via.placeholder.com/40x40",
+    reviewerPosition: "Real Estate Manager",
+    reviewerCompany: "RealEstatePro",
+
+    services: [
+      "Property Management Systems",
+      "Real Estate CRM",
+      "Virtual Property Tours",
+      "Online Booking & Scheduling",
+      "Market Analysis & Insights",
+      "Customer Engagement Solutions",
+      "Investment Management Tools",
+      "Real Estate Analytics",
+    ],
+  },
+  {
+    industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
+    industryLogo: "fa-solid fa-heartbeat",
+    industryName: "Medical & Healthcare",
+    industryDescription:
+      "Enhance healthcare delivery with advanced technology solutions. From telemedicine to patient management systems, improve patient care and operational efficiency.",
+    industryReview:
+      "Their healthcare solutions improved our patient care and streamlined our operations.",
+    reviewerName: "Emma Brown",
+    reviewerImage: "https://via.placeholder.com/40x40",
+    reviewerPosition: "Healthcare Administrator",
+    reviewerCompany: "HealthCarePlus",
+
+    services: [
+      "Telemedicine Solutions",
+      "Electronic Health Records (EHR)",
+      "Patient Management Systems",
+      "Medical Billing & Coding",
+      "Healthcare Analytics",
+      "Remote Patient Monitoring",
+      "Pharmacy Management Systems",
+      "Healthcare Mobile Apps",
+    ],
+  },
+  {
+    industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
+    industryLogo: "fa-solid fa-laptop-code",
+    industryName: "Technology Company",
+    industryDescription:
+      "Drive innovation with cutting-edge technology solutions. From software development to cloud computing, empower your tech company to achieve its goals.",
+    industryReview:
+      "Their technology solutions helped us innovate and stay ahead of the competition.",
+    reviewerName: "Chris White",
+    reviewerImage: "https://via.placeholder.com/40x40",
+    reviewerPosition: "CTO",
+    reviewerCompany: "TechInnovate",
+
+    services: [
+      "Custom Software Development",
+      "Cloud Computing Solutions",
+      "AI & Machine Learning",
+      "DevOps Services",
+      "Cybersecurity Solutions",
+      "Data Analytics & Visualization",
+      "Mobile App Development",
+      "IT Consulting & Strategy",
+    ],
+  },
+  {
+    industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
+    industryLogo: "fa-solid fa-film",
+    industryName: "Media & Entertainment",
+    industryDescription:
+      "Transform the media and entertainment industry with innovative technology solutions. From content creation to distribution, enhance your audience's experience.",
+    industryReview:
+      "Their media and entertainment solutions helped us create and distribute content more effectively.",
+    reviewerName: "Olivia Green",
+    reviewerImage: "https://via.placeholder.com/40x40",
+    reviewerPosition: "Media Director",
+    reviewerCompany: "MediaPro",
+
+    services: [
+      "Content Management Systems",
+      "Digital Asset Management",
+      "Video Streaming Solutions",
+      "Social Media Integration",
+      "Audience Analytics",
+      "Interactive Media Solutions",
+      "Virtual & Augmented Reality",
+      "Media Production Tools",
+    ],
+  },
+];
 // product cards
 
-export const successStories=[
+export const successStories = [
   {
-    companyName:"uber",
-    description: "Their dedication and willingness to help were impressive. They were efficient and kept everyone on-task.",
+    companyName: "uber",
+    description:
+      "Their dedication and willingness to help were impressive. They were efficient and kept everyone on-task.",
     image: "https://via.placeholder.com/40x40",
     AuthorName: "John Abraham",
-    AuthorTag: "CEO"
+    AuthorTag: "CEO",
   },
   {
     companyName: "Google",
-    description: "Their innovative solutions and expertise helped us achieve our goals efficiently.",
+    description:
+      "Their innovative solutions and expertise helped us achieve our goals efficiently.",
     image: "https://via.placeholder.com/40x40",
     AuthorName: "Jane Smith",
-    AuthorTag: "CTO"
+    AuthorTag: "CTO",
   },
   {
     companyName: "Microsoft",
-    description: "The team was highly professional and delivered exceptional results on time.",
+    description:
+      "The team was highly professional and delivered exceptional results on time.",
     image: "https://via.placeholder.com/40x40",
     AuthorName: "Michael Johnson",
-    AuthorTag: "Project Manager"
+    AuthorTag: "Project Manager",
   },
   {
     companyName: "Amazon",
-    description: "Their ability to understand our needs and provide tailored solutions was remarkable.",
+    description:
+      "Their ability to understand our needs and provide tailored solutions was remarkable.",
     image: "https://via.placeholder.com/40x40",
     AuthorName: "Emily Davis",
-    AuthorTag: "Operations Manager"
+    AuthorTag: "Operations Manager",
   },
   {
     companyName: "Apple",
-    description: "The collaboration was seamless, and the quality of work exceeded our expectations.",
+    description:
+      "The collaboration was seamless, and the quality of work exceeded our expectations.",
     image: "https://via.placeholder.com/40x40",
     AuthorName: "David Wilson",
-    AuthorTag: "Head of Development"
-  }
-]
+    AuthorTag: "Head of Development",
+  },
+];
