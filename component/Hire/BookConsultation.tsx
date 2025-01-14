@@ -4,10 +4,7 @@ const BookConsultation = () => {
   return (
     <div className="mx-auto mb-20">
       <div
-        className="w-full h-[180px] md:h-[226px] bg-cover bg-center relative"
-        style={{
-          backgroundImage: "url('https://i.ibb.co.com/bH3K5FL/Rectangle-3843-2x.png')",
-        }}
+        className="w-full h-[180px] md:h-[226px] bg-cover bg-center relative bg-btnColor"
       >
         {/* Content */}
         <div className="container mx-auto h-full flex flex-col justify-center items-center gap-6 text-center text-white">

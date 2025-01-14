@@ -1,5 +1,6 @@
 import React from "react";
 import Title from "../Common/Title";
+import Subtitle from "../Common/Subtitle";
 
 // types.ts
 type TechItem = {
@@ -54,6 +55,7 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({
     >
       <div className=" container mx-auto">
         <div className=" ">
+          <Subtitle Subtitle="Our Technology"/>
           <Title title={headerTitle} />
         </div>
 
