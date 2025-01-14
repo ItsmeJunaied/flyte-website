@@ -53,7 +53,7 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({
       }}
       data-aos="fade-up"
     >
-      <div className=" container mx-auto">
+      <div className=" container px-5 lg:px-[80px]">
         <div className=" ">
           <Subtitle Subtitle="Our Technology"/>
           <Title title={headerTitle} />

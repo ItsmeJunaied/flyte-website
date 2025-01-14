@@ -18,7 +18,7 @@ const ProductsSections:React.FC = () => {
         />
       </div>
 
-      <div className=" container mx-auto">
+      <div className=" container px-5 lg:px-[80px]">
       <ProductCards data={productCardsData}/>
       </div>
     </div>

@@ -23,7 +23,7 @@ const page = () => {
         <div className="  bg-white">
           <AboutUs/>
         </div>
-        <div className=" mt-24 container mx-auto">
+        <div className=" mt-24 container px-5 lg:px-[80px]">
           <ServiceSection serviceData={serviceData} />
         </div>
         <div>
@@ -42,7 +42,7 @@ const page = () => {
         {/* <div className=" my-[30px]">
           <BlogSection blogData={blogData}/>
         </div> */}
-        <div className="  container mx-auto">
+        <div className="  container px-5 lg:px-[80px]">
           <Contact  />
         </div>
       </div>
