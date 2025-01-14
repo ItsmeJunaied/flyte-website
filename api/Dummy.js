@@ -2042,3 +2042,60 @@ export const successStories = [
     AuthorTag: "Head of Development",
   },
 ];
+
+export const servicesBannerData = {
+  bgImage: "https://i.ibb.co.com/18ym442/Rectangle-3843.png",
+  subtitle: "Explore Our Services, Built to Drive Your Success",
+  title: "Discover Professional Services for Your Business",
+  description:
+    "We provide expert services to enhance your operations, improve efficiency, and help you achieve your goals.",
+  btnName: "Book A Consultation",
+  btnPath: "/about",
+};
+
+export const servicesData = [
+  {
+    id: 1,
+    subTitle: "Custom Software Development",
+    title: "Empowering businesses with reliable software solutions",
+    description: "Develop software solutions that are reliable, scalable, and secure, designed to enhance business efficiency, streamline processes, and support growth across various industries.",
+    features: [
+      "Inventory Management System",
+      "CRM System",
+      "Business Intelligence Tool"
+    ]
+  },
+  {
+    id: 2,
+    subTitle: "Team Extension",
+    title: "Expand your team with skilled experts to drive growth and innovation",
+    description: "Team Extension helps you scale quickly by augmenting your in-house team with specialized talent, offering flexibility to meet project demands without the overhead of full-time hires.",
+    features: [
+      "Project Scaling for Short-Term Needs",
+      "Filling Skill Gaps",
+      "Long-Term Resource Augmentation for Growing Teams"
+    ]
+  },
+  {
+    id: 3,
+    subTitle: "Mobile App Development",
+    title: "Empowering businesses with reliable mobile solutions",
+    description: "Develop mobile apps for Android, iOS, and cross-platform environments that are intuitive, scalable, and high-performing, helping businesses reach more customers on mobile platforms.",
+    features: [
+      "E-Commerce Mobile App",
+      "Healthcare Mobile App",
+      "Social Networking App"
+    ]
+  },
+  {
+    id: 4,
+    subTitle: "MVP Development",
+    title: "Empowering startups to bring their ideas to life quickly",
+    description: "Build a minimum viable product (MVP) to test and validate your idea with real users, ensuring faster time to market and cost-effective development.",
+    features: [
+      "Startup Product Launch",
+      "Subscription Service",
+      "On-Demand Service App"
+    ]
+  }
+];

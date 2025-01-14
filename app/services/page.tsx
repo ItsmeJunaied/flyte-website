@@ -5,16 +5,8 @@ import Title from "@/component/Common/Title";
 import Contact from "@/component/Contact/Contact";
 import ServiceCard from "@/component/Services/ServiceCard";
 import React from "react";
+import { servicesBannerData } from "@/api/Dummy";
 
-const servicesBannerData = {
-  bgImage: "https://i.ibb.co.com/18ym442/Rectangle-3843.png",
-  subtitle: "Explore Our Services, Built to Drive Your Success",
-  title: "Discover Professional Services for Your Business",
-  description:
-    "We provide expert services to enhance your operations, improve efficiency, and help you achieve your goals.",
-  btnName: "Book A Consultation",
-  btnPath: "/about",
-};
 
 export const metadata = {
   title: "Services | Flyte Solutions Ltd.",
