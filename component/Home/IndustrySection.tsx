@@ -54,7 +54,7 @@ IndustrySection: React.FC<{ industrydata: IndustryData }> = ({
       data-aos="fade-up"
      data-aos-duration="2000"
     >
-      <div className="container mx-auto py-[40px] ">
+      <div className="container">
         <div className="mb-[64px] ">
           <Subtitle Subtitle={industrydata.subTitle} />
           <Title title={industrydata.sectionTitle} />

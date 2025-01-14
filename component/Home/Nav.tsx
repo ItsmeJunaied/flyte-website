@@ -24,8 +24,8 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
   // console.log("pathname", pathname.split("/")[1])
   return (
     <div className="header">
-      <nav className="nav container mx-auto">
-        <div className="nav__data px-5">
+      <nav className="nav container">
+        <div className="nav__data">
           <Link href="/">
             <img src="/images/flyte-logo.png" alt="flyte solutions Ltd." />
           </Link>
@@ -53,7 +53,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                       </div>
                       <div className="dropdown__container bg-[#F4F2F0]">
                         <div className="dropdown__content">
-                          <div className="flex flex-col lg:flex-row gap-10 container mx-auto">
+                          <div className="flex flex-col lg:flex-row gap-10 container">
                             <div className=" w-full h-full lg:w-1/3 hidden lg:flex flex-col gap-4 flex-shrink-0 ">
                               <h1 className="text-lg text-btnColor ">
                                 {item.name}

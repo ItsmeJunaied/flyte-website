@@ -9,7 +9,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import PlaneLottieAboutUs from "./HomeSubComponents.tsx/PlaneLottieAboutUs";
 const AboutUs: React.FC = () => {
   return (
-    <div className="container mx-auto pt-12">
+    <div className="container pt-12">
       <Subtitle Subtitle="About Company" />
       <Title title={"Websites that tell your brand's story"} />
 

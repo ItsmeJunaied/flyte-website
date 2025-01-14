@@ -27,8 +27,8 @@ const CaseStudiesCards: React.FC<CaseStudyProps> = ({ caseStudyData }) => {
   
 
   return (
-    <div className='bg-whiterounded-t-[60px] py-10 px-10 lg:px-0'>
-      <div className='container mx-auto'>
+    <div className='bg-whiterounded-t-[60px] py-10'>
+      <div className='container'>
         <Subtitle Subtitle={subtitle} />
         <Title title={title} fontSize="text-3xl" fontColor="text-black" />
 

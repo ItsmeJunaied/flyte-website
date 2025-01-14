@@ -9,7 +9,7 @@ const ServiceCard: React.FC<CardProps> = ({ reverse }) => {
   return (
     <div>
       <div
-        className={` bg-white container  py-10 md:flex justify-center gap-10 lg:gap-36 mb-5 rounded-2xl space-y-5 md:space-y-0 px-5 lg:px-0 ${
+        className={` bg-white py-10 md:flex justify-center gap-10 lg:gap-36 mb-5 rounded-2xl space-y-5 md:space-y-0 px-5 lg:px-0 ${
           reverse && "flex-row-reverse"
         }`}
       >

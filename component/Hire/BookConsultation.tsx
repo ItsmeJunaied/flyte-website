@@ -7,7 +7,7 @@ const BookConsultation = () => {
         className="w-full h-[180px] md:h-[226px] bg-cover bg-center relative bg-btnColor"
       >
         {/* Content */}
-        <div className="container mx-auto h-full flex flex-col justify-center items-center gap-6 text-center text-white">
+        <div className="container h-full flex flex-col justify-center items-center gap-6 text-center text-white">
           <h2 className="max-w-[600px] text-center text-white text-base md:text-2xl font-semibold font-['Open Sans']">
           Book a consultation to discover how our team can drive your success!
           </h2>
