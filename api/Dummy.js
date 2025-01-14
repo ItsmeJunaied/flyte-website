@@ -1998,7 +1998,7 @@ export const IndustriesCardsData = [
     ],
   },
 ];
-// product cards
+
 
 export const successStories = [
   {
@@ -2043,6 +2043,7 @@ export const successStories = [
   },
 ];
 
+// service data 
 export const servicesBannerData = {
   bgImage: "https://i.ibb.co.com/18ym442/Rectangle-3843.png",
   subtitle: "Explore Our Services, Built to Drive Your Success",
@@ -2099,3 +2100,12 @@ export const servicesData = [
     ]
   }
 ];
+
+
+// about us data 
+export const aboutBannerData = {
+  title: "About Us",
+  description: "Empowering Businesses with Innovative Tech Solutions and Expert Teams.",
+  img:"https://i.ibb.co.com/KVwS1VN/about-banner-image.png",
+  altText: "about us banner"
+}
