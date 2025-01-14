@@ -3,6 +3,9 @@ import HireBanner from "@/component/Hire/HireBanner";
 import ServicesOverview from "@/component/Hire/ServicesOverview";
 import ServiceFitHighlights from "@/component/Hire/ServiceFitHighlights";
 import BookConsultation from "@/component/Hire/BookConsultation";
+import OperationsSections from "@/component/Home/OperationsSections";
+import { techData } from "@/api/Dummy";
+import SuccessStories from "@/component/Common/SuccessStories";
 
 export const metadata = {
   title: "Hire | Flyte Solutions Ltd.",
@@ -13,8 +16,10 @@ const page = () => {
     <div>
       <HireBanner />
       <ServicesOverview />
+      <OperationsSections techData={techData} />
       <ServiceFitHighlights />
       <BookConsultation />
+      <SuccessStories/>
     </div>
   );
 };
