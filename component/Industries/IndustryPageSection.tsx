@@ -18,7 +18,7 @@ const IndustryPageSection: React.FC = () => {
         />
       </div>
 
-      <div className=" container mx-auto">
+      <div className=" container px-5 lg:px-[80px]">
         <IdustrySectionCard IndustriesCardsData={industriesCardsData} />
       </div>
     </div>

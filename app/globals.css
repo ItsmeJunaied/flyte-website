@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 /* Add these to your styles */
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
+/* @import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css"; */
 
 *:not(i),
 *::before:not(i),
@@ -15,7 +15,6 @@
   font-style: normal;
 }
 
-
 @layer base {
   * {
     @apply border-border;
@@ -25,28 +24,48 @@
   }
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
-  background-color: #F7F8FD;
-
+  background-color: #f7f8fd;
 }
 
 body::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-  background: orange;        /* color of the tracking area */
+  background: orange;
+}
+
+.bannerTitle span {
+  display: inline;
+  white-space: nowrap;
+  background: linear-gradient(104deg, #545cd7 17.82%, #00deeb 63.28%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.bannerIndustries {
+  background: radial-gradient(
+    157.24% 123.22% at 47.19% -0.63%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  backdrop-filter: blur(21px);
 }
 
 .no-scroll {
-  overflow: hidden; 
-  height: 100vh; 
+  overflow: hidden;
+  height: 100vh;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: blue;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid orange;  /* creates padding around scroll thumb */
+  background-color: blue; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid orange; /* creates padding around scroll thumb */
 }
 .custom-navbar {
   width: 100%; /* Full width */
@@ -108,7 +127,6 @@ body::-webkit-scrollbar-thumb {
   backdrop-filter: blur(4.772727012634277px);
 }
 
-
 /* In your CSS file */
 .icon {
   width: 1.25rem;
@@ -116,25 +134,24 @@ body::-webkit-scrollbar-thumb {
 }
 
 .icon:hover {
-  color: #2B6CB0;
+  color: #2b6cb0;
 }
 .icon2 {
   width: 2rem;
-  color: #2B6CB0;
+  color: #2b6cb0;
 }
 
 .icon2:hover {
-  color: #2B6CB0;
+  color: #2b6cb0;
 }
 .icon2 {
   width: 2rem;
-  color: #2B6CB0;
+  color: #2b6cb0;
 }
 
 .icon2:hover {
-  color: #2B6CB0;
+  color: #2b6cb0;
 }
-
 
 :root {
   --header-height: 3.5rem;
@@ -148,9 +165,9 @@ body::-webkit-scrollbar-thumb {
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
   /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
@@ -158,11 +175,10 @@ body::-webkit-scrollbar-thumb {
   --z-tooltip: 10;
   --z-fixed: 100;
 }
-.header{
+.header {
   background-color: white !important;
 }
 .nav {
-
   height: var(--header-height);
 }
 .nav__data {
@@ -190,7 +206,8 @@ body::-webkit-scrollbar-thumb {
   width: 32px;
   height: 32px;
 }
-.nav__toggle-menu, .nav__toggle-close {
+.nav__toggle-menu,
+.nav__toggle-close {
   font-size: 1.25rem;
   color: var(--title-color);
   position: absolute;
@@ -225,7 +242,6 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-
 .nav__link {
   color: black;
   font-weight: var(--font-semi-bold);
@@ -233,25 +249,23 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: color 0.3s ease;  /* Change background-color to color */
+  transition: color 0.3s ease; /* Change background-color to color */
 }
 
 .nav__link:hover {
-  color: #2B6CB0 !important;  /* Text color change on hover */
+  color: #2b6cb0 !important; /* Text color change on hover */
 }
 
 /* Optional: Apply the same hover effect to the dropdown button */
 .dropdown__button:hover {
-  color: #2B6CB0 !important;  /* Text color change on hover for dropdown */
+  color: #2b6cb0 !important; /* Text color change on hover for dropdown */
 }
-
 
 /* Show menu */
 .show-menu {
   left: 0;
   pointer-events: initial;
 }
-
 
 /* Show icon */
 .show-icon .nav__toggle-menu {
@@ -273,7 +287,9 @@ body::-webkit-scrollbar-thumb {
   font-weight: initial;
   transition: transform 0.4s;
 }
-.dropdown__content, .dropdown__group, .dropdown__list {
+.dropdown__content,
+.dropdown__group,
+.dropdown__list {
   display: grid;
 }
 .dropdown__container {
@@ -323,10 +339,10 @@ body::-webkit-scrollbar-thumb {
   transform: rotate(180deg);
 }
 
-@media screen and (max-width: 1117px){
-.dropdown__container{
-  padding-top: 0px;
-}
+@media screen and (max-width: 1117px) {
+  .dropdown__container {
+    padding-top: 0px;
+  }
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -338,7 +354,7 @@ body::-webkit-scrollbar-thumb {
 }
 /* For large devices */
 @media screen and (min-width: 981px) {
-  .dropdown__container{
+  .dropdown__container {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -394,7 +410,8 @@ body::-webkit-scrollbar-thumb {
     align-content: baseline;
     row-gap: 1.25rem;
   }
-  .dropdown__group:first-child, .dropdown__group:last-child {
+  .dropdown__group:first-child,
+  .dropdown__group:last-child {
     margin: 0;
   }
   .dropdown__list {
@@ -474,43 +491,39 @@ body::-webkit-scrollbar-thumb {
   color: #666;
 }
 
-
-
-
-
 .shine {
-	position: relative;
-	overflow: hidden;
+  position: relative;
+  overflow: hidden;
 
-	&::before {
-		background: linear-gradient(
-			to right,
-			fade_out(#fff, 1) 0%,
-			fade_out(#fff, 0.7) 100%
-		);
-		content: "";
-		display: block;
-		height: 100%;
-		left: -75%;
-		position: absolute;
-		top: 0;
-		transform: skewX(-25deg);
-		width: 50%;
-		z-index: 2;
-	}
+  &::before {
+    background: linear-gradient(
+      to right,
+      fade_out(#fff, 1) 0%,
+      fade_out(#fff, 0.7) 100%
+    );
+    content: "";
+    display: block;
+    height: 100%;
+    left: -75%;
+    position: absolute;
+    top: 0;
+    transform: skewX(-25deg);
+    width: 50%;
+    z-index: 2;
+  }
 
-	&:hover,
-	&:focus {
-		&::before {
-			animation: shine 0.85s;
-		}
-	}
+  &:hover,
+  &:focus {
+    &::before {
+      animation: shine 0.85s;
+    }
+  }
 
-	@keyframes shine {
-		100% {
-			left: 125%;
-		}
-	}
+  @keyframes shine {
+    100% {
+      left: 125%;
+    }
+  }
 }
 
 @layer base {
@@ -569,8 +582,6 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -598,23 +609,30 @@ body::-webkit-scrollbar-thumb {
 
 .swiper-slide-custom {
   width: 500px;
-background-color: #6366f1;
+  background-color: #6366f1;
   /* Breakpoints */
 }
 
-
-.sliderSuccess{
+.sliderSuccess {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #6366f1;
 }
 
-
-
-.slick-next:before{
-  color: black !important
+.slick-next:before {
+  color: black !important;
 }
-.slick-prev:before{
-  color: black !important
+.slick-prev:before {
+  color: black !important;
+}
+
+/* Hide the scrollbar for both Webkit and non-Webkit browsers */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Webkit-based browsers */
 }

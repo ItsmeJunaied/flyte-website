@@ -5,7 +5,7 @@ const Corevalues = () => {
 
   const subtitle: string = 'Core Values'
   return (
-    <div className=' container mx-auto py-16'>
+    <div className=' container px-5 lg:px-[80px] py-16'>
       <Subtitle Subtitle={subtitle} />
 
       <div className=' flex flex-col lg:flex-row gap-5 lg:px-0 px-8'>
