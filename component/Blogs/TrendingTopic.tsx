@@ -1,16 +1,16 @@
 import React from "react";
 
-const TrendingTopic = () => {
+const TrendingTopic:React.FC = () => {
   return (
-    <div className=" border border-[#FFD988] bg-[#FFF8E6] py-[100px] px-[40px] rounded-2xl">
-      <h1 className=" text-center text-[#161c2d] text-2xl font-bold  leading-10">
+    <div className=" border border-[#FFD988] bg-[#FFF8E6] py-10 px-5 lg:px-[40px] h-full rounded-2xl flex flex-col flex-1">
+      <h1 className=" text-center text-[#161c2d] text-2xl font-bold mb-2  leading-10">
         Trending Topics
       </h1>
       <p className="text-[#121416] text-center text-base font-normal font-['Open Sans'] leading-tight mb-8">
         Navigate through our most popular blog topics.
       </p>
 
-      <div className=" grid grid-cols-3 gap-3">
+      <div className=" grid grid-cols-2 lg:grid-cols-3 gap-3">
 
         <div className="  rounded-xl relative">
           <img

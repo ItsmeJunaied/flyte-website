@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 
 type Profile = {
@@ -14,7 +14,7 @@ type Article = {
 
 type Card = {
   title: string;
-  image?:string;
+  image?: string;
   description: string;
   keywords: string[];
   profile: Profile;
@@ -26,7 +26,6 @@ type BlogData = {
 };
 
 const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
-
   const [visibleCount, setVisibleCount] = useState(6);
 
   const handleLoadMore = () => {
@@ -34,7 +33,7 @@ const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
   };
   return (
     <div
-      className="py-[40px]"
+      className="py-[40px] px-4 lg:px-0"
       style={{
         backgroundImage: "url('/images/BlogSectionBg.png')",
         backgroundSize: "cover",
@@ -47,7 +46,6 @@ const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
       </div>
 
       <div className="container px-5 lg:px-[80px] flex flex-wrap justify-center gap-10 py-10 ">
-
         {blogData?.cards?.slice(0, visibleCount)?.map((card, index) => (
           <div
             key={index}
@@ -164,7 +162,6 @@ const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
           </button>
         </div>
       )}
-
     </div>
   );
 };
