@@ -1,12 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-
 import React from "react";
 import Title from "../Common/Title";
 import Subtitle from "../Common/Subtitle";
-import { FaCheckCircle } from "react-icons/fa";
+// import { FaCheckCircle } from "react-icons/fa";
 import Link from "next/link";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import PlaneLottieAboutUs from "./HomeSubComponents.tsx/PlaneLottieAboutUs";
+// import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+// import PlaneLottieAboutUs from "./HomeSubComponents.tsx/PlaneLottieAboutUs";
 const AboutUs: React.FC = () => {
   return (
     <div className="container pt-12">
@@ -22,8 +21,7 @@ const AboutUs: React.FC = () => {
               <img
                 src="https://i.ibb.co.com/hsCv8qw/Image.png"
                 alt="Team Collaboration"
-                className="rounded-lg shadow-lg"
-              />
+                className="rounded-lg shadow-lg"              />
             </div>
           </div>
 
