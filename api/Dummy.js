@@ -1,5 +1,7 @@
 //navbar
 
+
+
 export const navbarData = {
   menu: [
     {
@@ -11,37 +13,42 @@ export const navbarData = {
         {
           name: "Frontend Developers",
           icon: "fa-briefcase",
-          description: "Design and develop user-friendly interfaces for web applications.",
+          description:
+            "Design and develop user-friendly interfaces for web applications.",
           path: "/hire/job-openings",
         },
         {
           name: "Backend Developers",
           icon: "fa-user-tie",
           description: "Join us as a freelancer and work on exciting projects.",
-          path: "/hire/freelance-opportunities",
+          path: "/hire",
         },
         {
           name: "Mobile App Developers",
           icon: "fa-mobile-alt",
-          description: "Create mobile applications for iOS and Android platforms.",
+          description:
+            "Create mobile applications for iOS and Android platforms.",
           path: "/hire/contract-roles",
         },
         {
           name: "QA Engineers",
           icon: "fa-bug",
-          description: "Test software applications to ensure quality and performance.",
+          description:
+            "Test software applications to ensure quality and performance.",
           path: "/hire/qa-roles",
         },
         {
           name: "DevOps Engineers",
           icon: "fa-tools",
-          description: "Streamline development processes and infrastructure with DevOps practices.",
+          description:
+            "Streamline development processes and infrastructure with DevOps practices.",
           path: "/hire/devops-roles",
         },
         {
           name: "AI & ML Specialists",
           icon: "fa-robot",
-          description: "Leverage AI and ML technologies to build smart applications.",
+          description:
+            "Leverage AI and ML technologies to build smart applications.",
           path: "/hire/ai-ml-roles",
         },
       ],
@@ -55,25 +62,29 @@ export const navbarData = {
         {
           name: "Fintech",
           icon: "fa-heartbeat",
-          description: "Solutions for the healthcare sector to improve patient care.",
+          description:
+            "Solutions for the healthcare sector to improve patient care.",
           path: "/industries/healthcare",
         },
         {
           name: "Education",
           icon: "fa-university",
-          description: "Innovative financial tools and services for the modern world.",
+          description:
+            "Innovative financial tools and services for the modern world.",
           path: "/industries/finance",
         },
         {
           name: "Logistics",
           icon: "fa-store",
-          description: "Transforming retail experiences with technology-driven solutions.",
+          description:
+            "Transforming retail experiences with technology-driven solutions.",
           path: "/industries/retail",
         },
         {
           name: "Manufacturing",
           icon: "fa-store",
-          description: "Transforming retail experiences with technology-driven solutions.",
+          description:
+            "Transforming retail experiences with technology-driven solutions.",
           path: "/industries/retail",
         },
 
@@ -81,43 +92,44 @@ export const navbarData = {
           name: "Enterprise",
           icon: "fa-building",
           description: "Innovative solutions for businesses of all sizes.",
-          path: "/industries/enterprise",
+          path: "/industries",
         },
         {
           name: "Education",
           icon: "fa-graduation-cap",
           description: "Empowering educators and students with technology.",
-          path: "/industries/education",
+          path: "/industries",
         },
         {
           name: "Real Estate",
           icon: "fa-home",
-          description: "Revolutionizing the real estate industry with tech solutions.",
+          description:
+            "Revolutionizing the real estate industry with tech solutions.",
           path: "/industries/real-estate",
         },
         {
           name: "Medical & Healthcare",
           icon: "fa-heartbeat",
           description: "Enhancing healthcare services with technology.",
-          path: "/industries/healthcare",
+          path: "/industries",
         },
         {
           name: "Technology Company",
           icon: "fa-laptop-code",
           description: "Tech solutions for companies looking to innovate.",
-          path: "/industries/technology",
+          path: "/industries",
         },
         {
           name: "Media & Entertainment",
           icon: "fa-film",
           description: "Transforming media and entertainment with tech.",
-          path: "/industries/media-entertainment",
+          path: "/industries",
         },
         {
           name: "NGO",
           icon: "fa-hand-holding-heart",
           description: "Supporting NGOs with technology-driven solutions.",
-          path: "/industries/ngo",
+          path: "/industries",
         },
       ],
     },
@@ -130,26 +142,28 @@ export const navbarData = {
         {
           name: "Team Extension",
           icon: "fa-lightbulb",
-          description: "Expert advice and strategic planning for your business.",
+          description:
+            "Expert advice and strategic planning for your business.",
           path: "/services/consulting",
         },
         {
           name: "Custom Software Development",
           icon: "fa-cogs",
-          description: "End-to-end software development services for every industry.",
+          description:
+            "End-to-end software development services for every industry.",
           path: "/services/development",
         },
         {
           name: "Enterprise Software Development",
           icon: "fa-headset",
           description: "24/7 customer support to assist with any challenges.",
-          path: "/services/support",
+          path: "/services",
         },
         {
           name: "MVP Development",
           icon: "fa-headset",
           description: "24/7 customer support to assist with any challenges.",
-          path: "/services/support",
+          path: "/services",
         },
       ],
     },
@@ -162,26 +176,27 @@ export const navbarData = {
         {
           name: "Time2Task",
           icon: "fa-box",
-          description: "Our flagship product designed to streamline operations.",
+          description:
+            "Our flagship product designed to streamline operations.",
           path: "/products/product-a",
         },
         {
           name: "Cloud Clock In",
           icon: "fa-cogs",
           description: "A cutting-edge tool for improving productivity..",
-          path: "/products/product-b",
+          path: "/products",
         },
         {
           name: "Flyte CRM",
           icon: "fa-cogs",
           description: "A cutting-edge tool for improving productivity.",
-          path: "/products/product-b",
+          path: "/products",
         },
         {
           name: "Flyte POS",
           icon: "fa-cogs",
           description: "A cutting-edge tool for improving productivity.",
-          path: "/products/product-b",
+          path: "/products",
         },
       ],
     },
@@ -200,46 +215,65 @@ export const navbarData = {
         {
           name: "About Us",
           icon: "fa-info-circle",
-          description: "Get to know our mission, vision, and values.",
+          description: "Learn about our mission, vision, and the values that drive our commitment to excellence. Discover the story behind our journey and what makes us a trusted partner for businesses worldwide.",
           path: "/company/about-us",
         },
         {
-          name: "Our Team",
+          name: "News & Blogs",
           icon: "fa-users",
-          description: "Meet the talented individuals behind our success.",
-          path: "/company/our-team",
-        },
-        {
-          name: "Contact",
-          icon: "fa-envelope",
-          description: "Get in touch with us for inquiries or support.",
-          path: "/company/contact",
-        },
+          description: "Stay updated with the latest company news, industry insights, and expert opinions. Dive into our blogs for valuable tips and updates shaping the future of technology and business.",
+          path: "/company/news&blogs",
+        }
       ],
     },
-    // {
-    //   "name": "Career",
-    //   "type": "link",
-    //   "path": "/career",
-    //   "description": "Explore career opportunities and join our team."
-    // }
+    {
+      name: "Career",
+      type: "link",
+      path: "/career",
+      description: "Explore career opportunities and join our team.",
+    },
   ],
 };
 
 // banner
 export const bannerData = {
-  title: "Trusted Experts in Custom Software",
-  subtitle: "Innovative Software Solutions to Drive Your Success",
+  title:
+    "Achieve <span> Sucess </span> With Innovative <span> Software Solutions </span>",
   description:
-    "Flyte Solutions Ltd. (FSL) delivers ROI-driven software solutions tailored for startups, SMBs, and enterprises. From web to mobile applications, we offer cost-effective services to help businesses achieve their goals, cut costs, and grow efficiently.",
-  stats: {
-    yearsExperience: 12,
-    projectsCompleted: 350,
-    recurringClients: 97,
-    solutionsDelivered: 500,
-  },
+    "Our platform empowers your business with cutting-edge software solutions and lightning-fast deployment. Achieve your goals with unmatched efficiency and reliability.",
+  industries: [
+    {
+      logo: "fa-solid fa-chart-area",
+      name: "Fintech",
+    },
+    {
+      logo: "fa-solid fa-graduation-cap",
+      name: "Education",
+    },
+    {
+      logo: "fa-solid fa-truck",
+      name: "Logistics",
+    },
+    {
+      logo: "fa-solid fa-store",
+      name: "Retail & Manufacturing",
+    },
+    {
+      logo: "fa-solid fa-building",
+      name: "Real Estate",
+    },
+    {
+      logo: "fa-solid fa-heart-pulse",
+      name: "Medical & Healthcare",
+    },
+    {
+      logo: "fa-solid fa-video",
+      name: "Media & Entertainment",
+    },
+  ],
   bannerImage: "/images/bannerImg.png",
 };
+
 
 export const brandData = {
   title: "Trusted by top brands to deliver excellence every time",
@@ -439,6 +473,69 @@ export const blogData = {
       description:
         "Cloud infrastructure is revolutionizing the IT industry. This article covers how organizations are adopting cloud solutions to improve flexibility and reduce costs.",
       keywords: ["Cloud Infrastructure", "IT Industry", "Cost Reduction", "Flexibility"],
+      profile: {
+        name: "David Warner",
+        image: " /images/ceo_sumon.jpg",
+        date: "January 25, 2024",
+      },
+      article: {
+        readTime: "8 min read",
+        views: "300 views",
+      },
+    },
+    {
+      title: "How Cloud Infrastructure is Changing IT",
+      image: "/images/blog-flyte-iso.png",
+      description:
+        "Cloud infrastructure is revolutionizing the IT industry. This article covers how organizations are adopting cloud solutions to improve flexibility and reduce costs.",
+      keywords: [
+        "Cloud Infrastructure",
+        "IT Industry",
+        "Cost Reduction",
+        "Flexibility",
+      ],
+      profile: {
+        name: "David Warner",
+        image: " /images/ceo_sumon.jpg",
+        date: "January 25, 2024",
+      },
+      article: {
+        readTime: "8 min read",
+        views: "300 views",
+      },
+    },
+    {
+      title: "How Cloud Infrastructure is Changing IT",
+      image: "/images/blog-flyte-iso.png",
+      description:
+        "Cloud infrastructure is revolutionizing the IT industry. This article covers how organizations are adopting cloud solutions to improve flexibility and reduce costs.",
+      keywords: [
+        "Cloud Infrastructure",
+        "IT Industry",
+        "Cost Reduction",
+        "Flexibility",
+      ],
+      profile: {
+        name: "David Warner",
+        image: " /images/ceo_sumon.jpg",
+        date: "January 25, 2024",
+      },
+      article: {
+        readTime: "8 min read",
+        views: "300 views",
+      },
+    },
+    {
+      title: "How Cloud Infrastructure is Changing IT",
+      image: "/images/blog-flyte-iso.png",
+      description:
+        "Cloud infrastructure is revolutionizing the IT industry. This article covers how organizations are adopting cloud solutions to improve flexibility and reduce costs.",
+      keywords: [
+        "Cloud Infrastructure",
+        "IT Industry",
+        "Cost Reduction",
+        "Flexibility",
+      ],
       profile: {
         name: "David Warner",
         image: " /images/ceo_sumon.jpg",
@@ -1961,4 +2058,15 @@ export const missionVisionData = {
   visionTitle: "Our Vision",
   visionDescription:
     "To build lasting partnerships by sharing our clients' goals, embracing responsibility, and prioritizing long-term success.",
+};
+
+
+export const NewsBlogsBannerData={
+  bgImage: "https://i.ibb.co.com/bH3K5FL/Rectangle-3843-2x.png",
+  subtitle: "Insights That Inform, Stories That Inspire",
+  title: "Stay Informed with Our Latest Insights!",
+  description:
+    "Explore expert perspectives, industry trends, and practical advice through our news and blogs.",
+  btnName: "Book A Consultation",
+  btnPath: "/contact-us",
 };

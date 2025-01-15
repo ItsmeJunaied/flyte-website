@@ -1,5 +1,4 @@
-"use client"
-import React, { useState } from "react";
+import React from "react";
 
 type Profile = {
   name: string;
@@ -14,7 +13,7 @@ type Article = {
 
 type Card = {
   title: string;
-  image?:string;
+  image?: string;
   description: string;
   keywords: string[];
   profile: Profile;
@@ -24,49 +23,31 @@ type Card = {
 type BlogData = {
   cards: Card[];
 };
-
-const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
-
-  const [visibleCount, setVisibleCount] = useState(6);
-
-  const handleLoadMore = () => {
-    setVisibleCount((prev) => prev + 3);
-  };
+const Topreads: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
   return (
-    <div
-      className="py-[40px]"
-      style={{
-        backgroundImage: "url('/images/BlogSectionBg.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        width: "100%",
-      }}
-    >
-      <div className="w-full text-center text-[#161c2d] text-2xl font-bold leading-10">
-        <h1>News & Blogs</h1>
-      </div>
+    <div className=" border border-[#FFB2B2] bg-[#FFF8E6] py-[60px] px-[40px] rounded-2xl ">
+      <h1 className=" text-center text-black text-xl font-bold ">Top Reads</h1>
 
-      <div className="container flex flex-wrap justify-center gap-10 py-10">
-
-        {blogData?.cards?.slice(0, visibleCount)?.map((card, index) => (
+      <div className=" mt-5">
+        {blogData?.cards?.slice(0, 3)?.map((card, index) => (
           <div
             key={index}
-            className="w-[392px] h-[504.80px] bg-white flex-col justify-start items-center inline-flex transition-transform duration-500"
+            className=" bg-white flex-row justify-start items-start inline-flex transition-transform duration-500 mb-2"
           >
-            <div className="w-[392px] h-[200px] relative">
+            <div className="w-1/2 h-full relative">
               <img
-                className="w-[392px] h-[200px] left-0 top-0 absolute"
+                className="w-full h-full object-cover "
                 src={card.image}
                 alt={card.title}
               />
-              <div className="w-[392px] h-[200px] left-0 top-0 absolute bg-black/25" />
-
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/25 rounded-lg" />
               {/* Displaying keywords over the image */}
               <div className="absolute top-2 left-2 flex flex-wrap gap-2">
                 {card.keywords.map((keyword, idx) => (
                   <div
                     key={idx}
-                    className="blogs-keyword-div px-3 py-1 rounded-lg text-xs"
+                    className="blogs-keyword-div px-3 py-1 rounded-lg text-xs bg-white/50"
                   >
                     <span className="inline-block text-white">{keyword}</span>
                   </div>
@@ -74,11 +55,11 @@ const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
               </div>
             </div>
 
-            <div className="p-4 flex-col justify-start items-start gap-3 flex">
+            <div className=" w-1/2 p-4 flex-col justify-start items-start gap-3 flex">
               <div className="w-[360px] h-10 text-[#121416] text-base font-semibold leading-loose">
                 {card.title}
               </div>
-              <div className="h-[220.80px] flex-col justify-start items-start gap-3 flex">
+              <div className=" flex-col justify-start items-start gap-3 flex">
                 <div className="flex-col justify-start items-start gap-2.5 flex">
                   <div className="self-stretch grow shrink basis-0 justify-start items-center gap-2 inline-flex">
                     <div className="justify-start items-center gap-1.5 flex">
@@ -133,19 +114,19 @@ const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
                     </div>
                   </div>
                 </div>
-                <div className="self-stretch text-[#6c757d] text-xs font-normal leading-[17.96px]">
+                {/* <div className="self-stretch text-[#6c757d] text-xs font-normal leading-[17.96px]">
                   {card.description}
-                </div>
+                </div> */}
                 <div className="flex-col justify-start items-center flex">
-                  <div className="svg-wrapper">
-                    <svg
+                  <div className=" border-b-[1px] border-black hover:border-btnColor px-4">
+                    {/* <svg
                       height="60"
                       width="320"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <rect className="shape" height="60" width="320" />
-                    </svg>
-                    <div className="text">Read More</div>
+                    </svg> */}
+                    <p className="text-black hover:text-btnColor">View Post</p>
                   </div>
                 </div>
               </div>
@@ -153,20 +134,8 @@ const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
           </div>
         ))}
       </div>
-
-      {visibleCount < blogData.cards.length && (
-        <div className="w-full h-[38px] justify-center items-center gap-2.5 inline-flex overflow-hidden">
-          <button
-            onClick={handleLoadMore}
-            className="bg-white px-6 py-2.5 rounded-md text-[#191919] text-sm font-semibold font-['DM Sans'] shadow-[0px_0px_10px_10px_rgba(230,230,230,0.25)] border border-[#dddddd] transition-all hover:bg-gray-200"
-          >
-            Load More
-          </button>
-        </div>
-      )}
-
     </div>
   );
 };
 
-export default BlogSection;
+export default Topreads;

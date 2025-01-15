@@ -11,62 +11,34 @@ const AboutUs: React.FC = () => {
   return (
     <div className="container pt-12">
       <Subtitle Subtitle="About Company" />
-      <Title title={"Websites that tell your brand's story"} />
+      <Title title={"Solutions that Drive Your Business Forward"} />
 
       <div>
-        <div className=" px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="  py-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div className="flex flex-col gap-8 justify-center w-full  items-center ">
-            <div className="relative max-w-[280px] lg:max-w-[400px] max-h-[650px]  ">
+            <div className=" w-full max-h-[450px]  ">
               {/* Main Image */}
               <img
-                src="https://demo.awaikenthemes.com/weebix/wp-content/uploads/2024/04/about-us-img.jpg"
+                src="https://i.ibb.co.com/hsCv8qw/Image.png"
                 alt="Team Collaboration"
                 className="rounded-lg shadow-lg"
               />
-
-              {/* Top-Left Badge */}
-              <div className="absolute top-10 left-0 -translate-x-1/2 -translate-y-1/2 bg-[#6366f1] text-white px-4 py-2 rounded-lg shadow-lg">
-                <div className="text-xl font-bold">12+</div>
-                <div className="text-sm">Work Experience</div>
-              </div>
-
-              {/* Top-Right Badge */}
-
-              <div className="absolute top-0 right-10 translate-x-1/2 -translate-y-1/2 bg-[#6366f1] text-white px-4 py-2 rounded-lg shadow-lg">
-                <div className="text-xl font-bold">350+</div>
-                <div className="text-sm">Project Completed</div>
-              </div>
-
-              {/* Bottom-Left Badge */}
-              <div className="absolute bottom-10 left-0 -translate-x-1/2 translate-y-1/2 bg-[#6366f1] text-white px-4 py-2 rounded-lg shadow-lg">
-                <div className="text-xl font-bold">97%</div>
-                <div className="text-sm">Recurring Clients</div>
-              </div>
-
-              {/* Bottom-Right Badge */}
-              <div className="absolute bottom-20 right-10 translate-x-1/2 translate-y-1/2 bg-[#6366f1] text-white px-4 py-2 rounded-lg shadow-lg">
-                <div className="text-xl font-bold">500+</div>
-                <div className="text-sm">Solutions Delivered</div>
-              </div>
             </div>
           </div>
 
           {/* Right Content */}
-          <div className="relative max-w-[450px] max-h-[600px] flex flex-col gap-4">
+          <div className=" w-full flex flex-col gap-4">
             {/* Lottie Animation */}
             {/* <PlaneLottieAboutUs /> */}
 
             {/* Content */}
-            <p className="text-[#6c757d] text-base leading-7 mb-6">
-              <span className="  text-xl font-semibold">
-                Flyte
-              </span>{" "}
-              Solutions is a trusted global provider of cutting-edge IT
-              services, dedicated to empowering businesses with innovative and
-              efficient solutions. From system integration to cloud
-              technologies, we tailor our expertise to meet the evolving needs
-              of diverse industries.
+            <p className="text-[#9a9a9a] text-base font-normal ">
+              <span className="  ">Flyte</span> Solutions is a trusted global
+              provider of cutting-edge IT services, dedicated to empowering
+              businesses with innovative and efficient solutions. From system
+              integration to cloud technologies, we tailor our expertise to meet
+              the evolving needs of diverse industries.
             </p>
             <p className="text-[#6c757d] text-base leading-7 mb-8">
               With a focus on quality and customer satisfaction, Flyte has
@@ -76,40 +48,54 @@ const AboutUs: React.FC = () => {
             </p>
 
             {/* Features List */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="flex items-center gap-2">
-                <span className="text-btnColor text-lg px-1 py-0.5 rounded-full">
-                  <FaCheckCircle />
-                </span>
-                <span className="text-[#15161B] font-semibold">
-                  Client Satisfaction
-                </span>
+            <div className=" flex flex-wrap justify-between items-center gap-4">
+              <div className=" flex flex-col justify-center items-center gap-2">
+                <img
+                  className=" w-10 h-10 object-cover"
+                  src="https://i.ibb.co.com/wN59CwQ/flat-color-icons-calendar.png"
+                  alt="Years Experience"
+                />
+                <p className=" text-center text-black text-xl font-bold">12+</p>
+                <p className="text-center text-black text-sm font-medium ">
+                  Years Experience
+                </p>
               </div>
-
-              <div className="flex items-center gap-2">
-                <span className="text-btnColor text-lg px-1 py-0.5 rounded-full">
-                  <FaCheckCircle />
-                </span>
-                <span className="text-[#15161B] font-semibold">
-                  Full Flexibility
-                </span>
+              <div className=" flex flex-col justify-center items-center gap-2">
+                <img
+                  className=" w-10 h-10 object-cover"
+                  src="https://i.ibb.co.com/3N1bD6Y/fxemoji-clipboard.png"
+                  alt="Projects Completed"
+                />
+                <p className=" text-center text-black text-xl font-bold">
+                  350+
+                </p>
+                <p className="text-center text-black text-sm font-medium ">
+                  Projects Completed
+                </p>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-btnColor text-lg px-1 py-0.5 rounded-full">
-                  <FaCheckCircle />
-                </span>
-                <span className="text-[#15161B] font-semibold">
-                  Time Zone Aligned
-                </span>
+              <div className=" flex flex-col justify-center items-center gap-2">
+                <img
+                  className=" w-10 h-10 object-cover"
+                  src="https://i.ibb.co.com/CBFFjvr/emojione-handshake.png"
+                  alt="Recurring Clients"
+                />
+                <p className=" text-center text-black text-xl font-bold">97%</p>
+                <p className="text-center text-black text-sm font-medium ">
+                  Recurring Clients
+                </p>
               </div>
-
-              <div className="flex items-center gap-2">
-                <span className="text-btnColor text-lg px-1 py-0.5 rounded-full">
-                  <FaCheckCircle />
-                </span>
-                <span className="text-[#15161B] font-semibold">
-                  24/7 Availability
-                </span>
+              <div className=" flex flex-col justify-center items-center gap-2">
+                <img
+                  className=" w-10 h-10 object-cover"
+                  src="https://i.ibb.co.com/wcBcfyL/twemoji-delivery-truck.png"
+                  alt="Solutions Delivered"
+                />
+                <p className=" text-center text-black text-xl font-bold">
+                  500+
+                </p>
+                <p className="text-center text-black text-sm font-medium ">
+                  Solutions Delivered
+                </p>
               </div>
             </div>
 
