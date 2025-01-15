@@ -12,8 +12,8 @@ type ServiceHighlight = {
 
 const ServiceFitHighlights: React.FC = () => {
   return (
-    <div className="px-5 lg:px-10 bg-[#FAFAFA] pb-10">
-      <div className="container px-5 lg:px-[80px]">
+    <div className="bg-[#FAFAFA] pb-10">
+      <div className="container">
         <h2 className="max-w-[492px] text-center text-black text-base md:text-[32px] font-semibold font-['Open Sans'] mx-auto py-5 md:py-10 md:leading-10">
           Ideal Scenarios for Dedicated Development Team Model
         </h2>

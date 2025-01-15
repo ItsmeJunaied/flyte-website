@@ -7,7 +7,7 @@ export const metadata = {
   };
 const page = () => {
     return (
-        <div className=' container px-5 lg:px-[80px]'>
+        <div className=' container'>
             <Contact/>
         </div>
     );

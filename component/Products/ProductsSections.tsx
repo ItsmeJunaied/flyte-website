@@ -9,7 +9,7 @@ const ProductsSections:React.FC = () => {
     const productCardsData= ProductCardsData;
   return (
     <div>
-      <div className=" flex-col gap-2 w-full flex justify-center items-center my-8  ">
+      <div className="flex-col gap-2 w-full flex justify-center items-center my-8  ">
         <Subtitle Subtitle={"Our Products"} />
         <Title
           width={"lg:w-full"}
@@ -18,7 +18,7 @@ const ProductsSections:React.FC = () => {
         />
       </div>
 
-      <div className=" container px-5 lg:px-[80px]">
+      <div className="container">
       <ProductCards data={productCardsData}/>
       </div>
     </div>

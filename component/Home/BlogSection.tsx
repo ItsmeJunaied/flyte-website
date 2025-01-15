@@ -46,7 +46,7 @@ const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
         <h1>News & Blogs</h1>
       </div>
 
-      <div className="container px-5 lg:px-[80px] flex flex-wrap justify-center gap-10 py-10 ">
+      <div className="container flex flex-wrap justify-center gap-10 py-10">
 
         {blogData?.cards?.slice(0, visibleCount)?.map((card, index) => (
           <div

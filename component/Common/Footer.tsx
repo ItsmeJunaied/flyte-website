@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
 
   return (
     <div>
-      <footer className="footer text-base-content py-10 px-5 bg-[#2A3342]s">
+      <footer className="footer text-base-content py-10 bg-[#2A3342]">
         {/* Contact Section */}
         <aside className="flex flex-col gap-4">
           <img src={contactUs.companyLogo} alt="Company Logo" />
@@ -183,7 +183,7 @@ const Footer: React.FC = () => {
           </section>
         </div>
       </footer>
-      <footer className="footer footer-center  text-base-content p-4">
+      <footer className="footer footer-center text-base-content py-4">
         <aside>
           <p>
             Copyright © 2012 - {new Date().getFullYear()} - All right reserved by Flyte Solutions Ltd.

@@ -24,8 +24,8 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
   // console.log("pathname", pathname.split("/")[1])
   return (
     <div className="header">
-      <nav className="nav container px-5 lg:px-[80px]">
-        <div className="nav__data px-5">
+      <nav className="nav container">
+        <div className="nav__data">
           <Link href="/">
             <img src="/images/flyte-logo.png" alt="flyte solutions Ltd." />
           </Link>
@@ -39,25 +39,15 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
         <div className="nav__menu" id="nav-menu">
           <ul className="nav__list">
             {navData.menu.map((item, index) => {
-              const isActive =
-                pathname.split("/")[1] === item.path.split("/")[1];
+              const isActive = pathname.split("/")[1] === item.path.split("/")[1];
               return (
-                <li
-                  key={index}
-                  className={item.type === "dropdown" ? "dropdown__item" : ""}
-                >
+                <li key={index} className={item.type === "dropdown" ? "dropdown__item" : ""}>
                   {item.type === "dropdown" ? (
                     <>
-                      <div
-                        className={`nav__link dropdown__button ${
-                          isActive ? "active" : ""
-                        }`}
-                      >
+                      <div className={`nav__link dropdown__button ${isActive ? "active" : ""}`}>
                         <p
                           className={`text-black hover:text-[#2B6CB0] ${
-                            isActive
-                              ? "text-blue-500 border-b-2 border-btnColor"
-                              : ""
+                            isActive ? "text-blue-500 border-b-2 border-btnColor" : ""
                           }`}
                         >
                           {item.name}
@@ -66,14 +56,10 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                       </div>
                       <div className="dropdown__container bg-[#F4F2F0]">
                         <div className="dropdown__content">
-                          <div className="flex flex-col lg:flex-row gap-10 container px-5 lg:px-[80px]">
+                          <div className="flex flex-col lg:flex-row gap-10 container">
                             <div className=" w-full h-full lg:w-1/3 hidden lg:flex flex-col gap-4 flex-shrink-0 ">
-                              <h1 className="text-lg text-btnColor ">
-                                {item.name}
-                              </h1>
-                              <p className="text-xs text-[#131313B2]">
-                                {item.description}
-                              </p>
+                              <h1 className="text-lg text-btnColor ">{item.name}</h1>
+                              <p className="text-xs text-[#131313B2]">{item.description}</p>
                               <Link
                                 className="bg-btnColor w-fit h-fit text-white px-6 py-3 rounded-lg"
                                 href={item.path}
@@ -84,11 +70,8 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                             <div className=" w-full h-full lg:w-2/3 rounded-lg flex-shrink-0 ">
                               <div className=" grid grid-cols-1 lg:grid-cols-2 gap-2 ">
                                 {item.features?.map((feature, featureIndex) => (
-                                  <Link href={feature.path}>
-                                    <div
-                                      className=" flex flex-row  items-center gap-4  bg-white border-2 border-white hover:border-btnColor p-4 rounded-lg"
-                                      key={featureIndex}
-                                    >
+                                  <Link href={feature.path} key={featureIndex}>
+                                    <div className=" flex flex-row  items-center gap-4  bg-white border-2 border-white hover:border-btnColor p-4 rounded-lg">
                                       <div className=" w-fit  ">
                                         <p className=" text-xl">
                                           <i
@@ -98,12 +81,8 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                                         </p>
                                       </div>
                                       <div className=" w-fit ">
-                                        <p className=" text-btnColor">
-                                          {feature.name}
-                                        </p>
-                                        <p className=" text-[#131313B2] text-xs">
-                                          {feature.description}
-                                        </p>
+                                        <p className=" text-btnColor">{feature.name}</p>
+                                        <p className=" text-[#131313B2] text-xs">{feature.description}</p>
                                       </div>
                                     </div>
                                   </Link>
@@ -115,16 +94,9 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                       </div>
                     </>
                   ) : (
-                    <Link
-                      className={`h-full flex items-center `}
-                      href={item.path}
-                    >
+                    <Link className={`h-full flex items-center `} href={item.path}>
                       <p
-                        className={`nav__link ${
-                          isActive
-                            ? "text-blue-500 border-b-2 border-blue-300"
-                            : ""
-                        }`}
+                        className={`nav__link ${isActive ? "text-blue-500 border-b-2 border-blue-300" : ""}`}
                       >
                         {item.name}
                       </p>
@@ -136,9 +108,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
             {/* Hardcoded Contact Us link */}
             <li>
               <Link href="/contact-us" className="h-full flex items-center">
-                <p className="bg-btnColor h-fit text-white px-6 py-3 rounded-lg">
-                  Contact Us
-                </p>
+                <p className="bg-btnColor h-fit text-white px-6 py-3 rounded-lg">Contact Us</p>
               </Link>
             </li>
           </ul>
