@@ -1,5 +1,6 @@
 import React from "react";
 import { serviceOverviewData } from "../../api/Dummy";
+import Link from "next/link";
 
 type Service = {
   title: string;
@@ -8,7 +9,7 @@ type Service = {
     path: string;
     fill: string;
   };
-}
+};
 
 const ServicesOverview: React.FC = () => {
   return (
@@ -35,6 +36,19 @@ const ServicesOverview: React.FC = () => {
               </p>
             </div>
           ))}
+          <div className="px-8 py-10 bg-[#31323c] rounded-xl flex flex-col justify-between min-h-[281px]">
+            <h2 className="text-[#f7f7f7] text-xl md:text-3xl font-semibold">Build Your Team</h2>
+            <span className="w-20 h-[3px] bg-[#dda380]" />
+            <p className="text-[#d9d9d9] text-base font-normal">
+              Need to hire? Contact us to build a skilled team for your needs.
+            </p>
+            <Link
+              href="/hire/application-form"
+              className="text-white hover:text-black text-center text-sm font-semibold px-8 py-3 border border-white hover:bg-white"
+            >
+              Hire Now
+            </Link>
+          </div>
         </div>
       </div>
     </div>
