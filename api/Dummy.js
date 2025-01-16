@@ -2070,3 +2070,17 @@ export const NewsBlogsBannerData={
   btnName: "Book A Consultation",
   btnPath: "/contact-us",
 };
+
+// Career data 
+export const careerBannerData = {
+  title: "Discover How We Empower Careers to Reach New Heights",
+  description:
+    "At Flyte Solutions, we believe that the journey of growth is driven by continuous learning and a sense of wonder. We’re committed to creating a workplace where curiosity thrives, talents are nurtured, and innovative ideas flourish. Discover a dynamic environment where your potential knows no bounds, and find a role that aligns with your passion and purpose. Join us and be part of a team where every day offers new opportunities for growth and adventure.",
+  images: [
+    "https://i.ibb.co.com/JtcqtSf/surface1.png",
+    "https://i.ibb.co.com/pP9mzVj/cert-3-1.png",
+    "https://i.ibb.co.com/gjZYtkW/Untitled-design-2-1-1.png",
+    "https://i.ibb.co.com/XxwnN4x/basis-1.png",
+  ],
+  bannerImage: "https://i.ibb.co.com/F6G9RHs/Frame-9.png",
+};

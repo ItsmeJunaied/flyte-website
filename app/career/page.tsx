@@ -1,10 +1,10 @@
 import React from 'react';
-import CommingSoon from '../../component/Common/CommingSoon';
+import CareerBanner from '@/component/Career/CareerBanner';
 
 const page = () => {
     return (
         <div>
-            <CommingSoon/>
+            <CareerBanner/>
         </div>
     );
 };
