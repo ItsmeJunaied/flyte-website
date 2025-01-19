@@ -17,7 +17,7 @@ const page: React.FC = () => {
       <CommonBanner bannerData={industriesBannerData} />
       <IndustryPageSection />
 
-      <div className=" container px-5 lg:px-[80px]">
+      <div className="container">
         <Contact />
       </div>
     </div>

@@ -60,7 +60,7 @@ const SuccessStories: React.FC<successStoryProps> = () => {
   };
 
   return (
-    <div className=" container px-5 lg:px-[80px] mt-20">
+    <div className="mt-20">
       <div className="w-full flex flex-col justify-center items-center ">
         {/* Title Section */}
         <Title

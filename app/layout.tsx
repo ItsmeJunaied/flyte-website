@@ -40,7 +40,7 @@ export default function RootLayout({
         <Nav navData={navbarData} />
         {children}
         <div className=" bg-[#2A3342]">
-          <div className=" container px-5 lg:px-[80px]">
+          <div className="container">
             <Footer />
           </div>
         </div>

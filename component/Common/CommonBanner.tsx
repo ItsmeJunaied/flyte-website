@@ -20,7 +20,7 @@ const CommonBanner: React.FC<{ bannerData: BannerData }> = ({ bannerData }) => {
         }}
       >
         {/* Content */}
-        <div className="container h-full flex flex-col justify-center gap-3 md:gap-6 text-white p-2">
+        <div className="container h-full flex flex-col justify-center gap-3 md:gap-6 text-white">
           <p className="text-[#6ec1ff] text-xs md:text-lg font-bold font-['DM Sans'] uppercase leading-tight tracking-widest">
             - {bannerData?.subtitle}!
           </p>
