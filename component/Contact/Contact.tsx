@@ -8,6 +8,7 @@ import Subtitle from "../Common/Subtitle";
 type contsctUsData = {
   id: number;
   title: string;
+  icon: string
 };
 type contactUsKeyPointsProps = {
   contsctUsData?: contsctUsData[];
@@ -30,7 +31,7 @@ const Contact: React.FC<contactUsKeyPointsProps> = ({ contsctUsData }) => {
             />
           </div>
         </div>
-        <div className="h-full flex flex-col lg:flex-row justify-start lg:justify-between items-start lg:items-center gap-8 ">
+        <div className="h-full flex flex-col lg:flex-row justify-center lg:justify-between items-center  lg:items-center gap-8 ">
           {/* form section */}
 
           <div className="w-full lg:w-2/3">

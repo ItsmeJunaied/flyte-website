@@ -267,6 +267,10 @@ export const bannerData = {
       name: "Medical & Healthcare",
     },
     {
+      logo: "fa-solid fa-microchip",
+      name: "Technology Company",
+    },
+    {
       logo: "fa-solid fa-video",
       name: "Media & Entertainment",
     },
@@ -279,11 +283,11 @@ export const brandData = {
   title: "Trusted by top brands to deliver excellence every time",
   brands: [
     {
-      src: "/images/bell.png",
+      src: "/images/uber.png",
       alt: "Brand 1",
     },
     {
-      src: "/images/care_brand.png",
+      src: "/images/Roche_brand.png",
       alt: "Brand 2",
     },
     {
@@ -291,35 +295,35 @@ export const brandData = {
       alt: "Brand 3",
     },
     {
-      src: "/images/EFSA_brand.png",
+      src: "/images/robi_brand.png",
       alt: "Brand 4",
     },
     {
-      src: "/images/FAO_logo_brand.png",
+      src: "/images/care_brand.png",
       alt: "Brand 5",
     },
     {
-      src: "/images/flyte-logo.png",
+      src: "/images/unicef_brand.png",
       alt: "Brand 6",
     },
     {
-      src: "/images/hydro-one-telecom_brand.svg",
+      src: "/images/macmillan_brand.png",
       alt: "Brand 7",
     },
     {
-      src: "/images/ilo_brand.png",
+      src: "/images/world-health-organization_brand.png",
       alt: "Brand 8",
     },
     {
-      src: "/images/macmillan_brand.png",
+      src: "/images/ilo_brand.png",
       alt: "Brand 9",
     },
     {
-      src: "/images/robi_brand.png",
+      src: "/images/bell.png",
       alt: "Brand 10",
     },
     {
-      src: "/images/Roche_brand.png",
+      src: "/images/usaid_brand.png",
       alt: "Brand 11",
     },
     {
@@ -327,20 +331,32 @@ export const brandData = {
       alt: "Brand 12",
     },
     {
-      src: "/images/uber_brand.svg",
+      src: "/images/hydro-one-telecom-logo.png",
       alt: "Brand 13",
     },
     {
-      src: "/images/unicef_brand.png",
+      src: "/images/keller-williams.png",
       alt: "Brand 14",
     },
     {
-      src: "/images/usaid_brand.png",
+      src: "/images/FAO_logo_brand.png",
       alt: "Brand 15",
     },
     {
-      src: "/images/world-health-organization_brand.png",
+      src: "/images/ada-grp.png",
       alt: "Brand 16",
+    },
+    {
+      src: "/images/berger.png",
+      alt: "Brand 17",
+    },
+    {
+      src: "/images/walton.png",
+      alt: "Brand 18",
+    },
+    {
+      src: "/images/DB_WORDMARK.png",
+      alt: "Brand 19",
     },
   ],
 };
@@ -1520,18 +1536,22 @@ export const contactUsKeyPoints = [
   {
     id: 1,
     title: "Your request has been received and is currently under review.",
+    icon:"fa-regular fa-hourglass-half"
   },
   {
     id: 2,
     title: "A solution advisor will analyze your requirements and provide a response within 3 business days.",
+    icon:"fa-solid fa-user"
   },
   {
     id: 3,
     title: "If required, a mutual NDA can be arranged within 1-2 business days to ensure confidentiality.",
+    icon:"fa-solid fa-handshake-angle"
   },
   {
     id: 4,
     title: "Project estimates or recommendations will be presented within 3-5 business days.",
+    icon:"fa-regular fa-square-check"
   },
 ];
 
