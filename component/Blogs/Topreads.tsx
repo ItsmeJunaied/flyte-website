@@ -25,24 +25,24 @@ type BlogData = {
 };
 const Topreads: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
   return (
-    <div className=" border border-[#FFB2B2] bg-[#FFF8E6] py-[60px] px-[40px] rounded-2xl ">
+    <div className=" border border-[#FFB2B2] bg-[#FFF8E6] py-10 px-5 lg:px-[40px] h-full rounded-2xl flex flex-col flex-1 ">
       <h1 className=" text-center text-black text-xl font-bold ">Top Reads</h1>
 
       <div className=" mt-5">
         {blogData?.cards?.slice(0, 3)?.map((card, index) => (
           <div
             key={index}
-            className=" bg-white flex-row justify-start items-start inline-flex transition-transform duration-500 mb-2"
+            className=" bg-white flex-row gap-5 justify-start items-stretch flex transition-transform duration-500 mb-2"
           >
-            <div className="w-1/2 h-full relative">
+            <div className="flex-1 relative h-auto">
               <img
-                className="w-full h-full object-cover "
+                className="w-full h-full object-cover"
                 src={card.image}
                 alt={card.title}
               />
               {/* Overlay */}
-              <div className="absolute inset-0 bg-black/25 rounded-lg" />
-              {/* Displaying keywords over the image */}
+              <div className="absolute h-full inset-0 bg-black/25" />
+              {/* Keywords over the image */}
               <div className="absolute top-2 left-2 flex flex-wrap gap-2">
                 {card.keywords.map((keyword, idx) => (
                   <div
@@ -55,8 +55,8 @@ const Topreads: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
               </div>
             </div>
 
-            <div className=" w-1/2 p-4 flex-col justify-start items-start gap-3 flex">
-              <div className="w-[360px] h-10 text-[#121416] text-base font-semibold leading-loose">
+            <div className=" w-1/2 py-5  flex-col justify-start items-start gap-3 flex-1">
+              <div className=" w-fit lg:w-[360px] lg:h-10 text-[#121416] text-base text-wrap font-semibold lg:leading-loose mb-2 lg:mb-0">
                 {card.title}
               </div>
               <div className=" flex-col justify-start items-start gap-3 flex">
