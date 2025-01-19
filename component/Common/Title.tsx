@@ -2,6 +2,7 @@ import React from "react";
 
 type TitleProps = {
   title: string;
+  padding?:string;
   width?: string;
   fontSize?: string;
   fontColor?: string;
@@ -9,6 +10,7 @@ type TitleProps = {
 
 const Title: React.FC<TitleProps> = ({
   width = "lg:w-1/2",
+  padding="px-8 lg:px-0",
   title,
   fontSize = "text-2xl lg:text-5xl",
   fontColor = "text-[#15161B]",
@@ -16,7 +18,7 @@ const Title: React.FC<TitleProps> = ({
   return (
     <div>
       <h1
-        className={` ${width} ${fontColor} ${fontSize} font-semibold font-['DM Sans'] px-8 lg:px-0 text-start`}
+        className={` ${width} ${fontColor} ${fontSize} ${padding} font-semibold font-['DM Sans']  text-start`}
       >
         {title}
       </h1>

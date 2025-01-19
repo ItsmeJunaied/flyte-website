@@ -10,13 +10,13 @@ const CaseStudies = () => {
   return (
     <div className="w-full py-10">
       <div className="w-full flex flex-row">
-        <div className=" w-full  flex flex-col lg:flex-row items-center h-full overflow-x-hidden">
-          <div className=" pl-16 pr-5 w-full lg:w-1/3 flex flex-col gap-[24px] h-full justify-center">
+        <div className=" w-full  flex flex-col lg:flex-row items-center h-full overflow-x-hidden  ">
+          <div className=" lg:pl-16 lg:pr-5 w-full lg:w-1/3 flex flex-col gap-[24px] h-full justify-center px-4 lg:px-0 mb-5 lg:mb-0">
             <Subtitle Subtitle={subtitle} />
             <h1 className="text-zinc-950 text-4xl font-bold  leading-[46px]">
               {title}
             </h1>
-            <p className=" lg:w-[520px] text-[#12094a] text-sm font-normal leading-snug px-8 lg:px-0">
+            <p className=" lg:w-[520px] text-[#12094a] text-sm font-normal leading-snug  lg:px-0">
               Explore success stories of businesses transforming challenges into
               opportunities with our solutions.
             </p>

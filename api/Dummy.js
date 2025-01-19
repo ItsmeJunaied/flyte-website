@@ -1337,6 +1337,7 @@ export const caseStudyData = [
     description:
       "A task management tool to plan, assign, and track project tasks efficiently.",
     tags: ["Time Tracking", "Project Management", "Task Assignment"],
+    category: "enterprise",
   },
   {
     id: 2,
@@ -1345,6 +1346,7 @@ export const caseStudyData = [
     description:
       "A powerful tool to manage complex projects with ease and efficiency.",
     tags: ["Project Management", "Collaboration", "Productivity"],
+    category: "technology company",
   },
   {
     id: 3,
@@ -1353,6 +1355,7 @@ export const caseStudyData = [
     description:
       "An intuitive task management app that helps teams stay organized and on track.",
     tags: ["Task Management", "Organization", "Teamwork"],
+    category: "startup",
   },
   {
     id: 4,
@@ -1361,6 +1364,7 @@ export const caseStudyData = [
     description:
       "A collaboration platform for teams to communicate, share files, and track progress.",
     tags: ["Collaboration", "Communication", "File Sharing"],
+    category: "enterprise",
   },
   {
     id: 5,
@@ -1369,6 +1373,7 @@ export const caseStudyData = [
     description:
       "A time management app that helps you save time with automated scheduling and reminders.",
     tags: ["Time Management", "Scheduling", "Reminders"],
+    category: "enterprise",
   },
   {
     id: 6,
@@ -1377,6 +1382,7 @@ export const caseStudyData = [
     description:
       "A team management app that fosters communication and collaboration among team members.",
     tags: ["Team Management", "Collaboration", "Communication"],
+    category: "startup",
   },
   {
     id: 7,
@@ -1385,6 +1391,7 @@ export const caseStudyData = [
     description:
       "A work management tool to streamline workflows, automate tasks, and boost productivity.",
     tags: ["Workflow", "Automation", "Productivity"],
+    category: "enterprise",
   },
   {
     id: 8,
@@ -1393,6 +1400,7 @@ export const caseStudyData = [
     description:
       "A productivity app designed to keep you focused by blocking distractions.",
     tags: ["Productivity", "Focus", "Distraction-Free"],
+    category: "technology company",
   },
   {
     id: 9,
@@ -1401,6 +1409,7 @@ export const caseStudyData = [
     description:
       "An intelligent scheduling app that adjusts to your work habits and preferences.",
     tags: ["Scheduling", "Automation", "Productivity"],
+    category: "enterprise",
   },
   {
     id: 10,
@@ -1409,6 +1418,7 @@ export const caseStudyData = [
     description:
       "A collaborative workspace for teams to track tasks, share documents, and meet deadlines.",
     tags: ["Collaboration", "Workspace", "Teamwork"],
+    category: "enterprise",
   },
   {
     id: 11,
@@ -1417,6 +1427,7 @@ export const caseStudyData = [
     description:
       "A professional planner to organize tasks, appointments, and goals efficiently.",
     tags: ["Planning", "Task Management", "Goal Setting"],
+    category: "enterprise",
   },
   {
     id: 12,
@@ -1425,6 +1436,7 @@ export const caseStudyData = [
     description:
       "A tool that synchronizes teams across time zones, making collaboration easy and efficient.",
     tags: ["Teamwork", "Time Zones", "Collaboration"],
+    category: "enterprise",
   },
   {
     id: 13,
@@ -1433,6 +1445,7 @@ export const caseStudyData = [
     description:
       "A task management solution to track tasks from start to finish with clear deadlines.",
     tags: ["Task Management", "Deadline Tracking", "Organization"],
+    category: "enterprise",
   },
   {
     id: 14,
@@ -1441,6 +1454,7 @@ export const caseStudyData = [
     description:
       "An app for quick task organization and tracking, ensuring high productivity.",
     tags: ["Task Organization", "Quick Tasks", "Efficiency"],
+    category: "enterprise",
   },
   {
     id: 15,
@@ -1449,6 +1463,7 @@ export const caseStudyData = [
     description:
       "A meeting scheduling app that optimizes team calendars and time slots.",
     tags: ["Scheduling", "Meetings", "Team Coordination"],
+    category: "enterprise",
   },
   {
     id: 16,
@@ -1457,6 +1472,7 @@ export const caseStudyData = [
     description:
       "An app that organizes team tasks, schedules, and milestones to improve workflow.",
     tags: ["Team Management", "Task Scheduling", "Team Collaboration"],
+    category: "enterprise",
   },
   {
     id: 17,
@@ -1465,6 +1481,7 @@ export const caseStudyData = [
     description:
       "A project management tool to plan, organize, and execute projects effectively.",
     tags: ["Project Management", "Planning", "Execution"],
+    category: "enterprise",
   },
   {
     id: 18,
@@ -1473,6 +1490,7 @@ export const caseStudyData = [
     description:
       "A synchronization tool for teams to coordinate tasks and share updates in real-time.",
     tags: ["Syncing", "Collaboration", "Real-time"],
+    category: "enterprise",
   },
   {
     id: 19,
@@ -1481,6 +1499,7 @@ export const caseStudyData = [
     description:
       "A magical task manager that adapts to your needs and keeps you on track.",
     tags: ["Task Management", "Productivity", "Adaptability"],
+    category: "enterprise",
   },
   {
     id: 20,
@@ -1489,6 +1508,7 @@ export const caseStudyData = [
     description:
       "A time management tool that tracks, analyzes, and improves your time usage.",
     tags: ["Time Management", "Analytics", "Productivity"],
+    category: "enterprise",
   },
   {
     id: 21,
@@ -1497,6 +1517,7 @@ export const caseStudyData = [
     description:
       "A strategic planning app for teams to align on goals, timelines, and progress.",
     tags: ["Strategic Planning", "Team Alignment", "Goal Setting"],
+    category: "enterprise",
   },
   {
     id: 22,
@@ -1505,6 +1526,7 @@ export const caseStudyData = [
     description:
       "A focused environment app that helps you stay on task and avoid distractions.",
     tags: ["Focus", "Productivity", "Distraction-Free"],
+    category: "technology company",
   },
   {
     id: 23,
@@ -1513,6 +1535,7 @@ export const caseStudyData = [
     description:
       "A hub for organizing and managing all your tasks, deadlines, and projects.",
     tags: ["Task Management", "Organization", "Deadline Tracking"],
+    category: "enterprise",
   },
   {
     id: 24,
@@ -1521,6 +1544,7 @@ export const caseStudyData = [
     description:
       "A workforce management app designed for teams to track work hours and productivity.",
     tags: ["Workforce Management", "Time Tracking", "Productivity"],
+    category: "enterprise",
   },
 ];
 
