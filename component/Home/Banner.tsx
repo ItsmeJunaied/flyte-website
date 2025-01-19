@@ -29,7 +29,7 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
       }}
       className="flex flex-col justify-center items-start gap-5 "
     >
-      <div className=" container px-5 lg:px-[80px] flex flex-col gap-[24px]">
+      <div className=" container  flex flex-col gap-[24px]">
         <div className="w-full flex justify-start items-start">
           <h2
             className="bannerTitle max-w-[1000px] text-start text-white text-3xl lg:text-5xl font-bold leading-[40px] lg:leading-[80px] tracking-normal"
@@ -48,7 +48,7 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
           </h2>
         </div>
 
-        <div className=" flex flex-row gap-2 overflow-x-scroll scrollbar-hide ">
+        <div className=" flex flex-row gap-2 overflow-x-auto scrollbar-hide ">
           {bannerData.industries.map((industry, index) => (
             <button
               key={index}
@@ -63,6 +63,7 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
             </button>
           ))}
         </div>
+
         <div className=" flex flex-col lg:flex-row gap-2">
           <button
             id="alertButton"

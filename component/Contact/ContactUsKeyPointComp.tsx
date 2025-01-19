@@ -3,6 +3,7 @@ import { FaRegPaperPlane } from "react-icons/fa";
 type KeyPoint = {
     id: number;
     title: string;
+    icon:string;
   };
   
   type ContactUsKeyPointCompProps = {
@@ -12,8 +13,8 @@ type KeyPoint = {
 const ContactUsKeyPointComp:React.FC<ContactUsKeyPointCompProps> = ({KeyPoints}) => {
   return (
     <div>
-      <div className="h-full w-full  flex flex-col justify-center items-center gap-5 bg-[#FFFFFF]  px-10 rounded-[30px] py-20 ">
-        <div>
+      <div className="h-full w-full  flex flex-col justify-center items-center gap-10 bg-[#FFFFFF]  px-10 rounded-[30px] py-10 ">
+        <div >
           <p className="text-center text-black text-2xl font-semibold font-['Open Sans']">
             What's Next With Flyte?
           </p>
@@ -27,8 +28,9 @@ const ContactUsKeyPointComp:React.FC<ContactUsKeyPointCompProps> = ({KeyPoints})
                 className=" flex flex-row justify-between items-center w-full gap-3"
               >
                 <div className="w-1/6 ">
-                  <div className=" w-10 h-10 bg-[#5856d6] rounded-xl flex justify-center items-center text-white">
-                    <FaRegPaperPlane />
+                  <div className=" w-10 h-10 bg-transparent border-[2px] border-[#EAEAEA] rounded-xl flex justify-center items-center text-[#868686]">
+                  <i className={points?.icon}></i>
+
                   </div>
                 </div>
                 <div className=" w-5/6 ">

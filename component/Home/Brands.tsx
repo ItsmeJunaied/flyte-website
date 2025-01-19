@@ -26,18 +26,21 @@ const Brands: React.FC<BrandData> = ({ brands }) => {
               key={index}
               src={brand.src}
               alt={brand.alt}
-              className="w-fit h-[30px] lg:h-[35px] object-cover mt-5"
+              className="w-fit h-[30px] lg:h-[48px] object-cover mt-5"
             />
           ))}
+          {/* Gap between first and repeat */}
+          <div className="w-1" />
           {/* Repeat the first half of the brands at the end */}
           {firstHalf.map((brand, index) => (
             <img
               key={`repeat-${index}`}
               src={brand.src}
               alt={brand.alt}
-              className="w-fit h-[30px] lg:h-[35px] object-cover mt-5"
+              className="w-fit h-[30px] lg:h-[48px] object-cover mt-5"
             />
           ))}
+          <div className="w-1" />
         </div>
       </Marquee>
       {/* Marquee for the second half of the brands */}
@@ -48,19 +51,21 @@ const Brands: React.FC<BrandData> = ({ brands }) => {
               key={index}
               src={brand.src}
               alt={brand.alt}
-              className="w-fit h-[30px] lg:h-[35px] object-cover mt-5"
+              className="w-fit h-[30px] lg:h-[48px] object-cover mt-5"
             />
           ))}
+          <div className="w-1" />
           {/* Repeat the second half of the brands at the end */}
           {secondHalf.map((brand, index) => (
             <img
               key={`repeat-${index}`}
               src={brand.src}
               alt={brand.alt}
-              className="w-fit h-[30px] lg:h-[35px] object-cover mt-5"
+              className="w-fit h-[30px] lg:h-[48px] object-cover mt-5"
             />
           ))}
         </div>
+        <div className="w-1" />
       </Marquee>
     </div>
   );

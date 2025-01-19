@@ -62,7 +62,7 @@ type ContactUsFormCompProps = {
         </div>
       </div>
 
-      <div className="w-full flex flex-col lg:flex-row justify-start items-start gap-8 ">
+      {/* <div className="w-full flex flex-col lg:flex-row justify-start items-start gap-8 ">
         <div className="w-full   flex-col justify-start items-start gap-2 inline-flex">
           <label className="self-stretch text-[#666666] text-xs font-semibold font-['DM Sans'] leading-[18px]">
             Service
@@ -103,7 +103,7 @@ type ContactUsFormCompProps = {
             </SelectContent>
           </Select>
         </div>
-      </div>
+      </div> */}
 
       <div className="self-stretch h-[329px] flex-col justify-start items-start gap-6 flex">
         <div className="self-stretch h-[265px] flex-col justify-start items-start gap-4 flex">
