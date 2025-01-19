@@ -18,8 +18,8 @@ const page = () => {
       <ServicesOverview />
       <OperationsSections techData={techData} />
       <ServiceFitHighlights />
-      <BookConsultation />
       <SuccessStories/>
+      <BookConsultation />
     </div>
   );
 };

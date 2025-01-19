@@ -1584,15 +1584,15 @@ export const serviceOverviewData = [
     },
   },
 
-  {
-    title: "High-Quality Output",
-    description:
-      "Achieve faster delivery and superior quality without the burden of office space, equipment, or administrative costs.",
-    icon: {
-      path: "M53.9993 28.0004L48.306 21.5138L49.0993 12.9271L40.676 11.0137L36.266 3.59375L28.3327 7.00042L20.3993 3.59375L15.9893 11.0137L7.56602 12.9038L8.35935 21.4904L2.66602 28.0004L8.35935 34.4871L7.56602 43.0971L15.9893 45.0104L20.3993 52.4304L28.3327 49.0004L36.266 52.4071L40.676 44.9871L49.0993 43.0737L48.306 34.4871L53.9993 28.0004ZM23.666 39.6671L14.3327 30.3337L17.6227 27.0437L23.666 33.0637L39.0427 17.6871L42.3327 21.0004L23.666 39.6671Z",
-      fill: "#3B82F6",
-    },
-  },
+  // {
+  //   title: "High-Quality Output",
+  //   description:
+  //     "Achieve faster delivery and superior quality without the burden of office space, equipment, or administrative costs.",
+  //   icon: {
+  //     path: "M53.9993 28.0004L48.306 21.5138L49.0993 12.9271L40.676 11.0137L36.266 3.59375L28.3327 7.00042L20.3993 3.59375L15.9893 11.0137L7.56602 12.9038L8.35935 21.4904L2.66602 28.0004L8.35935 34.4871L7.56602 43.0971L15.9893 45.0104L20.3993 52.4304L28.3327 49.0004L36.266 52.4071L40.676 44.9871L49.0993 43.0737L48.306 34.4871L53.9993 28.0004ZM23.666 39.6671L14.3327 30.3337L17.6227 27.0437L23.666 33.0637L39.0427 17.6871L42.3327 21.0004L23.666 39.6671Z",
+  //     fill: "#3B82F6",
+  //   },
+  // },
 ];
 
 // service highlights Data
@@ -2093,4 +2093,18 @@ export const NewsBlogsBannerData={
     "Explore expert perspectives, industry trends, and practical advice through our news and blogs.",
   btnName: "Book A Consultation",
   btnPath: "/contact-us",
+};
+
+// Career data 
+export const careerBannerData = {
+  title: "Discover How We Empower Careers to Reach New Heights",
+  description:
+    "At Flyte Solutions, we believe that the journey of growth is driven by continuous learning and a sense of wonder. We’re committed to creating a workplace where curiosity thrives, talents are nurtured, and innovative ideas flourish. Discover a dynamic environment where your potential knows no bounds, and find a role that aligns with your passion and purpose. Join us and be part of a team where every day offers new opportunities for growth and adventure.",
+  images: [
+    "https://i.ibb.co.com/JtcqtSf/surface1.png",
+    "https://i.ibb.co.com/pP9mzVj/cert-3-1.png",
+    "https://i.ibb.co.com/gjZYtkW/Untitled-design-2-1-1.png",
+    "https://i.ibb.co.com/XxwnN4x/basis-1.png",
+  ],
+  bannerImage: "https://i.ibb.co.com/F6G9RHs/Frame-9.png",
 };
