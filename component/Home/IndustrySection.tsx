@@ -29,7 +29,7 @@ const
 IndustrySection: React.FC<{ industrydata: IndustryData }> = ({
   industrydata,
 }) => {
-  // State to track the selected industry
+  // State to track the selected industryd
   const [selectedIndustry, setSelectedIndustry] = useState<Industry | null>(
     industrydata.industries[0]
   );
