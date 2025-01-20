@@ -368,49 +368,49 @@ export const serviceData = [
     title: "Team Extension",
     description:
       "Expand your development capabilities with dedicated teams that integrate seamlessly with your existing operations.",
-    keywords: ["outsourcing", "staffing", "scalable", "developers"],
+    keywords: ["outsourcing", "staffing", "developers"],
     image: "/images/service1.png",
   },
   {
     title: "Custom Software Development",
     description:
       "Tailored software solutions that align with your business needs, ensuring seamless integration and efficiency.",
-    keywords: ["custom", "solutions", "design", "apps"],
+    keywords: [ "solutions", "design", "apps"],
     image: "/images/service2.png",
   },
   {
     title: "Enterprise Software Development",
     description:
       "Build robust enterprise-level software to support large-scale operations, improve efficiency, and foster innovation.",
-    keywords: ["enterprise", "scalable", "automation", "growth"],
+    keywords: [ "scalable", "automation", "growth"],
     image: "/images/service3.png",
   },
   {
     title: "Mobile App Development",
     description:
       "Design and develop mobile applications for iOS and Android platforms, enhancing user experience and engagement.",
-    keywords: ["mobile", "iOS", "Android", "apps"],
+    keywords: [ "iOS", "Android", "apps"],
     image: "/images/service4.svg",
   },
   {
     title: "QA & Testing",
     description:
       "Ensure software quality with comprehensive testing services, from functional to performance testing.",
-    keywords: ["quality", "testing", "automation", "bugs"],
+    keywords: [ "testing", "automation", "bugs"],
     image: "/images/service5.png",
   },
   {
     title: "MVP Development",
     description:
       "Build a minimum viable product quickly to test your ideas, validate concepts, and enter the market faster.",
-    keywords: ["MVP", "launch", "validation", "startup"],
+    keywords: ["MVP", "validation", "startup"],
     image: "/images/service6.png",
   },
   {
     title: "Cloud Computing Solutions",
     description:
       "Implement cloud solutions that improve scalability, security, and collaboration for businesses of all sizes.",
-    keywords: ["cloud", "scalable", "security", "infrastructure"],
+    keywords: ["cloud", "security", "infrastructure"],
     image: "/images/service3.png",
   },
 ];

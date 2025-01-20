@@ -51,17 +51,17 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({
         backgroundPosition: "center",
         width: "100%",
       }}
-      data-aos="fade-up"
+
     >
       <div className=" container">
-        <div className=" ">
+        <div className="  "       data-aos="fade-up">
           <Subtitle Subtitle="Our Technology"/>
           <Title title={headerTitle} />
         </div>
 
         <div
           className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 py-10 px-5 lg:px-0 justify-center "
-          data-aos-anchor-placement="top-bottom"
+                data-aos="fade-up"
         >
           {sections.map((section) => {
             const category = techData[section.key as keyof TechData];
@@ -102,7 +102,7 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({
           })}
         </div>
 
-        <div className="w-full h-[42px] justify-center items- gap-2.5 inline-flex overflow-hidden">
+        <div className="w-full h-[42px] justify-center items- gap-2.5 inline-flex overflow-hidden "       data-aos="fade-up">
           <button className="text-white bg-[#5856d6] rounded-md px-8 py-3 text-sm font-semibold">
             Learn More
           </button>

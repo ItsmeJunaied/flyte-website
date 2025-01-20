@@ -44,7 +44,7 @@ type FooterData = {
 // Dummy footer data import
 import { footerData } from "@/api/Dummy";
 
-const Footer: React.FC = () => {
+const Footer: React.FC<FooterData> = () => {
   const { contactUs, services, expertise } = footerData.footer;
 
   return (
@@ -142,10 +142,10 @@ const Footer: React.FC = () => {
                   <h6 className="text-[#F5F5F5] font-bold text-base">
                     {subsection.name}
                   </h6>
-                  <ul className="list-none flex flex-col gap-5">
+                  <ul className="list-none flex flex-col gap-5 max-w-[200px]">
                     {subsection.items.map((item, subIndex) => (
                       <li key={subIndex}>
-                        <span className="text-[#EBEBEB] text-sm">{item}</span>
+                        <span className="text-[#EBEBEB] text-sm text-wrap">{item}</span>
                       </li>
                     ))}
                   </ul>
