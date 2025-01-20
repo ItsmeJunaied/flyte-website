@@ -2108,3 +2108,45 @@ export const careerBannerData = {
   ],
   bannerImage: "https://i.ibb.co.com/F6G9RHs/Frame-9.png",
 };
+
+export const careerShowcaseData = {
+  designShowcase: {
+    title: "Designs",
+    description: "Creating visually stunning and user-centric designs.",
+    image: "https://i.ibb.co.com/JdJTbWn/about-3d-2x.png",
+    services: [
+      { name: "Logo & Branding" },
+      { name: "Apps Design" },
+      { name: "Graphic Design" },
+      { name: "Website Design" },
+    ],
+  },
+  businessShowcase: {
+    title: "Business Solutions",
+    description: "Transforming businesses with innovative software solutions.",
+    services: [
+      { name: "ERP Systems" },
+      { name: "CRM Development" },
+      { name: "Data Visualization" },
+      { name: "Workflow Automation" },
+    ],
+  },
+
+  softwareShowcase: {
+    title: "Software Development",
+    description: "Building innovative and scalable software applications.",
+    image: "https://i.ibb.co.com/fM130CB/about-3d-2x-1-removebg-preview.png",
+    services: [
+      { name: "Custom Software Development" },
+      { name: "Web App Development" },
+      { name: "Mobile App Development" },
+    ],
+  },
+
+  technologyShowcase: {
+    title: "Technology",
+    description:
+      "Vestibulum consequat hendrerit nam sollicitudin dignissim nunc. Nam sollicitudin dignissim nunc.",
+    services: [{ name: "DevOps Services" }, { name: "AI & Machine Learning" }],
+  },
+};
