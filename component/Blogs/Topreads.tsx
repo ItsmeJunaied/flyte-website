@@ -26,10 +26,10 @@ type BlogData = {
 const Topreads: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
   return (
     <div className=" border border-[#FFB2B2] bg-[#FFF8E6] py-10 px-5 lg:px-[40px] h-full rounded-2xl flex flex-col flex-1 ">
-      <h1 className=" text-center text-black text-xl font-bold ">Top Reads</h1>
+      <h1 className=" text-center text-black text-xl font-bold mb-7">Top Reads</h1>
 
-      <div className=" mt-5">
-        {blogData?.cards?.slice(0, 3)?.map((card, index) => (
+      <div className=" flex flex-col gap-8">
+        {blogData?.cards?.slice(0, 2)?.map((card, index) => (
           <div
             key={index}
             className=" bg-white flex-row gap-5 justify-start items-stretch flex transition-transform duration-500 mb-2"
@@ -114,9 +114,9 @@ const Topreads: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
                     </div>
                   </div>
                 </div>
-                {/* <div className="self-stretch text-[#6c757d] text-xs font-normal leading-[17.96px]">
+                <div className="self-stretch text-[#6c757d] text-xs font-normal leading-[17.96px]">
                   {card.description}
-                </div> */}
+                </div>
                 <div className="flex-col justify-start items-center flex">
                   <div className=" border-b-[1px] border-black hover:border-btnColor px-4">
                     {/* <svg

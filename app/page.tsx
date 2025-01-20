@@ -23,13 +23,13 @@ const page = () => {
         <div className="  bg-white">
           <AboutUs/>
         </div>
-        <div className=" mt-24 container">
+        <div className=" my-24 container">
           <ServiceSection serviceData={serviceData} />
         </div>
-        <div>
+        {/* <div>
           <ServiceMarquee/>
-        </div>
-        <div className=" bg-white">
+        </div> */}
+        <div className=" bg-white ">
           <IndustrySection industrydata={industrydata} />
         </div>
         <div className=" ">

@@ -43,7 +43,7 @@ IndustrySection: React.FC<{ industrydata: IndustryData }> = ({
 
   return (
     <div
-      className="bg-white"
+      className="bg-white py-24"
       style={{
         backgroundImage: "url('/images/world-map.png')",
         backgroundRepeat: "no-repeat",
