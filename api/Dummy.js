@@ -316,11 +316,11 @@ export const brandData = {
       alt: "Brand 12",
     },
     {
-      src: "/images/hydro-one-telecom-logo.png",
+      src: "/images/keller-williams.png",
       alt: "Brand 13",
     },
     {
-      src: "/images/keller-williams.png",
+      src: "/images/hydro-one-telecom-logo.png",
       alt: "Brand 14",
     },
     {
