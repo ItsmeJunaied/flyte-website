@@ -1,7 +1,5 @@
 //navbar
 
-
-
 export const navbarData = {
   menu: [
     {
@@ -13,8 +11,7 @@ export const navbarData = {
         {
           name: "Frontend Developers",
           icon: "fa-briefcase",
-          description:
-            "Design and develop user-friendly interfaces for web applications.",
+          description: "Design and develop user-friendly interfaces for web applications.",
           path: "/hire/job-openings",
         },
         {
@@ -26,29 +23,25 @@ export const navbarData = {
         {
           name: "Mobile App Developers",
           icon: "fa-mobile-alt",
-          description:
-            "Create mobile applications for iOS and Android platforms.",
+          description: "Create mobile applications for iOS and Android platforms.",
           path: "/hire/contract-roles",
         },
         {
           name: "QA Engineers",
           icon: "fa-bug",
-          description:
-            "Test software applications to ensure quality and performance.",
+          description: "Test software applications to ensure quality and performance.",
           path: "/hire/qa-roles",
         },
         {
           name: "DevOps Engineers",
           icon: "fa-tools",
-          description:
-            "Streamline development processes and infrastructure with DevOps practices.",
+          description: "Streamline development processes and infrastructure with DevOps practices.",
           path: "/hire/devops-roles",
         },
         {
           name: "AI & ML Specialists",
           icon: "fa-robot",
-          description:
-            "Leverage AI and ML technologies to build smart applications.",
+          description: "Leverage AI and ML technologies to build smart applications.",
           path: "/hire/ai-ml-roles",
         },
       ],
@@ -62,29 +55,25 @@ export const navbarData = {
         {
           name: "Fintech",
           icon: "fa-heartbeat",
-          description:
-            "Solutions for the healthcare sector to improve patient care.",
+          description: "Solutions for the healthcare sector to improve patient care.",
           path: "/industries/healthcare",
         },
         {
           name: "Education",
           icon: "fa-university",
-          description:
-            "Innovative financial tools and services for the modern world.",
+          description: "Innovative financial tools and services for the modern world.",
           path: "/industries/finance",
         },
         {
           name: "Logistics",
           icon: "fa-store",
-          description:
-            "Transforming retail experiences with technology-driven solutions.",
+          description: "Transforming retail experiences with technology-driven solutions.",
           path: "/industries/retail",
         },
         {
           name: "Manufacturing",
           icon: "fa-store",
-          description:
-            "Transforming retail experiences with technology-driven solutions.",
+          description: "Transforming retail experiences with technology-driven solutions.",
           path: "/industries/retail",
         },
 
@@ -103,8 +92,7 @@ export const navbarData = {
         {
           name: "Real Estate",
           icon: "fa-home",
-          description:
-            "Revolutionizing the real estate industry with tech solutions.",
+          description: "Revolutionizing the real estate industry with tech solutions.",
           path: "/industries/real-estate",
         },
         {
@@ -142,15 +130,13 @@ export const navbarData = {
         {
           name: "Team Extension",
           icon: "fa-lightbulb",
-          description:
-            "Expert advice and strategic planning for your business.",
+          description: "Expert advice and strategic planning for your business.",
           path: "/services/consulting",
         },
         {
           name: "Custom Software Development",
           icon: "fa-cogs",
-          description:
-            "End-to-end software development services for every industry.",
+          description: "End-to-end software development services for every industry.",
           path: "/services/development",
         },
         {
@@ -176,8 +162,7 @@ export const navbarData = {
         {
           name: "Time2Task",
           icon: "fa-box",
-          description:
-            "Our flagship product designed to streamline operations.",
+          description: "Our flagship product designed to streamline operations.",
           path: "/products/product-a",
         },
         {
@@ -215,15 +200,17 @@ export const navbarData = {
         {
           name: "About Us",
           icon: "fa-info-circle",
-          description: "Learn about our mission, vision, and the values that drive our commitment to excellence. Discover the story behind our journey and what makes us a trusted partner for businesses worldwide.",
+          description:
+            "Learn about our mission, vision, and the values that drive our commitment to excellence. Discover the story behind our journey and what makes us a trusted partner for businesses worldwide.",
           path: "/company/about-us",
         },
         {
           name: "News & Blogs",
           icon: "fa-users",
-          description: "Stay updated with the latest company news, industry insights, and expert opinions. Dive into our blogs for valuable tips and updates shaping the future of technology and business.",
+          description:
+            "Stay updated with the latest company news, industry insights, and expert opinions. Dive into our blogs for valuable tips and updates shaping the future of technology and business.",
           path: "/company/news&blogs",
-        }
+        },
       ],
     },
     {
@@ -237,8 +224,7 @@ export const navbarData = {
 
 // banner
 export const bannerData = {
-  title:
-    "Achieve <span> Sucess </span> With Innovative <span> Software Solutions </span>",
+  title: "Achieve <span> Sucess </span> With Innovative <span> Software Solutions </span>",
   description:
     "Our platform empowers your business with cutting-edge software solutions and lightning-fast deployment. Achieve your goals with unmatched efficiency and reliability.",
   industries: [
@@ -277,7 +263,6 @@ export const bannerData = {
   ],
   bannerImage: "/images/bannerImg.png",
 };
-
 
 export const brandData = {
   title: "Trusted by top brands to deliver excellence every time",
@@ -375,28 +360,28 @@ export const serviceData = [
     title: "Custom Software Development",
     description:
       "Tailored software solutions that align with your business needs, ensuring seamless integration and efficiency.",
-    keywords: [ "solutions", "design", "apps"],
+    keywords: ["solutions", "design", "apps"],
     image: "/images/service2.png",
   },
   {
     title: "Enterprise Software Development",
     description:
       "Build robust enterprise-level software to support large-scale operations, improve efficiency, and foster innovation.",
-    keywords: [ "scalable", "automation", "growth"],
+    keywords: ["scalable", "automation", "growth"],
     image: "/images/service3.png",
   },
   {
     title: "Mobile App Development",
     description:
       "Design and develop mobile applications for iOS and Android platforms, enhancing user experience and engagement.",
-    keywords: [ "iOS", "Android", "apps"],
+    keywords: ["iOS", "Android", "apps"],
     image: "/images/service4.svg",
   },
   {
     title: "QA & Testing",
     description:
       "Ensure software quality with comprehensive testing services, from functional to performance testing.",
-    keywords: [ "testing", "automation", "bugs"],
+    keywords: ["testing", "automation", "bugs"],
     image: "/images/service5.png",
   },
   {
@@ -504,12 +489,7 @@ export const blogData = {
       image: "/images/blog-flyte-iso.png",
       description:
         "Cloud infrastructure is revolutionizing the IT industry. This article covers how organizations are adopting cloud solutions to improve flexibility and reduce costs.",
-      keywords: [
-        "Cloud Infrastructure",
-        "IT Industry",
-        "Cost Reduction",
-        "Flexibility",
-      ],
+      keywords: ["Cloud Infrastructure", "IT Industry", "Cost Reduction", "Flexibility"],
       profile: {
         name: "David Warner",
         image: " /images/ceo_sumon.jpg",
@@ -525,12 +505,7 @@ export const blogData = {
       image: "/images/blog-flyte-iso.png",
       description:
         "Cloud infrastructure is revolutionizing the IT industry. This article covers how organizations are adopting cloud solutions to improve flexibility and reduce costs.",
-      keywords: [
-        "Cloud Infrastructure",
-        "IT Industry",
-        "Cost Reduction",
-        "Flexibility",
-      ],
+      keywords: ["Cloud Infrastructure", "IT Industry", "Cost Reduction", "Flexibility"],
       profile: {
         name: "David Warner",
         image: " /images/ceo_sumon.jpg",
@@ -546,12 +521,7 @@ export const blogData = {
       image: "/images/blog-flyte-iso.png",
       description:
         "Cloud infrastructure is revolutionizing the IT industry. This article covers how organizations are adopting cloud solutions to improve flexibility and reduce costs.",
-      keywords: [
-        "Cloud Infrastructure",
-        "IT Industry",
-        "Cost Reduction",
-        "Flexibility",
-      ],
+      keywords: ["Cloud Infrastructure", "IT Industry", "Cost Reduction", "Flexibility"],
       profile: {
         name: "David Warner",
         image: " /images/ceo_sumon.jpg",
@@ -1536,22 +1506,22 @@ export const contactUsKeyPoints = [
   {
     id: 1,
     title: "Your request has been received and is currently under review.",
-    icon:"fa-regular fa-hourglass-half"
+    icon: "fa-regular fa-hourglass-half",
   },
   {
     id: 2,
     title: "A solution advisor will analyze your requirements and provide a response within 3 business days.",
-    icon:"fa-solid fa-user"
+    icon: "fa-solid fa-user",
   },
   {
     id: 3,
     title: "If required, a mutual NDA can be arranged within 1-2 business days to ensure confidentiality.",
-    icon:"fa-solid fa-handshake-angle"
+    icon: "fa-solid fa-handshake-angle",
   },
   {
     id: 4,
     title: "Project estimates or recommendations will be presented within 3-5 business days.",
-    icon:"fa-regular fa-square-check"
+    icon: "fa-regular fa-square-check",
   },
 ];
 
@@ -2104,8 +2074,7 @@ export const missionVisionData = {
     "To build lasting partnerships by sharing our clients' goals, embracing responsibility, and prioritizing long-term success.",
 };
 
-
-export const NewsBlogsBannerData={
+export const NewsBlogsBannerData = {
   bgImage: "https://i.ibb.co.com/bH3K5FL/Rectangle-3843-2x.png",
   subtitle: "Insights That Inform, Stories That Inspire",
   title: "Stay Informed with Our Latest Insights!",
@@ -2115,7 +2084,7 @@ export const NewsBlogsBannerData={
   btnPath: "/contact-us",
 };
 
-// Career data 
+// Career data
 export const careerBannerData = {
   title: "Discover How We Empower Careers to Reach New Heights",
   description:
@@ -2169,4 +2138,32 @@ export const careerShowcaseData = {
       "Vestibulum consequat hendrerit nam sollicitudin dignissim nunc. Nam sollicitudin dignissim nunc.",
     services: [{ name: "DevOps Services" }, { name: "AI & Machine Learning" }],
   },
+};
+
+export const workCultureData = {
+  imgage1: "https://i.ibb.co.com/2NN4pNq/Rectangle-1.png",
+  imgage2: "https://i.ibb.co.com/wNB52YH/Rectangle-3.png",
+  imgage3: "https://i.ibb.co.com/ykzczw9/Rectangle-2.png",
+  cultures: [
+    {
+      title: "Diversity",
+      description: "We hire people from diverse backgrounds to foster innovation and creativity.",
+      icon: "fa-earth-americas",
+    },
+    {
+      title: "Collaboration",
+      description: "We believe in teamwork and open communication to achieve great results.",
+      icon: "fa-trophy",
+    },
+    {
+      title: "Integrity",
+      description: "Honesty and transparency are at the heart of everything we do.",
+      icon: "fa-shield-alt",
+    },
+    {
+      title: "Growth Mindset",
+      description: "We encourage continuous learning and self-improvement.",
+      icon: "fa-arrow-up-right-dots",
+    },
+  ],
 };
