@@ -10,9 +10,9 @@ type TitleProps = {
 
 const Title: React.FC<TitleProps> = ({
   width = "lg:w-1/2",
-  padding="px-8 lg:px-0",
+  padding="px-0",
   title,
-  fontSize = "text-2xl lg:text-5xl",
+  fontSize = " text-[24px] lg:text-[32px]",
   fontColor = "text-[#15161B]",
 }) => {
   return (

@@ -13,8 +13,8 @@ const ProjectSection: React.FC = () => {
   return (
     <div className="relative overflow-hidden bg-black py-10">
       <div className="container py-12">
-        <Subtitle Subtitle="Our Work" />
-        <Title fontColor="text-white" title="Featured Case Studies" />
+        <Subtitle Subtitle="Case Studies" />
+        <Title fontColor="text-white" title="Driving Success Through Proven SOlutions" />
       </div>
 
       <ProjectCards projectData={projectData} />

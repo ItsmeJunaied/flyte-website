@@ -39,7 +39,7 @@ const Contact: React.FC<contactUsKeyPointsProps> = ({ contsctUsData }) => {
           </div>
 
           {/* key section */}
-          <div className="w-full lg:w-1/3 px-5 lg:px-0">
+          <div className="w-full lg:w-1/3 ">
             <ContactUsKeyPointComp KeyPoints={KeyPoints} />
           </div>
         </div>

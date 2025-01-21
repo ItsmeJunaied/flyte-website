@@ -28,7 +28,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({ serviceData }) => {
       </div>
 
       <div
-        className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-5 lg:px-0 mt-10 mb-10"
+        className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 my-3 lg:my-10"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
       >
