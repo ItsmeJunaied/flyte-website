@@ -9,7 +9,7 @@
 *:not(i),
 *::before:not(i),
 *::after:not(i) {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif !important ;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -278,6 +278,9 @@ body::-webkit-scrollbar-thumb {
   transform: rotate(90deg);
 }
 
+.divider{
+  margin: 0 !important;
+}
 /*=============== DROPDOWN ===============*/
 .dropdown__button {
   cursor: pointer;

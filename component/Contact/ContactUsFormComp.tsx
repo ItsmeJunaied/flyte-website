@@ -14,7 +14,7 @@ type ContactUsFormCompProps = {
   
   const ContactUsFormComp: React.FC<ContactUsFormCompProps> = ({ headertitle }) => {
   return (
-    <div className=" w-full h-full flex-col justify-start items-start gap-4 inline-flex px-10 lg:px-0 pb-10 lg:pb-0">
+    <div className=" w-full h-full flex-col justify-start items-start gap-4 inline-flex px-0 lg:px-0 pb-10 lg:pb-0">
 
       <div className=" w-full flex flex-col lg:flex-row justify-start items-start gap-8 ">
         <div className=" w-full   flex-col justify-start items-start gap-2 inline-flex">

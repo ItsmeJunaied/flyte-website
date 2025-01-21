@@ -60,7 +60,7 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({
         </div>
 
         <div
-          className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 py-10 px-5 lg:px-0 justify-center "
+          className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 py-10  lg:px-0 justify-center "
                 data-aos="fade-up"
         >
           {sections.map((section) => {

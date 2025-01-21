@@ -42,9 +42,8 @@ type FooterData = {
 };
 
 // Dummy footer data import
-import { footerData } from "@/api/Dummy";
 
-const Footer: React.FC<FooterData> = () => {
+const Footer: React.FC<{ footerData: FooterData }> = ({ footerData }) => {
   const { contactUs, services, expertise } = footerData.footer;
 
   return (
@@ -130,13 +129,13 @@ const Footer: React.FC<FooterData> = () => {
           </div>
         </aside>
 
-        <div className=" flex flex-col">
+        <div className=" flex flex-row lg:flex-col justify-start items-start gap-5">
           {/* Services Section */}
           <section className="w-full flex flex-col">
             <h6 className="footer-title text-sm text-[#0FF] mb-8">
               {services.sectionName}
             </h6>
-            <div className="flex flex-wrap gap-6">
+            <div className="flex flex-wrap flex-col lg:flex-row gap-6">
               {services.subsections.map((subsection, index) => (
                 <div key={index} className="flex flex-col gap-5">
                   <h6 className="text-[#F5F5F5] font-bold text-base">
@@ -145,7 +144,9 @@ const Footer: React.FC<FooterData> = () => {
                   <ul className="list-none flex flex-col gap-5 max-w-[200px]">
                     {subsection.items.map((item, subIndex) => (
                       <li key={subIndex}>
-                        <span className="text-[#EBEBEB] text-sm text-wrap">{item}</span>
+                        <span className="text-[#EBEBEB] text-sm text-wrap">
+                          {item}
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -155,7 +156,7 @@ const Footer: React.FC<FooterData> = () => {
           </section>
 
           {/* Expertise Section */}
-          <section className="mt-8">
+          <section className=" mt-0 lg:mt-8">
             <h6 className="footer-title text-[#0FF] mb-8 text-sm">
               {expertise.sectionName}
             </h6>
@@ -186,7 +187,8 @@ const Footer: React.FC<FooterData> = () => {
       <footer className="footer footer-center text-base-content py-4">
         <aside>
           <p>
-            Copyright © 2012 - {new Date().getFullYear()} - All right reserved by Flyte Solutions Ltd.
+            Copyright © 2012 - {new Date().getFullYear()} - All right reserved
+            by Flyte Solutions Ltd.
           </p>
         </aside>
       </footer>

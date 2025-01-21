@@ -8,7 +8,7 @@ import Contact from "../component/Contact/Contact";
 import OperationsSections from "../component/Home/OperationsSections";
 import ProjectSection from "../component/Home/ProjectSection";
 import AboutUs from "../component/Home/AboutUs";
-import ServiceMarquee from "../component/Home/ServiceMarquee";
+import ProductsHomeComp from "@/component/Home/ProductsHomeComp";
 const page = () => {
   // console.log(brandData)nlkmkj
   return (
@@ -23,12 +23,13 @@ const page = () => {
         <div className="  bg-white">
           <AboutUs/>
         </div>
-        <div className=" my-24 container">
+        <div className=" my-10 container">
           <ServiceSection serviceData={serviceData} />
         </div>
-        {/* <div>
-          <ServiceMarquee/>
-        </div> */}
+        <div className=" bg-white py-10">
+          {/* <ServiceMarquee/> */}
+          <ProductsHomeComp/>
+        </div>
         <div className=" bg-white ">
           <IndustrySection industrydata={industrydata} />
         </div>

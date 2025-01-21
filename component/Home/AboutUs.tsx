@@ -4,13 +4,14 @@ import Title from "../Common/Title";
 import Subtitle from "../Common/Subtitle";
 // import { FaCheckCircle } from "react-icons/fa";
 import Link from "next/link";
+import { Separator } from "@/components/ui/separator";
 // import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 // import PlaneLottieAboutUs from "./HomeSubComponents.tsx/PlaneLottieAboutUs";
 const AboutUs: React.FC = () => {
   return (
     <div className="container pt-12">
       <Subtitle Subtitle="About Company" />
-      <Title title={"Solutions that Drive Your Business Forward"} />
+      <Title padding="px-0" title={"Solutions that Drive Your Business Forward"} />
 
       <div>
         <div className="  py-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -21,12 +22,13 @@ const AboutUs: React.FC = () => {
               <img
                 src="https://i.ibb.co.com/hsCv8qw/Image.png"
                 alt="Team Collaboration"
-                className="rounded-lg shadow-lg"              />
+                className="rounded-lg shadow-lg"
+              />
             </div>
           </div>
 
           {/* Right Content */}
-          <div className=" w-full flex flex-col gap-4">
+          <div className=" w-full h-full flex flex-col gap-4">
             {/* Lottie Animation */}
             {/* <PlaneLottieAboutUs /> */}
 
@@ -46,60 +48,84 @@ const AboutUs: React.FC = () => {
             </p>
 
             {/* Features List */}
-            <div className=" flex flex-wrap justify-between items-center gap-4">
-              <div className=" flex flex-col justify-center items-center gap-2">
-                <img
-                  className=" w-10 h-10 object-cover"
-                  src="https://i.ibb.co.com/wN59CwQ/flat-color-icons-calendar.png"
-                  alt="Years Experience"
-                />
-                <p className=" text-center text-black text-xl font-bold">12+</p>
-                <p className="text-center text-black text-sm font-medium ">
-                  Years Experience
-                </p>
+            <div className=" w-full flex flex-col lg:flex-row justify-between items-center gap-4">
+              <div className=" flex flex-row gap-4">
+                <div className=" flex flex-col justify-center items-center gap-2">
+                  <img
+                    className=" w-10 h-10 object-cover"
+                    src="https://i.ibb.co.com/wN59CwQ/flat-color-icons-calendar.png"
+                    alt="Years Experience"
+                  />
+                  <p className=" text-center text-black text-xl font-bold">
+                    12+
+                  </p>
+                  <p className="text-center text-black text-sm font-medium ">
+                    Years Experience
+                  </p>
+                </div>
+                <div className="">
+                  <Separator orientation="vertical" />
+                </div>
+
+                <div className=" flex flex-col justify-center items-center gap-2">
+                  <img
+                    className=" w-10 h-10 object-cover"
+                    src="https://i.ibb.co.com/3N1bD6Y/fxemoji-clipboard.png"
+                    alt="Projects Completed"
+                  />
+                  <p className=" text-center text-black text-xl font-bold">
+                    350+
+                  </p>
+                  <p className="text-center text-black text-sm font-medium ">
+                    Projects Completed
+                  </p>
+                </div>
               </div>
-              <div className=" flex flex-col justify-center items-center gap-2">
-                <img
-                  className=" w-10 h-10 object-cover"
-                  src="https://i.ibb.co.com/3N1bD6Y/fxemoji-clipboard.png"
-                  alt="Projects Completed"
-                />
-                <p className=" text-center text-black text-xl font-bold">
-                  350+
-                </p>
-                <p className="text-center text-black text-sm font-medium ">
-                  Projects Completed
-                </p>
+
+              <div className=" w-fit h-full items-center space-x-1 text-sm hidden lg:flex">
+                <Separator orientation="vertical" />
               </div>
-              <div className=" flex flex-col justify-center items-center gap-2">
-                <img
-                  className=" w-10 h-10 object-cover"
-                  src="https://i.ibb.co.com/CBFFjvr/emojione-handshake.png"
-                  alt="Recurring Clients"
-                />
-                <p className=" text-center text-black text-xl font-bold">97%</p>
-                <p className="text-center text-black text-sm font-medium ">
-                  Recurring Clients
-                </p>
-              </div>
-              <div className=" flex flex-col justify-center items-center gap-2">
-                <img
-                  className=" w-10 h-10 object-cover"
-                  src="https://i.ibb.co.com/wcBcfyL/twemoji-delivery-truck.png"
-                  alt="Solutions Delivered"
-                />
-                <p className=" text-center text-black text-xl font-bold">
-                  500+
-                </p>
-                <p className="text-center text-black text-sm font-medium ">
-                  Solutions Delivered
-                </p>
+
+              <div className="flex flex-row gap-4">
+                <div className=" flex flex-col justify-center items-center gap-2">
+                  <img
+                    className=" w-10 h-10 object-cover"
+                    src="https://i.ibb.co.com/CBFFjvr/emojione-handshake.png"
+                    alt="Recurring Clients"
+                  />
+                  <p className=" text-center text-black text-xl font-bold">
+                    97%
+                  </p>
+                  <p className="text-center text-black text-sm font-medium ">
+                    Recurring Clients
+                  </p>
+                </div>
+
+                <div className="flex ">
+                  <Separator orientation="vertical" />
+                </div>
+
+                <div className=" flex flex-row gap-2">
+                  <div className=" flex flex-col justify-center items-center gap-2">
+                    <img
+                      className=" w-10 h-10 object-cover"
+                      src="https://i.ibb.co.com/wcBcfyL/twemoji-delivery-truck.png"
+                      alt="Solutions Delivered"
+                    />
+                    <p className=" text-center text-black text-xl font-bold">
+                      500+
+                    </p>
+                    <p className="text-center text-black text-sm font-medium ">
+                      Solutions Delivered
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Learn More Button */}
-            <div className="w-fit bg-btnColor px-6 py-3 rounded-lg mt-3 flex justify-center items-center">
-              <Link className="w-fit h-fit text-white" href={"/"}>
+            <div className="w-full flex lg:justify-start justify-center lg:items-start items-center">
+              <Link className="w-fit h-fit bg-btnColor px-[32px] py-[12px] rounded-lg mt-5 text-white" href={"/"}>
                 <p>Learn more</p>
               </Link>
             </div>

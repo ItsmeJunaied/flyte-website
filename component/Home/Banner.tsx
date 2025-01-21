@@ -27,12 +27,12 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
         height: "640px",
         opacity: "100%",
       }}
-      className="flex flex-col justify-center items-start gap-5 "
+      className="flex flex-col  justify-center items-start gap-5 "
     >
-      <div className=" container  flex flex-col gap-[24px]">
+      <div className=" container   flex flex-col gap-[24px]">
         <div className="w-full flex justify-start items-start">
           <h2
-            className="bannerTitle max-w-[1000px] text-start text-white text-3xl lg:text-5xl font-bold leading-[40px] lg:leading-[80px] tracking-normal"
+            className="bannerTitle max-w-[1000px] text-start text-white text-[32px] lg:text-5xl font-bold leading-9  lg:leading-[80px] tracking-normal"
             dangerouslySetInnerHTML={{
               __html: bannerData.title.replace(
                 /<span>/g,

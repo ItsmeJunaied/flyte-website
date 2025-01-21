@@ -43,7 +43,7 @@ IndustrySection: React.FC<{ industrydata: IndustryData }> = ({
 
   return (
     <div
-      className="bg-white py-24"
+      className="bg-white py-10"
       style={{
         backgroundImage: "url('/images/world-map.png')",
         backgroundRepeat: "no-repeat",
@@ -60,7 +60,7 @@ IndustrySection: React.FC<{ industrydata: IndustryData }> = ({
           <Title title={industrydata.sectionTitle} />
         </div>
 
-        <div className="lg:hidden flex flex-row flex-wrap justify-start items-center gap-5 px-9">
+        <div className="lg:hidden flex flex-row flex-wrap justify-start items-center gap-5 lg:px-9">
           {industrydata.industries.map((industry, index) => (
             <div
               key={index}
