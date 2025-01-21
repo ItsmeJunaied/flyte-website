@@ -2167,3 +2167,32 @@ export const workCultureData = {
     },
   ],
 };
+
+
+// Hiring process data 
+export const processData = [
+  {
+    serialNo: "01",
+    icon: "fa-upload",
+    stepName: "Application",
+    description: "Submit your application and provide the required details to kickstart the process.",
+  },
+  {
+    serialNo: "02",
+    icon: "fa-filter",
+    stepName: "Screening",
+    description: "Our team reviews your application to ensure it meets the requirements.",
+  },
+  {
+    serialNo: "03",
+    icon: "fa-microphone",
+    stepName: "Interview",
+    description: "Participate in an interview to discuss your skills and suitability for the role.",
+  },
+  {
+    serialNo: "04",
+    icon: "fa-handshake-simple",
+    stepName: "Offer",
+    description: "Receive and review the job offer to join our team.",
+  },
+];
