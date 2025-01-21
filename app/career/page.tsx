@@ -4,6 +4,7 @@ import UnlockPotential from '@/component/Career/UnlockPotential';
 import WorkCulture from '@/component/Career/WorkCulture';
 import TopBrands from '@/component/Career/TopBrands';
 import HiringProcess from '@/component/Career/HiringProcess';
+import CareerOpportunities from '@/component/Career/CareerOpportunities';
 
 const page = () => {
     return (
@@ -13,6 +14,7 @@ const page = () => {
             <WorkCulture/>
             <UnlockPotential/>
             <HiringProcess/>
+            <CareerOpportunities/>
         </div>
     );
 };
