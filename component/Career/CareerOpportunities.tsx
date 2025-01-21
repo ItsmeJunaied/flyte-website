@@ -1,5 +1,6 @@
 import React from "react";
 import OpportunityCard from "./OpportunityCard";
+import { opportunities } from "../../api/Dummy";
 
 const CareerOpportunities = () => {
   return (
@@ -10,12 +11,11 @@ const CareerOpportunities = () => {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-        <OpportunityCard />
-        <OpportunityCard />
-        <OpportunityCard />
-        <OpportunityCard />
-        <OpportunityCard />
-        <OpportunityCard />
+        {opportunities?.map((opportunity, index) => (
+          <div key={index}>
+            <OpportunityCard opportunity={opportunity} />
+          </div>
+        ))}
       </div>
     </div>
   );

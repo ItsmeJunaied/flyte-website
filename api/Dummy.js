@@ -2168,8 +2168,7 @@ export const workCultureData = {
   ],
 };
 
-
-// Hiring process data 
+// Hiring process data
 export const processData = [
   {
     serialNo: "01",
@@ -2194,5 +2193,57 @@ export const processData = [
     icon: "fa-handshake-simple",
     stepName: "Offer",
     description: "Receive and review the job offer to join our team.",
+  },
+];
+
+// Opportunies data
+export const opportunities = [
+  {
+    title: "Full Stack Developer",
+    company: "Flyte Solutions",
+    description: "Build, maintain, and enhance scalable web applications in a fast-paced environment.",
+    location: "Onsite (Dhaka, Bangladesh)",
+    jobType: "Full time",
+    jobLink: "/job-details/1",
+  },
+  {
+    title: "Backend Developer",
+    company: "Flyte Solutions",
+    description: "Work on developing and maintaining the backend of web applications.",
+    location: "Remote",
+    jobType: "Full time",
+    jobLink: "/job-details/2",
+  },
+  {
+    title: "Frontend Developer",
+    company: "Flyte Solutions",
+    description: "Design and implement user-friendly frontends for web applications.",
+    location: "Onsite (Dhaka, Bangladesh)",
+    jobType: "Part time",
+    jobLink: "/job-details/3",
+  },
+  {
+    title: "UI/UX Designer",
+    company: "Flyte Solutions",
+    description: "Create engaging and intuitive user interfaces and experiences.",
+    location: "Onsite (Dhaka, Bangladesh)",
+    jobType: "Freelance",
+    jobLink: "/job-details/4",
+  },
+  {
+    title: "Mobile App Developer",
+    company: "Flyte Solutions",
+    description: "Develop and maintain cross-platform mobile applications.",
+    location: "Remote",
+    jobType: "Full time",
+    jobLink: "/job-details/5",
+  },
+  {
+    title: "Data Scientist",
+    company: "Flyte Solutions",
+    description: "Analyze and interpret complex data to help make informed decisions.",
+    location: "Onsite (Dhaka, Bangladesh)",
+    jobType: "Full time",
+    jobLink: "/job-details/6",
   },
 ];
