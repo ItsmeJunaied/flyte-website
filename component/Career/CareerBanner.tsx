@@ -4,7 +4,7 @@ import { careerBannerData } from "../../api/Dummy";
 
 const CareerBanner = () => {
   return (
-    <div className="container my-5 md:my-12 flex flex-col md:flex-row gap-10 md:gap-20 w-full">
+    <div className="container mt-5 md:mt-12 mb-10 md:mb-16 flex flex-col md:flex-row gap-5 md:gap-20 w-full">
       <div className="flex flex-col gap-5 md:gap-10 md:w-1/2">
         <h2 className="text-xl md:text-4xl font-bold">{careerBannerData?.title}</h2>
         <p className="text-sm md:text-base font-normal">{careerBannerData?.description}</p>

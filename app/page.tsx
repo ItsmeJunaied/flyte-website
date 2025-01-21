@@ -8,7 +8,7 @@ import Contact from "../component/Contact/Contact";
 import OperationsSections from "../component/Home/OperationsSections";
 import ProjectSection from "../component/Home/ProjectSection";
 import AboutUs from "../component/Home/AboutUs";
-import ServiceMarquee from "../component/Home/ServiceMarquee";
+// import ServiceMarquee from "../component/Home/ServiceMarquee";
 const page = () => {
   // console.log(brandData)nlkmkj
   return (
