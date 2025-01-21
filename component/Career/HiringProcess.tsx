@@ -4,7 +4,7 @@ import { processData } from "../../api/Dummy.js";
 
 const HiringProcess = () => {
   return (
-    <div className="bg-[#2f2e41] py-8 flex items-center justify-center mb-10 md:mb-16">
+    <div className="py-8 flex items-center justify-center mb-10 md:mb-16 bg-gradient-to-r from-[#456cf7] to-[#651fff]">
       <div className="container grid grid-cols-1 lg:grid-cols-4 justify-center gap-5">
         {processData?.map((process, index) => (
           <div key={index} className="flex flex-col lg:flex-row items-center gap-10 lg:gap-0">
