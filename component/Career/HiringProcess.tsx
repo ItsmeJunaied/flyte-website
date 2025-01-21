@@ -5,12 +5,12 @@ import { processData } from "../../api/Dummy.js";
 const HiringProcess = () => {
   return (
     <div className="bg-[#2f2e41] py-8 flex items-center justify-center mb-10 md:mb-16">
-      <div className="container flex justify-between items-center gap-5">
+      <div className="container grid grid-cols-1 lg:grid-cols-4 justify-center gap-5">
         {processData?.map((process, index) => (
-          <div key={index} className="flex items-center">
+          <div key={index} className="flex flex-col lg:flex-row items-center gap-10 lg:gap-0">
             <ProcessCard process={process} />
             {index < processData.length - 1 && (
-              <span className="text-white">
+              <span className="text-white rotate-90 lg:rotate-0 mb-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="69"

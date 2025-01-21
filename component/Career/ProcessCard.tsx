@@ -19,7 +19,7 @@ const ProcessCard: React.FC<{ process: Process }> = ({ process }) => {
         </div>
       </div>
       <h4 className="text-center text-white text-sm font-semibold mt-8">{process?.stepName}</h4>
-      <p className="text-white text-center text-xs mt-4">{process?.description}</p>
+      <p className="w-[220px] text-white text-center text-xs mt-4">{process?.description}</p>
     </div>
   );
 };
