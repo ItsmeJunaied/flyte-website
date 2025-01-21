@@ -6,7 +6,7 @@ import { careerShowcaseData } from "../../api/Dummy";
 const UnlockPotential = () => {
   const { designShowcase, businessShowcase, softwareShowcase, technologyShowcase } = careerShowcaseData || {};
   return (
-    <div className="container space-y-5 mb-10">
+    <div className="container space-y-5 mb-10 md:mb-16">
       {/* flex flex-col md:flex-row gap-4 md:gap-8 */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
         <div className="col-span-2">
