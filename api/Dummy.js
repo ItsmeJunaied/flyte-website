@@ -11,7 +11,8 @@ export const navbarData = {
         {
           name: "Frontend Developers",
           icon: "fa-briefcase",
-          description: "Design and develop user-friendly interfaces for web applications.",
+          description:
+            "Design and develop user-friendly interfaces for web applications.",
           path: "/hire/job-openings",
         },
         {
@@ -23,25 +24,29 @@ export const navbarData = {
         {
           name: "Mobile App Developers",
           icon: "fa-mobile-alt",
-          description: "Create mobile applications for iOS and Android platforms.",
+          description:
+            "Create mobile applications for iOS and Android platforms.",
           path: "/hire/contract-roles",
         },
         {
           name: "QA Engineers",
           icon: "fa-bug",
-          description: "Test software applications to ensure quality and performance.",
+          description:
+            "Test software applications to ensure quality and performance.",
           path: "/hire/qa-roles",
         },
         {
           name: "DevOps Engineers",
           icon: "fa-tools",
-          description: "Streamline development processes and infrastructure with DevOps practices.",
+          description:
+            "Streamline development processes and infrastructure with DevOps practices.",
           path: "/hire/devops-roles",
         },
         {
           name: "AI & ML Specialists",
           icon: "fa-robot",
-          description: "Leverage AI and ML technologies to build smart applications.",
+          description:
+            "Leverage AI and ML technologies to build smart applications.",
           path: "/hire/ai-ml-roles",
         },
       ],
@@ -55,25 +60,29 @@ export const navbarData = {
         {
           name: "Fintech",
           icon: "fa-heartbeat",
-          description: "Solutions for the healthcare sector to improve patient care.",
+          description:
+            "Solutions for the healthcare sector to improve patient care.",
           path: "/industries/healthcare",
         },
         {
           name: "Education",
           icon: "fa-university",
-          description: "Innovative financial tools and services for the modern world.",
+          description:
+            "Innovative financial tools and services for the modern world.",
           path: "/industries/finance",
         },
         {
           name: "Logistics",
           icon: "fa-store",
-          description: "Transforming retail experiences with technology-driven solutions.",
+          description:
+            "Transforming retail experiences with technology-driven solutions.",
           path: "/industries/retail",
         },
         {
           name: "Manufacturing",
           icon: "fa-store",
-          description: "Transforming retail experiences with technology-driven solutions.",
+          description:
+            "Transforming retail experiences with technology-driven solutions.",
           path: "/industries/retail",
         },
 
@@ -92,7 +101,8 @@ export const navbarData = {
         {
           name: "Real Estate",
           icon: "fa-home",
-          description: "Revolutionizing the real estate industry with tech solutions.",
+          description:
+            "Revolutionizing the real estate industry with tech solutions.",
           path: "/industries/real-estate",
         },
         {
@@ -130,13 +140,15 @@ export const navbarData = {
         {
           name: "Team Extension",
           icon: "fa-lightbulb",
-          description: "Expert advice and strategic planning for your business.",
+          description:
+            "Expert advice and strategic planning for your business.",
           path: "/services/consulting",
         },
         {
           name: "Custom Software Development",
           icon: "fa-cogs",
-          description: "End-to-end software development services for every industry.",
+          description:
+            "End-to-end software development services for every industry.",
           path: "/services/development",
         },
         {
@@ -162,7 +174,8 @@ export const navbarData = {
         {
           name: "Time2Task",
           icon: "fa-box",
-          description: "Our flagship product designed to streamline operations.",
+          description:
+            "Our flagship product designed to streamline operations.",
           path: "/products/product-a",
         },
         {
@@ -224,7 +237,8 @@ export const navbarData = {
 
 // banner
 export const bannerData = {
-  title: "Achieve <span> Sucess </span> With Innovative <span> Software Solutions </span>",
+  title:
+    "Achieve <span> Sucess </span> With Innovative <span> Software Solutions </span>",
   description:
     "Our platform empowers your business with cutting-edge software solutions and lightning-fast deployment. Achieve your goals with unmatched efficiency and reliability.",
   industries: [
@@ -529,7 +543,12 @@ export const blogData = {
       image: "/images/blog-flyte-iso.png",
       description:
         "Cloud infrastructure is revolutionizing the IT industry. This article covers how organizations are adopting cloud solutions to improve flexibility and reduce costs.",
-      keywords: ["Cloud Infrastructure", "IT Industry", "Cost Reduction", "Flexibility"],
+      keywords: [
+        "Cloud Infrastructure",
+        "IT Industry",
+        "Cost Reduction",
+        "Flexibility",
+      ],
       profile: {
         name: "David Warner",
         image: " /images/ceo_sumon.jpg",
@@ -545,7 +564,12 @@ export const blogData = {
       image: "/images/blog-flyte-iso.png",
       description:
         "Cloud infrastructure is revolutionizing the IT industry. This article covers how organizations are adopting cloud solutions to improve flexibility and reduce costs.",
-      keywords: ["Cloud Infrastructure", "IT Industry", "Cost Reduction", "Flexibility"],
+      keywords: [
+        "Cloud Infrastructure",
+        "IT Industry",
+        "Cost Reduction",
+        "Flexibility",
+      ],
       profile: {
         name: "David Warner",
         image: " /images/ceo_sumon.jpg",
@@ -561,7 +585,12 @@ export const blogData = {
       image: "/images/blog-flyte-iso.png",
       description:
         "Cloud infrastructure is revolutionizing the IT industry. This article covers how organizations are adopting cloud solutions to improve flexibility and reduce costs.",
-      keywords: ["Cloud Infrastructure", "IT Industry", "Cost Reduction", "Flexibility"],
+      keywords: [
+        "Cloud Infrastructure",
+        "IT Industry",
+        "Cost Reduction",
+        "Flexibility",
+      ],
       profile: {
         name: "David Warner",
         image: " /images/ceo_sumon.jpg",
@@ -1789,6 +1818,40 @@ export const IndustriesCardsData = [
       "Cryptocurrency Platforms",
       "Regulatory Compliance Solutions",
     ],
+    brands: [
+      {
+        src: "/images/uber.png",
+        alt: "Brand 1",
+      },
+      {
+        src: "/images/Roche_brand.png",
+        alt: "Brand 2",
+      },
+      {
+        src: "/images/city_bank_brand.png",
+        alt: "Brand 3",
+      },
+      {
+        src: "/images/robi_brand.png",
+        alt: "Brand 4",
+      },
+      {
+        src: "/images/care_brand.png",
+        alt: "Brand 5",
+      },
+      {
+        src: "/images/unicef_brand.png",
+        alt: "Brand 6",
+      },
+      {
+        src: "/images/macmillan_brand.png",
+        alt: "Brand 7",
+      },
+      {
+        src: "/images/world-health-organization_brand.png",
+        alt: "Brand 8",
+      },
+    ]
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -1813,6 +1876,40 @@ export const IndustriesCardsData = [
       "Agile Development",
       "Startup Mentorship",
     ],
+    brands: [
+      {
+        src: "/images/uber.png",
+        alt: "Brand 1",
+      },
+      {
+        src: "/images/Roche_brand.png",
+        alt: "Brand 2",
+      },
+      {
+        src: "/images/city_bank_brand.png",
+        alt: "Brand 3",
+      },
+      {
+        src: "/images/robi_brand.png",
+        alt: "Brand 4",
+      },
+      {
+        src: "/images/care_brand.png",
+        alt: "Brand 5",
+      },
+      {
+        src: "/images/unicef_brand.png",
+        alt: "Brand 6",
+      },
+      {
+        src: "/images/macmillan_brand.png",
+        alt: "Brand 7",
+      },
+      {
+        src: "/images/world-health-organization_brand.png",
+        alt: "Brand 8",
+      },
+    ]
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -1837,6 +1934,40 @@ export const IndustriesCardsData = [
       "Logistics Analytics",
       "Automated Order Processing",
     ],
+    brands: [
+      {
+        src: "/images/uber.png",
+        alt: "Brand 1",
+      },
+      {
+        src: "/images/Roche_brand.png",
+        alt: "Brand 2",
+      },
+      {
+        src: "/images/city_bank_brand.png",
+        alt: "Brand 3",
+      },
+      {
+        src: "/images/robi_brand.png",
+        alt: "Brand 4",
+      },
+      {
+        src: "/images/care_brand.png",
+        alt: "Brand 5",
+      },
+      {
+        src: "/images/unicef_brand.png",
+        alt: "Brand 6",
+      },
+      {
+        src: "/images/macmillan_brand.png",
+        alt: "Brand 7",
+      },
+      {
+        src: "/images/world-health-organization_brand.png",
+        alt: "Brand 8",
+      },
+    ]
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -1861,6 +1992,40 @@ export const IndustriesCardsData = [
       "Retail Analytics",
       "Customer Engagement Solutions",
     ],
+    brands: [
+      {
+        src: "/images/uber.png",
+        alt: "Brand 1",
+      },
+      {
+        src: "/images/Roche_brand.png",
+        alt: "Brand 2",
+      },
+      {
+        src: "/images/city_bank_brand.png",
+        alt: "Brand 3",
+      },
+      {
+        src: "/images/robi_brand.png",
+        alt: "Brand 4",
+      },
+      {
+        src: "/images/care_brand.png",
+        alt: "Brand 5",
+      },
+      {
+        src: "/images/unicef_brand.png",
+        alt: "Brand 6",
+      },
+      {
+        src: "/images/macmillan_brand.png",
+        alt: "Brand 7",
+      },
+      {
+        src: "/images/world-health-organization_brand.png",
+        alt: "Brand 8",
+      },
+    ]
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -1885,6 +2050,40 @@ export const IndustriesCardsData = [
       "Data Management & Integration",
       "Custom Software Development",
     ],
+    brands: [
+      {
+        src: "/images/uber.png",
+        alt: "Brand 1",
+      },
+      {
+        src: "/images/Roche_brand.png",
+        alt: "Brand 2",
+      },
+      {
+        src: "/images/city_bank_brand.png",
+        alt: "Brand 3",
+      },
+      {
+        src: "/images/robi_brand.png",
+        alt: "Brand 4",
+      },
+      {
+        src: "/images/care_brand.png",
+        alt: "Brand 5",
+      },
+      {
+        src: "/images/unicef_brand.png",
+        alt: "Brand 6",
+      },
+      {
+        src: "/images/macmillan_brand.png",
+        alt: "Brand 7",
+      },
+      {
+        src: "/images/world-health-organization_brand.png",
+        alt: "Brand 8",
+      },
+    ]
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -1909,6 +2108,40 @@ export const IndustriesCardsData = [
       "Student Engagement Solutions",
       "Assessment & Evaluation Tools",
     ],
+    brands: [
+      {
+        src: "/images/uber.png",
+        alt: "Brand 1",
+      },
+      {
+        src: "/images/Roche_brand.png",
+        alt: "Brand 2",
+      },
+      {
+        src: "/images/city_bank_brand.png",
+        alt: "Brand 3",
+      },
+      {
+        src: "/images/robi_brand.png",
+        alt: "Brand 4",
+      },
+      {
+        src: "/images/care_brand.png",
+        alt: "Brand 5",
+      },
+      {
+        src: "/images/unicef_brand.png",
+        alt: "Brand 6",
+      },
+      {
+        src: "/images/macmillan_brand.png",
+        alt: "Brand 7",
+      },
+      {
+        src: "/images/world-health-organization_brand.png",
+        alt: "Brand 8",
+      },
+    ]
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -1933,6 +2166,40 @@ export const IndustriesCardsData = [
       "Investment Management Tools",
       "Real Estate Analytics",
     ],
+    brands: [
+      {
+        src: "/images/uber.png",
+        alt: "Brand 1",
+      },
+      {
+        src: "/images/Roche_brand.png",
+        alt: "Brand 2",
+      },
+      {
+        src: "/images/city_bank_brand.png",
+        alt: "Brand 3",
+      },
+      {
+        src: "/images/robi_brand.png",
+        alt: "Brand 4",
+      },
+      {
+        src: "/images/care_brand.png",
+        alt: "Brand 5",
+      },
+      {
+        src: "/images/unicef_brand.png",
+        alt: "Brand 6",
+      },
+      {
+        src: "/images/macmillan_brand.png",
+        alt: "Brand 7",
+      },
+      {
+        src: "/images/world-health-organization_brand.png",
+        alt: "Brand 8",
+      },
+    ]
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -1956,6 +2223,40 @@ export const IndustriesCardsData = [
       "Pharmacy Management Systems",
       "Healthcare Mobile Apps",
     ],
+    brands: [
+      {
+        src: "/images/uber.png",
+        alt: "Brand 1",
+      },
+      {
+        src: "/images/Roche_brand.png",
+        alt: "Brand 2",
+      },
+      {
+        src: "/images/city_bank_brand.png",
+        alt: "Brand 3",
+      },
+      {
+        src: "/images/robi_brand.png",
+        alt: "Brand 4",
+      },
+      {
+        src: "/images/care_brand.png",
+        alt: "Brand 5",
+      },
+      {
+        src: "/images/unicef_brand.png",
+        alt: "Brand 6",
+      },
+      {
+        src: "/images/macmillan_brand.png",
+        alt: "Brand 7",
+      },
+      {
+        src: "/images/world-health-organization_brand.png",
+        alt: "Brand 8",
+      },
+    ]
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -1979,6 +2280,40 @@ export const IndustriesCardsData = [
       "Mobile App Development",
       "IT Consulting & Strategy",
     ],
+    brands: [
+      {
+        src: "/images/uber.png",
+        alt: "Brand 1",
+      },
+      {
+        src: "/images/Roche_brand.png",
+        alt: "Brand 2",
+      },
+      {
+        src: "/images/city_bank_brand.png",
+        alt: "Brand 3",
+      },
+      {
+        src: "/images/robi_brand.png",
+        alt: "Brand 4",
+      },
+      {
+        src: "/images/care_brand.png",
+        alt: "Brand 5",
+      },
+      {
+        src: "/images/unicef_brand.png",
+        alt: "Brand 6",
+      },
+      {
+        src: "/images/macmillan_brand.png",
+        alt: "Brand 7",
+      },
+      {
+        src: "/images/world-health-organization_brand.png",
+        alt: "Brand 8",
+      },
+    ]
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -2003,6 +2338,40 @@ export const IndustriesCardsData = [
       "Virtual & Augmented Reality",
       "Media Production Tools",
     ],
+    brands: [
+      {
+        src: "/images/uber.png",
+        alt: "Brand 1",
+      },
+      {
+        src: "/images/Roche_brand.png",
+        alt: "Brand 2",
+      },
+      {
+        src: "/images/city_bank_brand.png",
+        alt: "Brand 3",
+      },
+      {
+        src: "/images/robi_brand.png",
+        alt: "Brand 4",
+      },
+      {
+        src: "/images/care_brand.png",
+        alt: "Brand 5",
+      },
+      {
+        src: "/images/unicef_brand.png",
+        alt: "Brand 6",
+      },
+      {
+        src: "/images/macmillan_brand.png",
+        alt: "Brand 7",
+      },
+      {
+        src: "/images/world-health-organization_brand.png",
+        alt: "Brand 8",
+      },
+    ]
   },
 ];
 
@@ -2190,17 +2559,20 @@ export const workCultureData = {
   cultures: [
     {
       title: "Diversity",
-      description: "We hire people from diverse backgrounds to foster innovation and creativity.",
+      description:
+        "We hire people from diverse backgrounds to foster innovation and creativity.",
       icon: "fa-earth-americas",
     },
     {
       title: "Collaboration",
-      description: "We believe in teamwork and open communication to achieve great results.",
+      description:
+        "We believe in teamwork and open communication to achieve great results.",
       icon: "fa-trophy",
     },
     {
       title: "Integrity",
-      description: "Honesty and transparency are at the heart of everything we do.",
+      description:
+        "Honesty and transparency are at the heart of everything we do.",
       icon: "fa-shield-alt",
     },
     {
@@ -2217,19 +2589,22 @@ export const processData = [
     serialNo: "01",
     icon: "fa-upload",
     stepName: "Application",
-    description: "Submit your application and provide the required details to kickstart the process.",
+    description:
+      "Submit your application and provide the required details to kickstart the process.",
   },
   {
     serialNo: "02",
     icon: "fa-filter",
     stepName: "Screening",
-    description: "Our team reviews your application to ensure it meets the requirements.",
+    description:
+      "Our team reviews your application to ensure it meets the requirements.",
   },
   {
     serialNo: "03",
     icon: "fa-microphone",
     stepName: "Interview",
-    description: "Participate in an interview to discuss your skills and suitability for the role.",
+    description:
+      "Participate in an interview to discuss your skills and suitability for the role.",
   },
   {
     serialNo: "04",
@@ -2244,7 +2619,8 @@ export const opportunities = [
   {
     title: "Full Stack Developer",
     company: "Flyte Solutions",
-    description: "Build, maintain, and enhance scalable web applications in a fast-paced environment.",
+    description:
+      "Build, maintain, and enhance scalable web applications in a fast-paced environment.",
     location: "Onsite (Dhaka, Bangladesh)",
     jobType: "Full time",
     jobLink: "/job-details/1",
@@ -2252,7 +2628,8 @@ export const opportunities = [
   {
     title: "Backend Developer",
     company: "Flyte Solutions",
-    description: "Work on developing and maintaining the backend of web applications.",
+    description:
+      "Work on developing and maintaining the backend of web applications.",
     location: "Remote",
     jobType: "Full time",
     jobLink: "/job-details/2",
@@ -2260,7 +2637,8 @@ export const opportunities = [
   {
     title: "Frontend Developer",
     company: "Flyte Solutions",
-    description: "Design and implement user-friendly frontends for web applications.",
+    description:
+      "Design and implement user-friendly frontends for web applications.",
     location: "Onsite (Dhaka, Bangladesh)",
     jobType: "Part time",
     jobLink: "/job-details/3",
@@ -2268,7 +2646,8 @@ export const opportunities = [
   {
     title: "UI/UX Designer",
     company: "Flyte Solutions",
-    description: "Create engaging and intuitive user interfaces and experiences.",
+    description:
+      "Create engaging and intuitive user interfaces and experiences.",
     location: "Onsite (Dhaka, Bangladesh)",
     jobType: "Freelance",
     jobLink: "/job-details/4",
@@ -2284,7 +2663,8 @@ export const opportunities = [
   {
     title: "Data Scientist",
     company: "Flyte Solutions",
-    description: "Analyze and interpret complex data to help make informed decisions.",
+    description:
+      "Analyze and interpret complex data to help make informed decisions.",
     location: "Onsite (Dhaka, Bangladesh)",
     jobType: "Full time",
     jobLink: "/job-details/6",
