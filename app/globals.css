@@ -177,8 +177,13 @@ body::-webkit-scrollbar-thumb {
   --z-tooltip: 10;
   --z-fixed: 100;
 }
+
 .header {
   background-color: white !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 .nav {
   height: var(--header-height);
@@ -210,7 +215,7 @@ body::-webkit-scrollbar-thumb {
 }
 .nav__toggle-menu,
 .nav__toggle-close {
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: var(--title-color);
   position: absolute;
   display: grid;
@@ -238,7 +243,7 @@ body::-webkit-scrollbar-thumb {
     scrollbar-width: none;
     box-shadow: 200px 1px 0px 0px rgba(0, 0, 0, 0.5);
   }
- 
+
   .nav__menu::-webkit-scrollbar {
     width: 0.5rem;
   }
