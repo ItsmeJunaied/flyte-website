@@ -23,7 +23,7 @@ const UnlockPotential = () => {
             toColor="#f8bbd0"
             showCase={businessShowcase}
             columns={2}
-            paddingTop="pt-[76px]"
+            paddingTop="pt-2 md:pt-[76px]"
           />
         </div>
       </div>
