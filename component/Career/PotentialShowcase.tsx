@@ -2,6 +2,7 @@ import React from "react";
 
 type Service = {
   name: string;
+  icon: string;
 };
 
 type ShowcaseData = {
@@ -41,11 +42,10 @@ const PotentialShowcase: React.FC<PotentialProps> = ({ direction, fromColor, toC
           {showCase?.services?.map((service, index) => (
             <div
               key={index}
-              className="w-full lg:w-[190px] h-[124px] bg-[#311b92]/50 backdrop-blur-md rounded-xl"
+              className="w-full lg:w-[190px] h-[124px] bg-[#311b92]/50 backdrop-blur-md rounded-xl flex flex-col justify-center items-center gap-2"
             >
-              <p className="p-2 pb-5 flex justify-center items-end h-full text-white text-sm text-center font-semibold">
-                {service?.name}
-              </p>
+              <i className={`text-4xl text-white fa-solid ${service?.icon}`}></i>
+              <p className="text-white text-sm text-center font-semibold">{service?.name}</p>
             </div>
           ))}
         </div>
