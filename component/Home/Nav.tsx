@@ -56,7 +56,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                       </div>
                       <div className="dropdown__container bg-[#F4F2F0]">
                         <div className="dropdown__content">
-                          <div className="flex flex-col lg:flex-row gap-10 container">
+                          <div className="flex flex-col lg:flex-row gap-10 md:container">
                             <div className=" w-full h-full lg:w-1/3 hidden lg:flex flex-col gap-4 flex-shrink-0 ">
                               <h1 className="text-lg text-btnColor ">{item.name}</h1>
                               <p className="text-xs text-[#131313B2]">{item.description}</p>
@@ -67,26 +67,31 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                                 <p className="">Learn more</p>
                               </Link>
                             </div>
-                            <div className=" w-full h-full lg:w-2/3 rounded-lg flex-shrink-0 ">
-                              <div className=" grid grid-cols-1 lg:grid-cols-2 gap-2 ">
+                            <div className=" w-full h-full lg:w-2/3 rounded-lg flex-shrink-0 bg-[#F7FAFF] md:bg-white">
+                              <div className=" grid grid-cols-1 lg:grid-cols-2 md:gap-2">
                                 {item.features?.map((feature, featureIndex) => (
                                   <Link href={feature.path} key={featureIndex}>
-                                    <div className=" flex flex-row  items-center gap-4  bg-white border-2 border-white hover:border-btnColor p-4 rounded-lg">
-                                      <div className=" w-fit  ">
-                                        <p className=" text-xl">
-                                          <i
-                                            className={`fa ${feature.icon} fa-2xl`}
-                                            style={{ color: "#5856d6" }}
-                                          ></i>
-                                        </p>
+                                    <div className="flex flex-row items-center gap-2 md:gap-4 md:border-2 md:border-white hover:border-btnColor px-5 md:px-4 py-1 md:py-4 md:rounded-lg md:h-24">
+                                      <div className="w-7 h-7">
+                                        <i
+                                          className={`w-7 h-7 fa ${feature.icon} text-lg md:text-3xl text-[#5856d6]`}
+                                        ></i>
                                       </div>
-                                      <div className=" w-fit ">
-                                        <p className=" text-btnColor">{feature.name}</p>
-                                        <p className=" text-[#131313B2] text-xs">{feature.description}</p>
+                                      <div>
+                                        <p className="text-btnColor text-xs md:text-base">{feature.name}</p>
+                                        <p className=" text-[#131313B2] text-xs hidden md:block">
+                                          {feature.description}
+                                        </p>
                                       </div>
                                     </div>
                                   </Link>
                                 ))}
+                                <Link
+                                  className="nav-close mx-5 bg-btnColor text-white px-3 w-fit rounded md:hidden"
+                                  href={item.path}
+                                >
+                                  Learn more
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -94,7 +99,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                       </div>
                     </>
                   ) : (
-                    <Link className={`h-full flex items-center `} href={item.path}>
+                    <Link className={`nav-close h-full flex items-center `} href={item.path}>
                       <p
                         className={`nav__link ${isActive ? "text-blue-500 border-b-2 border-blue-300" : ""}`}
                       >
@@ -107,7 +112,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
             })}
             {/* Hardcoded Contact Us link */}
             <li>
-              <Link href="/contact-us" className="h-full flex items-center">
+              <Link href="/contact-us" className="nav-close h-full flex items-center">
                 <p className="bg-btnColor h-fit text-white px-6 py-3 rounded-lg">Contact Us</p>
               </Link>
             </li>
