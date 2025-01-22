@@ -99,12 +99,10 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                       </div>
                     </>
                   ) : (
-                    <Link className={`nav-close h-full flex items-center `} href={item.path}>
-                      <p
-                        className={`nav__link ${isActive ? "text-blue-500 border-b-2 border-blue-300" : ""}`}
-                      >
+                    <Link className="nav-close nav__link h-full flex items-center" href={item.path}>
+                      <span className={`${isActive ? "text-blue-500 border-b-2 border-btnColor" : ""}`}>
                         {item.name}
-                      </p>
+                      </span>
                     </Link>
                   )}
                 </li>
