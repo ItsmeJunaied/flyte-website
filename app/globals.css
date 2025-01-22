@@ -38,6 +38,7 @@ body::-webkit-scrollbar-track {
   background: orange;
 }
 
+
 .bannerTitle span {
   display: inline;
   white-space: nowrap;
