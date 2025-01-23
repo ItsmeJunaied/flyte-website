@@ -38,7 +38,6 @@ body::-webkit-scrollbar-track {
   background: orange;
 }
 
-
 .bannerTitle span {
   display: inline;
   white-space: nowrap;
@@ -306,7 +305,6 @@ body::-webkit-scrollbar-thumb {
   display: grid;
 }
 .dropdown__container {
-  /* background-color: white; */
   height: 0;
   overflow: hidden;
   transition: height 0.4s;
@@ -370,6 +368,15 @@ body::-webkit-scrollbar-thumb {
   .dropdown__container {
     padding-top: 32px;
     padding-bottom: 32px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #f4f2f0;
+    z-index: 100;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    scrollbar-width: none;
   }
   /* Nav */
 

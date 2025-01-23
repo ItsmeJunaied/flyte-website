@@ -57,8 +57,8 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                         </div>
                         <div className="dropdown__container bg-[#F4F2F0]">
                           <div className="dropdown__content">
-                            <div className="flex flex-col lg:flex-row justify-between gap-10 md:container">
-                              <div className=" hidden lg:flex flex-col gap-4 flex-shrink-0 ">
+                            <div className="md:container grid grid-cols-1 md:grid-cols-3">
+                              <div className="md:col-span-1 hidden lg:flex flex-col gap-4 flex-shrink-0 ">
                                 <h1 className="text-lg text-btnColor ">{item.name}</h1>
                                 <p className="text-xs text-[#131313B2]">{item.description}</p>
                                 <Link
@@ -68,11 +68,11 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                                   <p className="">Learn more</p>
                                 </Link>
                               </div>
-                              <div className="rounded-lg flex-shrink-0">
+                              <div className="md:col-span-2 rounded-lg flex-shrink-0">
                                 <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-2">
                                   {item.features?.map((feature, featureIndex) => (
                                     <Link href={feature.path} key={featureIndex}>
-                                      <div className="bg-[#F7FAFF] md:bg-white flex flex-row items-center gap-2 md:gap-4 md:border-2 md:border-white hover:border-btnColor px-5 md:px-4 py-1 md:py-4 md:rounded-lg md:h-24">
+                                      <div className="bg-[#F7FAFF] md:bg-white flex flex-row items-center gap-2 md:gap-4 md:border-2 md:border-white hover:border-btnColor px-5 md:px-4 py-1 md:py-4 md:rounded-lg md:h-24 max-w-[406px]">
                                         <div className="w-7 h-7">
                                           <i
                                             className={`w-7 h-7 fa ${feature.icon} text-lg md:text-3xl text-[#5856d6]`}
