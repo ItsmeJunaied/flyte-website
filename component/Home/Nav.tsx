@@ -33,7 +33,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
 
             <div className="nav__toggle" id="nav-toggle">
               <i className="fa-solid fa-bars nav__toggle-menu"></i>
-              <i className="fa-solid fa-x nav__toggle-close"></i>
+              <i className="fa-solid fa-x nav__toggle-close mr-1"></i>
             </div>
           </div>
 
@@ -68,11 +68,11 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                                   <p className="">Learn more</p>
                                 </Link>
                               </div>
-                              <div className=" w-full h-full lg:w-2/3 rounded-lg flex-shrink-0 bg-[#F7FAFF] md:bg-white">
+                              <div className=" w-full h-full lg:w-2/3 rounded-lg flex-shrink-0">
                                 <div className=" grid grid-cols-1 lg:grid-cols-2 md:gap-2">
                                   {item.features?.map((feature, featureIndex) => (
                                     <Link href={feature.path} key={featureIndex}>
-                                      <div className="flex flex-row items-center gap-2 md:gap-4 md:border-2 md:border-white hover:border-btnColor px-5 md:px-4 py-1 md:py-4 md:rounded-lg md:h-24">
+                                      <div className="bg-[#F7FAFF] md:bg-white flex flex-row items-center gap-2 md:gap-4 md:border-2 md:border-white hover:border-btnColor px-5 md:px-4 py-1 md:py-4 md:rounded-lg md:h-24">
                                         <div className="w-7 h-7">
                                           <i
                                             className={`w-7 h-7 fa ${feature.icon} text-lg md:text-3xl text-[#5856d6]`}
@@ -87,12 +87,14 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                                       </div>
                                     </Link>
                                   ))}
-                                  <Link
-                                    className="nav-close mx-5 bg-btnColor text-white px-3 w-fit rounded md:hidden"
-                                    href={item.path}
-                                  >
-                                    Learn more
-                                  </Link>
+                                  <div className="bg-[#F7FAFF]">
+                                    <Link
+                                      className="nav-close mx-5 bg-btnColor text-white px-3 w-fit rounded md:hidden"
+                                      href={item.path}
+                                    >
+                                      Learn more
+                                    </Link>
+                                  </div>
                                 </div>
                               </div>
                             </div>

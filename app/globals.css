@@ -210,12 +210,12 @@ body::-webkit-scrollbar-thumb {
 }
 .nav__toggle {
   position: relative;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
 }
 .nav__toggle-menu,
 .nav__toggle-close {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--title-color);
   position: absolute;
   display: grid;
