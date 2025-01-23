@@ -60,34 +60,23 @@ const SuccessStories: React.FC<successStoryProps> = () => {
   };
 
   return (
-    <div className="mt-20">
-      <div className="w-full flex flex-col justify-center items-center ">
+    <div className="mt-20 container mb-6">
+      <div className="w-full flex flex-col justify-center items-center">
         {/* Title Section */}
-        <Title
-        width=" lg:w-full"
-          fontSize="text-3xl"
-          title="Real stories of success and partnership"
-        />
-        <p className=" text-center text-neutral-500 text-sm font-normal mt-3  mb-10">
-          Discover how our solutions have empowered businesses to grow, adapt,
-          and thrive
+        <Title width=" lg:w-full" fontSize="text-3xl" title="Real stories of success and partnership" />
+        <p className="text-center text-neutral-500 text-sm font-normal mt-3 mb-10">
+          Discover how our solutions have empowered businesses to grow, adapt, and thrive
         </p>
 
         {/* Carousel Section */}
-        <div className="w-full ">
+        <div className="w-full px-5">
           <Slider {...settings}>
             {successStory.map((story, index) => (
-              <div
-                key={index}
-                className=" h-[280px]   w-full flex justify-center items-center px-2 lg:px-20 "
-              >
-                <div className=" py-4  lg:py-6 bg-[#DDDDDD] rounded-md px-20 flex flex-col justify-start items-start gap-3">
-                  <h1 className="text-[#131313] text-xl">
-                    {story.companyName}
-                  </h1>
-
-                  <div className=" flex flex-col">
-                    <div className=" relative -ml-4">
+              <div key={index} className="w-full h-[220px] md:h-[280px] flex justify-center items-center px-2">
+                <div className="px-8 md:px-20 py-4 lg:py-6 bg-[#e7e7e7] rounded-md">
+                  <div className="relative">
+                    <h1 className="text-[#131313] text-xl mb-3 md:mb-5">{story.companyName}</h1>
+                    <span className="absolute top-7 -left-5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="40"
@@ -102,37 +91,28 @@ const SuccessStories: React.FC<successStoryProps> = () => {
                           />
                         </g>
                       </svg>
-                    </div>
-                    <div className=" -mt-5">
-                      <p className="text-[#121212] text-sm font-semibold ">
-                        {story.description}
-                      </p>
-                    </div>
+                    </span>
                   </div>
 
-                  <div className=" flex flex-row justify-center items-center gap-3">
-                    <div className=" w-[50px] h-[50px]">
+                  <div className="flex flex-col justify-start items-start gap-2 md:gap-5">
+                    <p className="text-[#121212] h-14 text-xs md:text-sm font-semibold md:line-clamp-3">{story.description}</p>
+
+                    <div className="flex flex-row justify-center items-center gap-3">
                       <img
-                        className="rounded-full"
+                        className="rounded-full w-10 h-10 md:w-[50px] md:h-[50px] border bg-white"
                         src="https://via.placeholder.com/40x40"
                         alt=""
                       />
+
+                      <div>
+                        <h1 className="text-[#121212] text-xs font-medium">John Abraham</h1>
+                        <p className="text-[#121212] text-[10px] font-normal">CEO at Uber</p>
+                      </div>
                     </div>
 
-                    <div>
-                      <h1 className="text-[#121212] text-xs font-medium  ">
-                        John Abraham
-                      </h1>
-                      <p className="text-[#121212] text-[10px] font-normal font-['DM Sans']">
-                        CEO at Uber
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className=" px-4 py-2 bg-white rounded-md shadow-[0px_0px_10px_10px_rgba(230,230,230,0.25)] border border-[#dddddd] justify-start items-start gap-2.5 inline-flex overflow-hidden">
-                    <h1 className="text-[#191919] text-sm font-semibold ">
+                    <button className="px-2 md:px-4 py-1 md:py-2 text-xs md:text-base border border-[#DDD] bg-[#FFF] rounded-md md:rounded-lg">
                       View Case Study
-                    </h1>
+                    </button>
                   </div>
                 </div>
               </div>
