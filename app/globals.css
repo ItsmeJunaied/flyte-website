@@ -38,6 +38,12 @@ body::-webkit-scrollbar-track {
   background: orange;
 }
 
+.nav2 {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it appears above other content */
+  background-color: white; /* Optional: Set a background color */
+}
 
 .bannerTitle span {
   display: inline;
@@ -55,9 +61,13 @@ body::-webkit-scrollbar-track {
     rgba(255, 255, 255, 0.4) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-
   backdrop-filter: blur(21px);
 }
+.bannerIndustries:hover {
+  background: white;
+  /* backdrop-filter: blur(21px); */
+}
+
 
 .no-scroll {
   overflow: hidden;

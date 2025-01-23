@@ -1,5 +1,4 @@
 import React from "react";
-import { FaCanadianMapleLeaf } from "react-icons/fa";
 
 type BannerProps = {
   bannerData: {
@@ -21,7 +20,7 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
-        padding: "50px 20px",
+        // padding: "50px 20px",
         color: "white",
         textAlign: "center",
         height: "640px",
@@ -52,12 +51,12 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
           {bannerData.industries.map((industry, index) => (
             <button
               key={index}
-              className="w-[140px] h-40 flex flex-col gap-3 justify-center items-center rounded-[10px] bannerIndustries"
+              className=" w-[125px] lg:w-[140px] h-40 flex flex-col gap-3 justify-center items-center rounded-[10px] bannerIndustries "
             >
-              <p className="h-1/2 text-4xl text-end flex justify-end items-end">
+              <p className="h-1/2 text-4xl text-end flex justify-end items-end hover:text-btnColor">
                 <i className={industry.logo}></i>
               </p>
-              <h1 className="h-1/2 w-[140px] text-center text-white text-sm font-semibold leading-5">
+              <h1 className="h-1/2 w-[140px] text-center text-white hover:text-black text-sm font-semibold leading-5 ">
                 {industry.name}
               </h1>
             </button>

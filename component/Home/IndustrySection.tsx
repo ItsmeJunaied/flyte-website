@@ -7,13 +7,13 @@ import { FaArrowRight } from "react-icons/fa";
 // Type alias for Industry
 type Industry = {
   name: string;
-  icon?: string; // Change to string to hold class names like "fas fa-chart-line"
-  features: Feature[]; // Add features here directly to each industry
+  icon?: string;
+  features: Feature[];
 };
 
 // Type alias for Feature
 type Feature = {
-  icon?: string; // Change to string for the class name
+  icon?: string; 
   title: string;
   description: string;
 };
@@ -27,13 +27,11 @@ type IndustryData = {
 const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({
   industrydata,
 }) => {
-  // State to track the selected industryd
   const [selectedIndustry, setSelectedIndustry] = useState<Industry | null>(
     industrydata.industries[0]
   );
 
   const handleIndustryClick = (industry: Industry) => {
-    // Toggle the selected industry, if already selected, set it to null
     setSelectedIndustry(
       selectedIndustry?.name === industry.name ? null : industry
     );
@@ -57,21 +55,6 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({
           <Subtitle Subtitle={industrydata.subTitle} />
           <Title title={industrydata.sectionTitle} />
         </div>
-
-        {/* <div className="lg:hidden flex flex-row flex-wrap justify-start items-center gap-5 lg:px-9">
-          {industrydata.industries.map((industry, index) => (
-            <div
-              key={index}
-              className="h-9 p-2.5 bg-[#f6f8fa] rounded-[10px] border border-[#d0d8df] justify-start items-center gap-2.5 inline-flex"
-              onClick={() => handleIndustryClick(industry)} // Click to show features
-            >
-              {industry.icon && (
-                <i className={`${industry.icon} icon3 text-[#2B6CB0]`}></i>
-              )}
-              <h1 className="text-[16px] text-[#2F4F4F]">{industry.name}</h1>
-            </div>
-          ))}
-        </div> */}
 
         <div className="flex flex-col lg:flex-row justify-between items-center gap-5">
           <div className="w-full lg:w-1/3 px-[34px] py-[24px] border-2 border-[#006FBA] rounded-2xl flex flex-col gap-3">
@@ -128,13 +111,9 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({
                                 </p>
                               </div>
                             </div>
-
-
                           </div>
                         )
                       )}
-
-
                     </div>
                   )}
                 </div>

@@ -49,29 +49,29 @@ dropdownItems.forEach((item) => {
 // 3. Create a function to display the dropdown
 const toggleItem = (item) => {
   // 3.1. Select each dropdown content
-  const dropdownContainer = item.querySelector(".dropdown__container");
+  const dropdowncontainer = item.querySelector(".dropdown__container");
 
   // 6. If the same item contains the show-dropdown class, remove
   if (item.classList.contains("show-dropdown")) {
-    dropdownContainer.removeAttribute("style");
+    dropdowncontainer.removeAttribute("style");
     item.classList.remove("show-dropdown");
   } else {
     // 4. Add the maximum height to the dropdown content and add the show-dropdown class
-    dropdownContainer.style.height = dropdownContainer.scrollHeight + "px";
+    dropdowncontainer.style.height = dropdowncontainer.scrollHeight + "px";
     item.classList.add("show-dropdown");
   }
 };
 
 /*=============== DELETE DROPDOWN STYLES ===============*/
 const mediaQuery = matchMedia("(min-width: 1118px)"),
-  dropdownContainer = document.querySelectorAll(".dropdown__container");
+  dropdowncontainer = document.querySelectorAll(".dropdown__container");
 
 // Function to remove dropdown styles in mobile mode when browser resizes
 const removeStyle = () => {
   // Validate if the media query reaches 1118px
   if (mediaQuery.matches) {
     // Remove the dropdown container height style
-    dropdownContainer.forEach((e) => {
+    dropdowncontainer.forEach((e) => {
       e.removeAttribute("style");
     });
 
