@@ -99,8 +99,8 @@ const SuccessStories: React.FC<successStoryProps> = () => {
 
                     <div className="flex flex-row justify-center items-center gap-3">
                       <img
-                        className="rounded-full w-10 h-10 md:w-[50px] md:h-[50px] border bg-white"
-                        src="https://via.placeholder.com/40x40"
+                        className="rounded-full w-10 h-10 md:w-[50px] md:h-[50px]"
+                        src="https://i.postimg.cc/J052R8xc/Frame-48095568.png"
                         alt=""
                       />
 
