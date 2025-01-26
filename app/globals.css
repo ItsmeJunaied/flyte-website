@@ -226,6 +226,8 @@ body::-webkit-scrollbar-thumb {
 .nav__toggle-close {
   opacity: 0;
 }
+
+/* mobile responsive nav design  */
 @media screen and (max-width: 980px) {
   .nav__menu {
     background-color: var(--body-color);
@@ -397,7 +399,8 @@ body::-webkit-scrollbar-thumb {
   .dropdown__container {
     padding-top: 32px;
     padding-bottom: 32px;
-    height: max-content;
+    height: auto;
+    max-height: 75vh; 
     position: absolute;
     left: 0;
     right: 0;
@@ -407,9 +410,8 @@ body::-webkit-scrollbar-thumb {
     pointer-events: none;
     opacity: 0;
     transition: top 0.4s, opacity 0.3s;
-    /* max-height: 300px;
     overflow-y: scroll;
-    scrollbar-width: none; */
+    scrollbar-width: none;
   }
 
   /* .dropdown__content {
