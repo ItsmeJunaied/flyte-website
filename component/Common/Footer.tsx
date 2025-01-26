@@ -135,9 +135,9 @@ const Footer: React.FC<{ footerData: FooterData }> = ({ footerData }) => {
             <h6 className="footer-title text-sm text-[#0FF] mb-8">
               {services.sectionName}
             </h6>
-            <div className="flex flex-wrap flex-col lg:flex-row gap-6">
+            <div className=" w-full flex  flex-col lg:flex-row gap-6">
               {services.subsections.map((subsection, index) => (
-                <div key={index} className="flex flex-col gap-5">
+                <div key={index} className=" lg:w-1/4 flex flex-col gap-5">
                   <h6 className="text-[#F5F5F5] font-bold text-base">
                     {subsection.name}
                   </h6>
@@ -156,13 +156,13 @@ const Footer: React.FC<{ footerData: FooterData }> = ({ footerData }) => {
           </section>
 
           {/* Expertise Section */}
-          <section className=" mt-0 lg:mt-8">
+          <section className="w-full mt-0 lg:mt-8">
             <h6 className="footer-title text-[#0FF] mb-8 text-sm">
               {expertise.sectionName}
             </h6>
-            <div className="flex flex-wrap gap-6">
+            <div className=" w-full  flex flex-col lg:flex-row  gap-6">
               {expertise.subsections.map((subsection, index) => (
-                <div key={index} className="flex flex-col gap-5">
+                <div key={index} className=" lg:w-1/4 w-full  flex flex-col gap-5">
                   <h6 className="text-[#F5F5F5] font-bold text-base">
                     {subsection.name}
                   </h6>

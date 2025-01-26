@@ -15,19 +15,19 @@ const ProductMarquee: React.FC = () => {
   useEffect(() => {
     // Check screen size on the client
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 768); // Tailwind's sm breakpoint
+      setIsSmallScreen(window.innerWidth < 768); 
     };
 
-    handleResize(); // Check initially
-    window.addEventListener("resize", handleResize); // Listen for window resize
+    handleResize(); 
+    window.addEventListener("resize", handleResize); 
 
-    return () => window.removeEventListener("resize", handleResize); // Cleanup listener
+    return () => window.removeEventListener("resize", handleResize); 
   }, []);
 
   return (
     <Marquee
       pauseOnHover
-      gradient={!isSmallScreen} // Disable gradient on small screens
+      gradient={!isSmallScreen} 
       gradientWidth={150}
     >
       {productsSections.map((product: Product) => (

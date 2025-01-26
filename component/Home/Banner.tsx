@@ -51,12 +51,12 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
           {bannerData.industries.map((industry, index) => (
             <button
               key={index}
-              className=" w-[125px] lg:w-[140px] h-40 flex flex-col gap-3 justify-center items-center rounded-[10px] bannerIndustries "
+              className=" w-[125px] lg:w-[140px] h-40 flex flex-col gap-3 justify-center items-center rounded-[10px] bannerIndustries hover:bg-white group"
             >
-              <p className="h-1/2 text-4xl text-end flex justify-end items-end hover:text-btnColor">
+              <p className="h-1/2 text-4xl text-end flex justify-end items-end group-hover:text-btnColor">
                 <i className={industry.logo}></i>
               </p>
-              <h1 className="h-1/2 w-[140px] text-center text-white hover:text-black text-sm font-semibold leading-5 ">
+              <h1 className="h-1/2 w-[140px] text-center text-white group-hover:text-black text-sm font-semibold leading-5 px-2 ">
                 {industry.name}
               </h1>
             </button>
@@ -69,12 +69,6 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
             className=" w-fit uppercase px-[32px] py-[12px] border border-btnColor hover:border-pink-500 bg-btnColor hover:bg-pink-500 text-white rounded-md"
           >
             Book A Consultation
-          </button>
-          <button
-            id="alertButton"
-            className=" w-fit uppercase px-[32px] py-[12px] hover:bg-btnColor hover:border-btnColor border-white border text-white rounded-md"
-          >
-            View Portfolio
           </button>
         </div>
       </div>

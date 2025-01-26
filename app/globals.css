@@ -45,15 +45,7 @@ body::-webkit-scrollbar-track {
   background-color: white; /* Optional: Set a background color */
 }
 
-.bannerTitle span {
-  display: inline;
-  white-space: nowrap;
-  background: linear-gradient(104deg, #545cd7 17.82%, #00deeb 63.28%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0;
-  padding: 0;
-}
+
 
 .bannerIndustries {
   background: radial-gradient(
@@ -649,4 +641,33 @@ body::-webkit-scrollbar-thumb {
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none; /* Webkit-based browsers */
+}
+
+.PhoneInputInput{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+.PhoneInputCountrySelect{
+  background-color: white;
+}
+
+input:-webkit-autofill {
+  background-color: white !important;
+  color: #666666 !important;
+  -webkit-text-fill-color: #666666 !important; /* Ensure the text color remains consistent */
+  box-shadow: 0 0 0px 1000px white inset !important; /* Reset background color */
+  transition: background-color 5000s ease-in-out 0s; /* Prevent flashing on autofill */
+}
+
+input::spelling-error {
+  color: #666666 !important; /* Ensure text color stays consistent */
+  text-decoration: underline wavy red; /* Customize underline */
+}
+
+input::-webkit-spelling-error {
+  color: #666666 !important;
+  text-decoration: underline wavy red;
 }
