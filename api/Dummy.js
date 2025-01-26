@@ -11,8 +11,7 @@ export const navbarData = {
         {
           name: "Frontend Developers",
           icon: "fa-briefcase",
-          description:
-            "Design and develop user-friendly interfaces for web applications.",
+          description: "Design and develop user-friendly interfaces for web applications.",
           path: "/hire/job-openings",
         },
         {
@@ -24,29 +23,25 @@ export const navbarData = {
         {
           name: "Mobile App Developers",
           icon: "fa-mobile-alt",
-          description:
-            "Create mobile applications for iOS and Android platforms.",
+          description: "Create mobile applications for iOS and Android platforms.",
           path: "/hire/contract-roles",
         },
         {
           name: "QA Engineers",
           icon: "fa-bug",
-          description:
-            "Test software applications to ensure quality and performance.",
+          description: "Test software applications to ensure quality and performance.",
           path: "/hire/qa-roles",
         },
         {
           name: "DevOps Engineers",
           icon: "fa-tools",
-          description:
-            "Streamline development processes and infrastructure with DevOps practices.",
+          description: "Streamline development processes and infrastructure with DevOps practices.",
           path: "/hire/devops-roles",
         },
         {
           name: "AI & ML Specialists",
           icon: "fa-robot",
-          description:
-            "Leverage AI and ML technologies to build smart applications.",
+          description: "Leverage AI and ML technologies to build smart applications.",
           path: "/hire/ai-ml-roles",
         },
       ],
@@ -60,29 +55,25 @@ export const navbarData = {
         {
           name: "Fintech",
           icon: "fa-heartbeat",
-          description:
-            "Solutions for the healthcare sector to improve patient care.",
+          description: "Solutions for the healthcare sector to improve patient care.",
           path: "/industries/healthcare",
         },
         {
           name: "Education",
           icon: "fa-university",
-          description:
-            "Innovative financial tools and services for the modern world.",
+          description: "Innovative financial tools and services for the modern world.",
           path: "/industries/finance",
         },
         {
           name: "Logistics",
           icon: "fa-store",
-          description:
-            "Transforming retail experiences with technology-driven solutions.",
+          description: "Transforming retail experiences with technology-driven solutions.",
           path: "/industries/retail",
         },
         {
           name: "Manufacturing",
           icon: "fa-store",
-          description:
-            "Transforming retail experiences with technology-driven solutions.",
+          description: "Transforming retail experiences with technology-driven solutions.",
           path: "/industries/retail",
         },
 
@@ -101,8 +92,7 @@ export const navbarData = {
         {
           name: "Real Estate",
           icon: "fa-home",
-          description:
-            "Revolutionizing the real estate industry with tech solutions.",
+          description: "Revolutionizing the real estate industry with tech solutions.",
           path: "/industries/real-estate",
         },
         {
@@ -140,15 +130,13 @@ export const navbarData = {
         {
           name: "Team Extension",
           icon: "fa-lightbulb",
-          description:
-            "Expert advice and strategic planning for your business.",
+          description: "Expert advice and strategic planning for your business.",
           path: "/services/consulting",
         },
         {
           name: "Custom Software Development",
           icon: "fa-cogs",
-          description:
-            "End-to-end software development services for every industry.",
+          description: "End-to-end software development services for every industry.",
           path: "/services/development",
         },
         {
@@ -174,8 +162,7 @@ export const navbarData = {
         {
           name: "Time2Task",
           icon: "fa-box",
-          description:
-            "Our flagship product designed to streamline operations.",
+          description: "Our flagship product designed to streamline operations.",
           path: "/products/product-a",
         },
         {
@@ -237,8 +224,7 @@ export const navbarData = {
 
 // banner
 export const bannerData = {
-  title:
-    "Achieve <span> Sucess </span> With Innovative <span> Software Solutions </span>",
+  title: "Achieve <span> Sucess </span> With Innovative <span> Software Solutions </span>",
   description:
     "Our platform empowers your business with cutting-edge software solutions and lightning-fast deployment. Achieve your goals with unmatched efficiency and reliability.",
   industries: [
@@ -543,12 +529,7 @@ export const blogData = {
       image: "/images/blog-flyte-iso.png",
       description:
         "Cloud infrastructure is revolutionizing the IT industry. This article covers how organizations are adopting cloud solutions to improve flexibility and reduce costs.",
-      keywords: [
-        "Cloud Infrastructure",
-        "IT Industry",
-        "Cost Reduction",
-        "Flexibility",
-      ],
+      keywords: ["Cloud Infrastructure", "IT Industry", "Cost Reduction", "Flexibility"],
       profile: {
         name: "David Warner",
         image: " /images/ceo_sumon.jpg",
@@ -564,12 +545,7 @@ export const blogData = {
       image: "/images/blog-flyte-iso.png",
       description:
         "Cloud infrastructure is revolutionizing the IT industry. This article covers how organizations are adopting cloud solutions to improve flexibility and reduce costs.",
-      keywords: [
-        "Cloud Infrastructure",
-        "IT Industry",
-        "Cost Reduction",
-        "Flexibility",
-      ],
+      keywords: ["Cloud Infrastructure", "IT Industry", "Cost Reduction", "Flexibility"],
       profile: {
         name: "David Warner",
         image: " /images/ceo_sumon.jpg",
@@ -585,12 +561,7 @@ export const blogData = {
       image: "/images/blog-flyte-iso.png",
       description:
         "Cloud infrastructure is revolutionizing the IT industry. This article covers how organizations are adopting cloud solutions to improve flexibility and reduce costs.",
-      keywords: [
-        "Cloud Infrastructure",
-        "IT Industry",
-        "Cost Reduction",
-        "Flexibility",
-      ],
+      keywords: ["Cloud Infrastructure", "IT Industry", "Cost Reduction", "Flexibility"],
       profile: {
         name: "David Warner",
         image: " /images/ceo_sumon.jpg",
@@ -1719,78 +1690,476 @@ export const productBannerData = {
 };
 
 // product cards
+// export const ProductCardsData = [
+//   {
+//     id: "1",
+//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+//     productTitle: "Cloud ClockIn",
+//     ProductDetails: "A digital system for tracking employee attendance and work hours in real time.",
+//     tags: ["Attendance Management", "Real-Time Tracking", "SaaS"],
+//   },
+//   {
+//     id: "2",
+//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+//     productTitle: "Time2Task",
+//     ProductDetails: "A task management tool to plan, assign, and track project tasks efficiently.",
+//     tags: ["Project Management", "Real-Time Tracking", "SaaS"],
+//   },
+//   {
+//     id: "3",
+//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+//     productTitle: "Flyte Queue",
+//     ProductDetails: "A digital queue management system to streamline customer flow and reduce waiting times.",
+//     tags: ["Queue Management", "Real-Time Tracking", "SaaS"],
+//   },
+//   {
+//     id: "4",
+//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+//     productTitle: "Flyte ERP",
+//     ProductDetails:
+//       "A comprehensive platform that integrates and streamlines core business processes for enhanced productivity.",
+//     tags: ["Enterprise Solutions", "Real-Time Tracking", "SaaS"],
+//   },
+//   {
+//     id: "5",
+//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+//     productTitle: "Flyte CRM",
+//     ProductDetails:
+//       "A customer relationship management tool designed to optimize sales, marketing, and customer support operations.",
+//     tags: ["Customer Management", "Real-Time Tracking", "SaaS"],
+//   },
+//   {
+//     id: "6",
+//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+//     productTitle: "Flyte POS",
+//     ProductDetails:
+//       "A reliable point-of-sale system for efficient retail transactions and inventory tracking.",
+//     tags: ["Retail Management", "Real-Time Tracking", "SaaS"],
+//   },
+//   {
+//     id: "7",
+//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+//     productTitle: "Inventory Management System",
+//     ProductDetails: "A solution for tracking, managing, and optimizing stock levels across locations.",
+//     tags: ["Stock Control", "Real-Time Tracking", "SaaS"],
+//   },
+//   {
+//     id: "8",
+//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+//     productTitle: "Board Meeting Management",
+//     ProductDetails: "A system to organize, schedule, and document board meetings effectively.",
+//     tags: ["Corporate Governance", "Real-Time Tracking", "Single Page Application"],
+//   },
+//   {
+//     id: "9",
+//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+//     productTitle: "Help Desk Management",
+//     ProductDetails: "A platform for tracking, resolving, and managing customer support requests.",
+//     tags: ["Customer Support", "Help Desk", "Single Page Application"],
+//   },
+//   {
+//     id: "10",
+//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+//     productTitle: "Clinic & Hospital Management",
+//     ProductDetails: "A solution to streamline patient records, appointments, billing, and medical workflows.",
+//     tags: ["Healthcare Solutions", "Doctor", "Single Page Application"],
+//   },
+//   {
+//     id: "11",
+//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+//     productTitle: "Document Management System",
+//     ProductDetails: "A secure platform for storing, managing, and retrieving organizational documents.",
+//     tags: ["File Organization", "FTP", "Single Page Application"],
+//   },
+// ];
 
 export const ProductCardsData = [
   {
-    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    id: 1,
+    productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
     productTitle: "Cloud ClockIn",
     ProductDetails: "A digital system for tracking employee attendance and work hours in real time.",
     tags: ["Attendance Management", "Real-Time Tracking", "SaaS"],
+    version: "1.2.0",
+    releaseDate: "2023-11-15",
+    images: [
+      { id: 1, url: "https://i.ibb.co/image1.png" },
+      { id: 2, url: "https://i.ibb.co/image2.png" },
+      { id: 3, url: "https://i.ibb.co/image3.png" },
+      { id: 4, url: "https://i.ibb.co/image4.png" },
+    ],
+    features: ["Real-time Employee Monitoring", "Automatic Time Logging", "Customizable Attendance Reports"],
+    featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    technicalSpecifications: {
+      technologyStack: [
+        "https://i.ibb.co/tech1.png",
+        "https://i.ibb.co/tech2.png",
+        "https://i.ibb.co/tech3.png",
+      ],
+      integrationsAvailable: [
+        "https://i.ibb.co/integration1.png",
+        "https://i.ibb.co/integration2.png",
+        "https://i.ibb.co/integration3.png",
+      ],
+    },
   },
   {
-    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    id: 2,
+    productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
     productTitle: "Time2Task",
     ProductDetails: "A task management tool to plan, assign, and track project tasks efficiently.",
     tags: ["Project Management", "Real-Time Tracking", "SaaS"],
+    version: "2.0.1",
+    releaseDate: "2023-12-05",
+    images: [
+      { id: 1, url: "https://i.ibb.co/image5.png" },
+      { id: 2, url: "https://i.ibb.co/image6.png" },
+      { id: 3, url: "https://i.ibb.co/image7.png" },
+      { id: 4, url: "https://i.ibb.co/image8.png" },
+    ],
+    features: ["Task Prioritization", "Real-Time Collaboration", "Customizable Dashboards"],
+    featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    technicalSpecifications: {
+      technologyStack: [
+        "https://i.ibb.co/tech4.png",
+        "https://i.ibb.co/tech5.png",
+        "https://i.ibb.co/tech6.png",
+      ],
+      integrationsAvailable: [
+        "https://i.ibb.co/integration4.png",
+        "https://i.ibb.co/integration5.png",
+        "https://i.ibb.co/integration6.png",
+      ],
+    },
   },
   {
-    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    id: 3,
+    productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
     productTitle: "Flyte Queue",
     ProductDetails: "A digital queue management system to streamline customer flow and reduce waiting times.",
     tags: ["Queue Management", "Real-Time Tracking", "SaaS"],
+    version: "1.5.0",
+    releaseDate: "2023-09-18",
+    images: [
+      { id: 1, url: "https://i.ibb.co/image9.png" },
+      { id: 2, url: "https://i.ibb.co/image10.png" },
+      { id: 3, url: "https://i.ibb.co/image11.png" },
+      { id: 4, url: "https://i.ibb.co/image12.png" },
+    ],
+    features: ["Customer Flow Optimization", "Real-Time Queue Updates", "Customizable Queue Display"],
+    featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    technicalSpecifications: {
+      technologyStack: [
+        "https://i.ibb.co/tech7.png",
+        "https://i.ibb.co/tech8.png",
+        "https://i.ibb.co/tech9.png",
+      ],
+      integrationsAvailable: [
+        "https://i.ibb.co/integration7.png",
+        "https://i.ibb.co/integration8.png",
+        "https://i.ibb.co/integration9.png",
+      ],
+    },
   },
   {
-    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    id: 4,
+    productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
     productTitle: "Flyte ERP",
     ProductDetails:
       "A comprehensive platform that integrates and streamlines core business processes for enhanced productivity.",
     tags: ["Enterprise Solutions", "Real-Time Tracking", "SaaS"],
+    version: "3.0.0",
+    releaseDate: "2023-07-30",
+    images: [
+      { id: 1, url: "https://i.ibb.co/image13.png" },
+      { id: 2, url: "https://i.ibb.co/image14.png" },
+      { id: 3, url: "https://i.ibb.co/image15.png" },
+      { id: 4, url: "https://i.ibb.co/image16.png" },
+    ],
+    features: ["Integrated Business Modules", "Real-Time Financial Tracking", "Customizable Reporting Tools"],
+    featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    technicalSpecifications: {
+      technologyStack: [
+        "https://i.ibb.co/tech10.png",
+        "https://i.ibb.co/tech11.png",
+        "https://i.ibb.co/tech12.png",
+      ],
+      integrationsAvailable: [
+        "https://i.ibb.co/integration10.png",
+        "https://i.ibb.co/integration11.png",
+        "https://i.ibb.co/integration12.png",
+      ],
+    },
   },
   {
-    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    id: 5,
+    productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
     productTitle: "Flyte CRM",
     ProductDetails:
       "A customer relationship management tool designed to optimize sales, marketing, and customer support operations.",
     tags: ["Customer Management", "Real-Time Tracking", "SaaS"],
+    version: "1.3.5",
+    releaseDate: "2023-10-22",
+    images: [
+      { id: 1, url: "https://i.ibb.co/image17.png" },
+      { id: 2, url: "https://i.ibb.co/image18.png" },
+      { id: 3, url: "https://i.ibb.co/image19.png" },
+      { id: 4, url: "https://i.ibb.co/image20.png" },
+    ],
+    features: ["Lead Management", "Customer Interaction Tracking", "Sales Pipeline Customization"],
+    featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    technicalSpecifications: {
+      technologyStack: [
+        "https://i.ibb.co/tech13.png",
+        "https://i.ibb.co/tech14.png",
+        "https://i.ibb.co/tech15.png",
+      ],
+      integrationsAvailable: [
+        "https://i.ibb.co/integration13.png",
+        "https://i.ibb.co/integration14.png",
+        "https://i.ibb.co/integration15.png",
+      ],
+    },
   },
   {
-    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    id: 6,
+    productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
     productTitle: "Flyte POS",
     ProductDetails:
       "A reliable point-of-sale system for efficient retail transactions and inventory tracking.",
     tags: ["Retail Management", "Real-Time Tracking", "SaaS"],
+    version: "2.2.3",
+    releaseDate: "2023-08-19",
+    images: [
+      { id: 1, url: "https://i.ibb.co/image21.png" },
+      { id: 2, url: "https://i.ibb.co/image22.png" },
+      { id: 3, url: "https://i.ibb.co/image23.png" },
+      { id: 4, url: "https://i.ibb.co/image24.png" },
+    ],
+    features: ["Sales Transactions Management", "Inventory Tracking", "Customer Insights"],
+    featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    technicalSpecifications: {
+      technologyStack: [
+        "https://i.ibb.co/tech16.png",
+        "https://i.ibb.co/tech17.png",
+        "https://i.ibb.co/tech18.png",
+      ],
+      integrationsAvailable: [
+        "https://i.ibb.co/integration16.png",
+        "https://i.ibb.co/integration17.png",
+        "https://i.ibb.co/integration18.png",
+      ],
+    },
   },
   {
-    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    id: 7,
+    productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
     productTitle: "Inventory Management System",
     ProductDetails: "A solution for tracking, managing, and optimizing stock levels across locations.",
     tags: ["Stock Control", "Real-Time Tracking", "SaaS"],
+    version: "1.0.0",
+    releaseDate: "2023-05-10",
+    images: [
+      { id: 1, url: "https://i.ibb.co/image25.png" },
+      { id: 2, url: "https://i.ibb.co/image26.png" },
+      { id: 3, url: "https://i.ibb.co/image27.png" },
+      { id: 4, url: "https://i.ibb.co/image28.png" },
+    ],
+    features: ["Stock Level Monitoring", "Real-Time Updates", "Customizable Alerts"],
+    featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    technicalSpecifications: {
+      technologyStack: [
+        "https://i.ibb.co/tech19.png",
+        "https://i.ibb.co/tech20.png",
+        "https://i.ibb.co/tech21.png",
+      ],
+      integrationsAvailable: [
+        "https://i.ibb.co/integration19.png",
+        "https://i.ibb.co/integration20.png",
+        "https://i.ibb.co/integration21.png",
+      ],
+    },
   },
   {
-    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
+    id: 8,
+    productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
     productTitle: "Board Meeting Management",
     ProductDetails: "A system to organize, schedule, and document board meetings effectively.",
     tags: ["Corporate Governance", "Real-Time Tracking", "Single Page Application"],
+    version: "4.1.0",
+    releaseDate: "2023-06-25",
+    images: [
+      { id: 1, url: "https://i.ibb.co/image29.png" },
+      { id: 2, url: "https://i.ibb.co/image30.png" },
+      { id: 3, url: "https://i.ibb.co/image31.png" },
+      { id: 4, url: "https://i.ibb.co/image32.png" },
+    ],
+    features: ["Automated Meeting Scheduling", "Minutes of Meeting Generation", "Action Item Tracking"],
+    featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    technicalSpecifications: {
+      technologyStack: [
+        "https://i.ibb.co/tech22.png",
+        "https://i.ibb.co/tech23.png",
+        "https://i.ibb.co/tech24.png",
+      ],
+      integrationsAvailable: [
+        "https://i.ibb.co/integration22.png",
+        "https://i.ibb.co/integration23.png",
+        "https://i.ibb.co/integration24.png",
+      ],
+    },
   },
   {
-    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
-    productTitle: "Help Desk Management",
-    ProductDetails: "A platform for tracking, resolving, and managing customer support requests.",
-    tags: ["Customer Support", "Help Desk", "Single Page Application"],
+    id: 9,
+    productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
+    productTitle: "Cloud Inventory",
+    ProductDetails:
+      "Cloud-based system for efficient inventory management and distribution across locations.",
+    tags: ["Inventory Management", "Cloud-based", "SaaS"],
+    version: "3.5.1",
+    releaseDate: "2023-04-15",
+    images: [
+      { id: 1, url: "https://i.ibb.co/image33.png" },
+      { id: 2, url: "https://i.ibb.co/image34.png" },
+      { id: 3, url: "https://i.ibb.co/image35.png" },
+      { id: 4, url: "https://i.ibb.co/image36.png" },
+    ],
+    features: ["Stock Level Monitoring", "Real-Time Reporting", "Multiple Location Support"],
+    featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    technicalSpecifications: {
+      technologyStack: [
+        "https://i.ibb.co/tech25.png",
+        "https://i.ibb.co/tech26.png",
+        "https://i.ibb.co/tech27.png",
+      ],
+      integrationsAvailable: [
+        "https://i.ibb.co/integration25.png",
+        "https://i.ibb.co/integration26.png",
+        "https://i.ibb.co/integration27.png",
+      ],
+    },
   },
   {
-    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
-    productTitle: "Clinic & Hospital Management",
-    ProductDetails: "A solution to streamline patient records, appointments, billing, and medical workflows.",
-    tags: ["Healthcare Solutions", "Doctor", "Single Page Application"],
+    id: 10,
+    productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
+    productTitle: "Expense Tracker",
+    ProductDetails: "A tool to track and categorize company expenses for better financial management.",
+    tags: ["Expense Management", "Real-Time Reporting", "SaaS"],
+    version: "1.0.1",
+    releaseDate: "2023-01-25",
+    images: [
+      { id: 1, url: "https://i.ibb.co/image37.png" },
+      { id: 2, url: "https://i.ibb.co/image38.png" },
+      { id: 3, url: "https://i.ibb.co/image39.png" },
+      { id: 4, url: "https://i.ibb.co/image40.png" },
+    ],
+    features: ["Categorize Expenses", "Real-Time Monitoring", "Reports Generation"],
+    featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    technicalSpecifications: {
+      technologyStack: [
+        "https://i.ibb.co/tech28.png",
+        "https://i.ibb.co/tech29.png",
+        "https://i.ibb.co/tech30.png",
+      ],
+      integrationsAvailable: [
+        "https://i.ibb.co/integration28.png",
+        "https://i.ibb.co/integration29.png",
+        "https://i.ibb.co/integration30.png",
+      ],
+    },
   },
   {
-    productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
-    productTitle: "Document Management System",
-    ProductDetails: "A secure platform for storing, managing, and retrieving organizational documents.",
-    tags: ["File Organization", "FTP", "Single Page Application"],
+    id: 11,
+    productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
+    productTitle: "Employee Payroll",
+    ProductDetails: "A comprehensive system to manage employee payroll and tax calculations.",
+    tags: ["Payroll Management", "Tax Calculations", "SaaS"],
+    version: "2.0.0",
+    releaseDate: "2023-02-12",
+    images: [
+      {
+        id: 1,
+        url: "https://i.ibb.co.com/qskBDPW/Image.png",
+        status: "active",
+      },
+      {
+        id: 2,
+        url: "https://i.ibb.co.com/4RbfdmG/Admin-Dashboard.png",
+        status: "inactive",
+      },
+      {
+        id: 3,
+        url: "https://i.ibb.co.com/RP5TZC0/Image-2.png",
+        status: "inactive",
+      },
+      {
+        id: 4,
+        url: "https://i.ibb.co.com/VWqsDcg/Image-3.png",
+        status: "inactive",
+      },
+    ],
+    features: ["Automated Payroll Processing", "Tax Calculation and Filing", "Customizable Payslips"],
+    featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    technicalSpecifications: {
+      technologyStack: [
+        "https://i.ibb.co/tech31.png",
+        "https://i.ibb.co/tech32.png",
+        "https://i.ibb.co/tech33.png",
+      ],
+      integrationsAvailable: [
+        "https://i.ibb.co/integration31.png",
+        "https://i.ibb.co/integration32.png",
+        "https://i.ibb.co/integration33.png",
+      ],
+    },
   },
 ];
+
+export const singleProduct = {
+  id: 1,
+  productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
+  productTitle: "Cloud ClockIn",
+  ProductDetails: "A digital system for tracking employee attendance and work hours in real time.",
+  tags: ["Attendance Management", "Real-Time Tracking", "SaaS"],
+  version: "1.2.0",
+  releaseDate: "2023-11-15",
+  images: [
+    {
+      id: 1,
+      url: "https://i.ibb.co.com/qskBDPW/Image.png",
+      status: "active",
+    },
+    {
+      id: 2,
+      url: "https://i.ibb.co.com/4RbfdmG/Admin-Dashboard.png",
+      status: "inactive",
+    },
+    {
+      id: 3,
+      url: "https://i.ibb.co.com/RP5TZC0/Image-2.png",
+      status: "inactive",
+    },
+    {
+      id: 4,
+      url: "https://i.ibb.co.com/VWqsDcg/Image-3.png",
+      status: "inactive",
+    },
+  ],
+  features: ["Real-time Employee Monitoring", "Automatic Time Logging", "Customizable Attendance Reports"],
+  featureImage: "https://i.ibb.co/feature-image.png",
+  technicalSpecifications: {
+    technologyStack: [
+      "https://i.ibb.co/tech1.png",
+      "https://i.ibb.co/tech2.png",
+      "https://i.ibb.co/tech3.png",
+    ],
+    integrationsAvailable: [
+      "https://i.ibb.co/integration1.png",
+      "https://i.ibb.co/integration2.png",
+      "https://i.ibb.co/integration3.png",
+    ],
+  },
+};
 
 // industries page
 
@@ -1851,7 +2220,7 @@ export const IndustriesCardsData = [
         src: "/images/world-health-organization_brand.png",
         alt: "Brand 8",
       },
-    ]
+    ],
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -1909,7 +2278,7 @@ export const IndustriesCardsData = [
         src: "/images/world-health-organization_brand.png",
         alt: "Brand 8",
       },
-    ]
+    ],
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -1967,7 +2336,7 @@ export const IndustriesCardsData = [
         src: "/images/world-health-organization_brand.png",
         alt: "Brand 8",
       },
-    ]
+    ],
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -2025,7 +2394,7 @@ export const IndustriesCardsData = [
         src: "/images/world-health-organization_brand.png",
         alt: "Brand 8",
       },
-    ]
+    ],
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -2083,7 +2452,7 @@ export const IndustriesCardsData = [
         src: "/images/world-health-organization_brand.png",
         alt: "Brand 8",
       },
-    ]
+    ],
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -2141,7 +2510,7 @@ export const IndustriesCardsData = [
         src: "/images/world-health-organization_brand.png",
         alt: "Brand 8",
       },
-    ]
+    ],
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -2199,7 +2568,7 @@ export const IndustriesCardsData = [
         src: "/images/world-health-organization_brand.png",
         alt: "Brand 8",
       },
-    ]
+    ],
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -2256,7 +2625,7 @@ export const IndustriesCardsData = [
         src: "/images/world-health-organization_brand.png",
         alt: "Brand 8",
       },
-    ]
+    ],
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -2313,7 +2682,7 @@ export const IndustriesCardsData = [
         src: "/images/world-health-organization_brand.png",
         alt: "Brand 8",
       },
-    ]
+    ],
   },
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
@@ -2371,7 +2740,7 @@ export const IndustriesCardsData = [
         src: "/images/world-health-organization_brand.png",
         alt: "Brand 8",
       },
-    ]
+    ],
   },
 ];
 
@@ -2523,10 +2892,10 @@ export const careerShowcaseData = {
     title: "Business Solutions",
     description: "Transforming businesses with innovative software solutions.",
     services: [
-      { name: "ERP Systems", icon:"fa-layer-group" },
+      { name: "ERP Systems", icon: "fa-layer-group" },
       { name: "CRM Development", icon: "fa-building" },
-      { name: "Data Visualization", icon:"fa-chart-line" },
-      { name: "Workflow Automation", icon:"fa-shuffle" },
+      { name: "Data Visualization", icon: "fa-chart-line" },
+      { name: "Workflow Automation", icon: "fa-shuffle" },
     ],
   },
 
@@ -2535,7 +2904,7 @@ export const careerShowcaseData = {
     description: "Building innovative and scalable software applications.",
     image: "https://i.ibb.co.com/fM130CB/about-3d-2x-1-removebg-preview.png",
     services: [
-      { name: "Custom Software Development", icon:"fa-gears" },
+      { name: "Custom Software Development", icon: "fa-gears" },
       { name: "Web App Development", icon: "fa-globe" },
       { name: "Mobile App Development", icon: "fa-mobile-screen" },
     ],
@@ -2559,20 +2928,17 @@ export const workCultureData = {
   cultures: [
     {
       title: "Diversity",
-      description:
-        "We hire people from diverse backgrounds to foster innovation and creativity.",
+      description: "We hire people from diverse backgrounds to foster innovation and creativity.",
       icon: "fa-earth-americas",
     },
     {
       title: "Collaboration",
-      description:
-        "We believe in teamwork and open communication to achieve great results.",
+      description: "We believe in teamwork and open communication to achieve great results.",
       icon: "fa-trophy",
     },
     {
       title: "Integrity",
-      description:
-        "Honesty and transparency are at the heart of everything we do.",
+      description: "Honesty and transparency are at the heart of everything we do.",
       icon: "fa-shield-alt",
     },
     {
@@ -2589,22 +2955,19 @@ export const processData = [
     serialNo: "01",
     icon: "fa-upload",
     stepName: "Application",
-    description:
-      "Submit your application and provide the required details to kickstart the process.",
+    description: "Submit your application and provide the required details to kickstart the process.",
   },
   {
     serialNo: "02",
     icon: "fa-filter",
     stepName: "Screening",
-    description:
-      "Our team reviews your application to ensure it meets the requirements.",
+    description: "Our team reviews your application to ensure it meets the requirements.",
   },
   {
     serialNo: "03",
     icon: "fa-microphone",
     stepName: "Interview",
-    description:
-      "Participate in an interview to discuss your skills and suitability for the role.",
+    description: "Participate in an interview to discuss your skills and suitability for the role.",
   },
   {
     serialNo: "04",
@@ -2619,8 +2982,7 @@ export const opportunities = [
   {
     title: "Full Stack Developer",
     company: "Flyte Solutions",
-    description:
-      "Build, maintain, and enhance scalable web applications in a fast-paced environment.",
+    description: "Build, maintain, and enhance scalable web applications in a fast-paced environment.",
     location: "Onsite (Dhaka, Bangladesh)",
     jobType: "Full time",
     jobLink: "/job-details/1",
@@ -2628,8 +2990,7 @@ export const opportunities = [
   {
     title: "Backend Developer",
     company: "Flyte Solutions",
-    description:
-      "Work on developing and maintaining the backend of web applications.",
+    description: "Work on developing and maintaining the backend of web applications.",
     location: "Remote",
     jobType: "Full time",
     jobLink: "/job-details/2",
@@ -2637,8 +2998,7 @@ export const opportunities = [
   {
     title: "Frontend Developer",
     company: "Flyte Solutions",
-    description:
-      "Design and implement user-friendly frontends for web applications.",
+    description: "Design and implement user-friendly frontends for web applications.",
     location: "Onsite (Dhaka, Bangladesh)",
     jobType: "Part time",
     jobLink: "/job-details/3",
@@ -2646,8 +3006,7 @@ export const opportunities = [
   {
     title: "UI/UX Designer",
     company: "Flyte Solutions",
-    description:
-      "Create engaging and intuitive user interfaces and experiences.",
+    description: "Create engaging and intuitive user interfaces and experiences.",
     location: "Onsite (Dhaka, Bangladesh)",
     jobType: "Freelance",
     jobLink: "/job-details/4",
@@ -2663,8 +3022,7 @@ export const opportunities = [
   {
     title: "Data Scientist",
     company: "Flyte Solutions",
-    description:
-      "Analyze and interpret complex data to help make informed decisions.",
+    description: "Analyze and interpret complex data to help make informed decisions.",
     location: "Onsite (Dhaka, Bangladesh)",
     jobType: "Full time",
     jobLink: "/job-details/6",

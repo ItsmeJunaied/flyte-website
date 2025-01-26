@@ -1,21 +1,40 @@
 import React from "react";
 import ProductPageContactUS from "./ProductPageContactUS";
-type productData = {
+import Link from "next/link";
+
+export type Images = {
+  id: number;
+  url: string;
+  status:string;
+};
+
+export type productData = {
+  id: number;
   productImg: string;
   productTitle: string;
   ProductDetails: string;
   tags: string[];
+  version: string;
+  releaseDate: string;
+  images: Images[];
+  features: string[];
+  featureImage: string;
+  technicalSpecifications: {
+    technologyStack: string[];
+    integrationsAvailable: string[];
+  };
 };
 
 type productCardsDataProps = {
   data: productData[];
 };
+
 const ProductCards: React.FC<productCardsDataProps> = ({ data }) => {
   return (
     <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 content-center  mt-10">
       {data.map((product, index) => (
         <React.Fragment key={index}>
-          <div className="w-full flex justify-center">
+          <Link href={`/products/${product?.id}`} className="w-full flex justify-center">
             <div className="relative w-full py-8 lg:py-14 px-8 lg:px-16 flex justify-center items-center  bg-none rounded-md overflow-hidden group">
               {/* Background Effect */}
               <div className="absolute inset-0 bg-[#fff] top-[150px] transition-all duration-500 ease-in-out group-hover:top-0 z-0"></div>
@@ -40,9 +59,7 @@ const ProductCards: React.FC<productCardsDataProps> = ({ data }) => {
                       key={tagIndex}
                       className="px-2 py-[6.36px] bg-[#d0d0d0]/20 rounded-[3.18px] backdrop-blur-[9.55px] flex-col justify-center items-center gap-2 inline-flex"
                     >
-                      <div className="text-[#373737] text-xs font-normal font-['Noto Sans']">
-                        {tag}
-                      </div>
+                      <div className="text-[#373737] text-xs font-normal font-['Noto Sans']">{tag}</div>
                     </div>
                   ))}
                 </div>
@@ -54,7 +71,7 @@ const ProductCards: React.FC<productCardsDataProps> = ({ data }) => {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Insert ProductPageContactUS at the second position */}
           {index === 1 && (
