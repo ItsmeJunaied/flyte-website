@@ -179,8 +179,13 @@ body::-webkit-scrollbar-thumb {
   --z-tooltip: 10;
   --z-fixed: 100;
 }
+
 .header {
   background-color: white !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 .nav {
   height: var(--header-height);
@@ -207,12 +212,12 @@ body::-webkit-scrollbar-thumb {
 }
 .nav__toggle {
   position: relative;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
 }
 .nav__toggle-menu,
 .nav__toggle-close {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--title-color);
   position: absolute;
   display: grid;
@@ -224,6 +229,8 @@ body::-webkit-scrollbar-thumb {
 .nav__toggle-close {
   opacity: 0;
 }
+
+/* mobile responsive nav design  */
 @media screen and (max-width: 980px) {
   .nav__menu {
     background-color: var(--body-color);
@@ -240,7 +247,7 @@ body::-webkit-scrollbar-thumb {
     scrollbar-width: none;
     box-shadow: 200px 1px 0px 0px rgba(0, 0, 0, 0.5);
   }
- 
+
   .nav__menu::-webkit-scrollbar {
     width: 0.5rem;
   }
@@ -303,7 +310,6 @@ body::-webkit-scrollbar-thumb {
   display: grid;
 }
 .dropdown__container {
-  /* background-color: white; */
   height: 0;
   overflow: hidden;
   transition: height 0.4s;
@@ -364,12 +370,7 @@ body::-webkit-scrollbar-thumb {
 }
 /* For large devices */
 @media screen and (min-width: 981px) {
-  .dropdown__container {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
   /* Nav */
-
   .nav {
     height: 100px;
     display: flex;
@@ -397,24 +398,32 @@ body::-webkit-scrollbar-thumb {
     column-gap: 0.25rem;
     pointer-events: none;
   }
+
   .dropdown__container {
-    height: max-content;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    height: auto;
+    max-height: 75vh; 
     position: absolute;
     left: 0;
     right: 0;
     top: 6.5rem;
-    /* background-color: white; */
+    background: #f4f2f0;
     box-shadow: 0 6px 8px hsla(220, 68%, 12%, 0.05);
     pointer-events: none;
     opacity: 0;
     transition: top 0.4s, opacity 0.3s;
+    overflow-y: scroll;
+    scrollbar-width: none;
   }
+
   /* .dropdown__content {
     grid-template-columns: repeat(4, max-content);
     column-gap: 6rem;
     max-width: 1120px;
     margin-inline: auto;
   } */
+
   .dropdown__group {
     padding: 4rem 0;
     align-content: baseline;

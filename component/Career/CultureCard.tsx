@@ -8,12 +8,12 @@ type Culture = {
 
 const CultureCard: React.FC<{ culture: Culture }> = ({ culture }) => {
   return (
-    <div>
-      <div className="flex items-center gap-3 md:gap-6 mb-2 md:mb-4">
+    <div className="md:w-[250px] mx-auto">
+      <div className="flex items-center gap-3 md:gap-6 mb-1 md:mb-4 w-[180px] md:w-full mx-auto">
         <i className={`fa-solid text-white bg-[#5856D6] p-2 ${culture?.icon}`}></i>
         <h4 className="text-base font-semibold">{culture?.title}</h4>
       </div>
-      <p className="text-xs md:text-sm">{culture?.description}</p>
+      <p className="text-xs md:text-sm text-center md:text-start">{culture?.description}</p>
     </div>
   );
 };
