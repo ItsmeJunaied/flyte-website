@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 type Profile = {
@@ -45,7 +46,8 @@ const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
         <h1>News & Blogs</h1>
       </div>
 
-      <div className="container grid gap-4 py-10 
+      <div
+        className="container grid gap-4 py-10 
   grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
       >
         {blogData?.cards?.slice(0, visibleCount)?.map((card, index) => (
@@ -145,7 +147,9 @@ const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
                     >
                       <rect className="shape" height="60" width="320" />
                     </svg>
-                    <div className="text">Read More</div>
+                    <Link href={"news&blogs/hello"}>
+                      <div className=" text">Read More</div>
+                    </Link>
                   </div>
                 </div>
               </div>

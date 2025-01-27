@@ -145,7 +145,7 @@ const ContactUsFormComp: React.FC = () => {
             <span className="text-red-600 text-xs">Phone is required</span>
           )}
         </div>
-        ;
+        
       </div>
 
       {/* <div className="w-full flex flex-col lg:flex-row justify-start items-start gap-8 ">

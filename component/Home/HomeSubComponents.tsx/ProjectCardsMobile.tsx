@@ -10,7 +10,7 @@ type ProjectData = {
   type ProjectCardsProps = {
     projectData: ProjectData[];
   };
-  
+
 const ProjectCardsMobile:React.FC<ProjectCardsProps> = ({ projectData })=> {
     return (
         <div className="flex lg:hidden flex-col items-center gap-4 mt-10">

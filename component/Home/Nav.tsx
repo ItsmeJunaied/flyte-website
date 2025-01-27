@@ -72,7 +72,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                                 <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-2">
                                   {item.features?.map((feature, featureIndex) => (
                                     <Link href={feature.path} key={featureIndex}>
-                                      <div className="bg-[#F7FAFF] lg:bg-white flex flex-row items-center gap-2 lg:gap-4 lg:border-2 lg:border-white hover:border-btnColor px-5 lg:px-4 py-1 lg:py-4 lg:rounded-lg lg:h-24 max-w-[406px]">
+                                      <div className="bg-[#F7FAFF] lg:bg-white flex flex-row items-center gap-2 lg:gap-4 lg:border-2 lg:border-white hover:border-btnColor px-5 lg:px-4 py-1 lg:py-2 lg:rounded-lg lg:h-24 max-w-[406px]">
                                         <div className="w-7 h-7">
                                           <i
                                             className={`w-7 h-7 fa ${feature.icon} text-lg lg:text-3xl text-[#5856d6]`}

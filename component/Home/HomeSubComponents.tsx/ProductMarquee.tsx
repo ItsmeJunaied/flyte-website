@@ -31,19 +31,19 @@ const ProductMarquee: React.FC = () => {
       gradientWidth={150}
     >
       {productsSections.map((product: Product) => (
-        <button
-          key={product.id}
-          className="flex flex-col justify-center items-center gap-3 mx-4"
-        >
-          <img
-            className="w-[200px] h-[150px] lg:w-[260px] lg:h-[190px] rounded-[20px] object-cover"
-            src={product.image}
-            alt={product.name}
-          />
-          <p className="text-center text-black text-sm font-bold">
-            {product.name}
-          </p>
-        </button>
+      <button
+      key={product.id}
+      className="flex flex-col justify-center items-center gap-3 mx-4 group"
+      >
+      <img
+      className="w-[200px] h-[150px] lg:w-[260px] lg:h-[190px] rounded-[20px] object-cover group-hover:border-[3px] group-hover:border-btnColor"
+      src={product.image}
+      alt={product.name}
+      />
+      <p className="text-center text-black text-sm font-bold">
+      {product.name}
+      </p>
+      </button>
       ))}
     </Marquee>
   );
