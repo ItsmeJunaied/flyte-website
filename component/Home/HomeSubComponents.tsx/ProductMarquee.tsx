@@ -15,35 +15,35 @@ const ProductMarquee: React.FC = () => {
   useEffect(() => {
     // Check screen size on the client
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 768); // Tailwind's sm breakpoint
+      setIsSmallScreen(window.innerWidth < 768); 
     };
 
-    handleResize(); // Check initially
-    window.addEventListener("resize", handleResize); // Listen for window resize
+    handleResize(); 
+    window.addEventListener("resize", handleResize); 
 
-    return () => window.removeEventListener("resize", handleResize); // Cleanup listener
+    return () => window.removeEventListener("resize", handleResize); 
   }, []);
 
   return (
     <Marquee
       pauseOnHover
-      gradient={!isSmallScreen} // Disable gradient on small screens
+      gradient={!isSmallScreen} 
       gradientWidth={150}
     >
       {productsSections.map((product: Product) => (
-        <button
-          key={product.id}
-          className="flex flex-col justify-center items-center gap-3 mx-4"
-        >
-          <img
-            className="w-[200px] h-[150px] lg:w-[260px] lg:h-[190px] rounded-[20px] object-cover"
-            src={product.image}
-            alt={product.name}
-          />
-          <p className="text-center text-black text-sm font-bold">
-            {product.name}
-          </p>
-        </button>
+      <button
+      key={product.id}
+      className="flex flex-col justify-center items-center gap-3 mx-4 group"
+      >
+      <img
+      className="w-[200px] h-[150px] lg:w-[260px] lg:h-[190px] rounded-[20px] object-cover group-hover:border-[3px] group-hover:border-btnColor"
+      src={product.image}
+      alt={product.name}
+      />
+      <p className="text-center text-black text-sm font-bold">
+      {product.name}
+      </p>
+      </button>
       ))}
     </Marquee>
   );

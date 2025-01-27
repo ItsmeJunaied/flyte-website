@@ -25,7 +25,7 @@ type BlogData = {
 };
 const Topreads: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
   return (
-    <div className=" border border-[#FFB2B2] bg-[#FFF8E6] py-10 px-5 lg:px-[40px] h-full rounded-2xl flex flex-col flex-1 ">
+    <div className=" border-2 border-[#FFB2B2] bg-[#FFF8E6] py-10 px-5 lg:px-[40px] h-full rounded-2xl flex flex-col flex-1 ">
       <h1 className=" text-center text-black text-xl font-bold mb-7">Top Reads</h1>
 
       <div className=" flex flex-col gap-8">

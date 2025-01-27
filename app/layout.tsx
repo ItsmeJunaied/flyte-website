@@ -6,6 +6,9 @@ import { navbarData } from "@/api/Dummy";
 import AOSComponent from "../component/Common/AOSComponent";
 import Footer from "../component/Common/Footer";
 import { footerData } from "@/api/Dummy";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -39,6 +42,7 @@ export default function RootLayout({
         <AOSComponent />
         <Nav navData={navbarData} />
         {children}
+        <ToastContainer />
         <div className=" bg-[#2A3342]">
           <div className="container">
             <Footer footerData={footerData} />

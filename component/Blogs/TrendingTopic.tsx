@@ -2,7 +2,7 @@ import React from "react";
 
 const TrendingTopic: React.FC = () => {
   return (
-    <div className=" border border-[#FFD988] bg-[#FFF8E6] py-10 px-5 lg:px-[40px] h-full rounded-2xl flex flex-col flex-1">
+    <div className=" border-2 border-[#FFD988] bg-[#FFF8E6] py-10 px-5 lg:px-[40px] h-full rounded-2xl flex flex-col flex-1">
       <h1 className=" text-center text-[#161c2d] text-2xl font-bold mb-2  leading-10">
         Trending Topics
       </h1>
