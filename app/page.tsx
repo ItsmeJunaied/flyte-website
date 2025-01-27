@@ -37,7 +37,7 @@ const page = () => {
         <div className=" ">
           <OperationsSections techData={techData} />
         </div>
-        <div className=" bg-black">
+        <div className=" lg:bg-black bg-white">
           <ProjectSection />
         </div>
         {/* <ScrollSection/> */}

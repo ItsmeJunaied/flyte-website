@@ -3,17 +3,17 @@ import React, { useState } from "react";
 import Title from "../Common/Title";
 import Subtitle from "../Common/Subtitle";
 import { FaArrowRight } from "react-icons/fa";
-
+import { motion } from "framer-motion";
 // Type alias for Industry
 type Industry = {
   name: string;
-  icon?: string; // Change to string to hold class names like "fas fa-chart-line"
-  features: Feature[]; // Add features here directly to each industry
+  icon?: string;
+  features: Feature[];
 };
 
 // Type alias for Feature
 type Feature = {
-  icon?: string; // Change to string for the class name
+  icon?: string;
   title: string;
   description: string;
 };
@@ -27,16 +27,12 @@ type IndustryData = {
 const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({
   industrydata,
 }) => {
-  // State to track the selected industryd
   const [selectedIndustry, setSelectedIndustry] = useState<Industry | null>(
     industrydata.industries[0]
   );
 
   const handleIndustryClick = (industry: Industry) => {
-    // Toggle the selected industry, if already selected, set it to null
-    setSelectedIndustry(
-      selectedIndustry?.name === industry.name ? null : industry
-    );
+    setSelectedIndustry(industry);
   };
 
   return (
@@ -57,21 +53,6 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({
           <Subtitle Subtitle={industrydata.subTitle} />
           <Title title={industrydata.sectionTitle} />
         </div>
-
-        {/* <div className="lg:hidden flex flex-row flex-wrap justify-start items-center gap-5 lg:px-9">
-          {industrydata.industries.map((industry, index) => (
-            <div
-              key={index}
-              className="h-9 p-2.5 bg-[#f6f8fa] rounded-[10px] border border-[#d0d8df] justify-start items-center gap-2.5 inline-flex"
-              onClick={() => handleIndustryClick(industry)} // Click to show features
-            >
-              {industry.icon && (
-                <i className={`${industry.icon} icon3 text-[#2B6CB0]`}></i>
-              )}
-              <h1 className="text-[16px] text-[#2F4F4F]">{industry.name}</h1>
-            </div>
-          ))}
-        </div> */}
 
         <div className="flex flex-col lg:flex-row justify-between items-center gap-5">
           <div className="w-full lg:w-1/3 px-[34px] py-[24px] border-2 border-[#006FBA] rounded-2xl flex flex-col gap-3">
@@ -112,49 +93,49 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({
 
                 {/* Render Features Below Selected Industry */}
                 <div className=" flex lg:hidden  ">
-                  {selectedIndustry?.name === industry.name && (
-                    <div className="w-full mt-4 flex flex-col gap-4 items-start bg-[#F6F8FA] px-4 py-4">
-                      {selectedIndustry.features.map(
-                        (feature, featureIndex) => (
-                          <div
-                            key={featureIndex}
-                            className={`w-[400px] flex flex-col   gap-6  rounded-lg `}
-                          >
-                            <div className=" flex flex-col gap-4">
-                              <div className="flex flex-row text-wrap gap-3 justify-start items-center">
-                                <FaArrowRight className="text-black" />
-                                <p className="text-black text-sm font-medium">
-                                  {feature.title}
-                                </p>
-                              </div>
-                            </div>
-
-
-                          </div>
-                        )
-                      )}
-
-
+                {selectedIndustry?.name === industry.name && (
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+                className="w-full mt-4 flex flex-col gap-4 items-start bg-[#F6F8FA] px-4 py-4"
+              >
+                {selectedIndustry.features.map((feature, featureIndex) => (
+                  <div
+                    key={featureIndex}
+                    className="w-full flex flex-col gap-6 rounded-lg"
+                  >
+                    <div className="flex flex-col gap-4">
+                      <div className="flex flex-row text-wrap gap-3 justify-start items-center">
+                        <FaArrowRight className="text-black" />
+                        <p className="text-black text-sm font-medium">
+                          {feature.title}
+                        </p>
+                      </div>
                     </div>
-                  )}
+                  </div>
+                ))}
+              </motion.div>
+            )}
                 </div>
               </div>
             ))}
           </div>
 
-          <div className=" hidden lg:flex ">
-            <div className="w-full  grid grid-cols-2 gap-4 items-start">
+          <div className="hidden lg:w-2/3 lg:flex ">
+            <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
               {selectedIndustry?.features.map((feature, index) => (
                 <div
                   key={index}
-                  className="h-[116.59px] px-6 py-8 bg-[#f6f8fa] rounded-[10px] border border-[#d0d8df] justify-start items-center gap-6 inline-flex"
+                  className="max-w-full flex-grow h-[116.59px] px-6 py-8 bg-[#f6f8fa] rounded-[10px] border border-[#d0d8df] justify-start items-center gap-6 inline-flex"
                 >
                   {feature.icon && <i className={`${feature.icon} icon2`}></i>}
-                  <div className="self-stretch flex-col justify-start items-start gap-1.5 inline-flex">
-                    <div className="self-stretch text-[#2f4f4f] text-[15px] font-bold ">
+                  <div className="w-full flex-col justify-start items-start gap-1.5 inline-flex">
+                    <div className="w-full text-[#2f4f4f] text-[15px] font-bold">
                       {feature.title}
                     </div>
-                    <div className="w-full text-[#838383] text-xs font-normal ">
+                    <div className="w-full text-[#838383] text-xs font-normal">
                       {feature.description}
                     </div>
                   </div>

@@ -35,7 +35,7 @@ const Contact: React.FC<contactUsKeyPointsProps> = ({ contsctUsData }) => {
           {/* form section */}
 
           <div className="w-full lg:w-2/3">
-            <ContactUsFormComp headertitle={headertitle} />
+            <ContactUsFormComp  />
           </div>
 
           {/* key section */}

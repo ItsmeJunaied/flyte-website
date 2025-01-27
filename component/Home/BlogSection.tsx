@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 type Profile = {
@@ -45,19 +46,22 @@ const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
         <h1>News & Blogs</h1>
       </div>
 
-      <div className="container  flex flex-wrap justify-between gap-[16px] py-10  ">
+      <div
+        className="container grid gap-4 py-10 
+  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+      >
         {blogData?.cards?.slice(0, visibleCount)?.map((card, index) => (
           <div
             key={index}
-            className="w-[392px] h-[504.80px] bg-white flex-col justify-start items-center inline-flex transition-transform duration-500"
+            className="w-full max-w-[392px] h-[504.80px] bg-white flex-col justify-start items-center inline-flex transition-transform duration-500"
           >
-            <div className="w-[392px] h-[200px] relative">
+            <div className="w-full h-[200px] relative">
               <img
-                className="w-[392px] h-[200px] left-0 top-0 absolute"
+                className="w-full h-full object-cover"
                 src={card.image}
                 alt={card.title}
               />
-              <div className="w-[392px] h-[200px] left-0 top-0 absolute bg-black/25" />
+              <div className="w-full h-full absolute " />
 
               {/* Displaying keywords over the image */}
               <div className="absolute top-2 left-2 flex flex-wrap gap-2">
@@ -72,8 +76,8 @@ const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
               </div>
             </div>
 
-            <div className="p-4 flex-col justify-start items-start gap-3 flex">
-              <div className="w-[360px] h-10 text-[#121416] text-base font-semibold leading-loose">
+            <div className="p-4 flex-col bg-white justify-start items-start gap-3 flex">
+              <div className="text-[#121416] text-base font-semibold leading-loose">
                 {card.title}
               </div>
               <div className="h-[220.80px] flex-col justify-start items-start gap-3 flex">
@@ -143,7 +147,9 @@ const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
                     >
                       <rect className="shape" height="60" width="320" />
                     </svg>
-                    <div className="text">Read More</div>
+                    <Link href={"news&blogs/hello"}>
+                      <div className=" text">Read More</div>
+                    </Link>
                   </div>
                 </div>
               </div>
