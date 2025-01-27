@@ -92,7 +92,7 @@ const ProductTechOverview = () => {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/NNsjVdx0Tsc?si=LaqXOIk0dYRp3sJm"
+                src="https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
