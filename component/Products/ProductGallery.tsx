@@ -13,29 +13,29 @@ const ProductGallery: React.FC<{ galleryImages: Images[] }> = ({ galleryImages }
   };
 
   return (
-    <div className="h-[592px] flex-col justify-start items-start gap-2.5 inline-flex">
+    <div className="w-full">
       {/* Display the active image at the top */}
       {images.map((image) =>
         image.status === "active" ? (
           <img
             key={image.id}
-            className="w-[700px] h-[462px] rounded-xl object-cover"
+            className="w-full h-auto lg:h-[462px] rounded-xl object-cover"
             src={image.url}
             alt={`Image-${image.id}`}
           />
         ) : null
       )}
-      {/* Display the inactive images below, which are clickable */}
-      <div className="w-[700px] justify-start items-start gap-2.5 inline-flex">
+      {/* Display the inactive or small images below, which are clickable */}
+      <div className="grid grid-cols-3 gap-2.5 mt-2.5">
         {images.map((image) =>
           image.status === "inactive" ? (
             <div
               key={image?.id}
-              className="h-[120px] justify-center items-center flex"
+              className="h-[80px] md:h-[120px]"
               onClick={() => handleImageClick(image?.id)}
             >
               <img
-                className="w-[226.67px] h-[120px] rounded-xl border border-[#979797] cursor-pointer"
+                className="w-full h-16 sm:h-20 md:h-[110px] rounded-xl border border-[#979797] cursor-pointer"
                 src={image.url}
                 alt={`Image-${image.id}`}
               />
