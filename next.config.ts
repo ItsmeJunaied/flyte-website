@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     domains: ['ik.imagekit.io', 'images.unsplash.com', 'i.ibb.co'], // Add i.ibb.co here
   },
-  output:"export",
+  // output:"export",
 };
 
 export default nextConfig;

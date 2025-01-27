@@ -4,7 +4,6 @@ import Title from "../Common/Title";
 import ProductCards from "./ProductCards";
 import { ProductCardsData } from "@/api/Dummy";
 
-
 const ProductsSections:React.FC = () => {
     const productCardsData= ProductCardsData;
   return (
