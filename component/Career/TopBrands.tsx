@@ -50,13 +50,13 @@ const TopBrands = () => {
 
       {/* for mobile device  */}
       <div className="md:hidden">
-        <div className="flex justify-center flex-wrap gap-5">
+        <div className="flex flex-wrap gap-5">
           {brands?.map((brand, index) => (
             <img
               key={index}
               src={brand?.src}
               alt={brand?.alt}
-              className="w-fit h-[30px] object-cover mt-2"
+              className="w-fit h-[24px] object-cover mt-2"
             />
           ))}
         </div>
