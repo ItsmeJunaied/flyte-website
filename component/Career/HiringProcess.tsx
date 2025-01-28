@@ -7,14 +7,13 @@ const HiringProcess = () => {
     <div className="py-8 flex items-center justify-center mb-10 md:mb-16 bg-gradient-to-r from-[#456cf7] to-[#651fff]">
       <div className="container grid grid-cols-1 lg:grid-cols-4 justify-center gap-5">
         {processData?.map((process, index) => (
-          <div key={index} className="flex flex-col lg:flex-row items-center gap-10 lg:gap-0">
+          <div key={index} className="flex flex-col lg:flex-row items-center gap-6 lg:gap-0">
             <ProcessCard process={process} />
             {index < processData.length - 1 && (
-              <span className="text-white rotate-90 lg:rotate-0 mb-5">
+              <span className="text-white rotate-90 lg:rotate-0 mb-2 lg:mb-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="69"
-                  height="32"
+                  className="w-12 lg:w-[69px] h-7 lg:h-8"
                   viewBox="0 0 69 32"
                   fill="none"
                 >
