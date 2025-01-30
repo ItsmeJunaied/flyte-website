@@ -19,10 +19,23 @@ const WorkCulture = () => {
             alt=""
           />
         </div>
-        <img
+        {/* <img
           className="w-full lg:w-[244px] lg:h-[346px] object-cover"
           src={workCultureData?.imgage3}
           alt=""
+        /> */}
+
+        <img
+          className="w-full lg:w-[244px] lg:h-[346px] object-cover"
+          srcSet={`
+    ${workCultureData?.imgage3} 480w, 
+    https://i.ibb.co/1rh6PLb/Rectangle-2-1.png 1024w
+  `}
+          sizes="(max-width: 480px) 100vw, 
+         (max-width: 768px) 75vw, 
+         244px"
+          src="https://i.ibb.co/1rh6PLb/Rectangle-2-1.png"
+          alt="work-culture"
         />
       </div>
 
