@@ -607,7 +607,45 @@ export const techData = {
         image: "/images/vue.png",
       },
     ],
+    heroTitle: "Hire Dedicated Frontend Developers for Seamless User Experiences",
+    heroSubtitle: "HIRE FRONTEND DEVELOPERS",
+    heroDesctiption:
+      "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
+    heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+    advantages : [
+      {
+        icon: 'fa-code',
+        title: 'Expertise in Modern Technologies',
+        description: 'Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.'
+      },
+      {
+        icon: 'fa-cogs',
+        title: 'Custom Solutions',
+        description: 'Tailored frontend development to meet your business needs.'
+      },
+      {
+        icon: 'fa-users',
+        title: 'Agile Development',
+        description: 'Flexible and collaborative approach to deliver projects on time.'
+      },
+      {
+        icon: 'fa-database',
+        title: 'Robust Backend Systems',
+        description: 'Expert in building scalable, secure, and high-performance server-side applications.'
+      },
+      {
+        icon: 'fa-server',
+        title: 'API Development',
+        description: 'Building efficient and reliable APIs for seamless integrations.'
+      },
+      {
+        icon: 'fa-lock',
+        title: 'Security Focused',
+        description: 'Ensuring your backend systems are secure and compliant with best practices.'
+      },
+    ]
   },
+
   backend: {
     title: "Backend Development",
     description:
@@ -638,7 +676,45 @@ export const techData = {
         image: "/images/java.png",
       },
     ],
+    heroTitle: "Hire Dedicated Backend Developers for Seamless User Experiences",
+    heroSubtitle: "HIRE BACKEND DEVELOPERS",
+    heroDesctiption:
+      "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
+    heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+    advantages : [
+      {
+        icon: 'fa-code',
+        title: 'Expertise in Modern Technologies',
+        description: 'Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.'
+      },
+      {
+        icon: 'fa-cogs',
+        title: 'Custom Solutions',
+        description: 'Tailored frontend development to meet your business needs.'
+      },
+      {
+        icon: 'fa-users',
+        title: 'Agile Development',
+        description: 'Flexible and collaborative approach to deliver projects on time.'
+      },
+      {
+        icon: 'fa-database',
+        title: 'Robust Backend Systems',
+        description: 'Expert in building scalable, secure, and high-performance server-side applications.'
+      },
+      {
+        icon: 'fa-server',
+        title: 'API Development',
+        description: 'Building efficient and reliable APIs for seamless integrations.'
+      },
+      {
+        icon: 'fa-lock',
+        title: 'Security Focused',
+        description: 'Ensuring your backend systems are secure and compliant with best practices.'
+      },
+    ]
   },
+
   mobileDevelopment: {
     title: "Mobile Development",
     description: "Developing cross-platform and native mobile apps with cutting-edge frameworks.",
@@ -664,6 +740,43 @@ export const techData = {
         image: "/images/iOS.png",
       },
     ],
+    heroTitle: "Hire Dedicated Mobile App Developers for Seamless User Experiences",
+    heroSubtitle: "HIRE MOBILE APP DEVELOPERS",
+    heroDesctiption:
+      "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
+    heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+    advantages : [
+      {
+        icon: 'fa-code',
+        title: 'Expertise in Modern Technologies',
+        description: 'Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.'
+      },
+      {
+        icon: 'fa-cogs',
+        title: 'Custom Solutions',
+        description: 'Tailored frontend development to meet your business needs.'
+      },
+      {
+        icon: 'fa-users',
+        title: 'Agile Development',
+        description: 'Flexible and collaborative approach to deliver projects on time.'
+      },
+      {
+        icon: 'fa-database',
+        title: 'Robust Backend Systems',
+        description: 'Expert in building scalable, secure, and high-performance server-side applications.'
+      },
+      {
+        icon: 'fa-server',
+        title: 'API Development',
+        description: 'Building efficient and reliable APIs for seamless integrations.'
+      },
+      {
+        icon: 'fa-lock',
+        title: 'Security Focused',
+        description: 'Ensuring your backend systems are secure and compliant with best practices.'
+      },
+    ]
   },
   qualityAssurance: {
     title: "Quality Assurance",
@@ -690,6 +803,43 @@ export const techData = {
         image: "/images/owasp.png",
       },
     ],
+    heroTitle: "Hire Dedicated Frontend Developers for Seamless User Experiences",
+    heroSubtitle: "HIRE FRONTEND DEVELOPERS",
+    heroDesctiption:
+      "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
+    heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+    advantages : [
+      {
+        icon: 'fa-code',
+        title: 'Expertise in Modern Technologies',
+        description: 'Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.'
+      },
+      {
+        icon: 'fa-cogs',
+        title: 'Custom Solutions',
+        description: 'Tailored frontend development to meet your business needs.'
+      },
+      {
+        icon: 'fa-users',
+        title: 'Agile Development',
+        description: 'Flexible and collaborative approach to deliver projects on time.'
+      },
+      {
+        icon: 'fa-database',
+        title: 'Robust Backend Systems',
+        description: 'Expert in building scalable, secure, and high-performance server-side applications.'
+      },
+      {
+        icon: 'fa-server',
+        title: 'API Development',
+        description: 'Building efficient and reliable APIs for seamless integrations.'
+      },
+      {
+        icon: 'fa-lock',
+        title: 'Security Focused',
+        description: 'Ensuring your backend systems are secure and compliant with best practices.'
+      },
+    ]
   },
   devOps: {
     title: "DevOps",
@@ -716,6 +866,43 @@ export const techData = {
         image: "/images/jenkins.png",
       },
     ],
+    heroTitle: "Hire Dedicated Frontend Developers for Seamless User Experiences",
+    heroSubtitle: "HIRE FRONTEND DEVELOPERS",
+    heroDesctiption:
+      "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
+    heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+    advantages : [
+      {
+        icon: 'fa-code',
+        title: 'Expertise in Modern Technologies',
+        description: 'Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.'
+      },
+      {
+        icon: 'fa-cogs',
+        title: 'Custom Solutions',
+        description: 'Tailored frontend development to meet your business needs.'
+      },
+      {
+        icon: 'fa-users',
+        title: 'Agile Development',
+        description: 'Flexible and collaborative approach to deliver projects on time.'
+      },
+      {
+        icon: 'fa-database',
+        title: 'Robust Backend Systems',
+        description: 'Expert in building scalable, secure, and high-performance server-side applications.'
+      },
+      {
+        icon: 'fa-server',
+        title: 'API Development',
+        description: 'Building efficient and reliable APIs for seamless integrations.'
+      },
+      {
+        icon: 'fa-lock',
+        title: 'Security Focused',
+        description: 'Ensuring your backend systems are secure and compliant with best practices.'
+      },
+    ]
   },
   aiML: {
     title: "AI & ML",
@@ -742,6 +929,43 @@ export const techData = {
         image: "/images/opencv.png",
       },
     ],
+    heroTitle: "Hire Dedicated Frontend Developers for Seamless User Experiences",
+    heroSubtitle: "HIRE FRONTEND DEVELOPERS",
+    heroDesctiption:
+      "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
+    heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+    advantages : [
+      {
+        icon: 'fa-code',
+        title: 'Expertise in Modern Technologies',
+        description: 'Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.'
+      },
+      {
+        icon: 'fa-cogs',
+        title: 'Custom Solutions',
+        description: 'Tailored frontend development to meet your business needs.'
+      },
+      {
+        icon: 'fa-users',
+        title: 'Agile Development',
+        description: 'Flexible and collaborative approach to deliver projects on time.'
+      },
+      {
+        icon: 'fa-database',
+        title: 'Robust Backend Systems',
+        description: 'Expert in building scalable, secure, and high-performance server-side applications.'
+      },
+      {
+        icon: 'fa-server',
+        title: 'API Development',
+        description: 'Building efficient and reliable APIs for seamless integrations.'
+      },
+      {
+        icon: 'fa-lock',
+        title: 'Security Focused',
+        description: 'Ensuring your backend systems are secure and compliant with best practices.'
+      },
+    ]
   },
 };
 
