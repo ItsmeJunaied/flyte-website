@@ -115,7 +115,13 @@ const Topreads: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
                   </div>
                 </div>
                 <div className="self-stretch text-[#6c757d] text-xs font-normal leading-[17.96px]">
-                  {card.description}
+                {
+                    card.description
+                      .split("<section>")[1]
+                      .split("</section>")[0]
+                      .split("<p>")[1]
+                      .split("</p>")[0]
+                  }
                 </div>
                 <div className="flex-col justify-start items-center flex">
                   <div className=" border-b-[1px] border-black hover:border-btnColor px-4">

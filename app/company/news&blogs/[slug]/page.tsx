@@ -1,29 +1,36 @@
-// app/news-and-blogs/[slug]/page.tsx
+import { blogData } from "@/api/Dummy";
+import BlogDetails from "@/component/Blogs/BlogDetails";
 import CommingSoon from "@/component/Common/CommingSoon";
-import { GetStaticPropsContext } from "next";
 
-interface BlogDetailsPageProps {
-  params: {
-    slug: string;
-  };
-}
+// Define the expected type for the page props
+type PageProps = {
+  params: Promise<{ slug: string }>;
+};
 
-// This will define which dynamic routes to statically generate
-export async function generateStaticParams() {
-  // Here, you should fetch the list of slugs from your data source (e.g., database, API, etc.)
-  const blogSlugs = ["hello", "nextjs-guide"]; // Example static slugs
-
-  return blogSlugs.map((slug) => ({
-    slug: slug,
+// Generate static params for pre-rendering
+export function generateStaticParams() {
+  return blogData.cards.map((blog) => ({
+    slug: blog.titleName,
   }));
 }
 
-const BlogDetailsPage: React.FC<BlogDetailsPageProps> = ({ params }) => {
-  const { slug } = params;
+const BlogDetailsPage = async ({ params }: PageProps) => {
+  const { slug } = await params;
+
+  const singleBlogData = blogData.cards.find((data) => data.titleName === slug);
+
+  if (!singleBlogData) {
+    return (
+      <div>
+        <p>Blog not found</p>
+        <CommingSoon />
+      </div>
+    );
+  }
 
   return (
-    <div>
-      <CommingSoon />
+    <div className=" container ">
+      <BlogDetails blog={singleBlogData} />
     </div>
   );
 };
