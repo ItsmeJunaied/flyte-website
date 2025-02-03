@@ -1,12 +1,11 @@
-import WhyChoose from '@/component/Hire/WhyChoose';
-import React from 'react';
+import WhyChoose from "@/component/Hire/WhyChoose";
+import React from "react";
 import { techData } from "../../../api/Dummy";
-import HireDetailsHero from '@/component/Hire/HireDetailsHero';
+import HireDetailsBanner from "@/component/Hire/HireDetailsBanner";
 
 export const metadata = {
   title: "Hire Details | Flyte Solutions Ltd.",
-  description:
-    "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
+  description: "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
 };
 
 // Convert techData into an array before mapping
@@ -22,12 +21,10 @@ type PageProps = {
 
 const page = async ({ params }: PageProps) => {
   const { hire } = params;
-
-  console.log("params:", hire); // frontend-developer
   return (
-    <div className='lg:mt-24'>
-      <HireDetailsHero params={hire}/>
-      <WhyChoose/>
+    <div className="mt-16 lg:mt-28">
+      <HireDetailsBanner params={hire} />
+      <WhyChoose />
     </div>
   );
 };

@@ -6,7 +6,7 @@ type HeroBannerProps = {
   params?: string;
 };
 
-const HireDetailsHero = ({ params }: HeroBannerProps) => {
+const HireDetailsBanner = ({ params }: HeroBannerProps) => {
   const tech = Object.values(techData).find((item) => item.hireLinkName === params);
   return (
     <div>
@@ -19,4 +19,4 @@ const HireDetailsHero = ({ params }: HeroBannerProps) => {
   );
 };
 
-export default HireDetailsHero;
+export default HireDetailsBanner;

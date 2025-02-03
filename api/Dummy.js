@@ -55,38 +55,38 @@ export const navbarData = {
           name: "Fintech",
           icon: "fa-heartbeat",
           description: "Solutions for the healthcare sector to improve patient care.",
-          path: "/industries/healthcare",
+          path: "/industries/fintech",
         },
         {
-          name: "Education",
+          name: "Startup",
           icon: "fa-university",
           description: "Innovative financial tools and services for the modern world.",
-          path: "/industries/finance",
+          path: "/industries/startup",
         },
         {
           name: "Logistics",
           icon: "fa-store",
           description: "Transforming retail experiences with technology-driven solutions.",
-          path: "/industries/retail",
+          path: "/industries/logistics",
         },
         {
-          name: "Manufacturing",
+          name: "Retail & Manufacturing",
           icon: "fa-store",
           description: "Transforming retail experiences with technology-driven solutions.",
-          path: "/industries/retail",
+          path: "/industries/retail-and-manufacturing",
         },
 
         {
           name: "Enterprise",
           icon: "fa-building",
           description: "Innovative solutions for businesses of all sizes.",
-          path: "/industries",
+          path: "/industries/enterprise",
         },
         {
           name: "Education",
           icon: "fa-graduation-cap",
           description: "Empowering educators and students with technology.",
-          path: "/industries",
+          path: "/industries/education",
         },
         {
           name: "Real Estate",
@@ -98,25 +98,25 @@ export const navbarData = {
           name: "Medical & Healthcare",
           icon: "fa-heartbeat",
           description: "Enhancing healthcare services with technology.",
-          path: "/industries",
+          path: "/industries/medical-and-healthcare",
         },
         {
           name: "Technology Company",
           icon: "fa-laptop-code",
           description: "Tech solutions for companies looking to innovate.",
-          path: "/industries",
+          path: "/industries/technology-company",
         },
         {
           name: "Media & Entertainment",
           icon: "fa-film",
           description: "Transforming media and entertainment with tech.",
-          path: "/industries",
+          path: "/industries/media-and-entertainment",
         },
         {
           name: "NGO",
           icon: "fa-hand-holding-heart",
           description: "Supporting NGOs with technology-driven solutions.",
-          path: "/industries",
+          path: "/industries/ngo",
         },
       ],
     },
@@ -130,25 +130,25 @@ export const navbarData = {
           name: "Team Extension",
           icon: "fa-lightbulb",
           description: "Expert advice and strategic planning for your business.",
-          path: "/services/consulting",
+          path: "/services/team-extension",
         },
         {
           name: "Custom Software Development",
           icon: "fa-cogs",
           description: "End-to-end software development services for every industry.",
-          path: "/services/development",
+          path: "/services/custom-software-development",
         },
         {
           name: "Enterprise Software Development",
           icon: "fa-headset",
           description: "24/7 customer support to assist with any challenges.",
-          path: "/services",
+          path: "/services/enterprise-software-development",
         },
         {
           name: "MVP Development",
           icon: "fa-headset",
           description: "24/7 customer support to assist with any challenges.",
-          path: "/services",
+          path: "/services/mvp-development",
         },
       ],
     },
@@ -354,6 +354,13 @@ export const serviceData = [
       "Expand your development capabilities with dedicated teams that integrate seamlessly with your existing operations.",
     keywords: ["outsourcing", "staffing", "developers"],
     image: "/images/service1.png",
+    industryLinkName: "team-extension",
+    heroTitle: "Transform Your Business with Team Extension",
+    heroSubtitle: "TEAM EXTENSION",
+    heroDesctiption:
+      "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+    heroButton: "Book A Consulation",
+    heroImage: "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
   },
   {
     title: "Custom Software Development",
@@ -361,6 +368,13 @@ export const serviceData = [
       "Tailored software solutions that align with your business needs, ensuring seamless integration and efficiency.",
     keywords: ["solutions", "design", "apps"],
     image: "/images/service2.png",
+    industryLinkName: "custom-software-development",
+    heroTitle: "Transform Your Business with Custom Software Solutions",
+    heroSubtitle: "CUSTOM SOFTWARE DEVELOPMENT",
+    heroDesctiption:
+      "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+    heroButton: "Book A Consulation",
+    heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
   },
   {
     title: "Enterprise Software Development",
@@ -368,6 +382,13 @@ export const serviceData = [
       "Build robust enterprise-level software to support large-scale operations, improve efficiency, and foster innovation.",
     keywords: ["scalable", "automation", "growth"],
     image: "/images/service3.png",
+    industryLinkName: "enterprise-software-development",
+    heroTitle: "Transform Your Business with Enterprise Software Development",
+    heroSubtitle: "ENTERPRISE SOFTWARE DEVELOPMENT",
+    heroDesctiption:
+      "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+    heroButton: "Book A Consulation",
+    heroImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
   },
   {
     title: "Mobile App Development",
@@ -389,6 +410,13 @@ export const serviceData = [
       "Build a minimum viable product quickly to test your ideas, validate concepts, and enter the market faster.",
     keywords: ["MVP", "validation", "startup"],
     image: "/images/service6.png",
+    industryLinkName: "mvp-development",
+    heroTitle: "Transform Your Business with MVP Development",
+    heroSubtitle: "MVP DEVELOPMENT",
+    heroDesctiption:
+      "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+    heroButton: "Book A Consulation",
+    heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
   },
   {
     title: "Cloud Computing Solutions",
@@ -654,7 +682,7 @@ export const blogData = {
   ],
 };
 
-// operations techs
+// tech data
 export const techData = {
   frontend: {
     title: "Frontend Development",
@@ -1149,6 +1177,7 @@ export const industrydata = {
       heroSubtitle: "FINTECH",
       heroDesctiption:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroButton: "Book A Consulation",
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -1186,6 +1215,7 @@ export const industrydata = {
       heroSubtitle: "STARTUP",
       heroDesctiption:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroButton: "Book A Consulation",
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -1223,6 +1253,7 @@ export const industrydata = {
       heroSubtitle: "LOGISTICS",
       heroDesctiption:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroButton: "Book A Consulation",
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -1260,6 +1291,7 @@ export const industrydata = {
       heroSubtitle: "RETAIL & MANUFACTURING",
       heroDesctiption:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroButton: "Book A Consulation",
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -1297,6 +1329,7 @@ export const industrydata = {
       heroSubtitle: "ENTERPRISE",
       heroDesctiption:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroButton: "Book A Consulation",
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -1334,6 +1367,7 @@ export const industrydata = {
       heroSubtitle: "EDUCATION",
       heroDesctiption:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroButton: "Book A Consulation",
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -1371,6 +1405,7 @@ export const industrydata = {
       heroSubtitle: "REAL ESTATE",
       heroDesctiption:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroButton: "Book A Consulation",
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -1403,11 +1438,12 @@ export const industrydata = {
           description: "Using data to enhance healthcare delivery.",
         },
       ],
-      industryLinkName: "medial-and-healthcare",
+      industryLinkName: "medical-and-healthcare",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "MEDIAL & HEALTHCARE",
       heroDesctiption:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroButton: "Book A Consulation",
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -1440,11 +1476,12 @@ export const industrydata = {
           description: "Designing and implementing tech infrastructures.",
         },
       ],
-      industryLinkName: "technoloy-company",
+      industryLinkName: "technology-company",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "TECHNOLOGY COMPANY",
       heroDesctiption:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroButton: "Book A Consulation",
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -1482,6 +1519,7 @@ export const industrydata = {
       heroSubtitle: "MEDIA & ENTERTAINMENT",
       heroDesctiption:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroButton: "Book A Consulation",
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -1519,6 +1557,7 @@ export const industrydata = {
       heroSubtitle: "NGO",
       heroDesctiption:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroButton: "Book A Consulation",
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
   ],
