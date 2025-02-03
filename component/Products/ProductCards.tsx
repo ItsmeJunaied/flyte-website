@@ -12,6 +12,7 @@ export type productData = {
   id: number;
   productImg: string;
   productTitle: string;
+  productLinkName:string;
   ProductDetails: string;
   tags: string[];
   version: string;
@@ -34,7 +35,7 @@ const ProductCards: React.FC<productCardsDataProps> = ({ data }) => {
     <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 content-center  mt-10">
       {data.map((product, index) => (
         <React.Fragment key={index}>
-          <Link href={`/products/${product?.id}`} className="w-full flex justify-center">
+          <Link href={`/products/${product?.productLinkName}`} className="w-full flex justify-center">
             <div className="relative w-full py-8 lg:py-14 px-8 lg:px-16 flex justify-center items-center  bg-none rounded-md overflow-hidden group">
               {/* Background Effect */}
               <div className="absolute inset-0 bg-[#fff] top-[150px] transition-all duration-500 ease-in-out group-hover:top-0 z-0"></div>

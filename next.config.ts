@@ -2,9 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['ik.imagekit.io', 'images.unsplash.com', 'i.ibb.co'], // Add i.ibb.co here
+    domains: ['ik.imagekit.io', 'images.unsplash.com', 'i.ibb.co'],
   },
-  // output:"export",
+  output:"export",
 };
 
 export default nextConfig;

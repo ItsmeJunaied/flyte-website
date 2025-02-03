@@ -12,7 +12,7 @@ type BannerData = {
 
 const CommonBanner: React.FC<{ bannerData: BannerData }> = ({ bannerData }) => {
   return (
-    <div className="">
+    <div className="common-banner">
       <div
         className="w-full h-[250px] md:h-[500px] bg-cover bg-center relative"
         style={{
