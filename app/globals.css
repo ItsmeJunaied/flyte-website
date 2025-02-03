@@ -38,13 +38,27 @@ body::-webkit-scrollbar-track {
   background: orange;
 }
 
-.nav2 {
+.industry-nav {
   position: sticky;
-  top: 0;
-  z-index: 1000; /* Ensure it appears above other content */
-  background-color: white; /* Optional: Set a background color */
+  top: var(--header-height, 60px);
+  /* z-index: 1000; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: position 0.3s ease-in-out, top 0.3s ease-in-out;
 }
 
+.industry-nav.fixedd {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* z-index: 1000; */
+  width: 100%;
+}
+
+.industry-nav.stickyy {
+  position: sticky;
+  top: var(--header-height, 60px);
+}
 
 
 .bannerIndustries {
@@ -186,6 +200,7 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   width: 100%;
   z-index: 100;
+  /* height: 60px; */
 }
 .nav {
   height: var(--header-height);
