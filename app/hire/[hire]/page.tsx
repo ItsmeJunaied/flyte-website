@@ -1,7 +1,7 @@
-import HireDetailsHero from '@/component/Hire/HireDetailsHero';
 import WhyChoose from '@/component/Hire/WhyChoose';
 import React from 'react';
 import { techData } from "../../../api/Dummy";
+import HireDetailsHero from '@/component/Hire/HireDetailsHero';
 
 export const metadata = {
   title: "Hire Details | Flyte Solutions Ltd.",
@@ -26,7 +26,7 @@ const page = async ({ params }: PageProps) => {
   console.log("params:", hire); // frontend-developer
   return (
     <div className='lg:mt-24'>
-      <HireDetailsHero/>
+      <HireDetailsHero params={hire}/>
       <WhyChoose/>
     </div>
   );

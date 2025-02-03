@@ -5,8 +5,7 @@ export const navbarData = {
       name: "Hire",
       type: "dropdown",
       path: "/hire",
-      description:
-        "Explore innovative solutions designed to simplify processes . ",
+      description: "Explore innovative solutions designed to simplify processes . ",
       features: [
         {
           name: "Frontend Developers",
@@ -55,29 +54,25 @@ export const navbarData = {
         {
           name: "Fintech",
           icon: "fa-heartbeat",
-          description:
-            "Solutions for the healthcare sector to improve patient care.",
+          description: "Solutions for the healthcare sector to improve patient care.",
           path: "/industries/healthcare",
         },
         {
           name: "Education",
           icon: "fa-university",
-          description:
-            "Innovative financial tools and services for the modern world.",
+          description: "Innovative financial tools and services for the modern world.",
           path: "/industries/finance",
         },
         {
           name: "Logistics",
           icon: "fa-store",
-          description:
-            "Transforming retail experiences with technology-driven solutions.",
+          description: "Transforming retail experiences with technology-driven solutions.",
           path: "/industries/retail",
         },
         {
           name: "Manufacturing",
           icon: "fa-store",
-          description:
-            "Transforming retail experiences with technology-driven solutions.",
+          description: "Transforming retail experiences with technology-driven solutions.",
           path: "/industries/retail",
         },
 
@@ -96,8 +91,7 @@ export const navbarData = {
         {
           name: "Real Estate",
           icon: "fa-home",
-          description:
-            "Revolutionizing the real estate industry with tech solutions.",
+          description: "Revolutionizing the real estate industry with tech solutions.",
           path: "/industries/real-estate",
         },
         {
@@ -135,15 +129,13 @@ export const navbarData = {
         {
           name: "Team Extension",
           icon: "fa-lightbulb",
-          description:
-            "Expert advice and strategic planning for your business.",
+          description: "Expert advice and strategic planning for your business.",
           path: "/services/consulting",
         },
         {
           name: "Custom Software Development",
           icon: "fa-cogs",
-          description:
-            "End-to-end software development services for every industry.",
+          description: "End-to-end software development services for every industry.",
           path: "/services/development",
         },
         {
@@ -169,8 +161,7 @@ export const navbarData = {
         {
           name: "Time2Task",
           icon: "fa-box",
-          description:
-            "Our flagship product designed to streamline operations.",
+          description: "Our flagship product designed to streamline operations.",
           path: "/products/product-a",
         },
         {
@@ -232,8 +223,7 @@ export const navbarData = {
 
 // banner
 export const bannerData = {
-  title:
-    "Achieve <span> Sucess </span> With Innovative <span> Software Solutions </span>",
+  title: "Achieve <span> Sucess </span> With Innovative <span> Software Solutions </span>",
   description:
     "Our platform empowers your business with cutting-edge software solutions and lightning-fast deployment. Achieve your goals with unmatched efficiency and reliability.",
   industries: [
@@ -273,7 +263,7 @@ export const bannerData = {
   bannerImage: "/images/bannerImg.png",
 };
 
-// brand data 
+// brand data
 export const brandData = {
   title: "Trusted by top brands to deliver excellence every time",
   brands: [
@@ -482,12 +472,7 @@ export const blogData = {
           <p>Flyte plans to continue its commitment to excellence by pursuing additional certifications and enhancing its platform's security features.</p>
         </section>
       `,
-      keywords: [
-        "Flyte",
-        "ISO Certification",
-        "Data Security",
-        "Cloud Platform",
-      ],
+      keywords: ["Flyte", "ISO Certification", "Data Security", "Cloud Platform"],
       profile: {
         name: "Joanna Wellick",
         image: "/images/ceo_sumon.jpg",
@@ -529,12 +514,7 @@ export const blogData = {
           <p>DevOps practices are essential for modern software development, offering numerous benefits in terms of speed, quality, and collaboration.</p>
         </section>
       `,
-      keywords: [
-        "DevOps",
-        "Best Practices",
-        "Software Development",
-        "Automation",
-      ],
+      keywords: ["DevOps", "Best Practices", "Software Development", "Automation"],
       profile: {
         name: "John Doe",
         image: "/images/ceo_sumon.jpg",
@@ -576,12 +556,7 @@ export const blogData = {
           <p>This info session will provide valuable insights into cloud management, helping you optimize and secure your cloud infrastructure.</p>
         </section>
       `,
-      keywords: [
-        "Cloud Management",
-        "Info Session",
-        "Cost Optimization",
-        "Security",
-      ],
+      keywords: ["Cloud Management", "Info Session", "Cost Optimization", "Security"],
       profile: {
         name: "Alex Smith",
         image: "/images/ceo_sumon.jpg",
@@ -623,12 +598,7 @@ export const blogData = {
           <p>The future of DevOps tools is promising, with continuous innovations aimed at improving efficiency and collaboration in software development.</p>
         </section>
       `,
-      keywords: [
-        "DevOps Tools",
-        "Emerging Technologies",
-        "Industry Trends",
-        "Automation",
-      ],
+      keywords: ["DevOps Tools", "Emerging Technologies", "Industry Trends", "Automation"],
       profile: {
         name: "Sarah Lee",
         image: "/images/ceo_sumon.jpg",
@@ -670,12 +640,7 @@ export const blogData = {
           <p>The future of cloud infrastructure looks promising, with continuous advancements in technology and increasing adoption by organizations.</p>
         </section>
       `,
-      keywords: [
-        "Cloud Infrastructure",
-        "IT Industry",
-        "Cost Reduction",
-        "Flexibility",
-      ],
+      keywords: ["Cloud Infrastructure", "IT Industry", "Cost Reduction", "Flexibility"],
       profile: {
         name: "David Warner",
         image: "/images/ceo_sumon.jpg",
@@ -694,8 +659,7 @@ export const techData = {
   frontend: {
     title: "Frontend Development",
     hireLinkName: "frontend-developer",
-    description:
-      "Creating responsive and dynamic user interfaces using modern frontend technologies.",
+    description: "Creating responsive and dynamic user interfaces using modern frontend technologies.",
     technologies: [
       {
         name: "HTML",
@@ -726,39 +690,40 @@ export const techData = {
     heroSubtitle: "HIRE FRONTEND DEVELOPERS",
     heroDesctiption:
       "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
-    heroImage: "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
-    advantages : [
+    heroButton: "Hire Frontend Developers Now",
+    heroImage: "https://i.ibb.co.com/wFBPCXTR/ss-2.png",
+    advantages: [
       {
-        icon: 'fa-code',
-        title: 'Expertise in Modern Technologies',
-        description: 'Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.'
+        icon: "fa-code",
+        title: "Expertise in Modern Technologies",
+        description: "Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.",
       },
       {
-        icon: 'fa-cogs',
-        title: 'Custom Solutions',
-        description: 'Tailored frontend development to meet your business needs.'
+        icon: "fa-cogs",
+        title: "Custom Solutions",
+        description: "Tailored frontend development to meet your business needs.",
       },
       {
-        icon: 'fa-users',
-        title: 'Agile Development',
-        description: 'Flexible and collaborative approach to deliver projects on time.'
+        icon: "fa-users",
+        title: "Agile Development",
+        description: "Flexible and collaborative approach to deliver projects on time.",
       },
       {
-        icon: 'fa-database',
-        title: 'Robust Backend Systems',
-        description: 'Expert in building scalable, secure, and high-performance server-side applications.'
+        icon: "fa-database",
+        title: "Robust Backend Systems",
+        description: "Expert in building scalable, secure, and high-performance server-side applications.",
       },
       {
-        icon: 'fa-server',
-        title: 'API Development',
-        description: 'Building efficient and reliable APIs for seamless integrations.'
+        icon: "fa-server",
+        title: "API Development",
+        description: "Building efficient and reliable APIs for seamless integrations.",
       },
       {
-        icon: 'fa-lock',
-        title: 'Security Focused',
-        description: 'Ensuring your backend systems are secure and compliant with best practices.'
+        icon: "fa-lock",
+        title: "Security Focused",
+        description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
-    ]
+    ],
   },
 
   backend: {
@@ -796,46 +761,46 @@ export const techData = {
     heroSubtitle: "HIRE BACKEND DEVELOPERS",
     heroDesctiption:
       "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
-    heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
-    advantages : [
+    heroButton: "Hire Backend Developers Now",
+    heroImage: "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
+    advantages: [
       {
-        icon: 'fa-code',
-        title: 'Expertise in Modern Technologies',
-        description: 'Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.'
+        icon: "fa-code",
+        title: "Expertise in Modern Technologies",
+        description: "Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.",
       },
       {
-        icon: 'fa-cogs',
-        title: 'Custom Solutions',
-        description: 'Tailored frontend development to meet your business needs.'
+        icon: "fa-cogs",
+        title: "Custom Solutions",
+        description: "Tailored frontend development to meet your business needs.",
       },
       {
-        icon: 'fa-users',
-        title: 'Agile Development',
-        description: 'Flexible and collaborative approach to deliver projects on time.'
+        icon: "fa-users",
+        title: "Agile Development",
+        description: "Flexible and collaborative approach to deliver projects on time.",
       },
       {
-        icon: 'fa-database',
-        title: 'Robust Backend Systems',
-        description: 'Expert in building scalable, secure, and high-performance server-side applications.'
+        icon: "fa-database",
+        title: "Robust Backend Systems",
+        description: "Expert in building scalable, secure, and high-performance server-side applications.",
       },
       {
-        icon: 'fa-server',
-        title: 'API Development',
-        description: 'Building efficient and reliable APIs for seamless integrations.'
+        icon: "fa-server",
+        title: "API Development",
+        description: "Building efficient and reliable APIs for seamless integrations.",
       },
       {
-        icon: 'fa-lock',
-        title: 'Security Focused',
-        description: 'Ensuring your backend systems are secure and compliant with best practices.'
+        icon: "fa-lock",
+        title: "Security Focused",
+        description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
-    ]
+    ],
   },
 
   mobileDevelopment: {
     title: "Mobile Development",
     hireLinkName: "mobile-app-developer",
-    description:
-      "Developing cross-platform and native mobile apps with cutting-edge frameworks.",
+    description: "Developing cross-platform and native mobile apps with cutting-edge frameworks.",
     technologies: [
       {
         name: "React Native",
@@ -862,46 +827,46 @@ export const techData = {
     heroSubtitle: "HIRE MOBILE APP DEVELOPERS",
     heroDesctiption:
       "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
-    heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
-    advantages : [
+    heroButton: "Hire Mobile App Developers Now",
+    heroImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
+    advantages: [
       {
-        icon: 'fa-code',
-        title: 'Expertise in Modern Technologies',
-        description: 'Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.'
+        icon: "fa-code",
+        title: "Expertise in Modern Technologies",
+        description: "Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.",
       },
       {
-        icon: 'fa-cogs',
-        title: 'Custom Solutions',
-        description: 'Tailored frontend development to meet your business needs.'
+        icon: "fa-cogs",
+        title: "Custom Solutions",
+        description: "Tailored frontend development to meet your business needs.",
       },
       {
-        icon: 'fa-users',
-        title: 'Agile Development',
-        description: 'Flexible and collaborative approach to deliver projects on time.'
+        icon: "fa-users",
+        title: "Agile Development",
+        description: "Flexible and collaborative approach to deliver projects on time.",
       },
       {
-        icon: 'fa-database',
-        title: 'Robust Backend Systems',
-        description: 'Expert in building scalable, secure, and high-performance server-side applications.'
+        icon: "fa-database",
+        title: "Robust Backend Systems",
+        description: "Expert in building scalable, secure, and high-performance server-side applications.",
       },
       {
-        icon: 'fa-server',
-        title: 'API Development',
-        description: 'Building efficient and reliable APIs for seamless integrations.'
+        icon: "fa-server",
+        title: "API Development",
+        description: "Building efficient and reliable APIs for seamless integrations.",
       },
       {
-        icon: 'fa-lock',
-        title: 'Security Focused',
-        description: 'Ensuring your backend systems are secure and compliant with best practices.'
+        icon: "fa-lock",
+        title: "Security Focused",
+        description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
-    ]
+    ],
   },
-  
+
   qualityAssurance: {
     title: "Quality Assurance",
     hireLinkName: "qa-engineer",
-    description:
-      "Delivering quality applications with advanced testing and QA tools.",
+    description: "Delivering quality applications with advanced testing and QA tools.",
     technologies: [
       {
         name: "Selenium",
@@ -924,50 +889,50 @@ export const techData = {
         image: "/images/owasp.png",
       },
     ],
-    heroTitle: "Hire Dedicated Frontend Developers for Seamless User Experiences",
-    heroSubtitle: "HIRE FRONTEND DEVELOPERS",
+    heroTitle: "Hire Dedicated Quality Assurance for Seamless User Experiences",
+    heroSubtitle: "HIRE QUALITY ASSURANCE",
     heroDesctiption:
       "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
+    heroButton: "Hire Quality Engineers Now",
     heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
-    advantages : [
+    advantages: [
       {
-        icon: 'fa-code',
-        title: 'Expertise in Modern Technologies',
-        description: 'Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.'
+        icon: "fa-code",
+        title: "Expertise in Modern Technologies",
+        description: "Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.",
       },
       {
-        icon: 'fa-cogs',
-        title: 'Custom Solutions',
-        description: 'Tailored frontend development to meet your business needs.'
+        icon: "fa-cogs",
+        title: "Custom Solutions",
+        description: "Tailored frontend development to meet your business needs.",
       },
       {
-        icon: 'fa-users',
-        title: 'Agile Development',
-        description: 'Flexible and collaborative approach to deliver projects on time.'
+        icon: "fa-users",
+        title: "Agile Development",
+        description: "Flexible and collaborative approach to deliver projects on time.",
       },
       {
-        icon: 'fa-database',
-        title: 'Robust Backend Systems',
-        description: 'Expert in building scalable, secure, and high-performance server-side applications.'
+        icon: "fa-database",
+        title: "Robust Backend Systems",
+        description: "Expert in building scalable, secure, and high-performance server-side applications.",
       },
       {
-        icon: 'fa-server',
-        title: 'API Development',
-        description: 'Building efficient and reliable APIs for seamless integrations.'
+        icon: "fa-server",
+        title: "API Development",
+        description: "Building efficient and reliable APIs for seamless integrations.",
       },
       {
-        icon: 'fa-lock',
-        title: 'Security Focused',
-        description: 'Ensuring your backend systems are secure and compliant with best practices.'
+        icon: "fa-lock",
+        title: "Security Focused",
+        description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
-    ]
+    ],
   },
 
   devOps: {
     title: "DevOps",
     hireLinkName: "devops-engineer",
-    description:
-      "Streamlining development processes and infrastructure with DevOps practices and tools.",
+    description: "Streamlining development processes and infrastructure with DevOps practices and tools.",
     technologies: [
       {
         name: "Docker",
@@ -990,50 +955,50 @@ export const techData = {
         image: "/images/jenkins.png",
       },
     ],
-    heroTitle: "Hire Dedicated Frontend Developers for Seamless User Experiences",
-    heroSubtitle: "HIRE FRONTEND DEVELOPERS",
+    heroTitle: "Hire Dedicated DevOps Engineers for Seamless User Experiences",
+    heroSubtitle: "HIRE DEVOPS ENGINEERS",
     heroDesctiption:
       "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
+    heroButton: "Hire DevOps Engineers Now",
     heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
-    advantages : [
+    advantages: [
       {
-        icon: 'fa-code',
-        title: 'Expertise in Modern Technologies',
-        description: 'Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.'
+        icon: "fa-code",
+        title: "Expertise in Modern Technologies",
+        description: "Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.",
       },
       {
-        icon: 'fa-cogs',
-        title: 'Custom Solutions',
-        description: 'Tailored frontend development to meet your business needs.'
+        icon: "fa-cogs",
+        title: "Custom Solutions",
+        description: "Tailored frontend development to meet your business needs.",
       },
       {
-        icon: 'fa-users',
-        title: 'Agile Development',
-        description: 'Flexible and collaborative approach to deliver projects on time.'
+        icon: "fa-users",
+        title: "Agile Development",
+        description: "Flexible and collaborative approach to deliver projects on time.",
       },
       {
-        icon: 'fa-database',
-        title: 'Robust Backend Systems',
-        description: 'Expert in building scalable, secure, and high-performance server-side applications.'
+        icon: "fa-database",
+        title: "Robust Backend Systems",
+        description: "Expert in building scalable, secure, and high-performance server-side applications.",
       },
       {
-        icon: 'fa-server',
-        title: 'API Development',
-        description: 'Building efficient and reliable APIs for seamless integrations.'
+        icon: "fa-server",
+        title: "API Development",
+        description: "Building efficient and reliable APIs for seamless integrations.",
       },
       {
-        icon: 'fa-lock',
-        title: 'Security Focused',
-        description: 'Ensuring your backend systems are secure and compliant with best practices.'
+        icon: "fa-lock",
+        title: "Security Focused",
+        description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
-    ]
+    ],
   },
 
   aiML: {
     title: "AI & ML",
     hireLinkName: "ai-ml-developer",
-    description:
-      "Leveraging artificial intelligence and machine learning to build smart applications.",
+    description: "Leveraging artificial intelligence and machine learning to build smart applications.",
     technologies: [
       {
         name: "TensorFlow",
@@ -1056,43 +1021,44 @@ export const techData = {
         image: "/images/opencv.png",
       },
     ],
-    heroTitle: "Hire Dedicated Frontend Developers for Seamless User Experiences",
-    heroSubtitle: "HIRE FRONTEND DEVELOPERS",
+    heroTitle: "Hire Dedicated AI & Machine Learning Developers for Seamless User Experiences",
+    heroSubtitle: "HIRE AI & MACHINE LEARNING DEVELOPERS",
     heroDesctiption:
       "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
-    heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
-    advantages : [
+    heroButton: "Hire AI & ML Now",
+    heroImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
+    advantages: [
       {
-        icon: 'fa-code',
-        title: 'Expertise in Modern Technologies',
-        description: 'Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.'
+        icon: "fa-code",
+        title: "Expertise in Modern Technologies",
+        description: "Proficient in HTML, CSS, JavaScript, React, Angular, Vue.js, and more.",
       },
       {
-        icon: 'fa-cogs',
-        title: 'Custom Solutions',
-        description: 'Tailored frontend development to meet your business needs.'
+        icon: "fa-cogs",
+        title: "Custom Solutions",
+        description: "Tailored frontend development to meet your business needs.",
       },
       {
-        icon: 'fa-users',
-        title: 'Agile Development',
-        description: 'Flexible and collaborative approach to deliver projects on time.'
+        icon: "fa-users",
+        title: "Agile Development",
+        description: "Flexible and collaborative approach to deliver projects on time.",
       },
       {
-        icon: 'fa-database',
-        title: 'Robust Backend Systems',
-        description: 'Expert in building scalable, secure, and high-performance server-side applications.'
+        icon: "fa-database",
+        title: "Robust Backend Systems",
+        description: "Expert in building scalable, secure, and high-performance server-side applications.",
       },
       {
-        icon: 'fa-server',
-        title: 'API Development',
-        description: 'Building efficient and reliable APIs for seamless integrations.'
+        icon: "fa-server",
+        title: "API Development",
+        description: "Building efficient and reliable APIs for seamless integrations.",
       },
       {
-        icon: 'fa-lock',
-        title: 'Security Focused',
-        description: 'Ensuring your backend systems are secure and compliant with best practices.'
+        icon: "fa-lock",
+        title: "Security Focused",
+        description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
-    ]
+    ],
   },
 };
 
@@ -1109,11 +1075,7 @@ export const projectData = [
       role: "CFO at FinTech Corp",
       profileImage: "https://via.placeholder.com/40x40",
     },
-    features: [
-      "Seamless Integration",
-      "AI-Powered Insights",
-      "Secure Transactions",
-    ],
+    features: ["Seamless Integration", "AI-Powered Insights", "Secure Transactions"],
     mainImage: "https://via.placeholder.com/500x375",
     button: "Discover More",
   },
@@ -1121,18 +1083,13 @@ export const projectData = [
     logo: "https://via.placeholder.com/40x40",
     tags: ["HEALTHCARE", "TECH"],
     title: "Pioneering Healthtech Advancements",
-    description:
-      "Their commitment to improving healthcare through technology was remarkable and inspiring.",
+    description: "Their commitment to improving healthcare through technology was remarkable and inspiring.",
     testimonial: {
       name: "Michael Smith",
       role: "Director at HealthPlus",
       profileImage: "https://via.placeholder.com/40x40",
     },
-    features: [
-      "Patient-Centric Solutions",
-      "Real-Time Monitoring",
-      "Data-Driven Care",
-    ],
+    features: ["Patient-Centric Solutions", "Real-Time Monitoring", "Data-Driven Care"],
     mainImage: "https://via.placeholder.com/500x375",
     button: "Learn More",
   },
@@ -1140,18 +1097,13 @@ export const projectData = [
     logo: "https://via.placeholder.com/40x40",
     tags: ["TRAVEL", "HOSPITALITY"],
     title: "Revolutionizing Travel Experiences",
-    description:
-      "Their attention to detail and focus on customer satisfaction stood out in every aspect.",
+    description: "Their attention to detail and focus on customer satisfaction stood out in every aspect.",
     testimonial: {
       name: "Emily Johnson",
       role: "CEO at Wanderlust Co.",
       profileImage: "https://via.placeholder.com/40x40",
     },
-    features: [
-      "Personalized Itineraries",
-      "24/7 Customer Support",
-      "Sustainable Travel",
-    ],
+    features: ["Personalized Itineraries", "24/7 Customer Support", "Sustainable Travel"],
     mainImage: "https://via.placeholder.com/500x375",
     button: "Explore Now",
   },
@@ -1192,6 +1144,12 @@ export const industrydata = {
           description: "Ensuring the security of sensitive financial data.",
         },
       ],
+      industryLinkName: "fintech",
+      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
+      heroSubtitle: "FINTECH",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "Startup",
@@ -1223,6 +1181,12 @@ export const industrydata = {
           description: "Securing capital for business growth.",
         },
       ],
+      industryLinkName: "startup",
+      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
+      heroSubtitle: "STARTUP",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "Logistics",
@@ -1254,6 +1218,12 @@ export const industrydata = {
           description: "Improving operational efficiencies in logistics.",
         },
       ],
+      industryLinkName: "logistics",
+      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
+      heroSubtitle: "LOGISTICS",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "Retail & Manufacturing",
@@ -1285,6 +1255,12 @@ export const industrydata = {
           description: "Driving revenue through retail strategies.",
         },
       ],
+      industryLinkName: "retail-and-manufacturing",
+      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
+      heroSubtitle: "RETAIL & MANUFACTURING",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "Enterprise",
@@ -1316,6 +1292,12 @@ export const industrydata = {
           description: "Empowering businesses with scalable cloud solutions.",
         },
       ],
+      industryLinkName: "enterprise",
+      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
+      heroSubtitle: "ENTERPRISE",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "Education",
@@ -1347,6 +1329,12 @@ export const industrydata = {
           description: "Enhancing student participation and interaction.",
         },
       ],
+      industryLinkName: "education",
+      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
+      heroSubtitle: "EDUCATION",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "Real Estate",
@@ -1355,8 +1343,7 @@ export const industrydata = {
         {
           icon: "fas fa-building fa-2xl",
           title: "Property Development",
-          description:
-            "Developing and managing residential and commercial properties.",
+          description: "Developing and managing residential and commercial properties.",
         },
         {
           icon: "fas fa-search fa-2xl",
@@ -1376,10 +1363,15 @@ export const industrydata = {
         {
           icon: "fas fa-chart-line fa-2xl",
           title: "Real Estate Analytics",
-          description:
-            "Providing data-driven insights for real estate decisions.",
+          description: "Providing data-driven insights for real estate decisions.",
         },
       ],
+      industryLinkName: "real-estate",
+      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
+      heroSubtitle: "REAL ESTATE",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "Medical & Healthcare",
@@ -1411,6 +1403,12 @@ export const industrydata = {
           description: "Using data to enhance healthcare delivery.",
         },
       ],
+      industryLinkName: "medial-and-healthcare",
+      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
+      heroSubtitle: "MEDIAL & HEALTHCARE",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "Technology Company",
@@ -1442,6 +1440,12 @@ export const industrydata = {
           description: "Designing and implementing tech infrastructures.",
         },
       ],
+      industryLinkName: "technoloy-company",
+      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
+      heroSubtitle: "TECHNOLOGY COMPANY",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "Media & Entertainment",
@@ -1473,6 +1477,12 @@ export const industrydata = {
           description: "Offering on-demand content to audiences.",
         },
       ],
+      industryLinkName: "media-and-entertainment",
+      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
+      heroSubtitle: "MEDIA & ENTERTAINMENT",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "NGO",
@@ -1504,6 +1514,12 @@ export const industrydata = {
           description: "Creating strategic partnerships for social good.",
         },
       ],
+      industryLinkName: "ngo",
+      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
+      heroSubtitle: "NGO",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
   ],
 };
@@ -1512,8 +1528,7 @@ export const industrydata = {
 export const footerData = {
   footer: {
     contactUs: {
-      location:
-        "Flyte Solutions Ltd, The Reeve, House 11, Road 33, Gulshan-1, Dhaka-1212, Bangladesh.",
+      location: "Flyte Solutions Ltd, The Reeve, House 11, Road 33, Gulshan-1, Dhaka-1212, Bangladesh.",
       companyLogo: "/images/flyte-logo.png",
       successLogos: [
         "/images/clip.png",
@@ -1680,8 +1695,7 @@ export const caseStudyData = [
     id: 1,
     image: "/images/FuelPro.png",
     title: "Time Tracker",
-    description:
-      "A task management tool to plan, assign, and track project tasks efficiently.",
+    description: "A task management tool to plan, assign, and track project tasks efficiently.",
     tags: ["Time Tracking", "Project Management", "Task Assignment"],
     category: "enterprise",
   },
@@ -1689,8 +1703,7 @@ export const caseStudyData = [
     id: 2,
     image: "/images/FuelPro.png",
     title: "Project X",
-    description:
-      "A powerful tool to manage complex projects with ease and efficiency.",
+    description: "A powerful tool to manage complex projects with ease and efficiency.",
     tags: ["Project Management", "Collaboration", "Productivity"],
     category: "technology company",
   },
@@ -1698,8 +1711,7 @@ export const caseStudyData = [
     id: 3,
     image: "/images/FuelPro.png",
     title: "Task Master",
-    description:
-      "An intuitive task management app that helps teams stay organized and on track.",
+    description: "An intuitive task management app that helps teams stay organized and on track.",
     tags: ["Task Management", "Organization", "Teamwork"],
     category: "startup",
   },
@@ -1707,8 +1719,7 @@ export const caseStudyData = [
     id: 4,
     image: "/images/FuelPro.png",
     title: "Collab Hub",
-    description:
-      "A collaboration platform for teams to communicate, share files, and track progress.",
+    description: "A collaboration platform for teams to communicate, share files, and track progress.",
     tags: ["Collaboration", "Communication", "File Sharing"],
     category: "enterprise",
   },
@@ -1716,8 +1727,7 @@ export const caseStudyData = [
     id: 5,
     image: "/images/FuelPro.png",
     title: "Time Saver",
-    description:
-      "A time management app that helps you save time with automated scheduling and reminders.",
+    description: "A time management app that helps you save time with automated scheduling and reminders.",
     tags: ["Time Management", "Scheduling", "Reminders"],
     category: "enterprise",
   },
@@ -1725,8 +1735,7 @@ export const caseStudyData = [
     id: 6,
     image: "/images/FuelPro.png",
     title: "Team Up",
-    description:
-      "A team management app that fosters communication and collaboration among team members.",
+    description: "A team management app that fosters communication and collaboration among team members.",
     tags: ["Team Management", "Collaboration", "Communication"],
     category: "startup",
   },
@@ -1734,8 +1743,7 @@ export const caseStudyData = [
     id: 7,
     image: "/images/FuelPro.png",
     title: "Work Flow Pro",
-    description:
-      "A work management tool to streamline workflows, automate tasks, and boost productivity.",
+    description: "A work management tool to streamline workflows, automate tasks, and boost productivity.",
     tags: ["Workflow", "Automation", "Productivity"],
     category: "enterprise",
   },
@@ -1743,8 +1751,7 @@ export const caseStudyData = [
     id: 8,
     image: "/images/FuelPro.png",
     title: "Focus Time",
-    description:
-      "A productivity app designed to keep you focused by blocking distractions.",
+    description: "A productivity app designed to keep you focused by blocking distractions.",
     tags: ["Productivity", "Focus", "Distraction-Free"],
     category: "technology company",
   },
@@ -1752,8 +1759,7 @@ export const caseStudyData = [
     id: 9,
     image: "/images/FuelPro.png",
     title: "Smart Scheduler",
-    description:
-      "An intelligent scheduling app that adjusts to your work habits and preferences.",
+    description: "An intelligent scheduling app that adjusts to your work habits and preferences.",
     tags: ["Scheduling", "Automation", "Productivity"],
     category: "enterprise",
   },
@@ -1761,8 +1767,7 @@ export const caseStudyData = [
     id: 10,
     image: "/images/FuelPro.png",
     title: "Work Mate",
-    description:
-      "A collaborative workspace for teams to track tasks, share documents, and meet deadlines.",
+    description: "A collaborative workspace for teams to track tasks, share documents, and meet deadlines.",
     tags: ["Collaboration", "Workspace", "Teamwork"],
     category: "enterprise",
   },
@@ -1770,8 +1775,7 @@ export const caseStudyData = [
     id: 11,
     image: "/images/FuelPro.png",
     title: "Pro Planner",
-    description:
-      "A professional planner to organize tasks, appointments, and goals efficiently.",
+    description: "A professional planner to organize tasks, appointments, and goals efficiently.",
     tags: ["Planning", "Task Management", "Goal Setting"],
     category: "enterprise",
   },
@@ -1779,8 +1783,7 @@ export const caseStudyData = [
     id: 12,
     image: "/images/FuelPro.png",
     title: "Team Sync",
-    description:
-      "A tool that synchronizes teams across time zones, making collaboration easy and efficient.",
+    description: "A tool that synchronizes teams across time zones, making collaboration easy and efficient.",
     tags: ["Teamwork", "Time Zones", "Collaboration"],
     category: "enterprise",
   },
@@ -1788,8 +1791,7 @@ export const caseStudyData = [
     id: 13,
     image: "/images/FuelPro.png",
     title: "Task Flow",
-    description:
-      "A task management solution to track tasks from start to finish with clear deadlines.",
+    description: "A task management solution to track tasks from start to finish with clear deadlines.",
     tags: ["Task Management", "Deadline Tracking", "Organization"],
     category: "enterprise",
   },
@@ -1797,8 +1799,7 @@ export const caseStudyData = [
     id: 14,
     image: "/images/FuelPro.png",
     title: "Quick Task",
-    description:
-      "An app for quick task organization and tracking, ensuring high productivity.",
+    description: "An app for quick task organization and tracking, ensuring high productivity.",
     tags: ["Task Organization", "Quick Tasks", "Efficiency"],
     category: "enterprise",
   },
@@ -1806,8 +1807,7 @@ export const caseStudyData = [
     id: 15,
     image: "/images/FuelPro.png",
     title: "Meeting Planner",
-    description:
-      "A meeting scheduling app that optimizes team calendars and time slots.",
+    description: "A meeting scheduling app that optimizes team calendars and time slots.",
     tags: ["Scheduling", "Meetings", "Team Coordination"],
     category: "enterprise",
   },
@@ -1815,8 +1815,7 @@ export const caseStudyData = [
     id: 16,
     image: "/images/FuelPro.png",
     title: "Team Organizer",
-    description:
-      "An app that organizes team tasks, schedules, and milestones to improve workflow.",
+    description: "An app that organizes team tasks, schedules, and milestones to improve workflow.",
     tags: ["Team Management", "Task Scheduling", "Team Collaboration"],
     category: "enterprise",
   },
@@ -1824,8 +1823,7 @@ export const caseStudyData = [
     id: 17,
     image: "/images/FuelPro.png",
     title: "Project Manager",
-    description:
-      "A project management tool to plan, organize, and execute projects effectively.",
+    description: "A project management tool to plan, organize, and execute projects effectively.",
     tags: ["Project Management", "Planning", "Execution"],
     category: "enterprise",
   },
@@ -1833,8 +1831,7 @@ export const caseStudyData = [
     id: 18,
     image: "/images/FuelPro.png",
     title: "Sync Pro",
-    description:
-      "A synchronization tool for teams to coordinate tasks and share updates in real-time.",
+    description: "A synchronization tool for teams to coordinate tasks and share updates in real-time.",
     tags: ["Syncing", "Collaboration", "Real-time"],
     category: "enterprise",
   },
@@ -1842,8 +1839,7 @@ export const caseStudyData = [
     id: 19,
     image: "/images/FuelPro.png",
     title: "Task Genie",
-    description:
-      "A magical task manager that adapts to your needs and keeps you on track.",
+    description: "A magical task manager that adapts to your needs and keeps you on track.",
     tags: ["Task Management", "Productivity", "Adaptability"],
     category: "enterprise",
   },
@@ -1851,8 +1847,7 @@ export const caseStudyData = [
     id: 20,
     image: "/images/FuelPro.png",
     title: "Time Master",
-    description:
-      "A time management tool that tracks, analyzes, and improves your time usage.",
+    description: "A time management tool that tracks, analyzes, and improves your time usage.",
     tags: ["Time Management", "Analytics", "Productivity"],
     category: "enterprise",
   },
@@ -1860,8 +1855,7 @@ export const caseStudyData = [
     id: 21,
     image: "/images/FuelPro.png",
     title: "Team Vision",
-    description:
-      "A strategic planning app for teams to align on goals, timelines, and progress.",
+    description: "A strategic planning app for teams to align on goals, timelines, and progress.",
     tags: ["Strategic Planning", "Team Alignment", "Goal Setting"],
     category: "enterprise",
   },
@@ -1869,8 +1863,7 @@ export const caseStudyData = [
     id: 22,
     image: "/images/FuelPro.png",
     title: "Focus Pro",
-    description:
-      "A focused environment app that helps you stay on task and avoid distractions.",
+    description: "A focused environment app that helps you stay on task and avoid distractions.",
     tags: ["Focus", "Productivity", "Distraction-Free"],
     category: "technology company",
   },
@@ -1878,8 +1871,7 @@ export const caseStudyData = [
     id: 23,
     image: "/images/FuelPro.png",
     title: "Task Hub",
-    description:
-      "A hub for organizing and managing all your tasks, deadlines, and projects.",
+    description: "A hub for organizing and managing all your tasks, deadlines, and projects.",
     tags: ["Task Management", "Organization", "Deadline Tracking"],
     category: "enterprise",
   },
@@ -1887,8 +1879,7 @@ export const caseStudyData = [
     id: 24,
     image: "/images/FuelPro.png",
     title: "Work Force",
-    description:
-      "A workforce management app designed for teams to track work hours and productivity.",
+    description: "A workforce management app designed for teams to track work hours and productivity.",
     tags: ["Workforce Management", "Time Tracking", "Productivity"],
     category: "enterprise",
   },
@@ -1902,13 +1893,7 @@ export const projectSliderData = [
       "Effective marketing materials are key to capturing attention. We design assets that reflect your brand while drawing your audience in with compelling visuals.",
     image:
       "https://cdn.prod.website-files.com/643f7373d3f6653157617339/66e2f5e167d7e3c31600a32a_Marketing%20image-p-800.png",
-    tags: [
-      "Digital ads",
-      "Marketing materials",
-      "Email templates",
-      "Motion graphics",
-      "Social media design",
-    ],
+    tags: ["Digital ads", "Marketing materials", "Email templates", "Motion graphics", "Social media design"],
   },
   {
     title: "Marketing Material Design",
@@ -1916,13 +1901,7 @@ export const projectSliderData = [
       "Effective marketing materials are key to capturing attention. We design assets that reflect your brand while drawing your audience in with compelling visuals.",
     image:
       "https://cdn.prod.website-files.com/643f7373d3f6653157617339/66e2f5e167d7e3c31600a32a_Marketing%20image-p-800.png",
-    tags: [
-      "Digital ads",
-      "Marketing materials",
-      "Email templates",
-      "Motion graphics",
-      "Social media design",
-    ],
+    tags: ["Digital ads", "Marketing materials", "Email templates", "Motion graphics", "Social media design"],
   },
   {
     title: "Marketing Material Design",
@@ -1930,13 +1909,7 @@ export const projectSliderData = [
       "Effective marketing materials are key to capturing attention. We design assets that reflect your brand while drawing your audience in with compelling visuals.",
     image:
       "https://cdn.prod.website-files.com/643f7373d3f6653157617339/66e2f5e167d7e3c31600a32a_Marketing%20image-p-800.png",
-    tags: [
-      "Digital ads",
-      "Marketing materials",
-      "Email templates",
-      "Motion graphics",
-      "Social media design",
-    ],
+    tags: ["Digital ads", "Marketing materials", "Email templates", "Motion graphics", "Social media design"],
   },
   {
     title: "Marketing Material Design",
@@ -1944,17 +1917,11 @@ export const projectSliderData = [
       "Effective marketing materials are key to capturing attention. We design assets that reflect your brand while drawing your audience in with compelling visuals.",
     image:
       "https://cdn.prod.website-files.com/643f7373d3f6653157617339/66e2f5e167d7e3c31600a32a_Marketing%20image-p-800.png",
-    tags: [
-      "Digital ads",
-      "Marketing materials",
-      "Email templates",
-      "Motion graphics",
-      "Social media design",
-    ],
+    tags: ["Digital ads", "Marketing materials", "Email templates", "Motion graphics", "Social media design"],
   },
 ];
 
-// contact us keypoint 
+// contact us keypoint
 export const contactUsKeyPoints = [
   {
     id: 1,
@@ -1963,20 +1930,17 @@ export const contactUsKeyPoints = [
   },
   {
     id: 2,
-    title:
-      "A solution advisor will analyze your requirements and provide a response within 3 business days.",
+    title: "A solution advisor will analyze your requirements and provide a response within 3 business days.",
     icon: "fa-solid fa-user",
   },
   {
     id: 3,
-    title:
-      "If required, a mutual NDA can be arranged within 1-2 business days to ensure confidentiality.",
+    title: "If required, a mutual NDA can be arranged within 1-2 business days to ensure confidentiality.",
     icon: "fa-solid fa-handshake-angle",
   },
   {
     id: 4,
-    title:
-      "Project estimates or recommendations will be presented within 3-5 business days.",
+    title: "Project estimates or recommendations will be presented within 3-5 business days.",
     icon: "fa-regular fa-square-check",
   },
 ];
@@ -2023,8 +1987,7 @@ export const serviceOverviewData = [
 
   {
     title: "Flexible Team Management",
-    description:
-      "Easily scale your team based on project demands for short-term or long-term support.",
+    description: "Easily scale your team based on project demands for short-term or long-term support.",
     icon: {
       path: "M28 12.834C30.1659 12.834 32.2432 13.6944 33.7747 15.2259C35.3063 16.7575 36.1667 18.8347 36.1667 21.0007C36.1667 23.1666 35.3063 25.2438 33.7747 26.7754C32.2432 28.3069 30.1659 29.1673 28 29.1673C25.8341 29.1673 23.7568 28.3069 22.2253 26.7754C20.6937 25.2438 19.8333 23.1666 19.8333 21.0007C19.8333 18.8347 20.6937 16.7575 22.2253 15.2259C23.7568 13.6944 25.8341 12.834 28 12.834ZM11.6667 18.6673C12.9733 18.6673 14.1867 19.0173 15.2367 19.6473C14.8867 22.984 15.8667 26.2973 17.8733 28.8873C16.7067 31.1273 14.3733 32.6673 11.6667 32.6673C9.81015 32.6673 8.02967 31.9298 6.71692 30.6171C5.40416 29.3043 4.66667 27.5238 4.66667 25.6673C4.66667 23.8108 5.40416 22.0303 6.71692 20.7176C8.02967 19.4048 9.81015 18.6673 11.6667 18.6673ZM44.3333 18.6673C46.1898 18.6673 47.9703 19.4048 49.2831 20.7176C50.5958 22.0303 51.3333 23.8108 51.3333 25.6673C51.3333 27.5238 50.5958 29.3043 49.2831 30.6171C47.9703 31.9298 46.1898 32.6673 44.3333 32.6673C41.6267 32.6673 39.2933 31.1273 38.1267 28.8873C40.1333 26.2973 41.1133 22.984 40.7633 19.6473C41.8133 19.0173 43.0267 18.6673 44.3333 18.6673ZM12.8333 42.584C12.8333 37.754 19.6233 33.834 28 33.834C36.3767 33.834 43.1667 37.754 43.1667 42.584V46.6673H12.8333V42.584ZM0 46.6673V43.1673C0 39.924 4.41 37.194 10.3833 36.4007C9.00667 37.9873 8.16667 40.1807 8.16667 42.584V46.6673H0ZM56 46.6673H47.8333V42.584C47.8333 40.1807 46.9933 37.9873 45.6167 36.4007C51.59 37.194 56 39.924 56 43.1673V46.6673Z",
       fill: "#3B82F6",
@@ -2048,26 +2011,16 @@ export const serviceHighlightsData = [
     id: 1,
     category: "Speed",
     title: "High Velocity Product Development",
-    description:
-      "Accelerate time-to-market with our specialized offshore IT experts.",
-    features: [
-      "Rapid product development",
-      "Cost-effective scaling",
-      "Time zone advantage",
-    ],
+    description: "Accelerate time-to-market with our specialized offshore IT experts.",
+    features: ["Rapid product development", "Cost-effective scaling", "Time zone advantage"],
     backgroundImage: "https://i.ibb.co.com/DLFqKr5/Rectangle-3841.png",
   },
   {
     id: 2,
     category: "Expertise",
     title: "Access to Specialized IT Experts",
-    description:
-      "Leverage top-tier talent for niche and challenging tech projects.",
-    features: [
-      "Highly skilled offshore teams",
-      "Expertise in emerging tech",
-      "Global resource availability",
-    ],
+    description: "Leverage top-tier talent for niche and challenging tech projects.",
+    features: ["Highly skilled offshore teams", "Expertise in emerging tech", "Global resource availability"],
     backgroundImage: "https://i.ibb.co.com/DLFqKr5/Rectangle-3842.png",
   },
   {
@@ -2075,19 +2028,14 @@ export const serviceHighlightsData = [
     category: "Flexibility",
     title: "Adaptable Offshore Teams",
     description: "Scale your team as per your project's dynamic needs.",
-    features: [
-      "On-demand scaling",
-      "Diverse tech capabilities",
-      "Customized solutions",
-    ],
+    features: ["On-demand scaling", "Diverse tech capabilities", "Customized solutions"],
     backgroundImage: "https://i.ibb.co.com/DLFqKr5/Rectangle-3843.png",
   },
   {
     id: 4,
     category: "Control",
     title: "Organizations Requiring Managed Offshore IT Experts",
-    description:
-      "Maintain control over development while we handle administrative tasks.",
+    description: "Maintain control over development while we handle administrative tasks.",
     features: [
       "Full control over development",
       "Reduced administrative overhead",
@@ -2203,15 +2151,14 @@ export const productBannerData = {
 //   },
 // ];
 
-// product card data 
+// product card data
 export const ProductCardsData = [
   {
     id: 1,
     productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
     productTitle: "Cloud ClockIn",
     productLinkName: "cloud-clockIn",
-    ProductDetails:
-      "A digital system for tracking employee attendance and work hours in real time.",
+    ProductDetails: "A digital system for tracking employee attendance and work hours in real time.",
     tags: ["Attendance Management", "Real-Time Tracking", "SaaS"],
     version: "1.2.0",
     releaseDate: "2023-11-15",
@@ -2237,11 +2184,7 @@ export const ProductCardsData = [
         status: "inactive",
       },
     ],
-    features: [
-      "Real-time Employee Monitoring",
-      "Automatic Time Logging",
-      "Customizable Attendance Reports",
-    ],
+    features: ["Real-time Employee Monitoring", "Automatic Time Logging", "Customizable Attendance Reports"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
     technicalSpecifications: {
       technologyStack: [
@@ -2261,8 +2204,7 @@ export const ProductCardsData = [
     productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
     productTitle: "Time2Task",
     productLinkName: "time2Task",
-    ProductDetails:
-      "A task management tool to plan, assign, and track project tasks efficiently.",
+    ProductDetails: "A task management tool to plan, assign, and track project tasks efficiently.",
     tags: ["Project Management", "Real-Time Tracking", "SaaS"],
     version: "2.0.1",
     releaseDate: "2023-12-05",
@@ -2288,11 +2230,7 @@ export const ProductCardsData = [
         status: "inactive",
       },
     ],
-    features: [
-      "Task Prioritization",
-      "Real-Time Collaboration",
-      "Customizable Dashboards",
-    ],
+    features: ["Task Prioritization", "Real-Time Collaboration", "Customizable Dashboards"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
     technicalSpecifications: {
       technologyStack: [
@@ -2312,8 +2250,7 @@ export const ProductCardsData = [
     productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
     productTitle: "Flyte Queue",
     productLinkName: "flyte-queue",
-    ProductDetails:
-      "A digital queue management system to streamline customer flow and reduce waiting times.",
+    ProductDetails: "A digital queue management system to streamline customer flow and reduce waiting times.",
     tags: ["Queue Management", "Real-Time Tracking", "SaaS"],
     version: "1.5.0",
     releaseDate: "2023-09-18",
@@ -2339,11 +2276,7 @@ export const ProductCardsData = [
         status: "inactive",
       },
     ],
-    features: [
-      "Customer Flow Optimization",
-      "Real-Time Queue Updates",
-      "Customizable Queue Display",
-    ],
+    features: ["Customer Flow Optimization", "Real-Time Queue Updates", "Customizable Queue Display"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
     technicalSpecifications: {
       technologyStack: [
@@ -2390,11 +2323,7 @@ export const ProductCardsData = [
         status: "inactive",
       },
     ],
-    features: [
-      "Integrated Business Modules",
-      "Real-Time Financial Tracking",
-      "Customizable Reporting Tools",
-    ],
+    features: ["Integrated Business Modules", "Real-Time Financial Tracking", "Customizable Reporting Tools"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
     technicalSpecifications: {
       technologyStack: [
@@ -2441,11 +2370,7 @@ export const ProductCardsData = [
         status: "inactive",
       },
     ],
-    features: [
-      "Lead Management",
-      "Customer Interaction Tracking",
-      "Sales Pipeline Customization",
-    ],
+    features: ["Lead Management", "Customer Interaction Tracking", "Sales Pipeline Customization"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
     technicalSpecifications: {
       technologyStack: [
@@ -2492,11 +2417,7 @@ export const ProductCardsData = [
         status: "inactive",
       },
     ],
-    features: [
-      "Sales Transactions Management",
-      "Inventory Tracking",
-      "Customer Insights",
-    ],
+    features: ["Sales Transactions Management", "Inventory Tracking", "Customer Insights"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
     technicalSpecifications: {
       technologyStack: [
@@ -2516,8 +2437,7 @@ export const ProductCardsData = [
     productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
     productTitle: "inventory-management-system",
     productLinkName: "inventory Management System",
-    ProductDetails:
-      "A solution for tracking, managing, and optimizing stock levels across locations.",
+    ProductDetails: "A solution for tracking, managing, and optimizing stock levels across locations.",
     tags: ["Stock Control", "Real-Time Tracking", "SaaS"],
     version: "1.0.0",
     releaseDate: "2023-05-10",
@@ -2543,11 +2463,7 @@ export const ProductCardsData = [
         status: "inactive",
       },
     ],
-    features: [
-      "Stock Level Monitoring",
-      "Real-Time Updates",
-      "Customizable Alerts",
-    ],
+    features: ["Stock Level Monitoring", "Real-Time Updates", "Customizable Alerts"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
     technicalSpecifications: {
       technologyStack: [
@@ -2567,13 +2483,8 @@ export const ProductCardsData = [
     productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
     productTitle: "Board Meeting Management",
     productLinkName: "board-meeting-management",
-    ProductDetails:
-      "A system to organize, schedule, and document board meetings effectively.",
-    tags: [
-      "Corporate Governance",
-      "Real-Time Tracking",
-      "Single Page Application",
-    ],
+    ProductDetails: "A system to organize, schedule, and document board meetings effectively.",
+    tags: ["Corporate Governance", "Real-Time Tracking", "Single Page Application"],
     version: "4.1.0",
     releaseDate: "2023-06-25",
     images: [
@@ -2598,11 +2509,7 @@ export const ProductCardsData = [
         status: "inactive",
       },
     ],
-    features: [
-      "Automated Meeting Scheduling",
-      "Minutes of Meeting Generation",
-      "Action Item Tracking",
-    ],
+    features: ["Automated Meeting Scheduling", "Minutes of Meeting Generation", "Action Item Tracking"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
     technicalSpecifications: {
       technologyStack: [
@@ -2649,11 +2556,7 @@ export const ProductCardsData = [
         status: "inactive",
       },
     ],
-    features: [
-      "Stock Level Monitoring",
-      "Real-Time Reporting",
-      "Multiple Location Support",
-    ],
+    features: ["Stock Level Monitoring", "Real-Time Reporting", "Multiple Location Support"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
     technicalSpecifications: {
       technologyStack: [
@@ -2673,8 +2576,7 @@ export const ProductCardsData = [
     productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
     productTitle: "Expense Tracker",
     productLinkName: "expense-tracker",
-    ProductDetails:
-      "A tool to track and categorize company expenses for better financial management.",
+    ProductDetails: "A tool to track and categorize company expenses for better financial management.",
     tags: ["Expense Management", "Real-Time Reporting", "SaaS"],
     version: "1.0.1",
     releaseDate: "2023-01-25",
@@ -2700,11 +2602,7 @@ export const ProductCardsData = [
         status: "inactive",
       },
     ],
-    features: [
-      "Categorize Expenses",
-      "Real-Time Monitoring",
-      "Reports Generation",
-    ],
+    features: ["Categorize Expenses", "Real-Time Monitoring", "Reports Generation"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
     technicalSpecifications: {
       technologyStack: [
@@ -2724,8 +2622,7 @@ export const ProductCardsData = [
     productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
     productTitle: "Employee Payroll",
     productLinkName: "employee-payroll",
-    ProductDetails:
-      "A comprehensive system to manage employee payroll and tax calculations.",
+    ProductDetails: "A comprehensive system to manage employee payroll and tax calculations.",
     tags: ["Payroll Management", "Tax Calculations", "SaaS"],
     version: "2.0.0",
     releaseDate: "2023-02-12",
@@ -2751,11 +2648,7 @@ export const ProductCardsData = [
         status: "inactive",
       },
     ],
-    features: [
-      "Automated Payroll Processing",
-      "Tax Calculation and Filing",
-      "Customizable Payslips",
-    ],
+    features: ["Automated Payroll Processing", "Tax Calculation and Filing", "Customizable Payslips"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
     technicalSpecifications: {
       technologyStack: [
@@ -3234,8 +3127,7 @@ export const IndustriesCardsData = [
     industryName: "Medical & Healthcare",
     industryDescription:
       "Enhance healthcare delivery with advanced technology solutions. From telemedicine to patient management systems, improve patient care and operational efficiency.",
-    industryReview:
-      "Their healthcare solutions improved our patient care and streamlined our operations.",
+    industryReview: "Their healthcare solutions improved our patient care and streamlined our operations.",
     reviewerName: "Emma Brown",
     reviewerImage: "https://via.placeholder.com/40x40",
     reviewerPosition: "Healthcare Administrator",
@@ -3292,8 +3184,7 @@ export const IndustriesCardsData = [
     industryName: "Technology Company",
     industryDescription:
       "Drive innovation with cutting-edge technology solutions. From software development to cloud computing, empower your tech company to achieve its goals.",
-    industryReview:
-      "Their technology solutions helped us innovate and stay ahead of the competition.",
+    industryReview: "Their technology solutions helped us innovate and stay ahead of the competition.",
     reviewerName: "Chris White",
     reviewerImage: "https://via.placeholder.com/40x40",
     reviewerPosition: "CTO",
@@ -3415,32 +3306,28 @@ export const successStories = [
   },
   {
     companyName: "Google",
-    description:
-      "Their innovative solutions and expertise helped us achieve our goals efficiently.",
+    description: "Their innovative solutions and expertise helped us achieve our goals efficiently.",
     image: "https://via.placeholder.com/40x40",
     AuthorName: "Jane Smith",
     AuthorTag: "CTO",
   },
   {
     companyName: "Microsoft",
-    description:
-      "The team was highly professional and delivered exceptional results on time.",
+    description: "The team was highly professional and delivered exceptional results on time.",
     image: "https://via.placeholder.com/40x40",
     AuthorName: "Michael Johnson",
     AuthorTag: "Project Manager",
   },
   {
     companyName: "Amazon",
-    description:
-      "Their ability to understand our needs and provide tailored solutions was remarkable.",
+    description: "Their ability to understand our needs and provide tailored solutions was remarkable.",
     image: "https://via.placeholder.com/40x40",
     AuthorName: "Emily Davis",
     AuthorTag: "Operations Manager",
   },
   {
     companyName: "Apple",
-    description:
-      "The collaboration was seamless, and the quality of work exceeded our expectations.",
+    description: "The collaboration was seamless, and the quality of work exceeded our expectations.",
     image: "https://via.placeholder.com/40x40",
     AuthorName: "David Wilson",
     AuthorTag: "Head of Development",
@@ -3465,17 +3352,12 @@ export const servicesData = [
     title: "Empowering businesses with reliable software solutions",
     description:
       "Develop software solutions that are reliable, scalable, and secure, designed to enhance business efficiency, streamline processes, and support growth across various industries.",
-    features: [
-      "Inventory Management System",
-      "CRM System",
-      "Business Intelligence Tool",
-    ],
+    features: ["Inventory Management System", "CRM System", "Business Intelligence Tool"],
   },
   {
     id: 2,
     subTitle: "Team Extension",
-    title:
-      "Expand your team with skilled experts to drive growth and innovation",
+    title: "Expand your team with skilled experts to drive growth and innovation",
     description:
       "Team Extension helps you scale quickly by augmenting your in-house team with specialized talent, offering flexibility to meet project demands without the overhead of full-time hires.",
     features: [
@@ -3490,11 +3372,7 @@ export const servicesData = [
     title: "Empowering businesses with reliable mobile solutions",
     description:
       "Develop mobile apps for Android, iOS, and cross-platform environments that are intuitive, scalable, and high-performing, helping businesses reach more customers on mobile platforms.",
-    features: [
-      "E-Commerce Mobile App",
-      "Healthcare Mobile App",
-      "Social Networking App",
-    ],
+    features: ["E-Commerce Mobile App", "Healthcare Mobile App", "Social Networking App"],
   },
   {
     id: 4,
@@ -3502,19 +3380,14 @@ export const servicesData = [
     title: "Empowering startups to bring their ideas to life quickly",
     description:
       "Build a minimum viable product (MVP) to test and validate your idea with real users, ensuring faster time to market and cost-effective development.",
-    features: [
-      "Startup Product Launch",
-      "Subscription Service",
-      "On-Demand Service App",
-    ],
+    features: ["Startup Product Launch", "Subscription Service", "On-Demand Service App"],
   },
 ];
 
 // about us data
 export const aboutBannerData = {
   title: "About Us",
-  description:
-    "Empowering Businesses with Innovative Tech Solutions and Expert Teams.",
+  description: "Empowering Businesses with Innovative Tech Solutions and Expert Teams.",
   img: "https://i.ibb.co.com/KVwS1VN/about-banner-image.png",
   altText: "about us banner",
 };
@@ -3606,20 +3479,17 @@ export const workCultureData = {
   cultures: [
     {
       title: "Diversity",
-      description:
-        "We hire people from diverse backgrounds to foster innovation and creativity.",
+      description: "We hire people from diverse backgrounds to foster innovation and creativity.",
       icon: "fa-earth-americas",
     },
     {
       title: "Collaboration",
-      description:
-        "We believe in teamwork and open communication to achieve great results.",
+      description: "We believe in teamwork and open communication to achieve great results.",
       icon: "fa-trophy",
     },
     {
       title: "Integrity",
-      description:
-        "Honesty and transparency are at the heart of everything we do.",
+      description: "Honesty and transparency are at the heart of everything we do.",
       icon: "fa-shield-alt",
     },
     {
@@ -3636,22 +3506,19 @@ export const processData = [
     serialNo: "01",
     icon: "fa-upload",
     stepName: "Application",
-    description:
-      "Submit your application and provide the required details to kickstart the process.",
+    description: "Submit your application and provide the required details to kickstart the process.",
   },
   {
     serialNo: "02",
     icon: "fa-filter",
     stepName: "Screening",
-    description:
-      "Our team reviews your application to ensure it meets the requirements.",
+    description: "Our team reviews your application to ensure it meets the requirements.",
   },
   {
     serialNo: "03",
     icon: "fa-microphone",
     stepName: "Interview",
-    description:
-      "Participate in an interview to discuss your skills and suitability for the role.",
+    description: "Participate in an interview to discuss your skills and suitability for the role.",
   },
   {
     serialNo: "04",
@@ -3666,8 +3533,7 @@ export const opportunities = [
   {
     title: "Full Stack Developer",
     company: "Flyte Solutions",
-    description:
-      "Build, maintain, and enhance scalable web applications in a fast-paced environment.",
+    description: "Build, maintain, and enhance scalable web applications in a fast-paced environment.",
     location: "Onsite (Dhaka, Bangladesh)",
     jobType: "Full time",
     jobLink: "/job-details/1",
@@ -3675,8 +3541,7 @@ export const opportunities = [
   {
     title: "Backend Developer",
     company: "Flyte Solutions",
-    description:
-      "Work on developing and maintaining the backend of web applications.",
+    description: "Work on developing and maintaining the backend of web applications.",
     location: "Remote",
     jobType: "Full time",
     jobLink: "/job-details/2",
@@ -3684,8 +3549,7 @@ export const opportunities = [
   {
     title: "Frontend Developer",
     company: "Flyte Solutions",
-    description:
-      "Design and implement user-friendly frontends for web applications.",
+    description: "Design and implement user-friendly frontends for web applications.",
     location: "Onsite (Dhaka, Bangladesh)",
     jobType: "Part time",
     jobLink: "/job-details/3",
@@ -3693,8 +3557,7 @@ export const opportunities = [
   {
     title: "UI/UX Designer",
     company: "Flyte Solutions",
-    description:
-      "Create engaging and intuitive user interfaces and experiences.",
+    description: "Create engaging and intuitive user interfaces and experiences.",
     location: "Onsite (Dhaka, Bangladesh)",
     jobType: "Freelance",
     jobLink: "/job-details/4",
@@ -3710,8 +3573,7 @@ export const opportunities = [
   {
     title: "Data Scientist",
     company: "Flyte Solutions",
-    description:
-      "Analyze and interpret complex data to help make informed decisions.",
+    description: "Analyze and interpret complex data to help make informed decisions.",
     location: "Onsite (Dhaka, Bangladesh)",
     jobType: "Full time",
     jobLink: "/job-details/6",
