@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaArrowRight, FaQuoteRight } from "react-icons/fa";
 
 type IndustriesCardsData = {
@@ -26,8 +26,66 @@ type IndustriesCardsDataProps = {
 const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({
   IndustriesCardsData,
 }) => {
+  const [isFixed, setIsFixed] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const firstNav = document.querySelector(".header");
+  const firstNavHeight = (firstNav as HTMLElement)?.offsetHeight || 0;
+
+  console.log(isFixed)
+  useEffect(() => {
+    const industryNav = document.querySelector(".industry-nav");
+    const firstNav = document.querySelector(".header");
+
+    if (!industryNav || !firstNav) return;
+
+    const firstNavHeight = (firstNav as HTMLElement)?.offsetHeight || 0;
+
+    // Create IntersectionObserver to detect when header touches the industry-nav
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // If the .industry-nav is fully inside the viewport and header has touched it, set isFixed
+        if (!entry.isIntersecting) {
+          setIsFixed(true); // Make navbar fixed
+        } else {
+          setIsFixed(false); // Reset navbar to sticky
+        }
+      },
+      {
+        threshold: 1.0, // Fully in view
+        rootMargin: `-${firstNavHeight}px`, // Trigger when the header's bottom reaches the industry-nav
+      }
+    );
+
+    observer.observe(industryNav);
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        // Scrolling down, keep the navbar fixed
+        setIsFixed(true);
+      } else {
+        // Scrolling up, return the navbar to sticky
+        setIsFixed(false);
+      }
+
+      setLastScrollY(currentScrollY); // Update last scroll position
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [activeIndex, setActiveIndex] = useState(0);
+
   const scrollToSection = (index: number) => {
     setActiveIndex(index);
     sectionRefs.current[index]?.scrollIntoView({
@@ -35,11 +93,17 @@ const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({
       block: "start",
     });
   };
+
   return (
     <div className="min-h-screen lg:px-0">
-      {/* industryNames sticky navbar */}
-      <div className=" nav2">
-        <div className=" w-full flex justify-start lg:justify-center  items-start overflow-x-auto gap-[16px] border-b-[1px] py-4 px-2 lg:px-0 scrollbar-hide">
+      {/* Industry names sticky navbar */}
+      <div
+        className={`industry-nav ${
+          isFixed ? "fixedd top-0 bg-white" : "stickyy bg-white"
+        }`}
+        style={isFixed ? { marginTop: `${firstNavHeight}px` } : {}}
+      >
+        <div className="w-full flex justify-start lg:justify-center items-start overflow-x-auto gap-[16px] border-b-[1px] py-4 px-2 lg:px-0 scrollbar-hide">
           {IndustriesCardsData.map((data, index) => (
             <button
               key={index}
@@ -47,7 +111,7 @@ const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({
               className={`w-fit text-xs lg:text-sm font-semibold uppercase border-b-[2px] ${
                 activeIndex === index
                   ? "text-[#5856D6] border-[#5856D6]"
-                  : "text-[#151411] border-[#F7F8FD] hover:text-[#5856D6] hover:border-[#5856D6]"
+                  : "text-[#151411] border-[#Fff] hover:text-[#5856D6] hover:border-[#5856D6]"
               }`}
             >
               {data.industryName}
@@ -185,7 +249,7 @@ const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({
 
                   <div className="w-full flex justify-start items-center">
                     <button className="h-10 px-6 py-2.5 bg-white rounded-md shadow-[0px_0px_10px_10px_rgba(230,230,230,0.25)] border border-[#dddddd] justify-start items-start gap-2.5 inline-flex overflow-hidden">
-                      <p className="text-[#191919] text-sm font-semibold font-['DM Sans']">
+                      <p className="tex</button>t-[#191919] text-sm font-semibold font-['DM Sans']">
                         Book A Consultation
                       </p>
                     </button>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 type BannerProps = {
@@ -64,12 +65,12 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
         </div>
 
         <div className=" flex flex-col lg:flex-row gap-2">
-          <button
+          <Link href={`/schedule-consultation`}
             id="alertButton"
             className=" w-fit uppercase px-[32px] py-[12px] border border-btnColor hover:border-pink-500 bg-btnColor hover:bg-pink-500 text-white rounded-md"
           >
             Book A Consultation
-          </button>
+          </Link>
         </div>
       </div>
     </div>

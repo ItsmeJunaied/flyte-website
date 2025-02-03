@@ -14,7 +14,9 @@ type Article = {
 };
 
 type Card = {
+  id: number;
   title: string;
+  titleName: string;
   image?: string;
   description: string;
   keywords: string[];
@@ -136,7 +138,13 @@ const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
                   </div>
                 </div>
                 <div className="self-stretch text-[#6c757d] text-xs font-normal leading-[17.96px]">
-                  {card.description}
+                  {
+                    card.description
+                      .split("<section>")[1]
+                      .split("</section>")[0]
+                      .split("<p>")[1]
+                      .split("</p>")[0]
+                  }
                 </div>
                 <div className="flex-col justify-start items-center flex">
                   <div className="svg-wrapper">
@@ -147,7 +155,7 @@ const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
                     >
                       <rect className="shape" height="60" width="320" />
                     </svg>
-                    <Link href={"news&blogs/hello"}>
+                    <Link href={`news&blogs/${card.titleName}`}>
                       <div className=" text">Read More</div>
                     </Link>
                   </div>

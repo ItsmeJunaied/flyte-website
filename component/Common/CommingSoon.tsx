@@ -66,7 +66,7 @@ const CommingSoon = () => {
                 </div>
               </div>
               <div className="w-full flex-col justify-center items-center gap-5 flex">
-                <h6 className="text-cente text-btnColorr text-emerald-400 text-base font-semibold leading-relaxed text-btnColor">
+                <h6 className="text-cente text-btnColorr text-emerald-400 text-base font-semibold leading-relaxed ">
                   Launched Date: December 01, 2024
                 </h6>
                 <div className="justify-center items-center gap-2.5 flex sm:flex-row flex-col">
@@ -77,7 +77,7 @@ const CommingSoon = () => {
                   />
                   <button className="sm:w-fit w-full px-3.5 py-2 bg-emerald-400 hover:bg-emerald-600 transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex bg-btnColor">
                     <span className="px-1.5 text-white text-sm font-medium leading-6 whitespace-nowrap">
-                      Notify Me
+                      Notify Mes
                     </span>
                   </button>
                 </div>
