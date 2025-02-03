@@ -693,6 +693,7 @@ export const blogData = {
 export const techData = {
   frontend: {
     title: "Frontend Development",
+    hireLinkName: "frontend-developer",
     description:
       "Creating responsive and dynamic user interfaces using modern frontend technologies.",
     technologies: [
@@ -762,6 +763,7 @@ export const techData = {
 
   backend: {
     title: "Backend Development",
+    hireLinkName: "backend-developer",
     description:
       "Building a robust and scalable backend that supports various features, requirements, and experiences for your users.",
     technologies: [
@@ -831,6 +833,7 @@ export const techData = {
 
   mobileDevelopment: {
     title: "Mobile Development",
+    hireLinkName: "mobile-app-developer",
     description:
       "Developing cross-platform and native mobile apps with cutting-edge frameworks.",
     technologies: [
@@ -893,8 +896,10 @@ export const techData = {
       },
     ]
   },
+  
   qualityAssurance: {
     title: "Quality Assurance",
+    hireLinkName: "qa-engineer",
     description:
       "Delivering quality applications with advanced testing and QA tools.",
     technologies: [
@@ -957,8 +962,10 @@ export const techData = {
       },
     ]
   },
+
   devOps: {
     title: "DevOps",
+    hireLinkName: "devops-engineer",
     description:
       "Streamlining development processes and infrastructure with DevOps practices and tools.",
     technologies: [
@@ -1021,8 +1028,10 @@ export const techData = {
       },
     ]
   },
+
   aiML: {
     title: "AI & ML",
+    hireLinkName: "ai-ml-developer",
     description:
       "Leveraging artificial intelligence and machine learning to build smart applications.",
     technologies: [
