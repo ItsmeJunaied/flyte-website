@@ -354,7 +354,7 @@ export const serviceData = [
       "Expand your development capabilities with dedicated teams that integrate seamlessly with your existing operations.",
     keywords: ["outsourcing", "staffing", "developers"],
     image: "/images/service1.png",
-    industryLinkName: "team-extension",
+    serviceLinkName: "team-extension",
     heroTitle: "Transform Your Business with Team Extension",
     heroSubtitle: "TEAM EXTENSION",
     heroDesctiption:
@@ -368,7 +368,7 @@ export const serviceData = [
       "Tailored software solutions that align with your business needs, ensuring seamless integration and efficiency.",
     keywords: ["solutions", "design", "apps"],
     image: "/images/service2.png",
-    industryLinkName: "custom-software-development",
+    serviceLinkName: "custom-software-development",
     heroTitle: "Transform Your Business with Custom Software Solutions",
     heroSubtitle: "CUSTOM SOFTWARE DEVELOPMENT",
     heroDesctiption:
@@ -382,7 +382,7 @@ export const serviceData = [
       "Build robust enterprise-level software to support large-scale operations, improve efficiency, and foster innovation.",
     keywords: ["scalable", "automation", "growth"],
     image: "/images/service3.png",
-    industryLinkName: "enterprise-software-development",
+    serviceLinkName: "enterprise-software-development",
     heroTitle: "Transform Your Business with Enterprise Software Development",
     heroSubtitle: "ENTERPRISE SOFTWARE DEVELOPMENT",
     heroDesctiption:
@@ -410,7 +410,7 @@ export const serviceData = [
       "Build a minimum viable product quickly to test your ideas, validate concepts, and enter the market faster.",
     keywords: ["MVP", "validation", "startup"],
     image: "/images/service6.png",
-    industryLinkName: "mvp-development",
+    serviceLinkName: "mvp-development",
     heroTitle: "Transform Your Business with MVP Development",
     heroSubtitle: "MVP DEVELOPMENT",
     heroDesctiption:

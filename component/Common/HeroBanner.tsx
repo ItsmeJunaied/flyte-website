@@ -3,12 +3,11 @@ import Subtitle from "./Subtitle";
 import Title from "./Title";
 
 type HeroBannerProps = {
-  hireLinkName: string;
-  heroSubtitle: string;
-  heroTitle: string;
-  heroDesctiption: string;
-  heroButton: string;
-  heroImage: string;
+  heroSubtitle?: string;
+  heroTitle?: string;
+  heroDesctiption?: string;
+  heroButton?: string;
+  heroImage?: string;
 };
 
 const HeroBanner: React.FC<{ bannerData: HeroBannerProps }> = ({ bannerData }) => {

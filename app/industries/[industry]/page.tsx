@@ -12,7 +12,7 @@ type PageProps = {
   params: Promise<{ industry: string }>;
 };
 
-const Industry = async ({ params }: PageProps) => {
+const page = async ({ params }: PageProps) => {
   const { industry } = await params;
   return (
     <div className="my-16 lg:my-28">
@@ -21,4 +21,4 @@ const Industry = async ({ params }: PageProps) => {
   );
 };
 
-export default Industry;
+export default page;
