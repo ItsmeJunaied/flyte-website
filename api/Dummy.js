@@ -1,5 +1,4 @@
 //navbar
-
 export const navbarData = {
   menu: [
     {
@@ -12,37 +11,37 @@ export const navbarData = {
           name: "Frontend Developers",
           icon: "fa-briefcase",
           description: "Design and develop user-friendly interfaces for web applications.",
-          path: "/hire/job-openings",
+          path: "/hire/frontend-developer",
         },
         {
           name: "Backend Developers",
           icon: "fa-user-tie",
           description: "Join us as a freelancer and work on exciting projects.",
-          path: "/hire",
+          path: "/hire/backend-developer",
         },
         {
           name: "Mobile App Developers",
           icon: "fa-mobile-alt",
           description: "Create mobile applications for iOS and Android platforms.",
-          path: "/hire/contract-roles",
+          path: "/hire/mobile-app-developer",
         },
         {
           name: "QA Engineers",
           icon: "fa-bug",
           description: "Test software applications to ensure quality and performance.",
-          path: "/hire/qa-roles",
+          path: "/hire/qa-engineer",
         },
         {
           name: "DevOps Engineers",
           icon: "fa-tools",
           description: "Streamline development processes and infrastructure with DevOps practices.",
-          path: "/hire/devops-roles",
+          path: "/hire/devops-engineer",
         },
         {
           name: "AI & ML Specialists",
           icon: "fa-robot",
           description: "Leverage AI and ML technologies to build smart applications.",
-          path: "/hire/ai-ml-roles",
+          path: "/hire/ai-ml-developer",
         },
       ],
     },
@@ -264,6 +263,7 @@ export const bannerData = {
   bannerImage: "/images/bannerImg.png",
 };
 
+// brand data 
 export const brandData = {
   title: "Trusted by top brands to deliver excellence every time",
   brands: [
@@ -347,7 +347,6 @@ export const brandData = {
 };
 
 // service
-
 export const serviceData = [
   {
     title: "Team Extension",
@@ -401,7 +400,6 @@ export const serviceData = [
 ];
 
 //products section
-
 export const productsSections = [
   {
     id: 1,
@@ -441,7 +439,6 @@ export const productsSections = [
 ];
 
 // blog and news
-
 export const blogData = {
   cards: [
     {
@@ -576,7 +573,6 @@ export const blogData = {
 };
 
 // operations techs
-
 export const techData = {
   frontend: {
     title: "Frontend Development",
@@ -611,7 +607,7 @@ export const techData = {
     heroSubtitle: "HIRE FRONTEND DEVELOPERS",
     heroDesctiption:
       "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
-    heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+    heroImage: "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
     advantages : [
       {
         icon: 'fa-code',
@@ -970,7 +966,6 @@ export const techData = {
 };
 
 // project data
-
 export const projectData = [
   {
     logo: "https://via.placeholder.com/40x40",
@@ -1018,7 +1013,6 @@ export const projectData = [
 ];
 
 //industry data
-
 export const industrydata = {
   subTitle: "Our Industries",
   sectionTitle: "Driving innovation across industries",
@@ -1533,7 +1527,6 @@ export const footerData = {
 };
 
 // case study
-
 export const caseStudyData = [
   {
     id: 1,
@@ -1730,7 +1723,6 @@ export const caseStudyData = [
 ];
 
 //project section
-
 export const projectSliderData = [
   {
     title: "Marketing Material Design",
@@ -1766,6 +1758,7 @@ export const projectSliderData = [
   },
 ];
 
+// contact us keypoint 
 export const contactUsKeyPoints = [
   {
     id: 1,
@@ -1850,7 +1843,6 @@ export const serviceOverviewData = [
 ];
 
 // service highlights Data
-
 export const serviceHighlightsData = [
   {
     id: 1,
@@ -1891,7 +1883,6 @@ export const serviceHighlightsData = [
 ];
 
 // induscried bannerData
-
 export const induscriedBannerData = {
   bgImage: "https://i.ibb.co.com/bH3K5FL/Rectangle-3843-2x.png",
   subtitle: "Explore Our Expertise Across Diverse Industries!",
@@ -1997,6 +1988,7 @@ export const productBannerData = {
 //   },
 // ];
 
+// product card data 
 export const ProductCardsData = [
   {
     id: 1,

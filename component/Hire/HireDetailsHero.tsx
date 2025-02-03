@@ -22,7 +22,7 @@ const HireDetailsHero = () => {
       <div className="w-full lg:w-[60%]">
         <img
           className="w-full max-h-[400px] object-cover rounded-2xl"
-          src="https://i.ibb.co.com/xKxpBqsk/ss.png"
+          src="https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png"
           alt=""
         />
       </div>
