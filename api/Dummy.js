@@ -354,6 +354,33 @@ export const serviceData = [
       "Expand your development capabilities with dedicated teams that integrate seamlessly with your existing operations.",
     keywords: ["outsourcing", "staffing", "developers"],
     image: "/images/service1.png",
+    features: [
+      {
+        icon: "fas fa-donate ",
+        title: "Fundraising",
+        description: "Raising funds to support social causes.",
+      },
+      {
+        icon: "fas fa-globe-americas ",
+        title: "Global Outreach",
+        description: "Expanding social impact globally.",
+      },
+      {
+        icon: "fas fa-users ",
+        title: "Community Support",
+        description: "Building and supporting local communities.",
+      },
+      {
+        icon: "fas fa-hands-helping ",
+        title: "Volunteer Coordination",
+        description: "Engaging volunteers for community projects.",
+      },
+      {
+        icon: "fas fa-handshake ",
+        title: "Partnerships",
+        description: "Creating strategic partnerships for social good.",
+      },
+    ],
     serviceLinkName: "team-extension",
     heroTitle: "Transform Your Business with Team Extension",
     heroSubtitle: "TEAM EXTENSION",
@@ -368,6 +395,33 @@ export const serviceData = [
       "Tailored software solutions that align with your business needs, ensuring seamless integration and efficiency.",
     keywords: ["solutions", "design", "apps"],
     image: "/images/service2.png",
+    features: [
+      {
+        icon: "fas fa-video ",
+        title: "Film Production",
+        description: "Producing high-quality films and content.",
+      },
+      {
+        icon: "fas fa-headphones-alt ",
+        title: "Music Production",
+        description: "Creating and producing original music.",
+      },
+      {
+        icon: "fas fa-camera ",
+        title: "Media Coverage",
+        description: "Providing media coverage and advertising services.",
+      },
+      {
+        icon: "fas fa-tv ",
+        title: "Broadcasting",
+        description: "Delivering media content across various platforms.",
+      },
+      {
+        icon: "fas fa-play-circle ",
+        title: "Streaming Services",
+        description: "Offering on-demand content to audiences.",
+      },
+    ],
     serviceLinkName: "custom-software-development",
     heroTitle: "Transform Your Business with Custom Software Solutions",
     heroSubtitle: "CUSTOM SOFTWARE DEVELOPMENT",
@@ -382,6 +436,33 @@ export const serviceData = [
       "Build robust enterprise-level software to support large-scale operations, improve efficiency, and foster innovation.",
     keywords: ["scalable", "automation", "growth"],
     image: "/images/service3.png",
+    features: [
+      {
+        icon: "fas fa-code ",
+        title: "Software Development",
+        description: "Building custom software solutions for businesses.",
+      },
+      {
+        icon: "fas fa-cloud ",
+        title: "Cloud Solutions",
+        description: "Enabling businesses with scalable cloud computing.",
+      },
+      {
+        icon: "fas fa-digital-tachograph ",
+        title: "Tech Consulting",
+        description: "Providing expert guidance for technology adoption.",
+      },
+      {
+        icon: "fas fa-mobile-alt ",
+        title: "Mobile Development",
+        description: "Creating mobile applications for various platforms.",
+      },
+      {
+        icon: "fas fa-network-wired ",
+        title: "IT Infrastructure",
+        description: "Designing and implementing tech infrastructures.",
+      },
+    ],
     serviceLinkName: "enterprise-software-development",
     heroTitle: "Transform Your Business with Enterprise Software Development",
     heroSubtitle: "ENTERPRISE SOFTWARE DEVELOPMENT",
@@ -396,6 +477,33 @@ export const serviceData = [
       "Design and develop mobile applications for iOS and Android platforms, enhancing user experience and engagement.",
     keywords: ["iOS", "Android", "apps"],
     image: "/images/service4.svg",
+    features: [
+      {
+        icon: "fas fa-stethoscope ",
+        title: "Telemedicine Solutions",
+        description: "Providing remote healthcare services.",
+      },
+      {
+        icon: "fas fa-pills ",
+        title: "Pharmaceutical Services",
+        description: "Offering medical and pharmaceutical support.",
+      },
+      {
+        icon: "fas fa-ambulance ",
+        title: "Emergency Care",
+        description: "Ensuring fast and efficient emergency services.",
+      },
+      {
+        icon: "fas fa-heart ",
+        title: "Patient Care",
+        description: "Improving patient health and well-being.",
+      },
+      {
+        icon: "fas fa-chart-medical ",
+        title: "Health Data Analytics",
+        description: "Using data to enhance healthcare delivery.",
+      },
+    ],
   },
   {
     title: "QA & Testing",
@@ -403,6 +511,33 @@ export const serviceData = [
       "Ensure software quality with comprehensive testing services, from functional to performance testing.",
     keywords: ["testing", "automation", "bugs"],
     image: "/images/service5.png",
+    features: [
+      {
+        icon: "fas fa-building ",
+        title: "Property Development",
+        description: "Developing and managing residential and commercial properties.",
+      },
+      {
+        icon: "fas fa-search ",
+        title: "Market Research",
+        description: "Analyzing market trends and property values.",
+      },
+      {
+        icon: "fas fa-handshake ",
+        title: "Investment Opportunities",
+        description: "Connecting investors with profitable properties.",
+      },
+      {
+        icon: "fas fa-cogs ",
+        title: "Property Management",
+        description: "Managing real estate properties efficiently.",
+      },
+      {
+        icon: "fas fa-chart-line ",
+        title: "Real Estate Analytics",
+        description: "Providing data-driven insights for real estate decisions.",
+      },
+    ],
   },
   {
     title: "MVP Development",
@@ -410,6 +545,33 @@ export const serviceData = [
       "Build a minimum viable product quickly to test your ideas, validate concepts, and enter the market faster.",
     keywords: ["MVP", "validation", "startup"],
     image: "/images/service6.png",
+    features: [
+      {
+        icon: "fas fa-laptop ",
+        title: "E-learning Solutions",
+        description: "Providing online learning platforms.",
+      },
+      {
+        icon: "fas fa-chalkboard-teacher ",
+        title: "Teacher Collaboration",
+        description: "Improving collaboration among educators.",
+      },
+      {
+        icon: "fas fa-book-open ",
+        title: "Curriculum Development",
+        description: "Designing innovative learning curricula.",
+      },
+      {
+        icon: "fas fa-certificate ",
+        title: "Certification Programs",
+        description: "Offering credentialing for online learning.",
+      },
+      {
+        icon: "fas fa-users ",
+        title: "Student Engagement",
+        description: "Enhancing student participation and interaction.",
+      },
+    ],
     serviceLinkName: "mvp-development",
     heroTitle: "Transform Your Business with MVP Development",
     heroSubtitle: "MVP DEVELOPMENT",
@@ -424,6 +586,33 @@ export const serviceData = [
       "Implement cloud solutions that improve scalability, security, and collaboration for businesses of all sizes.",
     keywords: ["cloud", "security", "infrastructure"],
     image: "/images/service3.png",
+    features: [
+      {
+        icon: "fas fa-network-wired ",
+        title: "Network Infrastructure",
+        description: "Building robust IT networks for enterprise.",
+      },
+      {
+        icon: "fas fa-users-cog ",
+        title: "Enterprise Resource Planning",
+        description: "Integrating business functions with ERP systems.",
+      },
+      {
+        icon: "fas fa-chart-bar ",
+        title: "Business Analytics",
+        description: "Leveraging data to drive business decisions.",
+      },
+      {
+        icon: "fas fa-lock ",
+        title: "Security Solutions",
+        description: "Providing enterprise-level security services.",
+      },
+      {
+        icon: "fas fa-cloud ",
+        title: "Cloud Computing",
+        description: "Empowering businesses with scalable cloud solutions.",
+      },
+    ],
   },
 ];
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { serviceData } from "../../../api/Dummy";
 import ServiceDetailsBanner from "@/component/Services/ServiceDetailsBanner";
+import OurProcess from "@/component/Services/OurProcess";
 
 export function generateStaticParams() {
   return serviceData?.map((item) => ({
@@ -17,6 +18,7 @@ const page = async ({ params }: PageProps) => {
   return (
     <div className="my-16 lg:my-28">
       <ServiceDetailsBanner params={service} />
+      <OurProcess params={service}/>
     </div>
   );
 };
