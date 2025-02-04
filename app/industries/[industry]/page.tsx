@@ -6,6 +6,7 @@ import BookConsultation from "@/component/Common/BookConsultation";
 import ProjectSection from "@/component/Home/ProjectSection";
 import SuccessStories from "@/component/Common/SuccessStories";
 import Contact from "@/component/Contact/Contact";
+import TrustedIndustry from "@/component/Common/TrustedIndustry";
 
 export function generateStaticParams() {
   return industrydata?.industries?.map((item) => ({
@@ -26,6 +27,7 @@ const page = async ({ params }: PageProps) => {
       <BookConsultation />
       <ProjectSection />
       <SuccessStories/>
+      <TrustedIndustry/>
       <Contact />
     </div>
   );

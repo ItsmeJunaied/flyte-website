@@ -7,6 +7,7 @@ import OperationsSections from "@/component/Home/OperationsSections";
 import ProjectSection from "@/component/Home/ProjectSection";
 import Contact from "@/component/Contact/Contact";
 import SuccessStories from "@/component/Common/SuccessStories";
+import TrustedIndustry from "@/component/Common/TrustedIndustry";
 
 export function generateStaticParams() {
   return serviceData?.map((item) => ({
@@ -28,6 +29,7 @@ const page = async ({ params }: PageProps) => {
       <OperationsSections techData={techData} />
       <ProjectSection />
       <SuccessStories/>
+      <TrustedIndustry/>
       <Contact />
     </div>
   );

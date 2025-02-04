@@ -5,6 +5,7 @@ import HireDetailsBanner from "@/component/Hire/HireDetailsBanner";
 import BookConsultation from "@/component/Common/BookConsultation";
 import SuccessStories from "@/component/Common/SuccessStories";
 import Contact from "@/component/Contact/Contact";
+import TrustedIndustry from "@/component/Common/TrustedIndustry";
 
 export const metadata = {
   title: "Hire Details | Flyte Solutions Ltd.",
@@ -30,6 +31,7 @@ const page = async ({ params }: PageProps) => {
       <WhyChoose params={hire} />
       <BookConsultation />
       <SuccessStories/>
+      <TrustedIndustry/>
       <Contact />
     </div>
   );
