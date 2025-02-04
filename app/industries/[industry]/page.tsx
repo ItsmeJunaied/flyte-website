@@ -1,16 +1,36 @@
 import React from "react";
+import IndustryDetailsBanner from "@/component/Industries/IndustryDetailsBanner";
+import { industrydata } from "../../../api/Dummy";
+import OurExpertise from "@/component/Industries/OurExpertise";
+import BookConsultation from "@/component/Common/BookConsultation";
+import ProjectSection from "@/component/Home/ProjectSection";
+import SuccessStories from "@/component/Common/SuccessStories";
+import Contact from "@/component/Contact/Contact";
+import TrustedIndustry from "@/component/Common/TrustedIndustry";
+
+export function generateStaticParams() {
+  return industrydata?.industries?.map((item) => ({
+    industry: item?.industryLinkName,
+  }));
+}
 
 type PageProps = {
   params: Promise<{ industry: string }>;
 };
 
-const Industry = async ({ params }: PageProps) => {
+const page = async ({ params }: PageProps) => {
   const { industry } = await params;
   return (
     <div>
-      <h1>{industry}</h1>
+      <IndustryDetailsBanner params={industry} />
+      <OurExpertise params={industry}/>
+      <BookConsultation />
+      <ProjectSection />
+      <SuccessStories/>
+      <TrustedIndustry/>
+      <Contact />
     </div>
   );
 };
 
-export default Industry;
+export default page;

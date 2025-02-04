@@ -1,8 +1,19 @@
 "use client";
 import React, { useState } from "react";
 
-const ProductTechOverview = () => {
+type Overview = {
+  technologyStack: string[];
+  integrationsAvailable: string[];
+};
+
+type Videos = {
+  bgImage: string;
+  videoUrl: string;
+};
+
+const ProductTechOverview: React.FC<{ overview: Overview; videos: Videos }> = ({ overview, videos }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const { technologyStack, integrationsAvailable } = overview || {};
   // open modal
   const openModal = () => {
     setIsOpen(true);
@@ -21,21 +32,9 @@ const ProductTechOverview = () => {
           <div className="p-2 md:p-5 bg-[#f9f9f9] shadow-[0px_0px_10px_10px_rgba(227,227,227,0.25)] grid grid-cols-2 sm:grid-cols-3 items-center gap-5">
             <h4 className="col-span-1 text-[#181a2a]/80 text-xs md:text-md xl:text-base">Technology Stack</h4>
             <span className="col-span-1 md:col-span-2 flex gap-2 sm:gap-5">
-              <img
-                className="w-8 md:w-10 h-6 md:h-10"
-                src="https://i.ibb.co.com/Wg2qfny/nodejs-svgrepo-com.png"
-                alt=""
-              />
-              <img
-                className="w-8 md:w-10 h-6 md:h-10"
-                src="https://i.ibb.co.com/TBzYDqN/react-svgrepo-com.png"
-                alt=""
-              />
-              <img
-                className="w-8 md:w-10 h-6 md:h-10"
-                src="https://i.ibb.co.com/q7b62X9/mongodb-svgrepo-com-1.png"
-                alt=""
-              />
+              {technologyStack?.map((tech, index) => (
+                <img key={index} className="w-8 md:w-10 h-6 md:h-10" src={tech} alt={`Image-${index}`} />
+              ))}
             </span>
           </div>
           <div className="p-2 md:p-5 bg-[#f9f9f9] shadow-[0px_0px_10px_10px_rgba(227,227,227,0.25)] grid grid-cols-2 sm:grid-cols-3 items-center gap-5">
@@ -43,28 +42,22 @@ const ProductTechOverview = () => {
               Integrations Available
             </h4>
             <span className="col-span-1 md:col-span-2 flex gap-2 sm:gap-5">
-              <img
-                className="w-8 md:w-10 h-6 md:h-10"
-                src="https://i.ibb.co.com/V2Z7rFP/apple-pay-svgrepo-com-1.png"
-                alt=""
-              />
-              <img
-                className="w-8 md:w-10 h-6 md:h-10"
-                src="https://i.ibb.co.com/W3Dknxm/xero-svgrepo-com-1.png"
-                alt=""
-              />
-              <img
-                className="w-8 md:w-10 h-6 md:h-10"
-                src="https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png"
-                alt=""
-              />
+              {integrationsAvailable?.map((tech, index) => (
+                <img key={index} className="w-8 md:w-10 h-6 md:h-10" src={tech} alt={`Image-${index}`} />
+              ))}
             </span>
           </div>
         </div>
+
+        {/* video section  */}
         <div>
           <h2 className="text-xl font-semibold mb-2 md:mb-3 mt-4 md:mt-5">See It in Action</h2>
           <div className="bg-black/30 relative">
-            <img className="mix-blend-multiply w-full" src="https://i.ibb.co.com/nbHLb9P/Image.png" alt="" />
+            <img
+              className="mix-blend-multiply w-full lg:h-[295.14px]"
+              src={videos?.bgImage}
+              alt="product action image"
+            />
             <button
               onClick={openModal}
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -75,7 +68,6 @@ const ProductTechOverview = () => {
                   <i className="fa-solid fa-play text-3xl"></i>
                 </span>
                 <span className="px-2 z-10 text-white group-hover:text-black font-bold text-nowrap">
-                  {" "}
                   Watch Full Demo
                 </span>
               </div>
@@ -92,7 +84,7 @@ const ProductTechOverview = () => {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO"
+                src={videos?.videoUrl}
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

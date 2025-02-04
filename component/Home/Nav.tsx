@@ -23,7 +23,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
 
   // console.log("pathname", pathname.split("/")[1])
   return (
-    <div className="">
+    <div className="pb-14 lg:pb-[100px]">
       <div className="header">
         <nav className="nav container">
           <div className="nav__data">
