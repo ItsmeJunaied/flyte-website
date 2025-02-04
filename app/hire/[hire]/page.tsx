@@ -20,11 +20,11 @@ export function generateStaticParams() {
 }
 
 type PageProps = {
-  params: { hire: string };
+  params: Promise<{ hire: string }>;
 };
 
 const page = async ({ params }: PageProps) => {
-  const { hire } = params;
+  const { hire } = await params;
   return (
     <div>
       <HireDetailsBanner params={hire} />
