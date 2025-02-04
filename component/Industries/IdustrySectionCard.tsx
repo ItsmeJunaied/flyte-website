@@ -28,13 +28,22 @@ const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({
 }) => {
   const [isFixed, setIsFixed] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const firstNav = document.querySelector(".header");
-  const firstNavHeight = (firstNav as HTMLElement)?.offsetHeight || 0;
+  const firstNav =
+    typeof document !== "undefined" ? document.querySelector(".header") : null;
+  const firstNavHeight = firstNav
+    ? (firstNav as HTMLElement)?.offsetHeight || 0
+    : 0;
 
-  console.log(isFixed)
+  console.log(isFixed);
   useEffect(() => {
-    const industryNav = document.querySelector(".industry-nav");
-    const firstNav = document.querySelector(".header");
+    const industryNav =
+      typeof document !== "undefined"
+        ? document.querySelector(".industry-nav")
+        : null;
+    const firstNav =
+      typeof document !== "undefined"
+        ? document.querySelector(".header")
+        : null;
 
     if (!industryNav || !firstNav) return;
 
