@@ -1,8 +1,11 @@
 import React from "react";
-import { serviceData } from "../../../api/Dummy";
+import { serviceData, techData } from "../../../api/Dummy";
 import ServiceDetailsBanner from "@/component/Services/ServiceDetailsBanner";
 import OurProcess from "@/component/Services/OurProcess";
 import BookConsultation from "@/component/Common/BookConsultation";
+import OperationsSections from "@/component/Home/OperationsSections";
+import ProjectSection from "@/component/Home/ProjectSection";
+import Contact from "@/component/Contact/Contact";
 
 export function generateStaticParams() {
   return serviceData?.map((item) => ({
@@ -21,6 +24,9 @@ const page = async ({ params }: PageProps) => {
       <ServiceDetailsBanner params={service} />
       <OurProcess params={service}/>
       <BookConsultation />
+      <OperationsSections techData={techData} />
+      <ProjectSection />
+      <Contact />
     </div>
   );
 };
