@@ -1147,27 +1147,27 @@ export const industrydata = {
       icon: "fa-solid fa-gauge",
       features: [
         {
-          icon: "fas fa-coins fa-2xl",
+          icon: "fas fa-coins",
           title: "Disruptive FinTech Solutions",
           description: "Empowering financial innovation and growth.",
         },
         {
-          icon: "fas fa-credit-card fa-2xl",
+          icon: "fas fa-credit-card",
           title: "Digital Payments",
           description: "Revolutionizing the way payments are made.",
         },
         {
-          icon: "fas fa-chart-line fa-2xl",
+          icon: "fas fa-chart-line",
           title: "Investment Strategies",
           description: "Providing innovative investment solutions.",
         },
         {
-          icon: "fas fa-shield-alt fa-2xl",
+          icon: "fas fa-shield-alt",
           title: "Fraud Prevention",
           description: "Safeguarding transactions from malicious activities.",
         },
         {
-          icon: "fas fa-lock fa-2xl",
+          icon: "fas fa-lock",
           title: "Data Security",
           description: "Ensuring the security of sensitive financial data.",
         },
@@ -1185,27 +1185,27 @@ export const industrydata = {
       icon: "fas fa-lightbulb",
       features: [
         {
-          icon: "fas fa-users fa-2xl",
+          icon: "fas fa-users ",
           title: "Team Building",
           description: "Assembling innovative teams for success.",
         },
         {
-          icon: "fas fa-bullhorn fa-2xl",
+          icon: "fas fa-bullhorn ",
           title: "Brand Awareness",
           description: "Creating strong brand recognition in the market.",
         },
         {
-          icon: "fas fa-chart-pie fa-2xl",
+          icon: "fas fa-chart-pie ",
           title: "Market Strategy",
           description: "Identifying and targeting the right market.",
         },
         {
-          icon: "fas fa-cogs fa-2xl",
+          icon: "fas fa-cogs ",
           title: "Product Development",
           description: "Turning ideas into functional products.",
         },
         {
-          icon: "fas fa-hand-holding-usd fa-2xl",
+          icon: "fas fa-hand-holding-usd ",
           title: "Investment & Funding",
           description: "Securing capital for business growth.",
         },
@@ -1223,27 +1223,27 @@ export const industrydata = {
       icon: "fas fa-truck",
       features: [
         {
-          icon: "fas fa-route fa-2xl",
+          icon: "fas fa-route ",
           title: "Supply Chain Management",
           description: "Optimizing the flow of goods and services.",
         },
         {
-          icon: "fas fa-truck-moving fa-2xl",
+          icon: "fas fa-truck-moving ",
           title: "Fleet Management",
           description: "Managing transportation logistics efficiently.",
         },
         {
-          icon: "fas fa-box-open fa-2xl",
+          icon: "fas fa-box-open ",
           title: "Inventory Tracking",
           description: "Monitoring inventory in real-time.",
         },
         {
-          icon: "fas fa-shipping-fast fa-2xl",
+          icon: "fas fa-shipping-fast ",
           title: "Fast Delivery Solutions",
           description: "Ensuring on-time delivery to customers.",
         },
         {
-          icon: "fas fa-chart-line fa-2xl",
+          icon: "fas fa-chart-line ",
           title: "Logistics Optimization",
           description: "Improving operational efficiencies in logistics.",
         },
@@ -1261,27 +1261,27 @@ export const industrydata = {
       icon: "fas fa-store",
       features: [
         {
-          icon: "fas fa-cogs fa-2xl",
+          icon: "fas fa-cogs ",
           title: "Manufacturing Optimization",
           description: "Streamlining production processes.",
         },
         {
-          icon: "fas fa-tags fa-2xl",
+          icon: "fas fa-tags ",
           title: "Retail Management",
           description: "Managing retail operations effectively.",
         },
         {
-          icon: "fas fa-truck-loading fa-2xl",
+          icon: "fas fa-truck-loading ",
           title: "Supply Chain Solutions",
           description: "Ensuring smooth product flow.",
         },
         {
-          icon: "fas fa-box fa-2xl",
+          icon: "fas fa-box ",
           title: "Product Packaging",
           description: "Enhancing packaging solutions for retail.",
         },
         {
-          icon: "fas fa-percent fa-2xl",
+          icon: "fas fa-percent ",
           title: "Sales Growth",
           description: "Driving revenue through retail strategies.",
         },
@@ -1299,27 +1299,27 @@ export const industrydata = {
       icon: "fas fa-building",
       features: [
         {
-          icon: "fas fa-network-wired fa-2xl",
+          icon: "fas fa-network-wired ",
           title: "Network Infrastructure",
           description: "Building robust IT networks for enterprise.",
         },
         {
-          icon: "fas fa-users-cog fa-2xl",
+          icon: "fas fa-users-cog ",
           title: "Enterprise Resource Planning",
           description: "Integrating business functions with ERP systems.",
         },
         {
-          icon: "fas fa-chart-bar fa-2xl",
+          icon: "fas fa-chart-bar ",
           title: "Business Analytics",
           description: "Leveraging data to drive business decisions.",
         },
         {
-          icon: "fas fa-lock fa-2xl",
+          icon: "fas fa-lock ",
           title: "Security Solutions",
           description: "Providing enterprise-level security services.",
         },
         {
-          icon: "fas fa-cloud fa-2xl",
+          icon: "fas fa-cloud ",
           title: "Cloud Computing",
           description: "Empowering businesses with scalable cloud solutions.",
         },
@@ -1337,27 +1337,27 @@ export const industrydata = {
       icon: "fas fa-graduation-cap",
       features: [
         {
-          icon: "fas fa-laptop fa-2xl",
+          icon: "fas fa-laptop ",
           title: "E-learning Solutions",
           description: "Providing online learning platforms.",
         },
         {
-          icon: "fas fa-chalkboard-teacher fa-2xl",
+          icon: "fas fa-chalkboard-teacher ",
           title: "Teacher Collaboration",
           description: "Improving collaboration among educators.",
         },
         {
-          icon: "fas fa-book-open fa-2xl",
+          icon: "fas fa-book-open ",
           title: "Curriculum Development",
           description: "Designing innovative learning curricula.",
         },
         {
-          icon: "fas fa-certificate fa-2xl",
+          icon: "fas fa-certificate ",
           title: "Certification Programs",
           description: "Offering credentialing for online learning.",
         },
         {
-          icon: "fas fa-users fa-2xl",
+          icon: "fas fa-users ",
           title: "Student Engagement",
           description: "Enhancing student participation and interaction.",
         },
@@ -1375,27 +1375,27 @@ export const industrydata = {
       icon: "fas fa-home",
       features: [
         {
-          icon: "fas fa-building fa-2xl",
+          icon: "fas fa-building ",
           title: "Property Development",
           description: "Developing and managing residential and commercial properties.",
         },
         {
-          icon: "fas fa-search fa-2xl",
+          icon: "fas fa-search ",
           title: "Market Research",
           description: "Analyzing market trends and property values.",
         },
         {
-          icon: "fas fa-handshake fa-2xl",
+          icon: "fas fa-handshake ",
           title: "Investment Opportunities",
           description: "Connecting investors with profitable properties.",
         },
         {
-          icon: "fas fa-cogs fa-2xl",
+          icon: "fas fa-cogs ",
           title: "Property Management",
           description: "Managing real estate properties efficiently.",
         },
         {
-          icon: "fas fa-chart-line fa-2xl",
+          icon: "fas fa-chart-line ",
           title: "Real Estate Analytics",
           description: "Providing data-driven insights for real estate decisions.",
         },
@@ -1413,27 +1413,27 @@ export const industrydata = {
       icon: "fas fa-heartbeat",
       features: [
         {
-          icon: "fas fa-stethoscope fa-2xl",
+          icon: "fas fa-stethoscope ",
           title: "Telemedicine Solutions",
           description: "Providing remote healthcare services.",
         },
         {
-          icon: "fas fa-pills fa-2xl",
+          icon: "fas fa-pills ",
           title: "Pharmaceutical Services",
           description: "Offering medical and pharmaceutical support.",
         },
         {
-          icon: "fas fa-ambulance fa-2xl",
+          icon: "fas fa-ambulance ",
           title: "Emergency Care",
           description: "Ensuring fast and efficient emergency services.",
         },
         {
-          icon: "fas fa-heart fa-2xl",
+          icon: "fas fa-heart ",
           title: "Patient Care",
           description: "Improving patient health and well-being.",
         },
         {
-          icon: "fas fa-chart-medical fa-2xl",
+          icon: "fas fa-chart-medical ",
           title: "Health Data Analytics",
           description: "Using data to enhance healthcare delivery.",
         },
@@ -1451,27 +1451,27 @@ export const industrydata = {
       icon: "fas fa-laptop-code",
       features: [
         {
-          icon: "fas fa-code fa-2xl",
+          icon: "fas fa-code ",
           title: "Software Development",
           description: "Building custom software solutions for businesses.",
         },
         {
-          icon: "fas fa-cloud fa-2xl",
+          icon: "fas fa-cloud ",
           title: "Cloud Solutions",
           description: "Enabling businesses with scalable cloud computing.",
         },
         {
-          icon: "fas fa-digital-tachograph fa-2xl",
+          icon: "fas fa-digital-tachograph ",
           title: "Tech Consulting",
           description: "Providing expert guidance for technology adoption.",
         },
         {
-          icon: "fas fa-mobile-alt fa-2xl",
+          icon: "fas fa-mobile-alt ",
           title: "Mobile Development",
           description: "Creating mobile applications for various platforms.",
         },
         {
-          icon: "fas fa-network-wired fa-2xl",
+          icon: "fas fa-network-wired ",
           title: "IT Infrastructure",
           description: "Designing and implementing tech infrastructures.",
         },
@@ -1489,27 +1489,27 @@ export const industrydata = {
       icon: "fas fa-film",
       features: [
         {
-          icon: "fas fa-video fa-2xl",
+          icon: "fas fa-video ",
           title: "Film Production",
           description: "Producing high-quality films and content.",
         },
         {
-          icon: "fas fa-headphones-alt fa-2xl",
+          icon: "fas fa-headphones-alt ",
           title: "Music Production",
           description: "Creating and producing original music.",
         },
         {
-          icon: "fas fa-camera fa-2xl",
+          icon: "fas fa-camera ",
           title: "Media Coverage",
           description: "Providing media coverage and advertising services.",
         },
         {
-          icon: "fas fa-tv fa-2xl",
+          icon: "fas fa-tv ",
           title: "Broadcasting",
           description: "Delivering media content across various platforms.",
         },
         {
-          icon: "fas fa-play-circle fa-2xl",
+          icon: "fas fa-play-circle ",
           title: "Streaming Services",
           description: "Offering on-demand content to audiences.",
         },
@@ -1527,27 +1527,27 @@ export const industrydata = {
       icon: "fas fa-hand-holding-heart",
       features: [
         {
-          icon: "fas fa-donate fa-2xl",
+          icon: "fas fa-donate ",
           title: "Fundraising",
           description: "Raising funds to support social causes.",
         },
         {
-          icon: "fas fa-globe-americas fa-2xl",
+          icon: "fas fa-globe-americas ",
           title: "Global Outreach",
           description: "Expanding social impact globally.",
         },
         {
-          icon: "fas fa-users fa-2xl",
+          icon: "fas fa-users ",
           title: "Community Support",
           description: "Building and supporting local communities.",
         },
         {
-          icon: "fas fa-hands-helping fa-2xl",
+          icon: "fas fa-hands-helping ",
           title: "Volunteer Coordination",
           description: "Engaging volunteers for community projects.",
         },
         {
-          icon: "fas fa-handshake fa-2xl",
+          icon: "fas fa-handshake ",
           title: "Partnerships",
           description: "Creating strategic partnerships for social good.",
         },
