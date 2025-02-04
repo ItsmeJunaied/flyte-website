@@ -3,6 +3,8 @@ import React from "react";
 import { techData } from "../../../api/Dummy";
 import HireDetailsBanner from "@/component/Hire/HireDetailsBanner";
 import BookConsultation from "@/component/Common/BookConsultation";
+import SuccessStories from "@/component/Common/SuccessStories";
+import Contact from "@/component/Contact/Contact";
 
 export const metadata = {
   title: "Hire Details | Flyte Solutions Ltd.",
@@ -27,6 +29,8 @@ const page = async ({ params }: PageProps) => {
       <HireDetailsBanner params={hire} />
       <WhyChoose params={hire} />
       <BookConsultation />
+      <SuccessStories/>
+      <Contact />
     </div>
   );
 };

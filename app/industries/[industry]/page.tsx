@@ -3,6 +3,9 @@ import IndustryDetailsBanner from "@/component/Industries/IndustryDetailsBanner"
 import { industrydata } from "../../../api/Dummy";
 import OurExpertise from "@/component/Industries/OurExpertise";
 import BookConsultation from "@/component/Common/BookConsultation";
+import ProjectSection from "@/component/Home/ProjectSection";
+import SuccessStories from "@/component/Common/SuccessStories";
+import Contact from "@/component/Contact/Contact";
 
 export function generateStaticParams() {
   return industrydata?.industries?.map((item) => ({
@@ -21,6 +24,9 @@ const page = async ({ params }: PageProps) => {
       <IndustryDetailsBanner params={industry} />
       <OurExpertise params={industry}/>
       <BookConsultation />
+      <ProjectSection />
+      <SuccessStories/>
+      <Contact />
     </div>
   );
 };

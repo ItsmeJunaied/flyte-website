@@ -6,6 +6,7 @@ import BookConsultation from "@/component/Common/BookConsultation";
 import OperationsSections from "@/component/Home/OperationsSections";
 import ProjectSection from "@/component/Home/ProjectSection";
 import Contact from "@/component/Contact/Contact";
+import SuccessStories from "@/component/Common/SuccessStories";
 
 export function generateStaticParams() {
   return serviceData?.map((item) => ({
@@ -26,6 +27,7 @@ const page = async ({ params }: PageProps) => {
       <BookConsultation />
       <OperationsSections techData={techData} />
       <ProjectSection />
+      <SuccessStories/>
       <Contact />
     </div>
   );
