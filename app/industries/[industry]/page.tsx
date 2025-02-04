@@ -17,7 +17,7 @@ type PageProps = {
 const page = async ({ params }: PageProps) => {
   const { industry } = await params;
   return (
-    <div className="my-16 lg:my-28">
+    <div>
       <IndustryDetailsBanner params={industry} />
       <OurExpertise params={industry}/>
       <BookConsultation />

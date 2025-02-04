@@ -42,7 +42,7 @@ const ProductHeader: React.FC<ProductHeaderProps> = ({ params }) => {
   }
 
   return (
-    <div className="container mt-20 md:mt-36 mb-3 space-y-2 md:space-y-4">
+    <div className="container pt-5 lg:pt-7 mb-3 space-y-2 md:space-y-4">
       <div className="flex flex-wrap gap-2 md:gap-5">
         {product.tags.map((tag, index) => (
           <span

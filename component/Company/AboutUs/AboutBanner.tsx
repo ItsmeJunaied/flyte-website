@@ -12,7 +12,7 @@ type AboutBannerData = {
 const AboutBanner = () => {
   const data: AboutBannerData | undefined = aboutBannerData;
   return (
-    <div className="container mt-20 md:mt-40">
+    <div className="container">
       <span className="flex flex-col items-center my-2 md:my-7">
         <Title title={data?.title} width="full" fontSize="text-lg lg:text-4xl" />
         <p className="text-center text-[#afadb5] text-xs md:text-sm md:mt-2">{data?.description}</p>
