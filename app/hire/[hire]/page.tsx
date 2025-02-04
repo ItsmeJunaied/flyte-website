@@ -2,6 +2,7 @@ import WhyChoose from "@/component/Hire/WhyChoose";
 import React from "react";
 import { techData } from "../../../api/Dummy";
 import HireDetailsBanner from "@/component/Hire/HireDetailsBanner";
+import BookConsultation from "@/component/Common/BookConsultation";
 
 export const metadata = {
   title: "Hire Details | Flyte Solutions Ltd.",
@@ -25,6 +26,7 @@ const page = async ({ params }: PageProps) => {
     <div className="mt-16 lg:mt-28">
       <HireDetailsBanner params={hire} />
       <WhyChoose params={hire} />
+      <BookConsultation />
     </div>
   );
 };

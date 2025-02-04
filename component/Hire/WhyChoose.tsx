@@ -9,7 +9,7 @@ type Props = {
 const WhyChoose = ({ params }: Props) => {
   const tech = Object.values(techData).find(item=> item.hireLinkName === params)
   return (
-    <div className="container mt-10 lg:mt-20 mb-20">
+    <div className="container mt-10 lg:mt-20 mb-10">
       <h2 className="text-[#060b13] text-xl lg:text-3xl font-semibold mb-3 lg:mb-6">
         Why Choose Our Frontend Developers?
       </h2>

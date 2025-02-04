@@ -2,6 +2,7 @@ import React from "react";
 import IndustryDetailsBanner from "@/component/Industries/IndustryDetailsBanner";
 import { industrydata } from "../../../api/Dummy";
 import OurExpertise from "@/component/Industries/OurExpertise";
+import BookConsultation from "@/component/Common/BookConsultation";
 
 export function generateStaticParams() {
   return industrydata?.industries?.map((item) => ({
@@ -19,6 +20,7 @@ const page = async ({ params }: PageProps) => {
     <div className="my-16 lg:my-28">
       <IndustryDetailsBanner params={industry} />
       <OurExpertise params={industry}/>
+      <BookConsultation />
     </div>
   );
 };

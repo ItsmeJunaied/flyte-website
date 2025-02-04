@@ -9,7 +9,7 @@ type ExpertiseProps = {
 const OurExpertise = ({ params }: ExpertiseProps) => {
   const industry = industrydata?.industries?.find((item) => item?.industryLinkName === params);
   return (
-    <div className="container mt-10 lg:mt-20 mb-20">
+    <div className="container mt-10 lg:mt-20 mb-10">
       <h2 className="text-[#060b13] text-xl lg:text-3xl font-semibold mb-3 lg:mb-6">
       Our Fintech Expertise
       </h2>
