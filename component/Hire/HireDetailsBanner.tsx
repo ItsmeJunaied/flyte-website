@@ -3,7 +3,7 @@ import { techData } from "../../api/Dummy";
 import HeroBanner from "../Common/HeroBanner";
 
 type HeroBannerProps = {
-  params?: string;
+  params: string;
 };
 
 const HireDetailsBanner = ({ params }: HeroBannerProps) => {

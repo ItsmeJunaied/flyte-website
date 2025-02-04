@@ -24,7 +24,7 @@ const page = async ({ params }: PageProps) => {
   return (
     <div className="mt-16 lg:mt-28">
       <HireDetailsBanner params={hire} />
-      <WhyChoose />
+      <WhyChoose params={hire} />
     </div>
   );
 };
