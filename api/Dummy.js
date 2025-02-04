@@ -162,25 +162,25 @@ export const navbarData = {
           name: "Time2Task",
           icon: "fa-box",
           description: "Our flagship product designed to streamline operations.",
-          path: "/products/product-a",
+          path: "/products/time-to-task",
         },
         {
           name: "Cloud Clock In",
           icon: "fa-cogs",
           description: "A cutting-edge tool for improving productivity..",
-          path: "/products",
+          path: "/products/cloud-clockIn",
         },
         {
           name: "Flyte CRM",
           icon: "fa-cogs",
           description: "A cutting-edge tool for improving productivity.",
-          path: "/products",
+          path: "/products/flyte-crm",
         },
         {
           name: "Flyte POS",
           icon: "fa-cogs",
           description: "A cutting-edge tool for improving productivity.",
-          path: "/products",
+          path: "/products/flyte-pos",
         },
       ],
     },
@@ -2197,7 +2197,8 @@ export const ProductCardsData = [
     productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
     productTitle: "Cloud ClockIn",
     productLinkName: "cloud-clockIn",
-    ProductDetails: "A digital system for tracking employee attendance and work hours in real time.",
+    ProductDetails:
+      "Cloud ClockIn is a digital attendance management solution designed to simplify employee time tracking and ensure compliance with company policies. It provides real-time insights, automated reporting, and seamless integration with HR systems.",
     tags: ["Attendance Management", "Real-Time Tracking", "SaaS"],
     version: "1.2.0",
     releaseDate: "2023-11-15",
@@ -2224,17 +2225,21 @@ export const ProductCardsData = [
       },
     ],
     features: ["Real-time Employee Monitoring", "Automatic Time Logging", "Customizable Attendance Reports"],
-    featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    featureImage: "https://i.ibb.co.com/rwLMFcg/Frame-48095769.png",
+    videos: {
+      bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
+      videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
+    },
     technicalSpecifications: {
       technologyStack: [
-        "https://i.ibb.co/tech1.png",
-        "https://i.ibb.co/tech2.png",
-        "https://i.ibb.co/tech3.png",
+        "https://i.ibb.co.com/Wg2qfny/nodejs-svgrepo-com.png",
+        "https://i.ibb.co.com/TBzYDqN/react-svgrepo-com.png",
+        "https://i.ibb.co.com/q7b62X9/mongodb-svgrepo-com-1.png",
       ],
       integrationsAvailable: [
-        "https://i.ibb.co/integration1.png",
-        "https://i.ibb.co/integration2.png",
-        "https://i.ibb.co/integration3.png",
+        "https://i.ibb.co.com/V2Z7rFP/apple-pay-svgrepo-com-1.png",
+        "https://i.ibb.co.com/W3Dknxm/xero-svgrepo-com-1.png",
+        "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
   },
@@ -2242,7 +2247,7 @@ export const ProductCardsData = [
     id: 2,
     productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
     productTitle: "Time2Task",
-    productLinkName: "time2Task",
+    productLinkName: "time-to-task",
     ProductDetails: "A task management tool to plan, assign, and track project tasks efficiently.",
     tags: ["Project Management", "Real-Time Tracking", "SaaS"],
     version: "2.0.1",
@@ -2271,16 +2276,20 @@ export const ProductCardsData = [
     ],
     features: ["Task Prioritization", "Real-Time Collaboration", "Customizable Dashboards"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    videos: {
+      bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
+      videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
+    },
     technicalSpecifications: {
       technologyStack: [
-        "https://i.ibb.co/tech4.png",
-        "https://i.ibb.co/tech5.png",
-        "https://i.ibb.co/tech6.png",
+        "https://i.ibb.co.com/Wg2qfny/nodejs-svgrepo-com.png",
+        "https://i.ibb.co.com/TBzYDqN/react-svgrepo-com.png",
+        "https://i.ibb.co.com/q7b62X9/mongodb-svgrepo-com-1.png",
       ],
       integrationsAvailable: [
-        "https://i.ibb.co/integration4.png",
-        "https://i.ibb.co/integration5.png",
-        "https://i.ibb.co/integration6.png",
+        "https://i.ibb.co.com/V2Z7rFP/apple-pay-svgrepo-com-1.png",
+        "https://i.ibb.co.com/W3Dknxm/xero-svgrepo-com-1.png",
+        "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
   },
@@ -2317,16 +2326,20 @@ export const ProductCardsData = [
     ],
     features: ["Customer Flow Optimization", "Real-Time Queue Updates", "Customizable Queue Display"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    videos: {
+      bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
+      videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
+    },
     technicalSpecifications: {
       technologyStack: [
-        "https://i.ibb.co/tech7.png",
-        "https://i.ibb.co/tech8.png",
-        "https://i.ibb.co/tech9.png",
+        "https://i.ibb.co.com/Wg2qfny/nodejs-svgrepo-com.png",
+        "https://i.ibb.co.com/TBzYDqN/react-svgrepo-com.png",
+        "https://i.ibb.co.com/q7b62X9/mongodb-svgrepo-com-1.png",
       ],
       integrationsAvailable: [
-        "https://i.ibb.co/integration7.png",
-        "https://i.ibb.co/integration8.png",
-        "https://i.ibb.co/integration9.png",
+        "https://i.ibb.co.com/V2Z7rFP/apple-pay-svgrepo-com-1.png",
+        "https://i.ibb.co.com/W3Dknxm/xero-svgrepo-com-1.png",
+        "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
   },
@@ -2364,16 +2377,20 @@ export const ProductCardsData = [
     ],
     features: ["Integrated Business Modules", "Real-Time Financial Tracking", "Customizable Reporting Tools"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    videos: {
+      bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
+      videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
+    },
     technicalSpecifications: {
       technologyStack: [
-        "https://i.ibb.co/tech10.png",
-        "https://i.ibb.co/tech11.png",
-        "https://i.ibb.co/tech12.png",
+        "https://i.ibb.co.com/Wg2qfny/nodejs-svgrepo-com.png",
+        "https://i.ibb.co.com/TBzYDqN/react-svgrepo-com.png",
+        "https://i.ibb.co.com/q7b62X9/mongodb-svgrepo-com-1.png",
       ],
       integrationsAvailable: [
-        "https://i.ibb.co/integration10.png",
-        "https://i.ibb.co/integration11.png",
-        "https://i.ibb.co/integration12.png",
+        "https://i.ibb.co.com/V2Z7rFP/apple-pay-svgrepo-com-1.png",
+        "https://i.ibb.co.com/W3Dknxm/xero-svgrepo-com-1.png",
+        "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
   },
@@ -2411,16 +2428,20 @@ export const ProductCardsData = [
     ],
     features: ["Lead Management", "Customer Interaction Tracking", "Sales Pipeline Customization"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    videos: {
+      bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
+      videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
+    },
     technicalSpecifications: {
       technologyStack: [
-        "https://i.ibb.co/tech13.png",
-        "https://i.ibb.co/tech14.png",
-        "https://i.ibb.co/tech15.png",
+        "https://i.ibb.co.com/Wg2qfny/nodejs-svgrepo-com.png",
+        "https://i.ibb.co.com/TBzYDqN/react-svgrepo-com.png",
+        "https://i.ibb.co.com/q7b62X9/mongodb-svgrepo-com-1.png",
       ],
       integrationsAvailable: [
-        "https://i.ibb.co/integration13.png",
-        "https://i.ibb.co/integration14.png",
-        "https://i.ibb.co/integration15.png",
+        "https://i.ibb.co.com/V2Z7rFP/apple-pay-svgrepo-com-1.png",
+        "https://i.ibb.co.com/W3Dknxm/xero-svgrepo-com-1.png",
+        "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
   },
@@ -2458,16 +2479,20 @@ export const ProductCardsData = [
     ],
     features: ["Sales Transactions Management", "Inventory Tracking", "Customer Insights"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    videos: {
+      bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
+      videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
+    },
     technicalSpecifications: {
       technologyStack: [
-        "https://i.ibb.co/tech16.png",
-        "https://i.ibb.co/tech17.png",
-        "https://i.ibb.co/tech18.png",
+        "https://i.ibb.co.com/Wg2qfny/nodejs-svgrepo-com.png",
+        "https://i.ibb.co.com/TBzYDqN/react-svgrepo-com.png",
+        "https://i.ibb.co.com/q7b62X9/mongodb-svgrepo-com-1.png",
       ],
       integrationsAvailable: [
-        "https://i.ibb.co/integration16.png",
-        "https://i.ibb.co/integration17.png",
-        "https://i.ibb.co/integration18.png",
+        "https://i.ibb.co.com/V2Z7rFP/apple-pay-svgrepo-com-1.png",
+        "https://i.ibb.co.com/W3Dknxm/xero-svgrepo-com-1.png",
+        "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
   },
@@ -2504,16 +2529,20 @@ export const ProductCardsData = [
     ],
     features: ["Stock Level Monitoring", "Real-Time Updates", "Customizable Alerts"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    videos: {
+      bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
+      videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
+    },
     technicalSpecifications: {
       technologyStack: [
-        "https://i.ibb.co/tech19.png",
-        "https://i.ibb.co/tech20.png",
-        "https://i.ibb.co/tech21.png",
+        "https://i.ibb.co.com/Wg2qfny/nodejs-svgrepo-com.png",
+        "https://i.ibb.co.com/TBzYDqN/react-svgrepo-com.png",
+        "https://i.ibb.co.com/q7b62X9/mongodb-svgrepo-com-1.png",
       ],
       integrationsAvailable: [
-        "https://i.ibb.co/integration19.png",
-        "https://i.ibb.co/integration20.png",
-        "https://i.ibb.co/integration21.png",
+        "https://i.ibb.co.com/V2Z7rFP/apple-pay-svgrepo-com-1.png",
+        "https://i.ibb.co.com/W3Dknxm/xero-svgrepo-com-1.png",
+        "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
   },
@@ -2550,16 +2579,20 @@ export const ProductCardsData = [
     ],
     features: ["Automated Meeting Scheduling", "Minutes of Meeting Generation", "Action Item Tracking"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    videos: {
+      bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
+      videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
+    },
     technicalSpecifications: {
       technologyStack: [
-        "https://i.ibb.co/tech22.png",
-        "https://i.ibb.co/tech23.png",
-        "https://i.ibb.co/tech24.png",
+        "https://i.ibb.co.com/Wg2qfny/nodejs-svgrepo-com.png",
+        "https://i.ibb.co.com/TBzYDqN/react-svgrepo-com.png",
+        "https://i.ibb.co.com/q7b62X9/mongodb-svgrepo-com-1.png",
       ],
       integrationsAvailable: [
-        "https://i.ibb.co/integration22.png",
-        "https://i.ibb.co/integration23.png",
-        "https://i.ibb.co/integration24.png",
+        "https://i.ibb.co.com/V2Z7rFP/apple-pay-svgrepo-com-1.png",
+        "https://i.ibb.co.com/W3Dknxm/xero-svgrepo-com-1.png",
+        "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
   },
@@ -2597,16 +2630,20 @@ export const ProductCardsData = [
     ],
     features: ["Stock Level Monitoring", "Real-Time Reporting", "Multiple Location Support"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    videos: {
+      bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
+      videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
+    },
     technicalSpecifications: {
       technologyStack: [
-        "https://i.ibb.co/tech25.png",
-        "https://i.ibb.co/tech26.png",
-        "https://i.ibb.co/tech27.png",
+        "https://i.ibb.co.com/Wg2qfny/nodejs-svgrepo-com.png",
+        "https://i.ibb.co.com/TBzYDqN/react-svgrepo-com.png",
+        "https://i.ibb.co.com/q7b62X9/mongodb-svgrepo-com-1.png",
       ],
       integrationsAvailable: [
-        "https://i.ibb.co/integration25.png",
-        "https://i.ibb.co/integration26.png",
-        "https://i.ibb.co/integration27.png",
+        "https://i.ibb.co.com/V2Z7rFP/apple-pay-svgrepo-com-1.png",
+        "https://i.ibb.co.com/W3Dknxm/xero-svgrepo-com-1.png",
+        "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
   },
@@ -2643,16 +2680,20 @@ export const ProductCardsData = [
     ],
     features: ["Categorize Expenses", "Real-Time Monitoring", "Reports Generation"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    videos: {
+      bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
+      videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
+    },
     technicalSpecifications: {
       technologyStack: [
-        "https://i.ibb.co/tech28.png",
-        "https://i.ibb.co/tech29.png",
-        "https://i.ibb.co/tech30.png",
+        "https://i.ibb.co.com/Wg2qfny/nodejs-svgrepo-com.png",
+        "https://i.ibb.co.com/TBzYDqN/react-svgrepo-com.png",
+        "https://i.ibb.co.com/q7b62X9/mongodb-svgrepo-com-1.png",
       ],
       integrationsAvailable: [
-        "https://i.ibb.co/integration28.png",
-        "https://i.ibb.co/integration29.png",
-        "https://i.ibb.co/integration30.png",
+        "https://i.ibb.co.com/V2Z7rFP/apple-pay-svgrepo-com-1.png",
+        "https://i.ibb.co.com/W3Dknxm/xero-svgrepo-com-1.png",
+        "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
   },
@@ -2689,70 +2730,26 @@ export const ProductCardsData = [
     ],
     features: ["Automated Payroll Processing", "Tax Calculation and Filing", "Customizable Payslips"],
     featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    videos: {
+      bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
+      videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
+    },
     technicalSpecifications: {
       technologyStack: [
-        "https://i.ibb.co/tech31.png",
-        "https://i.ibb.co/tech32.png",
-        "https://i.ibb.co/tech33.png",
+        "https://i.ibb.co.com/Wg2qfny/nodejs-svgrepo-com.png",
+        "https://i.ibb.co.com/TBzYDqN/react-svgrepo-com.png",
+        "https://i.ibb.co.com/q7b62X9/mongodb-svgrepo-com-1.png",
       ],
       integrationsAvailable: [
-        "https://i.ibb.co/integration31.png",
-        "https://i.ibb.co/integration32.png",
-        "https://i.ibb.co/integration33.png",
+        "https://i.ibb.co.com/V2Z7rFP/apple-pay-svgrepo-com-1.png",
+        "https://i.ibb.co.com/W3Dknxm/xero-svgrepo-com-1.png",
+        "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
   },
 ];
 
-// export const singleProduct = {
-//   id: 1,
-//   productImg: "https://i.ibb.co/com/dbNN1h2/Picture.png",
-//   productTitle: "Cloud ClockIn",
-//   productLinkName: "cloud-clockin",
-//   ProductDetails: "A digital system for tracking employee attendance and work hours in real time.",
-//   tags: ["Attendance Management", "Real-Time Tracking", "SaaS"],
-//   version: "1.2.0",
-//   releaseDate: "2023-11-15",
-//   images: [
-//     {
-//       id: 1,
-//       url: "https://i.ibb.co.com/qskBDPW/Image.png",
-//       status: "active",
-//     },
-//     {
-//       id: 2,
-//       url: "https://i.ibb.co.com/4RbfdmG/Admin-Dashboard.png",
-//       status: "inactive",
-//     },
-//     {
-//       id: 3,
-//       url: "https://i.ibb.co.com/RP5TZC0/Image-2.png",
-//       status: "inactive",
-//     },
-//     {
-//       id: 4,
-//       url: "https://i.ibb.co.com/VWqsDcg/Image-3.png",
-//       status: "inactive",
-//     },
-//   ],
-//   features: ["Real-time Employee Monitoring", "Automatic Time Logging", "Customizable Attendance Reports"],
-//   featureImage: "https://i.ibb.co/feature-image.png",
-//   technicalSpecifications: {
-//     technologyStack: [
-//       "https://i.ibb.co/tech1.png",
-//       "https://i.ibb.co/tech2.png",
-//       "https://i.ibb.co/tech3.png",
-//     ],
-//     integrationsAvailable: [
-//       "https://i.ibb.co/integration1.png",
-//       "https://i.ibb.co/integration2.png",
-//       "https://i.ibb.co/integration3.png",
-//     ],
-//   },
-// };
-
 // industries page
-
 export const IndustriesCardsData = [
   {
     industryImage: "https://i.ibb.co.com/5nShXdt/fintech.png",
