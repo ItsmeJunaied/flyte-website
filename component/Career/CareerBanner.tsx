@@ -10,7 +10,7 @@ const CareerBanner = () => {
         <p className="text-sm md:text-base font-normal">{careerBannerData?.description}</p>
         <div className="flex flex-wrap gap-3">
           {careerBannerData?.images?.map((image, index) => (
-            <img className="h-10 lg:h-16" key={index} src={image} alt="" />
+            <img className="h-10 lg:h-16" key={index} src={image} alt={`career band image-${index}`} />
           ))}
         </div>
         <Link
@@ -21,7 +21,7 @@ const CareerBanner = () => {
         </Link>
       </div>
       <div className="lg:w-1/2">
-        <img className="w-full lg:w-[600px] lg:h-[480px] rounded-[15px] object-cover" src={careerBannerData?.bannerImage} alt="" />
+        <img className="w-full lg:w-[600px] lg:h-[480px] rounded-[15px] object-cover" src={careerBannerData?.bannerImage} alt="career banner image" />
       </div>
     </div>
   );
