@@ -2275,7 +2275,7 @@ export const ProductCardsData = [
       },
     ],
     features: ["Task Prioritization", "Real-Time Collaboration", "Customizable Dashboards"],
-    featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    featureImage: "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
     videos: {
       bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
       videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
@@ -2427,7 +2427,7 @@ export const ProductCardsData = [
       },
     ],
     features: ["Lead Management", "Customer Interaction Tracking", "Sales Pipeline Customization"],
-    featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    featureImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     videos: {
       bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
       videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
@@ -2478,7 +2478,7 @@ export const ProductCardsData = [
       },
     ],
     features: ["Sales Transactions Management", "Inventory Tracking", "Customer Insights"],
-    featureImage: "https://i.ibb.co/feature-image.png", // Single image for features section
+    featureImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
     videos: {
       bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
       videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
