@@ -10,12 +10,13 @@ const ProjectSection: React.FC = () => {
   const projectData = projectSliderData;
 
   return (
-    <div className="relative overflow-hidden lg:bg-black bg-white px-5 py-5 lg:py-10">
-      <div className="container py-3 lg:py-12">
+    <div className="relative overflow-hidden bg-white px-5 py-3 lg:py-6">
+      <div className="container mb-3 lg:mb-6">
       <Subtitle Subtitle="Case Studies" />
       <Title
-        fontColor=" text-black lg:text-white"
+        fontColor=""
         title="Driving Success Through Proven SOlutions"
+        width="full"
       />
       </div>
 

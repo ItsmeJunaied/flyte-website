@@ -42,8 +42,8 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ projectData }) => {
                 key={index}
                 className="flex justify-center bg-white rounded-[20px] w-full md:max-w-[1200px]"
               >
-                <div className="bg-[#1A1A1A] w-full h-[550px] rounded-xl flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-10 p-6 opacity-90 hover:opacity-100 transition-opacity duration-300">
-                  <div className="w-full lg:w-1/2 h-[200px] lg:h-[500px]">
+                <div className="bg-[#f7f7f7] w-full h-[500px] rounded-xl flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-10 p-6 opacity-90 hover:opacity-100 transition-opacity duration-300">
+                  <div className="w-full lg:w-1/2 h-[200px] lg:h-[450px]">
                     <img
                       src={project.image}
                       alt={project.title}
@@ -51,17 +51,17 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ projectData }) => {
                     />
                   </div>
                   <div className="w-full lg:w-1/2 flex flex-col justify-start items-start gap-8 text-start">
-                    <h1 className="text-white text-2xl lg:text-4xl text-start">
+                    <h1 className="text-[#212121] text-2xl font-semibold">
                       {project.title}
                     </h1>
-                    <p className="text-white text-base">
+                    <p className="text-[#555555]">
                       {project.description}
                     </p>
                     <div className="flex flex-row flex-wrap gap-3 lg:mt-5">
                       {project.tags.map((tag, idx) => (
                         <div
                           key={idx}
-                          className="px-3 py-1 lg:px-5 lg:py-3 rounded-3xl text-white bg-[#313131] hover:bg-[#9FE870] hover:text-black"
+                          className="px-3 py-1 lg:px-5 lg:py-3 bg-[#e0e0e0] rounded-3xl hover:bg-[#5856d6] hover:text-white"
                         >
                           {tag}
                         </div>

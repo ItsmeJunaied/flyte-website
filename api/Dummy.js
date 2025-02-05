@@ -2116,27 +2116,26 @@ export const caseStudyData = [
 //project section
 export const projectSliderData = [
   {
-    title: "Marketing Material Design",
+    title: "Cloud Clockin",
     description:
-      "Effective marketing materials are key to capturing attention. We design assets that reflect your brand while drawing your audience in with compelling visuals.",
-    image:
-      "https://cdn.prod.website-files.com/643f7373d3f6653157617339/66e2f5e167d7e3c31600a32a_Marketing%20image-p-800.png",
+      "Empowered a renowned educational publishing giant with a custom digital platform, streamlining content distribution and enhancing global accessibility. Delivered scalable solutions to meet diverse user needs and ensure seamless user experiences worldwide.",
+    image: "https://i.ibb.co.com/qskBDPW/Image.png",
     tags: ["Digital ads", "Marketing materials", "Email templates", "Motion graphics", "Social media design"],
   },
   {
-    title: "Marketing Material Design",
+    title: "Global Leader in Educational Publishing",
     description:
       "Effective marketing materials are key to capturing attention. We design assets that reflect your brand while drawing your audience in with compelling visuals.",
     image:
-      "https://cdn.prod.website-files.com/643f7373d3f6653157617339/66e2f5e167d7e3c31600a32a_Marketing%20image-p-800.png",
+      "https://i.ibb.co.com/zWR2ttFC/Picture.png",
     tags: ["Digital ads", "Marketing materials", "Email templates", "Motion graphics", "Social media design"],
   },
   {
-    title: "Marketing Material Design",
+    title: "Time 2 Task",
     description:
       "Effective marketing materials are key to capturing attention. We design assets that reflect your brand while drawing your audience in with compelling visuals.",
     image:
-      "https://cdn.prod.website-files.com/643f7373d3f6653157617339/66e2f5e167d7e3c31600a32a_Marketing%20image-p-800.png",
+      "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
     tags: ["Digital ads", "Marketing materials", "Email templates", "Motion graphics", "Social media design"],
   },
   {
