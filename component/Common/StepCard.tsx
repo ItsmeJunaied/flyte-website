@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 type Features = {
@@ -16,8 +17,8 @@ type CardProps = {
 const StepCard: React.FC<{ data: CardProps }> = ({ data }) => {
   const { name, description, title, features } = data || {};
   return (
-    <div className="bg-white mt-10 lg:mt-20">
-      <div className="container py-5 lg:py-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+    <div className="bg-white py-5 lg:py-10 mt-10 lg:mt-20">
+      <div className="container grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
         <div>
           <h2 className="text-[#181a2a] text-xl lg:text-3xl font-semibold mb-5 lg:mb-10 w-full lg:w-2/3">
             {name}
@@ -47,6 +48,7 @@ const StepCard: React.FC<{ data: CardProps }> = ({ data }) => {
           </div>
         </div>
       </div>
+      <Link className="px-8 py-3 mt-6 ml-5 bg-[#5856d6] hover:bg-[#4a46bc] rounded-md text-white w-fit lg:mx-auto block" href="">Start Hiring Now</Link>
     </div>
   );
 };
