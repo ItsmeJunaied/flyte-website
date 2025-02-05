@@ -61,7 +61,7 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ projectData }) => {
                       {project.tags.map((tag, idx) => (
                         <div
                           key={idx}
-                          className="px-3 py-1 lg:px-5 lg:py-3 bg-[#e0e0e0] rounded-3xl hover:bg-[#5856d6] hover:text-white"
+                          className="px-3 py-1 lg:px-5 lg:py-3 rounded-3xl bg-[#e0e0e0] hover:bg-[#5856d6] hover:text-white"
                         >
                           {tag}
                         </div>
