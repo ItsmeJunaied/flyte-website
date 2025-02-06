@@ -616,6 +616,60 @@ export const serviceData = [
   },
 ];
 
+// custom software data for service details page
+export const customSoftwareData = {
+  name: "Custom Software Solutions",
+  description: "Choose Custom Solutions to Fit Your Business Needs",
+  features: [
+    { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+    { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+    { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+    { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+    { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+    { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+    { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+    { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+  ],
+};
+
+// service process data for service details page 
+export const serviceProcessData = {
+  name: "Our Custom Software Development Process",
+  description: "We create tailored, scalable software for seamless integration and business efficiency.",
+  title: "Our Proven Process for Delivering Custom Software",
+  features: [
+    {
+      id: 1,
+      name: "Discovery & Planning",
+      details:
+        "We analyze your business needs, define project goals, and create a detailed roadmap to guide development.",
+    },
+    {
+      id: 2,
+      name: "Design & Prototyping",
+      details:
+        "We design wireframes and prototypes to visualize the software’s interface, ensuring it’s user-friendly and visually appealing.",
+    },
+    {
+      id: 3,
+      name: "Development",
+      details:
+        "Using agile methodologies, we build scalable and secure software tailored to your requirements.",
+    },
+    {
+      id: 4,
+      name: "Testing & QA",
+      details:
+        "We rigorously test the software to ensure it’s bug-free, performs well, and meets quality standards.",
+    },
+    {
+      id: 5,
+      name: "Deployment & Support",
+      details: "We handle deployment and provide ongoing support to keep your software running smoothly.",
+    },
+  ],
+};
+
 //products section
 export const productsSections = [
   {
