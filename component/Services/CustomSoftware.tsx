@@ -20,7 +20,7 @@ const customSoftwareData = {
 const CustomSoftware = () => {
   return (
     <div>
-      <FeaturesCard data={customSoftwareData} Width="w-[200px]" />
+      <FeaturesCard data={customSoftwareData} Width="w-full sm:w-[200px]" />
     </div>
   );
 };
