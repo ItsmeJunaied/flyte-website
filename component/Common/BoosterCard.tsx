@@ -5,7 +5,7 @@ import { boosterData } from "@/api/Dummy";
 
 const BoosterCard = () => {
   return (
-    <div className="bg-white pt-5 lg:pt-8">
+    <div className="bg-white py-5 lg:py-8">
       <div className="container">
         <Subtitle Subtitle="Use Cases" />
         <Title title="Boost Efficiency Across Industries" />
