@@ -17,7 +17,7 @@ type CardProps = {
 const StepCard: React.FC<{ data: CardProps }> = ({ data }) => {
   const { name, description, title, features } = data || {};
   return (
-    <div className="bg-white py-5 lg:py-10 mt-10 lg:mt-20">
+    <div className="bg-white py-5 lg:py-10">
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
         {/* left side  */}
         <div>

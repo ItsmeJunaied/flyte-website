@@ -9,8 +9,8 @@ type ProcessProps = {
 const OurProcess = ({ params }: ProcessProps) => {
   const service = serviceData?.find((item) => item?.serviceLinkName === params);
   return (
-    <div className="bg-white">
-      <div className="container  pb-10">
+    <div className="bg-white pb-10">
+      <div className="container">
         <h2 className="text-[#060b13] text-xl lg:text-3xl font-semibold mb-3 lg:mb-6">
           Why Our Process Works?
         </h2>
