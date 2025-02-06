@@ -8,6 +8,9 @@ import ProjectSection from "@/component/Home/ProjectSection";
 import Contact from "@/component/Contact/Contact";
 import SuccessStories from "@/component/Common/SuccessStories";
 import TrustedIndustry from "@/component/Common/TrustedIndustry";
+import ServiceProcessStep from "@/component/Services/ServiceProcessStep";
+import CustomSoftware from "@/component/Services/CustomSoftware";
+import BoosterCard from "@/component/Common/BoosterCard";
 
 export function generateStaticParams() {
   return serviceData?.map((item) => ({
@@ -24,12 +27,15 @@ const page = async ({ params }: PageProps) => {
   return (
     <div>
       <ServiceDetailsBanner params={service} />
-      <OurProcess params={service}/>
+      <ServiceProcessStep />
+      <OurProcess params={service} />
       <BookConsultation />
       <OperationsSections techData={techData} />
+      <CustomSoftware />
+      <BoosterCard />
       <ProjectSection />
-      <SuccessStories/>
-      <TrustedIndustry/>
+      <SuccessStories bgColor="bg-white" />
+      <TrustedIndustry />
       <Contact />
     </div>
   );

@@ -128,26 +128,38 @@ export const navbarData = {
       features: [
         {
           name: "Team Extension",
-          icon: "fa-lightbulb",
-          description: "Expert advice and strategic planning for your business.",
+          icon: "fa-user-group",
+          description: "Expanding your team with skilled professionals.",
           path: "/services/team-extension",
         },
         {
           name: "Custom Software Development",
           icon: "fa-cogs",
-          description: "End-to-end software development services for every industry.",
+          description: "Building software solutions to meet unique business needs efficiently.",
           path: "/services/custom-software-development",
         },
         {
           name: "Enterprise Software Development",
-          icon: "fa-headset",
-          description: "24/7 customer support to assist with any challenges.",
+          icon: "fa-chart-column",
+          description: "Streamlining enterprise operations with robust software.",
           path: "/services/enterprise-software-development",
         },
         {
+          name: "Mobile App Development",
+          icon: "fa-mobile-screen",
+          description: "Creating engaging and user-friendly mobile experiences.",
+          path: "/services/mobile-app-development",
+        },
+        {
+          name: "QA & Testing",
+          icon: "fa-shield-halved",
+          description: "Ensuring quality through rigorous testing processes.",
+          path: "/services/qa-and-testing",
+        },
+        {
           name: "MVP Development",
-          icon: "fa-headset",
-          description: "24/7 customer support to assist with any challenges.",
+          icon: "fa-rocket",
+          description: "Launching ideas faster with a minimum viable product.",
           path: "/services/mvp-development",
         },
       ],
@@ -356,29 +368,24 @@ export const serviceData = [
     image: "/images/service1.png",
     features: [
       {
-        icon: "fas fa-donate ",
-        title: "Fundraising",
-        description: "Raising funds to support social causes.",
+        icon: "fa-people-group",
+        title: "Collaborative",
+        description: "We work closely with you at every stage.",
       },
       {
-        icon: "fas fa-globe-americas ",
-        title: "Global Outreach",
-        description: "Expanding social impact globally.",
+        icon: "fa-bullseye",
+        title: "Transparent",
+        description: "Regular updates keep you informed.",
       },
       {
-        icon: "fas fa-users ",
-        title: "Community Support",
-        description: "Building and supporting local communities.",
+        icon: "fa-rotate",
+        title: "Quality-Focused",
+        description: "Rigorous testing ensures a reliable product.",
       },
       {
-        icon: "fas fa-hands-helping ",
-        title: "Volunteer Coordination",
-        description: "Engaging volunteers for community projects.",
-      },
-      {
-        icon: "fas fa-handshake ",
-        title: "Partnerships",
-        description: "Creating strategic partnerships for social good.",
+        icon: "fa-code",
+        title: "Scalable",
+        description: "Solutions designed to grow with your business.",
       },
     ],
     serviceLinkName: "team-extension",
@@ -504,6 +511,13 @@ export const serviceData = [
         description: "Using data to enhance healthcare delivery.",
       },
     ],
+    serviceLinkName: "mobile-app-development",
+    heroTitle: "Transform Your Business with Enterprise Software Development",
+    heroSubtitle: " MOBILE APP DEVELOPMENT",
+    heroDesctiption:
+      "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+    heroButton: "Book A Consulation",
+    heroImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
   },
   {
     title: "QA & Testing",
@@ -538,6 +552,13 @@ export const serviceData = [
         description: "Providing data-driven insights for real estate decisions.",
       },
     ],
+    serviceLinkName: "qa-and-testing",
+    heroTitle: "Transform Your Business with MVP Development",
+    heroSubtitle: "QA & TESTING",
+    heroDesctiption:
+      "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+    heroButton: "Book A Consulation",
+    heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
   },
   {
     title: "MVP Development",
@@ -613,6 +634,112 @@ export const serviceData = [
         description: "Empowering businesses with scalable cloud solutions.",
       },
     ],
+  },
+];
+
+// custom software data for service details page
+export const customSoftwareData = {
+  name: "Custom Software Solutions",
+  description: "Choose Custom Solutions to Fit Your Business Needs",
+  features: [
+    { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+    { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+    { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+    { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+    { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+    { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+    { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+    { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+  ],
+};
+
+// service process data for service details page
+export const serviceProcessData = {
+  name: "Our Custom Software Development Process",
+  description: "We create tailored, scalable software for seamless integration and business efficiency.",
+  title: "Our Proven Process for Delivering Custom Software",
+  features: [
+    {
+      id: 1,
+      name: "Discovery & Planning",
+      details:
+        "We analyze your business needs, define project goals, and create a detailed roadmap to guide development.",
+    },
+    {
+      id: 2,
+      name: "Design & Prototyping",
+      details:
+        "We design wireframes and prototypes to visualize the software’s interface, ensuring it’s user-friendly and visually appealing.",
+    },
+    {
+      id: 3,
+      name: "Development",
+      details:
+        "Using agile methodologies, we build scalable and secure software tailored to your requirements.",
+    },
+    {
+      id: 4,
+      name: "Testing & QA",
+      details:
+        "We rigorously test the software to ensure it’s bug-free, performs well, and meets quality standards.",
+    },
+    {
+      id: 5,
+      name: "Deployment & Support",
+      details: "We handle deployment and provide ongoing support to keep your software running smoothly.",
+    },
+  ],
+};
+
+// service booster data for service details page
+export const boosterData = [
+  {
+    id: 1,
+    icon: "fa-cart-shopping",
+    name: "Retail",
+    description:
+      "Manage complex shift schedules, ensure labor law compliance, and gain insights to optimize staffing and reduce absenteeism.",
+    features: ["Employee Scheduling", "Compliance", "Performance Insights"],
+  },
+  {
+    id: 2,
+    icon: "fa-heart-pulse",
+    name: "Healthcare",
+    description:
+      "Efficiently manage rotating shifts, maintain accurate records for billing, and ensure timely emergency coverage.",
+    features: ["Shift Management", "Accurate Records", "Emergency Coverage"],
+  },
+  {
+    id: 3,
+    icon: "fa-chalkboard-user",
+    name: "Remote Teams",
+    description:
+      "Track attendance and productivity of remote employees, accommodate flexible schedules, and integrate with collaboration tools.",
+    features: ["Virtual Attendance Tracking", "Flexible Scheduling", "Integration with Collaboration Tools"],
+  },
+  {
+    id: 4,
+    icon: "fa-industry",
+    name: "Manufacturing",
+    description:
+      "Accurately track shifts and overtime, ensure safety compliance, and optimize workforce allocation for production targets.",
+    features: ["Shift and Overtime Tracking", "Safety Compliance", "Resource Allocation"],
+  },
+  {
+    id: 5,
+    icon: "fa-graduation-cap",
+    name: "Education",
+    description:
+      "Track faculty and student attendance, integrate with management systems, and manage attendance for school events.",
+    features: ["Faculty and Staff Attendance", "Student Attendance", "Event Management"],
+  },
+  {
+    id: 6,
+    icon: "fa-hand-holding-medical",
+    name: "Hospitality",
+    description:
+      "Efficiently schedule staff for various roles, maintain high guest service standards, and control labor costs.",
+    features: ["Staff Scheduling", "Guest Services", "Labor Cost Control"],
   },
 ];
 
@@ -2116,27 +2243,24 @@ export const caseStudyData = [
 //project section
 export const projectSliderData = [
   {
-    title: "Marketing Material Design",
+    title: "Cloud Clockin",
     description:
-      "Effective marketing materials are key to capturing attention. We design assets that reflect your brand while drawing your audience in with compelling visuals.",
-    image:
-      "https://cdn.prod.website-files.com/643f7373d3f6653157617339/66e2f5e167d7e3c31600a32a_Marketing%20image-p-800.png",
+      "Empowered a renowned educational publishing giant with a custom digital platform, streamlining content distribution and enhancing global accessibility. Delivered scalable solutions to meet diverse user needs and ensure seamless user experiences worldwide.",
+    image: "https://i.ibb.co.com/qskBDPW/Image.png",
     tags: ["Digital ads", "Marketing materials", "Email templates", "Motion graphics", "Social media design"],
   },
   {
-    title: "Marketing Material Design",
+    title: "Global Leader in Educational Publishing",
     description:
       "Effective marketing materials are key to capturing attention. We design assets that reflect your brand while drawing your audience in with compelling visuals.",
-    image:
-      "https://cdn.prod.website-files.com/643f7373d3f6653157617339/66e2f5e167d7e3c31600a32a_Marketing%20image-p-800.png",
+    image: "https://i.ibb.co.com/zWR2ttFC/Picture.png",
     tags: ["Digital ads", "Marketing materials", "Email templates", "Motion graphics", "Social media design"],
   },
   {
-    title: "Marketing Material Design",
+    title: "Time 2 Task",
     description:
       "Effective marketing materials are key to capturing attention. We design assets that reflect your brand while drawing your audience in with compelling visuals.",
-    image:
-      "https://cdn.prod.website-files.com/643f7373d3f6653157617339/66e2f5e167d7e3c31600a32a_Marketing%20image-p-800.png",
+    image: "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
     tags: ["Digital ads", "Marketing materials", "Email templates", "Motion graphics", "Social media design"],
   },
   {

@@ -12,7 +12,7 @@ type HeroBannerProps = {
 
 const HeroBanner: React.FC<{ bannerData: HeroBannerProps }> = ({ bannerData }) => {
   return (
-    <div className="container pt-5 lg:pt-7 flex flex-col lg:flex-row gap-8 lg:gap-16">
+    <div className="container pt-5 lg:pt-7 pb-8 lg:pb-16 flex flex-col lg:flex-row gap-8 lg:gap-16">
       <div className="w-full lg:w-[40%] flex flex-col justify-between">
         <div>
           <Subtitle Subtitle={bannerData?.heroSubtitle || "Our Dedicated Developers"} />

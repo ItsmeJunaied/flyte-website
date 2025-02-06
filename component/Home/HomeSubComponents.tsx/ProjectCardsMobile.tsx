@@ -13,11 +13,11 @@ type ProjectData = {
 
 const ProjectCardsMobile:React.FC<ProjectCardsProps> = ({ projectData })=> {
     return (
-        <div className="flex lg:hidden flex-col items-center gap-4 mt-10">
+        <div className="flex lg:hidden flex-col items-center gap-4 mt-5">
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="bg-[#1A1A1A] w-full max-w-[1400px] rounded-[20px] flex flex-col justify-center items-center gap-4 p-6 opacity-90 hover:opacity-100 transition-opacity duration-300"
+            className="bg-[#f7f7f7] w-full max-w-[1400px] rounded-[20px] flex flex-col justify-center items-center gap-4 p-6 opacity-90 hover:opacity-100 transition-opacity duration-300"
           >
             <div className="w-full h-[300px]">
               <img
@@ -30,13 +30,13 @@ const ProjectCardsMobile:React.FC<ProjectCardsProps> = ({ projectData })=> {
               {project.tags.map((tag, idx) => (
                 <div
                   key={idx}
-                  className="px-3 py-1 lg:px-5 lg:py-3 text-[12px]  rounded-3xl text-white bg-[#313131] hover:bg-[#9FE870] hover:text-black"
+                  className="px-3 py-1 lg:px-5 lg:py-3 text-xs rounded-3xl bg-[#e0e0e0] hover:bg-[#5856d6] hover:text-white"
                 >
                   {tag}
                 </div>
               ))}
             </div>
-            <h1 className=" w-full flex justify-start text-white text-2xl  text-start mt-2">
+            <h1 className="text-2xl font-semibold self-start mt-2">
               {project.title}
             </h1>
           </div>
