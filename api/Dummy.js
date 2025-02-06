@@ -128,26 +128,38 @@ export const navbarData = {
       features: [
         {
           name: "Team Extension",
-          icon: "fa-lightbulb",
-          description: "Expert advice and strategic planning for your business.",
+          icon: "fa-user-group",
+          description: "Expanding your team with skilled professionals.",
           path: "/services/team-extension",
         },
         {
           name: "Custom Software Development",
           icon: "fa-cogs",
-          description: "End-to-end software development services for every industry.",
+          description: "Building software solutions to meet unique business needs efficiently.",
           path: "/services/custom-software-development",
         },
         {
           name: "Enterprise Software Development",
-          icon: "fa-headset",
-          description: "24/7 customer support to assist with any challenges.",
+          icon: "fa-chart-column",
+          description: "Streamlining enterprise operations with robust software.",
           path: "/services/enterprise-software-development",
         },
         {
+          name: "Mobile App Development",
+          icon: "fa-mobile-screen",
+          description: "Creating engaging and user-friendly mobile experiences.",
+          path: "/services/mobile-app-development",
+        },
+        {
+          name: "QA & Testing",
+          icon: "fa-shield-halved",
+          description: "Ensuring quality through rigorous testing processes.",
+          path: "/services/qa-and-testing",
+        },
+        {
           name: "MVP Development",
-          icon: "fa-headset",
-          description: "24/7 customer support to assist with any challenges.",
+          icon: "fa-rocket",
+          description: "Launching ideas faster with a minimum viable product.",
           path: "/services/mvp-development",
         },
       ],
@@ -499,6 +511,13 @@ export const serviceData = [
         description: "Using data to enhance healthcare delivery.",
       },
     ],
+    serviceLinkName: "mobile-app-development",
+    heroTitle: "Transform Your Business with Enterprise Software Development",
+    heroSubtitle: " MOBILE APP DEVELOPMENT",
+    heroDesctiption:
+      "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+    heroButton: "Book A Consulation",
+    heroImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
   },
   {
     title: "QA & Testing",
@@ -533,6 +552,13 @@ export const serviceData = [
         description: "Providing data-driven insights for real estate decisions.",
       },
     ],
+    serviceLinkName: "qa-and-testing",
+    heroTitle: "Transform Your Business with MVP Development",
+    heroSubtitle: "QA & TESTING",
+    heroDesctiption:
+      "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+    heroButton: "Book A Consulation",
+    heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
   },
   {
     title: "MVP Development",
@@ -627,7 +653,7 @@ export const customSoftwareData = {
   ],
 };
 
-// service process data for service details page 
+// service process data for service details page
 export const serviceProcessData = {
   name: "Our Custom Software Development Process",
   description: "We create tailored, scalable software for seamless integration and business efficiency.",
@@ -665,7 +691,7 @@ export const serviceProcessData = {
   ],
 };
 
-// service booster data for service details page 
+// service booster data for service details page
 export const boosterData = [
   {
     id: 1,
@@ -2227,16 +2253,14 @@ export const projectSliderData = [
     title: "Global Leader in Educational Publishing",
     description:
       "Effective marketing materials are key to capturing attention. We design assets that reflect your brand while drawing your audience in with compelling visuals.",
-    image:
-      "https://i.ibb.co.com/zWR2ttFC/Picture.png",
+    image: "https://i.ibb.co.com/zWR2ttFC/Picture.png",
     tags: ["Digital ads", "Marketing materials", "Email templates", "Motion graphics", "Social media design"],
   },
   {
     title: "Time 2 Task",
     description:
       "Effective marketing materials are key to capturing attention. We design assets that reflect your brand while drawing your audience in with compelling visuals.",
-    image:
-      "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
+    image: "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
     tags: ["Digital ads", "Marketing materials", "Email templates", "Motion graphics", "Social media design"],
   },
   {
