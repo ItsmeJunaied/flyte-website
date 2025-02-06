@@ -670,6 +670,58 @@ export const serviceProcessData = {
   ],
 };
 
+// service booster data for service details page 
+export const boosterData = [
+  {
+    id: 1,
+    icon: "fa-cart-shopping",
+    name: "Retail",
+    description:
+      "Manage complex shift schedules, ensure labor law compliance, and gain insights to optimize staffing and reduce absenteeism.",
+    features: ["Employee Scheduling", "Compliance", "Performance Insights"],
+  },
+  {
+    id: 2,
+    icon: "fa-heart-pulse",
+    name: "Healthcare",
+    description:
+      "Efficiently manage rotating shifts, maintain accurate records for billing, and ensure timely emergency coverage.",
+    features: ["Shift Management", "Accurate Records", "Emergency Coverage"],
+  },
+  {
+    id: 3,
+    icon: "fa-chalkboard-user",
+    name: "Remote Teams",
+    description:
+      "Track attendance and productivity of remote employees, accommodate flexible schedules, and integrate with collaboration tools.",
+    features: ["Virtual Attendance Tracking", "Flexible Scheduling", "Integration with Collaboration Tools"],
+  },
+  {
+    id: 4,
+    icon: "fa-industry",
+    name: "Manufacturing",
+    description:
+      "Accurately track shifts and overtime, ensure safety compliance, and optimize workforce allocation for production targets.",
+    features: ["Shift and Overtime Tracking", "Safety Compliance", "Resource Allocation"],
+  },
+  {
+    id: 5,
+    icon: "fa-graduation-cap",
+    name: "Education",
+    description:
+      "Track faculty and student attendance, integrate with management systems, and manage attendance for school events.",
+    features: ["Faculty and Staff Attendance", "Student Attendance", "Event Management"],
+  },
+  {
+    id: 6,
+    icon: "fa-hand-holding-medical",
+    name: "Hospitality",
+    description:
+      "Efficiently schedule staff for various roles, maintain high guest service standards, and control labor costs.",
+    features: ["Staff Scheduling", "Guest Services", "Labor Cost Control"],
+  },
+];
+
 //products section
 export const productsSections = [
   {

@@ -10,6 +10,7 @@ import SuccessStories from "@/component/Common/SuccessStories";
 import TrustedIndustry from "@/component/Common/TrustedIndustry";
 import ServiceProcessStep from "@/component/Services/ServiceProcessStep";
 import CustomSoftware from "@/component/Services/CustomSoftware";
+import BoosterCard from "@/component/Common/BoosterCard";
 
 export function generateStaticParams() {
   return serviceData?.map((item) => ({
@@ -31,6 +32,7 @@ const page = async ({ params }: PageProps) => {
       <BookConsultation />
       <OperationsSections techData={techData} />
       <CustomSoftware/>
+      <BoosterCard/>
       <ProjectSection />
       <SuccessStories/>
       <TrustedIndustry/>
