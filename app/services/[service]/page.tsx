@@ -27,15 +27,15 @@ const page = async ({ params }: PageProps) => {
   return (
     <div>
       <ServiceDetailsBanner params={service} />
-      <ServiceProcessStep/>
-      <OurProcess params={service}/>
+      <ServiceProcessStep />
+      <OurProcess params={service} />
       <BookConsultation />
       <OperationsSections techData={techData} />
-      <CustomSoftware/>
-      <BoosterCard/>
+      <CustomSoftware />
+      <BoosterCard />
       <ProjectSection />
-      <SuccessStories/>
-      <TrustedIndustry/>
+      <SuccessStories bgColor="bg-white" />
+      <TrustedIndustry />
       <Contact />
     </div>
   );
