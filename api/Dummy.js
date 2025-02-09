@@ -2555,6 +2555,41 @@ export const ProductCardsData = [
         "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
+    productBenefits: [
+      {
+        title: "Real-Time Attendance Tracking",
+        description:
+          "Monitor employee attendance instantly from anywhere. Get accurate time-in and time-out records synced to the cloud.",
+        points: [
+          "Real-time updates across all platforms.",
+          "Accessible via biometric, mobile, or web.",
+          "Eliminates manual tracking errors.",
+        ],
+        image: "https://i.ibb.co.com/zWKmxvnN/Frame-48095769-1.png",
+      },
+      {
+        title: "Automated Report Generation",
+        description:
+          "Generate detailed attendance and productivity reports with a single click. Save time and gain actionable insights into employee performance.",
+        points: [
+          "Customizable report creation.",
+          "Schedule automatic reports.",
+          "Visualize data with charts.",
+        ],
+        image: "https://i.ibb.co.com/mVQYXvxF/Frame-48095769-2.png",
+      },
+      {
+        title: "Integration With Payroll Systems",
+        description:
+          "Sync attendance and overtime data directly with payroll systems. Automate calculations to ensure error-free and timely salary processing.",
+        points: [
+          "Automates salary calculations.",
+          "Seamless integration with payroll software.",
+          "Ensures labor law compliance.",
+        ],
+        image: "https://i.ibb.co.com/pv5PzFZJ/Frame-48095769-3.png",
+      },
+    ],
   },
   {
     id: 2,
@@ -2605,6 +2640,38 @@ export const ProductCardsData = [
         "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
+    productBenefits: [
+      {
+        title: "Task Prioritization",
+        description: "Organize tasks based on priority to ensure critical activities are completed first.",
+        points: [
+          "Drag-and-drop task sorting.",
+          "Set deadlines and reminders.",
+          "Team task sharing."
+        ],
+        image: "https://i.ibb.co/com/task-prioritization.png"
+      },
+      {
+        title: "Real-Time Collaboration",
+        description: "Collaborate on tasks with team members instantly, ensuring everyone stays updated.",
+        points: [
+          "Live notifications.",
+          "Shared task progress.",
+          "Seamless team communication."
+        ],
+        image: "https://i.ibb.co/com/real-time-collaboration.png"
+      },
+      {
+        title: "Customizable Dashboards",
+        description: "Create dashboards tailored to your workflow for enhanced task management.",
+        points: [
+          "Drag-and-drop widget customization.",
+          "Overview of key metrics.",
+          "Personalized view for each user."
+        ],
+        image: "https://i.ibb.co/com/customizable-dashboards.png"
+      }
+    ]
   },
   {
     id: 3,
@@ -2655,6 +2722,38 @@ export const ProductCardsData = [
         "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
+    productBenefits : [
+      {
+        title: "Customer Flow Optimization",
+        description: "Manage customer flow efficiently, reducing long wait times and improving experience.",
+        points: [
+          "Manage multiple queues simultaneously.",
+          "Display estimated wait times.",
+          "Ensure efficient handling of customer requests."
+        ],
+        image: "https://i.ibb.co/com/customer-flow-optimization.png"
+      },
+      {
+        title: "Real-Time Queue Updates",
+        description: "Stay updated with real-time data to streamline operations.",
+        points: [
+          "Track queue length and status in real-time.",
+          "Instantly alert customers when their turn is up.",
+          "Reduce waiting time with optimized queue management."
+        ],
+        image: "https://i.ibb.co/com/real-time-updates.png"
+      },
+      {
+        title: "Customizable Queue Display",
+        description: "Personalize the queue display for your customers and staff.",
+        points: [
+          "Design your display interface.",
+          "Choose between digital and physical queue displays.",
+          "Update queue status remotely."
+        ],
+        image: "https://i.ibb.co/com/customizable-display.png"
+      }
+    ]
   },
   {
     id: 4,
@@ -2706,6 +2805,38 @@ export const ProductCardsData = [
         "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
+    productBenefits: [
+      {
+        title: "Customer Flow Optimization",
+        description: "Manage customer flow efficiently, reducing long wait times and improving experience.",
+        points: [
+          "Manage multiple queues simultaneously.",
+          "Display estimated wait times.",
+          "Ensure efficient handling of customer requests."
+        ],
+        image: "https://i.ibb.co/com/customer-flow-optimization.png"
+      },
+      {
+        title: "Real-Time Queue Updates",
+        description: "Stay updated with real-time data to streamline operations.",
+        points: [
+          "Track queue length and status in real-time.",
+          "Instantly alert customers when their turn is up.",
+          "Reduce waiting time with optimized queue management."
+        ],
+        image: "https://i.ibb.co/com/real-time-updates.png"
+      },
+      {
+        title: "Customizable Queue Display",
+        description: "Personalize the queue display for your customers and staff.",
+        points: [
+          "Design your display interface.",
+          "Choose between digital and physical queue displays.",
+          "Update queue status remotely."
+        ],
+        image: "https://i.ibb.co/com/customizable-display.png"
+      }
+    ]
   },
   {
     id: 5,
@@ -2757,6 +2888,38 @@ export const ProductCardsData = [
         "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
+    productBenefits: [
+      {
+        title: "Sales Process Automation",
+        description: "Automate and streamline sales workflows to save time and enhance team productivity.",
+        points: [
+          "Automate lead capture and follow-up.",
+          "Set reminders for sales team to track activities.",
+          "Easily manage and convert leads into opportunities."
+        ],
+        image: "https://i.ibb.co/com/sales-automation.png"
+      },
+      {
+        title: "Customer Insights",
+        description: "Gain actionable insights into customer behavior and preferences to improve interactions.",
+        points: [
+          "Track customer interaction history.",
+          "Analyze data for smarter decision making.",
+          "Segment customers based on preferences and behaviors."
+        ],
+        image: "https://i.ibb.co/com/customer-insights.png"
+      },
+      {
+        title: "Marketing Integration",
+        description: "Seamlessly integrate with marketing tools to execute campaigns and track performance.",
+        points: [
+          "Integrate with email marketing platforms.",
+          "Monitor campaign results in real-time.",
+          "Enhance customer targeting with marketing data."
+        ],
+        image: "https://i.ibb.co/com/marketing-integration.png"
+      }
+    ]
   },
   {
     id: 6,
@@ -2808,6 +2971,38 @@ export const ProductCardsData = [
         "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
+    productBenefits: [
+      {
+        title: "Real-Time Sales Monitoring",
+        description: "Monitor sales transactions in real-time to optimize retail performance.",
+        points: [
+          "Track sales transactions instantly.",
+          "Analyze sales trends to improve stock and pricing decisions.",
+          "Improve cashier efficiency with streamlined sales processes."
+        ],
+        image: "https://i.ibb.co/com/real-time-sales.png"
+      },
+      {
+        title: "Inventory Management",
+        description: "Easily track and manage inventory to avoid stockouts and optimize stock levels.",
+        points: [
+          "Track inventory levels in real-time.",
+          "Set automatic stock alerts to reorder products.",
+          "Gain insights into product performance and sales."
+        ],
+        image: "https://i.ibb.co/com/inventory-management.png"
+      },
+      {
+        title: "Customer Insights",
+        description: "Utilize customer data to make informed decisions and enhance customer relationships.",
+        points: [
+          "Track customer purchase history.",
+          "Identify repeat customers for targeted promotions.",
+          "Analyze customer behavior for better marketing strategies."
+        ],
+        image: "https://i.ibb.co/com/customer-insights-pos.png"
+      }
+    ]
   },
   {
     id: 7,

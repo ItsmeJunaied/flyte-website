@@ -3,6 +3,7 @@ import ProductGallery from "./ProductGallery";
 import ProductTechOverview from "./ProductTechOverview";
 import { ProductHeaderProps } from "./ProductHeader";
 import { ProductCardsData } from "@/api/Dummy";
+import Link from "next/link";
 
 const ProductGalleryAndTech: React.FC<ProductHeaderProps> = ({ params }) => {
   const product = ProductCardsData.find((item) => item.productLinkName === params);
@@ -35,9 +36,9 @@ const ProductGalleryAndTech: React.FC<ProductHeaderProps> = ({ params }) => {
             ))}
           
           </div>
-          <button className="px-3 lg:px-6 py-2 lg:py-4 bg-black text-white text-base font-bold capitalize w-fit">
+          <Link href="" className="px-3 lg:px-6 py-2 lg:py-3 bg-black text-white text-base font-bold capitalize w-fit">
             Try Demo <i className="fa-solid fa-angle-right text-sm lg:text-base pl-2"></i>
-          </button>
+          </Link>
         </div>
         <div>
           <img

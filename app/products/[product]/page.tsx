@@ -6,6 +6,7 @@ import SuccessStories from "@/component/Common/SuccessStories";
 import TrustedIndustry from "@/component/Common/TrustedIndustry";
 import Contact from "@/component/Contact/Contact";
 import BoosterCard from "@/component/Common/BoosterCard";
+import ProductBenefits from "@/component/Products/ProductBenefits";
 
 type PageProps = {
   params: Promise<{ product: string }>;
@@ -28,6 +29,7 @@ const Page = async ({ params }: PageProps) => {
     <div>
       <ProductHeader params={product} />
       <ProductGalleryAndTech params={product} />
+      <ProductBenefits params={product}/>
       <TrustedIndustry />
       <BoosterCard />
       <SuccessStories bgColor="bg-white" />
