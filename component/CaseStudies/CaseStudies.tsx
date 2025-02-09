@@ -1,19 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Marquee from "react-fast-marquee";
-import Subtitle from "../Common/Subtitle";
 
 const CaseStudies = () => {
   const subtitle: string = "Explore Our Success Stories";
   const title: string = "See How We Helped Businesses Achieve Their Goals";
 
   return (
-    <div className="w-full py-10">
+    <div className="w-full py-5 lg:py-10">
       <div className="w-full flex flex-row">
-        <div className=" w-full  flex flex-col lg:flex-row items-center h-full overflow-x-hidden  ">
-          <div className=" lg:pl-16 lg:pr-5 w-full lg:w-1/3 flex flex-col gap-[24px] h-full justify-center px-4 lg:px-0 mb-5 lg:mb-0">
-            <Subtitle Subtitle={subtitle} />
-            <h1 className="text-zinc-950 text-4xl font-bold  leading-[46px]">
+        <div className="w-full flex flex-col lg:flex-row items-center gap-5 h-full overflow-x-hidden">
+          <div className="lg:pl-16 lg:pr-5 w-full lg:w-1/3 flex flex-col gap-3 lg:gap-6 h-full justify-center px-4 lg:px-0 mb-5 lg:mb-0">
+            <h4 className="text-[#5856d6] text-lg font-bold">{subtitle}</h4>
+            <h1 className="text-zinc-950 text-2xl lg:text-4xl font-bold lg:leading-[46px]">
               {title}
             </h1>
             <p className="text-[#12094a] text-sm font-normal leading-snug  lg:px-0">
