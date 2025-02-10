@@ -16,7 +16,7 @@ const ProductIntegrations = () => {
 
       {/* integrations  */}
       <div className="w-fit mx-auto">
-        <img src="/images/product-integrations.png" alt="product-integrations" />
+        <img src="/images/product-integrations.png" alt="product-integrations" draggable="false" />
       </div>
       <p className="w-[600px] mx-auto text-center  text-[#353d4f]">
         Gain a competitive edge with our attendance and rostering software integrations, streamlining

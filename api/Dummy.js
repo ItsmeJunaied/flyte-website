@@ -173,25 +173,41 @@ export const navbarData = {
         {
           name: "Time2Task",
           icon: "fa-box",
-          description: "Our flagship product designed to streamline operations.",
+          description: "A task management tool to plan, assign, and track project tasks efficiently.",
           path: "/products/time-to-task",
         },
         {
           name: "Cloud Clock In",
-          icon: "fa-cogs",
-          description: "A cutting-edge tool for improving productivity..",
+          icon: "fa-clock",
+          description: "A digital system for tracking employee attendance and work hours in real time.",
           path: "/products/cloud-clockIn",
         },
         {
+          name: "Flyte Queue",
+          icon: "fa-people-line",
+          description:
+            "A digital queue management system to streamline customer flow and reduce waiting times.",
+          path: "/products/flyte-queue",
+        },
+        {
+          name: "Flyte ERP",
+          icon: "fa-poo-storm",
+          description:
+            "A comprehensive platform that integrates and streamlines core business processes for enhanced productivity.",
+          path: "/products/flyte-erp",
+        },
+        {
           name: "Flyte CRM",
-          icon: "fa-cogs",
-          description: "A cutting-edge tool for improving productivity.",
+          icon: "fa-clone",
+          description:
+            "A customer relationship management tool designed to optimize sales, marketing, and customer support operations.",
           path: "/products/flyte-crm",
         },
         {
           name: "Flyte POS",
-          icon: "fa-cogs",
-          description: "A cutting-edge tool for improving productivity.",
+          icon: "fa-radiation",
+          description:
+            "A reliable point-of-sale system for efficient retail transactions and inventory tracking.",
           path: "/products/flyte-pos",
         },
       ],
@@ -2603,7 +2619,7 @@ export const ProductCardsData = [
     images: [
       {
         id: 1,
-        url: "https://i.ibb.co.com/qskBDPW/Image.png",
+        url: "https://i.ibb.co.com/yxSBNXm/Payroll-1.png",
         status: "active",
       },
       {
@@ -2625,7 +2641,7 @@ export const ProductCardsData = [
     features: ["Task Prioritization", "Real-Time Collaboration", "Customizable Dashboards"],
     featureImage: "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
     videos: {
-      bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
+      bgImage: "https://i.ibb.co.com/yxSBNXm/Payroll-1.png",
       videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
     },
     technicalSpecifications: {
@@ -2644,22 +2660,14 @@ export const ProductCardsData = [
       {
         title: "Task Prioritization",
         description: "Organize tasks based on priority to ensure critical activities are completed first.",
-        points: [
-          "Drag-and-drop task sorting.",
-          "Set deadlines and reminders.",
-          "Team task sharing."
-        ],
-        image: "https://i.ibb.co/com/task-prioritization.png"
+        points: ["Drag-and-drop task sorting.", "Set deadlines and reminders.", "Team task sharing."],
+        image: "https://i.ibb.co/com/task-prioritization.png",
       },
       {
         title: "Real-Time Collaboration",
         description: "Collaborate on tasks with team members instantly, ensuring everyone stays updated.",
-        points: [
-          "Live notifications.",
-          "Shared task progress.",
-          "Seamless team communication."
-        ],
-        image: "https://i.ibb.co/com/real-time-collaboration.png"
+        points: ["Live notifications.", "Shared task progress.", "Seamless team communication."],
+        image: "https://i.ibb.co/com/real-time-collaboration.png",
       },
       {
         title: "Customizable Dashboards",
@@ -2667,11 +2675,11 @@ export const ProductCardsData = [
         points: [
           "Drag-and-drop widget customization.",
           "Overview of key metrics.",
-          "Personalized view for each user."
+          "Personalized view for each user.",
         ],
-        image: "https://i.ibb.co/com/customizable-dashboards.png"
-      }
-    ]
+        image: "https://i.ibb.co/com/customizable-dashboards.png",
+      },
+    ],
   },
   {
     id: 3,
@@ -2722,16 +2730,16 @@ export const ProductCardsData = [
         "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
-    productBenefits : [
+    productBenefits: [
       {
         title: "Customer Flow Optimization",
         description: "Manage customer flow efficiently, reducing long wait times and improving experience.",
         points: [
           "Manage multiple queues simultaneously.",
           "Display estimated wait times.",
-          "Ensure efficient handling of customer requests."
+          "Ensure efficient handling of customer requests.",
         ],
-        image: "https://i.ibb.co/com/customer-flow-optimization.png"
+        image: "https://i.ibb.co/com/customer-flow-optimization.png",
       },
       {
         title: "Real-Time Queue Updates",
@@ -2739,9 +2747,9 @@ export const ProductCardsData = [
         points: [
           "Track queue length and status in real-time.",
           "Instantly alert customers when their turn is up.",
-          "Reduce waiting time with optimized queue management."
+          "Reduce waiting time with optimized queue management.",
         ],
-        image: "https://i.ibb.co/com/real-time-updates.png"
+        image: "https://i.ibb.co/com/real-time-updates.png",
       },
       {
         title: "Customizable Queue Display",
@@ -2749,11 +2757,11 @@ export const ProductCardsData = [
         points: [
           "Design your display interface.",
           "Choose between digital and physical queue displays.",
-          "Update queue status remotely."
+          "Update queue status remotely.",
         ],
-        image: "https://i.ibb.co/com/customizable-display.png"
-      }
-    ]
+        image: "https://i.ibb.co/com/customizable-display.png",
+      },
+    ],
   },
   {
     id: 4,
@@ -2812,9 +2820,9 @@ export const ProductCardsData = [
         points: [
           "Manage multiple queues simultaneously.",
           "Display estimated wait times.",
-          "Ensure efficient handling of customer requests."
+          "Ensure efficient handling of customer requests.",
         ],
-        image: "https://i.ibb.co/com/customer-flow-optimization.png"
+        image: "https://i.ibb.co/com/customer-flow-optimization.png",
       },
       {
         title: "Real-Time Queue Updates",
@@ -2822,9 +2830,9 @@ export const ProductCardsData = [
         points: [
           "Track queue length and status in real-time.",
           "Instantly alert customers when their turn is up.",
-          "Reduce waiting time with optimized queue management."
+          "Reduce waiting time with optimized queue management.",
         ],
-        image: "https://i.ibb.co/com/real-time-updates.png"
+        image: "https://i.ibb.co/com/real-time-updates.png",
       },
       {
         title: "Customizable Queue Display",
@@ -2832,11 +2840,11 @@ export const ProductCardsData = [
         points: [
           "Design your display interface.",
           "Choose between digital and physical queue displays.",
-          "Update queue status remotely."
+          "Update queue status remotely.",
         ],
-        image: "https://i.ibb.co/com/customizable-display.png"
-      }
-    ]
+        image: "https://i.ibb.co/com/customizable-display.png",
+      },
+    ],
   },
   {
     id: 5,
@@ -2895,19 +2903,20 @@ export const ProductCardsData = [
         points: [
           "Automate lead capture and follow-up.",
           "Set reminders for sales team to track activities.",
-          "Easily manage and convert leads into opportunities."
+          "Easily manage and convert leads into opportunities.",
         ],
-        image: "https://i.ibb.co/com/sales-automation.png"
+        image: "https://i.ibb.co/com/sales-automation.png",
       },
       {
         title: "Customer Insights",
-        description: "Gain actionable insights into customer behavior and preferences to improve interactions.",
+        description:
+          "Gain actionable insights into customer behavior and preferences to improve interactions.",
         points: [
           "Track customer interaction history.",
           "Analyze data for smarter decision making.",
-          "Segment customers based on preferences and behaviors."
+          "Segment customers based on preferences and behaviors.",
         ],
-        image: "https://i.ibb.co/com/customer-insights.png"
+        image: "https://i.ibb.co/com/customer-insights.png",
       },
       {
         title: "Marketing Integration",
@@ -2915,11 +2924,11 @@ export const ProductCardsData = [
         points: [
           "Integrate with email marketing platforms.",
           "Monitor campaign results in real-time.",
-          "Enhance customer targeting with marketing data."
+          "Enhance customer targeting with marketing data.",
         ],
-        image: "https://i.ibb.co/com/marketing-integration.png"
-      }
-    ]
+        image: "https://i.ibb.co/com/marketing-integration.png",
+      },
+    ],
   },
   {
     id: 6,
@@ -2934,7 +2943,7 @@ export const ProductCardsData = [
     images: [
       {
         id: 1,
-        url: "https://i.ibb.co.com/qskBDPW/Image.png",
+        url: "https://i.ibb.co.com/mCCWWV4L/flyte-pos-2.png",
         status: "active",
       },
       {
@@ -2956,7 +2965,7 @@ export const ProductCardsData = [
     features: ["Sales Transactions Management", "Inventory Tracking", "Customer Insights"],
     featureImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
     videos: {
-      bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
+      bgImage: "https://i.ibb.co.com/6RhcPr0N/flyte-pos-3.png",
       videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
     },
     technicalSpecifications: {
@@ -2978,9 +2987,9 @@ export const ProductCardsData = [
         points: [
           "Track sales transactions instantly.",
           "Analyze sales trends to improve stock and pricing decisions.",
-          "Improve cashier efficiency with streamlined sales processes."
+          "Improve cashier efficiency with streamlined sales processes.",
         ],
-        image: "https://i.ibb.co/com/real-time-sales.png"
+        image: "https://i.ibb.co/com/real-time-sales.png",
       },
       {
         title: "Inventory Management",
@@ -2988,9 +2997,9 @@ export const ProductCardsData = [
         points: [
           "Track inventory levels in real-time.",
           "Set automatic stock alerts to reorder products.",
-          "Gain insights into product performance and sales."
+          "Gain insights into product performance and sales.",
         ],
-        image: "https://i.ibb.co/com/inventory-management.png"
+        image: "https://i.ibb.co/com/inventory-management.png",
       },
       {
         title: "Customer Insights",
@@ -2998,11 +3007,11 @@ export const ProductCardsData = [
         points: [
           "Track customer purchase history.",
           "Identify repeat customers for targeted promotions.",
-          "Analyze customer behavior for better marketing strategies."
+          "Analyze customer behavior for better marketing strategies.",
         ],
-        image: "https://i.ibb.co/com/customer-insights-pos.png"
-      }
-    ]
+        image: "https://i.ibb.co/com/customer-insights-pos.png",
+      },
+    ],
   },
   {
     id: 7,
@@ -4071,6 +4080,44 @@ export const processData = [
     description: "Receive and review the job offer to join our team.",
   },
 ];
+
+// hire process data for hire details page
+export const hireProcessData = {
+  name: "Our Hiring Process",
+  description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+  title: "Your Path to Hiring Frontend Developers",
+  features: [
+    {
+      id: 1,
+      name: "Requirement Analysis",
+      details:
+        "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+    },
+    {
+      id: 2,
+      name: "Developer Matching",
+      details:
+        "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+    },
+    {
+      id: 3,
+      name: "Interview & Selection",
+      details:
+        "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+    },
+    {
+      id: 4,
+      name: "Onboarding & Collaboration",
+      details:
+        "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+    },
+    {
+      id: 5,
+      name: "Ongoing Support",
+      details: "We provide continuous support to monitor performance and address any challenges during the project.",
+    },
+  ],
+};
 
 // Opportunies data
 export const opportunities = [
