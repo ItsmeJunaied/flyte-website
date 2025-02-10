@@ -11,7 +11,7 @@ const WhyChoose = ({ params }: ParamProps) => {
   const tech = Object.values(techData).find((item) => item.hireLinkName === params);
   return (
     <div className="bg-white">
-      <div className="container pt-10 lg:pt-20 pb-10">
+      <div className="container pt-10 lg:pt-20  lg:pb-10">
         <h2 className="text-[#060b13] text-xl lg:text-3xl font-semibold mb-3 lg:mb-6">
           Why Choose Our Frontend Developers?
         </h2>
