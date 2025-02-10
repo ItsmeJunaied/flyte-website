@@ -1084,6 +1084,48 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    exploreMoreDevelopers: [
+      {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
+      {id:2, name:"Hire Angular Developers", path:"angular-developer"},
+      {id:3, name:"Hire Vue.js Developers", path:"vuejs-developer"},
+      {id:4, name:"Hire Next.js Developers", path:"nextjs-developer"},
+    ],
+     hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    }
   },
 
   backend: {
@@ -1155,6 +1197,47 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    exploreMoreDevelopers: [
+      {id:1, name:"Hire Node.js Developers", path:"nodejs-developer"},
+      {id:2, name:"Hire Laravel Developers", path:"laravel-developer"},
+      {id:3, name:"Hire Python Developers", path:"python-developer"},
+    ],
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Backend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    }
   },
 
   mobileDevelopment: {
@@ -1221,6 +1304,47 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    exploreMoreDevelopers: [
+      {id:1, name:"Hire Flutter Developers", path:"flutter-developer"},
+      {id:2, name:"Hire Android Developers", path:"android-developer"},
+      {id:3, name:"Hire React Native Developers", path:"react-native-developer"},
+    ],
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Mobile App Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    }
   },
 
   qualityAssurance: {
@@ -1287,6 +1411,48 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    exploreMoreDevelopers: [
+      {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
+      {id:2, name:"Hire Angular Developers", path:"angular-developer"},
+      {id:3, name:"Hire Vue.js Developers", path:"vuejs-developer"},
+      {id:4, name:"Hire Next.js Developers", path:"nextjs-developer"},
+    ],
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Quality Assurance",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    }
   },
 
   devOps: {
@@ -1353,6 +1519,48 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    exploreMoreDevelopers: [
+      {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
+      {id:2, name:"Hire Angular Developers", path:"angular-developer"},
+      {id:3, name:"Hire Vue.js Developers", path:"vuejs-developer"},
+      {id:4, name:"Hire Next.js Developers", path:"nextjs-developer"},
+    ],
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Dev-Ops Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    }
   },
 
   aiML: {
@@ -1419,6 +1627,48 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    exploreMoreDevelopers: [
+      {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
+      {id:2, name:"Hire Angular Developers", path:"angular-developer"},
+      {id:3, name:"Hire Vue.js Developers", path:"vuejs-developer"},
+      {id:4, name:"Hire Next.js Developers", path:"nextjs-developer"},
+    ],
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring AI & ML Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    }
   },
 };
 
@@ -4080,44 +4330,6 @@ export const processData = [
     description: "Receive and review the job offer to join our team.",
   },
 ];
-
-// hire process data for hire details page
-export const hireProcessData = {
-  name: "Our Hiring Process",
-  description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
-  title: "Your Path to Hiring Frontend Developers",
-  features: [
-    {
-      id: 1,
-      name: "Requirement Analysis",
-      details:
-        "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
-    },
-    {
-      id: 2,
-      name: "Developer Matching",
-      details:
-        "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
-    },
-    {
-      id: 3,
-      name: "Interview & Selection",
-      details:
-        "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
-    },
-    {
-      id: 4,
-      name: "Onboarding & Collaboration",
-      details:
-        "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
-    },
-    {
-      id: 5,
-      name: "Ongoing Support",
-      details: "We provide continuous support to monitor performance and address any challenges during the project.",
-    },
-  ],
-};
 
 // Opportunies data
 export const opportunities = [

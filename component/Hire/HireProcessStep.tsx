@@ -1,11 +1,14 @@
-import React from 'react';
-import StepCard from '../Common/StepCard';
-import { hireProcessData } from '@/api/Dummy';
+import React from "react";
+import StepCard from "../Common/StepCard";
+import { techData } from "@/api/Dummy";
+import { ParamProps } from "@/app/hire/[hire]/page";
 
-const HireProcessStep = () => {
+const HireProcessStep = ({ params }: ParamProps) => {
+  const tech = Object.values(techData).find((item) => item.hireLinkName === params);
+  const hireProcessData = tech?.hireProcess || {};
   return (
     <div>
-       <StepCard data={hireProcessData} />
+      <StepCard data={hireProcessData} />
     </div>
   );
 };

@@ -8,10 +8,10 @@ type Features = {
 };
 
 type CardProps = {
-  name: string;
-  description: string;
-  title: string;
-  features: Features[];
+  name?: string;
+  description?: string;
+  title?: string;
+  features?: Features[];
 };
 
 const StepCard: React.FC<{ data: CardProps }> = ({ data }) => {

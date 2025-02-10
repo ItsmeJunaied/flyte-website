@@ -1,12 +1,13 @@
 import React from "react";
 import { techData } from "@/api/Dummy";
 import CommonCard from "../Common/CommonCard";
+import { ParamProps } from "@/app/hire/[hire]/page";
 
-type Props = {
-  params: string;
-};
+// type Props = {
+//   params: string;
+// };
 
-const WhyChoose = ({ params }: Props) => {
+const WhyChoose = ({ params }: ParamProps) => {
   const tech = Object.values(techData).find((item) => item.hireLinkName === params);
   return (
     <div className="bg-white">

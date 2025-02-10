@@ -1,7 +1,10 @@
+import { techData } from "@/api/Dummy";
+import { ParamProps } from "@/app/hire/[hire]/page";
 import Link from "next/link";
 import React from "react";
 
-const HireDeveloperRoles = () => {
+const HireMoreDevelopers = ({ params }: ParamProps) => {
+  const tech = Object.values(techData).find((item) => item.hireLinkName === params);
   return (
     <div className="px-5 lg:px-16 bg-white">
       <div className="container px-3 lg:px-8 py-5 lg:py-10 bg-[#31323c] rounded-xl flex flex-col gap-4 lg:gap-8">
@@ -11,23 +14,19 @@ const HireDeveloperRoles = () => {
           Looking for a more specific role? Check out the options below:
         </p>
         <div className="flex flex-col lg:flex-row items-start gap-2 lg:gap-6">
-          <Link
-            href=""
-            className="text-white hover:text-[#5856d6] text-sm lg:text-base border-b border-white hover:border-[#5856d6]"
-          >
-            Hire React Developers
-          </Link>
-          <Link
-            href=""
-            className="text-white hover:text-[#5856d6] text-sm lg:text-base border-b border-white hover:border-[#5856d6]"
-          >
-            Hire Angular Developers
-          </Link>
-        
+          {tech?.exploreMoreDevelopers?.map((developer, index) => (
+            <Link
+              key={index}
+              href={developer?.path}
+              className="text-white hover:text-[#5856d6] text-sm lg:text-base border-b border-white hover:border-[#5856d6]"
+            >
+              {developer?.name}
+            </Link>
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-export default HireDeveloperRoles;
+export default HireMoreDevelopers;
