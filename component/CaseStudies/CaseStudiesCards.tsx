@@ -32,7 +32,7 @@ const CaseStudiesCards: React.FC<CaseStudyProps> = ({ caseStudyData }) => {
     : caseStudyData.filter((caseStudy) => caseStudy.category === selectedCategory);
 
   return (
-    <div className="rounded-t-[60px] lg:py-10 lg:px-0 w-full flex justify-center items-center">
+    <div className="rounded-t-[60px] lg:py-5 lg:px-0 w-full flex justify-center items-center">
       <div className="container">
         <div className="flex flex-col justify-center items-center gap-3 w-full">
           <Subtitle Subtitle={subtitle} />
@@ -68,7 +68,7 @@ const CaseStudiesCards: React.FC<CaseStudyProps> = ({ caseStudyData }) => {
           ))}
         </div>
 
-        <div className="py-5 lg:py-20">
+        <div className="pt-5 lg:pt-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14">
             {filteredCaseStudies.map((caseStudy) => (
               <div
