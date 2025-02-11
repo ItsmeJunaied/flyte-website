@@ -69,20 +69,20 @@ const CaseStudiesCards: React.FC<CaseStudyProps> = ({ caseStudyData }) => {
         </div>
 
         <div className="py-5 lg:py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14">
             {filteredCaseStudies.map((caseStudy) => (
               <div
                 key={caseStudy.id}
-                className={`flex flex-col lg:w-[620px] ${
+                className={`flex flex-col lg:w-[620px ${
                   caseStudy.id % 2 === 0 ? "lg:mt-20" : ""
                 } bg-white h-fit shadow-[0px_0px_10px_10px_rgba(223,223,223,0.25)]`}
                 data-aos={
                   caseStudy.id % 2 === 0 ? "fade-up-left" : "fade-up-right"
                 }
               >
-                <div className="overflow-hidden">
+                <div className="h-[165px] sm:h-[250px] md:h-[400px] lg:h-[500px] overflow-hidden">
                   <img
-                    className="w-full lg:h-[500px] object-cover transform transition-transform duration-300 ease-in-out hover:scale-110 hover:transform-origin-center"
+                    className="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110 hover:transform-origin-center"
                     src={caseStudy.image}
                     alt={caseStudy.title}
                   />

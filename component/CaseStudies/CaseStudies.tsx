@@ -9,8 +9,8 @@ const CaseStudies = () => {
   return (
     <div className="w-full py-5 lg:py-10">
       <div className="w-full flex flex-row">
-        <div className="w-full flex flex-col lg:flex-row items-center gap-5 h-full overflow-x-hidden">
-          <div className="lg:pl-16 lg:pr-5 w-full lg:w-1/3 flex flex-col gap-3 lg:gap-6 h-full justify-center px-4 lg:px-0 mb-5 lg:mb-0">
+        <div className="container w-full flex flex-col lg:flex-row items-center gap-5 h-full overflow-x-hidden">
+          <div className="w-full lg:w-1/3 flex flex-col gap-3 lg:gap-6 h-full justify-center mb-5 lg:mb-0">
             <h4 className="text-[#5856d6] text-lg font-bold">{subtitle}</h4>
             <h1 className="text-zinc-950 text-2xl lg:text-4xl font-bold lg:leading-[46px]">
               {title}
@@ -27,7 +27,7 @@ const CaseStudies = () => {
             </div>
           </div>
 
-          <div className=" w-full lg:w-2/3 flex flex-col gap-4 h-full ">
+          <div className="w-full lg:w-2/3 flex flex-col gap-4 h-full ">
             {/* <div className=' bg-deep-orange-300 opacity-50 w-96 h-96 rounded-full'>
 
                     </div> */}
