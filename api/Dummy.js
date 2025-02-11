@@ -173,25 +173,41 @@ export const navbarData = {
         {
           name: "Time2Task",
           icon: "fa-box",
-          description: "Our flagship product designed to streamline operations.",
+          description: "A task management tool to plan, assign, and track project tasks efficiently.",
           path: "/products/time-to-task",
         },
         {
           name: "Cloud Clock In",
-          icon: "fa-cogs",
-          description: "A cutting-edge tool for improving productivity..",
+          icon: "fa-clock",
+          description: "A digital system for tracking employee attendance and work hours in real time.",
           path: "/products/cloud-clockIn",
         },
         {
+          name: "Flyte Queue",
+          icon: "fa-people-line",
+          description:
+            "A digital queue management system to streamline customer flow and reduce waiting times.",
+          path: "/products/flyte-queue",
+        },
+        {
+          name: "Flyte ERP",
+          icon: "fa-poo-storm",
+          description:
+            "A comprehensive platform that integrates and streamlines core business processes for enhanced productivity.",
+          path: "/products/flyte-erp",
+        },
+        {
           name: "Flyte CRM",
-          icon: "fa-cogs",
-          description: "A cutting-edge tool for improving productivity.",
+          icon: "fa-clone",
+          description:
+            "A customer relationship management tool designed to optimize sales, marketing, and customer support operations.",
           path: "/products/flyte-crm",
         },
         {
           name: "Flyte POS",
-          icon: "fa-cogs",
-          description: "A cutting-edge tool for improving productivity.",
+          icon: "fa-radiation",
+          description:
+            "A reliable point-of-sale system for efficient retail transactions and inventory tracking.",
           path: "/products/flyte-pos",
         },
       ],
@@ -1068,6 +1084,48 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    exploreMoreDevelopers: [
+      {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
+      {id:2, name:"Hire Angular Developers", path:"angular-developer"},
+      {id:3, name:"Hire Vue.js Developers", path:"vuejs-developer"},
+      {id:4, name:"Hire Next.js Developers", path:"nextjs-developer"},
+    ],
+     hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    }
   },
 
   backend: {
@@ -1139,6 +1197,47 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    exploreMoreDevelopers: [
+      {id:1, name:"Hire Node.js Developers", path:"nodejs-developer"},
+      {id:2, name:"Hire Laravel Developers", path:"laravel-developer"},
+      {id:3, name:"Hire Python Developers", path:"python-developer"},
+    ],
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Backend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    }
   },
 
   mobileDevelopment: {
@@ -1205,6 +1304,47 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    exploreMoreDevelopers: [
+      {id:1, name:"Hire Flutter Developers", path:"flutter-developer"},
+      {id:2, name:"Hire Android Developers", path:"android-developer"},
+      {id:3, name:"Hire React Native Developers", path:"react-native-developer"},
+    ],
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Mobile App Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    }
   },
 
   qualityAssurance: {
@@ -1271,6 +1411,48 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    exploreMoreDevelopers: [
+      {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
+      {id:2, name:"Hire Angular Developers", path:"angular-developer"},
+      {id:3, name:"Hire Vue.js Developers", path:"vuejs-developer"},
+      {id:4, name:"Hire Next.js Developers", path:"nextjs-developer"},
+    ],
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Quality Assurance",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    }
   },
 
   devOps: {
@@ -1337,6 +1519,48 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    exploreMoreDevelopers: [
+      {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
+      {id:2, name:"Hire Angular Developers", path:"angular-developer"},
+      {id:3, name:"Hire Vue.js Developers", path:"vuejs-developer"},
+      {id:4, name:"Hire Next.js Developers", path:"nextjs-developer"},
+    ],
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Dev-Ops Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    }
   },
 
   aiML: {
@@ -1403,6 +1627,48 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    exploreMoreDevelopers: [
+      {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
+      {id:2, name:"Hire Angular Developers", path:"angular-developer"},
+      {id:3, name:"Hire Vue.js Developers", path:"vuejs-developer"},
+      {id:4, name:"Hire Next.js Developers", path:"nextjs-developer"},
+    ],
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring AI & ML Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    }
   },
 };
 
@@ -2048,7 +2314,7 @@ export const footerData = {
 export const caseStudyData = [
   {
     id: 1,
-    image: "/images/FuelPro.png",
+    image: "/images/case/time-tracking.png",
     title: "Time Tracker",
     description: "A task management tool to plan, assign, and track project tasks efficiently.",
     tags: ["Time Tracking", "Project Management", "Task Assignment"],
@@ -2056,80 +2322,80 @@ export const caseStudyData = [
   },
   {
     id: 2,
-    image: "/images/FuelPro.png",
-    title: "Project X",
+    image: "/images/case/cloud-clockin.png",
+    title: "Cloud Clockin",
     description: "A powerful tool to manage complex projects with ease and efficiency.",
     tags: ["Project Management", "Collaboration", "Productivity"],
     category: "technology company",
   },
   {
     id: 3,
-    image: "/images/FuelPro.png",
-    title: "Task Master",
+    image: "/images/case/BenefitNetGeneral.gif",
+    title: "HR professionals and insurance specialists",
     description: "An intuitive task management app that helps teams stay organized and on track.",
     tags: ["Task Management", "Organization", "Teamwork"],
     category: "startup",
   },
   {
     id: 4,
-    image: "/images/FuelPro.png",
-    title: "Collab Hub",
+    image: "/images/case/picture-ongold.png",
+    title: "Picture onGold",
     description: "A collaboration platform for teams to communicate, share files, and track progress.",
     tags: ["Collaboration", "Communication", "File Sharing"],
     category: "enterprise",
   },
   {
     id: 5,
-    image: "/images/FuelPro.png",
-    title: "Time Saver",
+    image: "/images/case/pushlocal.jpg",
+    title: "Pushlocal",
     description: "A time management app that helps you save time with automated scheduling and reminders.",
     tags: ["Time Management", "Scheduling", "Reminders"],
     category: "enterprise",
   },
   {
     id: 6,
-    image: "/images/FuelPro.png",
-    title: "Team Up",
+    image: "/images/case/bloomfire.jpg",
+    title: "Social Learning Platform",
     description: "A team management app that fosters communication and collaboration among team members.",
     tags: ["Team Management", "Collaboration", "Communication"],
     category: "startup",
   },
   {
     id: 7,
-    image: "/images/FuelPro.png",
-    title: "Work Flow Pro",
+    image: "/images/case/cds.jpg",
+    title: "CDS Platform Development",
     description: "A work management tool to streamline workflows, automate tasks, and boost productivity.",
     tags: ["Workflow", "Automation", "Productivity"],
     category: "enterprise",
   },
   {
     id: 8,
-    image: "/images/FuelPro.png",
-    title: "Focus Time",
+    image: "/images/case/keeferealestate.png",
+    title: "Knee Pads",
     description: "A productivity app designed to keep you focused by blocking distractions.",
     tags: ["Productivity", "Focus", "Distraction-Free"],
     category: "technology company",
   },
   {
     id: 9,
-    image: "/images/FuelPro.png",
-    title: "Smart Scheduler",
+    image: "/images/case/americandesign.jpg",
+    title: "American Society of Interior Designers",
     description: "An intelligent scheduling app that adjusts to your work habits and preferences.",
     tags: ["Scheduling", "Automation", "Productivity"],
     category: "enterprise",
   },
   {
     id: 10,
-    image: "/images/FuelPro.png",
-    title: "Work Mate",
+    image: "/images/case/clinicaltrial.png",
+    title: "Clinical Trials Management",
     description: "A collaborative workspace for teams to track tasks, share documents, and meet deadlines.",
     tags: ["Collaboration", "Workspace", "Teamwork"],
     category: "enterprise",
   },
   {
     id: 11,
-    image: "/images/FuelPro.png",
-    title: "Pro Planner",
+    image: "/images/case/12.jpg",
+    title: "Organization IMS",
     description: "A professional planner to organize tasks, appointments, and goals efficiently.",
     tags: ["Planning", "Task Management", "Goal Setting"],
     category: "enterprise",
@@ -2144,100 +2410,100 @@ export const caseStudyData = [
   },
   {
     id: 13,
-    image: "/images/FuelPro.png",
-    title: "Task Flow",
+    image: "/images/case/realestate1.png",
+    title: "Real Estate Property Management",
     description: "A task management solution to track tasks from start to finish with clear deadlines.",
     tags: ["Task Management", "Deadline Tracking", "Organization"],
     category: "enterprise",
   },
   {
     id: 14,
-    image: "/images/FuelPro.png",
-    title: "Quick Task",
+    image: "/images/case/fsa.png",
+    title: "FSA Argentina",
     description: "An app for quick task organization and tracking, ensuring high productivity.",
     tags: ["Task Organization", "Quick Tasks", "Efficiency"],
     category: "enterprise",
   },
   {
     id: 15,
-    image: "/images/FuelPro.png",
-    title: "Meeting Planner",
+    image: "/images/case/hydro-one.png",
+    title: "HydroOne SharePoint Reporting",
     description: "A meeting scheduling app that optimizes team calendars and time slots.",
     tags: ["Scheduling", "Meetings", "Team Coordination"],
     category: "enterprise",
   },
   {
     id: 16,
-    image: "/images/FuelPro.png",
-    title: "Team Organizer",
+    image: "/images/case/case1.jpg",
+    title: "Macmillan Education",
     description: "An app that organizes team tasks, schedules, and milestones to improve workflow.",
     tags: ["Team Management", "Task Scheduling", "Team Collaboration"],
     category: "enterprise",
   },
-  {
-    id: 17,
-    image: "/images/FuelPro.png",
-    title: "Project Manager",
-    description: "A project management tool to plan, organize, and execute projects effectively.",
-    tags: ["Project Management", "Planning", "Execution"],
-    category: "enterprise",
-  },
-  {
-    id: 18,
-    image: "/images/FuelPro.png",
-    title: "Sync Pro",
-    description: "A synchronization tool for teams to coordinate tasks and share updates in real-time.",
-    tags: ["Syncing", "Collaboration", "Real-time"],
-    category: "enterprise",
-  },
-  {
-    id: 19,
-    image: "/images/FuelPro.png",
-    title: "Task Genie",
-    description: "A magical task manager that adapts to your needs and keeps you on track.",
-    tags: ["Task Management", "Productivity", "Adaptability"],
-    category: "enterprise",
-  },
-  {
-    id: 20,
-    image: "/images/FuelPro.png",
-    title: "Time Master",
-    description: "A time management tool that tracks, analyzes, and improves your time usage.",
-    tags: ["Time Management", "Analytics", "Productivity"],
-    category: "enterprise",
-  },
-  {
-    id: 21,
-    image: "/images/FuelPro.png",
-    title: "Team Vision",
-    description: "A strategic planning app for teams to align on goals, timelines, and progress.",
-    tags: ["Strategic Planning", "Team Alignment", "Goal Setting"],
-    category: "enterprise",
-  },
-  {
-    id: 22,
-    image: "/images/FuelPro.png",
-    title: "Focus Pro",
-    description: "A focused environment app that helps you stay on task and avoid distractions.",
-    tags: ["Focus", "Productivity", "Distraction-Free"],
-    category: "technology company",
-  },
-  {
-    id: 23,
-    image: "/images/FuelPro.png",
-    title: "Task Hub",
-    description: "A hub for organizing and managing all your tasks, deadlines, and projects.",
-    tags: ["Task Management", "Organization", "Deadline Tracking"],
-    category: "enterprise",
-  },
-  {
-    id: 24,
-    image: "/images/FuelPro.png",
-    title: "Work Force",
-    description: "A workforce management app designed for teams to track work hours and productivity.",
-    tags: ["Workforce Management", "Time Tracking", "Productivity"],
-    category: "enterprise",
-  },
+  // {
+  //   id: 17,
+  //   image: "/images/FuelPro.png",
+  //   title: "Project Manager",
+  //   description: "A project management tool to plan, organize, and execute projects effectively.",
+  //   tags: ["Project Management", "Planning", "Execution"],
+  //   category: "enterprise",
+  // },
+  // {
+  //   id: 18,
+  //   image: "/images/FuelPro.png",
+  //   title: "Sync Pro",
+  //   description: "A synchronization tool for teams to coordinate tasks and share updates in real-time.",
+  //   tags: ["Syncing", "Collaboration", "Real-time"],
+  //   category: "enterprise",
+  // },
+  // {
+  //   id: 19,
+  //   image: "/images/FuelPro.png",
+  //   title: "Task Genie",
+  //   description: "A magical task manager that adapts to your needs and keeps you on track.",
+  //   tags: ["Task Management", "Productivity", "Adaptability"],
+  //   category: "enterprise",
+  // },
+  // {
+  //   id: 20,
+  //   image: "/images/FuelPro.png",
+  //   title: "Time Master",
+  //   description: "A time management tool that tracks, analyzes, and improves your time usage.",
+  //   tags: ["Time Management", "Analytics", "Productivity"],
+  //   category: "enterprise",
+  // },
+  // {
+  //   id: 21,
+  //   image: "/images/FuelPro.png",
+  //   title: "Team Vision",
+  //   description: "A strategic planning app for teams to align on goals, timelines, and progress.",
+  //   tags: ["Strategic Planning", "Team Alignment", "Goal Setting"],
+  //   category: "enterprise",
+  // },
+  // {
+  //   id: 22,
+  //   image: "/images/FuelPro.png",
+  //   title: "Focus Pro",
+  //   description: "A focused environment app that helps you stay on task and avoid distractions.",
+  //   tags: ["Focus", "Productivity", "Distraction-Free"],
+  //   category: "technology company",
+  // },
+  // {
+  //   id: 23,
+  //   image: "/images/FuelPro.png",
+  //   title: "Task Hub",
+  //   description: "A hub for organizing and managing all your tasks, deadlines, and projects.",
+  //   tags: ["Task Management", "Organization", "Deadline Tracking"],
+  //   category: "enterprise",
+  // },
+  // {
+  //   id: 24,
+  //   image: "/images/FuelPro.png",
+  //   title: "Work Force",
+  //   description: "A workforce management app designed for teams to track work hours and productivity.",
+  //   tags: ["Workforce Management", "Time Tracking", "Productivity"],
+  //   category: "enterprise",
+  // },
 ];
 
 //project section
@@ -2555,6 +2821,41 @@ export const ProductCardsData = [
         "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
+    productBenefits: [
+      {
+        title: "Real-Time Attendance Tracking",
+        description:
+          "Monitor employee attendance instantly from anywhere. Get accurate time-in and time-out records synced to the cloud.",
+        points: [
+          "Real-time updates across all platforms.",
+          "Accessible via biometric, mobile, or web.",
+          "Eliminates manual tracking errors.",
+        ],
+        image: "https://i.ibb.co.com/zWKmxvnN/Frame-48095769-1.png",
+      },
+      {
+        title: "Automated Report Generation",
+        description:
+          "Generate detailed attendance and productivity reports with a single click. Save time and gain actionable insights into employee performance.",
+        points: [
+          "Customizable report creation.",
+          "Schedule automatic reports.",
+          "Visualize data with charts.",
+        ],
+        image: "https://i.ibb.co.com/mVQYXvxF/Frame-48095769-2.png",
+      },
+      {
+        title: "Integration With Payroll Systems",
+        description:
+          "Sync attendance and overtime data directly with payroll systems. Automate calculations to ensure error-free and timely salary processing.",
+        points: [
+          "Automates salary calculations.",
+          "Seamless integration with payroll software.",
+          "Ensures labor law compliance.",
+        ],
+        image: "https://i.ibb.co.com/pv5PzFZJ/Frame-48095769-3.png",
+      },
+    ],
   },
   {
     id: 2,
@@ -2568,7 +2869,7 @@ export const ProductCardsData = [
     images: [
       {
         id: 1,
-        url: "https://i.ibb.co.com/qskBDPW/Image.png",
+        url: "https://i.ibb.co.com/yxSBNXm/Payroll-1.png",
         status: "active",
       },
       {
@@ -2590,7 +2891,7 @@ export const ProductCardsData = [
     features: ["Task Prioritization", "Real-Time Collaboration", "Customizable Dashboards"],
     featureImage: "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
     videos: {
-      bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
+      bgImage: "https://i.ibb.co.com/yxSBNXm/Payroll-1.png",
       videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
     },
     technicalSpecifications: {
@@ -2605,6 +2906,30 @@ export const ProductCardsData = [
         "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
+    productBenefits: [
+      {
+        title: "Task Prioritization",
+        description: "Organize tasks based on priority to ensure critical activities are completed first.",
+        points: ["Drag-and-drop task sorting.", "Set deadlines and reminders.", "Team task sharing."],
+        image: "https://i.ibb.co/com/task-prioritization.png",
+      },
+      {
+        title: "Real-Time Collaboration",
+        description: "Collaborate on tasks with team members instantly, ensuring everyone stays updated.",
+        points: ["Live notifications.", "Shared task progress.", "Seamless team communication."],
+        image: "https://i.ibb.co/com/real-time-collaboration.png",
+      },
+      {
+        title: "Customizable Dashboards",
+        description: "Create dashboards tailored to your workflow for enhanced task management.",
+        points: [
+          "Drag-and-drop widget customization.",
+          "Overview of key metrics.",
+          "Personalized view for each user.",
+        ],
+        image: "https://i.ibb.co/com/customizable-dashboards.png",
+      },
+    ],
   },
   {
     id: 3,
@@ -2655,6 +2980,38 @@ export const ProductCardsData = [
         "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
+    productBenefits: [
+      {
+        title: "Customer Flow Optimization",
+        description: "Manage customer flow efficiently, reducing long wait times and improving experience.",
+        points: [
+          "Manage multiple queues simultaneously.",
+          "Display estimated wait times.",
+          "Ensure efficient handling of customer requests.",
+        ],
+        image: "https://i.ibb.co/com/customer-flow-optimization.png",
+      },
+      {
+        title: "Real-Time Queue Updates",
+        description: "Stay updated with real-time data to streamline operations.",
+        points: [
+          "Track queue length and status in real-time.",
+          "Instantly alert customers when their turn is up.",
+          "Reduce waiting time with optimized queue management.",
+        ],
+        image: "https://i.ibb.co/com/real-time-updates.png",
+      },
+      {
+        title: "Customizable Queue Display",
+        description: "Personalize the queue display for your customers and staff.",
+        points: [
+          "Design your display interface.",
+          "Choose between digital and physical queue displays.",
+          "Update queue status remotely.",
+        ],
+        image: "https://i.ibb.co/com/customizable-display.png",
+      },
+    ],
   },
   {
     id: 4,
@@ -2706,6 +3063,38 @@ export const ProductCardsData = [
         "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
+    productBenefits: [
+      {
+        title: "Customer Flow Optimization",
+        description: "Manage customer flow efficiently, reducing long wait times and improving experience.",
+        points: [
+          "Manage multiple queues simultaneously.",
+          "Display estimated wait times.",
+          "Ensure efficient handling of customer requests.",
+        ],
+        image: "https://i.ibb.co/com/customer-flow-optimization.png",
+      },
+      {
+        title: "Real-Time Queue Updates",
+        description: "Stay updated with real-time data to streamline operations.",
+        points: [
+          "Track queue length and status in real-time.",
+          "Instantly alert customers when their turn is up.",
+          "Reduce waiting time with optimized queue management.",
+        ],
+        image: "https://i.ibb.co/com/real-time-updates.png",
+      },
+      {
+        title: "Customizable Queue Display",
+        description: "Personalize the queue display for your customers and staff.",
+        points: [
+          "Design your display interface.",
+          "Choose between digital and physical queue displays.",
+          "Update queue status remotely.",
+        ],
+        image: "https://i.ibb.co/com/customizable-display.png",
+      },
+    ],
   },
   {
     id: 5,
@@ -2757,6 +3146,39 @@ export const ProductCardsData = [
         "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
+    productBenefits: [
+      {
+        title: "Sales Process Automation",
+        description: "Automate and streamline sales workflows to save time and enhance team productivity.",
+        points: [
+          "Automate lead capture and follow-up.",
+          "Set reminders for sales team to track activities.",
+          "Easily manage and convert leads into opportunities.",
+        ],
+        image: "https://i.ibb.co/com/sales-automation.png",
+      },
+      {
+        title: "Customer Insights",
+        description:
+          "Gain actionable insights into customer behavior and preferences to improve interactions.",
+        points: [
+          "Track customer interaction history.",
+          "Analyze data for smarter decision making.",
+          "Segment customers based on preferences and behaviors.",
+        ],
+        image: "https://i.ibb.co/com/customer-insights.png",
+      },
+      {
+        title: "Marketing Integration",
+        description: "Seamlessly integrate with marketing tools to execute campaigns and track performance.",
+        points: [
+          "Integrate with email marketing platforms.",
+          "Monitor campaign results in real-time.",
+          "Enhance customer targeting with marketing data.",
+        ],
+        image: "https://i.ibb.co/com/marketing-integration.png",
+      },
+    ],
   },
   {
     id: 6,
@@ -2771,7 +3193,7 @@ export const ProductCardsData = [
     images: [
       {
         id: 1,
-        url: "https://i.ibb.co.com/qskBDPW/Image.png",
+        url: "https://i.ibb.co.com/mCCWWV4L/flyte-pos-2.png",
         status: "active",
       },
       {
@@ -2793,7 +3215,7 @@ export const ProductCardsData = [
     features: ["Sales Transactions Management", "Inventory Tracking", "Customer Insights"],
     featureImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
     videos: {
-      bgImage: "https://i.ibb.co.com/nbHLb9P/Image.png",
+      bgImage: "https://i.ibb.co.com/6RhcPr0N/flyte-pos-3.png",
       videoUrl: "https://www.youtube.com/embed/s7yhNF9nXUk?si=Zbn5bAjGyrd5cCmO",
     },
     technicalSpecifications: {
@@ -2808,6 +3230,38 @@ export const ProductCardsData = [
         "https://i.ibb.co.com/TDyfHzj/brand-quickbooks-svgrepo-com-1.png",
       ],
     },
+    productBenefits: [
+      {
+        title: "Real-Time Sales Monitoring",
+        description: "Monitor sales transactions in real-time to optimize retail performance.",
+        points: [
+          "Track sales transactions instantly.",
+          "Analyze sales trends to improve stock and pricing decisions.",
+          "Improve cashier efficiency with streamlined sales processes.",
+        ],
+        image: "https://i.ibb.co/com/real-time-sales.png",
+      },
+      {
+        title: "Inventory Management",
+        description: "Easily track and manage inventory to avoid stockouts and optimize stock levels.",
+        points: [
+          "Track inventory levels in real-time.",
+          "Set automatic stock alerts to reorder products.",
+          "Gain insights into product performance and sales.",
+        ],
+        image: "https://i.ibb.co/com/inventory-management.png",
+      },
+      {
+        title: "Customer Insights",
+        description: "Utilize customer data to make informed decisions and enhance customer relationships.",
+        points: [
+          "Track customer purchase history.",
+          "Identify repeat customers for targeted promotions.",
+          "Analyze customer behavior for better marketing strategies.",
+        ],
+        image: "https://i.ibb.co/com/customer-insights-pos.png",
+      },
+    ],
   },
   {
     id: 7,

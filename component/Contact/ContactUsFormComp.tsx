@@ -78,16 +78,16 @@ const ContactUsFormComp: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className=" w-full h-full flex-col justify-start items-start gap-4 inline-flex px-0 lg:px-0 pb-10 lg:pb-0"
+      className=" w-full h-full flex-col justify-start items-start gap-4 inline-flex"
     >
-      <div className=" w-full flex flex-col lg:flex-row justify-start items-start gap-8 ">
-        <div className=" w-full   flex-col justify-start items-start gap-2 inline-flex">
-          <label className="self-stretch text-[#666666] text-xs font-semibold font-['DM Sans'] leading-[18px]">
+      <div className=" w-full flex flex-col lg:flex-row justify-start items-start gap-4 lg:gap-8 ">
+        <div className="w-full flex-col justify-start items-start gap-2 inline-flex">
+          <label className="self-stretch text-[#666666] text-sm lg:text-base font-semibold font-['DM Sans'] leading-[18px]">
             Name
           </label>
           <input
             type="text"
-            className="self-stretch h-14 p-4 bg-white rounded-lg border border-[#cccccc] text-[#666666] text-sm font-normal font-['DM Sans'] leading-normal outline-none hover:border-btnColor focus:border-btnColor"
+            className="self-stretch lg:h-14 p-3 lg:p-4 bg-white rounded-lg border border-[#cccccc] text-[#666666] text-sm font-normal font-['DM Sans'] leading-normal outline-none hover:border-btnColor focus:border-btnColor"
             placeholder="Type your name"
             {...register("name", { required: true })}
             autoComplete="off"
@@ -96,13 +96,13 @@ const ContactUsFormComp: React.FC = () => {
             <span className=" text-red-600">Name is required</span>
           )}
         </div>
-        <div className="w-full   flex-col justify-start items-start gap-2 inline-flex">
-          <label className="self-stretch text-[#666666] text-xs font-semibold font-['DM Sans'] leading-[18px]">
+        <div className="w-full flex-col justify-start items-start gap-2 inline-flex">
+          <label className="self-stretch text-[#666666] text-sm lg:text-base font-semibold font-['DM Sans'] leading-[18px]">
             Company
           </label>
           <input
             type="text"
-            className="self-stretch h-14 p-4 bg-white rounded-lg border border-[#cccccc] text-[#666666] text-sm font-normal font-['DM Sans'] leading-normal outline-none hover:border-btnColor focus:border-btnColor"
+            className="self-stretch lg:h-14 p-3 lg:p-4 bg-white rounded-lg border border-[#cccccc] text-[#666666] text-sm font-normal font-['DM Sans'] leading-normal outline-none hover:border-btnColor focus:border-btnColor"
             placeholder="Type your company name"
             {...register("company_name", { required: true })}
           />
@@ -112,14 +112,14 @@ const ContactUsFormComp: React.FC = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-col lg:flex-row justify-start items-start gap-8">
+      <div className="w-full flex flex-col lg:flex-row justify-start items-start gap-4 lg:gap-8">
         <div className="w-full   flex-col justify-start items-start gap-2 inline-flex">
-          <label className="self-stretch text-[#666666] text-xs font-semibold font-['DM Sans'] leading-[18px]">
+          <label className="self-stretch text-[#666666] text-sm lg:text-base font-semibold font-['DM Sans'] leading-[18px]">
             Email
           </label>
           <input
             type="email"
-            className="self-stretch h-14 p-4 bg-white rounded-lg border border-[#cccccc] text-[#666666] text-sm font-normal font-['DM Sans'] leading-normal outline-none hover:border-btnColor focus:border-btnColor"
+            className="self-stretch lg:h-14 p-3 lg:p-4 bg-white rounded-lg border border-[#cccccc] text-[#666666] text-sm font-normal font-['DM Sans'] leading-normal outline-none hover:border-btnColor focus:border-btnColor"
             placeholder="Type your email"
             {...register("email", { required: true })}
           />
@@ -128,11 +128,11 @@ const ContactUsFormComp: React.FC = () => {
           )}
         </div>
         <div className="w-full flex-col justify-start items-start gap-2 inline-flex">
-          <label className="self-stretch text-[#666666] text-xs font-semibold font-['DM Sans'] leading-[18px]">
+          <label className="self-stretch text-[#666666] text-sm lg:text-base font-semibold font-['DM Sans'] leading-[18px]">
             Phone
           </label>
           <PhoneInput
-            className={`self-stretch h-14 p-4 bg-white rounded-lg border ${
+            className={`self-stretch lg:h-14 p-3 lg:p-4 bg-white rounded-lg border ${
               errors.phone ? "border-red-600" : "border-[#cccccc]"
             } text-[#666666] text-sm font-normal font-['DM Sans'] leading-normal outline-none hover:border-btnColor focus:border-btnColor`}
             placeholder="Enter phone number"
@@ -191,10 +191,10 @@ const ContactUsFormComp: React.FC = () => {
         </div>
       </div> */}
 
-      <div className="self-stretch h-[329px] flex-col justify-start items-start gap-6 flex">
+      <div className="self-stretch h-[329px] flex-col justify-start items-start gap-2 lg:gap-6 flex">
         <div className="self-stretch h-[265px] flex-col justify-start items-start gap-4 flex">
           <div className="self-stretch h-[159px] flex-col justify-start items-start gap-2 flex">
-            <label className="self-stretch text-[#666666] text-xs font-semibold font-['Noto Sans'] leading-[18px]">
+            <label className="self-stretch text-[#666666] text-sm lg:text-base font-semibold font-['Noto Sans'] leading-[18px]">
               How can we help you?
             </label>
             <textarea
@@ -220,14 +220,14 @@ const ContactUsFormComp: React.FC = () => {
               <span className=" text-red-600">This field is required</span>
             )}
             {/* Clickable label */}
-            <div className=" flex flex-row justify-center items-center gap-2">
+            <div className=" flex flex-row justify-center items-start lg:items-center gap-4 lg:gap-2.5">
               <label
                 htmlFor="file-upload"
                 className="flex items-center gap-2 cursor-pointer"
               >
-                <div className="flex items-center gap-1 text-[#5856d6]">
+                <div className="flex lg:items-center gap-1 text-[#5856d6]">
                   <GrAttachment />
-                  <span className="text-[#5856d6] text-xs font-bold font-['DM Sans']">
+                  <span className="text-[#5856d6] text-xs text-nowrap font-bold font-['DM Sans']">
                     Attach files
                   </span>
                 </div>
@@ -235,9 +235,8 @@ const ContactUsFormComp: React.FC = () => {
 
               {/* Additional info */}
               <div className="text-[#5856d6] text-[10px] font-medium font-['DM Sans']">
-                Max Size: 25MB per file
-                <br />
-                Supported Formats: .jpg, .png, .pdf, .docx
+                <li>Max Size: 25MB per file</li>
+                <li>Supported Formats: .jpg, .png, .pdf, .docx</li>
               </div>
             </div>
 

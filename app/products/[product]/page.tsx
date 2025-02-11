@@ -2,6 +2,12 @@ import React from "react";
 import ProductHeader from "@/component/Products/ProductHeader";
 import ProductGalleryAndTech from "@/component/Products/ProductGalleryAndTech";
 import { ProductCardsData } from "@/api/Dummy";
+import SuccessStories from "@/component/Common/SuccessStories";
+import TrustedIndustry from "@/component/Common/TrustedIndustry";
+import Contact from "@/component/Contact/Contact";
+import BoosterCard from "@/component/Common/BoosterCard";
+import ProductBenefits from "@/component/Products/ProductBenefits";
+import ProductIntegrations from "@/component/Products/ProductIntegrations";
 
 type PageProps = {
   params: Promise<{ product: string }>;
@@ -24,6 +30,12 @@ const Page = async ({ params }: PageProps) => {
     <div>
       <ProductHeader params={product} />
       <ProductGalleryAndTech params={product} />
+      <ProductBenefits params={product}/>
+      <ProductIntegrations/>
+      <TrustedIndustry />
+      <BoosterCard />
+      <SuccessStories bgColor="bg-white" />
+      <Contact />
     </div>
   );
 };

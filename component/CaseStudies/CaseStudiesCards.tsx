@@ -32,7 +32,7 @@ const CaseStudiesCards: React.FC<CaseStudyProps> = ({ caseStudyData }) => {
     : caseStudyData.filter((caseStudy) => caseStudy.category === selectedCategory);
 
   return (
-    <div className="rounded-t-[60px] py-10 px-10 lg:px-0 w-full flex justify-center items-center">
+    <div className="rounded-t-[60px] lg:py-10 lg:px-0 w-full flex justify-center items-center">
       <div className="container">
         <div className="flex flex-col justify-center items-center gap-3 w-full">
           <Subtitle Subtitle={subtitle} />
@@ -40,12 +40,12 @@ const CaseStudiesCards: React.FC<CaseStudyProps> = ({ caseStudyData }) => {
             width="w-full"
             padding="px-2 lg:px-0"
             title={title}
-            fontSize="text-3xl"
+            fontSize="text-2xl lg:text-3xl"
             fontColor="text-black"
           />
         </div>
 
-        <div className="flex flex-row flex-wrap gap-2 mt-16">
+        <div className="flex flex-row flex-wrap gap-2 mt-4 lg:mt-16">
           <button
             className={`h-9 px-4 py-2 ${selectedCategory === "All Industries" ? "bg-[#fff]" : "bg-[#FDF6E3]"} hover:bg-[#fff] justify-center items-center gap-2 inline-flex`}
             onClick={() => setSelectedCategory("All Industries")}
@@ -68,8 +68,8 @@ const CaseStudiesCards: React.FC<CaseStudyProps> = ({ caseStudyData }) => {
           ))}
         </div>
 
-        <div className="py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div className="py-5 lg:py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20">
             {filteredCaseStudies.map((caseStudy) => (
               <div
                 key={caseStudy.id}
@@ -82,7 +82,7 @@ const CaseStudiesCards: React.FC<CaseStudyProps> = ({ caseStudyData }) => {
               >
                 <div className="overflow-hidden">
                   <img
-                    className="w-full h-[500px] object-cover transform transition-transform duration-300 ease-in-out hover:scale-110 hover:transform-origin-center"
+                    className="w-full lg:h-[500px] object-cover transform transition-transform duration-300 ease-in-out hover:scale-110 hover:transform-origin-center"
                     src={caseStudy.image}
                     alt={caseStudy.title}
                   />

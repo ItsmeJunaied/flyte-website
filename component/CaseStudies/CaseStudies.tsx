@@ -1,22 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Marquee from "react-fast-marquee";
-import Subtitle from "../Common/Subtitle";
 
 const CaseStudies = () => {
   const subtitle: string = "Explore Our Success Stories";
   const title: string = "See How We Helped Businesses Achieve Their Goals";
 
   return (
-    <div className="w-full py-10">
+    <div className="w-full py-5 lg:py-10">
       <div className="w-full flex flex-row">
-        <div className=" w-full  flex flex-col lg:flex-row items-center h-full overflow-x-hidden  ">
-          <div className=" lg:pl-16 lg:pr-5 w-full lg:w-1/3 flex flex-col gap-[24px] h-full justify-center px-4 lg:px-0 mb-5 lg:mb-0">
-            <Subtitle Subtitle={subtitle} />
-            <h1 className="text-zinc-950 text-4xl font-bold  leading-[46px]">
+        <div className="w-full flex flex-col lg:flex-row items-center gap-5 h-full overflow-x-hidden">
+          <div className="lg:pl-16 lg:pr-5 w-full lg:w-1/3 flex flex-col gap-3 lg:gap-6 h-full justify-center px-4 lg:px-0 mb-5 lg:mb-0">
+            <h4 className="text-[#5856d6] text-lg font-bold">{subtitle}</h4>
+            <h1 className="text-zinc-950 text-2xl lg:text-4xl font-bold lg:leading-[46px]">
               {title}
             </h1>
-            <p className=" lg:w-[520px] text-[#12094a] text-sm font-normal leading-snug  lg:px-0">
+            <p className="text-[#12094a] text-sm font-normal leading-snug  lg:px-0">
               Explore success stories of businesses transforming challenges into
               opportunities with our solutions.
             </p>
@@ -41,35 +40,35 @@ const CaseStudies = () => {
               <div className="px-2">
                 <img
                   className=" w-[250px] lg:w-[350px]  h-[150px] lg:h-[250px] rounded-xl"
-                  src="/images/case-study-banner.png"
+                  src="/images/case/case1.jpg"
                   alt=""
                 />
               </div>
               <div className="px-2">
                 <img
                   className=" w-[250px] lg:w-[350px]  h-[150px] lg:h-[250px] rounded-xl"
-                  src="/images/case-study-img-2.png"
+                  src="/images/case/picture-ongold.png"
                   alt=""
                 />
               </div>
               <div className="px-2">
                 <img
                   className=" w-[250px] lg:w-[350px]  h-[150px] lg:h-[250px] rounded-xl"
-                  src="/images/case-study-banner.png"
+                  src="/images/case/hydro-one.png"
                   alt=""
                 />
               </div>
               <div className="px-2">
                 <img
                   className=" w-[250px] lg:w-[350px]  h-[150px] lg:h-[250px] rounded-xl"
-                  src="/images/case-study-img-2.png"
+                  src="/images/case/pushlocal.jpg"
                   alt=""
                 />
               </div>
               <div className="px-2">
                 <img
                   className=" w-[250px] lg:w-[350px]  h-[150px] lg:h-[250px] rounded-xl"
-                  src="/images/case-study-img-2.png"
+                  src="/images/case/fsa.png"
                   alt=""
                 />
               </div>
@@ -85,28 +84,28 @@ const CaseStudies = () => {
               <div className="px-2">
                 <img
                   className="w-[250px] lg:w-[350px]  h-[150px] lg:h-[250px] rounded-xl"
-                  src="/images/case-study-img-3.png"
+                  src="/images/case/hba.jpg"
                   alt=""
                 />
               </div>
               <div className="px-2">
                 <img
                   className="w-[250px] lg:w-[350px]  h-[150px] lg:h-[250px] rounded-xl"
-                  src="/images/case-study-img-4.png"
+                   src="/images/case/realestate1.png"
                   alt=""
                 />
               </div>
               <div className="px-2">
                 <img
                   className="w-[250px] lg:w-[350px]  h-[150px] lg:h-[250px] rounded-xl"
-                  src="/images/case-study-img-3.png"
+                  src="/images/case/erp.png"
                   alt=""
                 />
               </div>
               <div className="px-2">
                 <img
                   className="w-[250px] lg:w-[350px]  h-[150px] lg:h-[250px] rounded-xl"
-                  src="/images/case-study-img-4.png"
+                   src="/images/case/12.jpg"
                   alt=""
                 />
               </div>
@@ -120,14 +119,14 @@ const CaseStudies = () => {
           <div className="px-2">
             <img
               className="w-[250px] lg:w-[350px]  h-[150px] lg:h-[250px] rounded-xl"
-              src="/images/case-study-banner.png"
+              src="/images/case/keeferealestate.png"
               alt=""
             />
           </div>
           <div className="px-2">
             <img
               className="w-[250px] lg:w-[350px]  h-[150px] lg:h-[250px] rounded-xl"
-              src="/images/case-study-img-2.png"
+              src="/images/case/cds.jpg"
               alt=""
             />
           </div>
@@ -141,28 +140,28 @@ const CaseStudies = () => {
           <div className="px-2">
             <img
               className="w-[250px] lg:w-[350px]  h-[150px] lg:h-[250px] rounded-xl"
-              src="/images/case-study-img-4.png"
+              src="/images/case/bloomfire.jpg"
               alt=""
             />
           </div>
           <div className="px-2">
             <img
               className="w-[250px] lg:w-[350px]  h-[150px] lg:h-[250px] rounded-xl"
-              src="/images/case-study-img-4.png"
+              src="/images/case/americandesign.jpg"
               alt=""
             />
           </div>
           <div className="px-2">
             <img
               className="w-[250px] lg:w-[350px]  h-[150px] lg:h-[250px] rounded-xl"
-              src="/images/case-study-img-4.png"
+              src="/images/case/1.jpg"
               alt=""
             />
           </div>
           <div className="px-2">
             <img
               className="w-[250px] lg:w-[350px]  h-[150px] lg:h-[250px] rounded-xl"
-              src="/images/case-study-img-4.png"
+              src="/images/case/clinicaltrial.png"
               alt=""
             />
           </div>
