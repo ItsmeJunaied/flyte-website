@@ -10,6 +10,7 @@ import HireProcessStep from "@/component/Hire/HireProcessStep";
 import HireMoreDevelopers from "@/component/Hire/HireMoreDevelopers";
 import OurTechnologies from "@/component/Hire/OurTechnologies";
 import HireTeamFlexibility from "@/component/Hire/HireTeamFlexibility";
+import OurExpertiseDeveloper from "@/component/Hire/OurExpertiseDeveloper";
 
 export const metadata = {
   title: "Hire Details | Flyte Solutions Ltd.",
@@ -37,13 +38,14 @@ const page = async ({ params }: PageProps) => {
     <div>
       <HireDetailsBanner params={hire} />
       <WhyChoose params={hire} />
-      <OurTechnologies params={hire}/>
-      <HireMoreDevelopers params={hire}/>
-      <HireProcessStep params={hire}/>
+      <OurTechnologies params={hire} />
+      <HireMoreDevelopers params={hire} />
+      <HireProcessStep params={hire} />
+      <OurExpertiseDeveloper params={hire} />
       <BookConsultation />
-      <HireTeamFlexibility/>
-      <TrustedIndustry/>
-      <SuccessStories/>
+      <HireTeamFlexibility />
+      <TrustedIndustry />
+      <SuccessStories />
       <Contact />
     </div>
   );
