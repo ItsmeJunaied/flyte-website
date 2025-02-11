@@ -65,8 +65,8 @@ const SuccessStories: React.FC<successStoryProps> = ({bgColor}) => {
       <div className="container py-6">
         <div className="w-full flex flex-col justify-center items-center">
           {/* Title Section */}
-          <Title width=" lg:w-full" fontSize="text-3xl" title="Real stories of success and partnership" />
-          <p className="text-center text-neutral-500 text-sm font-normal mt-3 mb-10">
+          <Title width="w-full" fontSize="text-xl lg:text-3xl" title="Real stories of success and partnership" />
+          <p className="lg:text-center text-neutral-500 text-sm font-normal mt-3 mb-5 lg:mb-10">
             Discover how our solutions have empowered businesses to grow, adapt, and thrive
           </p>
 

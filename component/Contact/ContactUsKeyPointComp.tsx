@@ -16,27 +16,27 @@ const ContactUsKeyPointComp: React.FC<ContactUsKeyPointCompProps> = ({
 }) => {
   return (
     <div>
-      <div className="h-full w-full  flex flex-col justify-center items-center gap-10 bg-[#FFFFFF]  px-10 rounded-[30px] py-10 ">
+      <div className="px-3 lg:px-10 py-5 lg:py-10 w-full h-full flex flex-col justify-center items-center gap-5 lg:gap-10 bg-[#FFFFFF] rounded-lg lg:rounded-[30px]">
         <div>
-          <p className="text-center text-black text-2xl font-semibold font-['Open Sans']">
-            What's Next With Flyte?
+          <p className="text-center text-black text-xl lg:text-2xl font-semibold">
+          What's Next With Flyte?
           </p>
         </div>
 
-        <div className=" flex flex-col gap-4">
+        <div className="flex flex-col gap-4">
           {KeyPoints &&
             KeyPoints?.map((points) => (
               <div
                 key={points?.id}
-                className=" flex flex-row justify-between items-center w-full gap-3"
+                className=" flex flex-row justify-between lg:items-center w-full gap-3"
               >
                 <div className="w-1/6 ">
-                  <div className=" w-10 h-10 bg-transparent border-[2px] border-[#EAEAEA] rounded-xl flex justify-center items-center text-[#868686]">
+                  <div className="w-8 lg:w-10 h-8 lg:h-10 bg-transparent border-[1px] lg:border-[2px] border-[#EAEAEA] rounded-md lg:rounded-xl flex justify-center items-center text-[#868686]">
                     <i className={points?.icon}></i>
                   </div>
                 </div>
                 <div className=" w-5/6 ">
-                  <h1 className="text-black text-base font-normal font-['Open Sans']">
+                  <h1 className="text-black text-sm lg:text-base">
                     {points?.title}
                   </h1>
                 </div>

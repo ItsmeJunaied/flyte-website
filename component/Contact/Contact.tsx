@@ -18,20 +18,18 @@ const Contact: React.FC<contactUsKeyPointsProps> = ({ contsctUsData }) => {
   const headertitle: string = "Get in Touch with Us";
   const KeyPoints = contsctUsData || contactUsKeyPoints;
   return (
-    <div className="container flex flex-col lg:flex-row justify-between items-start gap-10 py-12">
+    <div className="container py-5 lg:py-12 flex flex-col lg:flex-row justify-between items-start gap-10">
       <div className="w-full ">
         <div className="mb-5 flex w-full items-center justify-center ">
-          {/* <Subtitle Subtitle="Contact Us" /> */}
-          <div className="w-full mb-5">
-            <Subtitle Subtitle={"Contact Us"} />
+          <div className="w-full lg:mb-5">
+            <Subtitle Subtitle="Contact Us" />
             <Title
               width="w-full"
-              // fontSize="text-lg lg:text-3xl"
               title={headertitle}
             />
           </div>
         </div>
-        <div className="h-full flex flex-col lg:flex-row justify-center lg:justify-between items-center  lg:items-center gap-8 ">
+        <div className="h-full flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-center gap-8 ">
           {/* form section */}
 
           <div className="w-full lg:w-2/3">
