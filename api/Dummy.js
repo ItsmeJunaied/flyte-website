@@ -2496,6 +2496,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
+    caseInfo : [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
+    ],    
   },
   {
     id: 2,
@@ -2560,6 +2566,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
+    caseInfo : [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
+    ], 
   },
   {
     id: 3,
@@ -2624,6 +2636,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
+    caseInfo : [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
+    ], 
   },
   {
     id: 4,
@@ -2688,6 +2706,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
+    caseInfo : [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
+    ], 
   },
   {
     id: 5,
@@ -2752,6 +2776,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
+    caseInfo : [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
+    ], 
   },
   {
     id: 6,
@@ -2816,6 +2846,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
+    caseInfo : [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
+    ], 
   },
   {
     id: 7,
@@ -2880,6 +2916,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
+    caseInfo : [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
+    ], 
   },
   {
     id: 8,
@@ -2944,6 +2986,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
+    caseInfo : [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
+    ], 
   },
   {
     id: 9,
@@ -3008,6 +3056,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
+    caseInfo : [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
+    ], 
   },
   {
     id: 10,
@@ -3072,6 +3126,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
+    caseInfo : [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
+    ], 
   },
   {
     id: 11,
@@ -3136,6 +3196,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
+    caseInfo : [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
+    ], 
   },
   {
     id: 12,
@@ -3200,6 +3266,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
+    caseInfo : [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
+    ], 
   },
   {
     id: 13,
@@ -3264,6 +3336,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
+    caseInfo : [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
+    ], 
   },
   {
     id: 14,
@@ -3328,6 +3406,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
+    caseInfo : [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
+    ], 
   },
   {
     id: 15,
@@ -3392,6 +3476,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
+    caseInfo : [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
+    ], 
   },
   {
     id: 16,
@@ -3456,6 +3546,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
+    caseInfo : [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
+    ], 
   },
 ];
 
