@@ -9,8 +9,8 @@ type CaseProps = {
 
 const CaseInfo: React.FC<{ data: CaseProps[] }> = ({ data }) => {
   return (
-    <div className=" ">
-      <div className="container px-10 py-8 grid grid-cols-2 md:grid-cols-4 gap-y-8 bg-[#f4f2f0]">
+    <div className="bg-[#f4f2f0]">
+      <div className="container md:px-10 py-8 grid grid-cols-2 md:grid-cols-4 gap-y-8">
         {data?.map((item, index) => (
           <div key={index} className="w-[240px flex flex-col justify-center items-center gap-4">
             <i className={`text-2xl text-[#5856d6] fa-solid ${item?.icon}`}></i>
