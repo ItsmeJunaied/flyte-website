@@ -4,6 +4,7 @@ import HeroBanner from '../Common/HeroBanner';
 import StepCard from '../Common/StepCard';
 import FeaturesCard from '../Common/FeaturesCard';
 import CaseInfo from './CaseInfo';
+import EverythingSection from './EverythingSection ';
 
 type ParamProps = {
   params: string;
@@ -18,6 +19,7 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
       <HeroBanner bannerData={caseData} />
       <CaseInfo data={caseData?.caseInfo}/>
       <StepCard data={caseData.hireProcess} />
+      <EverythingSection/>
       <FeaturesCard data={caseData?.featuresData} Width="w-full sm:w-[200px]" />
     </div>
   );
