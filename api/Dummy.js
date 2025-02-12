@@ -1051,7 +1051,7 @@ export const techData = {
     heroDesctiption:
       "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
     heroButton: "Hire Frontend Developers Now",
-    heroImage: "https://i.ibb.co.com/wFBPCXTR/ss-2.png",
+    heroImage: "https://i.ibb.co.com/4gsDVSgp/hire-front-end-developer-1.webp",
     advantages: [
       {
         icon: "fa-code",
@@ -1881,7 +1881,7 @@ export const industrydata = {
       heroDesctiption:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
       heroButton: "Book A Consulation",
-      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      heroImage: "https://i.ibb.co.com/C3vYLnjp/fintech-title-blog.webp",
     },
     {
       name: "Startup",
