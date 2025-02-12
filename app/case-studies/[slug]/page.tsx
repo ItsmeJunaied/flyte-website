@@ -1,5 +1,6 @@
 import { caseStudyData } from '@/api/Dummy';
 import CaseDetailsOverview from '@/component/CaseStudies/CaseDetailsOverview';
+import ReadyToTransform from '@/component/CaseStudies/ReadyToTransform';
 import SuccessStories from '@/component/Common/SuccessStories';
 import Contact from '@/component/Contact/Contact';
 import React from 'react';
@@ -27,6 +28,7 @@ const page = async ({ params }: PageProps) => {
     <div>
       <CaseDetailsOverview params={slug}/>
       <SuccessStories />
+      <ReadyToTransform/>
       <Contact />
     </div>
   );
