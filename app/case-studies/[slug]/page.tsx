@@ -1,5 +1,7 @@
 import { caseStudyData } from '@/api/Dummy';
 import CaseDetailsOverview from '@/component/CaseStudies/CaseDetailsOverview';
+import SuccessStories from '@/component/Common/SuccessStories';
+import Contact from '@/component/Contact/Contact';
 import React from 'react';
 
 export const metadata = {
@@ -10,7 +12,7 @@ export const metadata = {
 // Convert techData into an array before mapping
 export function generateStaticParams() {
   return caseStudyData.map((cases) => ({
-    slug: cases.hireLinkName,
+    slug: cases.caseStudyLinkName,
   }));
 }
 
@@ -24,6 +26,8 @@ const page = async ({ params }: PageProps) => {
   return (
     <div>
       <CaseDetailsOverview params={slug}/>
+      <SuccessStories />
+      <Contact />
     </div>
   );
 };

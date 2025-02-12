@@ -2440,12 +2440,62 @@ export const caseStudyData = [
     description: "A task management tool to plan, assign, and track project tasks efficiently.",
     tags: ["Time Tracking", "Project Management", "Task Assignment"],
     category: "enterprise",
-    hireLinkName: "time-tracker",
+    caseStudyLinkName: "time-tracker",
     heroTitle: "See How We Helped Uber Revolutionize Queue Management",
     heroSubtitle: "Explore Our Success Stories",
     heroDesctiption:"Discover how Uber, a global leader in ride-sharing, transformed their queue management challenges into a seamless and efficient system with our innovative solutions. This case study highlights the journey, the obstacles they faced, and the remarkable results achieved through our collaboration.",
     heroButton: "Book A Consultation",
     heroImage: "https://i.ibb.co.com/CK4NTjVv/ss-3.png",
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
   },
   {
     id: 2,
@@ -2454,12 +2504,62 @@ export const caseStudyData = [
     description: "A powerful tool to manage complex projects with ease and efficiency.",
     tags: ["Project Management", "Collaboration", "Productivity"],
     category: "technology company",
-    hireLinkName: "cloud-clockin",
+    caseStudyLinkName: "cloud-clockin",
     heroTitle: "",
     heroSubtitle: "",
     heroDesctiption:"",
     heroButton: "Book A Consultation",
     heroImage: "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
   },
   {
     id: 3,
@@ -2468,12 +2568,62 @@ export const caseStudyData = [
     description: "An intuitive task management app that helps teams stay organized and on track.",
     tags: ["Task Management", "Organization", "Teamwork"],
     category: "startup",
-    hireLinkName: "hr-professional",
+    caseStudyLinkName: "hr-professional",
     heroTitle: "",
     heroSubtitle: "",
     heroDesctiption:"",
     heroButton: "Book A Consultation",
     heroImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
   },
   {
     id: 4,
@@ -2482,12 +2632,62 @@ export const caseStudyData = [
     description: "A collaboration platform for teams to communicate, share files, and track progress.",
     tags: ["Collaboration", "Communication", "File Sharing"],
     category: "enterprise",
-    hireLinkName: "picture-ongold",
+    caseStudyLinkName: "picture-ongold",
     heroTitle: "",
     heroSubtitle: "",
     heroDesctiption:"",
     heroButton: "Book A Consultation",
     heroImage: "",
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
   },
   {
     id: 5,
@@ -2496,12 +2696,62 @@ export const caseStudyData = [
     description: "A time management app that helps you save time with automated scheduling and reminders.",
     tags: ["Time Management", "Scheduling", "Reminders"],
     category: "enterprise",
-    hireLinkName: "pushlocal",
+    caseStudyLinkName: "pushlocal",
     heroTitle: "",
     heroSubtitle: "",
     heroDesctiption:"",
     heroButton: "Book A Consultation",
     heroImage: "",
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
   },
   {
     id: 6,
@@ -2510,12 +2760,62 @@ export const caseStudyData = [
     description: "A team management app that fosters communication and collaboration among team members.",
     tags: ["Team Management", "Collaboration", "Communication"],
     category: "startup",
-    hireLinkName: "social-learning",
+    caseStudyLinkName: "social-learning",
     heroTitle: "",
     heroSubtitle: "",
     heroDesctiption:"",
     heroButton: "Book A Consultation",
     heroImage: "",
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
   },
   {
     id: 7,
@@ -2524,12 +2824,62 @@ export const caseStudyData = [
     description: "A work management tool to streamline workflows, automate tasks, and boost productivity.",
     tags: ["Workflow", "Automation", "Productivity"],
     category: "enterprise",
-    hireLinkName: "cds-platform",
+    caseStudyLinkName: "cds-platform",
     heroTitle: "",
     heroSubtitle: "",
     heroDesctiption:"",
     heroButton: "Book A Consultation",
     heroImage: "",
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
   },
   {
     id: 8,
@@ -2538,12 +2888,62 @@ export const caseStudyData = [
     description: "A productivity app designed to keep you focused by blocking distractions.",
     tags: ["Productivity", "Focus", "Distraction-Free"],
     category: "technology company",
-    hireLinkName: "knee-pads",
+    caseStudyLinkName: "knee-pads",
     heroTitle: "",
     heroSubtitle: "",
     heroDesctiption:"",
     heroButton: "Book A Consultation",
     heroImage: "",
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
   },
   {
     id: 9,
@@ -2552,12 +2952,62 @@ export const caseStudyData = [
     description: "An intelligent scheduling app that adjusts to your work habits and preferences.",
     tags: ["Scheduling", "Automation", "Productivity"],
     category: "enterprise",
-    hireLinkName: "american-society",
+    caseStudyLinkName: "american-society",
     heroTitle: "",
     heroSubtitle: "",
     heroDesctiption:"",
     heroButton: "Book A Consultation",
     heroImage: "",
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
   },
   {
     id: 10,
@@ -2566,12 +3016,62 @@ export const caseStudyData = [
     description: "A collaborative workspace for teams to track tasks, share documents, and meet deadlines.",
     tags: ["Collaboration", "Workspace", "Teamwork"],
     category: "enterprise",
-    hireLinkName: "clinical-trails-management",
+    caseStudyLinkName: "clinical-trails-management",
     heroTitle: "",
     heroSubtitle: "",
     heroDesctiption:"",
     heroButton: "Book A Consultation",
     heroImage: "",
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
   },
   {
     id: 11,
@@ -2580,12 +3080,62 @@ export const caseStudyData = [
     description: "A professional planner to organize tasks, appointments, and goals efficiently.",
     tags: ["Planning", "Task Management", "Goal Setting"],
     category: "enterprise",
-    hireLinkName: "organization-ims",
+    caseStudyLinkName: "organization-ims",
     heroTitle: "",
     heroSubtitle: "",
     heroDesctiption:"",
     heroButton: "Book A Consultation",
     heroImage: "",
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
   },
   {
     id: 12,
@@ -2594,12 +3144,62 @@ export const caseStudyData = [
     description: "A tool that synchronizes teams across time zones, making collaboration easy and efficient.",
     tags: ["Teamwork", "Time Zones", "Collaboration"],
     category: "enterprise",
-    hireLinkName: "team-sync",
+    caseStudyLinkName: "team-sync",
     heroTitle: "",
     heroSubtitle: "",
     heroDesctiption:"",
     heroButton: "Book A Consultation",
     heroImage: "",
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
   },
   {
     id: 13,
@@ -2608,12 +3208,62 @@ export const caseStudyData = [
     description: "A task management solution to track tasks from start to finish with clear deadlines.",
     tags: ["Task Management", "Deadline Tracking", "Organization"],
     category: "enterprise",
-    hireLinkName: "real-estate",
+    caseStudyLinkName: "real-estate",
     heroTitle: "",
     heroSubtitle: "",
     heroDesctiption:"",
     heroButton: "Book A Consultation",
     heroImage: "",
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
   },
   {
     id: 14,
@@ -2622,12 +3272,62 @@ export const caseStudyData = [
     description: "An app for quick task organization and tracking, ensuring high productivity.",
     tags: ["Task Organization", "Quick Tasks", "Efficiency"],
     category: "enterprise",
-    hireLinkName: "fsa-argentina",
+    caseStudyLinkName: "fsa-argentina",
     heroTitle: "",
     heroSubtitle: "",
     heroDesctiption:"",
     heroButton: "Book A Consultation",
     heroImage: "",
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
   },
   {
     id: 15,
@@ -2636,12 +3336,62 @@ export const caseStudyData = [
     description: "A meeting scheduling app that optimizes team calendars and time slots.",
     tags: ["Scheduling", "Meetings", "Team Coordination"],
     category: "enterprise",
-    hireLinkName: "hydro-one-sharepoint",
+    caseStudyLinkName: "hydro-one-sharepoint",
     heroTitle: "",
     heroSubtitle: "",
     heroDesctiption:"",
     heroButton: "Book A Consultation",
     heroImage: "",
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
   },
   {
     id: 16,
@@ -2650,77 +3400,63 @@ export const caseStudyData = [
     description: "An app that organizes team tasks, schedules, and milestones to improve workflow.",
     tags: ["Team Management", "Task Scheduling", "Team Collaboration"],
     category: "enterprise",
-    hireLinkName: "macmillan-education",
+    caseStudyLinkName: "macmillan-education",
     heroTitle: "",
     heroSubtitle: "",
     heroDesctiption:"",
     heroButton: "Book A Consultation",
     heroImage: "",
+    hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
   },
-  // {
-  //   id: 17,
-  //   image: "/images/FuelPro.png",
-  //   title: "Project Manager",
-  //   description: "A project management tool to plan, organize, and execute projects effectively.",
-  //   tags: ["Project Management", "Planning", "Execution"],
-  //   category: "enterprise",
-  // },
-  // {
-  //   id: 18,
-  //   image: "/images/FuelPro.png",
-  //   title: "Sync Pro",
-  //   description: "A synchronization tool for teams to coordinate tasks and share updates in real-time.",
-  //   tags: ["Syncing", "Collaboration", "Real-time"],
-  //   category: "enterprise",
-  // },
-  // {
-  //   id: 19,
-  //   image: "/images/FuelPro.png",
-  //   title: "Task Genie",
-  //   description: "A magical task manager that adapts to your needs and keeps you on track.",
-  //   tags: ["Task Management", "Productivity", "Adaptability"],
-  //   category: "enterprise",
-  // },
-  // {
-  //   id: 20,
-  //   image: "/images/FuelPro.png",
-  //   title: "Time Master",
-  //   description: "A time management tool that tracks, analyzes, and improves your time usage.",
-  //   tags: ["Time Management", "Analytics", "Productivity"],
-  //   category: "enterprise",
-  // },
-  // {
-  //   id: 21,
-  //   image: "/images/FuelPro.png",
-  //   title: "Team Vision",
-  //   description: "A strategic planning app for teams to align on goals, timelines, and progress.",
-  //   tags: ["Strategic Planning", "Team Alignment", "Goal Setting"],
-  //   category: "enterprise",
-  // },
-  // {
-  //   id: 22,
-  //   image: "/images/FuelPro.png",
-  //   title: "Focus Pro",
-  //   description: "A focused environment app that helps you stay on task and avoid distractions.",
-  //   tags: ["Focus", "Productivity", "Distraction-Free"],
-  //   category: "technology company",
-  // },
-  // {
-  //   id: 23,
-  //   image: "/images/FuelPro.png",
-  //   title: "Task Hub",
-  //   description: "A hub for organizing and managing all your tasks, deadlines, and projects.",
-  //   tags: ["Task Management", "Organization", "Deadline Tracking"],
-  //   category: "enterprise",
-  // },
-  // {
-  //   id: 24,
-  //   image: "/images/FuelPro.png",
-  //   title: "Work Force",
-  //   description: "A workforce management app designed for teams to track work hours and productivity.",
-  //   tags: ["Workforce Management", "Time Tracking", "Productivity"],
-  //   category: "enterprise",
-  // },
 ];
 
 //project section
