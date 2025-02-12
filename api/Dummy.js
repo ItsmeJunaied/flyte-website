@@ -1084,12 +1084,128 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    developerExpertises:[],
     exploreMoreDevelopers: [
       {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
       {id:2, name:"Hire Angular Developers", path:"angular-developer"},
       {id:3, name:"Hire Vue.js Developers", path:"vuejs-developer"},
       {id:4, name:"Hire Next.js Developers", path:"nextjs-developer"},
     ],
+     hireProcess : {
+      name: "Our Hiring Process",
+      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    }
+  },
+
+  reactjs: {
+    title: "React JS Development",
+    hireLinkName: "reactjs-developer",
+    description: "Creating responsive and dynamic user interfaces using modern frontend technologies.",
+    technologies:[],
+    heroTitle: "Hire Dedicated React Developers for Scalable and Dynamic Web Applications",
+    heroSubtitle: "HIRE REACT JS DEVELOPERS",
+    heroDesctiption:
+      "Build responsive, interactive, and high-performing web applications with our expert React developers. We specialize in creating seamless user experiences using cutting-edge React frameworks, optimized performance, and visually stunning interfaces.",
+    heroButton: "Hire React JS Developers Now",
+    heroImage: "https://i.ibb.co.com/fdDsXnxw/Benefits-of-React-JS.jpg",
+    advantages: [
+      {
+        icon: "fa-code",
+        title: "Component-Based Development",
+        description: "Faster development with reusable and maintainable components.",
+      },
+      {
+        icon: "fa-cogs",
+        title: "High Performance",
+        description: "Virtual DOM optimizes rendering for a smooth user experience.",
+      },
+      {
+        icon: "fa-users",
+        title: "Seamless Integrations",
+        description: "Compatible with Redux, GraphQL, and modern development tools.",
+      },
+      {
+        icon: "fa-database",
+        title: "Cross-Platform Compatibility",
+        description: "Build responsive, mobile-friendly, and progressive web apps.",
+      },
+      {
+        icon: "fa-server",
+        title: "Scalability & Maintainability",
+        description: "Easily extend and manage applications as they grow.",
+      },
+      {
+        icon: "fa-lock",
+        title: "Strong Community Support",
+        description: "Backed by Facebook and an active developer ecosystem.",
+      },
+    ],
+    developerExpertises: [
+      {
+        icon: "fa-code",
+        title: "Single Page Applications (SPAs)",
+        description: "Develop dynamic web apps with smooth, fast user interactions and minimal page reloads.",
+      },
+      {
+        icon: "fa-cogs",
+        title: "Server-Side Rendering (Next.js)",
+        description: "Improve SEO, performance, and initial page load speed with efficient server-side rendering.",
+      },
+      {
+        icon: "fa-users",
+        title: "State Management (Redux, Context API)",
+        description: "Manage application state efficiently, ensuring data consistency and seamless user experience.",
+      },
+      {
+        icon: "fa-database",
+        title: "API Integration & Third-Party Libraries",
+        description: "Seamlessly connect with RESTful APIs, GraphQL, and third-party services for enhanced functionality.",
+      },
+      {
+        icon: "fa-server",
+        title: "Performance Optimization",
+        description: "Optimize rendering, minimize re-renders, and enhance load times for a fast, responsive UI.",
+      },
+      {
+        icon: "fa-lock",
+        title: "Testing & Debugging",
+        description: "Ensure app stability with unit, integration, and end-to-end testing using Jest, React Testing Library, and Cypress.",
+      },
+    ],
+
+    exploreMoreDevelopers: [],
      hireProcess : {
       name: "Our Hiring Process",
       description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
@@ -1197,6 +1313,7 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    developerExpertises:[],
     exploreMoreDevelopers: [
       {id:1, name:"Hire Node.js Developers", path:"nodejs-developer"},
       {id:2, name:"Hire Laravel Developers", path:"laravel-developer"},
@@ -1304,6 +1421,7 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    developerExpertises:[],
     exploreMoreDevelopers: [
       {id:1, name:"Hire Flutter Developers", path:"flutter-developer"},
       {id:2, name:"Hire Android Developers", path:"android-developer"},
@@ -1411,6 +1529,7 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    developerExpertises:[],
     exploreMoreDevelopers: [
       {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
       {id:2, name:"Hire Angular Developers", path:"angular-developer"},
@@ -1519,6 +1638,7 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    developerExpertises:[],
     exploreMoreDevelopers: [
       {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
       {id:2, name:"Hire Angular Developers", path:"angular-developer"},
@@ -1627,6 +1747,7 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    developerExpertises:[],
     exploreMoreDevelopers: [
       {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
       {id:2, name:"Hire Angular Developers", path:"angular-developer"},
