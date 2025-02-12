@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Subtitle from "../Common/Subtitle";
 import Title from "../Common/Title";
+import Link from "next/link";
 
 type CaseStudy = {
   id: number;
@@ -11,6 +12,7 @@ type CaseStudy = {
   description: string;
   category: string;
   tags: string[];
+  hireLinkName: string;
 };
 
 type CaseStudyProps = {
@@ -71,7 +73,7 @@ const CaseStudiesCards: React.FC<CaseStudyProps> = ({ caseStudyData }) => {
         <div className="pt-5 lg:pt-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14">
             {filteredCaseStudies.map((caseStudy) => (
-              <div
+              <Link href={`case-studies/${caseStudy?.hireLinkName}`}
                 key={caseStudy.id}
                 className={`flex flex-col lg:w-[620px ${
                   caseStudy.id % 2 === 0 ? "lg:mt-20" : ""
@@ -121,7 +123,7 @@ const CaseStudiesCards: React.FC<CaseStudyProps> = ({ caseStudyData }) => {
                     {caseStudy.description}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
