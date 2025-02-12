@@ -5,6 +5,7 @@ import StepCard from '../Common/StepCard';
 import FeaturesCard from '../Common/FeaturesCard';
 import CaseInfo from './CaseInfo';
 import EverythingSection from './EverythingSection ';
+import TechnologyStack from './TechnologyStack';
 
 type ParamProps = {
   params: string;
@@ -20,6 +21,7 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
       <CaseInfo data={caseData?.caseInfo}/>
       <StepCard data={caseData.hireProcess} />
       <EverythingSection/>
+      <TechnologyStack/>
       <FeaturesCard data={caseData?.featuresData} Width="w-full sm:w-[200px]" />
     </div>
   );
