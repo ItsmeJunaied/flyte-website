@@ -9,8 +9,8 @@ export const metadata = {
 
 // Convert techData into an array before mapping
 export function generateStaticParams() {
-  return caseStudyData.map((tech) => ({
-    slug: tech.hireLinkName,
+  return caseStudyData.map((cases) => ({
+    slug: cases.hireLinkName,
   }));
 }
 
