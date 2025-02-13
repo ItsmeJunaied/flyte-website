@@ -17,7 +17,7 @@ const everythingData = [
   {
     id: 3,
     title: "Intelligent Load Balancing",
-    descrption: "Egestas luctus augue undo aliquam in lacus feugiat cursus",
+    descrption: "Egestas luctus augue undo aliquam the lacus feugiat cursus",
     image: "https://i.ibb.co.com/jkFhjKvw/f-02-png.png",
   },
   {
@@ -56,17 +56,17 @@ const EverythingSection = () => {
             ${index === 0 || index === 3 ? "lg:rounded-tl-xl" : ""} 
             ${index === 2 || index === 5 ? "lg:rounded-tr-xl" : ""}`}
           >
-            <img className="w-[292.22px] h-[194.81px]" src={item?.image} />
+            <img className="w-full sm:-[250px] h md:h-[300px] lg:h-[200px] object-cover" src={item?.image} />
             <div className="text-center">
               <h2 className="text-[#353f4f] text-xl font-bold">{item?.title}</h2>
-              <p className="opacity-90 text-[#3b3c4e] max-w-[279px]">{item?.descrption}</p>
+              <p className="opacity-90 text-[#3b3c4e]">{item?.descrption}</p>
             </div>
           </div>
         ))}
       </div>
 
       <Link
-        className="px-8 py-3 mt-6 ml-5 bg-[#5856d6] hover:bg-[#4a46bc] rounded-md text-white w-fit lg:mx-auto block"
+        className="px-8 py-3 mt-3 bg-[#5856d6] hover:bg-[#4a46bc] rounded-md text-white w-fit mx-auto block"
         href=""
       >
         Request A Demo
