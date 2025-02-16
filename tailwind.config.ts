@@ -74,6 +74,17 @@ export default {
       },
       animation: {
         "card-stack": "card-stack 1s ease-out forwards",
+        infiniteRotate: "infiniteRotate 6s ease-in-out infinite",
+      },
+
+      keyframes: {
+        infiniteRotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '30%': { transform: 'rotate(45deg)' },
+          '50%': { transform: 'rotate(0deg)' },
+          '80%': { transform: 'rotate(-45deg)' },
+          '100%': { transform: 'rotate(0deg)' },
+        },
       },
 
       borderRadius: {

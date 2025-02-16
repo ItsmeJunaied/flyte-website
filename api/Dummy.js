@@ -664,7 +664,7 @@ export const customSoftwareData = {
     { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
     { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
     { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
-    { id: 7, icon: "far fa-share-square", title: "Networking", color: "#ff4500" },
+    { id: 7, icon: "far fa-share-square", title: "Networking", color: "#dffc03" },
     { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
   ],
 };
@@ -1051,7 +1051,7 @@ export const techData = {
     heroDesctiption:
       "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
     heroButton: "Hire Frontend Developers Now",
-    heroImage: "https://i.ibb.co.com/wFBPCXTR/ss-2.png",
+    heroImage: "https://i.ibb.co.com/4gsDVSgp/hire-front-end-developer-1.webp",
     advantages: [
       {
         icon: "fa-code",
@@ -1084,15 +1084,17 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    developerExpertises: [],
     exploreMoreDevelopers: [
-      {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
-      {id:2, name:"Hire Angular Developers", path:"angular-developer"},
-      {id:3, name:"Hire Vue.js Developers", path:"vuejs-developer"},
-      {id:4, name:"Hire Next.js Developers", path:"nextjs-developer"},
+      { id: 1, name: "Hire React.js Developers", path: "reactjs-developer" },
+      { id: 2, name: "Hire Angular Developers", path: "angular-developer" },
+      { id: 3, name: "Hire Vue.js Developers", path: "vuejs-developer" },
+      { id: 4, name: "Hire Next.js Developers", path: "nextjs-developer" },
     ],
-     hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -1122,10 +1124,133 @@ export const techData = {
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
-    }
+    },
+  },
+
+  reactjs: {
+    title: "React JS Development",
+    hireLinkName: "reactjs-developer",
+    description: "Creating responsive and dynamic user interfaces using modern frontend technologies.",
+    technologies: [],
+    heroTitle: "Hire Dedicated React Developers for Scalable and Dynamic Web Applications",
+    heroSubtitle: "HIRE REACT JS DEVELOPERS",
+    heroDesctiption:
+      "Build responsive, interactive, and high-performing web applications with our expert React developers. We specialize in creating seamless user experiences using cutting-edge React frameworks, optimized performance, and visually stunning interfaces.",
+    heroButton: "Hire React JS Developers Now",
+    heroImage: "https://i.ibb.co.com/fdDsXnxw/Benefits-of-React-JS.jpg",
+    advantages: [
+      {
+        icon: "fa-code",
+        title: "Component-Based Development",
+        description: "Faster development with reusable and maintainable components.",
+      },
+      {
+        icon: "fa-cogs",
+        title: "High Performance",
+        description: "Virtual DOM optimizes rendering for a smooth user experience.",
+      },
+      {
+        icon: "fa-users",
+        title: "Seamless Integrations",
+        description: "Compatible with Redux, GraphQL, and modern development tools.",
+      },
+      {
+        icon: "fa-database",
+        title: "Cross-Platform Compatibility",
+        description: "Build responsive, mobile-friendly, and progressive web apps.",
+      },
+      {
+        icon: "fa-server",
+        title: "Scalability & Maintainability",
+        description: "Easily extend and manage applications as they grow.",
+      },
+      {
+        icon: "fa-lock",
+        title: "Strong Community Support",
+        description: "Backed by Facebook and an active developer ecosystem.",
+      },
+    ],
+    developerExpertises: [
+      {
+        icon: "fa-code",
+        title: "Single Page Applications (SPAs)",
+        description: "Develop dynamic web apps with smooth, fast user interactions and minimal page reloads.",
+      },
+      {
+        icon: "fa-cogs",
+        title: "Server-Side Rendering (Next.js)",
+        description:
+          "Improve SEO, performance, and initial page load speed with efficient server-side rendering.",
+      },
+      {
+        icon: "fa-users",
+        title: "State Management (Redux, Context API)",
+        description:
+          "Manage application state efficiently, ensuring data consistency and seamless user experience.",
+      },
+      {
+        icon: "fa-database",
+        title: "API Integration & Third-Party Libraries",
+        description:
+          "Seamlessly connect with RESTful APIs, GraphQL, and third-party services for enhanced functionality.",
+      },
+      {
+        icon: "fa-server",
+        title: "Performance Optimization",
+        description:
+          "Optimize rendering, minimize re-renders, and enhance load times for a fast, responsive UI.",
+      },
+      {
+        icon: "fa-lock",
+        title: "Testing & Debugging",
+        description:
+          "Ensure app stability with unit, integration, and end-to-end testing using Jest, React Testing Library, and Cypress.",
+      },
+    ],
+
+    exploreMoreDevelopers: [],
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
   },
 
   backend: {
@@ -1197,14 +1322,16 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    developerExpertises: [],
     exploreMoreDevelopers: [
-      {id:1, name:"Hire Node.js Developers", path:"nodejs-developer"},
-      {id:2, name:"Hire Laravel Developers", path:"laravel-developer"},
-      {id:3, name:"Hire Python Developers", path:"python-developer"},
+      { id: 1, name: "Hire Node.js Developers", path: "nodejs-developer" },
+      { id: 2, name: "Hire Laravel Developers", path: "laravel-developer" },
+      { id: 3, name: "Hire Python Developers", path: "python-developer" },
     ],
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Backend Developers",
       features: [
         {
@@ -1234,10 +1361,11 @@ export const techData = {
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
-    }
+    },
   },
 
   mobileDevelopment: {
@@ -1304,14 +1432,16 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    developerExpertises: [],
     exploreMoreDevelopers: [
-      {id:1, name:"Hire Flutter Developers", path:"flutter-developer"},
-      {id:2, name:"Hire Android Developers", path:"android-developer"},
-      {id:3, name:"Hire React Native Developers", path:"react-native-developer"},
+      { id: 1, name: "Hire Flutter Developers", path: "flutter-developer" },
+      { id: 2, name: "Hire Android Developers", path: "android-developer" },
+      { id: 3, name: "Hire React Native Developers", path: "react-native-developer" },
     ],
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Mobile App Developers",
       features: [
         {
@@ -1341,10 +1471,11 @@ export const techData = {
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
-    }
+    },
   },
 
   qualityAssurance: {
@@ -1411,15 +1542,17 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    developerExpertises: [],
     exploreMoreDevelopers: [
-      {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
-      {id:2, name:"Hire Angular Developers", path:"angular-developer"},
-      {id:3, name:"Hire Vue.js Developers", path:"vuejs-developer"},
-      {id:4, name:"Hire Next.js Developers", path:"nextjs-developer"},
+      { id: 1, name: "Hire React.js Developers", path: "reactjs-developer" },
+      { id: 2, name: "Hire Angular Developers", path: "angular-developer" },
+      { id: 3, name: "Hire Vue.js Developers", path: "vuejs-developer" },
+      { id: 4, name: "Hire Next.js Developers", path: "nextjs-developer" },
     ],
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Quality Assurance",
       features: [
         {
@@ -1449,10 +1582,11 @@ export const techData = {
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
-    }
+    },
   },
 
   devOps: {
@@ -1519,15 +1653,17 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    developerExpertises: [],
     exploreMoreDevelopers: [
-      {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
-      {id:2, name:"Hire Angular Developers", path:"angular-developer"},
-      {id:3, name:"Hire Vue.js Developers", path:"vuejs-developer"},
-      {id:4, name:"Hire Next.js Developers", path:"nextjs-developer"},
+      { id: 1, name: "Hire React.js Developers", path: "reactjs-developer" },
+      { id: 2, name: "Hire Angular Developers", path: "angular-developer" },
+      { id: 3, name: "Hire Vue.js Developers", path: "vuejs-developer" },
+      { id: 4, name: "Hire Next.js Developers", path: "nextjs-developer" },
     ],
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Dev-Ops Developers",
       features: [
         {
@@ -1557,10 +1693,11 @@ export const techData = {
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
-    }
+    },
   },
 
   aiML: {
@@ -1627,15 +1764,17 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
+    developerExpertises: [],
     exploreMoreDevelopers: [
-      {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
-      {id:2, name:"Hire Angular Developers", path:"angular-developer"},
-      {id:3, name:"Hire Vue.js Developers", path:"vuejs-developer"},
-      {id:4, name:"Hire Next.js Developers", path:"nextjs-developer"},
+      { id: 1, name: "Hire React.js Developers", path: "reactjs-developer" },
+      { id: 2, name: "Hire Angular Developers", path: "angular-developer" },
+      { id: 3, name: "Hire Vue.js Developers", path: "vuejs-developer" },
+      { id: 4, name: "Hire Next.js Developers", path: "nextjs-developer" },
     ],
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring AI & ML Developers",
       features: [
         {
@@ -1665,10 +1804,11 @@ export const techData = {
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
-    }
+    },
   },
 };
 
@@ -1754,13 +1894,99 @@ export const industrydata = {
           description: "Ensuring the security of sensitive financial data.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Fintech Solutions?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
+      industrySolution: {
+        name: "Next-Gen Fintech Solutions",
+        description: "Smarter, faster, and secure financial technology",
+        features: [
+          { id: 1, icon: "far fa-clock", title: "Digital Payments Solutions", color: "#1ed0c6" },
+          { id: 2, icon: "far fa-lightbulb", title: "Blockchain Technology Integration", color: "#ff5733" },
+          { id: 3, icon: "far fa-hdd", title: "Mobile Banking Applications", color: "#ffd700" },
+          { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
+          { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
+          { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
+          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
+          { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
+        ],
+      },
+      trendSteps : {
+        title: "Emerging Trends in Fintech",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
+        ],
+      },
       industryLinkName: "fintech",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "FINTECH",
       heroDesctiption:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
       heroButton: "Book A Consulation",
-      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      heroImage: "https://i.ibb.co.com/C3vYLnjp/fintech-title-blog.webp",
     },
     {
       name: "Startup",
@@ -1792,6 +2018,92 @@ export const industrydata = {
           description: "Securing capital for business growth.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Startup Solutions?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
+      industrySolution: {
+        name: "Next-Gen Startup Solutions",
+        description: "Smarter, faster, and secure financial technology",
+        features: [
+          { id: 1, icon: "far fa-clock", title: "Digital Payments Solutions", color: "#1ed0c6" },
+          { id: 2, icon: "far fa-lightbulb", title: "Blockchain Technology Integration", color: "#ff5733" },
+          { id: 3, icon: "far fa-hdd", title: "Mobile Banking Applications", color: "#ffd700" },
+          { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
+          { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
+          { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
+          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
+          { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
+        ],
+      },
+      trendSteps : {
+        title: "Emerging Trends in Startup",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
+        ],
+      },
       industryLinkName: "startup",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "STARTUP",
@@ -1830,6 +2142,92 @@ export const industrydata = {
           description: "Improving operational efficiencies in logistics.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Logistics Solutions?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
+      industrySolution: {
+        name: "Next-Gen Logistics Solutions",
+        description: "Smarter, faster, and secure financial technology",
+        features: [
+          { id: 1, icon: "far fa-clock", title: "Digital Payments Solutions", color: "#1ed0c6" },
+          { id: 2, icon: "far fa-lightbulb", title: "Blockchain Technology Integration", color: "#ff5733" },
+          { id: 3, icon: "far fa-hdd", title: "Mobile Banking Applications", color: "#ffd700" },
+          { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
+          { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
+          { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
+          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
+          { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
+        ],
+      },
+      trendSteps : {
+        title: "Emerging Trends in Logistics",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
+        ],
+      },
       industryLinkName: "logistics",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "LOGISTICS",
@@ -1868,6 +2266,92 @@ export const industrydata = {
           description: "Driving revenue through retail strategies.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Retail & Manufacturing?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
+      industrySolution: {
+        name: "Next-Gen Retail & Manufacturing",
+        description: "Smarter, faster, and secure financial technology",
+        features: [
+          { id: 1, icon: "far fa-clock", title: "Digital Payments Solutions", color: "#1ed0c6" },
+          { id: 2, icon: "far fa-lightbulb", title: "Blockchain Technology Integration", color: "#ff5733" },
+          { id: 3, icon: "far fa-hdd", title: "Mobile Banking Applications", color: "#ffd700" },
+          { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
+          { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
+          { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
+          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
+          { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
+        ],
+      },
+      trendSteps : {
+        title: "Emerging Trends in Retail & Manufacturing",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
+        ],
+      },
       industryLinkName: "retail-and-manufacturing",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "RETAIL & MANUFACTURING",
@@ -1906,6 +2390,92 @@ export const industrydata = {
           description: "Empowering businesses with scalable cloud solutions.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Enterprise Solutions?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
+      industrySolution: {
+        name: "Next-Gen Enterprise Solutions",
+        description: "Smarter, faster, and secure financial technology",
+        features: [
+          { id: 1, icon: "far fa-clock", title: "Digital Payments Solutions", color: "#1ed0c6" },
+          { id: 2, icon: "far fa-lightbulb", title: "Blockchain Technology Integration", color: "#ff5733" },
+          { id: 3, icon: "far fa-hdd", title: "Mobile Banking Applications", color: "#ffd700" },
+          { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
+          { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
+          { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
+          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
+          { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
+        ],
+      },
+      trendSteps : {
+        title: "Emerging Trends in Enterprise",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
+        ],
+      },
       industryLinkName: "enterprise",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "ENTERPRISE",
@@ -1944,6 +2514,92 @@ export const industrydata = {
           description: "Enhancing student participation and interaction.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Education Solutions?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
+      industrySolution: {
+        name: "Next-Gen Education Solutions",
+        description: "Smarter, faster, and secure financial technology",
+        features: [
+          { id: 1, icon: "far fa-clock", title: "Digital Payments Solutions", color: "#1ed0c6" },
+          { id: 2, icon: "far fa-lightbulb", title: "Blockchain Technology Integration", color: "#ff5733" },
+          { id: 3, icon: "far fa-hdd", title: "Mobile Banking Applications", color: "#ffd700" },
+          { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
+          { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
+          { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
+          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
+          { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
+        ],
+      },
+      trendSteps : {
+        title: "Emerging Trends in Education",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
+        ],
+      },
       industryLinkName: "education",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "EDUCATION",
@@ -1982,6 +2638,92 @@ export const industrydata = {
           description: "Providing data-driven insights for real estate decisions.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Real Estate?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
+      industrySolution: {
+        name: "Next-Gen Real Estate",
+        description: "Smarter, faster, and secure financial technology",
+        features: [
+          { id: 1, icon: "far fa-clock", title: "Digital Payments Solutions", color: "#1ed0c6" },
+          { id: 2, icon: "far fa-lightbulb", title: "Blockchain Technology Integration", color: "#ff5733" },
+          { id: 3, icon: "far fa-hdd", title: "Mobile Banking Applications", color: "#ffd700" },
+          { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
+          { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
+          { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
+          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
+          { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
+        ],
+      },
+      trendSteps : {
+        title: "Emerging Trends in Real Estate",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
+        ],
+      },
       industryLinkName: "real-estate",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "REAL ESTATE",
@@ -2020,6 +2762,92 @@ export const industrydata = {
           description: "Using data to enhance healthcare delivery.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Mediacal & Healthcare?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
+      industrySolution: {
+        name: "Next-Gen Medical & Healthcare",
+        description: "Smarter, faster, and secure financial technology",
+        features: [
+          { id: 1, icon: "far fa-clock", title: "Digital Payments Solutions", color: "#1ed0c6" },
+          { id: 2, icon: "far fa-lightbulb", title: "Blockchain Technology Integration", color: "#ff5733" },
+          { id: 3, icon: "far fa-hdd", title: "Mobile Banking Applications", color: "#ffd700" },
+          { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
+          { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
+          { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
+          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
+          { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
+        ],
+      },
+      trendSteps : {
+        title: "Emerging Trends in Medical & Healthcare",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
+        ],
+      },
       industryLinkName: "medical-and-healthcare",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "MEDIAL & HEALTHCARE",
@@ -2058,6 +2886,92 @@ export const industrydata = {
           description: "Designing and implementing tech infrastructures.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Technology Company?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
+      industrySolution: {
+        name: "Next-Gen Technology Company",
+        description: "Smarter, faster, and secure financial technology",
+        features: [
+          { id: 1, icon: "far fa-clock", title: "Digital Payments Solutions", color: "#1ed0c6" },
+          { id: 2, icon: "far fa-lightbulb", title: "Blockchain Technology Integration", color: "#ff5733" },
+          { id: 3, icon: "far fa-hdd", title: "Mobile Banking Applications", color: "#ffd700" },
+          { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
+          { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
+          { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
+          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
+          { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
+        ],
+      },
+      trendSteps : {
+        title: "Emerging Trends in Technology Company",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
+        ],
+      },
       industryLinkName: "technology-company",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "TECHNOLOGY COMPANY",
@@ -2096,6 +3010,92 @@ export const industrydata = {
           description: "Offering on-demand content to audiences.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Media & Entertainment?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
+      industrySolution: {
+        name: "Next-Gen Media & Entertainment",
+        description: "Smarter, faster, and secure financial technology",
+        features: [
+          { id: 1, icon: "far fa-clock", title: "Digital Payments Solutions", color: "#1ed0c6" },
+          { id: 2, icon: "far fa-lightbulb", title: "Blockchain Technology Integration", color: "#ff5733" },
+          { id: 3, icon: "far fa-hdd", title: "Mobile Banking Applications", color: "#ffd700" },
+          { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
+          { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
+          { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
+          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
+          { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
+        ],
+      },
+      trendSteps : {
+        title: "Emerging Trends in Media & Entertainment",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
+        ],
+      },
       industryLinkName: "media-and-entertainment",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "MEDIA & ENTERTAINMENT",
@@ -2134,6 +3134,92 @@ export const industrydata = {
           description: "Creating strategic partnerships for social good.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for NGO Solutions?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
+      industrySolution: {
+        name: "Next-Gen NGO Solutions",
+        description: "Smarter, faster, and secure financial technology",
+        features: [
+          { id: 1, icon: "far fa-clock", title: "Digital Payments Solutions", color: "#1ed0c6" },
+          { id: 2, icon: "far fa-lightbulb", title: "Blockchain Technology Integration", color: "#ff5733" },
+          { id: 3, icon: "far fa-hdd", title: "Mobile Banking Applications", color: "#ffd700" },
+          { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
+          { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
+          { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
+          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
+          { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
+        ],
+      },
+      trendSteps : {
+        title: "Emerging Trends in NGO",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
+        ],
+      },
       industryLinkName: "ngo",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "NGO",
@@ -2319,6 +3405,71 @@ export const caseStudyData = [
     description: "A task management tool to plan, assign, and track project tasks efficiently.",
     tags: ["Time Tracking", "Project Management", "Task Assignment"],
     category: "enterprise",
+    caseStudyLinkName: "time-tracker",
+    heroTitle: "See How We Helped Uber Revolutionize Queue Management",
+    heroSubtitle: "Explore Our Success Stories",
+    heroDesctiption:
+      "Discover how Uber, a global leader in ride-sharing, transformed their queue management challenges into a seamless and efficient system with our innovative solutions. This case study highlights the journey, the obstacles they faced, and the remarkable results achieved through our collaboration.",
+    heroButton: "Book A Consultation",
+    heroImage: "https://i.ibb.co.com/CK4NTjVv/ss-3.png",
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#dffc03" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
+    caseInfo: [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 2,
@@ -2327,6 +3478,70 @@ export const caseStudyData = [
     description: "A powerful tool to manage complex projects with ease and efficiency.",
     tags: ["Project Management", "Collaboration", "Productivity"],
     category: "technology company",
+    caseStudyLinkName: "cloud-clockin",
+    heroTitle: "",
+    heroSubtitle: "",
+    heroDesctiption: "",
+    heroButton: "Book A Consultation",
+    heroImage: "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#dffc03" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
+    caseInfo: [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 3,
@@ -2335,6 +3550,70 @@ export const caseStudyData = [
     description: "An intuitive task management app that helps teams stay organized and on track.",
     tags: ["Task Management", "Organization", "Teamwork"],
     category: "startup",
+    caseStudyLinkName: "hr-professional",
+    heroTitle: "",
+    heroSubtitle: "",
+    heroDesctiption: "",
+    heroButton: "Book A Consultation",
+    heroImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#dffc03" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
+    caseInfo: [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 4,
@@ -2343,6 +3622,70 @@ export const caseStudyData = [
     description: "A collaboration platform for teams to communicate, share files, and track progress.",
     tags: ["Collaboration", "Communication", "File Sharing"],
     category: "enterprise",
+    caseStudyLinkName: "picture-ongold",
+    heroTitle: "",
+    heroSubtitle: "",
+    heroDesctiption: "",
+    heroButton: "Book A Consultation",
+    heroImage: "",
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#dffc03" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
+    caseInfo: [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 5,
@@ -2351,6 +3694,70 @@ export const caseStudyData = [
     description: "A time management app that helps you save time with automated scheduling and reminders.",
     tags: ["Time Management", "Scheduling", "Reminders"],
     category: "enterprise",
+    caseStudyLinkName: "pushlocal",
+    heroTitle: "",
+    heroSubtitle: "",
+    heroDesctiption: "",
+    heroButton: "Book A Consultation",
+    heroImage: "",
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#dffc03" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
+    caseInfo: [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 6,
@@ -2359,6 +3766,70 @@ export const caseStudyData = [
     description: "A team management app that fosters communication and collaboration among team members.",
     tags: ["Team Management", "Collaboration", "Communication"],
     category: "startup",
+    caseStudyLinkName: "social-learning",
+    heroTitle: "",
+    heroSubtitle: "",
+    heroDesctiption: "",
+    heroButton: "Book A Consultation",
+    heroImage: "",
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#dffc03" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
+    caseInfo: [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 7,
@@ -2367,6 +3838,70 @@ export const caseStudyData = [
     description: "A work management tool to streamline workflows, automate tasks, and boost productivity.",
     tags: ["Workflow", "Automation", "Productivity"],
     category: "enterprise",
+    caseStudyLinkName: "cds-platform",
+    heroTitle: "",
+    heroSubtitle: "",
+    heroDesctiption: "",
+    heroButton: "Book A Consultation",
+    heroImage: "",
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#dffc03" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
+    caseInfo: [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 8,
@@ -2375,6 +3910,70 @@ export const caseStudyData = [
     description: "A productivity app designed to keep you focused by blocking distractions.",
     tags: ["Productivity", "Focus", "Distraction-Free"],
     category: "technology company",
+    caseStudyLinkName: "knee-pads",
+    heroTitle: "",
+    heroSubtitle: "",
+    heroDesctiption: "",
+    heroButton: "Book A Consultation",
+    heroImage: "",
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#dffc03" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
+    caseInfo: [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 9,
@@ -2383,6 +3982,70 @@ export const caseStudyData = [
     description: "An intelligent scheduling app that adjusts to your work habits and preferences.",
     tags: ["Scheduling", "Automation", "Productivity"],
     category: "enterprise",
+    caseStudyLinkName: "american-society",
+    heroTitle: "",
+    heroSubtitle: "",
+    heroDesctiption: "",
+    heroButton: "Book A Consultation",
+    heroImage: "",
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#dffc03" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
+    caseInfo: [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 10,
@@ -2391,6 +4054,70 @@ export const caseStudyData = [
     description: "A collaborative workspace for teams to track tasks, share documents, and meet deadlines.",
     tags: ["Collaboration", "Workspace", "Teamwork"],
     category: "enterprise",
+    caseStudyLinkName: "clinical-trails-management",
+    heroTitle: "",
+    heroSubtitle: "",
+    heroDesctiption: "",
+    heroButton: "Book A Consultation",
+    heroImage: "",
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#dffc03" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
+    caseInfo: [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 11,
@@ -2399,6 +4126,70 @@ export const caseStudyData = [
     description: "A professional planner to organize tasks, appointments, and goals efficiently.",
     tags: ["Planning", "Task Management", "Goal Setting"],
     category: "enterprise",
+    caseStudyLinkName: "organization-ims",
+    heroTitle: "",
+    heroSubtitle: "",
+    heroDesctiption: "",
+    heroButton: "Book A Consultation",
+    heroImage: "",
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#dffc03" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
+    caseInfo: [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 12,
@@ -2407,6 +4198,70 @@ export const caseStudyData = [
     description: "A tool that synchronizes teams across time zones, making collaboration easy and efficient.",
     tags: ["Teamwork", "Time Zones", "Collaboration"],
     category: "enterprise",
+    caseStudyLinkName: "team-sync",
+    heroTitle: "",
+    heroSubtitle: "",
+    heroDesctiption: "",
+    heroButton: "Book A Consultation",
+    heroImage: "",
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#dffc03" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
+    caseInfo: [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 13,
@@ -2415,6 +4270,70 @@ export const caseStudyData = [
     description: "A task management solution to track tasks from start to finish with clear deadlines.",
     tags: ["Task Management", "Deadline Tracking", "Organization"],
     category: "enterprise",
+    caseStudyLinkName: "real-estate",
+    heroTitle: "",
+    heroSubtitle: "",
+    heroDesctiption: "",
+    heroButton: "Book A Consultation",
+    heroImage: "",
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#dffc03" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
+    caseInfo: [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 14,
@@ -2423,6 +4342,70 @@ export const caseStudyData = [
     description: "An app for quick task organization and tracking, ensuring high productivity.",
     tags: ["Task Organization", "Quick Tasks", "Efficiency"],
     category: "enterprise",
+    caseStudyLinkName: "fsa-argentina",
+    heroTitle: "",
+    heroSubtitle: "",
+    heroDesctiption: "",
+    heroButton: "Book A Consultation",
+    heroImage: "",
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#dffc03" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
+    caseInfo: [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 15,
@@ -2431,6 +4414,70 @@ export const caseStudyData = [
     description: "A meeting scheduling app that optimizes team calendars and time slots.",
     tags: ["Scheduling", "Meetings", "Team Coordination"],
     category: "enterprise",
+    caseStudyLinkName: "hydro-one-sharepoint",
+    heroTitle: "",
+    heroSubtitle: "",
+    heroDesctiption: "",
+    heroButton: "Book A Consultation",
+    heroImage: "",
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#dffc03" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
+    caseInfo: [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 16,
@@ -2439,71 +4486,71 @@ export const caseStudyData = [
     description: "An app that organizes team tasks, schedules, and milestones to improve workflow.",
     tags: ["Team Management", "Task Scheduling", "Team Collaboration"],
     category: "enterprise",
+    caseStudyLinkName: "macmillan-education",
+    heroTitle: "",
+    heroSubtitle: "",
+    heroDesctiption: "",
+    heroButton: "Book A Consultation",
+    heroImage: "",
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      title: "Your Path to Hiring Frontend Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project needs, goals, and tech stack to ensure a perfect match.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in React, Angular, Vue.js, or JavaScript based on your requirements.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they align with your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We seamlessly integrate developers into your workflow, ensuring they adapt to your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
+        },
+      ],
+    },
+    featuresData: {
+      name: "Custom Software Solutions",
+      description: "Choose Custom Solutions to Fit Your Business Needs",
+      features: [
+        { id: 1, icon: "far fa-clock", title: "ERP Systems", color: "#1ed0c6" },
+        { id: 2, icon: "far fa-lightbulb", title: "Custom Software", color: "#ff5733" },
+        { id: 3, icon: "far fa-hdd", title: "Cloud Solutions", color: "#ffd700" },
+        { id: 4, icon: "fa-mobile-screen", title: "Mobile Apps", color: "#4caf50" },
+        { id: 5, icon: "far fa-file-code", title: "Web Development", color: "#ff33bb" },
+        { id: 6, icon: "far fa-lightbulb", title: "AI & Automation", color: "#8a2be2" },
+        { id: 7, icon: "far fa-share-square", title: "Networking", color: "#dffc03" },
+        { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
+      ],
+    },
+    caseInfo: [
+      { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
+      { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
+      { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
-  // {
-  //   id: 17,
-  //   image: "/images/FuelPro.png",
-  //   title: "Project Manager",
-  //   description: "A project management tool to plan, organize, and execute projects effectively.",
-  //   tags: ["Project Management", "Planning", "Execution"],
-  //   category: "enterprise",
-  // },
-  // {
-  //   id: 18,
-  //   image: "/images/FuelPro.png",
-  //   title: "Sync Pro",
-  //   description: "A synchronization tool for teams to coordinate tasks and share updates in real-time.",
-  //   tags: ["Syncing", "Collaboration", "Real-time"],
-  //   category: "enterprise",
-  // },
-  // {
-  //   id: 19,
-  //   image: "/images/FuelPro.png",
-  //   title: "Task Genie",
-  //   description: "A magical task manager that adapts to your needs and keeps you on track.",
-  //   tags: ["Task Management", "Productivity", "Adaptability"],
-  //   category: "enterprise",
-  // },
-  // {
-  //   id: 20,
-  //   image: "/images/FuelPro.png",
-  //   title: "Time Master",
-  //   description: "A time management tool that tracks, analyzes, and improves your time usage.",
-  //   tags: ["Time Management", "Analytics", "Productivity"],
-  //   category: "enterprise",
-  // },
-  // {
-  //   id: 21,
-  //   image: "/images/FuelPro.png",
-  //   title: "Team Vision",
-  //   description: "A strategic planning app for teams to align on goals, timelines, and progress.",
-  //   tags: ["Strategic Planning", "Team Alignment", "Goal Setting"],
-  //   category: "enterprise",
-  // },
-  // {
-  //   id: 22,
-  //   image: "/images/FuelPro.png",
-  //   title: "Focus Pro",
-  //   description: "A focused environment app that helps you stay on task and avoid distractions.",
-  //   tags: ["Focus", "Productivity", "Distraction-Free"],
-  //   category: "technology company",
-  // },
-  // {
-  //   id: 23,
-  //   image: "/images/FuelPro.png",
-  //   title: "Task Hub",
-  //   description: "A hub for organizing and managing all your tasks, deadlines, and projects.",
-  //   tags: ["Task Management", "Organization", "Deadline Tracking"],
-  //   category: "enterprise",
-  // },
-  // {
-  //   id: 24,
-  //   image: "/images/FuelPro.png",
-  //   title: "Work Force",
-  //   description: "A workforce management app designed for teams to track work hours and productivity.",
-  //   tags: ["Workforce Management", "Time Tracking", "Productivity"],
-  //   category: "enterprise",
-  // },
 ];
 
 //project section

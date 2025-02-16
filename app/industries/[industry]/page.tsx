@@ -1,12 +1,16 @@
 import React from "react";
-import IndustryDetailsBanner from "@/component/Industries/IndustryDetailsBanner";
 import { industrydata } from "../../../api/Dummy";
-import OurExpertise from "@/component/Industries/OurExpertise";
 import BookConsultation from "@/component/Common/BookConsultation";
 import ProjectSection from "@/component/Home/ProjectSection";
 import SuccessStories from "@/component/Common/SuccessStories";
 import Contact from "@/component/Contact/Contact";
 import TrustedIndustry from "@/component/Common/TrustedIndustry";
+import IndustryOverview from "@/component/Industries/IndustryOverview";
+
+export const metadata = {
+  title: "Industry-details | Flyte Solutions Ltd.",
+  description: "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
+};
 
 export function generateStaticParams() {
   return industrydata?.industries?.map((item) => ({
@@ -22,10 +26,9 @@ const page = async ({ params }: PageProps) => {
   const { industry } = await params;
   return (
     <div>
-      <IndustryDetailsBanner params={industry} />
-      <OurExpertise params={industry}/>
-      <BookConsultation />
+      <IndustryOverview params={industry}/>
       <ProjectSection />
+      <BookConsultation />
       <SuccessStories/>
       <TrustedIndustry/>
       <Contact />

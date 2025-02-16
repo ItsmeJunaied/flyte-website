@@ -18,7 +18,7 @@ const FeaturesCard: React.FC<{ data: FeaturesProps; Width?: string }> = ({ data,
   return (
     <div className="bg-gradient-to-b from-[#8e8cff] to-[#5856d6]">
       <div className="container p-5 lg:p-16 relative">
-        <h2 className="text-center text-white text-2xl lg:text-[45px] font-bold mb-2">{name}</h2>
+        <h2 className="text-center text-white text-2xl lg:text-[45px] font-bold mb-5">{name}</h2>
         <p className="text-center text-white text-base lg:text-lg">{description}</p>
 
         <div className="my-10 lg:my-14 flex flex-wrap justify-center gap-7">
@@ -42,14 +42,7 @@ const FeaturesCard: React.FC<{ data: FeaturesProps; Width?: string }> = ({ data,
         <div className="absolute right-0 bottom-0 w-20 lg:w-[180px] h-20 lg:h-[180px]">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 127" fill="none">
             <g opacity="0.3">
-              <mask
-                id="mask0_3331_102120"
-                maskUnits="userSpaceOnUse"
-                x="-1"
-                y="0"
-                width="181"
-                height="127"
-              >
+              <mask id="mask0_3331_102120" maskUnits="userSpaceOnUse" x="-1" y="0" width="181" height="127">
                 <path d="M179.999 0.373047H-0.0012207V126.689H179.999V0.373047Z" fill="white" />
               </mask>
               <g mask="url(#mask0_3331_102120)">

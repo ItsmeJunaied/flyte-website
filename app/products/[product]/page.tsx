@@ -9,10 +9,14 @@ import BoosterCard from "@/component/Common/BoosterCard";
 import ProductBenefits from "@/component/Products/ProductBenefits";
 import ProductIntegrations from "@/component/Products/ProductIntegrations";
 
+export const metadata = {
+  title: "Proudct-details | Flyte Solutions Ltd.",
+  description: "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
+};
+
 type PageProps = {
   params: Promise<{ product: string }>;
 };
-
 
 export function generateStaticParams() {
   return ProductCardsData.map((blog) => ({
@@ -23,8 +27,6 @@ export function generateStaticParams() {
 // Fetch the resolved value before rendering
 const Page = async ({ params }: PageProps) => {
   const { product } = await params; 
-
-  console.log("params", product);
 
   return (
     <div>

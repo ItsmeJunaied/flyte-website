@@ -11,7 +11,7 @@ const BookConsultation = () => {
             Build Your Team Now
           </button>
         </div>
-        <img className="md:w-[392px] md:h-[165px]" src="https://i.ibb.co.com/JRdGDxt/dream-team-photo.png" />
+        <img className="md:w-[392px] md:h-[165px]" src="https://i.ibb.co.com/C5H9tGPf/dream-team-photo.webp" alt="Build Your Dream Team image" />
       </div>
     </div>
   );
