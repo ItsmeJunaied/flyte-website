@@ -1944,6 +1944,42 @@ export const industrydata = {
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
         ],
       },
+      trendSteps : {
+        title: "Emerging Trends in Fintech",
+        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
+        ],
+      },
       industryLinkName: "fintech",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "FINTECH",
@@ -2030,6 +2066,42 @@ export const industrydata = {
           { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
           { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
+        ],
+      },
+      trendSteps : {
+        title: "Emerging Trends in Startup",
+        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
         ],
       },
       industryLinkName: "startup",
@@ -2120,6 +2192,42 @@ export const industrydata = {
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
         ],
       },
+      trendSteps : {
+        title: "Emerging Trends in Logistics",
+        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
+        ],
+      },
       industryLinkName: "logistics",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "LOGISTICS",
@@ -2206,6 +2314,42 @@ export const industrydata = {
           { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
           { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
+        ],
+      },
+      trendSteps : {
+        title: "Emerging Trends in Retail & Manufacturing",
+        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
         ],
       },
       industryLinkName: "retail-and-manufacturing",
@@ -2296,6 +2440,42 @@ export const industrydata = {
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
         ],
       },
+      trendSteps : {
+        title: "Emerging Trends in Enterprise",
+        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
+        ],
+      },
       industryLinkName: "enterprise",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "ENTERPRISE",
@@ -2382,6 +2562,42 @@ export const industrydata = {
           { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
           { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
+        ],
+      },
+      trendSteps : {
+        title: "Emerging Trends in Education",
+        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
         ],
       },
       industryLinkName: "education",
@@ -2472,6 +2688,42 @@ export const industrydata = {
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
         ],
       },
+      trendSteps : {
+        title: "Emerging Trends in Real Estate",
+        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
+        ],
+      },
       industryLinkName: "real-estate",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "REAL ESTATE",
@@ -2558,6 +2810,42 @@ export const industrydata = {
           { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
           { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
+        ],
+      },
+      trendSteps : {
+        title: "Emerging Trends in Medical & Healthcare",
+        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
         ],
       },
       industryLinkName: "medical-and-healthcare",
@@ -2648,6 +2936,42 @@ export const industrydata = {
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
         ],
       },
+      trendSteps : {
+        title: "Emerging Trends in Technology Company",
+        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
+        ],
+      },
       industryLinkName: "technology-company",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "TECHNOLOGY COMPANY",
@@ -2736,6 +3060,42 @@ export const industrydata = {
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
         ],
       },
+      trendSteps : {
+        title: "Emerging Trends in Media & Entertainment",
+        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
+        ],
+      },
       industryLinkName: "media-and-entertainment",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "MEDIA & ENTERTAINMENT",
@@ -2822,6 +3182,42 @@ export const industrydata = {
           { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
           { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
+        ],
+      },
+      trendSteps : {
+        title: "Emerging Trends in NGO",
+        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        steps: [
+          {
+            id: 1,
+            name: "AI & Machine Learning",
+            description:
+              "Artificial Intelligence and Machine Learning are revolutionizing fintech by enabling personalized financial services, predictive analytics, and automated decision-making. From chatbots that enhance customer support to algorithms that detect fraudulent transactions, AI is transforming how financial institutions operate.",
+          },
+          {
+            id: 2,
+            name: "Blockchain & DeFi (Decentralized Finance)",
+            description:
+              "Blockchain technology is powering decentralized finance (DeFi), offering transparent, secure, and trustless financial systems. DeFi platforms enable peer-to-peer lending, decentralized exchanges, and smart contracts, reducing the need for traditional intermediaries like banks.",
+          },
+          {
+            id: 3,
+            name: "Open Banking",
+            description:
+              "Open Banking is reshaping the financial landscape by allowing third-party developers to build applications and services around financial institutions. Through APIs, customers can securely share their financial data, enabling seamless integration of services like budgeting tools, investment platforms, and payment solutions.",
+          },
+          {
+            id: 4,
+            name: "Contactless Payments",
+            description:
+              "Contactless payments are becoming the norm, offering a faster, safer, and more convenient way to transact. With the rise of NFC (Near Field Communication) technology and mobile wallets, consumers can make payments with just a tap, reducing the need for physical cards or cash.",
+          },
+          {
+            id: 5,
+            name: "Embedded Finance",
+            description:
+              "Embedded finance integrates financial services into non-financial platforms, such as e-commerce sites, ride-sharing apps, and retail stores. This trend allows businesses to offer seamless payment options, loans, and insurance directly within their platforms, enhancing customer experience and driving revenue.",
+          },
         ],
       },
       industryLinkName: "ngo",
