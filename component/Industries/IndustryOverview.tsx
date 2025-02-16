@@ -10,11 +10,12 @@ type OverviewProps = {
 
 const IndustryOverview = ({ params }: OverviewProps) => {
   const industry = industrydata?.industries?.find((item) => item?.industryLinkName === params);
+  if (!industry) return null;
   return (
     <div>
-      {industry ? <HeroBanner bannerData={industry} /> : null}
-      {industry ? <IndustryAdvantages data={industry?.industryAdvantages} /> : null}
-      {industry ? <OurExpertise data={industry?.features} /> : null}
+      <HeroBanner bannerData={industry} />
+      <IndustryAdvantages data={industry.industryAdvantages} />
+      <OurExpertise data={industry.features} />
     </div>
   );
 };

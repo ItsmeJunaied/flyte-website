@@ -22,7 +22,6 @@ const page = async ({ params }: PageProps) => {
   return (
     <div>
       <IndustryOverview params={industry}/>
-      {/* <IndustryFeatures/> */}
       <BookConsultation />
       <ProjectSection />
       <SuccessStories/>
