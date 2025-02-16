@@ -3,6 +3,7 @@ import React from "react";
 import HeroBanner from "../Common/HeroBanner";
 import OurExpertise from "./OurExpertise";
 import IndustryAdvantages from "./IndustryAdvantages";
+import FeaturesCard from "../Common/FeaturesCard";
 
 type OverviewProps = {
   params: string;
@@ -16,6 +17,7 @@ const IndustryOverview = ({ params }: OverviewProps) => {
       <HeroBanner bannerData={industry} />
       <IndustryAdvantages data={industry.industryAdvantages} />
       <OurExpertise data={industry.features} />
+      <FeaturesCard data={industry?.industrySolution} Width="w-full sm:w-[330px]" />
     </div>
   );
 };
