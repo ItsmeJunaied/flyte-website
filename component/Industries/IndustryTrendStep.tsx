@@ -21,7 +21,12 @@ const IndustryTrendStep: React.FC<{ data: TrendStepProps }> = ({ data }) => {
           <h2 className="text-[#181a2a] text-xl lg:text-3xl font-semibold leading-10 mb-5 lg:mb-10">
             {data?.title}
           </h2>
-          <img className="object-cover" src={data?.image} alt="" />
+          <img
+            className="object-cover animate-infiniteRotate"
+            style={{ transitionDuration: "3s" }} // 3 seconds
+            src={data?.image}
+            alt=""
+          />
         </div>
 
         <div className="col-span-1 lg:col-span-2 space-y-2">
