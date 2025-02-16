@@ -54,7 +54,7 @@ const IndustryFeatures = () => {
               key={index}
               className="h-[190px] flex-col justify-center items-center lg:justify-start lg:items-start gap-4 lg:gap-8 inline-flex"
             >
-              <div className="relative w-[90px] h-[76px]">
+              <div className="relative w-[90px] h-[76px] hover:rotate-45 duration-1000">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="90"

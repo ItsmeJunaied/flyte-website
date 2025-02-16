@@ -42,13 +42,17 @@ const everythingData = [
 
 const EverythingSection = () => {
   return (
-    <div className="bg-white py-5 lg:py-10">
+    <div className="bg-white py-5 lg:py-10" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <div className="pb-5 lg:pb-10">
         <h4 className="text-center text-[#6e51e0] text-sm">Solution</h4>
         <h1 className="text-center text-[#3b3c4e] text-xl lg:text-3xl font-bold ">Everything in One Place</h1>
       </div>
 
-      <div className="container grid grid-cols-1 lg:grid-cols-3 gap-0">
+      <div
+        className="container grid grid-cols-1 lg:grid-cols-3 gap-0"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
         {everythingData?.map((item, index) => (
           <div
             key={index}
