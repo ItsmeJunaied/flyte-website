@@ -12,6 +12,11 @@ import ServiceProcessStep from "@/component/Services/ServiceProcessStep";
 import CustomSoftware from "@/component/Services/CustomSoftware";
 import BoosterCard from "@/component/Common/BoosterCard";
 
+export const metadata = {
+  title: "service-details | Flyte Solutions Ltd.",
+  description: "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
+};
+
 export function generateStaticParams() {
   return serviceData?.map((item) => ({
     service: item?.serviceLinkName,

@@ -28,7 +28,11 @@ const HeroBanner: React.FC<{ bannerData: HeroBannerProps }> = ({ bannerData }) =
         </button>
       </div>
       <div className="w-full lg:w-[60%]">
-        <img className="w-full aspect-[16/9] object-cover rounded-2xl" src={bannerData?.heroImage} alt="" />
+        <img
+          className="w-full aspect-[16/9] object-cover rounded-2xl"
+          src={bannerData?.heroImage}
+          alt={bannerData?.heroSubtitle}
+        />
       </div>
     </div>
   );

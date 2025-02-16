@@ -1946,7 +1946,7 @@ export const industrydata = {
       },
       trendSteps : {
         title: "Emerging Trends in Fintech",
-        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
           {
             id: 1,
@@ -2070,7 +2070,7 @@ export const industrydata = {
       },
       trendSteps : {
         title: "Emerging Trends in Startup",
-        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
           {
             id: 1,
@@ -2194,7 +2194,7 @@ export const industrydata = {
       },
       trendSteps : {
         title: "Emerging Trends in Logistics",
-        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
           {
             id: 1,
@@ -2318,7 +2318,7 @@ export const industrydata = {
       },
       trendSteps : {
         title: "Emerging Trends in Retail & Manufacturing",
-        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
           {
             id: 1,
@@ -2442,7 +2442,7 @@ export const industrydata = {
       },
       trendSteps : {
         title: "Emerging Trends in Enterprise",
-        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
           {
             id: 1,
@@ -2566,7 +2566,7 @@ export const industrydata = {
       },
       trendSteps : {
         title: "Emerging Trends in Education",
-        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
           {
             id: 1,
@@ -2690,7 +2690,7 @@ export const industrydata = {
       },
       trendSteps : {
         title: "Emerging Trends in Real Estate",
-        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
           {
             id: 1,
@@ -2814,7 +2814,7 @@ export const industrydata = {
       },
       trendSteps : {
         title: "Emerging Trends in Medical & Healthcare",
-        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
           {
             id: 1,
@@ -2938,7 +2938,7 @@ export const industrydata = {
       },
       trendSteps : {
         title: "Emerging Trends in Technology Company",
-        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
           {
             id: 1,
@@ -3062,7 +3062,7 @@ export const industrydata = {
       },
       trendSteps : {
         title: "Emerging Trends in Media & Entertainment",
-        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
           {
             id: 1,
@@ -3186,7 +3186,7 @@ export const industrydata = {
       },
       trendSteps : {
         title: "Emerging Trends in NGO",
-        image: "https://i.ibb.co.com/60vQycrN/57043-1.png",
+        image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
           {
             id: 1,
