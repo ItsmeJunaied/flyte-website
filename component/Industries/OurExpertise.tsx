@@ -1,13 +1,13 @@
-import { industrydata } from "@/api/Dummy";
 import React from "react";
 import CommonCard from "../Common/CommonCard";
 
-type ExpertiseProps = {
-  params: string;
+type Expertise = {
+  icon: string;
+  title: string;
+  description: string;
 };
 
-const OurExpertise = ({ params }: ExpertiseProps) => {
-  const industry = industrydata?.industries?.find((item) => item?.industryLinkName === params);
+const OurExpertise: React.FC<{ data: Expertise[] }> = ({ data }) => {
   return (
     <div className="bg-white py-10">
       <div className="container">
@@ -15,7 +15,7 @@ const OurExpertise = ({ params }: ExpertiseProps) => {
           Our Fintech Expertise
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {industry?.features?.map((item, index) => (
+          {data?.map((item, index) => (
             <div key={index}>
               <CommonCard data={item} />
             </div>

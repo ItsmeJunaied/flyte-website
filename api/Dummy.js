@@ -1084,16 +1084,17 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
-    developerExpertises:[],
+    developerExpertises: [],
     exploreMoreDevelopers: [
-      {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
-      {id:2, name:"Hire Angular Developers", path:"angular-developer"},
-      {id:3, name:"Hire Vue.js Developers", path:"vuejs-developer"},
-      {id:4, name:"Hire Next.js Developers", path:"nextjs-developer"},
+      { id: 1, name: "Hire React.js Developers", path: "reactjs-developer" },
+      { id: 2, name: "Hire Angular Developers", path: "angular-developer" },
+      { id: 3, name: "Hire Vue.js Developers", path: "vuejs-developer" },
+      { id: 4, name: "Hire Next.js Developers", path: "nextjs-developer" },
     ],
-     hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -1123,17 +1124,18 @@ export const techData = {
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
-    }
+    },
   },
 
   reactjs: {
     title: "React JS Development",
     hireLinkName: "reactjs-developer",
     description: "Creating responsive and dynamic user interfaces using modern frontend technologies.",
-    technologies:[],
+    technologies: [],
     heroTitle: "Hire Dedicated React Developers for Scalable and Dynamic Web Applications",
     heroSubtitle: "HIRE REACT JS DEVELOPERS",
     heroDesctiption:
@@ -1181,34 +1183,40 @@ export const techData = {
       {
         icon: "fa-cogs",
         title: "Server-Side Rendering (Next.js)",
-        description: "Improve SEO, performance, and initial page load speed with efficient server-side rendering.",
+        description:
+          "Improve SEO, performance, and initial page load speed with efficient server-side rendering.",
       },
       {
         icon: "fa-users",
         title: "State Management (Redux, Context API)",
-        description: "Manage application state efficiently, ensuring data consistency and seamless user experience.",
+        description:
+          "Manage application state efficiently, ensuring data consistency and seamless user experience.",
       },
       {
         icon: "fa-database",
         title: "API Integration & Third-Party Libraries",
-        description: "Seamlessly connect with RESTful APIs, GraphQL, and third-party services for enhanced functionality.",
+        description:
+          "Seamlessly connect with RESTful APIs, GraphQL, and third-party services for enhanced functionality.",
       },
       {
         icon: "fa-server",
         title: "Performance Optimization",
-        description: "Optimize rendering, minimize re-renders, and enhance load times for a fast, responsive UI.",
+        description:
+          "Optimize rendering, minimize re-renders, and enhance load times for a fast, responsive UI.",
       },
       {
         icon: "fa-lock",
         title: "Testing & Debugging",
-        description: "Ensure app stability with unit, integration, and end-to-end testing using Jest, React Testing Library, and Cypress.",
+        description:
+          "Ensure app stability with unit, integration, and end-to-end testing using Jest, React Testing Library, and Cypress.",
       },
     ],
 
     exploreMoreDevelopers: [],
-     hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -1238,10 +1246,11 @@ export const techData = {
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
-    }
+    },
   },
 
   backend: {
@@ -1313,15 +1322,16 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
-    developerExpertises:[],
+    developerExpertises: [],
     exploreMoreDevelopers: [
-      {id:1, name:"Hire Node.js Developers", path:"nodejs-developer"},
-      {id:2, name:"Hire Laravel Developers", path:"laravel-developer"},
-      {id:3, name:"Hire Python Developers", path:"python-developer"},
+      { id: 1, name: "Hire Node.js Developers", path: "nodejs-developer" },
+      { id: 2, name: "Hire Laravel Developers", path: "laravel-developer" },
+      { id: 3, name: "Hire Python Developers", path: "python-developer" },
     ],
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Backend Developers",
       features: [
         {
@@ -1351,10 +1361,11 @@ export const techData = {
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
-    }
+    },
   },
 
   mobileDevelopment: {
@@ -1421,15 +1432,16 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
-    developerExpertises:[],
+    developerExpertises: [],
     exploreMoreDevelopers: [
-      {id:1, name:"Hire Flutter Developers", path:"flutter-developer"},
-      {id:2, name:"Hire Android Developers", path:"android-developer"},
-      {id:3, name:"Hire React Native Developers", path:"react-native-developer"},
+      { id: 1, name: "Hire Flutter Developers", path: "flutter-developer" },
+      { id: 2, name: "Hire Android Developers", path: "android-developer" },
+      { id: 3, name: "Hire React Native Developers", path: "react-native-developer" },
     ],
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Mobile App Developers",
       features: [
         {
@@ -1459,10 +1471,11 @@ export const techData = {
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
-    }
+    },
   },
 
   qualityAssurance: {
@@ -1529,16 +1542,17 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
-    developerExpertises:[],
+    developerExpertises: [],
     exploreMoreDevelopers: [
-      {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
-      {id:2, name:"Hire Angular Developers", path:"angular-developer"},
-      {id:3, name:"Hire Vue.js Developers", path:"vuejs-developer"},
-      {id:4, name:"Hire Next.js Developers", path:"nextjs-developer"},
+      { id: 1, name: "Hire React.js Developers", path: "reactjs-developer" },
+      { id: 2, name: "Hire Angular Developers", path: "angular-developer" },
+      { id: 3, name: "Hire Vue.js Developers", path: "vuejs-developer" },
+      { id: 4, name: "Hire Next.js Developers", path: "nextjs-developer" },
     ],
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Quality Assurance",
       features: [
         {
@@ -1568,10 +1582,11 @@ export const techData = {
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
-    }
+    },
   },
 
   devOps: {
@@ -1638,16 +1653,17 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
-    developerExpertises:[],
+    developerExpertises: [],
     exploreMoreDevelopers: [
-      {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
-      {id:2, name:"Hire Angular Developers", path:"angular-developer"},
-      {id:3, name:"Hire Vue.js Developers", path:"vuejs-developer"},
-      {id:4, name:"Hire Next.js Developers", path:"nextjs-developer"},
+      { id: 1, name: "Hire React.js Developers", path: "reactjs-developer" },
+      { id: 2, name: "Hire Angular Developers", path: "angular-developer" },
+      { id: 3, name: "Hire Vue.js Developers", path: "vuejs-developer" },
+      { id: 4, name: "Hire Next.js Developers", path: "nextjs-developer" },
     ],
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Dev-Ops Developers",
       features: [
         {
@@ -1677,10 +1693,11 @@ export const techData = {
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
-    }
+    },
   },
 
   aiML: {
@@ -1747,16 +1764,17 @@ export const techData = {
         description: "Ensuring your backend systems are secure and compliant with best practices.",
       },
     ],
-    developerExpertises:[],
+    developerExpertises: [],
     exploreMoreDevelopers: [
-      {id:1, name:"Hire React.js Developers", path:"reactjs-developer"},
-      {id:2, name:"Hire Angular Developers", path:"angular-developer"},
-      {id:3, name:"Hire Vue.js Developers", path:"vuejs-developer"},
-      {id:4, name:"Hire Next.js Developers", path:"nextjs-developer"},
+      { id: 1, name: "Hire React.js Developers", path: "reactjs-developer" },
+      { id: 2, name: "Hire Angular Developers", path: "angular-developer" },
+      { id: 3, name: "Hire Vue.js Developers", path: "vuejs-developer" },
+      { id: 4, name: "Hire Next.js Developers", path: "nextjs-developer" },
     ],
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring AI & ML Developers",
       features: [
         {
@@ -1786,10 +1804,11 @@ export const techData = {
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
-    }
+    },
   },
 };
 
@@ -1875,6 +1894,41 @@ export const industrydata = {
           description: "Ensuring the security of sensitive financial data.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Fintech Solutions?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
       industryLinkName: "fintech",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "FINTECH",
@@ -1913,6 +1967,41 @@ export const industrydata = {
           description: "Securing capital for business growth.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Startup Solutions?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
       industryLinkName: "startup",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "STARTUP",
@@ -1951,6 +2040,41 @@ export const industrydata = {
           description: "Improving operational efficiencies in logistics.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Logistics Solutions?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
       industryLinkName: "logistics",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "LOGISTICS",
@@ -1989,6 +2113,41 @@ export const industrydata = {
           description: "Driving revenue through retail strategies.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Retail & Manufacturing?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
       industryLinkName: "retail-and-manufacturing",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "RETAIL & MANUFACTURING",
@@ -2027,6 +2186,41 @@ export const industrydata = {
           description: "Empowering businesses with scalable cloud solutions.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Enterprise Solutions?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
       industryLinkName: "enterprise",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "ENTERPRISE",
@@ -2065,6 +2259,41 @@ export const industrydata = {
           description: "Enhancing student participation and interaction.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Education Solutions?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
       industryLinkName: "education",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "EDUCATION",
@@ -2103,6 +2332,41 @@ export const industrydata = {
           description: "Providing data-driven insights for real estate decisions.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Real Estate?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
       industryLinkName: "real-estate",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "REAL ESTATE",
@@ -2141,6 +2405,41 @@ export const industrydata = {
           description: "Using data to enhance healthcare delivery.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Mediacal & Healthcare?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
       industryLinkName: "medical-and-healthcare",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "MEDIAL & HEALTHCARE",
@@ -2179,6 +2478,41 @@ export const industrydata = {
           description: "Designing and implementing tech infrastructures.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Technology Company?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
       industryLinkName: "technology-company",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "TECHNOLOGY COMPANY",
@@ -2217,6 +2551,41 @@ export const industrydata = {
           description: "Offering on-demand content to audiences.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for Media & Entertainment?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
       industryLinkName: "media-and-entertainment",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "MEDIA & ENTERTAINMENT",
@@ -2255,6 +2624,41 @@ export const industrydata = {
           description: "Creating strategic partnerships for social good.",
         },
       ],
+      industryAdvantages: {
+        title: "Why Choose Us for NGO Solutions?",
+        description:
+          "Stay ahead in fintech with secure, scalable solutions. From compliance to AI and blockchain, we drive innovation and growth. Partner with us to transform financial services.",
+        advantages: [
+          {
+            id: 1,
+            icon: "fa-chart-column",
+            bgColor: "#EFF6F3",
+            name: "Industry Expertise",
+            description: "Deep understanding of financial regulations and technologies.",
+          },
+          {
+            id: 2,
+            icon: "fa-lock",
+            bgColor: "#e6f3e5",
+            name: "Secure Solutions",
+            description: "Robust security measures to protect sensitive financial data.",
+          },
+          {
+            id: 3,
+            icon: "fa-arrow-trend-up",
+            bgColor: "#fdf2c8",
+            name: "Scalable Platforms",
+            description: "Solutions designed to grow with your business.",
+          },
+          {
+            id: 4,
+            icon: "fa-palette",
+            bgColor: "#ebeff3",
+            name: "Customer-Centric Design",
+            description: "Focus on delivering seamless user experiences.",
+          },
+        ],
+      },
       industryLinkName: "ngo",
       heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
       heroSubtitle: "NGO",
@@ -2443,12 +2847,14 @@ export const caseStudyData = [
     caseStudyLinkName: "time-tracker",
     heroTitle: "See How We Helped Uber Revolutionize Queue Management",
     heroSubtitle: "Explore Our Success Stories",
-    heroDesctiption:"Discover how Uber, a global leader in ride-sharing, transformed their queue management challenges into a seamless and efficient system with our innovative solutions. This case study highlights the journey, the obstacles they faced, and the remarkable results achieved through our collaboration.",
+    heroDesctiption:
+      "Discover how Uber, a global leader in ride-sharing, transformed their queue management challenges into a seamless and efficient system with our innovative solutions. This case study highlights the journey, the obstacles they faced, and the remarkable results achieved through our collaboration.",
     heroButton: "Book A Consultation",
     heroImage: "https://i.ibb.co.com/CK4NTjVv/ss-3.png",
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -2478,7 +2884,8 @@ export const caseStudyData = [
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
     },
@@ -2496,12 +2903,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
-    caseInfo : [
+    caseInfo: [
       { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
       { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
       { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
-      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
-    ],    
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 2,
@@ -2513,12 +2920,13 @@ export const caseStudyData = [
     caseStudyLinkName: "cloud-clockin",
     heroTitle: "",
     heroSubtitle: "",
-    heroDesctiption:"",
+    heroDesctiption: "",
     heroButton: "Book A Consultation",
     heroImage: "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -2548,7 +2956,8 @@ export const caseStudyData = [
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
     },
@@ -2566,12 +2975,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
-    caseInfo : [
+    caseInfo: [
       { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
       { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
       { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
-      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
-    ], 
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 3,
@@ -2583,12 +2992,13 @@ export const caseStudyData = [
     caseStudyLinkName: "hr-professional",
     heroTitle: "",
     heroSubtitle: "",
-    heroDesctiption:"",
+    heroDesctiption: "",
     heroButton: "Book A Consultation",
     heroImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -2618,7 +3028,8 @@ export const caseStudyData = [
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
     },
@@ -2636,12 +3047,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
-    caseInfo : [
+    caseInfo: [
       { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
       { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
       { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
-      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
-    ], 
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 4,
@@ -2653,12 +3064,13 @@ export const caseStudyData = [
     caseStudyLinkName: "picture-ongold",
     heroTitle: "",
     heroSubtitle: "",
-    heroDesctiption:"",
+    heroDesctiption: "",
     heroButton: "Book A Consultation",
     heroImage: "",
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -2688,7 +3100,8 @@ export const caseStudyData = [
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
     },
@@ -2706,12 +3119,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
-    caseInfo : [
+    caseInfo: [
       { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
       { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
       { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
-      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
-    ], 
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 5,
@@ -2723,12 +3136,13 @@ export const caseStudyData = [
     caseStudyLinkName: "pushlocal",
     heroTitle: "",
     heroSubtitle: "",
-    heroDesctiption:"",
+    heroDesctiption: "",
     heroButton: "Book A Consultation",
     heroImage: "",
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -2758,7 +3172,8 @@ export const caseStudyData = [
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
     },
@@ -2776,12 +3191,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
-    caseInfo : [
+    caseInfo: [
       { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
       { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
       { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
-      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
-    ], 
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 6,
@@ -2793,12 +3208,13 @@ export const caseStudyData = [
     caseStudyLinkName: "social-learning",
     heroTitle: "",
     heroSubtitle: "",
-    heroDesctiption:"",
+    heroDesctiption: "",
     heroButton: "Book A Consultation",
     heroImage: "",
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -2828,7 +3244,8 @@ export const caseStudyData = [
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
     },
@@ -2846,12 +3263,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
-    caseInfo : [
+    caseInfo: [
       { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
       { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
       { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
-      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
-    ], 
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 7,
@@ -2863,12 +3280,13 @@ export const caseStudyData = [
     caseStudyLinkName: "cds-platform",
     heroTitle: "",
     heroSubtitle: "",
-    heroDesctiption:"",
+    heroDesctiption: "",
     heroButton: "Book A Consultation",
     heroImage: "",
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -2898,7 +3316,8 @@ export const caseStudyData = [
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
     },
@@ -2916,12 +3335,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
-    caseInfo : [
+    caseInfo: [
       { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
       { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
       { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
-      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
-    ], 
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 8,
@@ -2933,12 +3352,13 @@ export const caseStudyData = [
     caseStudyLinkName: "knee-pads",
     heroTitle: "",
     heroSubtitle: "",
-    heroDesctiption:"",
+    heroDesctiption: "",
     heroButton: "Book A Consultation",
     heroImage: "",
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -2968,7 +3388,8 @@ export const caseStudyData = [
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
     },
@@ -2986,12 +3407,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
-    caseInfo : [
+    caseInfo: [
       { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
       { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
       { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
-      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
-    ], 
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 9,
@@ -3003,12 +3424,13 @@ export const caseStudyData = [
     caseStudyLinkName: "american-society",
     heroTitle: "",
     heroSubtitle: "",
-    heroDesctiption:"",
+    heroDesctiption: "",
     heroButton: "Book A Consultation",
     heroImage: "",
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -3038,7 +3460,8 @@ export const caseStudyData = [
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
     },
@@ -3056,12 +3479,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
-    caseInfo : [
+    caseInfo: [
       { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
       { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
       { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
-      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
-    ], 
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 10,
@@ -3073,12 +3496,13 @@ export const caseStudyData = [
     caseStudyLinkName: "clinical-trails-management",
     heroTitle: "",
     heroSubtitle: "",
-    heroDesctiption:"",
+    heroDesctiption: "",
     heroButton: "Book A Consultation",
     heroImage: "",
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -3108,7 +3532,8 @@ export const caseStudyData = [
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
     },
@@ -3126,12 +3551,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
-    caseInfo : [
+    caseInfo: [
       { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
       { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
       { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
-      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
-    ], 
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 11,
@@ -3143,12 +3568,13 @@ export const caseStudyData = [
     caseStudyLinkName: "organization-ims",
     heroTitle: "",
     heroSubtitle: "",
-    heroDesctiption:"",
+    heroDesctiption: "",
     heroButton: "Book A Consultation",
     heroImage: "",
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -3178,7 +3604,8 @@ export const caseStudyData = [
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
     },
@@ -3196,12 +3623,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
-    caseInfo : [
+    caseInfo: [
       { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
       { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
       { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
-      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
-    ], 
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 12,
@@ -3213,12 +3640,13 @@ export const caseStudyData = [
     caseStudyLinkName: "team-sync",
     heroTitle: "",
     heroSubtitle: "",
-    heroDesctiption:"",
+    heroDesctiption: "",
     heroButton: "Book A Consultation",
     heroImage: "",
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -3248,7 +3676,8 @@ export const caseStudyData = [
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
     },
@@ -3266,12 +3695,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
-    caseInfo : [
+    caseInfo: [
       { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
       { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
       { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
-      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
-    ], 
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 13,
@@ -3283,12 +3712,13 @@ export const caseStudyData = [
     caseStudyLinkName: "real-estate",
     heroTitle: "",
     heroSubtitle: "",
-    heroDesctiption:"",
+    heroDesctiption: "",
     heroButton: "Book A Consultation",
     heroImage: "",
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -3318,7 +3748,8 @@ export const caseStudyData = [
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
     },
@@ -3336,12 +3767,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
-    caseInfo : [
+    caseInfo: [
       { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
       { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
       { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
-      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
-    ], 
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 14,
@@ -3353,12 +3784,13 @@ export const caseStudyData = [
     caseStudyLinkName: "fsa-argentina",
     heroTitle: "",
     heroSubtitle: "",
-    heroDesctiption:"",
+    heroDesctiption: "",
     heroButton: "Book A Consultation",
     heroImage: "",
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -3388,7 +3820,8 @@ export const caseStudyData = [
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
     },
@@ -3406,12 +3839,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
-    caseInfo : [
+    caseInfo: [
       { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
       { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
       { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
-      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
-    ], 
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 15,
@@ -3423,12 +3856,13 @@ export const caseStudyData = [
     caseStudyLinkName: "hydro-one-sharepoint",
     heroTitle: "",
     heroSubtitle: "",
-    heroDesctiption:"",
+    heroDesctiption: "",
     heroButton: "Book A Consultation",
     heroImage: "",
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -3458,7 +3892,8 @@ export const caseStudyData = [
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
     },
@@ -3476,12 +3911,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
-    caseInfo : [
+    caseInfo: [
       { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
       { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
       { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
-      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
-    ], 
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
   {
     id: 16,
@@ -3493,12 +3928,13 @@ export const caseStudyData = [
     caseStudyLinkName: "macmillan-education",
     heroTitle: "",
     heroSubtitle: "",
-    heroDesctiption:"",
+    heroDesctiption: "",
     heroButton: "Book A Consultation",
     heroImage: "",
-    hireProcess : {
+    hireProcess: {
       name: "Our Hiring Process",
-      description: "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a seamless hiring process customized to your project.",
       title: "Your Path to Hiring Frontend Developers",
       features: [
         {
@@ -3528,7 +3964,8 @@ export const caseStudyData = [
         {
           id: 5,
           name: "Ongoing Support",
-          details: "We provide continuous support to monitor performance and address any challenges during the project.",
+          details:
+            "We provide continuous support to monitor performance and address any challenges during the project.",
         },
       ],
     },
@@ -3546,12 +3983,12 @@ export const caseStudyData = [
         { id: 8, icon: "far fa-shield-alt", title: "Cybersecurity", color: "#2196f3" },
       ],
     },
-    caseInfo : [
+    caseInfo: [
       { id: 1, icon: "fa-map-marker-alt", label: "Location", value: "United States" },
       { id: 2, icon: "fa-industry", label: "Industry", value: "Ride Sharing" },
       { id: 3, icon: "fa-globe", label: "Service", value: "Web Application" },
-      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" }
-    ], 
+      { id: 4, icon: "fa-handshake", label: "Partnership", value: "Since 2016" },
+    ],
   },
 ];
 

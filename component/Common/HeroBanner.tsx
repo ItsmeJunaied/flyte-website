@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Subtitle from "./Subtitle";
 import Title from "./Title";
