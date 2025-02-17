@@ -258,34 +258,42 @@ export const bannerData = {
     {
       logo: "fa-solid fa-chart-area",
       name: "Fintech",
+      path:"industries/fintech",
     },
     {
       logo: "fa-solid fa-graduation-cap",
       name: "Education",
+      path:"industries/education",
     },
     {
       logo: "fa-solid fa-truck",
       name: "Logistics",
+      path:"industries/logistics",
     },
     {
       logo: "fa-solid fa-store",
       name: "Retail & Manufacturing",
+      path:"industries/retail-and-manufacturing",
     },
     {
       logo: "fa-solid fa-building",
       name: "Real Estate",
+      path:"industries/real-estate",
     },
     {
       logo: "fa-solid fa-heart-pulse",
       name: "Medical & Healthcare",
+      path:"industries/medical-and-healthcare",
     },
     {
       logo: "fa-solid fa-microchip",
       name: "Technology Company",
+      path:"industries/technology-company",
     },
     {
       logo: "fa-solid fa-video",
       name: "Media & Entertainment",
+      path:"industries/media-and-entertainment",
     },
   ],
   bannerImage: "/images/bannerImg.png",
