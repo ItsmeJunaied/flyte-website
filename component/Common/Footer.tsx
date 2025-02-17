@@ -7,6 +7,7 @@ type FooterData = {
       location: string;
       companyLogo: string;
       successLogos: string[];
+      ISOLogos: string[];
       phoneNumbers: string[];
       emails: string[];
       socialLinks: {
@@ -64,12 +65,24 @@ const Footer: React.FC<{ footerData: FooterData }> = ({ footerData }) => {
 
           {/* Success Logos */}
           <div className="grid grid-cols-3 gap-2">
-            {contactUs.successLogos.map((logo, index) => (
+            {contactUs?.successLogos?.map((logo, index) => (
               <img
                 key={index}
                 className="object-cover"
                 src={logo}
                 alt={`Success Logo ${index + 1}`}
+              />
+            ))}
+          </div>
+
+          {/* ISO Logos */}
+          <div className="flex gap-4">
+            {contactUs?.ISOLogos?.map((logo, index) => (
+              <img
+                key={index}
+                className="object-cover"
+                src={logo}
+                alt={`ISO Logo ${index + 1}`}
               />
             ))}
           </div>
@@ -138,10 +151,10 @@ const Footer: React.FC<{ footerData: FooterData }> = ({ footerData }) => {
             <div className=" w-full flex  flex-col lg:flex-row gap-6">
               {services.subsections.map((subsection, index) => (
                 <div key={index} className=" lg:w-1/4 flex flex-col gap-5">
-                  <h6 className="text-[#F5F5F5] font-bold text-base">
+                  <h6 className="text-[#F5F5F5] font-bold text-base whitespace-nowrap">
                     {subsection.name}
                   </h6>
-                  <ul className="list-none flex flex-col gap-5 max-w-[200px]">
+                  <ul className="list-none flex flex-col gap-4 max-w-[200px]">
                     {subsection.items.map((item, subIndex) => (
                       <li key={subIndex}>
                         <span className="text-[#EBEBEB] text-sm text-wrap">
@@ -166,7 +179,7 @@ const Footer: React.FC<{ footerData: FooterData }> = ({ footerData }) => {
                   <h6 className="text-[#F5F5F5] font-bold text-base">
                     {subsection.name}
                   </h6>
-                  <ul className="list-none flex flex-col gap-5">
+                  <ul className="list-none flex flex-col gap-3">
                     {subsection.items.map((item, subIndex) => (
                       <li key={subIndex}>
                         <a

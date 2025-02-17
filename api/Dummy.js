@@ -3241,6 +3241,8 @@ export const footerData = {
         "/images/clip.png",
         "/images/goodfirms.png",
         "/images/Untitled-design.png",
+      ],
+      ISOLogos: [
         "/images/iso1.png",
         "/images/iso2.png",
       ],
