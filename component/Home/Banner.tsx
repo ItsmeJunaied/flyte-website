@@ -25,10 +25,10 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
         // padding: "50px 20px",
         color: "white",
         textAlign: "center",
-        height: "640px",
+        // height: "740px",
         opacity: "100%",
       }}
-      className="flex flex-col  justify-center items-start gap-5 "
+      className="flex flex-col pt-10 lg:pt-20 pb-10 lg:pb-0 lg:h-[740px] justify-center items-start gap-5 "
     >
       <div className=" container   flex flex-col gap-[24px]">
         <div className="w-full flex justify-start items-start">
