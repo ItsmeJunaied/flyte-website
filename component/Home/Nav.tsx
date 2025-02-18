@@ -21,6 +21,8 @@ type NavData = {
 const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
   const pathname = usePathname();
 
+  // <div className=" ">
+  //     <div className="heade bg-black/0 fixed top-0 left-0 w-full">
   // console.log("pathname", pathname.split("/")[1])
   return (
     <div className="pb-14 lg:pb-[100px]">
