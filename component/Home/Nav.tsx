@@ -20,8 +20,10 @@ type NavData = {
 
 const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
   const pathname = usePathname();
-
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const excludePages = ["/case-studies", "/career", "/company/about-us", "/contact-us"];
+  const isExcluded = excludePages.includes(pathname) || pathname.startsWith("/products");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,13 +41,14 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
   return (
     <div className="">
       <div
-        className={`z-10 transition-all duration-500 ease-in-out lg:hover:bg-white hover:text-black group ${
-          isScrolled
-            ? "lg:fixed top-0 left-0 w-full bg-white shadow-md"
-            : "fiexed lg:absolute top-0 left-0 w-full bg-transparent"
-        }`}
+        className={`z-10 transition-all duration-500 ease-in-out   
+          ${isExcluded ? "bg-white text-black" : "lg:hover:bg-white group"} 
+          ${
+            isScrolled
+              ? "lg:fixed top-0 left-0 w-full bg-white shadow-md"
+              : "fiexed lg:absolute top-0 left-0 w-full bg-transparent"
+          }`}
       >
-
         <nav className="nav container">
           <div className="nav__data">
             <Link href="/">
@@ -70,13 +73,13 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                           <p
                             className={` hover:text-[#2B6CB0] group-hover:text-black ${
                               isActive ? "text-blue-500 border-b-2 border-btnColor" : ""
-                            } ${isScrolled ? "lg:text-black" : "lg:text-white"}`}
+                            } ${isScrolled ? "lg:text-black" : isExcluded ? "text-black" : "lg:text-white"}`}
                           >
                             {item.name}
                           </p>
                           <i
                             className={`fa-solid fa-chevron-down fa-2xs group-hover:text-black ${
-                              isScrolled ? "lg:text-black" : "lg:text-white"
+                              isScrolled ? "lg:text-black" : isExcluded ? "text-black" : "lg:text-white"
                             }`}
                           ></i>
                         </div>
@@ -131,7 +134,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                         <span
                           className={`group-hover:text-black ${
                             isActive ? "text-blue-500 border-b-2 border-btnColor" : ""
-                          } ${isScrolled ? "lg:text-black" : "lg:text-white"}`}
+                          } ${isScrolled ? "lg:text-black" : isExcluded ? "text-black" : "lg:text-white"}`}
                         >
                           {item.name}
                         </span>
