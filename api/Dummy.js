@@ -316,6 +316,10 @@ export const brandData = {
       alt: "Brand 3",
     },
     {
+      src: "/images/scb-logo.webp",
+      alt: "Brand 3",
+    },
+    {
       src: "/images/robi_brand.png",
       alt: "Brand 4",
     },

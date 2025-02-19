@@ -4,8 +4,8 @@ import { brandData } from "../../api/Dummy";
 const TopBrands = () => {
   const brands = brandData.brands;
   const row1 = brandData.brands.slice(0, 6);
-  const row2 = brandData.brands.slice(6, 12);
-  const row3 = brandData.brands.slice(12, 21);
+  const row2 = brandData.brands.slice(6, 13);
+  const row3 = brandData.brands.slice(13, 21);
   return (
     <div className="container mb-10 md:mb-16">
       <h2 className="md:w-[454px] text-center text-lg md:text-2xl font-bold mx-auto mb-5">
