@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "../Common/Title";
 import Subtitle from "../Common/Subtitle";
+import Link from "next/link";
 
 // types.ts
 type TechItem = {
@@ -10,6 +11,7 @@ type TechItem = {
 
 type TechCategory = {
   title: string;
+  hireLinkName: string;
   description: string;
   technologies: TechItem[];
 };
@@ -64,14 +66,14 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({ techData }) => 
             const category = techData[section.key as keyof TechData];
 
             return (
-              <div
+              <Link href={`/hire/${category?.hireLinkName}`}
                 key={section.key}
-                className=" h-auto p-[24px] bg-white hover:bg-[#e3eafc] transition duration-500 shadow-[0px_0px_10px_10px_rgba(235,235,235,0.25)] hover:shadow-[0px_0px_5px_2px_rgba(88,86,214,0.5)] flex-col justify-start items-stretch gap-4 inline-flex overflow-hidden"
+                className=" h-auto p-[24px] bg-white hover:bg-[#85d4f4] group transition duration-500 shadow-[0px_0px_10px_10px_rgba(235,235,235,0.25)] flex-col justify-start items-stretch gap-4 inline-flex overflow-hidden"
               >
                 <div className="text-black text-base font-bold">
                   {category.title} {/* Use category.title here */}
                 </div>
-                <div className="self-stretch text-[#9c9c9c] text-xs font-normal">{category.description}</div>
+                <div className="self-stretch text-[#9c9c9c] group-hover:text-black transition duration-500 text-xs font-normal">{category.description}</div>
 
                 <div className="flex-col justify-start items-start gap-2.5 flex">
                   <div className="grid grid-cols-3 gap-6">
@@ -86,7 +88,7 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({ techData }) => 
                     ))}
                   </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>
@@ -95,9 +97,9 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({ techData }) => 
           className="w-full h-[42px] justify-center items- gap-2.5 inline-flex overflow-hidden "
           data-aos="fade-up"
         >
-          <button className="text-white bg-[#5856d6] rounded-md px-8 py-3 text-sm font-semibold">
-            Learn More
-          </button>
+          <Link href="/hire" className="text-white bgGradientNevyBlue rounded-md px-8 py-3 text-sm font-semibold">
+            Learn More Technology
+          </Link>
         </div>
       </div>
     </div>
