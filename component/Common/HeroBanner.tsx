@@ -12,7 +12,7 @@ type HeroBannerProps = {
 const HeroBanner: React.FC<{ bannerData: HeroBannerProps }> = ({ bannerData }) => {
   return (
     <div
-      className="pt-10 lg:pt-40 relative lg:h-screen"
+      className="pt-10 lg:pt-40 relative lg:min-h-[610px]"
       style={{
         backgroundImage: "url('https://i.ibb.co.com/d0Sv44HQ/home-page-experiment-5-cover.png')",
         backgroundSize: "cover",
@@ -20,13 +20,13 @@ const HeroBanner: React.FC<{ bannerData: HeroBannerProps }> = ({ bannerData }) =
       }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-60" />
-      <div className=" container  pb-8 lg:pb-16 flex flex-col-reverse lg:flex-row gap-8 lg:gap-16 relative">
-        <div className="w-full lg:w-[40%] flex flex-col justify-between space-y-8 lg:space-y-16">
+      <div className="container pb-8 lg:pb-16 flex flex-col-reverse lg:flex-row gap-8 lg:gap-16 relative">
+        <div className="w-full lg:w-[60%] flex flex-col justify-between space-y-8 lg:space-y-16">
           <div>
-            <h2 className="text-white text-base lg:text-lg font-bold mb-4">{bannerData?.heroSubtitle}</h2>
-            <h1 className="text-white text-2xl lg:text-4xl font-bold">{bannerData?.heroTitle}</h1>
+            <h2 className="text-white text-base lg:text-lg font-bold tracking-wide mb-4">{bannerData?.heroSubtitle}</h2>
+            <h1 className="text-white text-2xl lg:text-4xl font-bold leading-10 tracking-wider">{bannerData?.heroTitle}</h1>
           </div>
-          <p className="text-white text-sm">{bannerData?.heroDesctiption}</p>
+          <p className="text-white text-sm lg:text-[18px] tracking-wide">{bannerData?.heroDesctiption}</p>
           <button className="w-fit px-8 py-3 bg-[#5856d6] rounded-md text-white text-base font-semibold">
             {bannerData?.heroButton}
           </button>
