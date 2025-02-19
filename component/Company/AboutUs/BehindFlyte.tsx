@@ -11,7 +11,7 @@ const behindFlyteData = {
 
 const BehindFlyte = () => {
   return (
-    <div>
+    <div className="lg:mb-8">
       <span className="flex flex-col items-center my-2 md:my-7">
         <Title title={behindFlyteData?.title} width="full" fontSize="text-lg lg:text-4xl" />
         <p className="text-center text-[#afadb5] text-xs md:text-sm md:mt-2">{behindFlyteData?.info}</p>

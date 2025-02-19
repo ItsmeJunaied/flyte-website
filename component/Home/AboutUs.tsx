@@ -126,7 +126,7 @@ const AboutUs: React.FC = () => {
             {/* Learn More Button */}
             <div className="w-full flex lg:justify-start justify-center lg:items-start items-center">
               <Link className="w-fit h-fit bg-btnColor px-[32px] py-[12px] rounded-lg mt-5 text-white" href={"/"}>
-                <p>Learn more</p>
+                <p>Learn More About Our Business Solutions</p>
               </Link>
             </div>
           </div>
