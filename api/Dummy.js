@@ -3246,7 +3246,8 @@ export const footerData = {
       location: "Flyte Solutions Ltd, The Reeve, House 11, Road 33, Gulshan-1, Dhaka-1212, Bangladesh.",
       companyLogo: "/images/flyte-logo.png",
       successLogos: [
-        "/images/clip.png",
+        // "/images/clip.png",
+        "https://i.ibb.co.com/0p6zVS2H/Clip.png",
         "/images/goodfirms.png",
         "/images/Untitled-design.png",
       ],
@@ -3254,7 +3255,7 @@ export const footerData = {
         "/images/iso1.png",
         "/images/iso2.png",
       ],
-      phoneNumbers: ["+880-171-320-3656 ", "+880-179-353-2035 "],
+      phoneNumbers: ["+880-171-320-3656 ", "+880-179-353-2035", "+1831 322 0444"],
       emails: ["info@flytesolutions.com ", "sales@flytesolutions.com "],
       socialLinks: [
         {

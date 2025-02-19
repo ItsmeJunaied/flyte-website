@@ -91,12 +91,13 @@ const Footer: React.FC<{ footerData: FooterData }> = ({ footerData }) => {
           <div className="max-w-[380px] flex flex-col gap-2">
             <h6 className="footer-title text-[#F5F5F5]">Phone</h6>
             {contactUs.phoneNumbers.map((phone, index) => (
-              <p
+              <a
                 key={index}
+                href={`tell:${phone}`}
                 className="link link-hover text-[#e0e0e0] text-sm font-normal"
               >
                 {phone}
-              </p>
+              </a>
             ))}
           </div>
 
