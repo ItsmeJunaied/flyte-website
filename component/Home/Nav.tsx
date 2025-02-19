@@ -160,7 +160,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
               {/* Hardcoded Contact Us link */}
               <li>
                 <Link href="/contact-us" className="nav-close h-full flex items-center">
-                  <p className="bg-btnColor h-fit text-white px-6 py-3 rounded-lg">Contact Us</p>
+                  <p className="bgGradientNevyBlue h-fit text-white px-6 py-3 rounded-lg">Contact Us</p>
                 </Link>
               </li>
             </ul>
