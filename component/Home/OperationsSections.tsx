@@ -27,9 +27,7 @@ interface OperationsSectionsProps {
   techData: TechData;
 }
 
-const OperationsSections: React.FC<OperationsSectionsProps> = ({
-  techData,
-}) => {
+const OperationsSections: React.FC<OperationsSectionsProps> = ({ techData }) => {
   const headerTitle: string = "Innovative technology that transforms";
 
   // Section titles
@@ -51,17 +49,16 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({
         backgroundPosition: "center",
         width: "100%",
       }}
-
     >
       <div className=" container">
-        <div className="  "       data-aos="fade-up">
-          <Subtitle Subtitle="Our Technology"/>
+        <div className="  " data-aos="fade-up">
+          <Subtitle Subtitle="Our Technology" />
           <Title title={headerTitle} />
         </div>
 
         <div
           className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 py-10  lg:px-0 justify-center "
-                data-aos="fade-up"
+          data-aos="fade-up"
         >
           {sections.map((section) => {
             const category = techData[section.key as keyof TechData];
@@ -69,14 +66,12 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({
             return (
               <div
                 key={section.key}
-                className=" h-auto p-[24px] bg-white shadow-[0px_0px_10px_10px_rgba(235,235,235,0.25)] flex-col justify-start items-stretch gap-4 inline-flex overflow-hidden"
+                className=" h-auto p-[24px] bg-white hover:bg-[#e3eafc] transition duration-500 shadow-[0px_0px_10px_10px_rgba(235,235,235,0.25)] hover:shadow-[0px_0px_5px_2px_rgba(88,86,214,0.5)] flex-col justify-start items-stretch gap-4 inline-flex overflow-hidden"
               >
                 <div className="text-black text-base font-bold">
                   {category.title} {/* Use category.title here */}
                 </div>
-                <div className="self-stretch text-[#9c9c9c] text-xs font-normal">
-                  {category.description}
-                </div>
+                <div className="self-stretch text-[#9c9c9c] text-xs font-normal">{category.description}</div>
 
                 <div className="flex-col justify-start items-start gap-2.5 flex">
                   <div className="grid grid-cols-3 gap-6">
@@ -85,14 +80,8 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({
                         key={idx}
                         className="w-fit px-2 py-1 rounded-[15px] border border-[#e9e9e9] justify-start items-center gap-1.5 flex"
                       >
-                        <img
-                          src={tech.image}
-                          alt={tech.name}
-                          className="w-3 h-3"
-                        />
-                        <div className="text-center text-[#5e5e5e] text-[10px] font-medium">
-                          {tech.name}
-                        </div>
+                        <img src={tech.image} alt={tech.name} className="w-3 h-3" />
+                        <div className="text-center text-[#5e5e5e] text-[10px] font-medium">{tech.name}</div>
                       </div>
                     ))}
                   </div>
@@ -102,7 +91,10 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({
           })}
         </div>
 
-        <div className="w-full h-[42px] justify-center items- gap-2.5 inline-flex overflow-hidden "       data-aos="fade-up">
+        <div
+          className="w-full h-[42px] justify-center items- gap-2.5 inline-flex overflow-hidden "
+          data-aos="fade-up"
+        >
           <button className="text-white bg-[#5856d6] rounded-md px-8 py-3 text-sm font-semibold">
             Learn More
           </button>
