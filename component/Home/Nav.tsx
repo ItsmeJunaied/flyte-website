@@ -22,7 +22,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const excludePages = ["/case-studies", "/career", "/company/about-us", "/contact-us"];
+  const excludePages = ["/case-studies", "/career", "/company/about-us", "/contact-us", "/hire/application-form"];
   const isExcluded =
     excludePages.includes(pathname) ||
     pathname === "/company" ||
@@ -55,7 +55,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
   return (
     <div className="">
       <div
-        className={`z-10 transition-all duration-500 ease-in-out   
+        className={`z-[1000] transition-all duration-500 ease-in-out   
           ${isExcluded ? "bg-white text-black" : "lg:hover:bg-white group"} 
           ${
             isScrolled
