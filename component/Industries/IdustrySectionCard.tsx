@@ -24,92 +24,34 @@ type IndustriesCardsDataProps = {
 };
 
 const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({ IndustriesCardsData }) => {
-  const [isFixed, setIsFixed] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
-  // const firstNav = typeof document !== "undefined" ? document.querySelector(".header") : null;
-  // const firstNavHeight = firstNav ? (firstNav as HTMLElement)?.offsetHeight || 0 : 0;
-
-  // start sub nav
   const [isScrolled, setIsScrolled] = useState(false);
+  const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // Handle Scroll Effects
   useEffect(() => {
     const handleScroll = () => {
-      const threshold = window.innerHeight * 0.5;
-
-      setIsScrolled(window.scrollY > threshold);
+      setIsScrolled(window.scrollY > window.innerHeight * 0.5);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  // end sub nav
 
- 
-  useEffect(() => {
-    const industryNav = typeof document !== "undefined" ? document.querySelector(".industry-nav") : null;
-    const firstNav = typeof document !== "undefined" ? document.querySelector(".header") : null;
-
-    if (!industryNav || !firstNav) return;
-
-    // const firstNavHeight = (firstNav as HTMLElement)?.offsetHeight || 0;
-
-    // Create IntersectionObserver to detect when header touches the industry-nav
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // If the .industry-nav is fully inside the viewport and header has touched it, set isFixed
-        if (!entry.isIntersecting) {
-          setIsFixed(true); // Make navbar fixed
-        } else {
-          setIsFixed(false); // Reset navbar to sticky
-        }
-      },
-      {
-        threshold: 1.0, // Fully in view
-        rootMargin: "400px", // Trigger when the header's bottom reaches the industry-nav
-      }
-    );
-
-    observer.observe(industryNav);
-
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY) {
-        // Scrolling down, keep the navbar fixed
-        setIsFixed(true);
-      } else {
-        // Scrolling up, return the navbar to sticky
-        setIsFixed(false);
-      }
-
-      setLastScrollY(currentScrollY); // Update last scroll position
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollY]);
-
-  const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const [activeIndex, setActiveIndex] = useState(0);
-
+  // Scroll to Specific Section
   const scrollToSection = (index: number) => {
     setActiveIndex(index);
-    sectionRefs.current[index]?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    sectionRefs.current[index]?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
     <div className="min-h-screen lg:px-0">
       {/* Industry names navbar */}
-      <div className={`bg-white shadow-lg text-nowrap ${isScrolled ? "fixed top-14 lg:top-24 left-0 w-full" : ""}`}>
+      <div
+        className={`bg-white shadow-lg text-nowrap ${
+          isScrolled ? "fixed top-14 lg:top-24 left-0 w-full" : ""
+        }`}
+      >
         <div className="container w-full flex justify-start lg:justify-center items-start overflow-x-auto gap-[16px] border-b-[1px] py-4 scrollbar-hide">
           {IndustriesCardsData.map((data, index) => (
             <button
