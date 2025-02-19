@@ -23,7 +23,11 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const excludePages = ["/case-studies", "/career", "/company/about-us", "/contact-us"];
-  const isExcluded = excludePages.includes(pathname) || pathname.startsWith("/products");
+  const isExcluded =
+    excludePages.includes(pathname) ||
+    pathname === "/company" ||
+    pathname.startsWith("/company/news&blogs/") ||
+    pathname.startsWith("/products/");
 
   useEffect(() => {
     const handleScroll = () => {

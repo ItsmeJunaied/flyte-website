@@ -12,7 +12,7 @@ type HeroBannerProps = {
 const HeroBanner: React.FC<{ bannerData: HeroBannerProps }> = ({ bannerData }) => {
   return (
     <div
-      className="pt-10 lg:pt-40 relative"
+      className="pt-10 lg:pt-40 relative lg:h-screen"
       style={{
         backgroundImage: "url('https://i.ibb.co.com/d0Sv44HQ/home-page-experiment-5-cover.png')",
         backgroundSize: "cover",
