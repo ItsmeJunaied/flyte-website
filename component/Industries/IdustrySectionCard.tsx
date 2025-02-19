@@ -23,31 +23,34 @@ type IndustriesCardsDataProps = {
   IndustriesCardsData: IndustriesCardsData[];
 };
 
-const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({
-  IndustriesCardsData,
-}) => {
+const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({ IndustriesCardsData }) => {
   const [isFixed, setIsFixed] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const firstNav =
-    typeof document !== "undefined" ? document.querySelector(".header") : null;
-  const firstNavHeight = firstNav
-    ? (firstNav as HTMLElement)?.offsetHeight || 0
-    : 0;
+  // const firstNav = typeof document !== "undefined" ? document.querySelector(".header") : null;
+  // const firstNavHeight = firstNav ? (firstNav as HTMLElement)?.offsetHeight || 0 : 0;
 
-  console.log(isFixed);
+  // start sub nav
+  const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
-    const industryNav =
-      typeof document !== "undefined"
-        ? document.querySelector(".industry-nav")
-        : null;
-    const firstNav =
-      typeof document !== "undefined"
-        ? document.querySelector(".header")
-        : null;
+    const handleScroll = () => {
+      const threshold = window.innerHeight * 0.5;
+
+      setIsScrolled(window.scrollY > threshold);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  // end sub nav
+
+ 
+  useEffect(() => {
+    const industryNav = typeof document !== "undefined" ? document.querySelector(".industry-nav") : null;
+    const firstNav = typeof document !== "undefined" ? document.querySelector(".header") : null;
 
     if (!industryNav || !firstNav) return;
 
-    const firstNavHeight = (firstNav as HTMLElement)?.offsetHeight || 0;
+    // const firstNavHeight = (firstNav as HTMLElement)?.offsetHeight || 0;
 
     // Create IntersectionObserver to detect when header touches the industry-nav
     const observer = new IntersectionObserver(
@@ -61,7 +64,7 @@ const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({
       },
       {
         threshold: 1.0, // Fully in view
-        rootMargin: `-${firstNavHeight}px`, // Trigger when the header's bottom reaches the industry-nav
+        rootMargin: "400px", // Trigger when the header's bottom reaches the industry-nav
       }
     );
 
@@ -105,14 +108,9 @@ const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({
 
   return (
     <div className="min-h-screen lg:px-0">
-      {/* Industry names sticky navbar */}
-      <div
-        className={`industry-nav ${
-          isFixed ? "fixedd top-0 bg-white" : "stickyy bg-white"
-        }`}
-        style={isFixed ? { marginTop: `${firstNavHeight}px` } : {}}
-      >
-        <div className="w-full flex justify-start lg:justify-center items-start overflow-x-auto gap-[16px] border-b-[1px] py-4 px-2 lg:px-0 scrollbar-hide">
+      {/* Industry names navbar */}
+      <div className={`bg-white shadow-lg text-nowrap ${isScrolled ? "fixed top-14 lg:top-24 left-0 w-full" : ""}`}>
+        <div className="container w-full flex justify-start lg:justify-center items-start overflow-x-auto gap-[16px] border-b-[1px] py-4 scrollbar-hide">
           {IndustriesCardsData.map((data, index) => (
             <button
               key={index}
@@ -136,9 +134,10 @@ const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({
             sectionRefs.current[index] = el;
           }}
           id={`section-${index}`}
-          className={`py-[40px] min-h-screen flex flex-col justify-center items-center ${
+          className={`py-[40px] min-h-screen flex flex-col justify-center items-center scroll-mt-[105px] lg:scroll-mt-36 ${
             index % 2 === 1 ? "bg-[#14171D]" : ""
           }`}
+          // style={{ scrollMarginTop: "150px" }}
         >
           <div className="lg:px-48 flex flex-col justify-center items-center">
             <div
@@ -150,11 +149,7 @@ const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({
               <div className="w-full lg:w-3/5 flex flex-col gap-6">
                 <div className="flex flex-row lg:flex-col justify-center items-center gap-3 lg:gap-5">
                   <div className="lg:w-full flex justify-center items-center">
-                    <p
-                      className={`text-4xl ${
-                        index % 2 === 1 ? "text-white" : "text-[#282828]"
-                      }`}
-                    >
+                    <p className={`text-4xl ${index % 2 === 1 ? "text-white" : "text-[#282828]"}`}>
                       <i
                         className={`${data.industryLogo} ${
                           index % 2 === 1 ? "text-white" : "text-[#282828]"
@@ -184,20 +179,14 @@ const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({
                   </div>
                   <div className="border-[#E1E1E1] border-[2px] rounded-lg p-[24px] flex flex-col gap-5 mb-4">
                     <p
-                      className={`${
-                        index % 2 === 1 ? "text-white" : "text-[#121212]"
-                      } text-sm font-semibold`}
+                      className={`${index % 2 === 1 ? "text-white" : "text-[#121212]"} text-sm font-semibold`}
                     >
                       {data.industryReview}
                     </p>
 
                     <div className="flex flex-row justify-start items-center gap-3">
                       <div className="w-[50px] h-[50px]">
-                        <img
-                          className="rounded-full"
-                          src={data.reviewerImage}
-                          alt={data.reviewerName}
-                        />
+                        <img className="rounded-full" src={data.reviewerImage} alt={data.reviewerName} />
                       </div>
 
                       <div>
@@ -249,9 +238,7 @@ const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({
                         className="flex flex-row text-wrap gap-3 justify-start items-center"
                       >
                         <FaArrowRight className="text-white" />
-                        <p className="text-[#f0f0f0]/80 text-sm font-medium">
-                          {service}
-                        </p>
+                        <p className="text-[#f0f0f0]/80 text-sm font-medium">{service}</p>
                       </div>
                     ))}
                   </div>
@@ -269,24 +256,15 @@ const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({
 
             <div className="container flex flex-wrap justify-center lg:justify-between items-center gap-3 py-[56px]">
               {data.brands.map((brand, brandIndex) => (
-                <div
-                  key={brandIndex}
-                  className="w-fit flex flex-row flex-wrap object-cover h-[48px]"
-                >
-                  <img
-                    src={brand.src}
-                    alt={brand.alt}
-                    className="w-full h-full object-contain"
-                  />
+                <div key={brandIndex} className="w-fit flex flex-row flex-wrap object-cover h-[48px]">
+                  <img src={brand.src} alt={brand.alt} className="w-full h-full object-contain" />
                 </div>
               ))}
             </div>
 
             <div className="w-full flex justify-center items-center">
               <button className="h-[43px] px-8 py-3 bg-[#5856d6] rounded-md justify-start items-start gap-2.5 inline-flex overflow-hidden">
-                <p className="text-white text-sm font-semibold">
-                  Explore Fintech Solutions
-                </p>
+                <p className="text-white text-sm font-semibold">Explore Fintech Solutions</p>
               </button>
             </div>
           </div>

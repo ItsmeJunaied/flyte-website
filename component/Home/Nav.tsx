@@ -29,15 +29,25 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
     pathname.startsWith("/company/news&blogs/") ||
     pathname.startsWith("/products/");
 
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 500) {
+  //       setIsScrolled(true);
+  //     } else {
+  //       setIsScrolled(false);
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 500) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      const threshold = window.innerHeight * 0.5;
+  
+      setIsScrolled(window.scrollY > threshold);
     };
-
+  
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -49,7 +59,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
           ${isExcluded ? "bg-white text-black" : "lg:hover:bg-white group"} 
           ${
             isScrolled
-              ? "lg:fixed top-0 left-0 w-full bg-white shadow-md"
+              ? "fixed top-0 left-0 w-full bg-white shadow-md"
               : "fiexed lg:absolute top-0 left-0 w-full bg-transparent"
           }`}
       >

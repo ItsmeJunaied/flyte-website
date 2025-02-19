@@ -1,6 +1,6 @@
 import React from "react";
-import Subtitle from "../Common/Subtitle";
-import Title from "../Common/Title";
+// import Subtitle from "../Common/Subtitle";
+// import Title from "../Common/Title";
 import IdustrySectionCard from "./IdustrySectionCard";
 import { IndustriesCardsData } from "@/api/Dummy";
 
