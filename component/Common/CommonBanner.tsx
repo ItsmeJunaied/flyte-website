@@ -12,33 +12,29 @@ type BannerData = {
 
 const CommonBanner: React.FC<{ bannerData: BannerData }> = ({ bannerData }) => {
   return (
-    <div className="common-banner">
-      <div
-        className="w-full h-[250px] md:h-[500px] bg-cover bg-center relative"
-        style={{
-          backgroundImage: `url(${bannerData?.bgImage})`,
-        }}
-      >
-        {/* Content */}
-        <div className="container h-full flex flex-col justify-center gap-3 md:gap-6 text-white">
-          <p className="text-[#6ec1ff] text-xs md:text-lg font-bold font-['DM Sans'] uppercase leading-tight tracking-widest">
-            - {bannerData?.subtitle}!
-          </p>
-
-          <h2 className="text-white text-base md:text-4xl font-bold font-['DM Sans'] md:leading-[40px] max-w-[558px]">
-            {bannerData?.title}
-          </h2>
-          <p className="md:max-w-[558px] text-[#dddddd] text-xs md:text-sm font-normal font-['DM Sans'] leading-snug">
-            {bannerData?.description}
-          </p>
-
+    <div
+      className="pt-10 lg:pt-40 relative lg:min-h-[600px] bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: `url(${bannerData?.bgImage})`,
+      }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-60" />
+      <div className="container pb-8 lg:pb-16 flex flex-col-reverse lg:flex-row gap-8 lg:gap-16 relative">
+        <div className="w-full lg:w-[50%] flex flex-col justify-between space-y-8 lg:space-y-16">
+          <div>
+            <h2 className="text-white text-base lg:text-lg font-bold tracking-wide mb-4">
+              - {bannerData?.subtitle}!
+            </h2>
+            <h1 className="text-white text-2xl lg:text-4xl font-bold leading-10 tracking-wider">
+              {bannerData?.title}
+            </h1>
+          </div>
+          <p className="text-white text-sm lg:text-[18px] tracking-wide"> {bannerData?.description}</p>
           <Link
             href={bannerData?.btnPath}
-            className="h-[42px] w-fit px-8 py-3 bg-[#5856d6] rounded-md justify-start items-start gap-2.5 inline-flex overflow-hidden"
+            className="w-fit px-8 py-3 bg-[#5856d6] rounded-md text-white text-base font-semibold"
           >
-            <div className="text-white text-sm font-semibold font-['DM Sans']">
             {bannerData?.btnName}
-            </div>
           </Link>
         </div>
       </div>

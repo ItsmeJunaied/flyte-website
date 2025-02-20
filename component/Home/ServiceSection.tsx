@@ -2,6 +2,7 @@
 import React from "react";
 import Title from "../Common/Title";
 import Subtitle from "../Common/Subtitle";
+import Link from "next/link";
 
 type Keywords = string[];
 type ServiceData = {
@@ -87,11 +88,11 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({ serviceData }) => {
       </div>
 
       <div className=" w-full flex justify-center items-center">
-        <button className="h-[42px] px-8 py-3 bg-[#5856d6] rounded-md justify-start items-start gap-2.5 inline-flex overflow-hidden">
+        <Link href="/services" className="h-[42px] px-8 py-3 bgGradientNevyBlue rounded-md justify-start items-start gap-2.5 inline-flex overflow-hidden">
           <div className="text-white text-sm font-semibold font-['DM Sans']">
             See All Services
           </div>
-        </button>
+        </Link>
       </div>
     </div>
   );

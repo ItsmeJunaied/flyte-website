@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 type NavData = {
   menu: {
@@ -20,11 +20,49 @@ type NavData = {
 
 const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
   const pathname = usePathname();
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  // console.log("pathname", pathname.split("/")[1])
+  const excludePages = ["/case-studies", "/career", "/company/about-us", "/contact-us", "/hire/application-form"];
+  const isExcluded =
+    excludePages.includes(pathname) ||
+    pathname === "/company" ||
+    pathname.startsWith("/company/news&blogs/") ||
+    pathname.startsWith("/products/");
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 500) {
+  //       setIsScrolled(true);
+  //     } else {
+  //       setIsScrolled(false);
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      const threshold = window.innerHeight * 0.5;
+  
+      setIsScrolled(window.scrollY > threshold);
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="pb-14 lg:pb-[100px]">
-      <div className="header">
+    <div className="">
+      <div
+        className={`z-[1000] transition-all duration-500 ease-in-out   
+          ${isExcluded ? "bg-white text-black" : "lg:hover:bg-white group"} 
+          ${
+            isScrolled
+              ? "fixed top-0 left-0 w-full bg-white shadow-md"
+              : "fiexed lg:absolute top-0 left-0 w-full bg-transparent"
+          }`}
+      >
         <nav className="nav container">
           <div className="nav__data">
             <Link href="/">
@@ -45,15 +83,19 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                   <li key={index} className={item.type === "dropdown" ? "dropdown__item" : ""}>
                     {item.type === "dropdown" ? (
                       <>
-                        <div className={`nav__link dropdown__button ${isActive ? "active" : ""}`}>
+                        <div className={`nav__link dropdown__button  ${isActive ? "active" : ""}`}>
                           <p
-                            className={`text-black hover:text-[#2B6CB0] ${
+                            className={` hover:text-[#2B6CB0] group-hover:text-black ${
                               isActive ? "text-blue-500 border-b-2 border-btnColor" : ""
-                            }`}
+                            } ${isScrolled ? "lg:text-black" : isExcluded ? "text-black" : "lg:text-white"}`}
                           >
                             {item.name}
                           </p>
-                          <i className="fa-solid fa-chevron-down fa-2xs"></i>
+                          <i
+                            className={`fa-solid fa-chevron-down fa-2xs group-hover:text-black ${
+                              isScrolled ? "lg:text-black" : isExcluded ? "text-black" : "lg:text-white"
+                            }`}
+                          ></i>
                         </div>
                         <div className="dropdown__container">
                           <div className="dropdown__content">
@@ -102,8 +144,12 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                         </div>
                       </>
                     ) : (
-                      <Link className="nav-close nav__link h-full flex items-center" href={item.path}>
-                        <span className={`${isActive ? "text-blue-500 border-b-2 border-btnColor" : ""}`}>
+                      <Link className="nav-close nav__link h-full flex items-center " href={item.path}>
+                        <span
+                          className={`group-hover:text-black ${
+                            isActive ? "text-blue-500 border-b-2 border-btnColor" : ""
+                          } ${isScrolled ? "lg:text-black" : isExcluded ? "text-black" : "lg:text-white"}`}
+                        >
                           {item.name}
                         </span>
                       </Link>
@@ -114,7 +160,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
               {/* Hardcoded Contact Us link */}
               <li>
                 <Link href="/contact-us" className="nav-close h-full flex items-center">
-                  <p className="bg-btnColor h-fit text-white px-6 py-3 rounded-lg">Contact Us</p>
+                  <p className="bgGradientNevyBlue h-fit text-white px-6 py-3 rounded-lg">Contact Us</p>
                 </Link>
               </li>
             </ul>

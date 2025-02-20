@@ -10,7 +10,7 @@ export const metadata = {
 const page = () => {
     
     return (
-        <div className=' '>
+        <div className='lg:mt-24'>
             <CaseStudies/>
             <CaseStudiesCards caseStudyData={caseStudyData} />
             <Corevalues/>

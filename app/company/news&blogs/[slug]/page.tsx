@@ -29,7 +29,7 @@ const BlogDetailsPage = async ({ params }: PageProps) => {
   }
 
   return (
-    <div className=" container ">
+    <div className=" container lg:mt-32">
       <BlogDetails blog={singleBlogData} />
     </div>
   );

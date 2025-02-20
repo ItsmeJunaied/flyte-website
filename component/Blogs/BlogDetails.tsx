@@ -52,7 +52,7 @@ const BlogDetails = ({ blog }: BlogDetailsProps) => {
         <div className="blog-content space-y-8">
           {sections?.map((section, index) => (
             <div
-              key={section}
+              key={index}
               ref={(el) => {
                 sectionRefs.current[section] = el!;
               }}

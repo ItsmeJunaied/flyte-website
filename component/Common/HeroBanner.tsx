@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Subtitle from "./Subtitle";
-import Title from "./Title";
 
 type HeroBannerProps = {
   heroSubtitle?: string;
@@ -13,26 +11,33 @@ type HeroBannerProps = {
 
 const HeroBanner: React.FC<{ bannerData: HeroBannerProps }> = ({ bannerData }) => {
   return (
-    <div className="container pt-5 lg:pt-7 pb-8 lg:pb-16 flex flex-col-reverse lg:flex-row gap-8 lg:gap-16">
-      <div className="w-full lg:w-[40%] flex flex-col justify-between">
-        <div>
-          <Subtitle Subtitle={bannerData?.heroSubtitle || "Our Dedicated Developers"} />
-          <Title
-            width="full"
-            title={bannerData?.heroTitle || "Hire Dedicated Developers for Seamless User Experiences"}
-          />
+    <div
+      className="pt-10 lg:pt-40 relative lg:min-h-[610px]"
+      style={{
+        backgroundImage: "url('https://i.ibb.co.com/d0Sv44HQ/home-page-experiment-5-cover.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-60" />
+      <div className="container pb-8 lg:pb-16 flex flex-col-reverse lg:flex-row gap-8 lg:gap-16 relative">
+        <div className="w-full lg:w-[60%] flex flex-col justify-between space-y-8 lg:space-y-16">
+          <div>
+            <h2 className="text-white text-base lg:text-lg font-bold tracking-wide mb-4">{bannerData?.heroSubtitle}</h2>
+            <h1 className="text-white text-2xl lg:text-4xl font-bold leading-10 tracking-wider">{bannerData?.heroTitle}</h1>
+          </div>
+          <p className="text-white text-sm lg:text-[18px] tracking-wide">{bannerData?.heroDesctiption}</p>
+          <button className="w-fit px-8 py-3 bg-[#5856d6] rounded-md text-white text-base font-semibold">
+            {bannerData?.heroButton}
+          </button>
         </div>
-        <p className="text-[#12094a] text-sm py-5 lg:py-7">{bannerData?.heroDesctiption}</p>
-        <button className="w-fit px-8 py-1.5 bg-[#5856d6] rounded-md text-white text-base font-semibold">
-          {bannerData?.heroButton}
-        </button>
-      </div>
-      <div className="w-full lg:w-[60%]">
-        <img
-          className="w-full aspect-[16/9] object-cover rounded-2xl"
-          src={bannerData?.heroImage}
-          alt={bannerData?.heroSubtitle}
-        />
+        {/* <div className="w-full lg:w-[60%]">
+          <img
+            className="w-full aspect-[16/9] object-cover rounded-2xl"
+            src={bannerData?.heroImage}
+            alt={bannerData?.heroSubtitle}
+          />
+        </div> */}
       </div>
     </div>
   );

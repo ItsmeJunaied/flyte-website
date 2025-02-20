@@ -1,7 +1,9 @@
+import SuccessStories from "@/component/Common/SuccessStories";
 import AboutBanner from "@/component/Company/AboutUs/AboutBanner";
 import BehindFlyte from "@/component/Company/AboutUs/BehindFlyte";
 import MissionVision from "@/component/Company/AboutUs/MissionVision";
 import Roadmap from "@/component/Company/AboutUs/Roadmap";
+import Contact from "@/component/Contact/Contact";
 import React from "react";
 
 export const metadata = {
@@ -16,6 +18,8 @@ const page = () => {
       <MissionVision />
       <Roadmap/>
       <BehindFlyte/>
+      <SuccessStories />
+      <Contact />
     </div>
   );
 };
