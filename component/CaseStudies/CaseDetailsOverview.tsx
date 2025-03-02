@@ -1,5 +1,4 @@
 "use client";
-import { caseStudyData } from "@/api/Dummy";
 import React from "react";
 import HeroBanner from "../Common/HeroBanner";
 import StepCard from "../Common/StepCard";
@@ -15,7 +14,7 @@ type ParamProps = {
 };
 
 const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
-  const caseData = caseStudyData.find((item) => item.caseStudyLinkName === params);
+  // const caseData = caseStudyData.find((item) => item.caseStudyLinkName === params);
   // const { data: caseStudies, isLoading } = useGetAllCaseStudiesQuery(params);
   const { data: caseStudies, isLoading } = useGetAllCaseStudiesQuery("sd");
 
@@ -61,7 +60,7 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
       <EverythingSection data={services}/>
       <TechnologyStack data={apps_list} />
       <KeyAchievement data={impactful} />
-      <FeaturesCard data={caseData?.featuresData} Width="w-full sm:w-[200px]" />
+      <FeaturesCard Width="w-full sm:w-[200px]" />
     </div>
   );
 };

@@ -1,38 +1,46 @@
+"use client"
+import { useGetSoftwareSolutionsQuery } from "@/redux/api/commonApi";
 import React from "react";
 
-type Features = {
+type Feature = {
   id: number;
-  icon: string;
-  title: string;
-  color: string;
-};
-
-type FeaturesProps = {
+  icon_class: string;
+  icon_color: string;
   name: string;
-  description: string;
-  features: Features[];
 };
 
-const FeaturesCard: React.FC<{ data: FeaturesProps; Width?: string }> = ({ data, Width }) => {
-  const { name, description, features } = data || {};
+const FeaturesCard = ({ Width }: { Width: string }) => {
+  const { data: features, isLoading } = useGetSoftwareSolutionsQuery({});
+
+  if (isLoading)
+    return (
+      <p className="text-center bg-slate-600 h-[400px] text-blue-500 flex justify-center items-center">
+        Loading...
+      </p>
+    );
+
   return (
     <div className="bg-gradient-to-b from-[#8e8cff] to-[#5856d6]">
       <div className="container p-5 lg:p-16 relative">
-        <h2 className="text-center text-white text-2xl lg:text-[45px] font-bold mb-5">{name}</h2>
-        <p className="text-center text-white text-base lg:text-lg">{description}</p>
+        <h2 className="text-center text-white text-2xl lg:text-[45px] font-bold mb-5">
+          Custom Software Solutions
+        </h2>
+        <p className="text-center text-white text-base lg:text-lg">
+          Choose Custom Solutions to Fit Your Business Needs
+        </p>
 
         <div className="my-10 lg:my-14 flex flex-wrap justify-center gap-7">
-          {features?.map((feature, index) => (
+          {features?.data?.map((feature: Feature, index: number) => (
             <div
               key={index}
               className={`p-4 flex items-center gap-3 bg-white/5 rounded-[7.20px] border border-[#1ed0c6] ${Width}`}
-              style={{ borderColor: feature?.color }}
+              style={{ borderColor: feature?.icon_color }}
             >
               <i
-                className={`fa-2x fa-solid bg-transparent font-extralight ${feature?.icon}`}
-                style={{ color: feature?.color }}
+                className={`fa-2x fa-solid bg-transparent font-extralight ${feature?.icon_class}`}
+                style={{ color: feature?.icon_color }}
               ></i>
-              <span className="text-white text-sm font-semibold">{feature?.title}</span>
+              <span className="text-white text-sm font-semibold">{feature?.name}</span>
             </div>
           ))}
         </div>
