@@ -40,11 +40,13 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
     developing_short_title,
     developing_image,
     developing_step,
+    services,
+    apps_list,
+    impactful,
   } = caseStudies?.data || {};
 
   return (
     <div>
-      {/* <HeroBanner bannerData={caseData} /> */}
       <HeroBanner bannerData={{ title, short_title, short_description, image }} />
       <CaseInfo data={{ location, industries, service, partnership }} />
       <StepCard
@@ -56,9 +58,9 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
           developing_step,
         }}
       />
-      <EverythingSection />
-      <TechnologyStack />
-      <KeyAchievement />
+      <EverythingSection data={services}/>
+      <TechnologyStack data={apps_list} />
+      <KeyAchievement data={impactful} />
       <FeaturesCard data={caseData?.featuresData} Width="w-full sm:w-[200px]" />
     </div>
   );
