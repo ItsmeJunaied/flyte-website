@@ -14,7 +14,6 @@ type ParamProps = {
 };
 
 const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
-  // const caseData = caseStudyData.find((item) => item.caseStudyLinkName === params);
   // const { data: caseStudies, isLoading } = useGetAllCaseStudiesQuery(params);
   const { data: caseStudies, isLoading } = useGetAllCaseStudiesQuery("sd");
 
