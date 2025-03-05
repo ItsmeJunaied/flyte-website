@@ -7,15 +7,15 @@ import CaseInfo from "./CaseInfo";
 import EverythingSection from "./EverythingSection ";
 import TechnologyStack from "./TechnologyStack";
 import KeyAchievement from "./KeyAchievement";
-import { useGetAllCaseStudiesQuery } from "@/redux/api/caseStudiesApi";
+import { useGetSpecificCaseStudyQuery } from "@/redux/api/caseStudiesApi";
 
 type ParamProps = {
   params: string;
 };
 
 const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
-  // const { data: caseStudies, isLoading } = useGetAllCaseStudiesQuery(params);
-  const { data: caseStudies, isLoading } = useGetAllCaseStudiesQuery("sd");
+  // const { data: caseStudies, isLoading } = useGetSpecificCaseStudyQuery(params);
+  const { data: caseStudies, isLoading } = useGetSpecificCaseStudyQuery("sd");
 
   if (isLoading)
     return (
