@@ -2,7 +2,7 @@
 "use client";
 import { Skeleton } from "@/components/ui/skeleton";
 import { stripHtml } from "@/lib/stripHtml";
-import { useGetAllCaseStudiesQuery } from "@/redux/api/caseStudiesApi";
+import { useGetContentCategoryQuery } from "@/redux/api/caseStudiesApi";
 import Link from "next/link";
 import React from "react";
 import Marquee from "react-fast-marquee";
@@ -13,7 +13,7 @@ type Image = {
 };
 
 const CaseStudies = () => {
-  const { data: caseStudies, isLoading } = useGetAllCaseStudiesQuery("");
+  const { data: caseStudies, isLoading } = useGetContentCategoryQuery("");
 
   const { contents, images } = caseStudies?.data || {};
 

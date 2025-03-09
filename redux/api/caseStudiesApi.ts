@@ -8,12 +8,25 @@ const caseStudiesApi = baseApi.injectEndpoints({
       providesTags: ["CaseStudies"],
     }),
 
-    // get all case studies
-    getAllCaseStudies: builder.query({
+    // get categroy based case studies
+    getCategoryBasedCaseStudies: builder.query({
+      query: (category_id) => ({
+        url: "case-studies",
+        params: { category_id },
+      }),
+      providesTags: ["CaseStudies"],
+    }),
+
+    // get content and category of case studies
+    getContentCategory: builder.query({
       query: () => `content-case-studies`,
       providesTags: ["CaseStudies"],
     }),
   }),
 });
 
-export const { useGetSpecificCaseStudyQuery, useGetAllCaseStudiesQuery } = caseStudiesApi;
+export const {
+  useGetSpecificCaseStudyQuery,
+  useGetCategoryBasedCaseStudiesQuery,
+  useGetContentCategoryQuery,
+} = caseStudiesApi;
