@@ -8,16 +8,13 @@ import { useGetCategoryBasedCaseStudiesQuery, useGetContentCategoryQuery } from 
 
 type CaseStudy = {
   id: number;
+  slug: string;
   image: string;
   title: string;
   description: string;
   category: string;
-  tags: string[];
-  caseStudyLinkName: string;
-};
-
-type CaseStudyProps = {
-  caseStudyData: CaseStudy[];
+  tag: string[];
+  short_description: string;
 };
 
 type Category = {
@@ -26,7 +23,7 @@ type Category = {
   type: string;
 };
 
-const CaseStudiesCards: React.FC<CaseStudyProps> = ({ caseStudyData }) => {
+const CaseStudiesCards = () => {
   const [selectedCategory, setSelectedCategory] = useState<Category>({
     id: null,
     name: "All Industries",
@@ -34,21 +31,22 @@ const CaseStudiesCards: React.FC<CaseStudyProps> = ({ caseStudyData }) => {
   });
 
   const { data: contentCagetories, isLoading } = useGetContentCategoryQuery("");
-  const { data: caseStudies } = useGetCategoryBasedCaseStudiesQuery(selectedCategory?.id ?? -1);
+  const { data: caseStudies } = useGetCategoryBasedCaseStudiesQuery(selectedCategory?.id ?? 0);
 
   if (isLoading) {
     return "loading...";
   }
 
   const { categories } = contentCagetories?.data || {};
-  console.log("caseStudiess", caseStudies?.data?.data);
+  // console.log("caseStudiess", caseStudies?.data?.data);
+  // const {current_page   } = caseStudies?.data || {}
 
   // const categories = Array.from(new Set(caseStudyData.map((item) => item.category)));
 
-  const filteredCaseStudies =
-    selectedCategory === "All Industries"
-      ? caseStudyData
-      : caseStudyData.filter((caseStudy) => caseStudy.category === selectedCategory);
+  // const filteredCaseStudies =
+  //   selectedCategory === "All Industries"
+  //     ? caseStudyData
+  //     : caseStudyData.filter((caseStudy) => caseStudy.category === selectedCategory);
 
   return (
     <div className="rounded-t-[60px] lg:py-5 lg:px-0 w-full flex justify-center items-center">
@@ -106,7 +104,7 @@ const CaseStudiesCards: React.FC<CaseStudyProps> = ({ caseStudyData }) => {
           ))}
         </div>
 
-        <div className="pt-5 lg:pt-20">
+        {/* <div className="pt-5 lg:pt-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14">
             {filteredCaseStudies.map((caseStudy) => (
               <Link
@@ -156,6 +154,61 @@ const CaseStudiesCards: React.FC<CaseStudyProps> = ({ caseStudyData }) => {
                 </div>
               </Link>
             ))}
+          </div>
+        </div> */}
+        <div className="pt-5 lg:pt-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14">
+            {caseStudies?.data?.data?.length === 0 ? (
+              <div className="col-span-2 text-center text-lg text-gray-500 py-5 lg:py-20">
+                No case studies found.
+              </div>
+            ) : (
+              caseStudies?.data?.data?.map((caseStudy: CaseStudy, index: number) => (
+                <Link
+                  key={index}
+                  href={`case-studies/${caseStudy?.slug}`}
+                  className={`flex flex-col lg:w-[620px] ${
+                    caseStudy.id % 2 === 0 ? "lg:mt-20" : ""
+                  } bg-white h-fit shadow-[0px_0px_10px_10px_rgba(223,223,223,0.25)]`}
+                  data-aos={caseStudy.id % 2 === 0 ? "fade-up-left" : "fade-up-right"}
+                >
+                  <div className="h-[165px] sm:h-[250px] md:h-[400px] lg:h-[500px] overflow-hidden">
+                    <img
+                      className="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110 hover:transform-origin-center"
+                      src={caseStudy?.image}
+                      alt={caseStudy?.title}
+                    />
+                  </div>
+
+                  <div className="flex  bg-[#2b3e50] h-11">
+                    {caseStudy.tag.map((tag, index: number) => (
+                      <div key={index} className="w-full px-6 py-4 h-11 border-r-2 border-[#dda380]">
+                        <p className="text-white text-xs font-semibold text-center">{tag}</p>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="flex flex-col gap-3 h-full pb-5 mt-5 w-full">
+                    <div className="flex flex-row items-center px-4 lg:px-10 w-full">
+                      <div className="flex flex-row justify-between items-center w-full">
+                        <div>
+                          <h1 className="text-lg lg:text-2xl font-semibold text-black">{caseStudy?.title}</h1>
+                        </div>
+
+                        <div className="px-1 lg:px-2 py-[6.36px] bg-[#ffcc00] rounded-[3.18px] backdrop-blur-[9.55px] flex-col justify-center items-center gap-2 inline-flex">
+                          <p className="text-black text-xs font-normal font-['Open Sans']">
+                            Project Management
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="text-lg font-normal text-[#00000080] px-4 lg:px-10">
+                      {caseStudy?.short_description}
+                    </p>
+                  </div>
+                </Link>
+              ))
+            )}
           </div>
         </div>
       </div>

@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   // const caseStudy = await fetchCaseStudy(params.slug);
   const caseStudy = await fetchCaseStudy("sd");
   const { meta_title, meta_description } = caseStudy?.data || {};
+  console.log("caseStudy", caseStudy)
 
   return {
     title: meta_title || "Case Studies Details | Flyte Solutions Ltd.",
