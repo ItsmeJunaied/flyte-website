@@ -168,9 +168,9 @@ const CaseStudiesCards = () => {
                   key={index}
                   href={`case-studies/${caseStudy?.slug}`}
                   className={`flex flex-col lg:w-[620px] ${
-                    caseStudy.id % 2 === 0 ? "lg:mt-20" : ""
+                    index % 2 !== 0 ? "lg:mt-20" : ""
                   } bg-white h-fit shadow-[0px_0px_10px_10px_rgba(223,223,223,0.25)]`}
-                  data-aos={caseStudy.id % 2 === 0 ? "fade-up-left" : "fade-up-right"}
+                  data-aos={index % 2 !== 0 ? "fade-up-left" : "fade-up-right"}
                 >
                   <div className="h-[165px] sm:h-[250px] md:h-[400px] lg:h-[500px] overflow-hidden">
                     <img
@@ -202,7 +202,7 @@ const CaseStudiesCards = () => {
                         </div>
                       </div>
                     </div>
-                    <p className="text-lg font-normal text-[#00000080] px-4 lg:px-10">
+                    <p className="text-lg font-normal text-[#00000080] px-4 lg:px-10 h-[90px] line-clamp-3">
                       {caseStudy?.short_description}
                     </p>
                   </div>
