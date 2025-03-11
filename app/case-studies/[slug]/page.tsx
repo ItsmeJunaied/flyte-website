@@ -5,12 +5,12 @@ import Contact from "@/component/Contact/Contact";
 import { Metadata } from "next";
 import React from "react";
 
-// type PageProps = {
-//   params: Promise<{ slug: string }>;
-// };
 type PageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
+// type PageProps = {
+//   params: { slug: string };
+// };
 
 const fetchCaseStudy = async (slug: string) => {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/case-studies/${slug}`);
@@ -19,7 +19,8 @@ const fetchCaseStudy = async (slug: string) => {
 };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const caseStudy = await fetchCaseStudy(params.slug);
+  const { slug } = await params;
+  const caseStudy = await fetchCaseStudy(slug);
   const { meta_title, meta_description } = caseStudy?.data || {};
 
   return {
@@ -28,8 +29,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: meta_title || "Case Studies Details | Flyte Solutions Ltd.",
       description: meta_description || "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
-      // url: `${process.env.NEXT_PUBLIC_BASE_URL}/case-studies/sd`,
-      // images: caseStudy?.image ? [{ url: caseStudy.image, alt: meta_title }] : [],
     },
   };
 }
@@ -46,8 +45,8 @@ export async function generateStaticParams() {
 }
 
 const page = async ({ params }: PageProps) => {
-  // const { slug } = await params;
-  const { slug } = params;
+  const { slug } = await params;
+  // const { slug } = params;
   return (
     <div>
       <CaseDetailsOverview params={slug} />
