@@ -46,7 +46,7 @@ export async function generateStaticParams() {
 
 const page = async ({ params }: PageProps) => {
   const { slug } = await params;
-  // const { slug } = params;
+
   return (
     <div>
       <CaseDetailsOverview params={slug} />

@@ -57,7 +57,7 @@ const BlogSection = () => {
 
               {/* Displaying tags over the image */}
               <div className="absolute top-2 left-2 flex flex-wrap gap-2">
-                {blog.tag.map((tagItem, tagIndex: number) => (
+                {blog.tag.map((tagItem:string[], tagIndex: number) => (
                   <div key={tagIndex} className="blogs-keyword-div px-3 py-1 rounded-lg text-xs">
                     <span className="inline-block text-white">{tagItem}</span>
                   </div>
