@@ -99,8 +99,8 @@ const BlogDetails = ({ blog }: BlogDetailsProps) => {
           style={{
             position: "fixed",
             top: `${topPosition}px`, // Dynamically change top position
-            zIndex: 9999,
-            transition: "top 0.3s", // Smooth transition for top change
+            zIndex: 0,
+            transition: "top 0.5s", // Smooth transition for top change
           }}
         >
           <h3 className="text-lg font-bold">Sections</h3>
