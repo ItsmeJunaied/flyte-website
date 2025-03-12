@@ -11,6 +11,7 @@ type BlogDetailsProps = {
 
 const BlogDetails = ({ blog }: BlogDetailsProps) => {
   const [activeSection, setActiveSection] = useState<string>("");
+  const [topPosition, setTopPosition] = useState<number>(180);
 
   // Extract sections dynamically from the blog description
   const sections = blog.description
@@ -22,6 +23,13 @@ const BlogDetails = ({ blog }: BlogDetailsProps) => {
   // Track the active section on scroll
   useEffect(() => {
     const handleScroll = () => {
+      // Track the scroll position
+      if (window.scrollY >= 325) {
+        setTopPosition(110);
+      } else {
+        setTopPosition(180);
+      }
+
       if (sections) {
         sections.forEach((section) => {
           const element = sectionRefs.current[section];
@@ -38,6 +46,17 @@ const BlogDetails = ({ blog }: BlogDetailsProps) => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [sections]);
+
+  // Function to handle smooth scroll to sections
+  const scrollToSection = (section: string) => {
+    const element = sectionRefs.current[section];
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop - 110,
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
     <div className="flex gap-8 px-4 py-8">
@@ -73,15 +92,23 @@ const BlogDetails = ({ blog }: BlogDetailsProps) => {
         </div>
       </div>
 
-      {/* Right Side - Section List */}
+      {/* Right Side - Section List (Fixed) */}
       <div className="w-[400px]">
-        <div className="sticky top-5  h-fit">
+        <div
+          className="h-fit"
+          style={{
+            position: "fixed",
+            top: `${topPosition}px`, // Dynamically change top position
+            zIndex: 9999,
+            transition: "top 0.3s", // Smooth transition for top change
+          }}
+        >
           <h3 className="text-lg font-bold">Sections</h3>
           <ul className="space-y-2">
             {sections?.map((section) => (
               <li key={section}>
-                <a
-                  href={`#${section.replace(/\s+/g, "-").toLowerCase()}`}
+                <button
+                  onClick={() => scrollToSection(section)}
                   className={`block px-4 py-2 rounded-lg ${
                     activeSection === section
                       ? "bg-blue-600 text-white"
@@ -89,7 +116,7 @@ const BlogDetails = ({ blog }: BlogDetailsProps) => {
                   }`}
                 >
                   {section}
-                </a>
+                </button>
               </li>
             ))}
           </ul>
