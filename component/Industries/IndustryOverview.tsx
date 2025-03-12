@@ -19,7 +19,7 @@ const IndustryOverview = ({ params }: OverviewProps) => {
       <IndustryAdvantages data={industry?.industryAdvantages} />
       <OurExpertise data={industry?.features} />
       <IndustryTrendStep data={industry?.trendSteps}/>
-      <FeaturesCard data={industry?.industrySolution} Width="w-full sm:w-[330px]" />
+      <FeaturesCard Width="w-full sm:w-[250px]" />
     </div>
   );
 };

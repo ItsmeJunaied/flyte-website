@@ -1,11 +1,12 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import { toast } from "react-toastify";
 import { GrAttachment } from "react-icons/gr";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { submitContactForm } from "@/api/useContactUsForm";
+// import { submitContactForm } from "@/api/useContactUsForm";
+import { useAddContactMutation } from "@/redux/api/contactApi";
 
 type Inputs = {
   name: string;
@@ -19,6 +20,9 @@ type Inputs = {
 const ContactUsFormComp: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [phoneValue, setPhoneValue] = useState(true);
+  const [isChecked, setIsChecked] = useState(false);
+  const [files, setFiles] = useState<File[]>([]);
+  const [addContact] = useAddContactMutation();
   const {
     register,
     handleSubmit,
@@ -28,7 +32,7 @@ const ContactUsFormComp: React.FC = () => {
   } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    setIsSubmitted(true); 
+    setIsSubmitted(true);
 
     if (!data.phone) {
       setPhoneValue(false);
@@ -36,6 +40,7 @@ const ContactUsFormComp: React.FC = () => {
     } else {
       setPhoneValue(true);
     }
+
     if (!isChecked) {
       toast.error("Please agree to the NDA to proceed.");
       return;
@@ -50,31 +55,50 @@ const ContactUsFormComp: React.FC = () => {
       postData.append("message", data.message);
 
       if (data.attachment && data.attachment[0]) {
-        postData.append("attachment", data.attachment[0]);
+        const file = data.attachment[0];
+        const allowedTypes = [
+          "image/jpg",
+          "image/png",
+          "application/pdf",
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        ];
+        const maxSize = 25 * 1024 * 1024; // 25MB
+
+        if (!allowedTypes.includes(file.type)) {
+          toast.error("Invalid file type. Please upload a .jpg, .png, .pdf, or .docx file.");
+          return;
+        }
+
+        if (file.size > maxSize) {
+          toast.error("File size is too large. Maximum allowed size is 25MB.");
+          return;
+        }
+
+        postData.append("attachment", file);
       }
 
-      const result = await submitContactForm(postData);
-
-      toast.success("Your message has been sent successfully!");
-      reset();
-      setFiles([]);
-      setIsChecked(false);
-      setIsSubmitted(false);
+      // const response = await submitContactForm(postData);
+      const response = await addContact(postData);
+      if (response?.error) {
+        toast.error(`Error: ${response.error}`);
+      } else {
+        toast.success("Your message has been sent successfully!");
+        reset();
+        setFiles([]);
+        setIsChecked(false);
+        setIsSubmitted(false);
+      }
     } catch (error) {
-      toast.error("something went wrong");
-      console.log("Your message has been sent successfully!");
+      toast.error("Something went wrong. Please try again.");
+      console.error("Error:", error);
     }
   };
 
-  const [files, setFiles] = useState<File[]>([]);
-
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const selectedFiles = event.target.files
-      ? Array.from(event.target.files)
-      : [];
+    const selectedFiles = event.target.files ? Array.from(event.target.files) : [];
     setFiles((prevFiles) => [...prevFiles, ...(selectedFiles as File[])]);
   };
-  const [isChecked, setIsChecked] = useState(false);
+
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
@@ -92,9 +116,7 @@ const ContactUsFormComp: React.FC = () => {
             {...register("name", { required: true })}
             autoComplete="off"
           />
-          {errors.name && (
-            <span className=" text-red-600">Name is required</span>
-          )}
+          {errors.name && <span className=" text-red-600">Name is required</span>}
         </div>
         <div className="w-full flex-col justify-start items-start gap-2 inline-flex">
           <label className="self-stretch text-[#666666] text-sm lg:text-base font-semibold font-['DM Sans'] leading-[18px]">
@@ -106,9 +128,7 @@ const ContactUsFormComp: React.FC = () => {
             placeholder="Type your company name"
             {...register("company_name", { required: true })}
           />
-          {errors.company_name && (
-            <span className=" text-red-600">Comapny Name is required</span>
-          )}
+          {errors.company_name && <span className=" text-red-600">Comapny Name is required</span>}
         </div>
       </div>
 
@@ -123,9 +143,7 @@ const ContactUsFormComp: React.FC = () => {
             placeholder="Type your email"
             {...register("email", { required: true })}
           />
-          {errors.email && (
-            <span className=" text-red-600">Email is required</span>
-          )}
+          {errors.email && <span className=" text-red-600">Email is required</span>}
         </div>
         <div className="w-full flex-col justify-start items-start gap-2 inline-flex">
           <label className="self-stretch text-[#666666] text-sm lg:text-base font-semibold font-['DM Sans'] leading-[18px]">
@@ -137,15 +155,10 @@ const ContactUsFormComp: React.FC = () => {
             } text-[#666666] text-sm font-normal font-['DM Sans'] leading-normal outline-none hover:border-btnColor focus:border-btnColor`}
             placeholder="Enter phone number"
             defaultCountry="BD"
-            onChange={(phone) =>
-              setValue("phone", phone || "", { shouldValidate: true })
-            } 
+            onChange={(phone) => setValue("phone", phone || "", { shouldValidate: true })}
           />
-          {isSubmitted && !phoneValue && (
-            <span className="text-red-600 text-xs">Phone is required</span>
-          )}
+          {isSubmitted && !phoneValue && <span className="text-red-600 text-xs">Phone is required</span>}
         </div>
-        
       </div>
 
       {/* <div className="w-full flex flex-col lg:flex-row justify-start items-start gap-8 ">
@@ -202,9 +215,7 @@ const ContactUsFormComp: React.FC = () => {
               placeholder="Type here"
               {...register("message", { required: true })}
             />
-            {errors.message && (
-              <span className=" text-red-600">Message is required</span>
-            )}
+            {errors.message && <span className=" text-red-600">Message is required</span>}
           </div>
 
           <div className="justify-start items-start gap-2.5 inline-flex flex-col">
@@ -216,15 +227,10 @@ const ContactUsFormComp: React.FC = () => {
               accept=".jpg,.png,.pdf,.docx"
               {...register("attachment", { onChange: handleFileChange })}
             />
-            {errors.attachment && (
-              <span className=" text-red-600">This field is required</span>
-            )}
+            {errors.attachment && <span className=" text-red-600">This field is required</span>}
             {/* Clickable label */}
             <div className=" flex flex-row justify-center items-start lg:items-center gap-4 lg:gap-2.5">
-              <label
-                htmlFor="file-upload"
-                className="flex items-center gap-2 cursor-pointer"
-              >
+              <label htmlFor="file-upload" className="flex items-center gap-2 cursor-pointer">
                 <div className="flex lg:items-center gap-1 text-[#5856d6]">
                   <GrAttachment />
                   <span className="text-[#5856d6] text-xs text-nowrap font-bold font-['DM Sans']">
@@ -252,15 +258,10 @@ const ContactUsFormComp: React.FC = () => {
 
                     <button
                       onClick={() => {
-                        setFiles((prevFiles) =>
-                          prevFiles.filter((_, i) => i !== index)
-                        );
+                        setFiles((prevFiles) => prevFiles.filter((_, i) => i !== index));
                       }}
                     >
-                      <i
-                        className="fa-solid fa-circle-xmark fa-lg"
-                        style={{ color: "#df3a4a" }}
-                      ></i>
+                      <i className="fa-solid fa-circle-xmark fa-lg" style={{ color: "#df3a4a" }}></i>
                     </button>
                   </li>
                 ))}
@@ -275,10 +276,10 @@ const ContactUsFormComp: React.FC = () => {
                 className="toggle toggle-primary [--tglbg:white]"
                 id="nda-checkbox"
                 onChange={(e) => setIsChecked(e.target.checked)}
-              />{" "}
+              />
               <div className="text-[#666666] text-xs font-normal font-['DM Sans'] leading-normal">
-                I agree to the Non-Disclosure Agreement (NDA) and confirm that
-                all shared information will remain confidential.
+                I agree to the Non-Disclosure Agreement (NDA) and confirm that all shared information will
+                remain confidential.
               </div>
             </div>
           </div>

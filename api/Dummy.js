@@ -1993,12 +1993,12 @@ export const industrydata = {
         ],
       },
       industryLinkName: "fintech",
-      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
-      heroSubtitle: "FINTECH",
-      heroDesctiption:
+      title: "Innovating Financial Services with Secure, Scalable Technology",
+      short_title: "FINTECH",
+      short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
       heroButton: "Book A Consulation",
-      heroImage: "https://i.ibb.co.com/C3vYLnjp/fintech-title-blog.webp",
+      image: "https://i.ibb.co.com/C3vYLnjp/fintech-title-blog.webp",
     },
     {
       name: "Startup",
@@ -2117,12 +2117,12 @@ export const industrydata = {
         ],
       },
       industryLinkName: "startup",
-      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
-      heroSubtitle: "STARTUP",
-      heroDesctiption:
+      title: "Innovating Financial Services with Secure, Scalable Technology",
+      short_title: "STARTUP",
+      short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
       heroButton: "Book A Consulation",
-      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "Logistics",
@@ -2241,12 +2241,12 @@ export const industrydata = {
         ],
       },
       industryLinkName: "logistics",
-      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
-      heroSubtitle: "LOGISTICS",
-      heroDesctiption:
+      title: "Innovating Financial Services with Secure, Scalable Technology",
+      short_title: "LOGISTICS",
+      short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
       heroButton: "Book A Consulation",
-      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "Retail & Manufacturing",
@@ -2365,12 +2365,12 @@ export const industrydata = {
         ],
       },
       industryLinkName: "retail-and-manufacturing",
-      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
-      heroSubtitle: "RETAIL & MANUFACTURING",
-      heroDesctiption:
+      title: "Innovating Financial Services with Secure, Scalable Technology",
+      short_title: "RETAIL & MANUFACTURING",
+      short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
       heroButton: "Book A Consulation",
-      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "Enterprise",
@@ -2489,12 +2489,12 @@ export const industrydata = {
         ],
       },
       industryLinkName: "enterprise",
-      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
-      heroSubtitle: "ENTERPRISE",
-      heroDesctiption:
+      title: "Innovating Financial Services with Secure, Scalable Technology",
+      short_title: "ENTERPRISE",
+      short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
       heroButton: "Book A Consulation",
-      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "Education",
@@ -2613,12 +2613,12 @@ export const industrydata = {
         ],
       },
       industryLinkName: "education",
-      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
-      heroSubtitle: "EDUCATION",
-      heroDesctiption:
+      title: "Innovating Financial Services with Secure, Scalable Technology",
+      short_title: "EDUCATION",
+      short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
       heroButton: "Book A Consulation",
-      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "Real Estate",
@@ -2737,12 +2737,12 @@ export const industrydata = {
         ],
       },
       industryLinkName: "real-estate",
-      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
-      heroSubtitle: "REAL ESTATE",
-      heroDesctiption:
+      title: "Innovating Financial Services with Secure, Scalable Technology",
+      short_title: "REAL ESTATE",
+      short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
       heroButton: "Book A Consulation",
-      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "Medical & Healthcare",
@@ -2861,12 +2861,12 @@ export const industrydata = {
         ],
       },
       industryLinkName: "medical-and-healthcare",
-      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
-      heroSubtitle: "MEDIAL & HEALTHCARE",
-      heroDesctiption:
+      title: "Innovating Financial Services with Secure, Scalable Technology",
+      short_title: "MEDIAL & HEALTHCARE",
+      short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
       heroButton: "Book A Consulation",
-      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "Technology Company",
@@ -2985,12 +2985,12 @@ export const industrydata = {
         ],
       },
       industryLinkName: "technology-company",
-      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
-      heroSubtitle: "TECHNOLOGY COMPANY",
-      heroDesctiption:
+      title: "Innovating Financial Services with Secure, Scalable Technology",
+      short_title: "TECHNOLOGY COMPANY",
+      short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
       heroButton: "Book A Consulation",
-      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "Media & Entertainment",
@@ -3109,12 +3109,12 @@ export const industrydata = {
         ],
       },
       industryLinkName: "media-and-entertainment",
-      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
-      heroSubtitle: "MEDIA & ENTERTAINMENT",
-      heroDesctiption:
+      title: "Innovating Financial Services with Secure, Scalable Technology",
+      short_title: "MEDIA & ENTERTAINMENT",
+      short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
       heroButton: "Book A Consulation",
-      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
       name: "NGO",
@@ -3233,12 +3233,12 @@ export const industrydata = {
         ],
       },
       industryLinkName: "ngo",
-      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
-      heroSubtitle: "NGO",
-      heroDesctiption:
+      title: "Innovating Financial Services with Secure, Scalable Technology",
+      short_title: "NGO",
+      short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
       heroButton: "Book A Consulation",
-      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
   ],
 };
