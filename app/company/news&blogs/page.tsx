@@ -1,4 +1,4 @@
-import { blogData, NewsBlogsBannerData } from "@/api/Dummy";
+import { NewsBlogsBannerData } from "@/api/Dummy";
 import BlogGlimpsSection from "@/component/Blogs/BlogGlimpsSection";
 import CommonBanner from "@/component/Common/CommonBanner";
 import Contact from "@/component/Contact/Contact";
@@ -7,14 +7,13 @@ import React from "react";
 
 const page = () => {
   const bannerData = NewsBlogsBannerData;
-  const blogsData = blogData;
   return (
     <div>
       <CommonBanner bannerData={bannerData} />
-      <div className=" container py-10">
+      <div className="container py-10">
         <BlogGlimpsSection />
       </div>
-      <BlogSection blogData={blogsData} />
+      <BlogSection />
       <div className="container">
         <Contact />
       </div>
