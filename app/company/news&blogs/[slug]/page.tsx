@@ -14,7 +14,7 @@ export function generateStaticParams() {
   }));
 }
 
-const BlogDetailsPage = async ({ params }: PageProps) => {
+const page = async ({ params }: PageProps) => {
   const { slug } = await params;
 
   const singleBlogData = blogData.cards.find((data) => data.titleName === slug);
@@ -35,4 +35,4 @@ const BlogDetailsPage = async ({ params }: PageProps) => {
   );
 };
 
-export default BlogDetailsPage;
+export default page;
