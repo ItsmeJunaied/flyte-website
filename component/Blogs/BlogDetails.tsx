@@ -13,8 +13,6 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
   const sectionRefs = useRef<Record<string, HTMLDivElement>>({});
 
   const { data: blogsData, isLoading } = useGetSingleBlogQuery(params);
-
-  console.log("blogs data", blogsData?.data);
   const { blog_section, title, image } = blogsData?.data || {};
 
   useEffect(() => {

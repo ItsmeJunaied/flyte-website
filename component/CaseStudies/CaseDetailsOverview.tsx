@@ -15,7 +15,6 @@ type ParamProps = {
 
 const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
   const { data: caseStudies, isLoading } = useGetSpecificCaseStudyQuery(params);
-  // const { data: caseStudies, isLoading } = useGetSpecificCaseStudyQuery("sd");
 
   if (isLoading)
     return (
