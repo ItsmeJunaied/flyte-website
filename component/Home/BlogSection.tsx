@@ -28,7 +28,7 @@ const BlogSection = () => {
     return "loading...";
   }
 
-  const { data: blogs} = blogsData?.data || {};
+  const { data: blogs} = blogsData || {};
 
 
   return (
