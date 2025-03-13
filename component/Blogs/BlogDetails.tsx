@@ -79,7 +79,7 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
               ref={(el) => {
                 sectionRefs.current[section?.title] = el!;
               }}
-              id={section?.title.replace(/\s+/g, "-").toLowerCase()}
+              id={section?.title?.replace(/\s+/g, "-")?.toLowerCase()}
               className="space-y-4"
             >
               <h2 className="text-xl font-bold">{section?.title}</h2>
