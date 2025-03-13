@@ -12,8 +12,8 @@ type Blog = {
   view_count: string;
   short_description: string;
   slug: string;
+  admin: { name: string; profile: string };
 };
-
 
 const BlogSection = () => {
   const { data: blogsData, isLoading } = useGetAllBlogsQuery("");
@@ -22,8 +22,7 @@ const BlogSection = () => {
     return "loading...";
   }
 
-  const { data: blogs} = blogsData || {};
-
+  const { data: blogs } = blogsData || {};
 
   return (
     <div
@@ -40,7 +39,7 @@ const BlogSection = () => {
       </div>
 
       <div className="container grid gap-4 py-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        {blogs?.map((blog:Blog, index: number) => (
+        {blogs?.map((blog: Blog, index: number) => (
           <div
             key={index}
             className="w-full max-w-[392px] h-[504.80px] bg-white flex-col justify-start items-center inline-flex transition-transform duration-500"
@@ -65,14 +64,13 @@ const BlogSection = () => {
                 <div className="flex-col justify-start items-start gap-2.5 flex">
                   <div className="self-stretch grow shrink basis-0 justify-start items-center gap-2 inline-flex">
                     <div className="justify-start items-center gap-1.5 flex">
-                      {/* <img
-                        className="w-[31.82px] h-[31.82px] rounded-full"
-                        src={blog.profile.image}
-                        alt={blog.profile.name}
-                      /> */}
+                      <img
+                        className="w-[31.82px] h-[31.82px] rounded-full border"
+                        src={blog?.admin?.profile}
+                        alt={blog?.admin?.name}
+                      />
                       <div className="text-[#121416] text-xs font-semibold leading-loose">
-                        {/* {blog.profile.name}  */}
-                        Ishrafil
+                        {blog?.admin?.name}
                       </div>
                     </div>
                     <div className="w-[28.64px] h-[0.80px] bg-[#6c757d]/40" />
