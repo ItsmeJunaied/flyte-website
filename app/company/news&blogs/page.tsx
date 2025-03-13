@@ -5,6 +5,11 @@ import Contact from "@/component/Contact/Contact";
 import BlogSection from "@/component/Home/BlogSection";
 import React from "react";
 
+export const metadata = {
+  title: "Blogs | Flyte Solutions Ltd.",
+  description: "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
+};
+
 const page = () => {
   const bannerData = NewsBlogsBannerData;
   return (
