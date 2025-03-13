@@ -16,7 +16,6 @@ const TrendingTopic: React.FC = () => {
   }
 
   const { data } = blogsTrending || {};
-  console.log("trendings", data);
 
   return (
     <div className=" border-2 border-[#FFD988] bg-[#FFF8E6] py-10 px-5 lg:px-[40px] h-full rounded-2xl flex flex-col flex-1">

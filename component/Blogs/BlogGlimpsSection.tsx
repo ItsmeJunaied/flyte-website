@@ -1,11 +1,8 @@
 import React from "react";
 import TrendingTopic from "./TrendingTopic";
 import Topreads from "./Topreads";
-import { blogData } from "@/api/Dummy";
 
 const BlogGlimpsSection = () => {
-  const blogsData = blogData;
-
 
   return (
     <div>
@@ -14,7 +11,7 @@ const BlogGlimpsSection = () => {
           <TrendingTopic />
         </div>
         <div className="w-full lg:w-1/2 flex-1 px-5 lg:px-0">
-          <Topreads blogData={blogsData} />
+          <Topreads />
         </div>
       </div>
     </div>

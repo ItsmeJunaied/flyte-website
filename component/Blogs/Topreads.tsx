@@ -1,55 +1,53 @@
+"use client";
+import { useGetBlogTrendingQuery } from "@/redux/api/blogsApi";
+import Link from "next/link";
 import React from "react";
 
-type Profile = {
+type Admin = {
   name: string;
   image: string;
-  date: string;
-};
-
-type Article = {
-  readTime: string;
-  views: string;
 };
 
 type Card = {
   title: string;
   image?: string;
-  description: string;
+  tag: string[];
+  admin: Admin;
+  slug: string;
+  short_description: string;
   keywords: string[];
-  profile: Profile;
-  article: Article;
+  date: string;
+  view_count: string;
 };
 
-type BlogData = {
-  cards: Card[];
-};
-const Topreads: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
+const Topreads = () => {
+  const { data: blogsTopreads, isLoading } = useGetBlogTrendingQuery("");
+
+  if (isLoading) {
+    return "loading...";
+  }
+
+  const { data } = blogsTopreads || {};
+
   return (
     <div className=" border-2 border-[#FFB2B2] bg-[#FFF8E6] py-10 px-5 lg:px-[40px] h-full rounded-2xl flex flex-col flex-1 ">
       <h1 className=" text-center text-black text-xl font-bold mb-7">Top Reads</h1>
 
       <div className=" flex flex-col gap-8">
-        {blogData?.cards?.slice(0, 2)?.map((card, index) => (
+        {data?.topreads?.slice(0, 2)?.map((card: Card, index: number) => (
           <div
             key={index}
             className=" bg-white flex-row gap-5 justify-start items-stretch flex transition-transform duration-500 mb-2"
           >
             <div className="flex-1 relative h-auto">
-              <img
-                className="w-full h-full object-cover"
-                src={card.image}
-                alt={card.title}
-              />
+              <img className="w-full h-full object-cover" src={card?.image} alt={card?.title} />
               {/* Overlay */}
               <div className="absolute h-full inset-0 bg-black/25" />
               {/* Keywords over the image */}
               <div className="absolute top-2 left-2 flex flex-wrap gap-2">
-                {card.keywords.map((keyword, idx) => (
-                  <div
-                    key={idx}
-                    className="blogs-keyword-div px-3 py-1 rounded-lg text-xs bg-white/50"
-                  >
-                    <span className="inline-block text-white">{keyword}</span>
+                {card?.tag?.map((tagItem, idx) => (
+                  <div key={idx} className="blogs-keyword-div px-3 py-1 rounded-lg text-xs bg-white/50">
+                    <span className="inline-block text-white">{tagItem}</span>
                   </div>
                 ))}
               </div>
@@ -57,25 +55,23 @@ const Topreads: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
 
             <div className=" w-1/2 py-5  flex-col justify-start items-start gap-3 flex-1">
               <div className=" w-fit lg:w-[360px] lg:h-10 text-[#121416] text-base text-wrap font-semibold lg:leading-loose mb-2 lg:mb-0">
-                {card.title}
+                {card?.title}
               </div>
               <div className=" flex-col justify-start items-start gap-3 flex">
                 <div className="flex-col justify-start items-start gap-2.5 flex">
                   <div className="self-stretch grow shrink basis-0 justify-start items-center gap-2 inline-flex">
                     <div className="justify-start items-center gap-1.5 flex">
                       <img
-                        className="w-[31.82px] h-[31.82px] rounded-full"
-                        src={card.profile.image}
-                        alt={card.profile.name}
+                        className="w-[31.82px] h-[31.82px] rounded-full border"
+                        src={card?.admin?.image}
+                        alt={card?.admin?.name}
                       />
                       <div className="text-[#121416] text-xs font-semibold leading-loose">
-                        {card.profile.name}
+                        {card?.admin?.name}
                       </div>
                     </div>
                     <div className="w-[28.64px] h-[0.80px] bg-[#6c757d]/40" />
-                    <div className="text-[#6c757d] text-xs font-normal leading-loose">
-                      {card.profile.date}
-                    </div>
+                    <div className="text-[#6c757d] text-xs font-normal leading-loose">{card?.date}</div>
                   </div>
                   <div className="justify-center items-center gap-2.5 inline-flex">
                     <div className="justify-center items-center gap-1 flex">
@@ -92,7 +88,7 @@ const Topreads: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
                         />
                       </svg>
                       <div className="text-[#6c757d] text-xs font-normal leading-loose">
-                        {card.article.readTime}
+                        {/* {card.article.readTime} */} 4 min read
                       </div>
                     </div>
                     <div className="justify-center items-center gap-1 flex">
@@ -109,30 +105,19 @@ const Topreads: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
                         />
                       </svg>
                       <div className="text-[#6c757d] text-xs font-normal leading-loose">
-                        {card.article.views}
+                        {card?.view_count}
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="self-stretch text-[#6c757d] text-xs font-normal leading-[17.96px]">
-                {
-                    card.description
-                      .split("<section>")[1]
-                      .split("</section>")[0]
-                      .split("<p>")[1]
-                      .split("</p>")[0]
-                  }
+                  {card?.short_description}
                 </div>
                 <div className="flex-col justify-start items-center flex">
                   <div className=" border-b-[1px] border-black hover:border-btnColor px-4">
-                    {/* <svg
-                      height="60"
-                      width="320"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect className="shape" height="60" width="320" />
-                    </svg> */}
-                    <p className="text-black hover:text-btnColor">View Post</p>
+                    <Link href={`news&blogs/${card?.slug}`}>
+                      <div className="text-black hover:text-btnColor">View Post</div>
+                    </Link>
                   </div>
                 </div>
               </div>
