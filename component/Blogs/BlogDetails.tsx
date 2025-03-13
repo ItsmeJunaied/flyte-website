@@ -23,12 +23,12 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
         setTopPosition(180);
       }
 
-      blog_section?.forEach((section: { id: string; title: string }) => {
-        const element = sectionRefs.current[section.title];
+      blog_section?.forEach((section: { id: string; blog_section_title: string }) => {
+        const element = sectionRefs.current[section.blog_section_title];
         if (element) {
           const rect = element.getBoundingClientRect();
           if (rect.top <= 150 && rect.bottom >= 150) {
-            setActiveSection(section.title);
+            setActiveSection(section.blog_section_title);
           }
         }
       });
@@ -73,16 +73,16 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
         <h1 className="text-3xl font-bold">{title}</h1>
         <img src={image} alt={title} className="rounded-lg w-full object-cover" />
         <div className="blog-content space-y-8">
-          {blog_section?.map((section: { id: number; title: string; description: string }) => (
+          {blog_section?.map((section: { id: number; blog_section_title: string; description: string }) => (
             <div
               key={section?.id}
               ref={(el) => {
-                sectionRefs.current[section?.title] = el!;
+                sectionRefs.current[section?.blog_section_title] = el!;
               }}
-              id={section?.title?.replace(/\s+/g, "-")?.toLowerCase()}
+              id={section?.blog_section_title?.replace(/\s+/g, "-")?.toLowerCase()}
               className="space-y-4"
             >
-              <h2 className="text-xl font-bold">{section?.title}</h2>
+              <h2 className="text-xl font-bold">{section?.blog_section_title}</h2>
               <div dangerouslySetInnerHTML={{ __html: section?.description }} />
             </div>
           ))}
@@ -102,15 +102,15 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
         >
           <h3 className="text-lg font-bold">Sections</h3>
           <ul className="space-y-2">
-            {blog_section?.map((section: { id: string; title: string }) => (
+            {blog_section?.map((section: { id: string; blog_section_title: string }) => (
               <li key={section?.id}>
                 <button
-                  onClick={() => scrollToSection(section.title)}
+                  onClick={() => scrollToSection(section?.blog_section_title)}
                   className={`block px-4 py-2 rounded-lg ${
-                    activeSection === section?.title ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-800"
+                    activeSection === section?.blog_section_title ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-800"
                   }`}
                 >
-                  {section?.title}
+                  {section?.blog_section_title}
                 </button>
               </li>
             ))}
