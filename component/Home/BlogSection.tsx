@@ -14,12 +14,6 @@ type Blog = {
   slug: string;
 };
 
-type BlogsData = {
-  data: {
-    blogs: Blog[];
-  };
-};
-
 
 const BlogSection = () => {
   const { data: blogsData, isLoading } = useGetAllBlogsQuery("");
@@ -46,7 +40,7 @@ const BlogSection = () => {
       </div>
 
       <div className="container grid gap-4 py-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        {blogs?.map((blog, index: number) => (
+        {blogs?.map((blog:Blog, index: number) => (
           <div
             key={index}
             className="w-full max-w-[392px] h-[504.80px] bg-white flex-col justify-start items-center inline-flex transition-transform duration-500"
@@ -57,7 +51,7 @@ const BlogSection = () => {
 
               {/* Displaying tags over the image */}
               <div className="absolute top-2 left-2 flex flex-wrap gap-2">
-                {blog.tag.map((tagItem:string[], tagIndex: number) => (
+                {blog.tag.map((tagItem, tagIndex: number) => (
                   <div key={tagIndex} className="blogs-keyword-div px-3 py-1 rounded-lg text-xs">
                     <span className="inline-block text-white">{tagItem}</span>
                   </div>
