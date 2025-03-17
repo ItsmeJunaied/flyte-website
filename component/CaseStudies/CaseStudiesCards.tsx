@@ -90,7 +90,7 @@ const CaseStudiesCards = () => {
                   caseStudies?.data?.data?.map((caseStudy: CaseStudy, index: number) => (
                     <Link
                       key={index}
-                      href={`case-studies/${caseStudy?.slug}`}
+                      href={`/case-studies/${caseStudy?.slug}`}
                       className={`flex flex-col lg:w-[620px ${
                         index % 2 !== 0 ? "lg:mt-20" : ""
                       } bg-white h-fit shadow-[0px_0px_10px_10px_rgba(223,223,223,0.25)]`}
