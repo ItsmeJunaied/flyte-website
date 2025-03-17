@@ -29,7 +29,7 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
     short_description,
     image,
     location,
-    industries,
+    category,
     service,
     partnership,
     developing_title,
@@ -45,7 +45,7 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
   return (
     <div>
       <HeroBanner bannerData={{ title, short_title, short_description, image }} />
-      <CaseInfo data={{ location, industries, service, partnership }} />
+      <CaseInfo data={{ location, category, service, partnership }} />
       <StepCard
         data={{
           developing_title,
