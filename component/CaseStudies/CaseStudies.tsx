@@ -32,7 +32,7 @@ const CaseStudies = () => {
                   {contents && stripHtml(contents[0]?.description)}
                 </p>
                 <Link
-                  href="/contact-us"
+                  href="/schedule-consultation"
                   className="h-[42px] w-fit px-8 py-3 bg-[#5856d6] rounded-md justify-start items-start gap-2.5 inline-flex overflow-hidden"
                 >
                   <p className="text-white text-sm font-semibold ">Book A Consultation</p>

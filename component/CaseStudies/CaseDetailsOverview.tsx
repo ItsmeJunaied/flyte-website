@@ -53,9 +53,11 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
           developing_short_title,
           developing_image,
           developing_step,
+          button_path: "",
+          button_name: "",
         }}
       />
-      <EverythingSection data={services}/>
+      <EverythingSection data={services} />
       <TechnologyStack data={apps_list} />
       <KeyAchievement data={impactful} />
       <FeaturesCard Width="w-full sm:w-[200px]" />
