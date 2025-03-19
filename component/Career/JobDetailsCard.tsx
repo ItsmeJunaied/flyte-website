@@ -10,11 +10,13 @@ type DetailsProps = {
   location: string;
   employment_status: string;
   deadline: string;
+  slug: string;
 };
 
 const JobDetailsCard: React.FC<{ data: DetailsProps }> = ({ data }) => {
-  const { title, experience, vacancy, salary, office_time, location, employment_status, deadline } =
+  const { title, experience, vacancy, salary, office_time, location, employment_status, deadline, slug } =
     data || {};
+   
   return (
     <div className="w-full lg:w-[40%] px-5 lg:px-12 py-6 bg-[#fafafa]">
       <div className="mb-5 lg:mb-10 flex justify-center">
@@ -47,7 +49,7 @@ const JobDetailsCard: React.FC<{ data: DetailsProps }> = ({ data }) => {
         </p>
       </div>
       <div className="mt-6 lg:mt-10 flex flex-col lg:flex-row justify-start lg:justify-between items-start lg:items-center gap-4">
-        <Link href="job-application-form" className="px-8 py-3 text-white font-semibold bgGradientNevyBlue rounded-md">
+        <Link href={`${slug}/job-application`} className="px-8 py-3 text-white font-semibold bgGradientNevyBlue rounded-md">
           Apply Now
         </Link>
         <div className="flex flex-row gap-5 items-center">

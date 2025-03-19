@@ -3259,7 +3259,7 @@ export const footerData = {
         "/images/iso1.png",
         "/images/iso2.png",
       ],
-      phoneNumbers: ["+880-171-320-3656 ", "+880-179-353-2035", "+1831 322 0444"],
+      phoneNumbers: ["+880-171-320-3656 ", "+880-179-353-2035"],
       emails: ["info@flytesolutions.com ", "sales@flytesolutions.com "],
       socialLinks: [
         {
