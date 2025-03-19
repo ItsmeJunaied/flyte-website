@@ -4,13 +4,6 @@ import React, { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
-type File = {
-  lastModified: number;
-  name: string;
-  size: number;
-  type: string;
-};
-
 type Inputs = {
   first_name: string;
   last_name: string;
@@ -20,6 +13,7 @@ type Inputs = {
   notice_period: string;
   cover_letter: string;
   resume: File[];
+  career_id: number;
 };
 
 const JobApplicationForm = () => {
@@ -28,29 +22,46 @@ const JobApplicationForm = () => {
   const {
     register,
     handleSubmit,
-    setValue,
     reset,
     formState: { errors },
   } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    // setIsLoading(true);
-    console.log("form data", data);
-    // try {
-    //   const response = await addJobApplicationForm(data);
+    data.career_id = 3;
+    setIsLoading(true);
 
-    //   if (response?.error) {
-    //     toast.error(`Error: ${JSON.stringify(response.error)}`);
-    //   } else {
-    //     toast.success("Your application was successfully submitted!");
-    //     reset();
-    //   }
-    // } catch (error) {
-    //   toast.error("Something went wrong. Please try again.");
-    //   console.error("Error:", error);
-    // } finally {
-    //   setIsLoading(false);
-    // }
+    const formData = new FormData();
+    formData.append("first_name", data.first_name);
+    formData.append("career_id", data.career_id);
+    formData.append("last_name", data.last_name);
+    formData.append("email", data.email);
+    formData.append("phone", data.phone);
+    formData.append("residential_address", data.residential_address);
+    formData.append("notice_period", data.notice_period);
+    formData.append("cover_letter", data.cover_letter);
+
+    // Append resume file to the form data
+    if (data.resume && data.resume[0]) {
+      const file = data.resume[0];
+      formData.append("resume", file);
+    }
+
+    try {
+      const response = await addJobApplicationForm(formData);
+
+      if (response?.error) {
+        toast.error(`Error: ${JSON.stringify(response.error)}`);
+      } else {
+        toast.success("Your application was successfully submitted!");
+        reset();
+      }
+    } catch (error) {
+      toast.error("Something went wrong. Please try again.");
+      console.error("Error:", error);
+    } finally {
+      setIsLoading(false);
+    }
+    console.log("formData", formData);
   };
 
   return (
