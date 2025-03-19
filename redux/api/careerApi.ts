@@ -23,7 +23,7 @@ const careerApi = baseApi.injectEndpoints({
      // send job application data
      addJobApplicationForm: builder.mutation({
       query: (jobApplicationFormData) => ({
-        url: "applicationSubmit",
+        url: "applicationsubmit",
         method: "POST",
         body: jobApplicationFormData,
       }),
