@@ -47,7 +47,7 @@ const JobDetailsCard: React.FC<{ data: DetailsProps }> = ({ data }) => {
         </p>
       </div>
       <div className="mt-6 lg:mt-10 flex flex-col lg:flex-row justify-start lg:justify-between items-start lg:items-center gap-4">
-        <Link href="/hire/application-form" className="px-8 py-3 text-white font-semibold bgGradientNevyBlue rounded-md">
+        <Link href="job-application-form" className="px-8 py-3 text-white font-semibold bgGradientNevyBlue rounded-md">
           Apply Now
         </Link>
         <div className="flex flex-row gap-5 items-center">
