@@ -1,7 +1,6 @@
 import SuccessStories from "@/component/Common/SuccessStories";
-import AboutBanner from "@/component/Company/AboutUs/AboutBanner";
+import AboutOverview from "@/component/Company/AboutUs/AboutOverview";
 import BehindFlyte from "@/component/Company/AboutUs/BehindFlyte";
-import MissionVision from "@/component/Company/AboutUs/MissionVision";
 import Roadmap from "@/component/Company/AboutUs/Roadmap";
 import Contact from "@/component/Contact/Contact";
 import React from "react";
@@ -14,8 +13,7 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      <AboutBanner />
-      <MissionVision />
+      <AboutOverview />
       <Roadmap/>
       <BehindFlyte/>
       <SuccessStories />
