@@ -42,18 +42,17 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Script src="/script.js" strategy="lazyOnload" />
         <AOSComponent />
-        <Nav navData={navbarData} />
 
         {/* ✅ Wrap children inside ClientProvider to provide Redux & Toast */}
         <ClientProvider>
+          <Nav navData={navbarData} />
           {children}
-        </ClientProvider>
-        
-        <div className="bg-[#2A3342]">
-          <div className="container">
-            <Footer footerData={footerData} />
+          <div className="bg-[#2A3342]">
+            <div className="container">
+              <Footer footerData={footerData} />
+            </div>
           </div>
-        </div>
+        </ClientProvider>
       </body>
     </html>
   );

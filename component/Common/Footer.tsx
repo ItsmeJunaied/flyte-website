@@ -1,5 +1,5 @@
-import Link from "next/link";
 import React from "react";
+import FooterOverview from "../Footer/FooterOverview";
 
 // Define the type for footer data
 type FooterData = {
@@ -46,11 +46,12 @@ type FooterData = {
 // Dummy footer data import
 
 const Footer: React.FC<{ footerData: FooterData }> = ({ footerData }) => {
-  const { contactUs, services, expertise } = footerData.footer;
+  const { contactUs } = footerData.footer;
 
   return (
     <div>
       <footer className="footer text-base-content py-10 bg-[#2A3342]">
+      
         {/* Contact Section */}
         <aside className="flex flex-col gap-4">
           <img src={contactUs.companyLogo} alt="Company Logo" />
@@ -129,8 +130,9 @@ const Footer: React.FC<{ footerData: FooterData }> = ({ footerData }) => {
           </div>
         </aside>
 
-        <div className=" flex flex-row lg:flex-col justify-start items-start gap-5">
-          {/* Services Section */}
+        <FooterOverview/>
+        {/* <div className=" flex flex-row lg:flex-col justify-start items-start gap-5">
+          
           <section className="w-full flex flex-col">
             <h6 className="footer-title text-sm text-[#0FF] mb-8">{services.sectionName}</h6>
             <div className=" w-full flex  flex-col lg:flex-row gap-6">
@@ -149,7 +151,7 @@ const Footer: React.FC<{ footerData: FooterData }> = ({ footerData }) => {
             </div>
           </section>
 
-          {/* Expertise Section */}
+         
           <section className="w-full mt-0 lg:mt-8">
             <h6 className="footer-title text-[#0FF] mb-8 text-sm">{expertise.sectionName}</h6>
             <div className=" w-full  flex flex-col lg:flex-row  gap-6">
@@ -169,7 +171,7 @@ const Footer: React.FC<{ footerData: FooterData }> = ({ footerData }) => {
               ))}
             </div>
           </section>
-        </div>
+        </div> */}
       </footer>
       <footer className="footer footer-center text-base-content py-4">
         <aside>

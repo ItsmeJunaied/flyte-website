@@ -13,8 +13,6 @@ const ProjectSection: React.FC = () => {
     return "loading...";
   }
 
-  console.log("case studies", caseStudies?.data?.data);
-
   return (
     <div className="relative overflow-hidden bg-white px-5 py-4 lg:py-6">
       <div className="container mb-3 lg:mb-6">
