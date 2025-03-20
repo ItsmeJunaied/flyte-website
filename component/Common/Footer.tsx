@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 // Define the type for footer data
@@ -58,32 +59,20 @@ const Footer: React.FC<{ footerData: FooterData }> = ({ footerData }) => {
           {/* Location */}
           <div className="max-w-[380px] flex flex-col gap-2">
             <h6 className="footer-title text-[#F5F5F5]">Location</h6>
-            <p className="link link-hover text-[#e0e0e0] text-sm font-normal">
-              {contactUs.location}
-            </p>
+            <p className="link link-hover text-[#e0e0e0] text-sm font-normal">{contactUs.location}</p>
           </div>
 
           {/* Success Logos */}
           <div className="grid grid-cols-3 gap-2">
             {contactUs?.successLogos?.map((logo, index) => (
-              <img
-                key={index}
-                className="object-cover"
-                src={logo}
-                alt={`Success Logo ${index + 1}`}
-              />
+              <img key={index} className="object-cover" src={logo} alt={`Success Logo ${index + 1}`} />
             ))}
           </div>
 
           {/* ISO Logos */}
           <div className="flex gap-4">
             {contactUs?.ISOLogos?.map((logo, index) => (
-              <img
-                key={index}
-                className="object-cover"
-                src={logo}
-                alt={`ISO Logo ${index + 1}`}
-              />
+              <img key={index} className="object-cover" src={logo} alt={`ISO Logo ${index + 1}`} />
             ))}
           </div>
 
@@ -105,10 +94,7 @@ const Footer: React.FC<{ footerData: FooterData }> = ({ footerData }) => {
           <div className="max-w-[380px] flex flex-col gap-2">
             <h6 className="footer-title text-[#F5F5F5]">Email</h6>
             {contactUs.emails.map((email, index) => (
-              <p
-                key={index}
-                className="link link-hover text-[#e0e0e0] text-sm font-normal"
-              >
+              <p key={index} className="link link-hover text-[#e0e0e0] text-sm font-normal">
                 {email}
               </p>
             ))}
@@ -146,21 +132,15 @@ const Footer: React.FC<{ footerData: FooterData }> = ({ footerData }) => {
         <div className=" flex flex-row lg:flex-col justify-start items-start gap-5">
           {/* Services Section */}
           <section className="w-full flex flex-col">
-            <h6 className="footer-title text-sm text-[#0FF] mb-8">
-              {services.sectionName}
-            </h6>
+            <h6 className="footer-title text-sm text-[#0FF] mb-8">{services.sectionName}</h6>
             <div className=" w-full flex  flex-col lg:flex-row gap-6">
               {services.subsections.map((subsection, index) => (
                 <div key={index} className=" lg:w-1/4 flex flex-col gap-5">
-                  <h6 className="text-[#F5F5F5] font-bold text-base whitespace-nowrap">
-                    {subsection.name}
-                  </h6>
+                  <h6 className="text-[#F5F5F5] font-bold text-base whitespace-nowrap">{subsection.name}</h6>
                   <ul className="list-none flex flex-col gap-4 max-w-[200px]">
                     {subsection.items.map((item, subIndex) => (
                       <li key={subIndex}>
-                        <span className="text-[#EBEBEB] text-sm text-wrap">
-                          {item}
-                        </span>
+                        <span className="text-[#EBEBEB] text-sm text-wrap">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -171,24 +151,17 @@ const Footer: React.FC<{ footerData: FooterData }> = ({ footerData }) => {
 
           {/* Expertise Section */}
           <section className="w-full mt-0 lg:mt-8">
-            <h6 className="footer-title text-[#0FF] mb-8 text-sm">
-              {expertise.sectionName}
-            </h6>
+            <h6 className="footer-title text-[#0FF] mb-8 text-sm">{expertise.sectionName}</h6>
             <div className=" w-full  flex flex-col lg:flex-row  gap-6">
               {expertise.subsections.map((subsection, index) => (
                 <div key={index} className=" lg:w-1/4 w-full  flex flex-col gap-5">
-                  <h6 className="text-[#F5F5F5] font-bold text-base">
-                    {subsection.name}
-                  </h6>
+                  <h6 className="text-[#F5F5F5] font-bold text-base">{subsection.name}</h6>
                   <ul className="list-none flex flex-col gap-3">
                     {subsection.items.map((item, subIndex) => (
                       <li key={subIndex}>
-                        <a
-                          href={item.path}
-                          className="text-[#EBEBEB] text-sm link link-hover"
-                        >
+                        <Link href={item.path} className="text-[#EBEBEB] text-sm link link-hover">
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -200,10 +173,7 @@ const Footer: React.FC<{ footerData: FooterData }> = ({ footerData }) => {
       </footer>
       <footer className="footer footer-center text-base-content py-4">
         <aside>
-          <p>
-            Copyright © 2012 - {new Date().getFullYear()} - All right reserved
-            by Flyte Solutions Ltd.
-          </p>
+          <p>Copyright © 2012 - {new Date().getFullYear()} - All right reserved by Flyte Solutions Ltd.</p>
         </aside>
       </footer>
     </div>
