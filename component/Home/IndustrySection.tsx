@@ -59,7 +59,7 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({ industrydat
             {industrydata.industries.map((industry, index) => (
               <div key={index}>
                 <div
-                  className={`w-fit text-[#718096] lg:hover:text-[#2B6CB0]  flex flex-row gap-2 items-center text-[16px] group ${
+                  className={`w-fit text-[#718096] lg:hover:text-[#2B6CB0]  flex flex-row gap-3 items-center text-[16px] group ${
                     selectedIndustry?.name === industry.name
                       ? "text-white lg:text-[#2B6CB0] bg-[#2B6CB0] lg:bg-transparent p-[10px] lg:p-0"
                       : " text-[#718096]"
@@ -69,7 +69,7 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({ industrydat
                   {/* Icon */}
                   {industry.icon && (
                     <i
-                      className={`lg:group-hover:text-[#2B6CB0] ${industry.icon} ${
+                      className={`lg:group-hover:text-[#2B6CB0] text-xl ${industry.icon} ${
                         selectedIndustry?.name === industry.name
                           ? "text-white lg:text-[#2B6CB0] icon"
                           : "text-[#718096] icon"
@@ -163,7 +163,7 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({ industrydat
                   onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = colors[index % colors.length])}
                   className="max-w-full flex-grow h-[116.59px] px-6 py-8 bg-[#f6f8fa] group transition duration-500 rounded-[10px] border border-[#d0d8df] justify-start items-center gap-6 inline-flex"
                 >
-                  {feature.icon && <i className={`${feature.icon} icon2 group-hover:text-white`}></i>}
+                  {feature.icon && <i className={`${feature.icon} icon2 group-hover:text-white text-3xl`}></i>}
                   <div className="w-full flex-col justify-start items-start gap-1.5 inline-flex">
                     <div className="w-full text-[#2f4f4f] group-hover:text-white text-[15px] font-bold">
                       {feature.title}
