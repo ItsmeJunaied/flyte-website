@@ -1,41 +1,27 @@
+"use client";
 import React from "react";
 import ProductPageContactUS from "./ProductPageContactUS";
 import Link from "next/link";
-
-export type Images = {
-  id: number;
-  url: string;
-  status:string;
-};
+import { useGetAllProductsQuery } from "@/redux/api/productsApi";
 
 export type productData = {
-  id: number;
-  productImg: string;
-  productTitle: string;
-  productLinkName:string;
-  ProductDetails: string;
-  tags: string[];
-  version: string;
-  releaseDate: string;
-  images: Images[];
-  features: string[];
-  featureImage: string;
-  technicalSpecifications: {
-    technologyStack: string[];
-    integrationsAvailable: string[];
-  };
+  title: string;
+  slug: string;
+  image: string;
+  short_description: string;
 };
 
-type productCardsDataProps = {
-  data: productData[];
-};
+const ProductCards = () => {
+  const { data: products, isLoading } = useGetAllProductsQuery({});
+  if (isLoading) {
+    return "loading...";
+  }
 
-const ProductCards: React.FC<productCardsDataProps> = ({ data }) => {
   return (
     <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 content-center  mt-10">
-      {data.map((product, index) => (
+      {products?.data?.data?.map((product: productData, index: number) => (
         <React.Fragment key={index}>
-          <Link href={`/products/${product?.productLinkName}`} className="w-full flex justify-center">
+          <Link href={`/products/${product?.slug}`} className="w-full flex justify-center">
             <div className="relative w-full py-8 lg:py-14 px-8 lg:px-16 flex justify-center items-center  bg-none rounded-md overflow-hidden group">
               {/* Background Effect */}
               <div className="absolute inset-0 bg-[#fff] top-[150px] transition-all duration-500 ease-in-out group-hover:top-0 z-0"></div>
@@ -44,17 +30,17 @@ const ProductCards: React.FC<productCardsDataProps> = ({ data }) => {
               <div className="relative grow shrink basis-0 self-stretch flex-col justify-start items-start gap-4 inline-flex z-10">
                 <img
                   className="w-full h-[200px] object-cover rounded-t-md"
-                  src={product.productImg}
-                  alt={product.productTitle}
+                  src={product?.image}
+                  alt={product?.title}
                 />
                 {/* Product Title */}
                 <div className="self-stretch h-[58px] p-2.5 border-b border-[#d6d6d6] justify-center items-center gap-2.5 inline-flex">
                   <div className="grow shrink basis-0 text-[#bc986b] text-sm font-medium font-['Noto Sans'] leading-normal">
-                    {product.productTitle}
+                    {product?.title}
                   </div>
                 </div>
                 {/* Product Tags */}
-                <div className="self-stretch justify-between items-start flex-wrap gap-2 inline-flex">
+                {/* <div className="self-stretch justify-between items-start flex-wrap gap-2 inline-flex">
                   {product.tags.map((tag, tagIndex) => (
                     <div
                       key={tagIndex}
@@ -63,11 +49,11 @@ const ProductCards: React.FC<productCardsDataProps> = ({ data }) => {
                       <div className="text-[#373737] text-xs font-normal font-['Noto Sans']">{tag}</div>
                     </div>
                   ))}
-                </div>
+                </div> */}
                 {/* Product Description */}
                 <div className="self-stretch px-2 justify-center items-center gap-2.5 inline-flex">
                   <div className="grow shrink basis-0 text-[#373737] text-xs font-light font-['Noto Sans']">
-                    {product.ProductDetails}
+                    {product?.short_description}
                   </div>
                 </div>
               </div>
