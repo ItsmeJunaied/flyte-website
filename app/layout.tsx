@@ -5,6 +5,9 @@ import Nav from "../component/Home/Nav";
 import { navbarData } from "@/api/Dummy";
 import AOSComponent from "../component/Common/AOSComponent";
 import Footer from "../component/Common/Footer";
+import "react-toastify/dist/ReactToastify.css";
+import Script from "next/script";
+import ClientProvider from "@/component/Common/ClientProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,17 +36,22 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         />
-        <script src="/script.js" defer></script>
+        {/* <script src="/script.js" defer></script> */}
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Script src="/script.js" strategy="lazyOnload" />
         <AOSComponent />
-        <Nav navData={navbarData} />
-        {children}
-        <div className=" bg-[#2A3342]">
-          <div className=" container mx-auto">
-            <Footer />
+
+        {/* ✅ Wrap children inside ClientProvider to provide Redux & Toast */}
+        <ClientProvider>
+          <Nav navData={navbarData} />
+          {children}
+          <div className="bg-[#2A3342]">
+            <div className="container">
+              <Footer />
+            </div>
           </div>
-        </div>
+        </ClientProvider>
       </body>
     </html>
   );

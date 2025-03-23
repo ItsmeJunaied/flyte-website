@@ -1,6 +1,7 @@
-import { navbarData } from "@/api/Dummy";
+"use client";
 import Link from "next/link";
-import React from "react";
+import { usePathname } from "next/navigation";
+import React, { useEffect, useState } from "react";
 
 type NavData = {
   menu: {
@@ -18,106 +19,155 @@ type NavData = {
 };
 
 const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
+  const pathname = usePathname();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const excludePages = ["/case-studies", "/career", "/company/about-us", "/contact-us", "/hire/application-form"];
+  const isExcluded =
+    excludePages.includes(pathname) ||
+    pathname === "/company" ||
+    pathname.startsWith("/company/news&blogs/") ||
+    pathname.startsWith("/products/") ||
+    pathname.startsWith("/career/");
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 500) {
+  //       setIsScrolled(true);
+  //     } else {
+  //       setIsScrolled(false);
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      const threshold = window.innerHeight * 0.5;
+  
+      setIsScrolled(window.scrollY > threshold);
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="header">
-      <nav className="nav container mx-auto">
-        <div className="nav__data px-5">
-          <Link href="/">
-            <img src="/images/flyte-logo.png" alt="flyte solutions Ltd." />
-          </Link>
+    <div className="">
+      <div
+        className={`z-[1000] transition-all duration-500 ease-in-out   
+          ${isExcluded ? "bg-white text-black" : "lg:hover:bg-white group"} 
+          ${
+            isScrolled
+              ? "fixed top-0 left-0 w-full bg-white shadow-md"
+              : "fiexed lg:absolute top-0 left-0 w-full bg-transparent"
+          }`}
+      >
+        <nav className="nav container">
+          <div className="nav__data">
+            <Link href="/">
+              <img src="/images/flyte-logo.png" alt="flyte solutions Ltd." />
+            </Link>
 
-          <div className="nav__toggle" id="nav-toggle">
-            <i className="fa-solid fa-bars nav__toggle-menu"></i>
-            <i className="fa-solid fa-x nav__toggle-close"></i>
+            <div className="nav__toggle" id="nav-toggle">
+              <i className="fa-solid fa-bars nav__toggle-menu"></i>
+              <i className="fa-solid fa-x nav__toggle-close mr-1"></i>
+            </div>
           </div>
-        </div>
 
-        <div className="nav__menu" id="nav-menu">
-          <ul className="nav__list">
-            {navData.menu.map((item, index) => (
-              <li
-                key={index}
-                className={item.type === "dropdown" ? "dropdown__item" : ""}
-              >
-                {item.type === "dropdown" ? (
-                  <>
-                    <div className="nav__link dropdown__button">
-                      {item.name}{" "}
-                      <i className="fa-solid fa-chevron-down fa-2xs"></i>
-                    </div>
-                    <div className="dropdown__container bg-[#F4F2F0]">
-                      <div className="dropdown__content">
-                        <div className="flex flex-col lg:flex-row gap-10 container mx-auto">
-                          <div className=" w-full h-full lg:w-1/3 hidden lg:flex flex-col gap-4 flex-shrink-0 ">
-                            {/* {navData.menu.map((item, index) => (
-                              <div key={index}> */}
-
-                            <h1 className="text-lg text-btnColor ">
-                              {item.name}
-                            </h1>
-
-                            <p className="text-xs text-[#131313B2]">
-                              {item.description}
-                            </p>
-
-                            <Link
-                              className="bg-btnColor w-fit h-fit text-white px-6 py-3 rounded-lg"
-                              href={item.path}
-                            >
-                              <p className="">Learn more</p>
-                            </Link>
-                            {/* </div> */}
-                            {/* ))} */}
-                          </div>
-                          <div className=" w-full h-full lg:w-2/3 rounded-lg flex-shrink-0 ">
-                            <div className=" grid grid-cols-1 lg:grid-cols-2 gap-2 ">
-                              {item.features?.map((feature, featureIndex) => (
-                                <div
-                                  className=" flex flex-row  items-center gap-4  bg-white border-2 border-white hover:border-btnColor p-4 rounded-lg"
-                                  key={featureIndex}
+          <div className="nav__menu" id="nav-menu">
+            <ul className="nav__list">
+              {navData.menu.map((item, index) => {
+                const isActive = pathname.split("/")[1] === item.path.split("/")[1];
+                return (
+                  <li key={index} className={item.type === "dropdown" ? "dropdown__item" : ""}>
+                    {item.type === "dropdown" ? (
+                      <>
+                        <div className={`nav__link dropdown__button  ${isActive ? "active" : ""}`}>
+                          <p
+                            className={` hover:text-[#2B6CB0] group-hover:text-black ${
+                              isActive ? "text-blue-500 border-b-2 border-btnColor" : ""
+                            } ${isScrolled ? "lg:text-black" : isExcluded ? "text-black" : "lg:text-white"}`}
+                          >
+                            {item.name}
+                          </p>
+                          <i
+                            className={`fa-solid fa-chevron-down fa-2xs group-hover:text-black ${
+                              isScrolled ? "lg:text-black" : isExcluded ? "text-black" : "lg:text-white"
+                            }`}
+                          ></i>
+                        </div>
+                        <div className="dropdown__container">
+                          <div className="dropdown__content">
+                            <div className="lg:container grid grid-cols-1 lg:grid-cols-3">
+                              <div className="lg:col-span-1 hidden lg:flex flex-col gap-4 flex-shrink-0 ">
+                                <h1 className="text-lg text-btnColor ">{item.name}</h1>
+                                <p className="text-xs text-[#131313B2]">{item.description}</p>
+                                <Link
+                                  className="bg-btnColor w-fit h-fit text-white px-6 py-3 rounded-lg"
+                                  href={item.path}
                                 >
-                                  <div className=" w-fit  ">
-                                    <p className=" text-xl">
-                                      <i
-                                        className={`fa ${feature.icon} fa-2xl`}
-                                        style={{ color: "#5856d6" }}
-                                      ></i>
-                                    </p>
-                                  </div>
-                                  <div className=" w-fit ">
-                                    <p className=" text-btnColor">
-                                      {feature.name}
-                                    </p>
-                                    <p className=" text-[#131313B2] text-xs">
-                                      {feature.description}
-                                    </p>
+                                  <p className="">Learn more</p>
+                                </Link>
+                              </div>
+                              <div className="lg:col-span-2 rounded-lg flex-shrink-0">
+                                <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-2">
+                                  {item.features?.map((feature, featureIndex) => (
+                                    <Link href={feature.path} key={featureIndex}>
+                                      <div className="bg-[#F7FAFF] lg:bg-white flex flex-row items-center gap-2 lg:gap-4 lg:border-2 lg:border-white hover:border-btnColor px-5 lg:px-4 py-1 lg:py-2 lg:rounded-lg lg:h-24 max-w-[406px]">
+                                        <div className="w-7 h-7">
+                                          <i
+                                            className={`w-7 h-7 fa ${feature.icon} text-lg lg:text-3xl text-[#5856d6]`}
+                                          ></i>
+                                        </div>
+                                        <div>
+                                          <p className="text-btnColor text-xs lg:text-base">{feature.name}</p>
+                                          <p className=" text-[#131313B2] text-xs hidden lg:block">
+                                            {feature.description}
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </Link>
+                                  ))}
+                                  <div className="bg-[#F7FAFF]">
+                                    <Link
+                                      className="nav-close mx-5 bg-btnColor text-white px-3 w-fit rounded lg:hidden flex justify-center items-center"
+                                      href={item.path}
+                                    >
+                                      Learn more
+                                    </Link>
                                   </div>
                                 </div>
-                              ))}
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </>
-                ) : (
-                  <Link className="h-full flex items-center" href={item.path}>
-                    <p className="nav__link">{item.name}</p>
-                  </Link>
-                )}
+                      </>
+                    ) : (
+                      <Link className="nav-close nav__link h-full flex items-center " href={item.path}>
+                        <span
+                          className={`group-hover:text-black ${
+                            isActive ? "text-blue-500 border-b-2 border-btnColor" : ""
+                          } ${isScrolled ? "lg:text-black" : isExcluded ? "text-black" : "lg:text-white"}`}
+                        >
+                          {item.name}
+                        </span>
+                      </Link>
+                    )}
+                  </li>
+                );
+              })}
+              {/* Hardcoded Contact Us link */}
+              <li>
+                <Link href="/contact-us" className="nav-close h-full flex items-center">
+                  <p className="bgGradientNevyBlue h-fit text-white px-6 py-3 rounded-lg">Contact Us</p>
+                </Link>
               </li>
-            ))}
-            {/* Hardcoded Contact Us link */}
-            <li>
-              <Link href="/contact-us" className="h-full flex items-center">
-                <p className="bg-btnColor h-fit text-white px-6 py-3 rounded-lg">
-                  Contact Us
-                </p>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   );
 };

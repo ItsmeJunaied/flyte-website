@@ -1,18 +1,15 @@
-
+import Link from "next/link";
 import React from "react";
-import PlaneLottieBanner from "./HomeSubComponents.tsx/PlaneLottieBanner";
 
 type BannerProps = {
   bannerData: {
     title: string;
-    subtitle: string;
     description: string;
-    stats: {
-      yearsExperience: number;
-      projectsCompleted: number;
-      recurringClients: number;
-      solutionsDelivered: number;
-    };
+    industries: {
+      logo: string;
+      name: string;
+      path: string;
+    }[];
     bannerImage: string;
   };
 };
@@ -24,40 +21,59 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
         backgroundImage: `url(${bannerData.bannerImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed", // Enables the parallax effect
-        padding: "50px 20px",
+        backgroundAttachment: "fixed",
+        // padding: "50px 20px",
         color: "white",
         textAlign: "center",
-        height: "640px",
+        // height: "740px",
         opacity: "100%",
       }}
-      className="flex flex-col justify-center items-center gap-5 "
+      className="flex flex-col pt-10 lg:pt-20 pb-10 lg:pb-0 lg:h-[740px] justify-center items-start gap-5 "
     >
-      <div className="relative pt-3">
-        <h1 className="text-[#6ec1ff] text-lg font-bold font-['DM Sans'] uppercase leading-tight tracking-widest">
-          -{bannerData.title}
-        </h1>
-        <PlaneLottieBanner />
-      </div>
+      <div className=" container   flex flex-col gap-[24px]">
+        <div className="w-full flex justify-start items-start">
+          <h2
+            className="bannerTitle max-w-[1000px] text-start text-white text-[32px] lg:text-5xl font-bold leading-9  lg:leading-[80px] tracking-normal"
+            dangerouslySetInnerHTML={{
+              __html: bannerData.title.replace(
+                /<span>/g,
+                '<span style="display: inline; margin: 0; padding: 0; white-space: nowrap;">'
+              ),
+            }}
+          ></h2>
+        </div>
 
-      <div className=" w-full flex justify-center items-center">
-        <h2 className=" max-w-[1000px] text-center text-white text-6xl font-bold font-['DM Sans'] leading-[80px] ">
-          {bannerData.subtitle}
-        </h2>
-      </div>
+        <div className=" w-full flex justify-start items-start">
+          <h2 className=" max-w-[600px] text-start text-[#dddddd] text-xl font-normal font-['DM Sans']  ">
+            {bannerData.description}
+          </h2>
+        </div>
 
-      <div className=" w-full flex justify-center items-center">
-        <h2 className=" max-w-[600px] text-center text-[#dddddd] text-sm font-normal font-['DM Sans']  ">
-          {bannerData.description}
-        </h2>
-      </div>
+        <div className=" flex flex-row gap-2 overflow-x-auto scrollbar-hide ">
+          {bannerData.industries.map((industry, index) => (
+            <Link href={industry?.path}
+              key={index}
+              className=" w-[125px] lg:w-[140px] h-40 flex flex-col gap-3 justify-center items-center rounded-[10px] bannerIndustries hover:bg-white group"
+            >
+              <p className="h-1/2 text-4xl text-end flex justify-end items-end group-hover:text-btnColor">
+                <i className={industry.logo}></i>
+              </p>
+              <h1 className="h-1/2 w-[140px] text-center text-white group-hover:text-black text-sm font-semibold leading-5 px-2 ">
+                {industry.name}
+              </h1>
+            </Link>
+          ))}
+        </div>
 
-      <button
-        id="alertButton"
-        className=" uppercase px-6 py-2 bg-btnColor text-white rounded-md"
-      >
-        Book A Consultation
-      </button>
+        <div className=" flex flex-col lg:flex-row gap-2">
+          <Link href={`/schedule-consultation`}
+            id="alertButton"
+            className=" w-fit uppercase px-[32px] py-[12px] border border-btnColor hover:border-pink-500 bg-btnColor hover:bg-pink-500 text-white rounded-md"
+          >
+            Book A Consultation
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };

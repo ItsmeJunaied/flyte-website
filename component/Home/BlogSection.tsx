@@ -1,33 +1,32 @@
+"use client";
+import { useGetAllBlogsQuery } from "@/redux/api/blogsApi";
+import Link from "next/link";
 import React from "react";
 
-type Profile = {
-  name: string;
+// Define the Blog type
+type Blog = {
   image: string;
-  date: string;
-};
-
-type Article = {
-  readTime: string;
-  views: string;
-};
-
-type Card = {
   title: string;
-  image?:string;
-  description: string;
-  keywords: string[];
-  profile: Profile;
-  article: Article;
+  tag: string[];
+  date: string;
+  view_count: string;
+  short_description: string;
+  slug: string;
+  admin: { name: string; profile: string };
 };
 
-type BlogData = {
-  cards: Card[];
-};
+const BlogSection = () => {
+  const { data: blogsData, isLoading } = useGetAllBlogsQuery("");
 
-const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
+  if (isLoading) {
+    return "loading...";
+  }
+
+  const { data: blogs } = blogsData || {};
+
   return (
     <div
-      className="py-[40px]"
+      className="py-[40px] px-4 lg:px-0"
       style={{
         backgroundImage: "url('/images/BlogSectionBg.png')",
         backgroundSize: "cover",
@@ -39,55 +38,43 @@ const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
         <h1>News & Blogs</h1>
       </div>
 
-      <div className="container mx-auto flex flex-wrap justify-center gap-10 py-10 px-5 lg:px-0">
-
-        {blogData?.cards?.slice(0, 3)?.map((card, index) => (
+      <div className="container grid gap-4 py-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        {blogs?.map((blog: Blog, index: number) => (
           <div
             key={index}
-            className="w-[392px] h-[504.80px] bg-white flex-col justify-start items-center inline-flex"
+            className="w-full max-w-[392px] h-[504.80px] bg-white flex-col justify-start items-center inline-flex transition-transform duration-500"
           >
-            <div className="w-[392px] h-[200px] relative">
-              <img
-                className="w-[392px] h-[200px] left-0 top-0 absolute"
-                src={card.image}
-                alt={card.title}
-              />
-              <div className="w-[392px] h-[200px] left-0 top-0 absolute bg-black/25" />
+            <div className="w-full h-[200px] relative">
+              <img className="w-full h-full object-cover" src={blog?.image} alt={blog.title} />
+              <div className="w-full h-full absolute " />
 
-              {/* Displaying keywords over the image */}
+              {/* Displaying tags over the image */}
               <div className="absolute top-2 left-2 flex flex-wrap gap-2">
-                {card.keywords.map((keyword, idx) => (
-                  <div
-                    key={idx}
-                    className="blogs-keyword-div px-3 py-1 rounded-lg text-xs"
-                  >
-                    <span className="inline-block text-white">{keyword}</span>
+                {blog.tag.map((tagItem, tagIndex: number) => (
+                  <div key={tagIndex} className="blogs-keyword-div px-3 py-1 rounded-lg text-xs">
+                    <span className="inline-block text-white">{tagItem}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="p-4 flex-col justify-start items-start gap-3 flex">
-              <div className="w-[360px] h-10 text-[#121416] text-base font-semibold leading-loose">
-                {card.title}
-              </div>
+            <div className="p-4 flex-col bg-white justify-start items-start gap-3 flex">
+              <div className="text-[#121416] text-base font-semibold leading-loose">{blog.title}</div>
               <div className="h-[220.80px] flex-col justify-start items-start gap-3 flex">
                 <div className="flex-col justify-start items-start gap-2.5 flex">
                   <div className="self-stretch grow shrink basis-0 justify-start items-center gap-2 inline-flex">
                     <div className="justify-start items-center gap-1.5 flex">
                       <img
-                        className="w-[31.82px] h-[31.82px] rounded-full"
-                        src={card.profile.image}
-                        alt={card.profile.name}
+                        className="w-[31.82px] h-[31.82px] rounded-full border"
+                        src={blog?.admin?.profile}
+                        alt={blog?.admin?.name}
                       />
                       <div className="text-[#121416] text-xs font-semibold leading-loose">
-                        {card.profile.name}
+                        {blog?.admin?.name}
                       </div>
                     </div>
                     <div className="w-[28.64px] h-[0.80px] bg-[#6c757d]/40" />
-                    <div className="text-[#6c757d] text-xs font-normal leading-loose">
-                      {card.profile.date}
-                    </div>
+                    <div className="text-[#6c757d] text-xs font-normal leading-loose">{blog?.date}</div>
                   </div>
                   <div className="justify-center items-center gap-2.5 inline-flex">
                     <div className="justify-center items-center gap-1 flex">
@@ -104,7 +91,7 @@ const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
                         />
                       </svg>
                       <div className="text-[#6c757d] text-xs font-normal leading-loose">
-                        {card.article.readTime}
+                        {/* {card.article.readTime} */} 5 min read
                       </div>
                     </div>
                     <div className="justify-center items-center gap-1 flex">
@@ -121,36 +108,28 @@ const BlogSection: React.FC<{ blogData: BlogData }> = ({ blogData }) => {
                         />
                       </svg>
                       <div className="text-[#6c757d] text-xs font-normal leading-loose">
-                        {card.article.views}
+                        {blog?.view_count || 0} views
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="self-stretch text-[#6c757d] text-xs font-normal leading-[17.96px]">
-                  {card.description}
+                  {blog?.short_description}
                 </div>
                 <div className="flex-col justify-start items-center flex">
                   <div className="svg-wrapper">
-                    <svg
-                      height="60"
-                      width="320"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                       <rect className="shape" height="60" width="320" />
                     </svg>
-                    <div className="text">View More</div>
+                    <Link href={`news&blogs/${blog.slug}`}>
+                      <div className=" text">Read More</div>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         ))}
-      </div>
-
-      <div className="w-full h-[38px] justify-center items-center gap-2.5 inline-flex overflow-hidden">
-        <button className="bg-white px-6 py-2.5 rounded-md text-[#191919] text-sm font-semibold font-['DM Sans'] shadow-[0px_0px_10px_10px_rgba(230,230,230,0.25)] border border-[#dddddd]">
-          See All
-        </button>
       </div>
     </div>
   );

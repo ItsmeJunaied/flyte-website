@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -52,12 +53,38 @@ export default {
           "5": "hsl(var(--chart-5))",
         },
       },
-      screens: {
-        "md-lg": "937px",
-        "lg-xl": "1276px",
+      // screens: {
+      //   "md-lg": "937px",
+      //   "lg-xl": "1276px",
+      // },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "20px",
+          sm: "24px",
+          lg: "30px",
+          xl: "30px",
+        },
+        screens: {
+          sm: "100%",
+          md: "100%",
+          lg: "100%",
+          xl: "1280px",
+        },
       },
       animation: {
         "card-stack": "card-stack 1s ease-out forwards",
+        infiniteRotate: "infiniteRotate 6s ease-in-out infinite",
+      },
+
+      keyframes: {
+        infiniteRotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '30%': { transform: 'rotate(45deg)' },
+          '50%': { transform: 'rotate(0deg)' },
+          '80%': { transform: 'rotate(-45deg)' },
+          '100%': { transform: 'rotate(0deg)' },
+        },
       },
 
       borderRadius: {

@@ -1,16 +1,24 @@
-import React from 'react';
-import CommingSoon from '../../component/Common/CommingSoon';
+import React from "react";
+import Roadmap from "@/component/Company/AboutUs/Roadmap";
+import BehindFlyte from "@/component/Company/AboutUs/BehindFlyte";
+import SuccessStories from "@/component/Common/SuccessStories";
+import Contact from "@/component/Contact/Contact";
+import AboutOverview from "@/component/Company/AboutUs/AboutOverview";
 
 export const metadata = {
-    title: "Company | Flyte Solutions Ltd.",
-    description: "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
-  };
+  title: "Company | Flyte Solutions Ltd.",
+  description: "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
+};
 const page = () => {
-    return (
-        <div>
-            <CommingSoon/>
-        </div>
-    );
+  return (
+    <div>
+      <AboutOverview />
+      <Roadmap />
+      <BehindFlyte />
+      <SuccessStories />
+      <Contact />
+    </div>
+  );
 };
 
 export default page;

@@ -2,6 +2,7 @@
 import React from "react";
 import Title from "../Common/Title";
 import Subtitle from "../Common/Subtitle";
+import Link from "next/link";
 
 type Keywords = string[];
 type ServiceData = {
@@ -28,7 +29,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({ serviceData }) => {
       </div>
 
       <div
-        className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-5 lg:px-0 mt-10 mb-10"
+        className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 my-3 lg:my-10"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
       >
@@ -36,11 +37,11 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({ serviceData }) => {
           serviceData?.slice(0, 6)?.map((data, index) => (
             <div
               key={index}
-              className=" h-auto px-6  py-8 bg-white rounded-[15px] shadow-md justify-start items-stretch gap-3 inline-flex overflow-hidden"
+              className=" h-auto px-[24px]  py-[32px] bg-white rounded-[15px] shadow-md justify-start items-stretch gap-3 inline-flex overflow-hidden"
             >
               <div className=" w-2/3 grow shrink basis-0 self-stretch flex-col justify-center items-start gap-6 inline-flex overflow-hidden">
-                <div className="self-stretch h-[122px] flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch h-[83px] flex-col justify-start items-start gap-4 flex">
+                <div className="self-stretch  flex-col justify-start items-start gap-4 flex">
+                  <div className="self-stretch  flex-col justify-start items-start gap-4 flex">
                     <div className="self-stretch text-black text-sm font-bold  ">
                       {data?.title}
                     </div>
@@ -75,9 +76,9 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({ serviceData }) => {
                   </div>
                 </div>
               </div>
-              <div className=" w-1/3 relative  overflow-hidden h-full">
+              <div className=" w-1/3 relative flex justify-center items-center  overflow-hidden h-full">
                 <img
-                  className=" h-full object-conatain"
+                  className=" h-fit object-cover"
                   src={data?.image}
                   alt="image"
                 />
@@ -87,11 +88,11 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({ serviceData }) => {
       </div>
 
       <div className=" w-full flex justify-center items-center">
-        <button className="h-[42px] px-8 py-3 bg-[#5856d6] rounded-md justify-start items-start gap-2.5 inline-flex overflow-hidden">
+        <Link href="/services" className="h-[42px] px-8 py-3 bgGradientNevyBlue rounded-md justify-start items-start gap-2.5 inline-flex overflow-hidden">
           <div className="text-white text-sm font-semibold font-['DM Sans']">
             See All Services
           </div>
-        </button>
+        </Link>
       </div>
     </div>
   );
