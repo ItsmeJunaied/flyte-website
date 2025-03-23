@@ -68,12 +68,12 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({ techData }) => 
             return (
               <Link href={`/hire/${category?.hireLinkName}`}
                 key={section.key}
-                className=" h-auto p-[24px] bg-white hover:bg-[#85d4f4] group transition duration-500 shadow-[0px_0px_10px_10px_rgba(235,235,235,0.25)] flex-col justify-start items-stretch gap-4 inline-flex overflow-hidden"
+                className=" h-auto p-[24px] bg-white hover:bg-[#386d54] group transition duration-500 shadow-[0px_0px_10px_10px_rgba(235,235,235,0.25)] flex-col justify-start items-stretch gap-4 inline-flex overflow-hidden"
               >
-                <div className="text-black text-base font-bold">
-                  {category.title} {/* Use category.title here */}
+                <div className="text-black group-hover:text-white transition duration-500 text-base font-bold">
+                  {category.title}
                 </div>
-                <div className="self-stretch text-[#9c9c9c] group-hover:text-black transition duration-500 text-xs font-normal">{category.description}</div>
+                <div className="self-stretch text-[#9c9c9c] group-hover:text-white transition duration-500 text-xs font-normal">{category.description}</div>
 
                 <div className="flex-col justify-start items-start gap-2.5 flex">
                   <div className="grid grid-cols-3 gap-6">
@@ -83,7 +83,7 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({ techData }) => 
                         className="w-fit px-2 py-1 rounded-[15px] border border-[#e9e9e9] justify-start items-center gap-1.5 flex"
                       >
                         <img src={tech.image} alt={tech.name} className="w-3 h-3" />
-                        <div className="text-center text-[#5e5e5e] text-[10px] font-medium">{tech.name}</div>
+                        <div className="text-center text-[#5e5e5e] group-hover:text-white transition duration-500 text-[10px] font-medium">{tech.name}</div>
                       </div>
                     ))}
                   </div>

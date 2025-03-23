@@ -32,6 +32,9 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({ industrydat
     setSelectedIndustry(industry);
   };
 
+  const colors = ["#f6f8fa", "#f0e6ff", "#e3f2fd", "#ffebee", "#e8f5e9"];
+  const hoverColors = ["#2B6CB0", "#6B46C1", "#3182CE", "#E53E3E", "#38A169"];
+
   return (
     <div
       className="bg-white py-10"
@@ -156,14 +159,16 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({ industrydat
               {selectedIndustry?.features.map((feature, index) => (
                 <div
                   key={index}
-                  className="max-w-full flex-grow h-[116.59px] px-6 py-8 bg-[#f6f8fa] hover:bg-[#2B6CB0] group transition duration-500 rounded-[10px] border border-[#d0d8df] justify-start items-center gap-6 inline-flex"
+                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = hoverColors[index % hoverColors.length])}
+                  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = colors[index % colors.length])}
+                  className="max-w-full flex-grow h-[116.59px] px-6 py-8 bg-[#f6f8fa] group transition duration-500 rounded-[10px] border border-[#d0d8df] justify-start items-center gap-6 inline-flex"
                 >
-                  {feature.icon && <i className={`${feature.icon} icon2 group-hover:text-yellow-300`}></i>}
+                  {feature.icon && <i className={`${feature.icon} icon2 group-hover:text-white`}></i>}
                   <div className="w-full flex-col justify-start items-start gap-1.5 inline-flex">
-                    <div className="w-full text-[#2f4f4f] group-hover:text-yellow-300 text-[15px] font-bold">
+                    <div className="w-full text-[#2f4f4f] group-hover:text-white text-[15px] font-bold">
                       {feature.title}
                     </div>
-                    <div className="w-full text-[#838383] group-hover:text-white text-xs font-normal">
+                    <div className="w-full text-[#838383] group-hover:text-gray-300 text-xs font-normal">
                       {feature.description}
                     </div>
                   </div>
