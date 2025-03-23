@@ -5,7 +5,6 @@ import Nav from "../component/Home/Nav";
 import { navbarData } from "@/api/Dummy";
 import AOSComponent from "../component/Common/AOSComponent";
 import Footer from "../component/Common/Footer";
-import { footerData } from "@/api/Dummy";
 import "react-toastify/dist/ReactToastify.css";
 import Script from "next/script";
 import ClientProvider from "@/component/Common/ClientProvider";
@@ -49,7 +48,7 @@ export default function RootLayout({
           {children}
           <div className="bg-[#2A3342]">
             <div className="container">
-              <Footer footerData={footerData} />
+              <Footer />
             </div>
           </div>
         </ClientProvider>

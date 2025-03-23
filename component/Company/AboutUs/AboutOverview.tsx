@@ -8,7 +8,6 @@ import { Skeleton } from "@/components/ui/skeleton";
 const AboutOverview = () => {
   const { data: aboutus, isLoading } = useGetAboutUsQuery({});
 
-  console.log("aboutus", aboutus?.data);
   const {title, description, image, mission_vision} = aboutus?.data || {};
   return (
     <div>
