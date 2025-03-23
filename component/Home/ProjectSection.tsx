@@ -1,30 +1,30 @@
-/* eslint-disable @next/next/no-img-element */
+"use client";
 import React from "react";
 import Subtitle from "../Common/Subtitle";
 import Title from "../Common/Title";
 import ProjectCards from "./HomeSubComponents.tsx/ProjectCards";
-import { projectSliderData } from "@/api/Dummy";
 import ProjectCardsMobile from "./HomeSubComponents.tsx/ProjectCardsMobile";
+import { useGetCategoryBasedCaseStudiesQuery } from "@/redux/api/caseStudiesApi";
 
 const ProjectSection: React.FC = () => {
-  const projectData = projectSliderData;
+  const { data: caseStudies, isLoading } = useGetCategoryBasedCaseStudiesQuery("");
+
+  if (isLoading) {
+    return "loading...";
+  }
 
   return (
     <div className="relative overflow-hidden bg-white px-5 py-4 lg:py-6">
       <div className="container mb-3 lg:mb-6">
-      <Subtitle Subtitle="Case Studies" />
-      <Title
-        fontColor=""
-        title="Driving Success Through Proven SOlutions"
-        width="full"
-      />
+        <Subtitle Subtitle="Case Studies" />
+        <Title fontColor="" title="Driving Success Through Proven SOlutions" width="full" />
       </div>
 
       <div className="hidden lg:block">
-      <ProjectCards projectData={projectData} />
+        <ProjectCards projectData={caseStudies?.data?.data || []} />
       </div>
       <div className="block lg:hidden">
-      <ProjectCardsMobile projectData={projectData} />
+        <ProjectCardsMobile projectData={caseStudies?.data?.data || []} />
       </div>
     </div>
   );

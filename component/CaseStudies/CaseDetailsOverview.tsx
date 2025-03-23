@@ -15,7 +15,6 @@ type ParamProps = {
 
 const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
   const { data: caseStudies, isLoading } = useGetSpecificCaseStudyQuery(params);
-  // const { data: caseStudies, isLoading } = useGetSpecificCaseStudyQuery("sd");
 
   if (isLoading)
     return (
@@ -30,7 +29,7 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
     short_description,
     image,
     location,
-    industries,
+    category,
     service,
     partnership,
     developing_title,
@@ -46,7 +45,7 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
   return (
     <div>
       <HeroBanner bannerData={{ title, short_title, short_description, image }} />
-      <CaseInfo data={{ location, industries, service, partnership }} />
+      <CaseInfo data={{ location, category, service, partnership }} />
       <StepCard
         data={{
           developing_title,
@@ -54,9 +53,11 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
           developing_short_title,
           developing_image,
           developing_step,
+          button_path: "",
+          button_name: "",
         }}
       />
-      <EverythingSection data={services}/>
+      <EverythingSection data={services} />
       <TechnologyStack data={apps_list} />
       <KeyAchievement data={impactful} />
       <FeaturesCard Width="w-full sm:w-[200px]" />

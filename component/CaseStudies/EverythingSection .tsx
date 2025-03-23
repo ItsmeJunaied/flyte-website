@@ -82,8 +82,8 @@ const EverythingSection: React.FC<{ data: EverythingProps[] }> = ({ data }) => {
       </div>
 
       <Link
-        className="px-8 py-3 mt-3 bg-[#5856d6] hover:bg-[#4a46bc] rounded-md text-white w-fit mx-auto block"
-        href=""
+        className="px-8 py-3 mt-3 bgGradientNevyBlue rounded-md text-white w-fit mx-auto block"
+        href="/contact-us"
       >
         Request A Demo
       </Link>

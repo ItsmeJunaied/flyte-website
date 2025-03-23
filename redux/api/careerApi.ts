@@ -13,7 +13,23 @@ const careerApi = baseApi.injectEndpoints({
       query: () => "career",
       providesTags: ["Career"],
     }),
+
+    // get career details
+    getCareerDetails: builder.query({
+      query: (slug) => `career/${slug}`,
+      providesTags: ["Career"],
+    }),
+
+     // send job application data
+     addJobApplicationForm: builder.mutation({
+      query: (jobApplicationFormData) => ({
+        url: "applicationsubmit",
+        method: "POST",
+        body: jobApplicationFormData,
+      }),
+      invalidatesTags: ["Contact"],
+    }),
   }),
 });
 
-export const { useGetAllCareerOpportunitiesQuery } = careerApi;
+export const { useGetAllCareerOpportunitiesQuery, useGetCareerDetailsQuery, useAddJobApplicationFormMutation } = careerApi;

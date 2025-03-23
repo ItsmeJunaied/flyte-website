@@ -12,7 +12,7 @@ export type Opportunity = {
   description: string;
   employment_status: string;
   location: string;
-  apply_link: string;
+  slug: string;
   sorting: number;
   status: string;
 };

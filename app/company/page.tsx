@@ -1,10 +1,9 @@
 import React from "react";
-import AboutBanner from "@/component/Company/AboutUs/AboutBanner";
-import MissionVision from "@/component/Company/AboutUs/MissionVision";
 import Roadmap from "@/component/Company/AboutUs/Roadmap";
 import BehindFlyte from "@/component/Company/AboutUs/BehindFlyte";
 import SuccessStories from "@/component/Common/SuccessStories";
 import Contact from "@/component/Contact/Contact";
+import AboutOverview from "@/component/Company/AboutUs/AboutOverview";
 
 export const metadata = {
   title: "Company | Flyte Solutions Ltd.",
@@ -13,8 +12,7 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      <AboutBanner />
-      <MissionVision />
+      <AboutOverview />
       <Roadmap />
       <BehindFlyte />
       <SuccessStories />

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 type HeroBannerProps = {
@@ -25,9 +26,10 @@ const HeroBanner: React.FC<{ bannerData: HeroBannerProps }> = ({ bannerData }) =
             <h1 className="text-white text-2xl lg:text-4xl font-bold leading-10 tracking-wider">{title}</h1>
           </div>
           <p className="text-white text-sm lg:text-[18px] tracking-wide">{short_description}</p>
-          <button className="w-fit px-8 py-3 bg-[#5856d6] rounded-md text-white text-base font-semibold">
+
+          <Link href="/schedule-consultation" className="w-fit px-8 py-3 bgGradientNevyBlue rounded-md text-white text-base font-semibold">
             Book A Consultation
-          </button>
+          </Link>
         </div>
         {/* <div className="w-full lg:w-[60%]">
           <img

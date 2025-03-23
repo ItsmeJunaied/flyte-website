@@ -14,7 +14,7 @@ const CareerBanner = () => {
           ))}
         </div>
         <Link
-          href="/"
+          href="/company"
           className="w-full md:w-[137px] text-white text-sm text-center font-semibold px-8 py-3 bg-[#5856d6] hover:bg-[#4a46bc] rounded-md"
         >
           Learn More

@@ -9,41 +9,31 @@ import OperationsSections from "../component/Home/OperationsSections";
 import ProjectSection from "../component/Home/ProjectSection";
 import AboutUs from "../component/Home/AboutUs";
 import ProductsHomeComp from "@/component/Home/ProductsHomeComp";
-// import ServiceMarquee from "../component/Home/ServiceMarquee";
+
 const page = () => {
-  // console.log(brandData)nlkmkj
   return (
-    <div className=" ">
-      <div className=" ">
-        <div className=" ">
-          <Banner bannerData={bannerData} />
-        </div>
-        <div className="  flex flex-col justify-center items-center ">
+    <div>
+      <div>
+        <Banner bannerData={bannerData} />
+        <div className="flex flex-col justify-center items-center ">
           <Brands title={brandData.title} brands={brandData.brands} />
         </div>
-        <div className="  bg-white">
+        <div className="bg-white">
           <AboutUs />
         </div>
-        <div className=" my-10 container">
+        <div className="my-10 container">
           <ServiceSection serviceData={serviceData} />
         </div>
-        <div className=" bg-white py-10">
-          {/* <ServiceMarquee/> */}
+        <div className="bg-white py-10">
           <ProductsHomeComp />
         </div>
-        <div className=" bg-white ">
+        <div className="bg-white">
           <IndustrySection industrydata={industrydata} />
         </div>
-        <div className=" ">
-          <OperationsSections techData={techData} />
-        </div>
+        <OperationsSections techData={techData} />
         <div className=" lg:bg-black bg-white">
           <ProjectSection />
         </div>
-        {/* <ScrollSection/> */}
-        {/* <div className=" my-[30px]">
-          <BlogSection blogData={blogData}/>
-        </div> */}
         <Contact />
       </div>
     </div>

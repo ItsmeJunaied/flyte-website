@@ -8,9 +8,7 @@ import React from "react";
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
-// type PageProps = {
-//   params: { slug: string };
-// };
+
 
 const fetchCaseStudy = async (slug: string) => {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/case-studies/${slug}`);
@@ -46,7 +44,7 @@ export async function generateStaticParams() {
 
 const page = async ({ params }: PageProps) => {
   const { slug } = await params;
-  // const { slug } = params;
+
   return (
     <div>
       <CaseDetailsOverview params={slug} />

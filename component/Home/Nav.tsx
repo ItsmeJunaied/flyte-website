@@ -27,7 +27,8 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
     excludePages.includes(pathname) ||
     pathname === "/company" ||
     pathname.startsWith("/company/news&blogs/") ||
-    pathname.startsWith("/products/");
+    pathname.startsWith("/products/") ||
+    pathname.startsWith("/career/");
 
   // useEffect(() => {
   //   const handleScroll = () => {

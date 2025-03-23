@@ -32,6 +32,9 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({ industrydat
     setSelectedIndustry(industry);
   };
 
+  const colors = ["#f6f8fa", "#f0e6ff", "#e3f2fd", "#ffebee", "#e8f5e9"];
+  const hoverColors = ["#2B6CB0", "#6B46C1", "#3182CE", "#E53E3E", "#38A169"];
+
   return (
     <div
       className="bg-white py-10"
@@ -56,7 +59,7 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({ industrydat
             {industrydata.industries.map((industry, index) => (
               <div key={index}>
                 <div
-                  className={`w-fit text-[#718096] lg:hover:text-[#2B6CB0]  flex flex-row gap-2 items-center text-[16px] group ${
+                  className={`w-fit text-[#718096] lg:hover:text-[#2B6CB0]  flex flex-row gap-3 items-center text-[16px] group ${
                     selectedIndustry?.name === industry.name
                       ? "text-white lg:text-[#2B6CB0] bg-[#2B6CB0] lg:bg-transparent p-[10px] lg:p-0"
                       : " text-[#718096]"
@@ -66,7 +69,7 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({ industrydat
                   {/* Icon */}
                   {industry.icon && (
                     <i
-                      className={`lg:group-hover:text-[#2B6CB0] ${industry.icon} ${
+                      className={`lg:group-hover:text-[#2B6CB0] text-xl ${industry.icon} ${
                         selectedIndustry?.name === industry.name
                           ? "text-white lg:text-[#2B6CB0] icon"
                           : "text-[#718096] icon"
@@ -156,14 +159,16 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({ industrydat
               {selectedIndustry?.features.map((feature, index) => (
                 <div
                   key={index}
-                  className="max-w-full flex-grow h-[116.59px] px-6 py-8 bg-[#f6f8fa] hover:bg-[#2B6CB0] group transition duration-500 rounded-[10px] border border-[#d0d8df] justify-start items-center gap-6 inline-flex"
+                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = hoverColors[index % hoverColors.length])}
+                  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = colors[index % colors.length])}
+                  className="max-w-full flex-grow h-[116.59px] px-6 py-8 bg-[#f6f8fa] group transition duration-500 rounded-[10px] border border-[#d0d8df] justify-start items-center gap-6 inline-flex"
                 >
-                  {feature.icon && <i className={`${feature.icon} icon2 group-hover:text-yellow-300`}></i>}
+                  {feature.icon && <i className={`${feature.icon} icon2 group-hover:text-white text-3xl`}></i>}
                   <div className="w-full flex-col justify-start items-start gap-1.5 inline-flex">
-                    <div className="w-full text-[#2f4f4f] group-hover:text-yellow-300 text-[15px] font-bold">
+                    <div className="w-full text-[#2f4f4f] group-hover:text-white text-[15px] font-bold">
                       {feature.title}
                     </div>
-                    <div className="w-full text-[#838383] group-hover:text-white text-xs font-normal">
+                    <div className="w-full text-[#838383] group-hover:text-gray-300 text-xs font-normal">
                       {feature.description}
                     </div>
                   </div>
@@ -177,10 +182,10 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({ industrydat
                     .replace(/&/g, "and")
                     .replace(/\s+/g, "-")
                     .replace(/[^a-z0-9-]/g, "")}`}
-                  className="h-[116.59px] px-6 py-8 bg-[#2c3e50] hover:bg-[#2B6CB0] group rounded-[10px] border border-[#d0d8df] justify-center items-center gap-6 inline-flex transition-all duration-500 ease-in-out"
+                  className="h-[116.59px] px-6 py-8 bg-[#2c3e50] hover:bg-gradient-to-r from-gray-300 to-gray-500 group rounded-[10px] border border-[#d0d8df] justify-center items-center gap-6 inline-flex transition duration-500"
                 >
                   <div className="justify-center items-center gap-1.5 flex flex-row">
-                    <h1 className="self-stretch text-white text-[15px] font-extrabold group-hover:text-yellow-300">
+                    <h1 className="self-stretch text-white text-[15px] font-extrabold group-hover:text-black">
                       See All Features
                     </h1>
 
@@ -190,7 +195,7 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({ industrydat
                       height="19"
                       viewBox="0 0 32 19"
                       fill="none"
-                      className="text-white group-hover:text-yellow-300"
+                      className="text-white group-hover:text-black"
                     >
                       <path
                         d="M25 10.4746H7C6.44 10.4746 6 10.0346 6 9.47461C6 8.91461 6.44 8.47461 7 8.47461H25C25.56 8.47461 26 8.91461 26 9.47461C26 10.0346 25.56 10.4746 25 10.4746Z"

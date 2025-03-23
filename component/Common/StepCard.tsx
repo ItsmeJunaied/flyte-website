@@ -14,6 +14,8 @@ type CardProps = {
   developing_short_title?: string;
   developing_image?: string;
   developing_step?: DevelopingStep[];
+  button_path?: string;
+  button_name?: string;
 };
 
 const StepCard: React.FC<{ data: CardProps }> = ({ data }) => {
@@ -23,6 +25,8 @@ const StepCard: React.FC<{ data: CardProps }> = ({ data }) => {
     developing_short_title,
     developing_image,
     developing_step,
+    button_path,
+    button_name,
   } = data || {};
   return (
     <div className="bg-white py-5 lg:py-10">
@@ -239,12 +243,14 @@ const StepCard: React.FC<{ data: CardProps }> = ({ data }) => {
           </div>
         </div>
       </div>
-      <Link
-        className="px-8 py-3 mt-6 ml-5 bg-[#5856d6] hover:bg-[#4a46bc] rounded-md text-white w-fit lg:mx-auto block"
-        href=""
-      >
-        Start Hiring Now
-      </Link>
+      {button_path && button_name && (
+        <Link
+          className="px-8 py-3 mt-6 ml-5 bg-[#5856d6] hover:bg-[#4a46bc] rounded-md text-white w-fit lg:mx-auto block"
+          href={button_path}
+        >
+          {button_name}
+        </Link>
+      )}
     </div>
   );
 };

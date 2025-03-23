@@ -3259,7 +3259,7 @@ export const footerData = {
         "/images/iso1.png",
         "/images/iso2.png",
       ],
-      phoneNumbers: ["+880-171-320-3656 ", "+880-179-353-2035", "+1831 322 0444"],
+      phoneNumbers: ["+880-171-320-3656 ", "+880-179-353-2035"],
       emails: ["info@flytesolutions.com ", "sales@flytesolutions.com "],
       socialLinks: [
         {
@@ -3269,7 +3269,7 @@ export const footerData = {
         },
         {
           platform: "Twitter",
-          url: "https://twitter.com/example",
+          url: "https://x.com/flytesolutions",
           icon: "fa-twitter",
         },
         {
@@ -3355,27 +3355,32 @@ export const footerData = {
           name: "Industry",
           id: "industry",
           items: [
-            { name: "Fintech", path: "/industry/fintech" },
-            { name: "Startup", path: "/industry/startup" },
-            { name: "Logistics", path: "/industry/logistics" },
+            { name: "Fintech", path: "/industries/fintech" },
+            { name: "Startup", path: "/industries/startup" },
+            { name: "Logistics", path: "/industries/logistics" },
             {
               name: "Retail & Manufacturing",
-              path: "/industry/retail-manufacturing",
+              path: "/industries/retail-and-manufacturing",
             },
-            { name: "Enterprise", path: "/industry/enterprise" },
-            { name: "Education", path: "/industry/education" },
+            { name: "Enterprise", path: "/industries/enterprise" },
+            { name: "Education", path: "/industries/education" },
+            { name: "Real Estate", path: "/industries/real-estate" },
+            { name: "Medical & Healthcare", path: "/industries/medical-and-healthcare" },
+            { name: "Technology Company", path: "/industries/technology-company" },
+            { name: "Media & Entertainment", path: "/industries/media-and-entertainment" },
+            { name: "NGO", path: "/industries/ngo" },
           ],
         },
         {
           name: "Product",
           id: "product",
           items: [
-            { name: "Time2Task", path: "/product/time2task" },
-            { name: "Cloud ClockIn", path: "/product/cloud-clockin" },
-            { name: "Flyte Queue", path: "/product/flyte-queue" },
-            { name: "Flyte ERP", path: "/product/flyte-erp" },
-            { name: "Flyte CRM", path: "/product/flyte-crm" },
-            { name: "Flyte POS", path: "/product/flyte-pos" },
+            { name: "Time2Task", path: "/products/time-to-task" },
+            { name: "Cloud ClockIn", path: "/products/cloud-clockIn" },
+            { name: "Flyte Queue", path: "/products/flyte-queue" },
+            { name: "Flyte ERP", path: "/products/flyte-erp" },
+            { name: "Flyte CRM", path: "/products/flyte-crm" },
+            { name: "Flyte POS", path: "/products/flyte-pos" },
           ],
         },
         {
@@ -3400,8 +3405,8 @@ export const footerData = {
           name: "Company",
           id: "company",
           items: [
-            { name: "About Us", path: "/company/about-us" },
-            { name: "News & Blogs", path: "/company/news-blogs" },
+            { name: "About Us", path: "/company" },
+            { name: "News & Blogs", path: "/company/news&blogs" },
             { name: "Privacy Policy", path: "/company/privacy-policy" },
             { name: "Partner With Us", path: "/company/partner-with-us" },
           ],
