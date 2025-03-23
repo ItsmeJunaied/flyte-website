@@ -182,10 +182,10 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({ industrydat
                     .replace(/&/g, "and")
                     .replace(/\s+/g, "-")
                     .replace(/[^a-z0-9-]/g, "")}`}
-                  className="h-[116.59px] px-6 py-8 bg-[#2c3e50] hover:bg-[#2B6CB0] group rounded-[10px] border border-[#d0d8df] justify-center items-center gap-6 inline-flex transition-all duration-500 ease-in-out"
+                  className="h-[116.59px] px-6 py-8 bg-[#2c3e50] hover:bg-gradient-to-r from-gray-300 to-gray-500 group rounded-[10px] border border-[#d0d8df] justify-center items-center gap-6 inline-flex transition duration-500"
                 >
                   <div className="justify-center items-center gap-1.5 flex flex-row">
-                    <h1 className="self-stretch text-white text-[15px] font-extrabold group-hover:text-yellow-300">
+                    <h1 className="self-stretch text-white text-[15px] font-extrabold group-hover:text-black">
                       See All Features
                     </h1>
 
@@ -195,7 +195,7 @@ const IndustrySection: React.FC<{ industrydata: IndustryData }> = ({ industrydat
                       height="19"
                       viewBox="0 0 32 19"
                       fill="none"
-                      className="text-white group-hover:text-yellow-300"
+                      className="text-white group-hover:text-black"
                     >
                       <path
                         d="M25 10.4746H7C6.44 10.4746 6 10.0346 6 9.47461C6 8.91461 6.44 8.47461 7 8.47461H25C25.56 8.47461 26 8.91461 26 9.47461C26 10.0346 25.56 10.4746 25 10.4746Z"
