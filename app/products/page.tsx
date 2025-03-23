@@ -11,7 +11,7 @@ export const metadata = {
     "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
 };
 
-const page: React.FC = () => {
+const page = () => {
   const productsBannerData = productBannerData;
   return (
     <div>
