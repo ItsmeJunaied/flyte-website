@@ -16,9 +16,7 @@ const page: React.FC = () => {
   return (
     <div>
       <CommonBanner bannerData={productsBannerData} />
-
       <ProductsSections />
-
       <div className="container">
         <SuccessStories />
         <Contact />
