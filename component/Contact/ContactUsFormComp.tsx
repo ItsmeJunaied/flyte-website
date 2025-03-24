@@ -294,7 +294,7 @@ const ContactUsFormComp: React.FC = () => {
           <input
             type="submit"
             value={"Send Message"}
-            className="w-[180px] h-10 px-8 py-3 bg-[#5856d6] rounded-md text-white text-sm font-semibold"
+            className="w-[180px] h-10 px-8 py-3 bg-[#5856d6] rounded-md text-white text-sm font-semibold cursor-pointer"
           />
         </div>
       </div>

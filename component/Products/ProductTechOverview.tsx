@@ -1,19 +1,18 @@
 "use client";
 import React, { useState } from "react";
+import { Tech } from "./ProductOverview";
+
 
 type Overview = {
-  technologyStack: string[];
-  integrationsAvailable: string[];
+  technology: Tech[];
+  integrations: Tech[];
+  video: string;
+  image_one: string;
 };
 
-type Videos = {
-  bgImage: string;
-  videoUrl: string;
-};
-
-const ProductTechOverview: React.FC<{ overview: Overview; videos: Videos }> = ({ overview, videos }) => {
+const ProductTechOverview: React.FC<{ overview: Overview }> = ({ overview }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const { technologyStack, integrationsAvailable } = overview || {};
+  const { technology, integrations, video: videoUrl, image_one: bgImage } = overview || {};
   // open modal
   const openModal = () => {
     setIsOpen(true);
@@ -32,8 +31,8 @@ const ProductTechOverview: React.FC<{ overview: Overview; videos: Videos }> = ({
           <div className="p-2 md:p-5 bg-[#f9f9f9] shadow-[0px_0px_10px_10px_rgba(227,227,227,0.25)] grid grid-cols-2 sm:grid-cols-3 items-center gap-5">
             <h4 className="col-span-1 text-[#181a2a]/80 text-xs md:text-md xl:text-base">Technology Stack</h4>
             <span className="col-span-1 md:col-span-2 flex gap-2 sm:gap-5">
-              {technologyStack?.map((tech, index) => (
-                <img key={index} className="w-8 md:w-10 h-6 md:h-10" src={tech} alt={`Image-${index}`} />
+              {technology?.map((tech, index) => (
+                <img key={index} className="w-8 md:w-10 h-6 md:h-10" src={tech?.logo} alt={tech?.name} />
               ))}
             </span>
           </div>
@@ -42,8 +41,8 @@ const ProductTechOverview: React.FC<{ overview: Overview; videos: Videos }> = ({
               Integrations Available
             </h4>
             <span className="col-span-1 md:col-span-2 flex gap-2 sm:gap-5">
-              {integrationsAvailable?.map((tech, index) => (
-                <img key={index} className="w-8 md:w-10 h-6 md:h-10" src={tech} alt={`Image-${index}`} />
+              {integrations?.map((tech, index) => (
+                <img key={index} className="w-8 md:w-10 h-6 md:h-10" src={tech?.logo} alt={tech?.name} />
               ))}
             </span>
           </div>
@@ -55,7 +54,7 @@ const ProductTechOverview: React.FC<{ overview: Overview; videos: Videos }> = ({
           <div className="bg-black/30 relative">
             <img
               className="mix-blend-multiply w-full lg:h-[295.14px]"
-              src={videos?.bgImage}
+              src={bgImage}
               alt="product action image"
             />
             <button
@@ -80,13 +79,12 @@ const ProductTechOverview: React.FC<{ overview: Overview; videos: Videos }> = ({
       {isOpen && (
         <div className="fixed inset-0 bg-black/60 z-[100] px-5" onClick={closeModal}>
           <div className="flex justify-center items-center h-full">
-            <div className="w-[800px] border h-[400px] relative">
+            <div className="w-[800px] h-[400px] border bg-black/60 relative">
               <iframe
                 width="100%"
                 height="100%"
-                src={videos?.videoUrl}
+                src={videoUrl}
                 title="YouTube video player"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>

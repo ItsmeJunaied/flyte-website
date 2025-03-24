@@ -40,16 +40,16 @@ const ProductCards = () => {
                   </div>
                 </div>
                 {/* Product Tags */}
-                {/* <div className="self-stretch justify-between items-start flex-wrap gap-2 inline-flex">
-                  {product.tags.map((tag, tagIndex) => (
+                <div className="self-stretch justify-between items-start flex-wrap gap-2 inline-flex">
+                  {product?.tag?.map((tagItem:string, tagIndex:number) => (
                     <div
                       key={tagIndex}
                       className="px-2 py-[6.36px] bg-[#d0d0d0]/20 rounded-[3.18px] backdrop-blur-[9.55px] flex-col justify-center items-center gap-2 inline-flex"
                     >
-                      <div className="text-[#373737] text-xs font-normal font-['Noto Sans']">{tag}</div>
+                      <div className="text-[#373737] text-xs font-normal font-['Noto Sans']">{tagItem}</div>
                     </div>
                   ))}
-                </div> */}
+                </div>
                 {/* Product Description */}
                 <div className="self-stretch px-2 justify-center items-center gap-2.5 inline-flex">
                   <div className="grow shrink basis-0 text-[#373737] text-xs font-light font-['Noto Sans']">

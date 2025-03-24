@@ -174,7 +174,7 @@ export const navbarData = {
           name: "Time2Task",
           icon: "fa-box",
           description: "A task management tool to plan, assign, and track project tasks efficiently.",
-          path: "/products/time-to-task",
+          path: "/products/time2task",
         },
         {
           name: "Cloud Clock In",
