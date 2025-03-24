@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { FaRegPaperPlane } from "react-icons/fa";
+
 type KeyPoint = {
   id: number;
   title: string;
@@ -47,9 +47,9 @@ const ContactUsKeyPointComp: React.FC<ContactUsKeyPointCompProps> = ({
         <div className=" w-full flex justify-center">
           <Link
             href={`/schedule-consultation`}
-            className="h-10 px-6 py-2.5 bg-white rounded-md shadow-[0px_0px_10px_10px_rgba(230,230,230,0.25)] border border-[#dddddd] justify-start items-start gap-2.5 inline-flex overflow-hidden"
+            className="h-10 px-6 py-2.5 bg-white hover:bg-black group transition duration-500 rounded-md shadow-[0px_0px_10px_10px_rgba(230,230,230,0.25)] border border-[#dddddd] justify-start items-start gap-2.5 inline-flex overflow-hidden"
           >
-            <p className="text-[#191919] text-sm font-semibold font-['DM Sans']">
+            <p className="text-[#191919] group-hover:text-white transition duration-500 text-sm font-semibold font-['DM Sans']">
               Book A Consultation
             </p>
           </Link>
