@@ -30,7 +30,7 @@ const ProductGalleryAndTech: React.FC<{ product: productData }> = ({ product }) 
     <div className="container mb-5">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
         <ProductGallery galleryImages={images} />
-        <ProductTechOverview overview={{ technology, integrations, video, image_one }} />
+        <ProductTechOverview overview={{ title, technology, integrations, video, image_one }} />
       </div>
 
       {/* details and features section  */}

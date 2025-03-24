@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import { Tech } from "./ProductOverview";
 
-
 type Overview = {
+  title: string;
   technology: Tech[];
   integrations: Tech[];
   video: string;
@@ -12,7 +12,7 @@ type Overview = {
 
 const ProductTechOverview: React.FC<{ overview: Overview }> = ({ overview }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const { technology, integrations, video: videoUrl, image_one: bgImage } = overview || {};
+  const { title, technology, integrations, video: videoUrl, image_one: bgImage } = overview || {};
   // open modal
   const openModal = () => {
     setIsOpen(true);
@@ -52,11 +52,7 @@ const ProductTechOverview: React.FC<{ overview: Overview }> = ({ overview }) => 
         <div>
           <h2 className="text-xl font-semibold mb-2 md:mb-3 mt-4 md:mt-5">See It in Action</h2>
           <div className="bg-black/30 relative">
-            <img
-              className="mix-blend-multiply w-full lg:h-[295.14px]"
-              src={bgImage}
-              alt="product action image"
-            />
+            <img className="mix-blend-multiply w-full lg:h-[295.14px]" src={bgImage} alt={title} />
             <button
               onClick={openModal}
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -84,7 +80,7 @@ const ProductTechOverview: React.FC<{ overview: Overview }> = ({ overview }) => 
                 width="100%"
                 height="100%"
                 src={videoUrl}
-                title="YouTube video player"
+                title={title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
