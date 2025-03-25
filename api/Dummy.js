@@ -389,7 +389,11 @@ export const brandData = {
 // service
 export const serviceData = [
   {
-    title: "Team Extension",
+    id:1,
+    title: "Transform Your Business with Team Extension",
+    short_title:"Team Extension",
+    short_description:"Expand your development capabilities with dedicated teams that integrate seamlessly with your existing operations.",
+    subTitle:"Team Extension",
     description:
       "Expand your development capabilities with dedicated teams that integrate seamlessly with your existing operations.",
     keywords: ["outsourcing", "staffing", "developers"],
@@ -425,7 +429,11 @@ export const serviceData = [
     heroImage: "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
   },
   {
-    title: "Custom Software Development",
+    id:2,
+    title: "Transform Your Business with Custom Software Solutions",
+    short_title:"Custom Software Development",
+    short_description:"Tailored software solutions that align with your business needs, ensuring seamless integration and efficiency.",
+    subTitle:"Custom Software Development",
     description:
       "Tailored software solutions that align with your business needs, ensuring seamless integration and efficiency.",
     keywords: ["solutions", "design", "apps"],
@@ -466,7 +474,11 @@ export const serviceData = [
     heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
   },
   {
-    title: "Enterprise Software Development",
+    id:3,
+    title: "Transform Your Business with Enterprise Software Development",
+    short_title:"Enterprise Software Development",
+    short_description:"Build robust enterprise-level software to support large-scale operations, improve efficiency, and foster innovation.",
+    subTitle:"Enterprise Software Development",
     description:
       "Build robust enterprise-level software to support large-scale operations, improve efficiency, and foster innovation.",
     keywords: ["scalable", "automation", "growth"],
@@ -507,7 +519,11 @@ export const serviceData = [
     heroImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
   },
   {
-    title: "Mobile App Development",
+    id:4,
+    title: "Transform Your Business with Enterprise Software Development",
+    short_title:"Mobile App Development",
+    short_description:"Design and develop mobile applications for iOS and Android platforms, enhancing user experience and engagement.",
+    subTitle:"Mobile App Development",
     description:
       "Design and develop mobile applications for iOS and Android platforms, enhancing user experience and engagement.",
     keywords: ["iOS", "Android", "apps"],
@@ -548,7 +564,11 @@ export const serviceData = [
     heroImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
   },
   {
-    title: "QA & Testing",
+    id:5,
+    title: "Transform Your Business with MVP Development",
+    short_title:"QA & Testing",
+    short_description:"Ensure software quality with comprehensive testing services, from functional to performance testing.",
+    subTitle:"QA & Testing",
     description:
       "Ensure software quality with comprehensive testing services, from functional to performance testing.",
     keywords: ["testing", "automation", "bugs"],
@@ -589,7 +609,11 @@ export const serviceData = [
     heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
   },
   {
-    title: "MVP Development",
+    id:6,
+    title: "Transform Your Business with MVP Development",
+    short_title:"MVP Development",
+    short_description:"Build a minimum viable product quickly to test your ideas, validate concepts, and enter the market faster.",
+    subTitle:"MVP Development",
     description:
       "Build a minimum viable product quickly to test your ideas, validate concepts, and enter the market faster.",
     keywords: ["MVP", "validation", "startup"],
@@ -628,41 +652,7 @@ export const serviceData = [
       "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
     heroButton: "Book A Consulation",
     heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
-  },
-  {
-    title: "Cloud Computing Solutions",
-    description:
-      "Implement cloud solutions that improve scalability, security, and collaboration for businesses of all sizes.",
-    keywords: ["cloud", "security", "infrastructure"],
-    image: "/images/service3.png",
-    features: [
-      {
-        icon: "fas fa-network-wired ",
-        title: "Network Infrastructure",
-        description: "Building robust IT networks for enterprise.",
-      },
-      {
-        icon: "fas fa-users-cog ",
-        title: "Enterprise Resource Planning",
-        description: "Integrating business functions with ERP systems.",
-      },
-      {
-        icon: "fas fa-chart-bar ",
-        title: "Business Analytics",
-        description: "Leveraging data to drive business decisions.",
-      },
-      {
-        icon: "fas fa-lock ",
-        title: "Security Solutions",
-        description: "Providing enterprise-level security services.",
-      },
-      {
-        icon: "fas fa-cloud ",
-        title: "Cloud Computing",
-        description: "Empowering businesses with scalable cloud solutions.",
-      },
-    ],
-  },
+  }
 ];
 
 // custom software data for service details page

@@ -5,7 +5,7 @@ import Title from "@/component/Common/Title";
 import Contact from "@/component/Contact/Contact";
 import ServiceCard from "@/component/Services/ServiceCard";
 import React from "react";
-import { servicesBannerData } from "@/api/Dummy";
+import { servicesBannerData, serviceData } from "@/api/Dummy";
 
 export const metadata = {
   title: "Services | Flyte Solutions Ltd.",
@@ -21,10 +21,13 @@ const page = () => {
           <Subtitle Subtitle={"Our Services"} />
           <Title width={"lg:w-full"} fontSize={" text-lg lg:text-3xl"} title={"Core Development Services"} />
         </div>
-        <ServiceCard reverse={true} />
-        <ServiceCard reverse={false} />
-        <ServiceCard reverse={true} />
-        <ServiceCard reverse={false} />
+        <div>
+          {serviceData?.map((service, index) => (
+            <div key={index}>
+              <ServiceCard service={service} />
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="container">

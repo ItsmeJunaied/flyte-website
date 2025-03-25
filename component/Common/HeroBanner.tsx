@@ -18,7 +18,7 @@ const HeroBanner: React.FC<{ bannerData: HeroBannerProps }> = ({ bannerData }) =
         backgroundImage: `url(${image})`
       }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-60" />
+      <div className="absolute inset-0 bg-black bg-opacity-80" />
       <div className="container pb-8 lg:pb-16 flex flex-col-reverse lg:flex-row gap-8 lg:gap-16 relative">
         <div className="w-full lg:w-[60%] flex flex-col justify-between space-y-8 lg:space-y-16">
           <div>

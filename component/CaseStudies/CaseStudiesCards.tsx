@@ -51,8 +51,8 @@ const CaseStudiesCards = () => {
       ) : (
         <div className="rounded-t-[60px] lg:py-5 lg:px-0 w-full flex justify-center items-center">
           <div className="container">
-            <div className="flex flex-col justify-center items-center gap-3 w-full">
-              <Subtitle Subtitle="Explore Our Success Stories" />
+            <div className="flex flex-col justify-center items-center gap-1 w-full">
+              <Subtitle Subtitle="Case Stuies" />
               <Title
                 width="w-full"
                 padding="px-2 lg:px-0"
@@ -63,7 +63,7 @@ const CaseStudiesCards = () => {
             </div>
 
             {/* category tab  */}
-            <div className="flex flex-row flex-wrap gap-2 mt-4 lg:mt-16">
+            <div className="flex flex-row flex-wrap gap-2 mt-4 lg:mt-10">
               {categories?.map((categroy: Category, index: number) => (
                 <button
                   key={index}
@@ -80,7 +80,7 @@ const CaseStudiesCards = () => {
             </div>
 
             {/* case studies  */}
-            <div className="pt-5 lg:pt-20">
+            <div className="pt-5 lg:pt-12">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10">
                 {caseStudies?.data?.data?.length === 0 ? (
                   <div className="col-span-2 text-center text-lg text-gray-500 py-5 lg:py-20">

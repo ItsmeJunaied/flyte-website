@@ -4,7 +4,7 @@ import React from "react";
 type DevelopingStep = {
   id: number;
   case_studies_id: number;
-  title: string;
+  developing_step_title?: string;
   description: string;
 };
 
@@ -225,7 +225,7 @@ const StepCard: React.FC<{ data: CardProps }> = ({ data }) => {
                     {index + 1}
                   </span>
                   <h4 className="text-center text-[#3b3c4e] text-base font-bold font-['Open Sans']">
-                    {step?.title}
+                    {step?.developing_step_title}
                   </h4>
                 </div>
                 <div className="flex gap-3.5">
