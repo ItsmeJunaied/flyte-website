@@ -114,9 +114,9 @@ const Topreads = () => {
                   {card?.short_description}
                 </div>
                 <div className="flex-col justify-start items-center flex">
-                  <div className=" border-b-[1px] border-black hover:border-btnColor px-4">
+                  <div className="border-black hover:border-btnColor">
                     <Link href={`news&blogs/${card?.slug}`}>
-                      <div className="text-black hover:text-btnColor">View Post</div>
+                      <div className="text-black hover:text-btnColor text-xs">View Post</div>
                     </Link>
                   </div>
                 </div>
