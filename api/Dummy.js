@@ -5,7 +5,7 @@ export const navbarData = {
       name: "Hire",
       type: "dropdown",
       path: "/hire",
-      description: "Explore innovative solutions designed to simplify processes . ",
+      description: "Hire skilled developers to bring expertise and efficiency to your projects, ensuring outstanding results every time.",
       features: [
         {
           name: "Frontend Developers",
@@ -49,7 +49,7 @@ export const navbarData = {
       name: "Industries",
       type: "dropdown",
       path: "/industries",
-      description: "Discover the industries we serve.",
+      description: "Our expertise covers a wide range of industries, addressing the specific challenges of each sector. From healthcare and finance to e-commerce, education, and more, we create innovative, scalable solutions that drive efficiency and success in your industry.",
       features: [
         {
           name: "Fintech",
@@ -124,7 +124,7 @@ export const navbarData = {
       name: "Services",
       type: "dropdown",
       path: "/services",
-      description: "Explore the range of services we offer.",
+      description: "We take care of all your technical needs, from concept to execution and beyond. Whether it's development, optimization, or scaling, we’re committed to delivering and continuously improving your product so you can focus on growth.",
       features: [
         {
           name: "Team Extension",
@@ -168,7 +168,7 @@ export const navbarData = {
       name: "Products",
       type: "dropdown",
       path: "/products",
-      description: "Discover our range of innovative products.",
+      description: "Explore innovative solutions designed to simplify processes, enhance efficiency, and drive growth across industries.",
       features: [
         {
           name: "Time2Task",
@@ -222,21 +222,23 @@ export const navbarData = {
       name: "Company",
       type: "dropdown",
       path: "/company",
-      description: "Learn more about our company.",
+      description: "Explore who we are, what we stand for, and how we’re shaping the future. Stay informed with the latest updates, insights, and stories that define our journey and inspire innovation.",
       features: [
         {
           name: "About Us",
-          icon: "fa-info-circle",
+          icon: "fa-globe",
           description:
             "Learn about our mission, vision, and the values that drive our commitment to excellence. Discover the story behind our journey and what makes us a trusted partner for businesses worldwide.",
           path: "/company/about-us",
+          btnText:"Explore About Us"
         },
         {
           name: "News & Blogs",
-          icon: "fa-users",
+          icon: "fa-newspaper",
           description:
             "Stay updated with the latest company news, industry insights, and expert opinions. Dive into our blogs for valuable tips and updates shaping the future of technology and business.",
           path: "/company/news&blogs",
+          btnText:"Read News & Blogs"
         },
       ],
     },
