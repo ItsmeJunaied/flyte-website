@@ -14,7 +14,7 @@ const ProductsHomeComp:React.FC = () => {
         }
       />
 
-      <div className=" mt-[24px] flex flex-row">
+      <div className="mt-8 flex flex-row">
         <ProductMarquee />
       </div>
     </div>

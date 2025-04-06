@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Title from "../Common/Title";
 import Subtitle from "../Common/Subtitle";
 import Link from "next/link";
 
@@ -16,20 +15,21 @@ type ServiceSectionProps = {
   serviceData: ServiceData[];
 };
 const ServiceSection: React.FC<ServiceSectionProps> = ({ serviceData }) => {
-  const headertitle: string = "Empowering your vision through a range";
+  
   return (
     <div
-      className="  flex flex-col gap-5 "
+      className="flex flex-col gap"
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
     >
-      <div className="  ">
+      <div>
         <Subtitle Subtitle="Our Services" />
-        <Title title={headertitle} />
+        {/* <Title title={headertitle} /> */}
+        <h2 className="max-w-[624px] justify-start text-black text-2xl lg:text-4xl font-semibold lg:leading-[50px]">Empowering your vision through a range of professional services</h2>
       </div>
 
       <div
-        className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 my-3 lg:my-10"
+        className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-3 lg:mt-10 mb-8"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
       >
@@ -87,9 +87,9 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({ serviceData }) => {
           ))}
       </div>
 
-      <div className=" w-full flex justify-center items-center">
-        <Link href="/services" className="h-[42px] px-8 py-3 bgGradientNevyBlue rounded-md justify-start items-start gap-2.5 inline-flex overflow-hidden">
-          <div className="text-white text-sm font-semibold font-['DM Sans']">
+      <div className="w-full flex justify-center items-center -mb-2">
+        <Link href="/services" className="px-8 py-3 bgGradientNevyBlue rounded-md">
+          <div className="text-white text-sm font-semibold">
             See All Services
           </div>
         </Link>

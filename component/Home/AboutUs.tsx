@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Title from "../Common/Title";
 import Subtitle from "../Common/Subtitle";
 // import { FaCheckCircle } from "react-icons/fa";
 import Link from "next/link";
@@ -11,10 +10,10 @@ const AboutUs: React.FC = () => {
   return (
     <div className="container pt-12">
       <Subtitle Subtitle="About Company" />
-      <Title padding="px-0" title={"Solutions that Drive Your Business Forward"} />
+      <h2 className="max-w-[492px] justify-start text-black text-2xl lg:text-4xl font-semibold">Solutions that Drive Your Business Forward</h2>
 
       <div>
-        <div className="  py-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="pt-6 pb-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div className="flex flex-col gap-8 justify-center w-full  items-center ">
             <div className=" w-full max-h-[450px]  ">
@@ -126,7 +125,7 @@ const AboutUs: React.FC = () => {
             {/* Learn More Button */}
             <div className="w-full flex lg:justify-start justify-center lg:items-start items-center">
               <Link className="w-fit h-fit bgGradientNevyBlue px-[32px] py-[12px] rounded-lg mt-5 text-white" href={"/company"}>
-                <p>Learn More About Our Business Solutions</p>
+                <p>Explore Business Solutions</p>
               </Link>
             </div>
           </div>

@@ -28,7 +28,7 @@ const FooterExpertise: React.FC<{ expertise: Expertise }> = ({ expertise }) => {
             <ul className="list-none flex flex-col gap-3">
               {subsection?.items.map((item, subIndex) => (
                 <li key={subIndex}>
-                  <Link href={item?.path} className="text-[#EBEBEB] text-sm link link-hover">
+                  <Link href={item?.path} className="text-[#eaeaea] text-sm link link-hover">
                     {item?.name}
                   </Link>
                 </li>

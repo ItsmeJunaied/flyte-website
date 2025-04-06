@@ -32,11 +32,11 @@ const FooterServices: React.FC<{ services: Services }> = ({ services }) => {
             <ul className="list-none flex flex-col gap-3">
               {subsection?.items.map((item, subIndex) => (
                 // <li key={subIndex}>
-                //   <Link href={item?.path} className="text-[#EBEBEB] text-sm link link-hover">
+                //   <Link href={item?.path} className="text-[#eaeaea] text-sm link link-hover">
                 //     {item?.name}
                 //   </Link>
                 // </li>
-                <li key={subIndex}>{item}</li>
+                <li className="text-[#eaeaea] text-sm link link-hover" key={subIndex}>{item}</li>
               ))}
             </ul>
           </div>

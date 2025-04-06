@@ -6,7 +6,7 @@ type SubTitleProps = {
 const Subtitle: React.FC<SubTitleProps> = ({ Subtitle }) => {
   return (
     <div>
-      <h1 className="pb-3 text-lg font-semibold text-btnColor font-['DM Sans']   lg:px-0">
+      <h1 className="pb-2.5 text-lg text-btnColor font-['DM Sans'] lg:px-0">
         {Subtitle}
       </h1>
     </div>

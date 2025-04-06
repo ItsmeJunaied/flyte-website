@@ -20,11 +20,11 @@ const FooterContact: React.FC<{ footerContact: FooterContact }> = ({ footerConta
   return (
     <div className="flex flex-col gap-4">
       <img className="w-[100px] h-[84px]" src={logo_small} alt={title} />
-      <h6 className="footer-title text-[#F5F5F5] text-lg">Contact Us</h6>
+      <h6 className="footer-title text-neutral-100 opacity-100 text-lg">Contact Us</h6>
 
       {/* Location */}
       <div className="max-w-[380px] flex flex-col gap-2">
-        <h6 className="footer-title text-[#F5F5F5]">Location</h6>
+        <h6 className="footer-title text-[#efefef] opacity-80">Location</h6>
         <p className="w-[85%] text-wrap link link-hover text-[#e0e0e0] text-sm font-normal">{address}</p>
       </div>
 
@@ -43,7 +43,7 @@ const FooterContact: React.FC<{ footerContact: FooterContact }> = ({ footerConta
 
       {/* Phone Numbers */}
       <div className="max-w-[380px] flex flex-col gap-2">
-        <h6 className="footer-title text-[#F5F5F5]">Phone</h6>
+        <h6 className="footer-title text-[#F5F5F5] opacity-80">Phone</h6>
         <a href={`tell:${mobile1}`} className="link link-hover text-[#e0e0e0] text-sm font-normal">
           {mobile1}
         </a>
@@ -54,7 +54,7 @@ const FooterContact: React.FC<{ footerContact: FooterContact }> = ({ footerConta
 
       {/* Emails */}
       <div className="max-w-[380px] flex flex-col gap-2">
-        <h6 className="footer-title text-[#F5F5F5]">Email</h6>
+        <h6 className="footer-title text-[#F5F5F5] opacity-80">Email</h6>
         <a href={`mailto:${contact_email}`} className="link link-hover text-[#e0e0e0] text-sm font-normal">
           {contact_email}
         </a>
@@ -65,7 +65,7 @@ const FooterContact: React.FC<{ footerContact: FooterContact }> = ({ footerConta
 
       {/* Social Links */}
       <div className="max-w-[380px] flex flex-col gap-2">
-        <h6 className="footer-title text-[#F5F5F5]">Follow Us</h6>
+        <h6 className="footer-title text-[#F5F5F5] opacity-80">Follow Us</h6>
         <div className="flex flex-row gap-2 items-center">
           <a href={fb} target="_blank" rel="noopener noreferrer" className="text-[#e0e0e0] text-lg">
             <i className="fab fa-facebook"></i>
@@ -84,7 +84,7 @@ const FooterContact: React.FC<{ footerContact: FooterContact }> = ({ footerConta
 
       {/* Payment Methods */}
       <div className="max-w-[380px] flex flex-col gap-2 mt-10">
-        <h6 className="footer-title text-[#F5F5F5]">Payment Methods</h6>
+        <h6 className="footer-title text-[#F5F5F5] opacity-80">Payment Methods</h6>
         <div className="flex flex-row gap-2 items-center">
           <img src="/images/visa.png" alt="visa-payment-method" />
           <img src="/images/mastercard.png" alt="mastercard-payment-method" />

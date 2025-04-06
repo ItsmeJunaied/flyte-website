@@ -3,7 +3,6 @@ import { contactUsKeyPoints } from "@/api/Dummy";
 import ContactUsKeyPointComp from "./ContactUsKeyPointComp";
 import ContactUsFormComp from "./ContactUsFormComp";
 import Title from "../Common/Title";
-import Subtitle from "../Common/Subtitle";
 
 type contsctUsData = {
   id: number;
@@ -22,7 +21,7 @@ const Contact: React.FC<contactUsKeyPointsProps> = ({ contsctUsData }) => {
       <div className="w-full ">
         <div className="mb-5 flex w-full items-center justify-center ">
           <div className="w-full lg:mb-5">
-            <Subtitle Subtitle="Contact Us" />
+            {/* <Subtitle Subtitle="Contact Us" /> */}
             <Title
               width="w-full"
               title={headertitle}

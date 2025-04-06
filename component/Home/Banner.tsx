@@ -30,10 +30,10 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
       }}
       className="flex flex-col pt-10 lg:pt-20 pb-10 lg:pb-0 lg:h-[740px] justify-center items-start gap-5 "
     >
-      <div className=" container   flex flex-col gap-[24px]">
+      <div className=" container flex flex-col gap-[24px]">
         <div className="w-full flex justify-start items-start">
           <h2
-            className="bannerTitle max-w-[1000px] text-start text-white text-[32px] lg:text-5xl font-bold leading-9  lg:leading-[80px] tracking-normal"
+            className="bannerTitle max-w-[1000px] text-start text-white text-2xl lg:text-5xl font-semibold leading-10 lg:leading-[64px]"
             dangerouslySetInnerHTML={{
               __html: bannerData.title.replace(
                 /<span>/g,
@@ -43,8 +43,8 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
           ></h2>
         </div>
 
-        <div className=" w-full flex justify-start items-start">
-          <h2 className=" max-w-[600px] text-start text-[#dddddd] text-xl font-normal font-['DM Sans']  ">
+        <div className="w-full flex justify-start items-start">
+          <h2 className="max-w-[840px] text-start text-white text-base lg:text-xl font-normal leading-7 lg:leading-loose">
             {bannerData.description}
           </h2>
         </div>
@@ -68,7 +68,7 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
         <div className=" flex flex-col lg:flex-row gap-2">
           <Link href={`/schedule-consultation`}
             id="alertButton"
-            className=" w-fit uppercase px-[32px] py-[12px] border border-btnColor hover:border-pink-500 bg-btnColor hover:bg-pink-500 text-white rounded-md"
+            className="w-fit px-[32px] py-[12px] border border-btnColor hover:border-pink-500 bg-btnColor hover:bg-pink-500 text-white rounded-md"
           >
             Book A Consultation
           </Link>
