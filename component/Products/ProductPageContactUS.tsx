@@ -3,7 +3,7 @@ import React from "react";
 
 const ProductPageContactUS = () => {
   return (
-    <div className="w-[400px] h-[424px] px-8 py-10 bg-[#31323c] rounded-xl flex-col justify-between items-start inline-flex">
+    <div className="w-[400px] h-[430px] px-8 py-10 bg-[#31323c] rounded-xl flex-col justify-between items-start inline-flex">
       <div className="self-stretch text-[#f7f7f7] text-[32px] font-semibold font-['Noto Sans']">
         Explore Custom Product Solutions
       </div>

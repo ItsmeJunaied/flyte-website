@@ -4730,7 +4730,7 @@ export const induscriedBannerData = {
   description:
     "We deliver solutions designed to meet industry-specific needs and help you achieve your goals.",
   btnName: "Book A Consultation",
-  btnPath: "/contact-us",
+  btnPath: "/schedule-consultation",
 };
 
 // product
@@ -4741,7 +4741,7 @@ export const productBannerData = {
   description:
     "Explore our range of products designed to enhance your operations, boost productivity, and help you achieve your goals effortlessly.",
   btnName: "Book A Consultation",
-  btnPath: "/hire/application-form",
+  btnPath: "/hire/schedule-consultation",
 };
 
 // product cards
@@ -6204,7 +6204,7 @@ export const servicesBannerData = {
   description:
     "We provide expert services to enhance your operations, improve efficiency, and help you achieve your goals.",
   btnName: "Book A Consultation",
-  btnPath: "/about",
+  btnPath: "/schedule-consultation",
 };
 
 export const servicesData = [
@@ -6272,7 +6272,7 @@ export const NewsBlogsBannerData = {
   description:
     "Explore expert perspectives, industry trends, and practical advice through our news and blogs.",
   btnName: "Book A Consultation",
-  btnPath: "/contact-us",
+  btnPath: "/schedule-consultation",
 };
 
 // Career data
