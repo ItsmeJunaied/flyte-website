@@ -112,7 +112,9 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                           <div className="dropdown__content">
                             <div className="lg:container grid grid-cols-1 lg:grid-cols-3 lg:gap-5">
                               <div className="lg:col-span-1 hidden lg:flex flex-col gap-4 flex-shrink-0 mt-5">
-                                <h1 className="text-lg font-bold text-btnColor ">{item?.path === "/company" ? "Discover Flyte" : item.name}</h1>
+                                <h1 className="text-lg font-bold text-btnColor ">
+                                  {item?.path === "/company" ? "Discover Flyte" : item.name}
+                                </h1>
                                 <p className=" text-sm text-[#131313B2]">{item.description}</p>
                                 {item?.path === "/company" ? (
                                   ""
@@ -147,12 +149,9 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                                             </div>
                                           </div>
                                           <div className="mt-6 hidden lg:block w-fit mx-auto">
-                                            <Link
-                                              href={feature.path}
-                                              className="px-6 py-1.5 text-[10px] font-semibold hover:text-white bg-white hover:bg-black transition duration-300 rounded-md shadow-[0px_0px_10px_10px_rgba(230,230,230,0.25)] outline outline-1 outline-offset-[-1px] outline-[#dddddd]"
-                                            >
+                                            <button className="px-6 py-1.5 text-[10px] font-semibold hover:text-white bg-white hover:bg-black transition duration-300 rounded-md shadow-[0px_0px_10px_10px_rgba(230,230,230,0.25)] outline outline-1 outline-offset-[-1px] outline-[#dddddd]">
                                               {feature?.btnText}
-                                            </Link>
+                                            </button>
                                           </div>
                                         </div>
                                       ) : (

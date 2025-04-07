@@ -44,12 +44,13 @@ const Pagination: React.FC<PaginationProps> = ({
       {/* previous button  */}
       <button
         onClick={handlePrevious}
-        className={`text-xs lg:text-sm w-10 h-10 text-white bgGradientNevyBlue rounded-full ${
+        className={` text-sm font-semibold w-10 h-10 text-white bgGradientNevyBlue rounded-full ${
           currentPage === 1 ? "cursor-not-allowed opacity-50" : "cursor-pointer"
         }`}
         disabled={currentPage === 1}
       >
-        <i className="fa-solid fa-less-than"></i>
+        {/* <i className="fa-solid fa-less-than"></i> */}
+        Prev
       </button>
 
       <span className="px-4 py-2 text-sm font-semibold">
@@ -59,12 +60,13 @@ const Pagination: React.FC<PaginationProps> = ({
       {/* next button  */}
       <button
         onClick={handleNext}
-        className={`text-xs lg:text-sm w-10 h-10 text-white bgGradientNevyBlue rounded-full ${
-          currentPage === totalPages ? "cursor-not-allowed opacity-50" : "cursor-pointer hover:bg-blue-600"
+        className={`text-sm font-semibold w-10 h-10 ${
+          currentPage === totalPages ? "cursor-not-allowed text-[#cccccc]" : "text-[#333333] cursor-pointer hover:bg-blue-600"
         }`}
         disabled={currentPage === totalPages}
       >
-        <i className="fa-solid fa-greater-than"></i>
+        {/* <i className="fa-solid fa-greater-than"></i> */}
+         Next
       </button>
     </div>
   </div>

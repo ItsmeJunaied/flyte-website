@@ -42,7 +42,7 @@ const CaseStudiesCards = () => {
   const { categories } = contentCagetories?.data || {};
   const { current_page, total, per_page } = caseStudies?.data || {};
 
-  console.log("Loading", isLoading);
+  console.log("caseStudies?.data", caseStudies?.data);
 
   return (
     <div>
