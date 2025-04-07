@@ -34,13 +34,22 @@ const CaseStudiesCards = () => {
   });
 
   const { data: contentCagetories, isLoading: isLoadingContent } = useGetContentCategoryQuery("");
-  const { data: caseStudies, isLoading } = useGetCategoryBasedCaseStudiesQuery({
+  const {
+    data: caseStudies,
+    isLoading,
+    isFetching,
+  } = useGetCategoryBasedCaseStudiesQuery({
     category_id: selectedCategory?.id ?? 0,
     page: currentPage,
   });
 
+  const handlePageChange = (newPage: number) => {
+    setCurrentPage(newPage);
+    // The query will automatically refetch because currentPage changed
+  };
+
   const { categories } = contentCagetories?.data || {};
-  const { current_page, total, per_page } = caseStudies?.data || {};
+  const { current_page, last_page } = caseStudies?.data || {};
 
   console.log("caseStudies?.data", caseStudies?.data);
 
@@ -106,7 +115,10 @@ const CaseStudiesCards = () => {
 
                       <div className="flex flex-col lg:flex-row">
                         {caseStudy.tag.map((tag, index: number) => (
-                          <div key={index} className="w-full px-6 py-4 bg-[#2b3e50] h-11 border-r-2 border-[#dda380]">
+                          <div
+                            key={index}
+                            className="w-full px-6 py-4 bg-[#2b3e50] h-11 border-r-2 border-[#dda380]"
+                          >
                             <p className="text-white text-xs font-semibold text-center">{tag}</p>
                           </div>
                         ))}
@@ -139,12 +151,21 @@ const CaseStudiesCards = () => {
             </div>
 
             {/* pagination  */}
-            <Pagination
+            {/* <Pagination
               currentPage={current_page}
               setCurrentPage={setCurrentPage}
               total={total}
               perPage={per_page}
-            />
+            /> */}
+
+            {caseStudies?.data && (
+              <Pagination
+                current_page={current_page}
+                last_page={last_page}
+                onPageChange={handlePageChange}
+                isLoading={isFetching}
+              />
+            )}
           </div>
         </div>
       )}
