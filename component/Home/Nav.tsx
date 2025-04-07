@@ -120,7 +120,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                                   ""
                                 ) : (
                                   <Link
-                                    className="bg-btnColor w-fit h-fit text-white px-6 py-3 rounded-lg"
+                                    className="bgGradientNevyBlue w-fit h-fit text-white px-6 py-3 rounded-lg"
                                     href={item?.path}
                                   >
                                     <p className="">Learn more</p>
