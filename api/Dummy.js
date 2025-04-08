@@ -1134,6 +1134,41 @@ export const techData = {
         },
       ],
     },
+    steps: {
+      developing_title: "Frontend Developer",
+      developing_short_description: "Crafting responsive, user-friendly, and high-performance web interfaces using modern technologies.",
+      developing_short_title: "UI/UX & Web Interfaces",
+      developing_image: "/images/hire/frontend.webp",
+      developing_step: [
+        {
+          id: 1,
+          developing_step_title: "Requirement Analysis",
+          description: "Understanding client needs, target users, and project goals to shape the frontend structure."
+        },
+        {
+          id: 2,
+          developing_step_title: "Wireframing & Design",
+          description: "Creating wireframes and visual designs that define layout, UI components, and user flow."
+        },
+        {
+          id: 3,
+          developing_step_title: "Component Development",
+          description: "Building reusable UI components using React, Tailwind CSS, and other modern tools."
+        },
+        {
+          id: 4,
+          developing_step_title: "Integration & Responsiveness",
+          description: "Connecting frontend with backend APIs and ensuring seamless performance across all devices."
+        },
+        {
+          id: 5,
+          developing_step_title: "Testing & Optimization",
+          description: "Performing UI testing, fixing bugs, and optimizing for speed, accessibility, and SEO."
+        }
+      ],
+      button_path: "/hire/application-form",
+      button_name: "Get Started",
+    }
   },
 
   reactjs: {
@@ -1257,6 +1292,41 @@ export const techData = {
         },
       ],
     },
+    steps: {
+      developing_title: "React JS Development",
+      developing_short_description: "Building high-performance, scalable, and interactive user interfaces using React JS.",
+      developing_short_title: "React-Based Interfaces",
+      developing_image: "/images/hire/react-js.webp", // Replace with your actual image path
+      developing_step: [
+        {
+          id: 1,
+          developing_step_title: "Project Planning",
+          description: "Identify project goals, user needs, and define the component architecture for the React application."
+        },
+        {
+          id: 2,
+          developing_step_title: "Component Design",
+          description: "Design modular, reusable, and maintainable UI components using JSX and styled with Tailwind or CSS-in-JS."
+        },
+        {
+          id: 3,
+          developing_step_title: "State Management",
+          description: "Implement efficient data flow using tools like React Context API, Redux, or Zustand depending on project needs."
+        },
+        {
+          id: 4,
+          developing_step_title: "API Integration",
+          description: "Connect the frontend to RESTful APIs or GraphQL backends to fetch, display, and manage dynamic data."
+        },
+        {
+          id: 5,
+          developing_step_title: "Testing & Deployment",
+          description: "Ensure app stability with unit and integration tests using Jest or React Testing Library, then deploy via Vercel or Netlify."
+        }
+      ],
+      button_path: "/services/react-development",
+      button_name: "Start with React JS",
+    }    
   },
 
   backend: {
@@ -1373,6 +1443,42 @@ export const techData = {
         },
       ],
     },
+    steps: {
+      developing_title: "Backend Development",
+      developing_short_description: "Powering web applications with secure, scalable, and high-performance server-side solutions.",
+      developing_short_title: "Server-Side Solutions",
+      developing_image: "/images/hire/backend.webp",
+      developing_step: [
+        {
+          id: 1,
+          developing_step_title: "System Architecture Planning",
+          description: "Define the backend architecture, database schema, and APIs based on project requirements and scalability."
+        },
+        {
+          id: 2,
+          developing_step_title: "Database Design",
+          description: "Design and optimize relational (e.g., PostgreSQL, MySQL) or NoSQL (e.g., MongoDB) databases for efficient data handling."
+        },
+        {
+          id: 3,
+          developing_step_title: "API Development",
+          description: "Build robust RESTful or GraphQL APIs using frameworks like Express.js, NestJS, or Laravel."
+        },
+        {
+          id: 4,
+          developing_step_title: "Authentication & Security",
+          description: "Implement secure user authentication, authorization, and data protection using industry best practices."
+        },
+        {
+          id: 5,
+          developing_step_title: "Testing & Deployment",
+          description: "Perform backend testing, optimize performance, and deploy on platforms like AWS, Heroku, or DigitalOcean."
+        }
+      ],
+      button_path: "/services/backend-development",
+      button_name: "Explore Backend Services",
+    }
+    
   },
 
   mobileDevelopment: {
@@ -1484,6 +1590,41 @@ export const techData = {
         },
       ],
     },
+    steps: {
+      developing_title: "Mobile Development",
+      developing_short_description: "Creating fast, user-friendly, and feature-rich mobile applications for both Android and iOS platforms.",
+      developing_short_title: "Cross-Platform Apps",
+      developing_image: "/images/hire/mobile-app.webp",
+      developing_step: [
+        {
+          id: 1,
+          developing_step_title: "Requirement Gathering",
+          description: "Understand user needs, business goals, and define key features for the mobile application."
+        },
+        {
+          id: 2,
+          developing_step_title: "UI/UX Design",
+          description: "Design intuitive and engaging mobile interfaces that provide a seamless user experience across devices."
+        },
+        {
+          id: 3,
+          developing_step_title: "App Development",
+          description: "Develop high-performance apps using React Native, Flutter, or native technologies like Swift and Kotlin."
+        },
+        {
+          id: 4,
+          developing_step_title: "Backend & API Integration",
+          description: "Connect the app to secure, scalable backend services and APIs for real-time data and functionality."
+        },
+        {
+          id: 5,
+          developing_step_title: "Testing & App Store Deployment",
+          description: "Test thoroughly for performance and bugs, then publish the app to Google Play and Apple App Store."
+        }
+      ],
+      button_path: "/hire/application-form",
+      button_name: "Build Your Mobile App",
+    }    
   },
 
   qualityAssurance: {
@@ -1596,6 +1737,41 @@ export const techData = {
         },
       ],
     },
+    steps: {
+      developing_title: "Quality Assurance",
+      developing_short_description: "Ensuring reliable, bug-free, and high-performing software through structured testing processes.",
+      developing_short_title: "Software Testing",
+      developing_image: "/images/hire/quality-assurance.webp",
+      developing_step: [
+        {
+          id: 1,
+          developing_step_title: "Requirement Analysis",
+          description: "Review project requirements and user stories to define clear testing goals and strategies."
+        },
+        {
+          id: 2,
+          developing_step_title: "Test Planning",
+          description: "Prepare detailed test plans, select appropriate tools, and define test cases for each functionality."
+        },
+        {
+          id: 3,
+          developing_step_title: "Test Case Execution",
+          description: "Manually or automatically execute test cases to identify bugs, glitches, or performance issues."
+        },
+        {
+          id: 4,
+          developing_step_title: "Bug Reporting & Tracking",
+          description: "Log issues in tracking systems like Jira or Trello, and collaborate with developers for quick resolution."
+        },
+        {
+          id: 5,
+          developing_step_title: "Final Validation",
+          description: "Perform regression, load, and user acceptance testing to ensure the product is ready for release."
+        }
+      ],
+      button_path: "/hire/application-form",
+      button_name: "Explore QA Services",
+    }    
   },
 
   devOps: {
@@ -1708,6 +1884,41 @@ export const techData = {
         },
       ],
     },
+    steps: {
+      developing_title: "DevOps",
+      developing_short_description: "Accelerating software delivery through automation, continuous integration, and scalable infrastructure.",
+      developing_short_title: "CI/CD & Automation",
+      developing_image: "/images/hire/dev-ops.webp",
+      developing_step: [
+        {
+          id: 1,
+          developing_step_title: "Infrastructure Planning",
+          description: "Design scalable, cloud-based infrastructure using tools like AWS, Azure, or Google Cloud."
+        },
+        {
+          id: 2,
+          developing_step_title: "CI/CD Pipeline Setup",
+          description: "Automate code integration, testing, and deployment using Jenkins, GitHub Actions, GitLab CI, etc."
+        },
+        {
+          id: 3,
+          developing_step_title: "Containerization",
+          description: "Use Docker and Kubernetes to containerize applications for consistency across environments."
+        },
+        {
+          id: 4,
+          developing_step_title: "Monitoring & Logging",
+          description: "Implement tools like Prometheus, Grafana, and ELK Stack to monitor application health and performance."
+        },
+        {
+          id: 5,
+          developing_step_title: "Security & Optimization",
+          description: "Ensure infrastructure security with proper access control, vulnerability scanning, and performance tuning."
+        }
+      ],
+      button_path: "/hire/application-form",
+      button_name: "Start DevOps Transformation",
+    }    
   },
 
   aiML: {
@@ -1820,6 +2031,41 @@ export const techData = {
         },
       ],
     },
+    steps: {
+      developing_title: "AI & Machine Learning",
+      developing_short_description: "Creating intelligent systems that learn, predict, and automate processes using data-driven models.",
+      developing_short_title: "Smart AI Solutions",
+      developing_image: "/images/hire/ai.webp",
+      developing_step: [
+        {
+          id: 1,
+          developing_step_title: "Problem Definition",
+          description: "Identify business challenges and determine how AI/ML can bring efficient, scalable solutions."
+        },
+        {
+          id: 2,
+          developing_step_title: "Data Collection & Preparation",
+          description: "Gather, clean, and preprocess structured or unstructured data to train machine learning models effectively."
+        },
+        {
+          id: 3,
+          developing_step_title: "Model Selection & Training",
+          description: "Choose the right algorithms (e.g., regression, classification, neural networks) and train models using Python, TensorFlow, or PyTorch."
+        },
+        {
+          id: 4,
+          developing_step_title: "Model Evaluation & Tuning",
+          description: "Evaluate accuracy, precision, and recall of models, then optimize with hyperparameter tuning or cross-validation."
+        },
+        {
+          id: 5,
+          developing_step_title: "Deployment & Monitoring",
+          description: "Deploy models into production with REST APIs or cloud services, and monitor performance over time."
+        }
+      ],
+      button_path: "/hire/application-form",
+      button_name: "Unlock AI Power",
+    }    
   },
 };
 

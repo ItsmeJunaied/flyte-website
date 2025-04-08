@@ -5,6 +5,7 @@ import HireMoreDevelopers from "./HireMoreDevelopers";
 import OurExpertiseDeveloper from "./OurExpertiseDeveloper";
 import { techData } from "@/api/Dummy";
 import HeroBanner from "../Common/HeroBanner";
+import StepCard from "../Common/StepCard";
 // import StepCard from "../Common/StepCard";
 
 type ParamProps = {
@@ -22,7 +23,7 @@ const HireOverview: React.FC<ParamProps> = ({ params }) => {
       <WhyChoose data={tech} />
       {tech?.technologies?.length ? <OurTechnologies data={tech} /> : null}
       {tech?.exploreMoreDevelopers?.length ? <HireMoreDevelopers data={tech} /> : null}
-      {/* {tech?.hireProcess && <StepCard data={tech.hireProcess} />} */}
+      {tech?.steps && <StepCard data={tech.steps} />}
       {tech?.developerExpertises?.length ? <OurExpertiseDeveloper data={tech} /> : null}
     </div>
   );

@@ -42,6 +42,8 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
     impactful,
   } = caseStudies?.data || {};
 
+  console.log("developing_step", developing_step);
+
   return (
     <div>
       <HeroBanner bannerData={{ heroTitle, heroSubtitle, heroDesctiption, heroImage }} />

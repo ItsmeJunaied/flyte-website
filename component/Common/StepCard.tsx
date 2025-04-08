@@ -3,7 +3,7 @@ import React from "react";
 
 type DevelopingStep = {
   id: number;
-  case_studies_id: number;
+  case_studies_id?: number;
   developing_step_title?: string;
   description: string;
 };
@@ -36,8 +36,10 @@ const StepCard: React.FC<{ data: CardProps }> = ({ data }) => {
           <h2 className="text-[#181a2a] text-xl lg:text-3xl font-semibold mb-2 lg:mb-5 w-full lg:w-2/3">
             {developing_title}
           </h2>
-          <p className="text-[#12094a]">{developing_short_description}</p>
-          <img src={developing_image} alt="" />
+          <p className="text-[#12094a] mb-5">{developing_short_description}</p>
+          <div className="w-full">
+            <img className="w-full cover lg:h-[340px]" src={developing_image} alt={developing_title} />
+          </div>
           {/* <div className="">
             <svg
               className="w-full lg:w-[90%] h-auto"
@@ -245,7 +247,7 @@ const StepCard: React.FC<{ data: CardProps }> = ({ data }) => {
       </div>
       {button_path && button_name && (
         <Link
-          className="px-8 py-3 mt-6 ml-5 bg-[#5856d6] hover:bg-[#4a46bc] rounded-md text-white w-fit lg:mx-auto block"
+          className="px-8 py-3 mt-8 ml-5 bg-[#5856d6] hover:bg-[#4a46bc] rounded-md text-white w-fit lg:mx-auto block"
           href={button_path}
         >
           {button_name}
