@@ -23,12 +23,19 @@ const ServicesOverview: React.FC = () => {
           {serviceOverviewData?.map((service: Service, index: number) => (
             <div
               key={index}
-              className="h-[281px] p-5 bg-[#f4f5f9] rounded-xl grid grid-rows-3 place-items-center"
+              className="h-[281px] p-5 bg-[#f4f5f9] hover:bg-blue-100 transition duration-500 rounded-xl grid grid-rows-3 place-items-center group"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="56"
+                height="56"
+                viewBox="0 0 56 56"
+                fill="none"
+                className="transition-transform transform group-hover:scale-150 duration-500"
+              >
                 <path d={service?.icon?.path} fill={service?.icon?.fill} />
               </svg>
-              <h4 className="text-gray-800 text-base xl:text-xl text-center font-semibold">
+              <h4 className="text-gray-800 text-base xl:text-xl text-center font-semibold transition-transform transform group-hover:scale-110 duration-500">
                 {service?.title}
               </h4>
               <p className="text-gray-600 text-sm font-normal text-center self-start">
@@ -36,7 +43,7 @@ const ServicesOverview: React.FC = () => {
               </p>
             </div>
           ))}
-          <div className="px-8 py-10 bg-[#31323c] rounded-xl flex flex-col justify-between min-h-[281px]">
+          <div className="px-8 py-10 bg-[#31323c] hover:bg-black transition duration-500 rounded-xl flex flex-col justify-between min-h-[281px]">
             <h2 className="text-[#f7f7f7] text-xl md:text-3xl font-semibold">Build Your Team</h2>
             <span className="w-20 h-[3px] bg-[#dda380]" />
             <p className="text-[#d9d9d9] text-base font-normal">
@@ -44,7 +51,7 @@ const ServicesOverview: React.FC = () => {
             </p>
             <Link
               href="/hire/application-form"
-              className="text-white hover:text-black text-center text-sm font-semibold px-8 py-3 border border-white hover:bg-white"
+              className="text-white hover:text-black text-center text-sm font-semibold px-8 py-3 border border-white hover:bg-white transition duration-500"
             >
               Hire Now
             </Link>
