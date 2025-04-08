@@ -130,7 +130,8 @@ export const navbarData = {
           name: "Team Extension",
           icon: "fa-user-group",
           description: "Expanding your team with skilled professionals.",
-          path: "/services/team-extension",
+          // path: "/services/team-extension",
+          path: "/hire",
         },
         {
           name: "Custom Software Development",

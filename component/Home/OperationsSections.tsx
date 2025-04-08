@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Title from "../Common/Title";
 import Subtitle from "../Common/Subtitle";
@@ -34,12 +35,12 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({ techData }) => 
 
   // Section titles
   const sections = [
-    { key: "frontend" },
-    { key: "backend" },
-    { key: "mobileDevelopment" },
-    { key: "qualityAssurance" },
-    { key: "devOps" },
-    { key: "aiML" },
+    { key: "frontend", hoverColor: "#006FBA" }, 
+    { key: "backend", hoverColor: "#65308C" }, 
+    { key: "mobileDevelopment", hoverColor: "#007F5F" }, 
+    { key: "qualityAssurance", hoverColor: "#9A341D" }, 
+    { key: "devOps", hoverColor: "#014F43" }, 
+    { key: "aiML", hoverColor: "#2C3E50" },
   ];
 
   return (
@@ -66,14 +67,29 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({ techData }) => 
             const category = techData[section.key as keyof TechData];
 
             return (
-              <Link href={`/hire/${category?.hireLinkName}`}
+              <Link
+                href={`/hire/${category?.hireLinkName}`}
                 key={section.key}
-                className=" h-auto p-[24px] bg-white hover:bg-[#386d54] group transition duration-500 shadow-[0px_0px_10px_10px_rgba(235,235,235,0.25)] flex-col justify-start items-stretch gap-4 inline-flex overflow-hidden"
+                className="h-auto p-[24px] bg-white group transition duration-500 shadow-[0px_0px_10px_10px_rgba(235,235,235,0.25)] flex-col justify-start items-stretch gap-4 inline-flex overflow-hidden"
+                style={{
+                  backgroundColor: "white", // default background color
+                  transition: "background-color 0.5s", // smooth transition for background color change
+                }}
+                onMouseEnter={(e) => {
+                  // Change background color on hover
+                  e.currentTarget.style.backgroundColor = section.hoverColor;
+                }}
+                onMouseLeave={(e) => {
+                  // Revert to original background color
+                  e.currentTarget.style.backgroundColor = "white";
+                }}
               >
                 <div className="text-black group-hover:text-white transition duration-500 text-base font-bold">
                   {category.title}
                 </div>
-                <div className="self-stretch text-[#9c9c9c] group-hover:text-white transition duration-500 text-xs font-normal">{category.description}</div>
+                <div className="self-stretch text-[#9c9c9c] group-hover:text-white transition duration-500 text-xs font-normal">
+                  {category.description}
+                </div>
 
                 <div className="flex-col justify-start items-start gap-2.5 flex">
                   <div className="grid grid-cols-3 gap-6">
@@ -83,7 +99,9 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({ techData }) => 
                         className="w-fit px-2 py-1 rounded-[15px] border border-[#e9e9e9] justify-start items-center gap-1.5 flex"
                       >
                         <img src={tech.image} alt={tech.name} className="w-3 h-3" />
-                        <div className="text-center text-[#5e5e5e] group-hover:text-white transition duration-500 text-[10px] font-medium">{tech.name}</div>
+                        <div className="text-center text-[#5e5e5e] group-hover:text-white transition duration-500 text-[10px] font-medium">
+                          {tech.name}
+                        </div>
                       </div>
                     ))}
                   </div>
@@ -97,7 +115,10 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({ techData }) => 
           className="w-full h-[42px] justify-center items- gap-2.5 inline-flex overflow-hidden "
           data-aos="fade-up"
         >
-          <Link href="/hire" className="text-white bgGradientNevyBlue rounded-md px-8 py-3 text-sm font-semibold">
+          <Link
+            href="/hire"
+            className="text-white bgGradientNevyBlue rounded-md px-8 py-3 text-sm font-semibold"
+          >
             Learn More Technology
           </Link>
         </div>
