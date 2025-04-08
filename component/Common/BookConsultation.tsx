@@ -10,7 +10,7 @@ const BookConsultation = () => {
           <p className="text-[#f7f7f7] text-base">Access top talent and scale your business effortlessly.</p>
           <div className="pt-2">
             <Link
-              href="hire/application-form"
+              href="/hire/application-form"
               className="px-6 py-2.5 text-sm font-semibold bg-white hover:bg-black hover:text-white rounded-md shadow-[0px_0px_10px_10px_rgba(230,230,230,0.25)]"
             >
               Build Your Team Now

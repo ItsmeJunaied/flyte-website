@@ -1055,6 +1055,7 @@ export const techData = {
     heroDesctiption:
       "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
     heroButton: "Hire Frontend Developers Now",
+    heroButtonLink: "application-form",
     heroImage: "https://i.ibb.co.com/4gsDVSgp/hire-front-end-developer-1.webp",
     advantages: [
       {
@@ -1145,6 +1146,7 @@ export const techData = {
     heroDesctiption:
       "Build responsive, interactive, and high-performing web applications with our expert React developers. We specialize in creating seamless user experiences using cutting-edge React frameworks, optimized performance, and visually stunning interfaces.",
     heroButton: "Hire React JS Developers Now",
+    heroButtonLink: "application-form",
     heroImage: "https://i.ibb.co.com/fdDsXnxw/Benefits-of-React-JS.jpg",
     advantages: [
       {
@@ -1293,6 +1295,7 @@ export const techData = {
     heroDesctiption:
       "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
     heroButton: "Hire Backend Developers Now",
+    heroButtonLink: "application-form",
     heroImage: "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
     advantages: [
       {
@@ -1403,6 +1406,7 @@ export const techData = {
     heroDesctiption:
       "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
     heroButton: "Hire Mobile App Developers Now",
+    heroButtonLink: "application-form",
     heroImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
     advantages: [
       {
@@ -1513,6 +1517,7 @@ export const techData = {
     heroDesctiption:
       "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
     heroButton: "Hire Quality Engineers Now",
+    heroButtonLink: "application-form",
     heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     advantages: [
       {
@@ -1624,6 +1629,7 @@ export const techData = {
     heroDesctiption:
       "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
     heroButton: "Hire DevOps Engineers Now",
+    heroButtonLink: "application-form",
     heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     advantages: [
       {
@@ -1735,6 +1741,7 @@ export const techData = {
     heroDesctiption:
       "Build responsive, interactive, and high-performing web applications with our expert frontend developers. We specialize in seamless user experiences, cutting-edge frameworks, and optimized performance for fast, scalable, and visually stunning interfaces.",
     heroButton: "Hire AI & ML Now",
+    heroButtonLink: "application-form",
     heroImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
     advantages: [
       {
