@@ -1324,11 +1324,494 @@ export const techData = {
           description: "Ensure app stability with unit and integration tests using Jest or React Testing Library, then deploy via Vercel or Netlify."
         }
       ],
-      button_path: "/services/react-development",
+      button_path: "/hire/application-form",
       button_name: "Start with React JS",
     }    
   },
 
+  angular: {
+    title: "Angular Development",
+    hireLinkName: "angular-developer",
+    description: "Building dynamic, scalable, and high-performance web applications using Angular.",
+    technologies: [],
+    heroTitle: "Hire Dedicated Angular Developers for Robust Web Applications",
+    heroSubtitle: "HIRE ANGULAR DEVELOPERS",
+    heroDesctiption:
+      "Create seamless, single-page applications and dynamic websites with Angular. Our expert Angular developers ensure high performance, maintainable code, and user-friendly interfaces with the latest Angular technologies.",
+    heroButton: "Hire Angular Developers Now",
+    heroButtonLink: "application-form",
+    heroImage: "/images/hire/Angular-Banner-Image.webp",
+    advantages: [
+      {
+        icon: "fa-code",
+        title: "Modular Development",
+        description: "Build scalable applications with Angular’s modular structure and reusable components.",
+      },
+      {
+        icon: "fa-cogs",
+        title: "High Performance",
+        description: "Optimized rendering and change detection for fast and smooth user experiences.",
+      },
+      {
+        icon: "fa-users",
+        title: "Rich Ecosystem",
+        description: "Leverage Angular’s tools like CLI, RxJS, and built-in modules for efficient development.",
+      },
+      {
+        icon: "fa-database",
+        title: "Cross-Platform Support",
+        description: "Create web, mobile, and desktop applications with Angular, compatible across platforms.",
+      },
+      {
+        icon: "fa-server",
+        title: "Two-Way Data Binding",
+        description: "Simplify synchronization between the model and view for seamless UI updates.",
+      },
+      {
+        icon: "fa-lock",
+        title: "Strong Security Features",
+        description: "Angular provides built-in support for secure development practices, like HTTP security and routing protection.",
+      },
+    ],
+    developerExpertises: [
+      {
+        icon: "fa-code",
+        title: "Single Page Applications (SPAs)",
+        description: "Build dynamic web applications with minimal page reloads for fast user interactions.",
+      },
+      {
+        icon: "fa-cogs",
+        title: "Two-Way Data Binding",
+        description: "Easily sync the view and model for real-time updates with Angular’s powerful data binding.",
+      },
+      {
+        icon: "fa-users",
+        title: "State Management (NgRx, Angular Services)",
+        description: "Use NgRx or Angular Services for managing and centralizing app state.",
+      },
+      {
+        icon: "fa-database",
+        title: "API Integration",
+        description: "Connect with RESTful APIs and third-party services for rich, dynamic app functionality.",
+      },
+      {
+        icon: "fa-server",
+        title: "Component-Based Architecture",
+        description: "Organize app features into manageable, reusable components for faster development.",
+      },
+      {
+        icon: "fa-lock",
+        title: "Testing & Debugging",
+        description:
+          "Leverage Angular testing tools like Jasmine and Karma to ensure app stability and high-quality code.",
+      },
+    ],
+  
+    exploreMoreDevelopers: [],
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From analyzing your needs to hiring the right Angular developer, we ensure an easy and efficient hiring process tailored to your project.",
+      title: "Your Path to Hiring Angular Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We analyze your project scope, goals, and technology stack to match you with the perfect Angular developer.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We connect you with developers who specialize in Angular and possess the necessary skills for your project.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they meet your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We smoothly integrate your Angular developers into your workflow, ensuring they align with your project management style.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We offer continuous support throughout the project to address any challenges and ensure performance.",
+        },
+      ],
+    },
+    steps: {
+      developing_title: "Angular Development",
+      developing_short_description:
+        "Building scalable, high-performance, and dynamic applications using Angular.",
+      developing_short_title: "Angular-Based Interfaces",
+      developing_image: "/images/hire/angular.webp",
+      developing_step: [
+        {
+          id: 1,
+          developing_step_title: "Project Planning",
+          description:
+            "Identify project goals and user needs while defining the structure of your Angular application.",
+        },
+        {
+          id: 2,
+          developing_step_title: "Component Design",
+          description:
+            "Design reusable and maintainable UI components with Angular’s component-based architecture.",
+        },
+        {
+          id: 3,
+          developing_step_title: "State Management",
+          description:
+            "Implement state management solutions like NgRx or Angular services to ensure consistency across the app.",
+        },
+        {
+          id: 4,
+          developing_step_title: "API Integration",
+          description:
+            "Connect the frontend to RESTful APIs or third-party services for real-time data management.",
+        },
+        {
+          id: 5,
+          developing_step_title: "Testing & Deployment",
+          description:
+            "Ensure application stability with testing tools like Jasmine, Karma, and deploy using Firebase or Heroku.",
+        },
+      ],
+      button_path: "/hire/application-form",
+      button_name: "Start with Angular Development",
+    },
+  },
+
+  vuejs: {
+    title: "Vue.js Development",
+    hireLinkName: "vuejs-developer",
+    description: "Building dynamic, scalable, and highly performant web applications using Vue.js.",
+    technologies: [],
+    heroTitle: "Hire Dedicated Vue.js Developers for High-Performance Web Applications",
+    heroSubtitle: "HIRE VUE.JS DEVELOPERS",
+    heroDesctiption:
+      "Develop seamless and responsive user interfaces with Vue.js. Our expert Vue.js developers specialize in creating interactive web applications that are both highly performant and easy to maintain.",
+    heroButton: "Hire Vue.js Developers Now",
+    heroButtonLink: "application-form",
+    heroImage: "/images/hire/vuejs-banner-image.webp",
+    advantages: [
+      {
+        icon: "fa-code",
+        title: "Component-Based Development",
+        description: "Build scalable and maintainable applications using reusable Vue components.",
+      },
+      {
+        icon: "fa-cogs",
+        title: "High Performance",
+        description: "Vue.js optimizes rendering with its virtual DOM for a fast, smooth user experience.",
+      },
+      {
+        icon: "fa-users",
+        title: "Simple Integration",
+        description: "Integrate easily with existing projects and third-party libraries.",
+      },
+      {
+        icon: "fa-database",
+        title: "Cross-Platform Support",
+        description: "Vue.js can be used for building responsive, mobile-first, and progressive web apps.",
+      },
+      {
+        icon: "fa-server",
+        title: "State Management (Vuex)",
+        description: "Use Vuex for efficient state management, ensuring consistency across complex applications.",
+      },
+      {
+        icon: "fa-lock",
+        title: "Strong Community Support",
+        description: "Vue.js is backed by an active community and is easy to adopt for new developers.",
+      },
+    ],
+    developerExpertises: [
+      {
+        icon: "fa-code",
+        title: "Single Page Applications (SPAs)",
+        description: "Develop dynamic, fast-loading web apps with minimal page reloads using Vue.js.",
+      },
+      {
+        icon: "fa-cogs",
+        title: "State Management (Vuex)",
+        description:
+          "Use Vuex to manage complex state and handle data flow in large Vue.js applications.",
+      },
+      {
+        icon: "fa-users",
+        title: "Component-Based Architecture",
+        description:
+          "Break down the user interface into small, reusable components for faster development and easier maintenance.",
+      },
+      {
+        icon: "fa-database",
+        title: "API Integration",
+        description:
+          "Easily connect the frontend to RESTful APIs or GraphQL backends to fetch, display, and manage dynamic data.",
+      },
+      {
+        icon: "fa-server",
+        title: "Performance Optimization",
+        description:
+          "Optimize rendering, minimize re-renders, and enhance load times for a fast, responsive UI.",
+      },
+      {
+        icon: "fa-lock",
+        title: "Testing & Debugging",
+        description:
+          "Use tools like Vue Test Utils and Jest to ensure application stability and reliability.",
+      },
+    ],
+  
+    exploreMoreDevelopers: [],
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "We provide a seamless hiring experience tailored to your needs, ensuring you get the best Vue.js developers for your project.",
+      title: "Your Path to Hiring Vue.js Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We thoroughly analyze your project scope, requirements, and technology stack to match you with the perfect Vue.js developer.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We handpick skilled developers with expertise in Vue.js and other relevant technologies.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview shortlisted candidates to ensure they meet your technical and cultural requirements.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We integrate Vue.js developers into your team and project management workflow seamlessly.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support to ensure your Vue.js application performs optimally throughout the project lifecycle.",
+        },
+      ],
+    },
+    steps: {
+      developing_title: "Vue.js Development",
+      developing_short_description:
+        "Building fast, dynamic, and scalable applications using Vue.js.",
+      developing_short_title: "Vue.js-Based Interfaces",
+      developing_image: "/images/hire/vuejs.webp",
+      developing_step: [
+        {
+          id: 1,
+          developing_step_title: "Project Planning",
+          description:
+            "Identify your project goals, user needs, and define the structure of your Vue.js application.",
+        },
+        {
+          id: 2,
+          developing_step_title: "Component Design",
+          description:
+            "Design reusable and maintainable UI components with Vue.js’ flexible and modular component architecture.",
+        },
+        {
+          id: 3,
+          developing_step_title: "State Management",
+          description:
+            "Use Vuex to manage application state and handle complex data flow in large-scale Vue.js projects.",
+        },
+        {
+          id: 4,
+          developing_step_title: "API Integration",
+          description:
+            "Integrate your Vue.js frontend with RESTful APIs or GraphQL for fetching and managing dynamic data.",
+        },
+        {
+          id: 5,
+          developing_step_title: "Testing & Deployment",
+          description:
+            "Ensure app stability with unit testing using Vue Test Utils and deploy using platforms like Netlify or Heroku.",
+        },
+      ],
+      button_path: "/hire/application-form",
+      button_name: "Start with Vue.js Development",
+    },
+  },
+
+  nextjs: {
+    title: "Next.js Development",
+    hireLinkName: "nextjs-developer",
+    description: "Building scalable, high-performance, and SEO-friendly web applications with Next.js.",
+    technologies: [],
+    heroTitle: "Hire Dedicated Next.js Developers for Fast and Scalable Web Applications",
+    heroSubtitle: "HIRE NEXT.JS DEVELOPERS",
+    heroDesctiption:
+      "Create high-performing, SEO-optimized, and dynamic web applications using Next.js. Our Next.js developers specialize in building applications that deliver fast performance and seamless user experiences.",
+    heroButton: "Hire Next.js Developers Now",
+    heroButtonLink: "application-form",
+    heroImage: "/images/hire/nextjs-banner-image.webp",
+    advantages: [
+      {
+        icon: "fa-code",
+        title: "Fast Performance",
+        description: "Optimize page load times with Next.js’ server-side rendering (SSR) and static site generation (SSG).",
+      },
+      {
+        icon: "fa-cogs",
+        title: "SEO-Friendly",
+        description: "Ensure high visibility with server-side rendering and pre-rendering capabilities, boosting SEO performance.",
+      },
+      {
+        icon: "fa-users",
+        title: "Automatic Code Splitting",
+        description: "Only load the necessary JavaScript for the page being viewed, improving load times and performance.",
+      },
+      {
+        icon: "fa-database",
+        title: "Scalability & Flexibility",
+        description: "Easily scale your application and adapt to different project needs with Next.js’ flexible architecture.",
+      },
+      {
+        icon: "fa-server",
+        title: "Built-In Routing & API",
+        description: "Next.js offers file-based routing and API routes for easy serverless API management.",
+      },
+      {
+        icon: "fa-lock",
+        title: "Server-Side Rendering (SSR)",
+        description: "Improve the performance and SEO of your application by rendering pages on the server first.",
+      },
+    ],
+    developerExpertises: [
+      {
+        icon: "fa-code",
+        title: "Static Site Generation (SSG)",
+        description: "Generate static pages at build time for faster page loads and SEO optimization.",
+      },
+      {
+        icon: "fa-cogs",
+        title: "Server-Side Rendering (SSR)",
+        description: "Pre-render pages on the server before sending them to the client for better SEO and performance.",
+      },
+      {
+        icon: "fa-users",
+        title: "API Routes",
+        description: "Create backend functionality like RESTful APIs directly within the Next.js application using API routes.",
+      },
+      {
+        icon: "fa-database",
+        title: "Incremental Static Regeneration",
+        description: "Regenerate static content on-demand without rebuilding the entire site, ensuring fresh content.",
+      },
+      {
+        icon: "fa-server",
+        title: "Performance Optimization",
+        description: "Leverage Next.js features like Image Optimization, Automatic Static Optimization, and Lazy Loading for top-tier performance.",
+      },
+      {
+        icon: "fa-lock",
+        title: "Testing & Debugging",
+        description: "Ensure code reliability and app stability through automated tests using tools like Jest, Cypress, and React Testing Library.",
+      },
+    ],
+  
+    exploreMoreDevelopers: [],
+    hireProcess: {
+      name: "Our Hiring Process",
+      description:
+        "From understanding your needs to onboarding the perfect team, we ensure a smooth and customized hiring process for your Next.js project.",
+      title: "Your Path to Hiring Next.js Developers",
+      features: [
+        {
+          id: 1,
+          name: "Requirement Analysis",
+          details:
+            "We conduct a detailed analysis of your project requirements and goals to match you with the right Next.js developers.",
+        },
+        {
+          id: 2,
+          name: "Developer Matching",
+          details:
+            "We match you with experienced developers skilled in Next.js and your project’s specific needs.",
+        },
+        {
+          id: 3,
+          name: "Interview & Selection",
+          details:
+            "You interview the shortlisted candidates to ensure they meet your technical and cultural expectations.",
+        },
+        {
+          id: 4,
+          name: "Onboarding & Collaboration",
+          details:
+            "We integrate the developers into your workflow, ensuring smooth collaboration and project management.",
+        },
+        {
+          id: 5,
+          name: "Ongoing Support",
+          details:
+            "We provide continuous support throughout the project, ensuring everything runs smoothly and addressing any issues.",
+        },
+      ],
+    },
+    steps: {
+      developing_title: "Next.js Development",
+      developing_short_description:
+        "Building fast, scalable, and SEO-friendly applications using Next.js.",
+      developing_short_title: "Next.js-Based Interfaces",
+      developing_image: "/images/hire/nextjs.avif",
+      developing_step: [
+        {
+          id: 1,
+          developing_step_title: "Project Planning",
+          description:
+            "Identify project goals, user requirements, and define the structure of the Next.js application.",
+        },
+        {
+          id: 2,
+          developing_step_title: "Page Design & Component Structure",
+          description:
+            "Design the layout and reusable components using Next.js, ensuring scalability and maintainability.",
+        },
+        {
+          id: 3,
+          developing_step_title: "Routing & Navigation",
+          description:
+            "Set up file-based routing with Next.js, ensuring seamless navigation between pages and components.",
+        },
+        {
+          id: 4,
+          developing_step_title: "API Integration & Dynamic Data",
+          description:
+            "Integrate backend APIs with Next.js, and implement dynamic data fetching using SSR or SSG for performance optimization.",
+        },
+        {
+          id: 5,
+          developing_step_title: "Testing & Deployment",
+          description:
+            "Ensure application stability with testing frameworks like Jest, and deploy to platforms like Vercel or Netlify for live production.",
+        },
+      ],
+      button_path: "/hire/application-form",
+      button_name: "Start with Next.js Development",
+    },
+  },  
+  
   backend: {
     title: "Backend Development",
     hireLinkName: "backend-developer",
