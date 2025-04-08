@@ -31,7 +31,7 @@ interface OperationsSectionsProps {
 }
 
 const OperationsSections: React.FC<OperationsSectionsProps> = ({ techData }) => {
-  const headerTitle: string = "Innovative technology that transforms";
+  const headerTitle: string = "Innovative Technology That Transforms The Way You Operate";
 
   // Section titles
   const sections = [
@@ -45,7 +45,7 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({ techData }) => 
 
   return (
     <div
-      className="py-[40px] "
+      className="py-[20px] "
       style={{
         backgroundImage: "url('/images/operationsBg.png')",
         backgroundSize: "cover",

@@ -30,7 +30,7 @@ const ServiceFitHighlights: React.FC = () => {
               }}
             >
               <div className="grid grid-rows-3 h-full">
-                <span className="px-2 py-1.5 bg-white/20 text-xs rounded-[3.18px] w-[90px] h-7 mx-auto text-center">
+                <span className="px-2 py-1.5 text-white bg-white/20 text-xs rounded-[3.18px] w-[90px] h-7 mx-auto text-center">
                   {service?.category}
                 </span>
 
