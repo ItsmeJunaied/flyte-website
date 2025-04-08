@@ -20,7 +20,7 @@ const FooterContact: React.FC<{ footerContact: FooterContact }> = ({ footerConta
   return (
     <div className="flex flex-col gap-4">
       <img className="w-[100px] h-[84px]" src={logo_small} alt={title} />
-      <h6 className="footer-title text-neutral-100 opacity-100 text-lg">Contact Us</h6>
+      <h6 className="footer-title text-neutral-100 opacity-100 text-base">Contact Us</h6>
 
       {/* Location */}
       <div className="max-w-[380px] flex flex-col gap-2">
