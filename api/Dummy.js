@@ -428,7 +428,43 @@ export const serviceData = [
     heroDesctiption:
       "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
     heroButton: "Book A Consulation",
+    heroButtonLink:"/schedule-consultation",
     heroImage: "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
+    steps: {
+      developing_title: "Team Extension Service",
+      developing_short_description: "Expand your team with skilled professionals who integrate seamlessly into your workflow.",
+      developing_short_title: "Dedicated Developer Teams",
+      developing_image: "/images/hire/team-extension.webp",
+      developing_step: [
+        {
+          id: 1,
+          developing_step_title: "Requirement Gathering",
+          description: "Identify your current team’s gaps, required skills, and the scope of work to build the right extension strategy."
+        },
+        {
+          id: 2,
+          developing_step_title: "Talent Sourcing",
+          description: "Select highly skilled professionals from our pool who align with your tech stack, goals, and culture."
+        },
+        {
+          id: 3,
+          developing_step_title: "Seamless Onboarding",
+          description: "Integrate the selected team members into your workflow with clear communication, tools, and processes."
+        },
+        {
+          id: 4,
+          developing_step_title: "Ongoing Collaboration",
+          description: "Ensure real-time collaboration through daily syncs, task management tools, and transparent reporting."
+        },
+        {
+          id: 5,
+          developing_step_title: "Performance Optimization",
+          description: "Continuously monitor and optimize team performance to ensure quality delivery and scalability."
+        }
+      ],
+      button_path: "/schedule-consultation",
+      button_name: "Start Team Extension",
+    }    
   },
   {
     id:2,
@@ -473,7 +509,43 @@ export const serviceData = [
     heroDesctiption:
       "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
     heroButton: "Book A Consulation",
-    heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+    heroButtonLink:"/schedule-consultation",
+    heroImage: "/images/services/custom-software-development-banner-image.webp",
+    steps: {
+      developing_title: "Custom Software Development",
+      developing_short_description: "Tailored, scalable software solutions built to solve your unique business challenges.",
+      developing_short_title: "Tailored Digital Solutions",
+      developing_image: "/images/services/custom-software.webp",
+      developing_step: [
+        {
+          id: 1,
+          developing_step_title: "Requirement Analysis",
+          description: "We thoroughly analyze your business needs, technical requirements, and goals to create a tailored software strategy."
+        },
+        {
+          id: 2,
+          developing_step_title: "Solution Architecture",
+          description: "Our team designs a scalable, secure, and modular architecture that aligns with your technical specifications and project needs."
+        },
+        {
+          id: 3,
+          developing_step_title: "Agile Development",
+          description: "We build the solution using agile methodology, delivering incremental updates and continuously improving based on feedback."
+        },
+        {
+          id: 4,
+          developing_step_title: "Testing & Quality Assurance",
+          description: "We conduct thorough unit, integration, and end-to-end testing to ensure your software is stable and bug-free."
+        },
+        {
+          id: 5,
+          developing_step_title: "Deployment & Support",
+          description: "We deploy the solution to production, ensuring complete support, comprehensive documentation, and ongoing post-launch maintenance."
+        }
+      ],      
+      button_path: "/schedule-consultation",
+      button_name: "Start Custom Project",
+    }    
   },
   {
     id:3,
@@ -518,7 +590,44 @@ export const serviceData = [
     heroDesctiption:
       "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
     heroButton: "Book A Consulation",
-    heroImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
+    heroButtonLink:"/schedule-consultation",
+    heroImage: "/images/services/enterpise-application-development-banner-image.webp",
+    steps: {
+      developing_title: "Enterprise Software Development",
+      developing_short_description: "Designing and building powerful, secure, and scalable software to streamline large-scale enterprise operations.",
+      developing_short_title: "Scalable Enterprise Solutions",
+      developing_image: "/images/services/enterprise-software-development.webp",
+      developing_step: [
+        {
+          id: 1,
+          developing_step_title: "Enterprise Analysis",
+          description: "Assess business processes, systems, and infrastructure to identify opportunities for digital transformation."
+        },
+        {
+          id: 2,
+          developing_step_title: "System Architecture Design",
+          description: "Create robust and scalable software architecture to support complex enterprise workflows and high availability."
+        },
+        {
+          id: 3,
+          developing_step_title: "Custom Development",
+          description: "Develop tailored solutions with features like automation, data analytics, and ERP integration."
+        },
+        {
+          id: 4,
+          developing_step_title: "Security & Compliance",
+          description: "Implement enterprise-grade security, data protection policies, and industry-specific compliance standards."
+        },
+        {
+          id: 5,
+          developing_step_title: "Deployment & Maintenance",
+          description: "Roll out across departments with full documentation, training, and long-term support for upgrades and scaling."
+        }
+      ],
+      button_path: "/schedule-consultation",
+      button_name: "Start Enterprise Project",
+    }
+    
   },
   {
     id:4,
@@ -563,7 +672,43 @@ export const serviceData = [
     heroDesctiption:
       "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
     heroButton: "Book A Consulation",
-    heroImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
+    heroButtonLink:"/schedule-consultation",
+    heroImage: "/images/services/mobile-app-development-banner-image.webp",
+    steps: {
+      developing_title: "Mobile App Development",
+      developing_short_description: "Creating high-quality mobile applications for iOS and Android with seamless performance and intuitive UI.",
+      developing_short_title: "iOS & Android Apps",
+      developing_image: "/images/hire/mobile-app.webp",
+      developing_step: [
+        {
+          id: 1,
+          developing_step_title: "App Strategy & Planning",
+          description: "Understand business goals, user needs, and define app features, platform, and roadmap."
+        },
+        {
+          id: 2,
+          developing_step_title: "UI/UX Design",
+          description: "Design intuitive and engaging interfaces with a focus on mobile usability and platform guidelines."
+        },
+        {
+          id: 3,
+          developing_step_title: "Cross-Platform or Native Development",
+          description: "Develop high-performance apps using Flutter, React Native, Swift, or Kotlin based on project needs."
+        },
+        {
+          id: 4,
+          developing_step_title: "API & Backend Integration",
+          description: "Connect apps to secure backend systems, databases, and third-party services for complete functionality."
+        },
+        {
+          id: 5,
+          developing_step_title: "Testing & App Store Deployment",
+          description: "Test for performance, security, and bugs before publishing to Google Play and Apple App Store."
+        }
+      ],
+      button_path: "/schedule-consultation",
+      button_name: "Start Mobile Project",
+    }    
   },
   {
     id:5,
@@ -608,7 +753,43 @@ export const serviceData = [
     heroDesctiption:
       "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
     heroButton: "Book A Consulation",
-    heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+    heroButtonLink:"/schedule-consultation",
+    heroImage: "/images/services/qa-testing-banner-image.webp",
+    steps: {
+      developing_title: "QA & Testing",
+      developing_short_description: "Delivering bug-free, high-quality software through manual and automated testing practices.",
+      developing_short_title: "Quality Assurance",
+      developing_image: "/images/services/qa-testing.webp",
+      developing_step: [
+        {
+          id: 1,
+          developing_step_title: "Requirement Analysis",
+          description: "Understand the application requirements and define the testing scope, types, and strategy."
+        },
+        {
+          id: 2,
+          developing_step_title: "Test Planning",
+          description: "Create test plans, test cases, and determine resources, tools, and environments required."
+        },
+        {
+          id: 3,
+          developing_step_title: "Functional Testing",
+          description: "Ensure all features work as expected through manual and automated functional test cases."
+        },
+        {
+          id: 4,
+          developing_step_title: "Performance & Security Testing",
+          description: "Check the app’s speed, stability under load, and identify vulnerabilities for secure performance."
+        },
+        {
+          id: 5,
+          developing_step_title: "Bug Reporting & Retesting",
+          description: "Log defects, fix bugs, perform regression testing, and prepare detailed QA reports."
+        }
+      ],
+      button_path: "/schedule-consultation",
+      button_name: "Start QA & Testing",
+    }    
   },
   {
     id:6,
@@ -653,7 +834,43 @@ export const serviceData = [
     heroDesctiption:
       "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
     heroButton: "Book A Consulation",
-    heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+    heroButtonLink:"/schedule-consultation",
+    heroImage: "/images/services/mvp-banner-image.webp",
+    steps: {
+      developing_title: "MVP Development",
+      developing_short_description: "Quickly launch a functional version of your product to validate ideas and gather user feedback.",
+      developing_short_title: "Lean Product Launch",
+      developing_image: "/images/services/mvp.webp",
+      developing_step: [
+        {
+          id: 1,
+          developing_step_title: "Discovery & Ideation",
+          description: "We begin by identifying business goals, user problems, and shaping a clear vision for the MVP."
+        },
+        {
+          id: 2,
+          developing_step_title: "Feature Prioritization",
+          description: "We select core features that solve the primary user need while ensuring a lean and valuable product scope."
+        },
+        {
+          id: 3,
+          developing_step_title: "Rapid Prototyping",
+          description: "Our team designs quick wireframes and visual mockups to simulate user flow and validate product direction early."
+        },
+        {
+          id: 4,
+          developing_step_title: "MVP Development",
+          description: "Using agile sprints, we build and test the MVP to deliver a functional version in the shortest time."
+        },
+        {
+          id: 5,
+          developing_step_title: "Launch & Feedback",
+          description: "We release the MVP to real users, collect feedback, and plan iterations based on performance and user input."
+        }
+      ],
+      button_path: "/schedule-consultation",
+      button_name: "Build Your MVP",
+    }    
   }
 ];
 

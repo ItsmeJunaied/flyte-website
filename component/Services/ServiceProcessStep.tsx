@@ -1,13 +1,15 @@
 import React from "react";
 // import StepCard from "../Common/StepCard";
-// import { serviceProcessData } from "@/api/Dummy";
+import { serviceData } from "@/api/Dummy";
+import StepCard from "../Common/StepCard";
 
-const ServiceProcessStep = () => {
-  return (
-    <div>
-      {/* <StepCard data={serviceProcessData} /> */}
-    </div>
-  );
+type ServiceBannerProps = {
+  params: string;
+};
+
+const ServiceProcessStep = ({ params }: ServiceBannerProps) => {
+  const service = serviceData?.find((item) => item?.serviceLinkName === params);
+  return <div>{service && <StepCard data={service?.steps} />}</div>;
 };
 
 export default ServiceProcessStep;

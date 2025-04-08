@@ -32,7 +32,7 @@ const page = async ({ params }: PageProps) => {
   return (
     <div>
       <ServiceDetailsBanner params={service} />
-      <ServiceProcessStep />
+      <ServiceProcessStep params={service} />
       <OurProcess params={service} />
       <BookConsultation />
       <OperationsSections techData={techData} />

@@ -222,7 +222,7 @@ const StepCard: React.FC<{ data: CardProps }> = ({ data }) => {
           <div className="space-y-2.5">
             {developing_step?.map((step, index) => (
               <div key={index}>
-                <div className="flex gap-3.5 mb-2.5">
+                <div className="flex items-center gap-3.5 mb-2.5">
                   <span className="w-5 h-5 bg-[#5856d6] rounded-full flex justify-center items-center text-white text-xs font-semibold">
                     {index + 1}
                   </span>
