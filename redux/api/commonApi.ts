@@ -7,7 +7,16 @@ const commonApi = baseApi.injectEndpoints({
       query: () => "software-solution",
       providesTags: ["Common"],
     }),
+
+    // get client feedback data
+    getClientFeedback: builder.query({
+      query: ({module}) => ({
+        url: "client-feedback",
+        params: { module },
+      }),
+      providesTags: ["Common"],
+    }),
   }),
 });
 
-export const { useGetSoftwareSolutionsQuery } = commonApi;
+export const { useGetSoftwareSolutionsQuery, useGetClientFeedbackQuery } = commonApi;

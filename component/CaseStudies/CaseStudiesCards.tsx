@@ -127,11 +127,9 @@ const CaseStudiesCards = () => {
                       <div className="flex flex-col gap-3 h-full pb-5 mt-5 w-full">
                         <div className="flex flex-row items-center px-4 lg:px-10 w-full">
                           <div className="flex flex-col lg:flex-row justify-between items-start gap-3 w-full">
-                            <div>
-                              <h1 className="text-lg lg:text-2xl font-semibold text-black lg:h-16 line-clamp-2 overflow-hidden">
-                                {caseStudy?.title}
-                              </h1>
-                            </div>
+                            <h1 className="text-lg lg:text-2xl font-semibold text-black lg:h-16 line-clamp-2 overflow-hidden">
+                              {caseStudy?.title}
+                            </h1>
 
                             <div className="px-1 lg:px-2 py-[6.36px] bg-[#ffcc00] rounded-[3.18px] backdrop-blur-[9.55px] flex-col justify-center items-center gap-2 inline-flex">
                               <p className="text-black text-xs font-normal font-['Open Sans']">

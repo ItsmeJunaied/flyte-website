@@ -34,10 +34,10 @@ const HeroBanner: React.FC<{ bannerData: HeroBannerProps }> = ({ bannerData }) =
 
           <div className="mt-8 lg:mt-12">
             <Link
-              href={`${heroButtonLink}`}
+              href={`${heroButtonLink ? heroButtonLink : "/schedule-consultation"}`}
               className="w-fit px-8 py-3 bgGradientNevyBlue rounded-md text-white text-base font-semibold"
             >
-              {heroButton}
+              {heroButton ? heroButton : "Book A Consultation"}
             </Link>
           </div>
         </div>
