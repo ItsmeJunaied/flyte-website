@@ -5637,7 +5637,7 @@ export const serviceHighlightsData = [
     title: "Access to Specialized IT Experts",
     description: "Leverage top-tier talent for niche and challenging tech projects.",
     features: ["Highly skilled offshore teams", "Expertise in emerging tech", "Global resource availability"],
-    backgroundImage: "https://i.ibb.co.com/DLFqKr5/Rectangle-3842.png",
+    backgroundImage: "https://i.ibb.co.com/Wp6LKzk6/bg-3.png",
   },
   {
     id: 3,
@@ -5645,7 +5645,7 @@ export const serviceHighlightsData = [
     title: "Adaptable Offshore Teams",
     description: "Scale your team as per your project's dynamic needs.",
     features: ["On-demand scaling", "Diverse tech capabilities", "Customized solutions"],
-    backgroundImage: "https://i.ibb.co.com/DLFqKr5/Rectangle-3843.png",
+    backgroundImage: "https://i.ibb.co.com/twTgTLLd/bg-2.png",
   },
   {
     id: 4,
@@ -5657,7 +5657,7 @@ export const serviceHighlightsData = [
       "Reduced administrative overhead",
       "Efficient resource management",
     ],
-    backgroundImage: "https://i.ibb.co.com/DLFqKr5/Rectangle-3844.png",
+    backgroundImage: "https://i.ibb.co.com/CjS0PVP/bg-1.png",
   },
 ];
 

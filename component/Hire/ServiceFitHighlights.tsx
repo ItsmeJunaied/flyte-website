@@ -24,7 +24,7 @@ const ServiceFitHighlights: React.FC = () => {
               key={index}
               className="p-5 w-full md:max-w-80 h-[350px] md:h-[400px] bg-[#002347]/80 rounded-2xl"
               style={{
-                backgroundImage: "url('https://i.ibb.co.com/DLFqKr5/Rectangle-3844.png')",
+                backgroundImage: `url(${service?.backgroundImage})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
