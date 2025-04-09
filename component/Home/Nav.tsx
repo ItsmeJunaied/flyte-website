@@ -29,6 +29,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
     "/company/about-us",
     "/contact-us",
     "/hire/application-form",
+    "/schedule-consultation",
   ];
   const isExcluded =
     excludePages.includes(pathname) ||

@@ -10,11 +10,11 @@ const ScheduleConsultation: React.FC = () => {
     }, []);
 
     return (
-        <div>
+        <div className='lg:mt-20'>
             <div
                 className="calendly-inline-widget"
                 data-url="https://calendly.com/saiful-flytesolutions/consultancy?hide_gdpr_banner=1"
-                style={{ minWidth: '320px', height: '630px' }}
+                style={{ minWidth: '320px', height: '700px' }}
             ></div>
         </div>
     );
