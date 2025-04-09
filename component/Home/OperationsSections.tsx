@@ -84,19 +84,19 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({ techData }) => 
                   e.currentTarget.style.backgroundColor = "white";
                 }}
               >
-                <div className="text-black group-hover:text-white transition duration-500 text-base font-bold">
+                <div className="text-black group-hover:text-white font-bold transition duration-500 text-base">
                   {category.title}
                 </div>
-                <div className="self-stretch text-[#9c9c9c] group-hover:text-white transition duration-500 text-xs font-normal">
+                <div className="self-stretch text-xs text-[#9c9c9c] group-hover:text-white transition duration-500">
                   {category.description}
                 </div>
 
-                <div className="flex-col justify-start items-start gap-2.5 flex">
-                  <div className="grid grid-cols-3 gap-6">
+                <div className="flex-col justify-start items-start flex">
+                  <div className="flex flex-wrap gap-x-5 gap-y-2.5">
                     {category.technologies.map((tech, idx) => (
                       <div
                         key={idx}
-                        className="w-fit px-2 py-1 rounded-[15px] border border-[#e9e9e9] justify-start items-center gap-1.5 flex"
+                        className="w-fit px-2.5 py-1 rounded-[15px] border border-[#e9e9e9] justify-start items-center gap-1.5 flex"
                       >
                         <img src={tech.image} alt={tech.name} className="w-3 h-3" />
                         <div className="text-center text-[#5e5e5e] group-hover:text-white transition duration-500 text-[10px] font-medium">
@@ -111,7 +111,7 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({ techData }) => 
           })}
         </div>
 
-        <div
+        {/* <div
           className="w-full h-[42px] justify-center items- gap-2.5 inline-flex overflow-hidden "
           data-aos="fade-up"
         >
@@ -121,7 +121,7 @@ const OperationsSections: React.FC<OperationsSectionsProps> = ({ techData }) => 
           >
             Learn More Technology
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );
