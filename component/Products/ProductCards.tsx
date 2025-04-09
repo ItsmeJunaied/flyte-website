@@ -64,22 +64,12 @@ const ProductCards = () => {
                   </div>
                 </div>
               </Link>
+              {index === 1 && <ProductPageContactUS />}
             </React.Fragment>
           ))}
 
-          {/* Insert ProductPageContactUS based on number of products */}
-          {(() => {
-            const length = products?.data?.data?.length || 0;
-            const positionClass = "w-full flex justify-center items-center";
-            if (length === 0 || length === 1 || length >= 2) {
-              return (
-                <div className={positionClass}>
-                  <ProductPageContactUS />
-                </div>
-              );
-            }
-            return null;
-          })()}
+        {/* if has 0 or 1 or 2 products then show contact us component */}
+          {products?.data?.data?.length < 3 && <ProductPageContactUS />}
         </div>
       )}
     </div>
