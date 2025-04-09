@@ -50,7 +50,7 @@ const ServiceCard: React.FC<{ service: Service }> = ({ service }) => {
 
           <div>
             <Link
-              href={`services/${serviceLinkName}`}
+              href={serviceLinkName === "team-extension" ? "/hire" : `services/${serviceLinkName}`}
               className="h-[42px] px-8 py-3 bg-[#5856d6] hover:bg-[#3d3b98] rounded-md text-white text-sm font-semibold"
             >
               Learn More
