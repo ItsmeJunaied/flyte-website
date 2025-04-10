@@ -7,6 +7,8 @@ import TechStackStep from "./TechStackStep";
 import FormStepHeader from "./FormStepHeader";
 import HireSuccessModal from "./HireSuccessModal";
 import { useRouter } from "next/navigation";
+import { useAddtHireServiceMutation } from "@/redux/api/hireApi";
+import { toast } from "react-toastify";
 
 type FormData = {
   name: string;
@@ -45,7 +47,7 @@ type FormData = {
   flutter?: boolean;
   reactNative?: boolean;
   mobileAppOthers?: boolean;
-}
+};
 
 const ApplicationForm = () => {
   const router = useRouter();
@@ -56,6 +58,7 @@ const ApplicationForm = () => {
   const [currentStep, setCurrentStep] = useState(1);
   const [agreeToggle, setAgreeToggle] = useState<boolean>(false);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [addtHireService] = useAddtHireServiceMutation();
 
   const handleAgreeToggle = () => {
     setAgreeToggle((prev) => !prev);
@@ -70,10 +73,65 @@ const ApplicationForm = () => {
 
   const prevStep = () => setCurrentStep((prevStep) => prevStep - 1);
 
-  const onSubmit = (data: FormData) => {
-    setIsModalOpen(true);
-    console.log("Form Data:", data);
+  const onSubmit = async (data: FormData) => {
+    // Extract selected service IDs
+    const selectedServiceIds = Object.keys(data)
+      .filter((key) => key.startsWith("service_") && data[key as keyof FormData])
+      .map((key) => key.replace("service_", ""));
+  
+    // Extract selected technologies
+    const techStackKeys = [
+      "htmlCss", "react", "angular", "vuejs", "nextjs", "frontendOthers",
+      "nodejs", "javaSpring", "phpLaravel", "dotNet", "python", "go", "backendOthers",
+      "flutter", "reactNative", "mobileAppOthers",
+    ];
+  
+    const checkboxIdMap: Record<string, string> = {
+      htmlCss: "html-css",
+      react: "react",
+      angular: "angular",
+      vuejs: "vuejs",
+      nextjs: "nextjs",
+      frontendOthers: "frontend-others",
+      nodejs: "nodejs",
+      javaSpring: "java-spring",
+      phpLaravel: "php-laravel",
+      dotNet: "dot-net",
+      python: "python",
+      go: "go",
+      backendOthers: "backend-others",
+      flutter: "flutter",
+      reactNative: "react-native",
+      mobileAppOthers: "mobile-app-others",
+    };
+  
+    const selectedTechs = techStackKeys
+      .filter((key) => data[key as keyof FormData])
+      .map((key) => checkboxIdMap[key]);
+  
+    // Final payload
+    const formattedData = {
+      ...data,
+      service_id: selectedServiceIds.join(","), // e.g., "1,2,3"
+      service_solution: selectedTechs.join(","), // e.g., "react,nodejs,flutter"
+    };
+  
+    try {
+      const response = await addtHireService(formattedData).unwrap();
+      console.log("response hire: ", response);
+      console.log("response success: ", response?.success);
+      if (response?.success) {
+        setIsModalOpen(true);
+        toast.success("Your application was successfully submitted!");
+      } else {
+        toast.error(response?.message || "Something went wrong. Please try again.");
+      }
+    } catch (error: any) {
+      console.error("Error submitting form:", error);
+      toast.error(error?.data?.message || "Something went wrong.");
+    }
   };
+  
 
   const handleModalClose = () => {
     setIsModalOpen(false);
@@ -127,7 +185,7 @@ const ApplicationForm = () => {
           </form>
         </FormProvider>
       </div>
-      <div>{isModalOpen && <HireSuccessModal onClose = {handleModalClose} />}</div>
+      <div>{isModalOpen && <HireSuccessModal onClose={handleModalClose} />}</div>
     </div>
   );
 };
