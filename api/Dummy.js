@@ -6585,12 +6585,12 @@ export const IndustriesCardsData = [
     industryDescription:
       "Drive innovation with secure, scalable, and customer-centric fintech solutions. From payment gateways to digital banking, empower your business with cutting-edge technology.",
     industryReview:
-      "The team's dedication and expertise in FinTech solutions were impressive, ensuring efficiency and keeping everyone aligned throughout the project.",
-    reviewerName: "John Doe",
-    reviewerImage: "https://via.placeholder.com/40x40",
+      "The team's dedication and expertise in FinTech solutions were impressive, ensuring efficiency and keeping everyone aligned throughout the project",
+    reviewerName: "Dara Khosrowshahi",
+    reviewerImage: "https://i.ibb.co.com/gZ5s9n11/uber-ceo.webp",
     reviewerPosition: "CEO",
     reviewerCompany: "Uber",
-
+    industryLinkName: "fintech",
     services: [
       "Digital Payments Solutions",
       "Blockchain Technology Integration",
@@ -6643,12 +6643,12 @@ export const IndustriesCardsData = [
     industryDescription:
       "Empower your startup with innovative solutions that drive growth and efficiency. From MVP development to scaling, we provide the tools you need to succeed.",
     industryReview:
-      "Their expertise in startup solutions was invaluable. They helped us launch quickly and scale efficiently.",
-    reviewerName: "Alice Brown",
-    reviewerImage: "https://via.placeholder.com/40x40",
+      "The team's innovative approach and commitment to developing tailored solutions helped us scale quickly and navigate early challenges with ease",
+    reviewerName: "Maëlle Gavet",
+    reviewerImage: "https://i.ibb.co.com/jZqFP8HK/Meet-Maelle-scaled-1.jpg",
     reviewerPosition: "Founder",
     reviewerCompany: "TechStart",
-
+    industryLinkName: "startup",
     services: [
       "MVP Development",
       "Product Design & Prototyping",
@@ -6701,12 +6701,12 @@ export const IndustriesCardsData = [
     industryDescription:
       "Optimize your logistics operations with advanced technology solutions. From supply chain management to real-time tracking, enhance efficiency and reduce costs.",
     industryReview:
-      "Their logistics solutions streamlined our operations and significantly improved our delivery times.",
+      "The team's solutions significantly optimized our supply chain operations, improving delivery efficiency and reducing costs across the board",
     reviewerName: "Robert Green",
-    reviewerImage: "https://via.placeholder.com/40x40",
+    reviewerImage: "https://i.ibb.co.com/rXHnBgs/logistic.png",
     reviewerPosition: "Logistics Manager",
     reviewerCompany: "FastTrack Logistics",
-
+    industryLinkName: "logistics",
     services: [
       "Supply Chain Management",
       "Fleet Management Systems",
@@ -6759,12 +6759,12 @@ export const IndustriesCardsData = [
     industryDescription:
       "Transform your retail and manufacturing processes with technology-driven solutions. From inventory management to customer engagement, drive growth and efficiency.",
     industryReview:
-      "Their solutions for retail and manufacturing helped us streamline our processes and improve customer satisfaction.",
+      "Their industry-specific solutions streamlined our production processes, enhanced inventory management, and improved the overall customer experience",
     reviewerName: "Laura White",
-    reviewerImage: "https://via.placeholder.com/40x40",
+    reviewerImage: "https://i.ibb.co.com/gZ5s9n11/uber-ceo.webp",
     reviewerPosition: "Operations Director",
     reviewerCompany: "RetailPro",
-
+    industryLinkName: "retail-and-manufacturing",
     services: [
       "Inventory Management Systems",
       "Customer Relationship Management (CRM)",
@@ -6817,12 +6817,12 @@ export const IndustriesCardsData = [
     industryDescription:
       "Empower your enterprise with scalable and secure technology solutions. From ERP systems to cloud computing, enhance productivity and drive innovation.",
     industryReview:
-      "Their enterprise solutions provided us with the tools we needed to scale and innovate effectively.",
+      "The team's enterprise solutions enabled us to modernize our infrastructure, improve efficiency, and enhance collaboration across departments.",
     reviewerName: "James Black",
-    reviewerImage: "https://via.placeholder.com/40x40",
+    reviewerImage: "https://i.ibb.co.com/jZqFP8HK/Meet-Maelle-scaled-1.jpg",
     reviewerPosition: "CIO",
     reviewerCompany: "EnterpriseCorp",
-
+    industryLinkName: "enterprise",
     services: [
       "Enterprise Resource Planning (ERP)",
       "Business Intelligence & Analytics",
@@ -6875,12 +6875,12 @@ export const IndustriesCardsData = [
     industryDescription:
       "Enhance the learning experience with innovative education technology solutions. From e-learning platforms to student management systems, empower educators and students.",
     industryReview:
-      "Their education technology solutions transformed our learning environment and improved student engagement.",
+      "Their innovative educational technology solutions helped us enhance our learning platforms, making education more accessible and interactive for both students and teachers.",
     reviewerName: "Sarah Blue",
-    reviewerImage: "https://via.placeholder.com/40x40",
+    reviewerImage: "https://i.ibb.co.com/rXHnBgs/logistic.png",
     reviewerPosition: "Principal",
     reviewerCompany: "EduTech School",
-
+    industryLinkName: "education",
     services: [
       "E-learning Platforms",
       "Student Information Systems",
@@ -6933,12 +6933,12 @@ export const IndustriesCardsData = [
     industryDescription:
       "Revolutionize the real estate industry with technology solutions that enhance property management, sales, and customer engagement.",
     industryReview:
-      "Their real estate solutions helped us manage properties more efficiently and improve client satisfaction.",
+      "The solutions provided have significantly improved our property management processes, enhanced customer relationships, and streamlined our real estate operations",
     reviewerName: "David Grey",
-    reviewerImage: "https://via.placeholder.com/40x40",
+    reviewerImage: "https://i.ibb.co.com/gZ5s9n11/uber-ceo.webp",
     reviewerPosition: "Real Estate Manager",
     reviewerCompany: "RealEstatePro",
-
+    industryLinkName: "real-estate",
     services: [
       "Property Management Systems",
       "Real Estate CRM",
@@ -6990,12 +6990,12 @@ export const IndustriesCardsData = [
     industryName: "Medical & Healthcare",
     industryDescription:
       "Enhance healthcare delivery with advanced technology solutions. From telemedicine to patient management systems, improve patient care and operational efficiency.",
-    industryReview: "Their healthcare solutions improved our patient care and streamlined our operations.",
+    industryReview: "Their healthcare technology solutions have greatly improved our ability to deliver efficient, high-quality care, significantly enhancing patient outcomes.",
     reviewerName: "Emma Brown",
-    reviewerImage: "https://via.placeholder.com/40x40",
+    reviewerImage: "https://i.ibb.co.com/jZqFP8HK/Meet-Maelle-scaled-1.jpg",
     reviewerPosition: "Healthcare Administrator",
     reviewerCompany: "HealthCarePlus",
-
+    industryLinkName: "medical-and-healthcare",
     services: [
       "Telemedicine Solutions",
       "Electronic Health Records (EHR)",
@@ -7047,12 +7047,12 @@ export const IndustriesCardsData = [
     industryName: "Technology Company",
     industryDescription:
       "Drive innovation with cutting-edge technology solutions. From software development to cloud computing, empower your tech company to achieve its goals.",
-    industryReview: "Their technology solutions helped us innovate and stay ahead of the competition.",
+    industryReview: "The innovative technology solutions provided helped us stay ahead of the curve, enabling us to scale efficiently and improve our overall product offerings.",
     reviewerName: "Chris White",
-    reviewerImage: "https://via.placeholder.com/40x40",
+    reviewerImage: "https://i.ibb.co.com/rXHnBgs/logistic.png",
     reviewerPosition: "CTO",
     reviewerCompany: "TechInnovate",
-
+    industryLinkName: "technology-company",
     services: [
       "Custom Software Development",
       "Cloud Computing Solutions",
@@ -7105,12 +7105,12 @@ export const IndustriesCardsData = [
     industryDescription:
       "Transform the media and entertainment industry with innovative technology solutions. From content creation to distribution, enhance your audience's experience.",
     industryReview:
-      "Their media and entertainment solutions helped us create and distribute content more effectively.",
-    reviewerName: "Olivia Green",
-    reviewerImage: "https://via.placeholder.com/40x40",
-    reviewerPosition: "Media Director",
-    reviewerCompany: "MediaPro",
-
+      "Their digital solutions have transformed the way we engage with our audience, streamlining content delivery and enhancing interactivity",
+    reviewerName: "Mahtab Uddin Ahmed",
+    reviewerImage: "https://i.ibb.co.com/sJm4mL40/robi.png",
+    reviewerPosition: "Managing Director and CEO",
+    reviewerCompany: "Robi",
+    industryLinkName: "media-and-entertainment",
     services: [
       "Content Management Systems",
       "Digital Asset Management",
