@@ -8,9 +8,9 @@ import { Separator } from "@/components/ui/separator";
 // import PlaneLottieAboutUs from "./HomeSubComponents.tsx/PlaneLottieAboutUs";
 const AboutUs: React.FC = () => {
   return (
-    <div className="container pt-12">
+    <div className="container pt-5">
       <Subtitle Subtitle="About Company" />
-      <h2 className="max-w-[492px] justify-start text-black text-2xl lg:text-4xl font-semibold">Solutions that Drive Your Business Forward</h2>
+      <h2 className="max-w-[492px] justify-start text-black text-2xl lg:text-4xl font-semibold">Solutions That Drive Your Business Forward</h2>
 
       <div>
         <div className="pt-6 pb-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">

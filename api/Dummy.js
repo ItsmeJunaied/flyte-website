@@ -2823,7 +2823,7 @@ export const projectData = [
 //industry data
 export const industrydata = {
   subTitle: "Our Industries",
-  sectionTitle: "Driving innovation across industries",
+  sectionTitle: "Driving Innovation Across Industries, From Start-ups To Global Leaders",
   industries: [
     {
       name: "Fintech",
