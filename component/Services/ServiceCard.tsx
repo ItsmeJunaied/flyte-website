@@ -9,14 +9,18 @@ type Service = {
   description: string;
   keywords: string[];
   serviceLinkName: string;
+  image1: string;
+  image2: string;
+  image3: string;
 };
 
 const ServiceCard: React.FC<{ service: Service }> = ({ service }) => {
-  const { id, title, subTitle, description, keywords, serviceLinkName } = service || {};
+  const { id, title, subTitle, description, keywords, serviceLinkName, image1, image2, image3 } =
+    service || {};
   return (
     <div>
       <div
-        className={` bg-white py-10 md:flex justify-center gap-10 lg:gap-36 mb-5 rounded-2xl space-y-5 md:space-y-0 px-5 lg:px-0 ${
+        className={` bg-white py-10 md:flex justify-center gap-10 lg:gap-8 mb-5 rounded-2xl space-y-5 md:space-y-0 px-5 lg:px-0 ${
           id % 2 === 0 && "flex-row-reverse"
         }`}
       >
@@ -25,14 +29,14 @@ const ServiceCard: React.FC<{ service: Service }> = ({ service }) => {
             id % 2 != 0 && "items-center md:items-end"
           } `}
         >
-          <div className="w-40 md:w-60 h-[120px] md:h-[155px] bg-emerald-300 md:ml-32 -mb-12">
-            <img src="https://i.ibb.co.com/BzrstK4/Image1.png" alt="" />
+          <div className="w-40 md:w-60 h-[120px] md:h-[155px] md:ml-32 -mb-12">
+            <img className="w-full h-full cover border" src={image1} alt={subTitle + 1} />
           </div>
-          <div className="w-40 md:w-60 h-[120px] md:h-[155px] bg-emerald-500 mr-32">
-            <img src="https://i.ibb.co.com/QdrF5BQ/Image2.png" alt="" />
+          <div className="w-40 md:w-60 h-[120px] md:h-[155px] mr-32">
+            <img className="w-full h-full cover border" src={image2} alt={subTitle + 2} />
           </div>
-          <div className="w-40 md:w-60 h-[120px] md:h-[155px] bg-emerald-700 md:ml-32 -mt-12">
-            <img src="https://i.ibb.co.com/7W1VRHX/Image3.png" alt="" />
+          <div className="w-40 md:w-60 h-[120px] md:h-[155px] md:ml-32 -mt-12">
+            <img className="w-full h-full cover border" src={image3} alt={subTitle + 3} />
           </div>
         </div>
 

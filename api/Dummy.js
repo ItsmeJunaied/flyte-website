@@ -401,6 +401,9 @@ export const serviceData = [
       "Expand your development capabilities with dedicated teams that integrate seamlessly with your existing operations.",
     keywords: ["outsourcing", "staffing", "developers"],
     image: "/images/service1.png",
+    image1: "https://i.ibb.co.com/BzrstK4/Image1.png",
+    image2: "https://i.ibb.co.com/QdrF5BQ/Image2.png",
+    image3: "https://i.ibb.co.com/7W1VRHX/Image3.png",
     features: [
       {
         icon: "fas fa-users",
@@ -477,6 +480,9 @@ export const serviceData = [
       "Tailored software solutions that align with your business needs, ensuring seamless integration and efficiency.",
     keywords: ["solutions", "design", "apps"],
     image: "/images/service2.png",
+    image1: "https://i.ibb.co.com/997tLysb/Adobe-Stock-508936825-resized-1080x675.jpg",
+    image2: "https://i.ibb.co.com/232F2LrY/custom-software-solutions-development.jpg",
+    image3: "https://i.ibb.co.com/HmfCFFz/Custom-Software-Development-1024x538-1.webp",
     features: [
       {
         icon: "fas fa-users",
@@ -553,6 +559,9 @@ export const serviceData = [
       "Build robust enterprise-level software to support large-scale operations, improve efficiency, and foster innovation.",
     keywords: ["scalable", "automation", "growth"],
     image: "/images/service3.png",
+    image1: "https://i.ibb.co.com/Y4Ph8ydF/enterprize-1.webp",
+    image2: "https://i.ibb.co.com/W4vDqymm/enterprize-2.png",
+    image3: "https://i.ibb.co.com/Hj2HCmz/enterprize-3.jpg",
     features: [
       {
         icon: "fas fa-users",
@@ -630,6 +639,9 @@ export const serviceData = [
       "Design and develop mobile applications for iOS and Android platforms, enhancing user experience and engagement.",
     keywords: ["iOS", "Android", "apps"],
     image: "/images/service4.svg",
+    image1: "https://i.ibb.co.com/qYH97RVF/mobile-app-3.png",
+    image2: "https://i.ibb.co.com/23PSHt2g/mobile-app-2.webp",
+    image3: "https://i.ibb.co.com/mFHjqTj1/mobile-app-1.jpg",
     features: [
       {
         icon: "fas fa-users",
@@ -706,6 +718,9 @@ export const serviceData = [
       "Ensure software quality with comprehensive testing services, from functional to performance testing.",
     keywords: ["testing", "automation", "bugs"],
     image: "/images/service5.png",
+    image1: "https://i.ibb.co.com/dwws7WK9/qa-1.webp",
+    image2: "https://i.ibb.co.com/TdKNRWz/qa-2.webp",
+    image3: "https://i.ibb.co.com/gZzGdR6m/qa-3.webp",
     features: [
       {
         icon: "fas fa-users",
@@ -782,6 +797,9 @@ export const serviceData = [
       "Build a minimum viable product quickly to test your ideas, validate concepts, and enter the market faster.",
     keywords: ["MVP", "validation", "startup"],
     image: "/images/service6.png",
+    image1: "https://i.ibb.co.com/PzrRVmmK/mvp-1.webp",
+    image2: "https://i.ibb.co.com/7dxNMcJN/mvp-2.webp",
+    image3: "https://i.ibb.co.com/LDWnHgNG/mvp-3.webp",
     features: [
       {
         icon: "fas fa-users",
