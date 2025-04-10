@@ -6586,10 +6586,10 @@ export const IndustriesCardsData = [
       "Drive innovation with secure, scalable, and customer-centric fintech solutions. From payment gateways to digital banking, empower your business with cutting-edge technology.",
     industryReview:
       "The team's dedication and expertise in FinTech solutions were impressive, ensuring efficiency and keeping everyone aligned throughout the project",
-    reviewerName: "Dara Khosrowshahi",
-    reviewerImage: "https://i.ibb.co.com/gZ5s9n11/uber-ceo.webp",
-    reviewerPosition: "CEO",
-    reviewerCompany: "Uber",
+    reviewerName: "Arif Al Zahin",
+    reviewerImage: "https://i.ibb.co.com/j9FXMCk2/city-bank-Assistant-Manager.jpg",
+    reviewerPosition: "Assistant Manager",
+    reviewerCompany: "City Bank",
     industryLinkName: "fintech",
     services: [
       "Digital Payments Solutions",
@@ -6644,10 +6644,10 @@ export const IndustriesCardsData = [
       "Empower your startup with innovative solutions that drive growth and efficiency. From MVP development to scaling, we provide the tools you need to succeed.",
     industryReview:
       "The team's innovative approach and commitment to developing tailored solutions helped us scale quickly and navigate early challenges with ease",
-    reviewerName: "Maëlle Gavet",
-    reviewerImage: "https://i.ibb.co.com/jZqFP8HK/Meet-Maelle-scaled-1.jpg",
-    reviewerPosition: "Founder",
-    reviewerCompany: "TechStart",
+    reviewerName: "Tanvir Ahamad Fahim",
+    reviewerImage: "https://i.ibb.co.com/ZRM2N8jQ/uber-Customer-Service-Associate.jpg",
+    reviewerPosition: "Customer Service Associate",
+    reviewerCompany: "Uber",
     industryLinkName: "startup",
     services: [
       "MVP Development",
@@ -6760,10 +6760,10 @@ export const IndustriesCardsData = [
       "Transform your retail and manufacturing processes with technology-driven solutions. From inventory management to customer engagement, drive growth and efficiency.",
     industryReview:
       "Their industry-specific solutions streamlined our production processes, enhanced inventory management, and improved the overall customer experience",
-    reviewerName: "Laura White",
-    reviewerImage: "https://i.ibb.co.com/gZ5s9n11/uber-ceo.webp",
-    reviewerPosition: "Operations Director",
-    reviewerCompany: "RetailPro",
+    reviewerName: "Dewan Jamil",
+    reviewerImage: "https://i.ibb.co.com/HDhZjtWf/deputy-Walton.jpg",
+    reviewerPosition: "Deputy Assistant Director",
+    reviewerCompany: "Walton",
     industryLinkName: "retail-and-manufacturing",
     services: [
       "Inventory Management Systems",
@@ -6876,10 +6876,10 @@ export const IndustriesCardsData = [
       "Enhance the learning experience with innovative education technology solutions. From e-learning platforms to student management systems, empower educators and students.",
     industryReview:
       "Their innovative educational technology solutions helped us enhance our learning platforms, making education more accessible and interactive for both students and teachers.",
-    reviewerName: "Sarah Blue",
-    reviewerImage: "https://i.ibb.co.com/rXHnBgs/logistic.png",
-    reviewerPosition: "Principal",
-    reviewerCompany: "EduTech School",
+    reviewerName: "Paolo Gallucci",
+    reviewerImage: "https://i.ibb.co.com/BVLw1sbS/macmillan.jpg",
+    reviewerPosition: "Editor & Copywriter",
+    reviewerCompany: "Macmillan Education",
     industryLinkName: "education",
     services: [
       "E-learning Platforms",
