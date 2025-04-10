@@ -29,8 +29,6 @@ const SuccessStories: React.FC<successStoryProps> = ({ bgColor }) => {
     return <div className="w-full h-[300px] flex justify-center items-center">Loading...</div>;
   }
 
-  console.log("data of client feedback", clientFeedback?.data?.data);
-
   const settings = {
     infinite: true,
     speed: 500,

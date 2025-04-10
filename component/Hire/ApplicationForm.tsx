@@ -9,14 +9,14 @@ import HireSuccessModal from "./HireSuccessModal";
 import { useRouter } from "next/navigation";
 
 type FormData = {
-  userName: string;
+  name: string;
   company: string;
   email: string;
   phone: string;
-  teamSize: string;
-  projectDuration: string;
-  experienceLevel: string;
-  onboardTime: string;
+  team_size: string;
+  project_duration: string;
+  experience_level: string;
+  tentative_onboarding_duration: string;
   agree: boolean;
 
   frontend?: boolean;
