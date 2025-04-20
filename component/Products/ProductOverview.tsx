@@ -57,6 +57,8 @@ export type productData = {
 const ProductOverview: React.FC<{ params: string }> = ({ params }) => {
   const { data, isLoading } = useGetProductQuery(params);
 
+  // console.log("singleProduct", data);
+
   return (
     <div>
       {isLoading ? (

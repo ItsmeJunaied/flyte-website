@@ -980,37 +980,44 @@ export const productsSections = [
     id: 1,
     image: "https://i.ibb.co.com/TBR9drZ/product-1.png",
     name: "Time2Task",
+    path:"time2task",
   },
   {
     id: 2,
     image: "https://i.ibb.co.com/DMMrh49/Rectangle-2.png",
     name: "Cloud ClockIn",
+    path:"cloud-clockin",
   },
   {
     id: 3,
     image: "https://i.ibb.co.com/9qD0123/Rectangle-3.png",
     name: "Flyte CRM",
+    path:"flyte-crm",
   },
   {
     id: 4,
     image: "https://i.ibb.co.com/MhWYXzG/Rectangle-4.png",
     name: "Flyte POS",
+    path:"flyte-pos",
   },
   {
     id: 5,
     image: "https://i.ibb.co.com/7WSjJYM/case-study-banner.png",
     name: "Flyte ERP",
+    path:"flyte-erp",
   },
   {
     id: 6,
     image: "https://i.ibb.co.com/dfKBJbd/case-study-img-2.png",
     name: "Flyte Queue",
+    path:"flyte-queue",
   },
-  {
-    id: 7,
-    image: "https://i.ibb.co.com/FVY4cnX/case-study-img-3.png",
-    name: "Queue Management",
-  },
+  // {
+  //   id: 7,
+  //   image: "https://i.ibb.co.com/FVY4cnX/case-study-img-3.png",
+  //   name: "Queue Management",
+  //   path:"",
+  // },
 ];
 
 // blog and news
