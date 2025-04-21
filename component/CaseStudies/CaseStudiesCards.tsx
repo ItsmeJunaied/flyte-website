@@ -143,7 +143,7 @@ const CaseStudiesCards = () => {
                       </div>
 
                       <div className="flex flex-col lg:flex-row">
-                        {caseStudy.tag.map((tag, i: number) => (
+                        {caseStudy?.tag?.slice(0,3)?.map((tag, i: number) => (
                           <div
                             key={i}
                             className="w-full px-6 py-4 bg-[#2b3e50] h-11 border-r-2 border-[#dda380]"
