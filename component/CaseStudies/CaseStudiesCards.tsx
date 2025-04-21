@@ -68,7 +68,6 @@ const CaseStudiesCards = () => {
       // Change category
       setSelectedCategory(category);
       setCurrentPage(1);
-      console.log("selected category", category);
     }
   };
 
@@ -80,7 +79,7 @@ const CaseStudiesCards = () => {
   const { categories } = contentCagetories?.data || {};
   const { current_page, last_page } = caseStudies?.data || {};
 
-  console.log("categories", categories);
+  // console.log("categories", categories);
 
   return (
     <div>
