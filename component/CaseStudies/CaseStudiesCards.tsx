@@ -1,6 +1,6 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Subtitle from "../Common/Subtitle";
 import Title from "../Common/Title";
 import Link from "next/link";
@@ -32,7 +32,12 @@ const CaseStudiesCards = () => {
     name: "All Industries",
     type: "",
   });
-
+  
+  // Reference to track if it's a category change
+  const isCategoryChange = useRef(false);
+  // Reference to store position before category click
+  const scrollPosition = useRef(0);
+  
   const { data: contentCagetories, isLoading: isLoadingContent } = useGetContentCategoryQuery("");
   const {
     data: caseStudies,
@@ -43,15 +48,39 @@ const CaseStudiesCards = () => {
     page: currentPage,
   });
 
+  // Restore scroll position after category change
+  useEffect(() => {
+    if (!isLoading && !isFetching && isCategoryChange.current) {
+      // Restore to the saved position
+      setTimeout(() => {
+        window.scrollTo(0, scrollPosition.current);
+        isCategoryChange.current = false;
+      }, 0);
+    }
+  }, [isLoading, isFetching]);
+
+  const handleCategoryChange = (category: Category) => {
+    if (category.id !== selectedCategory.id) {
+      // Save current scroll position
+      scrollPosition.current = window.scrollY;
+      // Set flag that we're changing category
+      isCategoryChange.current = true;
+      // Change category
+      setSelectedCategory(category);
+      setCurrentPage(1);
+      console.log("selected category", category);
+    }
+  };
+
   const handlePageChange = (newPage: number) => {
     setCurrentPage(newPage);
-    // The query will automatically refetch because currentPage changed
+    // We don't set isCategoryChange here, so Pagination's scroll effect will work
   };
 
   const { categories } = contentCagetories?.data || {};
   const { current_page, last_page } = caseStudies?.data || {};
 
-  console.log("caseStudies?.data", caseStudies?.data);
+  console.log("categories", categories);
 
   return (
     <div>
@@ -61,7 +90,7 @@ const CaseStudiesCards = () => {
         <div className="rounded-t-[60px] lg:py-5 lg:px-0 w-full flex justify-center items-center">
           <div className="container">
             <div className="flex flex-col justify-center items-center gap-1 w-full">
-              <Subtitle Subtitle="Case Stuies" />
+              <Subtitle Subtitle="Case Studies" />
               <Title
                 width="w-full"
                 padding="px-2 lg:px-0"
@@ -73,16 +102,16 @@ const CaseStudiesCards = () => {
 
             {/* category tab  */}
             <div className="flex flex-row flex-wrap gap-2 mt-4 lg:mt-10">
-              {categories?.map((categroy: Category, index: number) => (
+              {categories?.map((category: Category, index: number) => (
                 <button
                   key={index}
-                  onClick={() => setSelectedCategory(categroy)}
+                  onClick={() => handleCategoryChange(category)}
                   className={`h-9 px-4 py-2 ${
-                    selectedCategory?.name === categroy?.name ? "bg-[#fff]" : "bg-[#FDF6E3]"
+                    selectedCategory?.name === category?.name ? "bg-[#fff]" : "bg-[#FDF6E3]"
                   } hover:bg-[#fff] justify-center items-center gap-2 inline-flex`}
                 >
                   <span className="text-center text-[#4A4A89] text-base font-normal font-['Open Sans'] leading-tight tracking-tight">
-                    {categroy?.name?.toUpperCase()}
+                    {category?.name?.toUpperCase()}
                   </span>
                 </button>
               ))}
@@ -98,7 +127,7 @@ const CaseStudiesCards = () => {
                 ) : (
                   caseStudies?.data?.data?.map((caseStudy: CaseStudy, index: number) => (
                     <Link
-                      key={index}
+                      key={caseStudy.id || index}
                       href={`/case-studies/${caseStudy?.slug}`}
                       className={`flex flex-col ${
                         index % 2 !== 0 ? "lg:mt-10" : ""
@@ -114,9 +143,9 @@ const CaseStudiesCards = () => {
                       </div>
 
                       <div className="flex flex-col lg:flex-row">
-                        {caseStudy.tag.map((tag, index: number) => (
+                        {caseStudy.tag.map((tag, i: number) => (
                           <div
-                            key={index}
+                            key={i}
                             className="w-full px-6 py-4 bg-[#2b3e50] h-11 border-r-2 border-[#dda380]"
                           >
                             <p className="text-white text-xs font-semibold text-center">{tag}</p>

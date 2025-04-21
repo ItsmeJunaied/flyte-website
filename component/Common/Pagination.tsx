@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef } from "react";
+import { FC, useRef } from "react";
 
 interface PaginationProps {
   current_page: number;
@@ -15,27 +15,21 @@ const Pagination: FC<PaginationProps> = ({
   visibleRange = 2,
   isLoading = false,
 }) => {
-  const isInitialLoad = useRef(true);
   const userInteracted = useRef(false);
 
-  // Handle scroll with conditional offset
-  const handleScroll = () => {
-    const offset = userInteracted.current ? 850 : 0;
+  // Handle scroll with conditional offset - ONLY for pagination changes
+  const handlePageChangeWithScroll = (newPage: number) => {
+    userInteracted.current = true;
+    onPageChange(newPage);
+
+    // Add a small delay to allow the data to load before scrolling
     setTimeout(() => {
       window.scrollTo({
-        top: offset,
+        top: 850, // Fixed scroll position for pagination
         behavior: "smooth",
       });
     }, 100);
   };
-
-  // Handle scroll after data loads
-  useEffect(() => {
-    if (!isInitialLoad.current) {
-      handleScroll();
-    }
-    isInitialLoad.current = false;
-  }, [current_page, isLoading]);
 
   // Don't render if there's only one page
   if (last_page <= 1) return null;
@@ -72,30 +66,24 @@ const Pagination: FC<PaginationProps> = ({
     return pages;
   };
 
-  // Common click handler for all navigation
-  const handleNavigation = (newPage: number) => {
-    userInteracted.current = true;
-    onPageChange(newPage);
-  };
-
   // Handler for previous button
   const handlePrevious = () => {
     if (current_page > 1) {
-      handleNavigation(current_page - 1);
+      handlePageChangeWithScroll(current_page - 1);
     }
   };
 
   // Handler for next button
   const handleNext = () => {
     if (current_page < last_page) {
-      handleNavigation(current_page + 1);
+      handlePageChangeWithScroll(current_page + 1);
     }
   };
 
   // Handler for page number clicks
   const handlePageClick = (page: number) => {
     if (page !== current_page) {
-      handleNavigation(page);
+      handlePageChangeWithScroll(page);
     }
   };
 
