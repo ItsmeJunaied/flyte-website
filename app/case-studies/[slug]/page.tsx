@@ -5,7 +5,7 @@ import Contact from "@/component/Contact/Contact";
 import { Metadata } from "next";
 
 type PageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 const fetchCaseStudy = async (slug: string) => {
@@ -15,7 +15,7 @@ const fetchCaseStudy = async (slug: string) => {
 };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = params;
+  const { slug } = await params;
   const caseStudy = await fetchCaseStudy(slug);
   const { meta_title, meta_description } = caseStudy?.data || {};
 
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const allSlugs: string[] = [];
 
   let page = 1;
@@ -42,7 +42,7 @@ export async function generateStaticParams() {
     const json = await res.json();
     const caseStudies = json?.data?.data || [];
 
-    allSlugs.push(...caseStudies.map((item: any) => item.slug));
+    allSlugs.push(...caseStudies.map((item: { slug: string }) => item.slug));
 
     const currentPage = json?.data?.current_page || page;
     const perPage = json?.data?.per_page || 10;
@@ -58,8 +58,8 @@ export async function generateStaticParams() {
   return uniqueSlugs.map((slug) => ({ slug }));
 }
 
-const page = async ({ params }: PageProps) => {
-  const { slug } = params;
+export default async function Page({ params }: PageProps) {
+  const { slug } = await params;
 
   return (
     <div>
@@ -69,6 +69,4 @@ const page = async ({ params }: PageProps) => {
       <Contact />
     </div>
   );
-};
-
-export default page;
+}
