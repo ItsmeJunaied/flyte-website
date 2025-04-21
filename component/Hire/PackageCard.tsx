@@ -34,9 +34,9 @@ const PackageCard: React.FC<PackageCardProps> = ({ items }) => {
         ))}
       </div>
       {/* button */}
-      <div className="px-6 py-2.5 mt-6 bg-[#5856d6] hover:bg-white rounded-md text-center text-white hover:text-[#5856d6] text-sm font-semibold transition duration-500">
-        <Link href="/hire/application-form">Hire Us</Link>
-      </div>
+      <Link href="/hire/application-form" className="px-6 py-2.5 mt-6 bg-[#5856d6] hover:bg-white rounded-md text-center text-white hover:text-[#5856d6] text-sm font-semibold transition duration-500">
+      Hire Us
+      </Link>
     </div>
   );
 };
