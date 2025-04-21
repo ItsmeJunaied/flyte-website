@@ -15,8 +15,8 @@ const HireSteps = () => {
           </p>
         </div>
         <div>
-          <img className="hidden md:block" src="/images/hire/hire-stpes-desktop.png" alt="" />
-          <img className="md:hidden mx-auto" src="/images/hire/hire-steps-mobile.png" alt="" />
+          <img className="hidden md:block" draggable={false} src="/images/hire/hire-stpes-desktop.png" alt="" />
+          <img className="md:hidden mx-auto" draggable={false} src="/images/hire/hire-steps-mobile.png" alt="" />
         </div>
         <div className="w-fit mx-auto mt-6">
           <Link
