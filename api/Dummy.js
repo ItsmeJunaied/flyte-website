@@ -5,7 +5,8 @@ export const navbarData = {
       name: "Hire",
       type: "dropdown",
       path: "/hire",
-      description: "Hire skilled developers to bring expertise and efficiency to your projects, ensuring outstanding results every time.",
+      description:
+        "Hire skilled developers to bring expertise and efficiency to your projects, ensuring outstanding results every time.",
       features: [
         {
           name: "Frontend Developers",
@@ -49,7 +50,8 @@ export const navbarData = {
       name: "Industries",
       type: "dropdown",
       path: "/industries",
-      description: "Our expertise covers a wide range of industries, addressing the specific challenges of each sector. From healthcare and finance to e-commerce, education, and more, we create innovative, scalable solutions that drive efficiency and success in your industry.",
+      description:
+        "Our expertise covers a wide range of industries, addressing the specific challenges of each sector. From healthcare and finance to e-commerce, education, and more, we create innovative, scalable solutions that drive efficiency and success in your industry.",
       features: [
         {
           name: "Fintech",
@@ -124,7 +126,8 @@ export const navbarData = {
       name: "Services",
       type: "dropdown",
       path: "/services",
-      description: "We take care of all your technical needs, from concept to execution and beyond. Whether it's development, optimization, or scaling, we’re committed to delivering and continuously improving your product so you can focus on growth.",
+      description:
+        "We take care of all your technical needs, from concept to execution and beyond. Whether it's development, optimization, or scaling, we’re committed to delivering and continuously improving your product so you can focus on growth.",
       features: [
         {
           name: "Team Extension",
@@ -169,7 +172,8 @@ export const navbarData = {
       name: "Products",
       type: "dropdown",
       path: "/products",
-      description: "Explore innovative solutions designed to simplify processes, enhance efficiency, and drive growth across industries.",
+      description:
+        "Explore innovative solutions designed to simplify processes, enhance efficiency, and drive growth across industries.",
       features: [
         {
           name: "Time2Task",
@@ -223,7 +227,8 @@ export const navbarData = {
       name: "Company",
       type: "dropdown",
       path: "/company",
-      description: "Explore who we are, what we stand for, and how we’re shaping the future. Stay informed with the latest updates, insights, and stories that define our journey and inspire innovation.",
+      description:
+        "Explore who we are, what we stand for, and how we’re shaping the future. Stay informed with the latest updates, insights, and stories that define our journey and inspire innovation.",
       features: [
         {
           name: "About Us",
@@ -231,7 +236,7 @@ export const navbarData = {
           description:
             "Learn about our mission, vision, and the values that drive our commitment to excellence. Discover the story behind our journey and what makes us a trusted partner for businesses worldwide.",
           path: "/company/about-us",
-          btnText:"Explore About Us"
+          btnText: "Explore About Us",
         },
         {
           name: "News & Blogs",
@@ -239,7 +244,7 @@ export const navbarData = {
           description:
             "Stay updated with the latest company news, industry insights, and expert opinions. Dive into our blogs for valuable tips and updates shaping the future of technology and business.",
           path: "/company/news&blogs",
-          btnText:"Read News & Blogs"
+          btnText: "Read News & Blogs",
         },
       ],
     },
@@ -261,42 +266,42 @@ export const bannerData = {
     {
       logo: "fa-solid fa-chart-area",
       name: "Fintech",
-      path:"industries/fintech",
+      path: "industries/fintech",
     },
     {
       logo: "fa-solid fa-graduation-cap",
       name: "Education",
-      path:"industries/education",
+      path: "industries/education",
     },
     {
       logo: "fa-solid fa-truck",
       name: "Logistics",
-      path:"industries/logistics",
+      path: "industries/logistics",
     },
     {
       logo: "fa-solid fa-store",
       name: "Retail & Manufacturing",
-      path:"industries/retail-and-manufacturing",
+      path: "industries/retail-and-manufacturing",
     },
     {
       logo: "fa-solid fa-building",
       name: "Real Estate",
-      path:"industries/real-estate",
+      path: "industries/real-estate",
     },
     {
       logo: "fa-solid fa-heart-pulse",
       name: "Medical & Healthcare",
-      path:"industries/medical-and-healthcare",
+      path: "industries/medical-and-healthcare",
     },
     {
       logo: "fa-solid fa-microchip",
       name: "Technology Company",
-      path:"industries/technology-company",
+      path: "industries/technology-company",
     },
     {
       logo: "fa-solid fa-video",
       name: "Media & Entertainment",
-      path:"industries/media-and-entertainment",
+      path: "industries/media-and-entertainment",
     },
   ],
   bannerImage: "/images/bannerImg.png",
@@ -392,11 +397,12 @@ export const brandData = {
 // service
 export const serviceData = [
   {
-    id:1,
+    id: 1,
     title: "Transform Your Business with Team Extension",
-    short_title:"Team Extension",
-    short_description:"Expand your development capabilities with dedicated teams that integrate seamlessly with your existing operations.",
-    subTitle:"Team Extension",
+    short_title: "Team Extension",
+    short_description:
+      "Expand your development capabilities with dedicated teams that integrate seamlessly with your existing operations.",
+    subTitle: "Team Extension",
     description:
       "Expand your development capabilities with dedicated teams that integrate seamlessly with your existing operations.",
     keywords: ["outsourcing", "staffing", "developers"],
@@ -432,50 +438,57 @@ export const serviceData = [
     heroDesctiption:
       "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
     heroButton: "Book A Consulation",
-    heroButtonLink:"/schedule-consultation",
+    heroButtonLink: "/schedule-consultation",
     heroImage: "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
     steps: {
       developing_title: "Team Extension Service",
-      developing_short_description: "Expand your team with skilled professionals who integrate seamlessly into your workflow.",
+      developing_short_description:
+        "Expand your team with skilled professionals who integrate seamlessly into your workflow.",
       developing_short_title: "Dedicated Developer Teams",
       developing_image: "/images/hire/team-extension.webp",
       developing_step: [
         {
           id: 1,
           developing_step_title: "Requirement Gathering",
-          description: "Identify your current team’s gaps, required skills, and the scope of work to build the right extension strategy."
+          description:
+            "Identify your current team’s gaps, required skills, and the scope of work to build the right extension strategy.",
         },
         {
           id: 2,
           developing_step_title: "Talent Sourcing",
-          description: "Select highly skilled professionals from our pool who align with your tech stack, goals, and culture."
+          description:
+            "Select highly skilled professionals from our pool who align with your tech stack, goals, and culture.",
         },
         {
           id: 3,
           developing_step_title: "Seamless Onboarding",
-          description: "Integrate the selected team members into your workflow with clear communication, tools, and processes."
+          description:
+            "Integrate the selected team members into your workflow with clear communication, tools, and processes.",
         },
         {
           id: 4,
           developing_step_title: "Ongoing Collaboration",
-          description: "Ensure real-time collaboration through daily syncs, task management tools, and transparent reporting."
+          description:
+            "Ensure real-time collaboration through daily syncs, task management tools, and transparent reporting.",
         },
         {
           id: 5,
           developing_step_title: "Performance Optimization",
-          description: "Continuously monitor and optimize team performance to ensure quality delivery and scalability."
-        }
+          description:
+            "Continuously monitor and optimize team performance to ensure quality delivery and scalability.",
+        },
       ],
       button_path: "/schedule-consultation",
       button_name: "Start Team Extension",
-    }    
+    },
   },
   {
-    id:2,
+    id: 2,
     title: "Transform Your Business with Custom Software Solutions",
-    short_title:"Custom Software Development",
-    short_description:"Tailored software solutions that align with your business needs, ensuring seamless integration and efficiency.",
-    subTitle:"Custom Software Development",
+    short_title: "Custom Software Development",
+    short_description:
+      "Tailored software solutions that align with your business needs, ensuring seamless integration and efficiency.",
+    subTitle: "Custom Software Development",
     description:
       "Tailored software solutions that align with your business needs, ensuring seamless integration and efficiency.",
     keywords: ["solutions", "design", "apps"],
@@ -511,50 +524,57 @@ export const serviceData = [
     heroDesctiption:
       "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
     heroButton: "Book A Consulation",
-    heroButtonLink:"/schedule-consultation",
+    heroButtonLink: "/schedule-consultation",
     heroImage: "/images/services/custom-software-development-banner-image.webp",
     steps: {
       developing_title: "Custom Software Development",
-      developing_short_description: "Tailored, scalable software solutions built to solve your unique business challenges.",
+      developing_short_description:
+        "Tailored, scalable software solutions built to solve your unique business challenges.",
       developing_short_title: "Tailored Digital Solutions",
       developing_image: "/images/services/custom-software.webp",
       developing_step: [
         {
           id: 1,
           developing_step_title: "Requirement Analysis",
-          description: "We thoroughly analyze your business needs, technical requirements, and goals to create a tailored software strategy."
+          description:
+            "We thoroughly analyze your business needs, technical requirements, and goals to create a tailored software strategy.",
         },
         {
           id: 2,
           developing_step_title: "Solution Architecture",
-          description: "Our team designs a scalable, secure, and modular architecture that aligns with your technical specifications and project needs."
+          description:
+            "Our team designs a scalable, secure, and modular architecture that aligns with your technical specifications and project needs.",
         },
         {
           id: 3,
           developing_step_title: "Agile Development",
-          description: "We build the solution using agile methodology, delivering incremental updates and continuously improving based on feedback."
+          description:
+            "We build the solution using agile methodology, delivering incremental updates and continuously improving based on feedback.",
         },
         {
           id: 4,
           developing_step_title: "Testing & Quality Assurance",
-          description: "We conduct thorough unit, integration, and end-to-end testing to ensure your software is stable and bug-free."
+          description:
+            "We conduct thorough unit, integration, and end-to-end testing to ensure your software is stable and bug-free.",
         },
         {
           id: 5,
           developing_step_title: "Deployment & Support",
-          description: "We deploy the solution to production, ensuring complete support, comprehensive documentation, and ongoing post-launch maintenance."
-        }
-      ],      
+          description:
+            "We deploy the solution to production, ensuring complete support, comprehensive documentation, and ongoing post-launch maintenance.",
+        },
+      ],
       button_path: "/schedule-consultation",
       button_name: "Start Custom Project",
-    }    
+    },
   },
   {
-    id:3,
+    id: 3,
     title: "Transform Your Business with Enterprise Software Development",
-    short_title:"Enterprise Software Development",
-    short_description:"Build robust enterprise-level software to support large-scale operations, improve efficiency, and foster innovation.",
-    subTitle:"Enterprise Software Development",
+    short_title: "Enterprise Software Development",
+    short_description:
+      "Build robust enterprise-level software to support large-scale operations, improve efficiency, and foster innovation.",
+    subTitle: "Enterprise Software Development",
     description:
       "Build robust enterprise-level software to support large-scale operations, improve efficiency, and foster innovation.",
     keywords: ["scalable", "automation", "growth"],
@@ -590,51 +610,57 @@ export const serviceData = [
     heroDesctiption:
       "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
     heroButton: "Book A Consulation",
-    heroButtonLink:"/schedule-consultation",
+    heroButtonLink: "/schedule-consultation",
     heroImage: "/images/services/enterpise-application-development-banner-image.webp",
     steps: {
       developing_title: "Enterprise Software Development",
-      developing_short_description: "Designing and building powerful, secure, and scalable software to streamline large-scale enterprise operations.",
+      developing_short_description:
+        "Designing and building powerful, secure, and scalable software to streamline large-scale enterprise operations.",
       developing_short_title: "Scalable Enterprise Solutions",
       developing_image: "/images/services/enterprise-software-development.webp",
       developing_step: [
         {
           id: 1,
           developing_step_title: "Enterprise Analysis",
-          description: "Assess business processes, systems, and infrastructure to identify opportunities for digital transformation."
+          description:
+            "Assess business processes, systems, and infrastructure to identify opportunities for digital transformation.",
         },
         {
           id: 2,
           developing_step_title: "System Architecture Design",
-          description: "Create robust and scalable software architecture to support complex enterprise workflows and high availability."
+          description:
+            "Create robust and scalable software architecture to support complex enterprise workflows and high availability.",
         },
         {
           id: 3,
           developing_step_title: "Custom Development",
-          description: "Develop tailored solutions with features like automation, data analytics, and ERP integration."
+          description:
+            "Develop tailored solutions with features like automation, data analytics, and ERP integration.",
         },
         {
           id: 4,
           developing_step_title: "Security & Compliance",
-          description: "Implement enterprise-grade security, data protection policies, and industry-specific compliance standards."
+          description:
+            "Implement enterprise-grade security, data protection policies, and industry-specific compliance standards.",
         },
         {
           id: 5,
           developing_step_title: "Deployment & Maintenance",
-          description: "Roll out across departments with full documentation, training, and long-term support for upgrades and scaling."
-        }
+          description:
+            "Roll out across departments with full documentation, training, and long-term support for upgrades and scaling.",
+        },
       ],
       button_path: "/schedule-consultation",
       button_name: "Start Enterprise Project",
-    }
-    
+    },
   },
   {
-    id:4,
+    id: 4,
     title: "Transform Your Business with Enterprise Software Development",
-    short_title:"Mobile App Development",
-    short_description:"Design and develop mobile applications for iOS and Android platforms, enhancing user experience and engagement.",
-    subTitle:"Mobile App Development",
+    short_title: "Mobile App Development",
+    short_description:
+      "Design and develop mobile applications for iOS and Android platforms, enhancing user experience and engagement.",
+    subTitle: "Mobile App Development",
     description:
       "Design and develop mobile applications for iOS and Android platforms, enhancing user experience and engagement.",
     keywords: ["iOS", "Android", "apps"],
@@ -670,50 +696,57 @@ export const serviceData = [
     heroDesctiption:
       "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
     heroButton: "Book A Consulation",
-    heroButtonLink:"/schedule-consultation",
+    heroButtonLink: "/schedule-consultation",
     heroImage: "/images/services/mobile-app-development-banner-image.webp",
     steps: {
       developing_title: "Mobile App Development",
-      developing_short_description: "Creating high-quality mobile applications for iOS and Android with seamless performance and intuitive UI.",
+      developing_short_description:
+        "Creating high-quality mobile applications for iOS and Android with seamless performance and intuitive UI.",
       developing_short_title: "iOS & Android Apps",
       developing_image: "/images/hire/mobile-app.webp",
       developing_step: [
         {
           id: 1,
           developing_step_title: "App Strategy & Planning",
-          description: "Understand business goals, user needs, and define app features, platform, and roadmap."
+          description:
+            "Understand business goals, user needs, and define app features, platform, and roadmap.",
         },
         {
           id: 2,
           developing_step_title: "UI/UX Design",
-          description: "Design intuitive and engaging interfaces with a focus on mobile usability and platform guidelines."
+          description:
+            "Design intuitive and engaging interfaces with a focus on mobile usability and platform guidelines.",
         },
         {
           id: 3,
           developing_step_title: "Cross-Platform or Native Development",
-          description: "Develop high-performance apps using Flutter, React Native, Swift, or Kotlin based on project needs."
+          description:
+            "Develop high-performance apps using Flutter, React Native, Swift, or Kotlin based on project needs.",
         },
         {
           id: 4,
           developing_step_title: "API & Backend Integration",
-          description: "Connect apps to secure backend systems, databases, and third-party services for complete functionality."
+          description:
+            "Connect apps to secure backend systems, databases, and third-party services for complete functionality.",
         },
         {
           id: 5,
           developing_step_title: "Testing & App Store Deployment",
-          description: "Test for performance, security, and bugs before publishing to Google Play and Apple App Store."
-        }
+          description:
+            "Test for performance, security, and bugs before publishing to Google Play and Apple App Store.",
+        },
       ],
       button_path: "/schedule-consultation",
       button_name: "Start Mobile Project",
-    }    
+    },
   },
   {
-    id:5,
+    id: 5,
     title: "Transform Your Business with MVP Development",
-    short_title:"QA & Testing",
-    short_description:"Ensure software quality with comprehensive testing services, from functional to performance testing.",
-    subTitle:"QA & Testing",
+    short_title: "QA & Testing",
+    short_description:
+      "Ensure software quality with comprehensive testing services, from functional to performance testing.",
+    subTitle: "QA & Testing",
     description:
       "Ensure software quality with comprehensive testing services, from functional to performance testing.",
     keywords: ["testing", "automation", "bugs"],
@@ -749,50 +782,56 @@ export const serviceData = [
     heroDesctiption:
       "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
     heroButton: "Book A Consulation",
-    heroButtonLink:"/schedule-consultation",
+    heroButtonLink: "/schedule-consultation",
     heroImage: "/images/services/qa-testing-banner-image.webp",
     steps: {
       developing_title: "QA & Testing",
-      developing_short_description: "Delivering bug-free, high-quality software through manual and automated testing practices.",
+      developing_short_description:
+        "Delivering bug-free, high-quality software through manual and automated testing practices.",
       developing_short_title: "Quality Assurance",
       developing_image: "/images/services/qa-testing.webp",
       developing_step: [
         {
           id: 1,
           developing_step_title: "Requirement Analysis",
-          description: "Understand the application requirements and define the testing scope, types, and strategy."
+          description:
+            "Understand the application requirements and define the testing scope, types, and strategy.",
         },
         {
           id: 2,
           developing_step_title: "Test Planning",
-          description: "Create test plans, test cases, and determine resources, tools, and environments required."
+          description:
+            "Create test plans, test cases, and determine resources, tools, and environments required.",
         },
         {
           id: 3,
           developing_step_title: "Functional Testing",
-          description: "Ensure all features work as expected through manual and automated functional test cases."
+          description:
+            "Ensure all features work as expected through manual and automated functional test cases.",
         },
         {
           id: 4,
           developing_step_title: "Performance & Security Testing",
-          description: "Check the app’s speed, stability under load, and identify vulnerabilities for secure performance."
+          description:
+            "Check the app’s speed, stability under load, and identify vulnerabilities for secure performance.",
         },
         {
           id: 5,
           developing_step_title: "Bug Reporting & Retesting",
-          description: "Log defects, fix bugs, perform regression testing, and prepare detailed QA reports."
-        }
+          description: "Log defects, fix bugs, perform regression testing, and prepare detailed QA reports.",
+        },
       ],
       button_path: "/schedule-consultation",
       button_name: "Start QA & Testing",
-    }    
+    },
   },
   {
-    id:6,
+    id: 6,
     title: "Transform Your Business with MVP Development",
-    short_title:"MVP Development",
-    short_description:"Build a minimum viable product quickly to test your ideas, validate concepts, and enter the market faster.",
-    subTitle:"MVP Development",
+    short_title: "MVP Development",
+    short_description:
+      "Build a minimum viable product quickly to test your ideas, validate concepts, and enter the market faster.",
+    subTitle: "MVP Development",
     description:
       "Build a minimum viable product quickly to test your ideas, validate concepts, and enter the market faster.",
     keywords: ["MVP", "validation", "startup"],
@@ -828,44 +867,50 @@ export const serviceData = [
     heroDesctiption:
       "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
     heroButton: "Book A Consulation",
-    heroButtonLink:"/schedule-consultation",
+    heroButtonLink: "/schedule-consultation",
     heroImage: "/images/services/mvp-banner-image.webp",
     steps: {
       developing_title: "MVP Development",
-      developing_short_description: "Quickly launch a functional version of your product to validate ideas and gather user feedback.",
+      developing_short_description:
+        "Quickly launch a functional version of your product to validate ideas and gather user feedback.",
       developing_short_title: "Lean Product Launch",
       developing_image: "/images/services/mvp.webp",
       developing_step: [
         {
           id: 1,
           developing_step_title: "Discovery & Ideation",
-          description: "We begin by identifying business goals, user problems, and shaping a clear vision for the MVP."
+          description:
+            "We begin by identifying business goals, user problems, and shaping a clear vision for the MVP.",
         },
         {
           id: 2,
           developing_step_title: "Feature Prioritization",
-          description: "We select core features that solve the primary user need while ensuring a lean and valuable product scope."
+          description:
+            "We select core features that solve the primary user need while ensuring a lean and valuable product scope.",
         },
         {
           id: 3,
           developing_step_title: "Rapid Prototyping",
-          description: "Our team designs quick wireframes and visual mockups to simulate user flow and validate product direction early."
+          description:
+            "Our team designs quick wireframes and visual mockups to simulate user flow and validate product direction early.",
         },
         {
           id: 4,
           developing_step_title: "MVP Development",
-          description: "Using agile sprints, we build and test the MVP to deliver a functional version in the shortest time."
+          description:
+            "Using agile sprints, we build and test the MVP to deliver a functional version in the shortest time.",
         },
         {
           id: 5,
           developing_step_title: "Launch & Feedback",
-          description: "We release the MVP to real users, collect feedback, and plan iterations based on performance and user input."
-        }
+          description:
+            "We release the MVP to real users, collect feedback, and plan iterations based on performance and user input.",
+        },
       ],
       button_path: "/schedule-consultation",
       button_name: "Build Your MVP",
-    }    
-  }
+    },
+  },
 ];
 
 // custom software data for service details page
@@ -980,37 +1025,37 @@ export const productsSections = [
     id: 1,
     image: "https://i.ibb.co.com/TBR9drZ/product-1.png",
     name: "Time2Task",
-    path:"time2task",
+    path: "time2task",
   },
   {
     id: 2,
     image: "https://i.ibb.co.com/DMMrh49/Rectangle-2.png",
     name: "Cloud ClockIn",
-    path:"cloud-clockin",
+    path: "cloud-clockin",
   },
   {
     id: 3,
     image: "https://i.ibb.co.com/9qD0123/Rectangle-3.png",
     name: "Flyte CRM",
-    path:"flyte-crm",
+    path: "flyte-crm",
   },
   {
     id: 4,
     image: "https://i.ibb.co.com/MhWYXzG/Rectangle-4.png",
     name: "Flyte POS",
-    path:"flyte-pos",
+    path: "flyte-pos",
   },
   {
     id: 5,
     image: "https://i.ibb.co.com/7WSjJYM/case-study-banner.png",
     name: "Flyte ERP",
-    path:"flyte-erp",
+    path: "flyte-erp",
   },
   {
     id: 6,
     image: "https://i.ibb.co.com/dfKBJbd/case-study-img-2.png",
     name: "Flyte Queue",
-    path:"flyte-queue",
+    path: "flyte-queue",
   },
   // {
   //   id: 7,
@@ -1275,7 +1320,7 @@ export const techData = {
     heroButton: "Hire Frontend Developers Now",
     heroButtonLink: "application-form",
     heroImage: "https://i.ibb.co.com/4gsDVSgp/hire-front-end-developer-1.webp",
-    advantageTitle:"Why Choose Our Frontend Developers",
+    advantageTitle: "Why Choose Our Frontend Developers",
     advantages: [
       {
         icon: "fa-code",
@@ -1355,39 +1400,44 @@ export const techData = {
     },
     steps: {
       developing_title: "Frontend Developer",
-      developing_short_description: "Crafting responsive, user-friendly, and high-performance web interfaces using modern technologies.",
+      developing_short_description:
+        "Crafting responsive, user-friendly, and high-performance web interfaces using modern technologies.",
       developing_short_title: "UI/UX & Web Interfaces",
       developing_image: "/images/hire/frontend.webp",
       developing_step: [
         {
           id: 1,
           developing_step_title: "Requirement Analysis",
-          description: "Understanding client needs, target users, and project goals to shape the frontend structure."
+          description:
+            "Understanding client needs, target users, and project goals to shape the frontend structure.",
         },
         {
           id: 2,
           developing_step_title: "Wireframing & Design",
-          description: "Creating wireframes and visual designs that define layout, UI components, and user flow."
+          description:
+            "Creating wireframes and visual designs that define layout, UI components, and user flow.",
         },
         {
           id: 3,
           developing_step_title: "Component Development",
-          description: "Building reusable UI components using React, Tailwind CSS, and other modern tools."
+          description: "Building reusable UI components using React, Tailwind CSS, and other modern tools.",
         },
         {
           id: 4,
           developing_step_title: "Integration & Responsiveness",
-          description: "Connecting frontend with backend APIs and ensuring seamless performance across all devices."
+          description:
+            "Connecting frontend with backend APIs and ensuring seamless performance across all devices.",
         },
         {
           id: 5,
           developing_step_title: "Testing & Optimization",
-          description: "Performing UI testing, fixing bugs, and optimizing for speed, accessibility, and SEO."
-        }
+          description:
+            "Performing UI testing, fixing bugs, and optimizing for speed, accessibility, and SEO.",
+        },
       ],
       button_path: "/hire/application-form",
       button_name: "Get Started",
-    }
+    },
   },
 
   reactjs: {
@@ -1402,7 +1452,7 @@ export const techData = {
     heroButton: "Hire React JS Developers Now",
     heroButtonLink: "application-form",
     heroImage: "https://i.ibb.co.com/fdDsXnxw/Benefits-of-React-JS.jpg",
-    advantageTitle:"Why Choose Our React JS Developers",
+    advantageTitle: "Why Choose Our React JS Developers",
     advantages: [
       {
         icon: "fa-react",
@@ -1434,7 +1484,7 @@ export const techData = {
         title: "Massive Community",
         description: "Vibrant open-source community and backed by Meta.",
       },
-    ],    
+    ],
     developerExpertises: [
       {
         icon: "fa-code",
@@ -1514,39 +1564,45 @@ export const techData = {
     },
     steps: {
       developing_title: "React JS Development",
-      developing_short_description: "Building high-performance, scalable, and interactive user interfaces using React JS.",
+      developing_short_description:
+        "Building high-performance, scalable, and interactive user interfaces using React JS.",
       developing_short_title: "React-Based Interfaces",
       developing_image: "/images/hire/react-js.webp", // Replace with your actual image path
       developing_step: [
         {
           id: 1,
           developing_step_title: "Project Planning",
-          description: "Identify project goals, user needs, and define the component architecture for the React application."
+          description:
+            "Identify project goals, user needs, and define the component architecture for the React application.",
         },
         {
           id: 2,
           developing_step_title: "Component Design",
-          description: "Design modular, reusable, and maintainable UI components using JSX and styled with Tailwind or CSS-in-JS."
+          description:
+            "Design modular, reusable, and maintainable UI components using JSX and styled with Tailwind or CSS-in-JS.",
         },
         {
           id: 3,
           developing_step_title: "State Management",
-          description: "Implement efficient data flow using tools like React Context API, Redux, or Zustand depending on project needs."
+          description:
+            "Implement efficient data flow using tools like React Context API, Redux, or Zustand depending on project needs.",
         },
         {
           id: 4,
           developing_step_title: "API Integration",
-          description: "Connect the frontend to RESTful APIs or GraphQL backends to fetch, display, and manage dynamic data."
+          description:
+            "Connect the frontend to RESTful APIs or GraphQL backends to fetch, display, and manage dynamic data.",
         },
         {
           id: 5,
           developing_step_title: "Testing & Deployment",
-          description: "Ensure app stability with unit and integration tests using Jest or React Testing Library, then deploy via Vercel or Netlify."
-        }
+          description:
+            "Ensure app stability with unit and integration tests using Jest or React Testing Library, then deploy via Vercel or Netlify.",
+        },
       ],
       button_path: "/hire/application-form",
       button_name: "Start with React JS",
-    }    
+    },
   },
 
   angular: {
@@ -1561,7 +1617,7 @@ export const techData = {
     heroButton: "Hire Angular Developers Now",
     heroButtonLink: "application-form",
     heroImage: "/images/hire/Angular-Banner-Image.webp",
-    advantageTitle:"Why Choose Our Angular Developers",
+    advantageTitle: "Why Choose Our Angular Developers",
     advantages: [
       {
         icon: "fa-cubes",
@@ -1603,7 +1659,8 @@ export const techData = {
       {
         icon: "fa-cogs",
         title: "Two-Way Data Binding",
-        description: "Easily sync the view and model for real-time updates with Angular’s powerful data binding.",
+        description:
+          "Easily sync the view and model for real-time updates with Angular’s powerful data binding.",
       },
       {
         icon: "fa-users",
@@ -1613,7 +1670,8 @@ export const techData = {
       {
         icon: "fa-database",
         title: "API Integration",
-        description: "Connect with RESTful APIs and third-party services for rich, dynamic app functionality.",
+        description:
+          "Connect with RESTful APIs and third-party services for rich, dynamic app functionality.",
       },
       {
         icon: "fa-server",
@@ -1627,7 +1685,7 @@ export const techData = {
           "Leverage Angular testing tools like Jasmine and Karma to ensure app stability and high-quality code.",
       },
     ],
-  
+
     exploreMoreDevelopers: [],
     hireProcess: {
       name: "Our Hiring Process",
@@ -1722,7 +1780,7 @@ export const techData = {
     heroButton: "Hire Vue.js Developers Now",
     heroButtonLink: "application-form",
     heroImage: "/images/hire/vuejs-banner-image.webp",
-    advantageTitle:"Why Choose Our Vue.js Developers",
+    advantageTitle: "Why Choose Our Vue.js Developers",
     advantages: [
       {
         icon: "fa-leaf",
@@ -1764,8 +1822,7 @@ export const techData = {
       {
         icon: "fa-cogs",
         title: "State Management (Vuex)",
-        description:
-          "Use Vuex to manage complex state and handle data flow in large Vue.js applications.",
+        description: "Use Vuex to manage complex state and handle data flow in large Vue.js applications.",
       },
       {
         icon: "fa-users",
@@ -1792,7 +1849,7 @@ export const techData = {
           "Use tools like Vue Test Utils and Jest to ensure application stability and reliability.",
       },
     ],
-  
+
     exploreMoreDevelopers: [],
     hireProcess: {
       name: "Our Hiring Process",
@@ -1809,8 +1866,7 @@ export const techData = {
         {
           id: 2,
           name: "Developer Matching",
-          details:
-            "We handpick skilled developers with expertise in Vue.js and other relevant technologies.",
+          details: "We handpick skilled developers with expertise in Vue.js and other relevant technologies.",
         },
         {
           id: 3,
@@ -1834,8 +1890,7 @@ export const techData = {
     },
     steps: {
       developing_title: "Vue.js Development",
-      developing_short_description:
-        "Building fast, dynamic, and scalable applications using Vue.js.",
+      developing_short_description: "Building fast, dynamic, and scalable applications using Vue.js.",
       developing_short_title: "Vue.js-Based Interfaces",
       developing_image: "/images/hire/vuejs.webp",
       developing_step: [
@@ -1887,7 +1942,7 @@ export const techData = {
     heroButton: "Hire Next.js Developers Now",
     heroButtonLink: "application-form",
     heroImage: "/images/hire/nextjs-banner-image.webp",
-    advantageTitle:"Why Choose Our Next.js Developers",
+    advantageTitle: "Why Choose Our Next.js Developers",
     advantages: [
       {
         icon: "fa-forward",
@@ -1929,30 +1984,35 @@ export const techData = {
       {
         icon: "fa-cogs",
         title: "Server-Side Rendering (SSR)",
-        description: "Pre-render pages on the server before sending them to the client for better SEO and performance.",
+        description:
+          "Pre-render pages on the server before sending them to the client for better SEO and performance.",
       },
       {
         icon: "fa-users",
         title: "API Routes",
-        description: "Create backend functionality like RESTful APIs directly within the Next.js application using API routes.",
+        description:
+          "Create backend functionality like RESTful APIs directly within the Next.js application using API routes.",
       },
       {
         icon: "fa-database",
         title: "Incremental Static Regeneration",
-        description: "Regenerate static content on-demand without rebuilding the entire site, ensuring fresh content.",
+        description:
+          "Regenerate static content on-demand without rebuilding the entire site, ensuring fresh content.",
       },
       {
         icon: "fa-server",
         title: "Performance Optimization",
-        description: "Leverage Next.js features like Image Optimization, Automatic Static Optimization, and Lazy Loading for top-tier performance.",
+        description:
+          "Leverage Next.js features like Image Optimization, Automatic Static Optimization, and Lazy Loading for top-tier performance.",
       },
       {
         icon: "fa-lock",
         title: "Testing & Debugging",
-        description: "Ensure code reliability and app stability through automated tests using tools like Jest, Cypress, and React Testing Library.",
+        description:
+          "Ensure code reliability and app stability through automated tests using tools like Jest, Cypress, and React Testing Library.",
       },
     ],
-  
+
     exploreMoreDevelopers: [],
     hireProcess: {
       name: "Our Hiring Process",
@@ -1994,8 +2054,7 @@ export const techData = {
     },
     steps: {
       developing_title: "Next.js Development",
-      developing_short_description:
-        "Building fast, scalable, and SEO-friendly applications using Next.js.",
+      developing_short_description: "Building fast, scalable, and SEO-friendly applications using Next.js.",
       developing_short_title: "Next.js-Based Interfaces",
       developing_image: "/images/hire/nextjs.avif",
       developing_step: [
@@ -2033,8 +2092,8 @@ export const techData = {
       button_path: "/hire/application-form",
       button_name: "Start with Next.js Development",
     },
-  },  
-  
+  },
+
   backend: {
     title: "Backend Development",
     hireLinkName: "backend-developer",
@@ -2073,7 +2132,7 @@ export const techData = {
     heroButton: "Hire Backend Developers Now",
     heroButtonLink: "application-form",
     heroImage: "https://i.ibb.co.com/zTXjbc62/Frame-1000005999.png",
-    advantageTitle:"Why Choose Our Backend Developers",
+    advantageTitle: "Why Choose Our Backend Developers",
     advantages: [
       {
         icon: "fa-server",
@@ -2152,40 +2211,45 @@ export const techData = {
     },
     steps: {
       developing_title: "Backend Development",
-      developing_short_description: "Powering web applications with secure, scalable, and high-performance server-side solutions.",
+      developing_short_description:
+        "Powering web applications with secure, scalable, and high-performance server-side solutions.",
       developing_short_title: "Server-Side Solutions",
       developing_image: "/images/hire/backend.webp",
       developing_step: [
         {
           id: 1,
           developing_step_title: "System Architecture Planning",
-          description: "Define the backend architecture, database schema, and APIs based on project requirements and scalability."
+          description:
+            "Define the backend architecture, database schema, and APIs based on project requirements and scalability.",
         },
         {
           id: 2,
           developing_step_title: "Database Design",
-          description: "Design and optimize relational (e.g., PostgreSQL, MySQL) or NoSQL (e.g., MongoDB) databases for efficient data handling."
+          description:
+            "Design and optimize relational (e.g., PostgreSQL, MySQL) or NoSQL (e.g., MongoDB) databases for efficient data handling.",
         },
         {
           id: 3,
           developing_step_title: "API Development",
-          description: "Build robust RESTful or GraphQL APIs using frameworks like Express.js, NestJS, or Laravel."
+          description:
+            "Build robust RESTful or GraphQL APIs using frameworks like Express.js, NestJS, or Laravel.",
         },
         {
           id: 4,
           developing_step_title: "Authentication & Security",
-          description: "Implement secure user authentication, authorization, and data protection using industry best practices."
+          description:
+            "Implement secure user authentication, authorization, and data protection using industry best practices.",
         },
         {
           id: 5,
           developing_step_title: "Testing & Deployment",
-          description: "Perform backend testing, optimize performance, and deploy on platforms like AWS, Heroku, or DigitalOcean."
-        }
+          description:
+            "Perform backend testing, optimize performance, and deploy on platforms like AWS, Heroku, or DigitalOcean.",
+        },
       ],
       button_path: "/services/backend-development",
       button_name: "Explore Backend Services",
-    }
-    
+    },
   },
 
   mobileDevelopment: {
@@ -2221,7 +2285,7 @@ export const techData = {
     heroButton: "Hire Mobile App Developers Now",
     heroButtonLink: "application-form",
     heroImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
-    advantageTitle:"Why Choose Our Mobile App Developers",
+    advantageTitle: "Why Choose Our Mobile App Developers",
     advantages: [
       {
         icon: "fa-mobile-alt",
@@ -2300,39 +2364,45 @@ export const techData = {
     },
     steps: {
       developing_title: "Mobile Development",
-      developing_short_description: "Creating fast, user-friendly, and feature-rich mobile applications for both Android and iOS platforms.",
+      developing_short_description:
+        "Creating fast, user-friendly, and feature-rich mobile applications for both Android and iOS platforms.",
       developing_short_title: "Cross-Platform Apps",
       developing_image: "/images/hire/mobile-app.webp",
       developing_step: [
         {
           id: 1,
           developing_step_title: "Requirement Gathering",
-          description: "Understand user needs, business goals, and define key features for the mobile application."
+          description:
+            "Understand user needs, business goals, and define key features for the mobile application.",
         },
         {
           id: 2,
           developing_step_title: "UI/UX Design",
-          description: "Design intuitive and engaging mobile interfaces that provide a seamless user experience across devices."
+          description:
+            "Design intuitive and engaging mobile interfaces that provide a seamless user experience across devices.",
         },
         {
           id: 3,
           developing_step_title: "App Development",
-          description: "Develop high-performance apps using React Native, Flutter, or native technologies like Swift and Kotlin."
+          description:
+            "Develop high-performance apps using React Native, Flutter, or native technologies like Swift and Kotlin.",
         },
         {
           id: 4,
           developing_step_title: "Backend & API Integration",
-          description: "Connect the app to secure, scalable backend services and APIs for real-time data and functionality."
+          description:
+            "Connect the app to secure, scalable backend services and APIs for real-time data and functionality.",
         },
         {
           id: 5,
           developing_step_title: "Testing & App Store Deployment",
-          description: "Test thoroughly for performance and bugs, then publish the app to Google Play and Apple App Store."
-        }
+          description:
+            "Test thoroughly for performance and bugs, then publish the app to Google Play and Apple App Store.",
+        },
       ],
       button_path: "/hire/application-form",
       button_name: "Build Your Mobile App",
-    }    
+    },
   },
 
   qualityAssurance: {
@@ -2368,7 +2438,7 @@ export const techData = {
     heroButton: "Hire Quality Engineers Now",
     heroButtonLink: "application-form",
     heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
-    advantageTitle:"Why Choose Our QA Engineers",
+    advantageTitle: "Why Choose Our QA Engineers",
     advantages: [
       {
         icon: "fa-bug",
@@ -2448,39 +2518,45 @@ export const techData = {
     },
     steps: {
       developing_title: "Quality Assurance",
-      developing_short_description: "Ensuring reliable, bug-free, and high-performing software through structured testing processes.",
+      developing_short_description:
+        "Ensuring reliable, bug-free, and high-performing software through structured testing processes.",
       developing_short_title: "Software Testing",
       developing_image: "/images/hire/quality-assurance.webp",
       developing_step: [
         {
           id: 1,
           developing_step_title: "Requirement Analysis",
-          description: "Review project requirements and user stories to define clear testing goals and strategies."
+          description:
+            "Review project requirements and user stories to define clear testing goals and strategies.",
         },
         {
           id: 2,
           developing_step_title: "Test Planning",
-          description: "Prepare detailed test plans, select appropriate tools, and define test cases for each functionality."
+          description:
+            "Prepare detailed test plans, select appropriate tools, and define test cases for each functionality.",
         },
         {
           id: 3,
           developing_step_title: "Test Case Execution",
-          description: "Manually or automatically execute test cases to identify bugs, glitches, or performance issues."
+          description:
+            "Manually or automatically execute test cases to identify bugs, glitches, or performance issues.",
         },
         {
           id: 4,
           developing_step_title: "Bug Reporting & Tracking",
-          description: "Log issues in tracking systems like Jira or Trello, and collaborate with developers for quick resolution."
+          description:
+            "Log issues in tracking systems like Jira or Trello, and collaborate with developers for quick resolution.",
         },
         {
           id: 5,
           developing_step_title: "Final Validation",
-          description: "Perform regression, load, and user acceptance testing to ensure the product is ready for release."
-        }
+          description:
+            "Perform regression, load, and user acceptance testing to ensure the product is ready for release.",
+        },
       ],
       button_path: "/hire/application-form",
       button_name: "Explore QA Services",
-    }    
+    },
   },
 
   devOps: {
@@ -2516,7 +2592,7 @@ export const techData = {
     heroButton: "Hire DevOps Engineers Now",
     heroButtonLink: "application-form",
     heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
-    advantageTitle:"Why Choose Our DevOps Engineers",
+    advantageTitle: "Why Choose Our DevOps Engineers",
     advantages: [
       {
         icon: "fa-sync-alt",
@@ -2596,39 +2672,45 @@ export const techData = {
     },
     steps: {
       developing_title: "DevOps",
-      developing_short_description: "Accelerating software delivery through automation, continuous integration, and scalable infrastructure.",
+      developing_short_description:
+        "Accelerating software delivery through automation, continuous integration, and scalable infrastructure.",
       developing_short_title: "CI/CD & Automation",
       developing_image: "/images/hire/dev-ops.webp",
       developing_step: [
         {
           id: 1,
           developing_step_title: "Infrastructure Planning",
-          description: "Design scalable, cloud-based infrastructure using tools like AWS, Azure, or Google Cloud."
+          description:
+            "Design scalable, cloud-based infrastructure using tools like AWS, Azure, or Google Cloud.",
         },
         {
           id: 2,
           developing_step_title: "CI/CD Pipeline Setup",
-          description: "Automate code integration, testing, and deployment using Jenkins, GitHub Actions, GitLab CI, etc."
+          description:
+            "Automate code integration, testing, and deployment using Jenkins, GitHub Actions, GitLab CI, etc.",
         },
         {
           id: 3,
           developing_step_title: "Containerization",
-          description: "Use Docker and Kubernetes to containerize applications for consistency across environments."
+          description:
+            "Use Docker and Kubernetes to containerize applications for consistency across environments.",
         },
         {
           id: 4,
           developing_step_title: "Monitoring & Logging",
-          description: "Implement tools like Prometheus, Grafana, and ELK Stack to monitor application health and performance."
+          description:
+            "Implement tools like Prometheus, Grafana, and ELK Stack to monitor application health and performance.",
         },
         {
           id: 5,
           developing_step_title: "Security & Optimization",
-          description: "Ensure infrastructure security with proper access control, vulnerability scanning, and performance tuning."
-        }
+          description:
+            "Ensure infrastructure security with proper access control, vulnerability scanning, and performance tuning.",
+        },
       ],
       button_path: "/hire/application-form",
       button_name: "Start DevOps Transformation",
-    }    
+    },
   },
 
   aiML: {
@@ -2664,7 +2746,7 @@ export const techData = {
     heroButton: "Hire AI & ML Now",
     heroButtonLink: "application-form",
     heroImage: "https://i.ibb.co.com/b5kgnLyz/Frame-1000005999-1.png",
-    advantageTitle:"Why Choose Our AI & ML Experts",
+    advantageTitle: "Why Choose Our AI & ML Experts",
     advantages: [
       {
         icon: "fa-brain",
@@ -2744,39 +2826,45 @@ export const techData = {
     },
     steps: {
       developing_title: "AI & Machine Learning",
-      developing_short_description: "Creating intelligent systems that learn, predict, and automate processes using data-driven models.",
+      developing_short_description:
+        "Creating intelligent systems that learn, predict, and automate processes using data-driven models.",
       developing_short_title: "Smart AI Solutions",
       developing_image: "/images/hire/ai.webp",
       developing_step: [
         {
           id: 1,
           developing_step_title: "Problem Definition",
-          description: "Identify business challenges and determine how AI/ML can bring efficient, scalable solutions."
+          description:
+            "Identify business challenges and determine how AI/ML can bring efficient, scalable solutions.",
         },
         {
           id: 2,
           developing_step_title: "Data Collection & Preparation",
-          description: "Gather, clean, and preprocess structured or unstructured data to train machine learning models effectively."
+          description:
+            "Gather, clean, and preprocess structured or unstructured data to train machine learning models effectively.",
         },
         {
           id: 3,
           developing_step_title: "Model Selection & Training",
-          description: "Choose the right algorithms (e.g., regression, classification, neural networks) and train models using Python, TensorFlow, or PyTorch."
+          description:
+            "Choose the right algorithms (e.g., regression, classification, neural networks) and train models using Python, TensorFlow, or PyTorch.",
         },
         {
           id: 4,
           developing_step_title: "Model Evaluation & Tuning",
-          description: "Evaluate accuracy, precision, and recall of models, then optimize with hyperparameter tuning or cross-validation."
+          description:
+            "Evaluate accuracy, precision, and recall of models, then optimize with hyperparameter tuning or cross-validation.",
         },
         {
           id: 5,
           developing_step_title: "Deployment & Monitoring",
-          description: "Deploy models into production with REST APIs or cloud services, and monitor performance over time."
-        }
+          description:
+            "Deploy models into production with REST APIs or cloud services, and monitor performance over time.",
+        },
       ],
       button_path: "/hire/application-form",
       button_name: "Unlock AI Power",
-    }    
+    },
   },
 };
 
@@ -2907,12 +2995,17 @@ export const industrydata = {
           { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
           { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
           { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
-          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          {
+            id: 7,
+            icon: "far fa-share-square",
+            title: "Fraud Detection & Prevention Systems",
+            color: "#dffc03",
+          },
           { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
         ],
       },
-      trendSteps : {
+      trendSteps: {
         title: "Emerging Trends in Fintech",
         image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
@@ -2953,10 +3046,11 @@ export const industrydata = {
       short_title: "FINTECH",
       short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-      heroTitle:"Innovating Financial Services with Secure, Scalable Technology",
-      heroSubtitle:"FINTECH",
-      heroDesctiption:"Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-      heroImage:"https://i.ibb.co.com/C3vYLnjp/fintech-title-blog.webp",
+      heroTitle: "Innovating Financial Services with Secure, Scalable Technology",
+      heroSubtitle: "FINTECH",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/C3vYLnjp/fintech-title-blog.webp",
       heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/C3vYLnjp/fintech-title-blog.webp",
     },
@@ -3035,12 +3129,17 @@ export const industrydata = {
           { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
           { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
           { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
-          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          {
+            id: 7,
+            icon: "far fa-share-square",
+            title: "Fraud Detection & Prevention Systems",
+            color: "#dffc03",
+          },
           { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
         ],
       },
-      trendSteps : {
+      trendSteps: {
         title: "Emerging Trends in Startup",
         image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
@@ -3081,10 +3180,11 @@ export const industrydata = {
       short_title: "STARTUP",
       short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-      heroTitle:"Fueling Startup Growth with Agile, Scalable Digital Solutions",
-      heroSubtitle:"STARTUP",
-      heroDesctiption:"We empower startups with agile, scalable solutions tailored for rapid growth. From MVP development to full-scale products, we use modern tech stacks to turn bold ideas into successful digital products—fast and efficiently.",
-      heroImage:"https://i.ibb.co.com/xKxpBqsk/ss.png",
+      heroTitle: "Fueling Startup Growth with Agile, Scalable Digital Solutions",
+      heroSubtitle: "STARTUP",
+      heroDesctiption:
+        "We empower startups with agile, scalable solutions tailored for rapid growth. From MVP development to full-scale products, we use modern tech stacks to turn bold ideas into successful digital products—fast and efficiently.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
       heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
@@ -3163,12 +3263,17 @@ export const industrydata = {
           { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
           { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
           { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
-          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          {
+            id: 7,
+            icon: "far fa-share-square",
+            title: "Fraud Detection & Prevention Systems",
+            color: "#dffc03",
+          },
           { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
         ],
       },
-      trendSteps : {
+      trendSteps: {
         title: "Emerging Trends in Logistics",
         image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
@@ -3209,11 +3314,12 @@ export const industrydata = {
       short_title: "LOGISTICS",
       short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-        heroTitle:"Revolutionizing Logistics with Smart, Real-Time Technology",
-        heroSubtitle:"LOGISTICS",
-        heroDesctiption:"We deliver logistics solutions that optimize routes, automate workflows, and improve real-time tracking. Powered by AI, IoT, and cloud systems, our tech ensures faster, smarter, and more reliable supply chain operations.",
-        heroImage:"https://i.ibb.co.com/xKxpBqsk/ss.png",
-        heroButton: "Book A Consulation",
+      heroTitle: "Revolutionizing Logistics with Smart, Real-Time Technology",
+      heroSubtitle: "LOGISTICS",
+      heroDesctiption:
+        "We deliver logistics solutions that optimize routes, automate workflows, and improve real-time tracking. Powered by AI, IoT, and cloud systems, our tech ensures faster, smarter, and more reliable supply chain operations.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -3291,12 +3397,17 @@ export const industrydata = {
           { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
           { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
           { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
-          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          {
+            id: 7,
+            icon: "far fa-share-square",
+            title: "Fraud Detection & Prevention Systems",
+            color: "#dffc03",
+          },
           { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
         ],
       },
-      trendSteps : {
+      trendSteps: {
         title: "Emerging Trends in Retail & Manufacturing",
         image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
@@ -3337,11 +3448,12 @@ export const industrydata = {
       short_title: "RETAIL & MANUFACTURING",
       short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-        heroTitle:"Transforming Retail & Manufacturing with Intelligent Automation",
-        heroSubtitle:"RETAIL & MANUFACTURING",
-        heroDesctiption:"We build smart retail and manufacturing solutions that boost efficiency, streamline operations, and enhance customer experiences. Using IoT, AI, and cloud technologies, we help businesses stay agile and competitive in a fast-evolving market.",
-        heroImage:"https://i.ibb.co.com/xKxpBqsk/ss.png",
-        heroButton: "Book A Consulation",
+      heroTitle: "Transforming Retail & Manufacturing with Intelligent Automation",
+      heroSubtitle: "RETAIL & MANUFACTURING",
+      heroDesctiption:
+        "We build smart retail and manufacturing solutions that boost efficiency, streamline operations, and enhance customer experiences. Using IoT, AI, and cloud technologies, we help businesses stay agile and competitive in a fast-evolving market.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -3419,12 +3531,17 @@ export const industrydata = {
           { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
           { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
           { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
-          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          {
+            id: 7,
+            icon: "far fa-share-square",
+            title: "Fraud Detection & Prevention Systems",
+            color: "#dffc03",
+          },
           { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
         ],
       },
-      trendSteps : {
+      trendSteps: {
         title: "Emerging Trends in Enterprise",
         image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
@@ -3465,11 +3582,12 @@ export const industrydata = {
       short_title: "ENTERPRISE",
       short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-        heroTitle:"Powering Enterprises with Scalable, Future-Ready Tech Solutions",
-        heroSubtitle:"ENTERPRISE",
-        heroDesctiption:"Our team delivers enterprise solutions designed to meet the complex demands of modern businesses. We prioritize scalability, data integrity, and seamless integration.",
-        heroImage:"https://i.ibb.co.com/xKxpBqsk/ss.png",
-        heroButton: "Book A Consulation",
+      heroTitle: "Powering Enterprises with Scalable, Future-Ready Tech Solutions",
+      heroSubtitle: "ENTERPRISE",
+      heroDesctiption:
+        "Our team delivers enterprise solutions designed to meet the complex demands of modern businesses. We prioritize scalability, data integrity, and seamless integration.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -3547,12 +3665,17 @@ export const industrydata = {
           { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
           { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
           { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
-          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          {
+            id: 7,
+            icon: "far fa-share-square",
+            title: "Fraud Detection & Prevention Systems",
+            color: "#dffc03",
+          },
           { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
         ],
       },
-      trendSteps : {
+      trendSteps: {
         title: "Emerging Trends in Education",
         image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
@@ -3593,11 +3716,12 @@ export const industrydata = {
       short_title: "EDUCATION",
       short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-        heroTitle:"Advancing Education Through Engaging and Scalable Digital Platforms",
-        heroSubtitle:"EDUCATION",
-        heroDesctiption:"Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-        heroImage:"https://i.ibb.co.com/xKxpBqsk/ss.png",
-        heroButton: "Book A Consulation",
+      heroTitle: "Advancing Education Through Engaging and Scalable Digital Platforms",
+      heroSubtitle: "EDUCATION",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -3675,12 +3799,17 @@ export const industrydata = {
           { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
           { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
           { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
-          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          {
+            id: 7,
+            icon: "far fa-share-square",
+            title: "Fraud Detection & Prevention Systems",
+            color: "#dffc03",
+          },
           { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
         ],
       },
-      trendSteps : {
+      trendSteps: {
         title: "Emerging Trends in Real Estate",
         image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
@@ -3721,11 +3850,12 @@ export const industrydata = {
       short_title: "REAL ESTATE",
       short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-        heroTitle:"Modernizing Real Estate with Smart, Secure Tech Solutions",
-        heroSubtitle:"REAL ESTATE",
-        heroDesctiption:"Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-        heroImage:"https://i.ibb.co.com/xKxpBqsk/ss.png",
-        heroButton: "Book A Consulation",
+      heroTitle: "Modernizing Real Estate with Smart, Secure Tech Solutions",
+      heroSubtitle: "REAL ESTATE",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -3803,12 +3933,17 @@ export const industrydata = {
           { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
           { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
           { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
-          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          {
+            id: 7,
+            icon: "far fa-share-square",
+            title: "Fraud Detection & Prevention Systems",
+            color: "#dffc03",
+          },
           { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
         ],
       },
-      trendSteps : {
+      trendSteps: {
         title: "Emerging Trends in Medical & Healthcare",
         image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
@@ -3849,11 +3984,12 @@ export const industrydata = {
       short_title: "MEDIAL & HEALTHCARE",
       short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-        heroTitle:"Enhancing Healthcare with Secure, Compliant Digital Innovation",
-        heroSubtitle:"MEDIAL & HEALTHCARE",
-        heroDesctiption:"Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-        heroImage:"https://i.ibb.co.com/xKxpBqsk/ss.png",
-        heroButton: "Book A Consulation",
+      heroTitle: "Enhancing Healthcare with Secure, Compliant Digital Innovation",
+      heroSubtitle: "MEDIAL & HEALTHCARE",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -3931,12 +4067,17 @@ export const industrydata = {
           { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
           { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
           { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
-          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          {
+            id: 7,
+            icon: "far fa-share-square",
+            title: "Fraud Detection & Prevention Systems",
+            color: "#dffc03",
+          },
           { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
         ],
       },
-      trendSteps : {
+      trendSteps: {
         title: "Emerging Trends in Technology Company",
         image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
@@ -3977,11 +4118,12 @@ export const industrydata = {
       short_title: "TECHNOLOGY COMPANY",
       short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-        heroTitle:"Accelerating Tech Innovation with Custom, Scalable Development",
-        heroSubtitle:"TECHNOLOGY COMPANY",
-        heroDesctiption:"Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-        heroImage:"https://i.ibb.co.com/xKxpBqsk/ss.png",
-        heroButton: "Book A Consulation",
+      heroTitle: "Accelerating Tech Innovation with Custom, Scalable Development",
+      heroSubtitle: "TECHNOLOGY COMPANY",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -4059,12 +4201,17 @@ export const industrydata = {
           { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
           { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
           { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
-          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          {
+            id: 7,
+            icon: "far fa-share-square",
+            title: "Fraud Detection & Prevention Systems",
+            color: "#dffc03",
+          },
           { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
         ],
       },
-      trendSteps : {
+      trendSteps: {
         title: "Emerging Trends in Media & Entertainment",
         image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
@@ -4105,11 +4252,12 @@ export const industrydata = {
       short_title: "MEDIA & ENTERTAINMENT",
       short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-        heroTitle:"Driving Media & Entertainment with Interactive Digital Experiences",
-        heroSubtitle:"MEDIA & ENTERTAINMENT",
-        heroDesctiption:"Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-        heroImage:"https://i.ibb.co.com/xKxpBqsk/ss.png",
-        heroButton: "Book A Consulation",
+      heroTitle: "Driving Media & Entertainment with Interactive Digital Experiences",
+      heroSubtitle: "MEDIA & ENTERTAINMENT",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
     {
@@ -4187,12 +4335,17 @@ export const industrydata = {
           { id: 4, icon: "fa-mobile-screen", title: "Peer-to-Peer Lending Platforms", color: "#4caf50" },
           { id: 5, icon: "far fa-file-code", title: "Wealth & Asset Management Tools", color: "#ff33bb" },
           { id: 6, icon: "far fa-lightbulb", title: "InsurTech Platforms", color: "#8a2be2" },
-          { id: 7, icon: "far fa-share-square", title: "Fraud Detection & Prevention Systems", color: "#dffc03" },
+          {
+            id: 7,
+            icon: "far fa-share-square",
+            title: "Fraud Detection & Prevention Systems",
+            color: "#dffc03",
+          },
           { id: 8, icon: "far fa-shield-alt", title: "Cryptocurrency Platforms", color: "#2196f3" },
           { id: 8, icon: "far fa-shield-alt", title: "Regulatory Compliance Solutions", color: "#fff" },
         ],
       },
-      trendSteps : {
+      trendSteps: {
         title: "Emerging Trends in NGO",
         image: "https://i.ibb.co.com/v4515cNm/57043-1.webp",
         steps: [
@@ -4233,11 +4386,12 @@ export const industrydata = {
       short_title: "NGO",
       short_description:
         "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-        heroTitle:"Empowering NGOs with Impact-Driven, Scalable Tech Solutions",
-        heroSubtitle:"NGO",
-        heroDesctiption:"Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
-        heroImage:"https://i.ibb.co.com/xKxpBqsk/ss.png",
-        heroButton: "Book A Consulation",
+      heroTitle: "Empowering NGOs with Impact-Driven, Scalable Tech Solutions",
+      heroSubtitle: "NGO",
+      heroDesctiption:
+        "Our team delivers fintech solutions tailored to industry needs, ensuring compliance, security, and innovation. We leverage AI, blockchain, and cloud computing to develop high-performing applications for the financial sector.",
+      heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
     },
   ],
@@ -4255,10 +4409,7 @@ export const footerData = {
         "/images/goodfirms.png",
         "/images/Untitled-design.png",
       ],
-      ISOLogos: [
-        "/images/iso1.png",
-        "/images/iso2.png",
-      ],
+      ISOLogos: ["/images/iso1.png", "/images/iso2.png"],
       phoneNumbers: ["+880-171-320-3656 ", "+880-179-353-2035"],
       emails: ["info@flytesolutions.com ", "sales@flytesolutions.com "],
       socialLinks: [
@@ -5752,90 +5903,6 @@ export const productBannerData = {
   btnPath: "/hire/schedule-consultation",
 };
 
-// product cards
-// export const ProductCardsData = [
-//   {
-//     id: "1",
-//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
-//     productTitle: "Cloud ClockIn",
-//     ProductDetails: "A digital system for tracking employee attendance and work hours in real time.",
-//     tags: ["Attendance Management", "Real-Time Tracking", "SaaS"],
-//   },
-//   {
-//     id: "2",
-//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
-//     productTitle: "Time2Task",
-//     ProductDetails: "A task management tool to plan, assign, and track project tasks efficiently.",
-//     tags: ["Project Management", "Real-Time Tracking", "SaaS"],
-//   },
-//   {
-//     id: "3",
-//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
-//     productTitle: "Flyte Queue",
-//     ProductDetails: "A digital queue management system to streamline customer flow and reduce waiting times.",
-//     tags: ["Queue Management", "Real-Time Tracking", "SaaS"],
-//   },
-//   {
-//     id: "4",
-//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
-//     productTitle: "Flyte ERP",
-//     ProductDetails:
-//       "A comprehensive platform that integrates and streamlines core business processes for enhanced productivity.",
-//     tags: ["Enterprise Solutions", "Real-Time Tracking", "SaaS"],
-//   },
-//   {
-//     id: "5",
-//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
-//     productTitle: "Flyte CRM",
-//     ProductDetails:
-//       "A customer relationship management tool designed to optimize sales, marketing, and customer support operations.",
-//     tags: ["Customer Management", "Real-Time Tracking", "SaaS"],
-//   },
-//   {
-//     id: "6",
-//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
-//     productTitle: "Flyte POS",
-//     ProductDetails:
-//       "A reliable point-of-sale system for efficient retail transactions and inventory tracking.",
-//     tags: ["Retail Management", "Real-Time Tracking", "SaaS"],
-//   },
-//   {
-//     id: "7",
-//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
-//     productTitle: "Inventory Management System",
-//     ProductDetails: "A solution for tracking, managing, and optimizing stock levels across locations.",
-//     tags: ["Stock Control", "Real-Time Tracking", "SaaS"],
-//   },
-//   {
-//     id: "8",
-//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
-//     productTitle: "Board Meeting Management",
-//     ProductDetails: "A system to organize, schedule, and document board meetings effectively.",
-//     tags: ["Corporate Governance", "Real-Time Tracking", "Single Page Application"],
-//   },
-//   {
-//     id: "9",
-//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
-//     productTitle: "Help Desk Management",
-//     ProductDetails: "A platform for tracking, resolving, and managing customer support requests.",
-//     tags: ["Customer Support", "Help Desk", "Single Page Application"],
-//   },
-//   {
-//     id: "10",
-//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
-//     productTitle: "Clinic & Hospital Management",
-//     ProductDetails: "A solution to streamline patient records, appointments, billing, and medical workflows.",
-//     tags: ["Healthcare Solutions", "Doctor", "Single Page Application"],
-//   },
-//   {
-//     id: "11",
-//     productImg: "https://i.ibb.co.com/dbNN1h2/Picture.png",
-//     productTitle: "Document Management System",
-//     ProductDetails: "A secure platform for storing, managing, and retrieving organizational documents.",
-//     tags: ["File Organization", "FTP", "Single Page Application"],
-//   },
-// ];
-
 // product card data
 export const ProductCardsData = [
   {
@@ -6997,7 +7064,8 @@ export const IndustriesCardsData = [
     industryName: "Medical & Healthcare",
     industryDescription:
       "Enhance healthcare delivery with advanced technology solutions. From telemedicine to patient management systems, improve patient care and operational efficiency.",
-    industryReview: "Their healthcare technology solutions have greatly improved our ability to deliver efficient, high-quality care, significantly enhancing patient outcomes.",
+    industryReview:
+      "Their healthcare technology solutions have greatly improved our ability to deliver efficient, high-quality care, significantly enhancing patient outcomes.",
     reviewerName: "Emma Brown",
     reviewerImage: "https://i.ibb.co.com/jZqFP8HK/Meet-Maelle-scaled-1.jpg",
     reviewerPosition: "Healthcare Administrator",
@@ -7054,7 +7122,8 @@ export const IndustriesCardsData = [
     industryName: "Technology Company",
     industryDescription:
       "Drive innovation with cutting-edge technology solutions. From software development to cloud computing, empower your tech company to achieve its goals.",
-    industryReview: "The innovative technology solutions provided helped us stay ahead of the curve, enabling us to scale efficiently and improve our overall product offerings.",
+    industryReview:
+      "The innovative technology solutions provided helped us stay ahead of the curve, enabling us to scale efficiently and improve our overall product offerings.",
     reviewerName: "Chris White",
     reviewerImage: "https://i.ibb.co.com/rXHnBgs/logistic.png",
     reviewerPosition: "CTO",
@@ -7447,5 +7516,36 @@ export const opportunities = [
     location: "Onsite (Dhaka, Bangladesh)",
     jobType: "Full time",
     jobLink: "/job-details/6",
+  },
+];
+
+// Hire top talent
+export const hireTopTalents = [
+  {
+    title: "Monthly Based",
+    features: [
+      "Hire offshore staff for up to 160 hours a month",
+      "Manage the team using your own methodologies",
+      "Get timely updates on work progress",
+      "Seamless integration with your workflow",
+    ],
+  },
+  {
+    title: "Hourly Based",
+    features: [
+      "Pay for the work done in hours",
+      "Add or revoke hours based on requirements",
+      "Communicate via your own preferred channels",
+      "Real-time updates via timesheet",
+    ],
+  },
+  {
+    title: "Fixed-Cost Projects",
+    features: [
+      "Fix the project cost before getting started",
+      "Pre-defined scope and deliverables established prior to commencement",
+      "Flexibility to change scope at nominal charges",
+      "Establishment of a fixed timeline for project completion",
+    ],
   },
 ];

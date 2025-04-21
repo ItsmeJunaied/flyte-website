@@ -21,7 +21,7 @@ const HireSteps = () => {
         <div className="w-fit mx-auto mt-6">
           <Link
             href="/hire/application-form"
-            className="px-6 py-2.5 flex items-center gap-2 bg-[#5856d6] hover:bg-white border transition duration-300 border-[#5856d6] rounded-md text-white hover:text-[#5856d6] text-sm font-semibold"
+            className="px-6 py-2.5 flex items-center gap-2 bg-[#5856d6] hover:bg-white border border-[#5856d6] rounded-md text-white hover:text-[#5856d6] text-sm font-semibold transition duration-300"
           >
             Let&apos;s Start!{" "}
             <span>
