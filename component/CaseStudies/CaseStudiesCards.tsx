@@ -149,13 +149,6 @@ const CaseStudiesCards = () => {
             </div>
 
             {/* pagination  */}
-            {/* <Pagination
-              currentPage={current_page}
-              setCurrentPage={setCurrentPage}
-              total={total}
-              perPage={per_page}
-            /> */}
-
             {caseStudies?.data && (
               <Pagination
                 current_page={current_page}

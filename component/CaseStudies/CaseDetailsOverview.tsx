@@ -42,7 +42,7 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
     impactful,
   } = caseStudies?.data || {};
 
-  console.log("developing_step", developing_step);
+  console.log("from case studies: ", caseStudies?.data);
 
   return (
     <div>
