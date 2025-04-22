@@ -1,30 +1,49 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 
 const ShareSocial = () => {
+  const currentUrl = typeof window !== "undefined" ? window.location.href : "";
+
   return (
     <div className="mb-5 flex justify-center items-center gap-2.5">
       <p className="text-[#696a75] text-xs">Share On</p>
+
+      {/* LinkedIn */}
       <Link
-        href=""
+        href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`}
+        target="_blank"
+        rel="noopener noreferrer"
         className="text-[#5856d6] hover:text-white hover:bg-[#5856d6] w-6 h-6 border-2 rounded-full border-[#d5d5d5]/40 hover:border-[#5856d6] p-4 flex justify-center items-center transition duration-300"
       >
         <i className="fa-brands fa-linkedin-in"></i>
       </Link>
+
+      {/* Facebook */}
       <Link
-        href=""
+        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`}
+        target="_blank"
+        rel="noopener noreferrer"
         className="text-[#5856d6] hover:text-white hover:bg-[#5856d6] w-6 h-6 border-2 rounded-full border-[#d5d5d5]/40 hover:border-[#5856d6] p-4 flex justify-center items-center transition duration-300"
       >
         <i className="fa-brands fa-facebook-f"></i>
       </Link>
+
+      {/* Twitter */}
       <Link
-        href=""
+        href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}`}
+        target="_blank"
+        rel="noopener noreferrer"
         className="text-[#5856d6] hover:text-white hover:bg-[#5856d6] w-6 h-6 border-2 rounded-full border-[#d5d5d5]/40 hover:border-[#5856d6] p-4 flex justify-center items-center transition duration-300"
       >
         <i className="fa-brands fa-twitter"></i>
       </Link>
+
+      {/* Instagram doesn't support direct link sharing like others — you can just keep icon */}
       <Link
-        href=""
+        href="https://www.instagram.com/"
+        target="_blank"
+        rel="noopener noreferrer"
         className="text-[#5856d6] hover:text-white hover:bg-[#5856d6] w-6 h-6 border-2 rounded-full border-[#d5d5d5]/40 hover:border-[#5856d6] p-4 flex justify-center items-center transition duration-300"
       >
         <i className="fa-brands fa-instagram"></i>

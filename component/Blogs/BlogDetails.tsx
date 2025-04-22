@@ -138,11 +138,13 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
               className="space-y-3"
             >
               <h2 className="text-[#181a2a] text-2xl font-semibold">{section?.blog_section_title}</h2>
-              <div className="text-[#3b3c4a] text-xl" dangerouslySetInnerHTML={{ __html: section?.description }} />
+              <div
+                className="text-[#3b3c4a] text-xl"
+                dangerouslySetInnerHTML={{ __html: section?.description }}
+              />
             </div>
           ))}
         </div>
-        
       </div>
 
       {/* Right Side - Table of Content */}
