@@ -142,6 +142,7 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
             </div>
           ))}
         </div>
+        
       </div>
 
       {/* Right Side - Table of Content */}
