@@ -1,4 +1,5 @@
 import BlogDetails from "@/component/Blogs/BlogDetails";
+import FavoriteBlogs from "@/component/Blogs/FavoriteBlogs";
 import { Metadata } from "next";
 
 // Define the expected type for the page props
@@ -45,6 +46,7 @@ const page = async ({ params }: PageProps) => {
   return (
     <div className="container mt-5 lg:mt-32">
       <BlogDetails params={slug} />
+      <FavoriteBlogs/>
     </div>
   );
 };
