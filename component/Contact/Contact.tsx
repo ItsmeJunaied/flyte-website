@@ -18,7 +18,7 @@ const Contact: React.FC<contactUsKeyPointsProps> = ({ contsctUsData }) => {
   const KeyPoints = contsctUsData || contactUsKeyPoints;
   return (
     <div className="bg-neutral-50">
-      <div className="container py-5 flex flex-col lg:flex-row justify-between items-start gap-10 ">
+      <div className="container py-5">
         <div className="w-full ">
           <div className="mb-5 flex w-full items-center justify-center ">
             <div className="w-full lg:-mb-3">

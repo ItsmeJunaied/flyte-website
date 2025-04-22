@@ -1,5 +1,4 @@
 import BlogDetails from "@/component/Blogs/BlogDetails";
-import ShareSocial from "@/component/Blogs/ShareSocial";
 import { Metadata } from "next";
 
 // Define the expected type for the page props
@@ -46,7 +45,6 @@ const page = async ({ params }: PageProps) => {
   return (
     <div className=" container lg:mt-32">
       <BlogDetails params={slug} />
-      <ShareSocial/>
     </div>
   );
 };

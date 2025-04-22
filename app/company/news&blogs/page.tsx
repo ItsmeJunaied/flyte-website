@@ -19,7 +19,7 @@ const page = () => {
         <BlogGlimpsSection />
       </div>
       <BlogSection />
-      <div className="container">
+      <div>
         <Contact />
       </div>
     </div>
