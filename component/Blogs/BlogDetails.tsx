@@ -88,7 +88,7 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
 
   return (
     <div>
-      <div className="flex gap-8 px-4 mb-8">
+      <div className="flex gap-8 mb-8">
         {/* Left Side - Blog Content */}
         <div ref={contentRef} className="w-full h-fit">
           {/* Tags */}
@@ -101,35 +101,65 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
           </div>
 
           {/* Title */}
-          <h1 className="mb-5 text-3xl font-semibold text-[text-[#181a2a]]">{title}</h1>
+          <h1 className="mb-5 text-2xl lg:text-3xl font-semibold text-[text-[#181a2a]]">{title}</h1>
 
-          {/* Author Info */}
-          <div className="flex items-center gap-2">
-            <img
-              src="https://i.ibb.co.com/7JCbP8nB/Ishrafil.jpg"
-              alt="user image"
-              className="rounded-full w-8 h-8 object-cover border text-[8px] text-center"
-            />
-            <h4 className="text-[#696A75] text-xs font-semibold">Md Ishrafil Hossain</h4>
-            <div className="w-5 h-[1px] bg-[#696A75]" />
-            <time className="text-[#696A75] text-xs" dateTime={date}>
-              {date}
-            </time>
-            <div className="w-5 h-[1px] bg-[#696A75]" />
-            <div className="text-[#696A75] text-xs">
-              <i className="mr-1 fa-solid fa-bookmark"></i> 5 min read
+          {/* Author Info for desktop  */}
+          <div className="hidden lg:block">
+            <div className="flex items-center flex-wrap gap-2">
+              <img
+                src="https://i.ibb.co.com/7JCbP8nB/Ishrafil.jpg"
+                alt="user image"
+                className="rounded-full w-8 h-8 object-cover border text-[8px] text-center"
+              />
+              <h4 className="text-[#696A75] text-xs font-semibold">Md Ishrafil Hossain</h4>
+              <div className="w-5 h-[1px] bg-[#696A75]" />
+              <time className="text-[#696A75] text-xs" dateTime={date}>
+                {date}
+              </time>
+              <div className="w-5 h-[1px] bg-[#696A75]" />
+              <div className="text-[#696A75] text-xs">
+                <i className="mr-1 fa-solid fa-bookmark"></i> 5 min read
+              </div>
+              <div className="w-5 h-[1px] bg-[#696A75]" />
+              <div className="text-[#696A75] text-xs">
+                <i className="mr-1 fa-solid fa-chart-simple"></i> {view_count} views
+              </div>
             </div>
-            <div className="w-5 h-[1px] bg-[#696A75]" />
-            <div className="text-[#696A75] text-xs">
-              <i className="mr-1 fa-solid fa-chart-simple"></i> {view_count} views
+          </div>
+
+          {/* Author Info for Mobile  */}
+          <div className="lg:hidden">
+            <div className="space-y-2">
+              <div className="flex items-center gap-2">
+                <img
+                  src="https://i.ibb.co.com/7JCbP8nB/Ishrafil.jpg"
+                  alt="user image"
+                  className="rounded-full w-8 h-8 object-cover border text-[8px] text-center"
+                />
+                <h4 className="text-[#696A75] text-xs font-semibold">Md Ishrafil Hossain</h4>
+                <div className="w-5 h-[1px] bg-[#696A75]" />
+                <time className="text-[#696A75] text-xs" dateTime={date}>
+                  {date}
+                </time>
+              </div>
+
+              <div className="px-1 flex items-center gap-2">
+                <div className="text-[#696A75] text-xs">
+                  <i className="mr-1 fa-solid fa-bookmark"></i> 5 min read
+                </div>
+                <div className="w-5 h-[1px] bg-[#696A75]" />
+                <div className="text-[#696A75] text-xs">
+                  <i className="mr-1 fa-solid fa-chart-simple"></i> {view_count} views
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Blog Image */}
-          <img src={image} alt={title} className="my-6 rounded-lg w-full object-cover" />
+          <img src={image} alt={title} className="my-3 lg:my-6 rounded-lg w-full object-cover" />
 
           {/* Blog Sections */}
-          <div className="blog-content space-y-6">
+          <div className="blog-content space-y-4 lg:space-y-6">
             {blog_section?.map((section: { id: number; blog_section_title: string; description: string }) => (
               <div
                 key={section?.id}
@@ -137,11 +167,11 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
                   sectionRefs.current[section?.blog_section_title] = el!;
                 }}
                 id={section?.blog_section_title?.replace(/\s+/g, "-")?.toLowerCase()}
-                className="space-y-3"
+                className="space-y-1 lg:space-y-3"
               >
-                <h2 className="text-[#181a2a] text-2xl font-semibold">{section?.blog_section_title}</h2>
+                <h2 className="text-[#181a2a] text-xl lg:text-2xl font-semibold">{section?.blog_section_title}</h2>
                 <div
-                  className="text-[#3b3c4a] text-xl"
+                  className="text-[#3b3c4a] text-sm lg:text-xl"
                   dangerouslySetInnerHTML={{ __html: section?.description }}
                 />
               </div>
@@ -150,7 +180,7 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
         </div>
 
         {/* Right Side - Table of Content */}
-        <div className="w-[400px]">
+        <div className="w-[400px] hidden lg:block">
           {isTocVisible && (
             <div
               className="h-fit"
@@ -184,7 +214,7 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
       </div>
 
       {/* social link  */}
-      <ShareSocial/>
+      <ShareSocial />
     </div>
   );
 };

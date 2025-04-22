@@ -43,7 +43,7 @@ const page = async ({ params }: PageProps) => {
   const { slug } = await params;
 
   return (
-    <div className=" container lg:mt-32">
+    <div className="container mt-5 lg:mt-32">
       <BlogDetails params={slug} />
     </div>
   );
