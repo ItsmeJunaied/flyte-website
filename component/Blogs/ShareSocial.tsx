@@ -1,9 +1,12 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const ShareSocial = () => {
-  const currentUrl = typeof window !== "undefined" ? window.location.href : "";
+  const domain = "https://fsl.flytesolutions.com";
+  const pathname = usePathname();
+  const currentUrl = encodeURIComponent(domain + pathname);
 
   return (
     <div className="mb-5 flex justify-center items-center gap-2.5">
@@ -11,7 +14,7 @@ const ShareSocial = () => {
 
       {/* LinkedIn */}
       <Link
-        href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`}
+        href={`https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}`}
         target="_blank"
         rel="noopener noreferrer"
         className="text-[#5856d6] hover:text-white hover:bg-[#5856d6] w-6 h-6 border-2 rounded-full border-[#d5d5d5]/40 hover:border-[#5856d6] p-4 flex justify-center items-center transition duration-300"
@@ -21,7 +24,7 @@ const ShareSocial = () => {
 
       {/* Facebook */}
       <Link
-        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`}
+        href={`https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`}
         target="_blank"
         rel="noopener noreferrer"
         className="text-[#5856d6] hover:text-white hover:bg-[#5856d6] w-6 h-6 border-2 rounded-full border-[#d5d5d5]/40 hover:border-[#5856d6] p-4 flex justify-center items-center transition duration-300"
@@ -31,7 +34,7 @@ const ShareSocial = () => {
 
       {/* Twitter */}
       <Link
-        href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}`}
+        href={`https://twitter.com/intent/tweet?url=${currentUrl}`}
         target="_blank"
         rel="noopener noreferrer"
         className="text-[#5856d6] hover:text-white hover:bg-[#5856d6] w-6 h-6 border-2 rounded-full border-[#d5d5d5]/40 hover:border-[#5856d6] p-4 flex justify-center items-center transition duration-300"
@@ -39,7 +42,7 @@ const ShareSocial = () => {
         <i className="fa-brands fa-twitter"></i>
       </Link>
 
-      {/* Instagram doesn't support direct link sharing like others — you can just keep icon */}
+      {/* Instagram */}
       <Link
         href="https://www.instagram.com/"
         target="_blank"
