@@ -121,7 +121,7 @@ const BlogSection = () => {
                     <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                       <rect className="shape" height="60" width="320" />
                     </svg>
-                    <Link href={`news&blogs/${blog.slug}`}>
+                    <Link href={`news-and-blogs/${blog.slug}`}>
                       <div className=" text">Read More</div>
                     </Link>
                   </div>

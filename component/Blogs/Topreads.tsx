@@ -88,7 +88,7 @@ const Topreads = () => {
               <p className="h-16 overflowHidden text-[#6c757d] text-xs line-clamp-4">{card?.short_description}</p>
               {/* button  */}
               <div>
-                <Link className="border-black hover:border-btnColor" href={`news&blogs/${card?.slug}`}>
+                <Link className="border-black hover:border-btnColor" href={`news-and-blogs/${card?.slug}`}>
                   <div className="text-black hover:text-btnColor text-xs">View Post</div>
                 </Link>
               </div>

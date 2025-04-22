@@ -34,7 +34,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
   const isExcluded =
     excludePages.includes(pathname) ||
     pathname === "/company" ||
-    pathname.startsWith("/company/news&blogs/") ||
+    pathname.startsWith("/company/news-and-blogs/") ||
     pathname.startsWith("/products/") ||
     pathname.startsWith("/career/");
 

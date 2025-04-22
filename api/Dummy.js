@@ -243,7 +243,7 @@ export const navbarData = {
           icon: "fa-newspaper",
           description:
             "Stay updated with the latest company news, industry insights, and expert opinions. Dive into our blogs for valuable tips and updates shaping the future of technology and business.",
-          path: "/company/news&blogs",
+          path: "/company/news-and-blogs",
           btnText: "Read News & Blogs",
         },
       ],
