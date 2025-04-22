@@ -1,14 +1,3 @@
-// import React from "react";
-
-// const FavoriteBlogs = () => {
-//   return (
-//     <div>
-//       <h2 className="mb-4 text-[#161c2d] text-2xl text-center font-bold">You May Also Like</h2>
-//     </div>
-//   );
-// };
-
-// export default FavoriteBlogs;
 "use client";
 import { useGetAllBlogsQuery } from "@/redux/api/blogsApi";
 import Link from "next/link";
@@ -122,14 +111,12 @@ const FavoriteBlogs = () => {
                   {blog?.short_description}
                 </div>
                 <div className="flex-col justify-start items-center flex">
-                  <div className="svg-wrapper">
+                  <Link href={`/company/news-and-blogs/${blog.slug}`} className="svg-wrapper">
                     <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                       <rect className="shape" height="60" width="320" />
                     </svg>
-                    <Link href={`/company/news-and-blogs/${blog.slug}`}>
-                      <div className=" text">Read More</div>
-                    </Link>
-                  </div>
+                    <div className="text">Read More</div>
+                  </Link>
                 </div>
               </div>
             </div>

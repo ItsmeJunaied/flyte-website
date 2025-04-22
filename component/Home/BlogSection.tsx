@@ -59,7 +59,9 @@ const BlogSection = () => {
             </div>
 
             <div className="p-4 flex-col bg-white justify-start items-start gap-3 flex">
-              <h2 className="h-16 overflow-hidden text-[#121416] text-base font-semibold leading-loose">{blog.title}</h2>
+              <h2 className="h-16 overflow-hidden text-[#121416] text-base font-semibold leading-loose">
+                {blog.title}
+              </h2>
               <div className="h-[220.80px] flex-col justify-start items-start gap-3 flex">
                 <div className="flex-col justify-start items-start gap-2.5 flex">
                   <div className="self-stretch grow shrink basis-0 justify-start items-center gap-2 inline-flex">
@@ -117,14 +119,12 @@ const BlogSection = () => {
                   {blog?.short_description}
                 </div>
                 <div className="flex-col justify-start items-center flex">
-                  <div className="svg-wrapper">
+                  <Link href={`news-and-blogs/${blog.slug}`} className="svg-wrapper">
                     <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                       <rect className="shape" height="60" width="320" />
                     </svg>
-                    <Link href={`news-and-blogs/${blog.slug}`}>
-                      <div className=" text">Read More</div>
-                    </Link>
-                  </div>
+                    <div className="text">Read More</div>
+                  </Link>
                 </div>
               </div>
             </div>
