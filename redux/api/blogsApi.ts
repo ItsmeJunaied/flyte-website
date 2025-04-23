@@ -21,7 +21,20 @@ const blogsApi = baseApi.injectEndpoints({
       query: () => "blog-trending",
       providesTags: ["Blogs"],
     }),
+
+    // get all blogs
+    getRelatedBlogs: builder.query({
+      query: () => ({
+        url: "related-blog",
+      }),
+      providesTags: ["Blogs"],
+    }),
   }),
 });
 
-export const { useGetSingleBlogQuery, useGetAllBlogsQuery, useGetBlogTrendingQuery } = blogsApi;
+export const {
+  useGetSingleBlogQuery,
+  useGetAllBlogsQuery,
+  useGetBlogTrendingQuery,
+  useGetRelatedBlogsQuery,
+} = blogsApi;
