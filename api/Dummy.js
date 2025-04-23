@@ -1281,7 +1281,7 @@ export const blogData = {
   ],
 };
 
-// tech data
+// hire tech data
 export const techData = {
   frontend: {
     title: "Frontend Development",
@@ -2247,7 +2247,7 @@ export const techData = {
             "Perform backend testing, optimize performance, and deploy on platforms like AWS, Heroku, or DigitalOcean.",
         },
       ],
-      button_path: "/services/backend-development",
+      button_path: "/hire/application-form",
       button_name: "Explore Backend Services",
     },
   },
