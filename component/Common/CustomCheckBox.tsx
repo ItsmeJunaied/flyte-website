@@ -15,6 +15,7 @@ const CustomCheckBox: React.FC<CustomCheckBoxProps> = ({ id, registerName, label
         id={id}
         type="checkbox"
         {...register(registerName)}
+        value={id}
         className={`w-6 h-6 appearance-none bg-white text-black rounded-lg border border-[#cccccc]  checked:border-[#5856d6]  after:content-['✔'] after:text-white after:text-sm 
         after:hidden checked:after:block flex justify-center items-center cursor-pointer`}
       />

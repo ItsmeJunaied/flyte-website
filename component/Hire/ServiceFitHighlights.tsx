@@ -24,13 +24,13 @@ const ServiceFitHighlights: React.FC = () => {
               key={index}
               className="p-5 w-full md:max-w-80 h-[350px] md:h-[400px] bg-[#002347]/80 rounded-2xl"
               style={{
-                backgroundImage: "url('https://i.ibb.co.com/DLFqKr5/Rectangle-3844.png')",
+                backgroundImage: `url(${service?.backgroundImage})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             >
               <div className="grid grid-rows-3 h-full">
-                <span className="px-2 py-1.5 bg-white/20 text-xs rounded-[3.18px] w-[90px] h-7 mx-auto text-center">
+                <span className="px-2 py-1.5 text-white bg-white/20 text-xs rounded-[3.18px] w-[90px] h-7 mx-auto text-center">
                   {service?.category}
                 </span>
 

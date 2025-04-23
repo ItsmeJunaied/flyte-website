@@ -26,7 +26,7 @@ const BlogSection = () => {
 
   return (
     <div
-      className="py-[40px] px-4 lg:px-0"
+      className="py-5 lg:py-10"
       style={{
         backgroundImage: "url('/images/BlogSectionBg.png')",
         backgroundSize: "cover",
@@ -38,7 +38,7 @@ const BlogSection = () => {
         <h1>News & Blogs</h1>
       </div>
 
-      <div className="container grid gap-4 py-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="container py-5 lg:py-10 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {blogs?.map((blog: Blog, index: number) => (
           <div
             key={index}
@@ -59,7 +59,9 @@ const BlogSection = () => {
             </div>
 
             <div className="p-4 flex-col bg-white justify-start items-start gap-3 flex">
-              <div className="text-[#121416] text-base font-semibold leading-loose">{blog.title}</div>
+              <h2 className="h-16 overflow-hidden text-[#121416] text-base font-semibold leading-loose">
+                {blog.title}
+              </h2>
               <div className="h-[220.80px] flex-col justify-start items-start gap-3 flex">
                 <div className="flex-col justify-start items-start gap-2.5 flex">
                   <div className="self-stretch grow shrink basis-0 justify-start items-center gap-2 inline-flex">
@@ -113,18 +115,16 @@ const BlogSection = () => {
                     </div>
                   </div>
                 </div>
-                <div className="self-stretch text-[#6c757d] text-xs font-normal leading-[17.96px]">
+                <div className="self-stretch h-[54px] overflow-hidden text-[#6c757d] text-xs font-normal leading-[17.96px]">
                   {blog?.short_description}
                 </div>
                 <div className="flex-col justify-start items-center flex">
-                  <div className="svg-wrapper">
+                  <Link href={`/company/news-and-blogs/${blog.slug}`} className="svg-wrapper">
                     <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                       <rect className="shape" height="60" width="320" />
                     </svg>
-                    <Link href={`news&blogs/${blog.slug}`}>
-                      <div className=" text">Read More</div>
-                    </Link>
-                  </div>
+                    <div className="text">Read More</div>
+                  </Link>
                 </div>
               </div>
             </div>

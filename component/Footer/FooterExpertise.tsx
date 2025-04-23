@@ -19,7 +19,7 @@ type Expertise = {
 const FooterExpertise: React.FC<{ expertise: Expertise }> = ({ expertise }) => {
   const { sectionName, subsections } = expertise || {};
   return (
-    <div className="w-full mt-0 lg:mt-8">
+    <div className="w-full">
       <h6 className="footer-title text-[#0FF] mb-8 text-sm">{sectionName}</h6>
       <div className=" w-full  flex flex-col lg:flex-row  gap-6">
         {subsections?.map((subsection, index) => (
@@ -28,7 +28,7 @@ const FooterExpertise: React.FC<{ expertise: Expertise }> = ({ expertise }) => {
             <ul className="list-none flex flex-col gap-3">
               {subsection?.items.map((item, subIndex) => (
                 <li key={subIndex}>
-                  <Link href={item?.path} className="text-[#EBEBEB] text-sm link link-hover">
+                  <Link href={item?.path} className="text-[#eaeaea] text-sm link link-hover">
                     {item?.name}
                   </Link>
                 </li>

@@ -3,12 +3,10 @@ import ReadyToTransform from "@/component/CaseStudies/ReadyToTransform";
 import SuccessStories from "@/component/Common/SuccessStories";
 import Contact from "@/component/Contact/Contact";
 import { Metadata } from "next";
-import React from "react";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
-
 
 const fetchCaseStudy = async (slug: string) => {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/case-studies/${slug}`);
@@ -31,18 +29,36 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-// Generate static paths for all case studies
-export async function generateStaticParams() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/case-studies`);
-  if (!res.ok) return [];
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
+  const allSlugs: string[] = [];
 
-  const caseStudies = await res.json();
-  return caseStudies.data.data.map((caseStudy: { slug: string }) => ({
-    slug: caseStudy.slug,
-  }));
+  let page = 1;
+  let hasMore = true;
+
+  while (hasMore) {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/case-studies?page=${page}`);
+    if (!res.ok) break;
+
+    const json = await res.json();
+    const caseStudies = json?.data?.data || [];
+
+    allSlugs.push(...caseStudies.map((item: { slug: string }) => item.slug));
+
+    const currentPage = json?.data?.current_page || page;
+    const perPage = json?.data?.per_page || 10;
+    const total = json?.data?.total || 0;
+    const totalPages = Math.ceil(total / perPage);
+
+    hasMore = currentPage < totalPages;
+    page++;
+  }
+
+  const uniqueSlugs = Array.from(new Set(allSlugs));
+
+  return uniqueSlugs.map((slug) => ({ slug }));
 }
 
-const page = async ({ params }: PageProps) => {
+export default async function Page({ params }: PageProps) {
   const { slug } = await params;
 
   return (
@@ -53,6 +69,4 @@ const page = async ({ params }: PageProps) => {
       <Contact />
     </div>
   );
-};
-
-export default page;
+}

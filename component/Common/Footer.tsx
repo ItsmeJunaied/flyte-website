@@ -3,8 +3,7 @@ import FooterOverview from "../Footer/FooterOverview";
 
 const Footer = () => {
   return (
-    <footer>
-      
+    <footer id="page-footer">
       <FooterOverview />
       <div className="footer footer-center text-base-content py-4">
         <aside>

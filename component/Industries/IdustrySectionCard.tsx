@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import { FaArrowRight, FaQuoteRight } from "react-icons/fa";
 
@@ -17,6 +18,7 @@ type IndustriesCardsData = {
     src: string;
     alt: string;
   }[];
+  industryLinkName:string;
 };
 
 type IndustriesCardsDataProps = {
@@ -127,8 +129,8 @@ const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({ IndustriesCard
                     </p>
 
                     <div className="flex flex-row justify-start items-center gap-3">
-                      <div className="w-[50px] h-[50px]">
-                        <img className="rounded-full" src={data.reviewerImage} alt={data.reviewerName} />
+                      <div className="w-12 h-12">
+                        <img className="rounded-full w-full h-full cover" src={data.reviewerImage} alt={data.reviewerName} />
                       </div>
 
                       <div>
@@ -151,13 +153,13 @@ const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({ IndustriesCard
                   </div>
                 </div>
 
-                <p
+                {/* <p
                   className={`${
                     index % 2 === 1 ? "text-white" : "text-[#121212]"
                   } text-xs font-semibold flex flex-row gap-4 justify-start items-center`}
                 >
                   Explore {data.industryName} Solutions <FaArrowRight />
-                </p>
+                </p> */}
               </div>
 
               {/* Bullet points */}
@@ -186,11 +188,11 @@ const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({ IndustriesCard
                   </div>
 
                   <div className="w-full flex justify-start items-center">
-                    <button className="h-10 px-6 py-2.5 bg-white rounded-md shadow-[0px_0px_10px_10px_rgba(230,230,230,0.25)] border border-[#dddddd] justify-start items-start gap-2.5 inline-flex overflow-hidden">
+                    <Link href="/schedule-consultation" className="h-10 px-6 py-2.5 bg-white hover:bg-black hover:text-white transition duration-500 rounded-md shadow-[0px_0px_10px_10px_rgba(230,230,230,0.25)] border border-[#dddddd] justify-start items-start gap-2.5 inline-flex overflow-hidden">
                       <p className="tex</button>t-[#191919] text-sm font-semibold font-['DM Sans']">
                         Book A Consultation
                       </p>
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -205,9 +207,9 @@ const IdustrySectionCard: React.FC<IndustriesCardsDataProps> = ({ IndustriesCard
             </div>
 
             <div className="w-full flex justify-center items-center">
-              <button className="h-[43px] px-8 py-3 bg-[#5856d6] rounded-md justify-start items-start gap-2.5 inline-flex overflow-hidden">
-                <p className="text-white text-sm font-semibold">Explore Fintech Solutions</p>
-              </button>
+              <Link href={`/industries/${data?.industryLinkName}`} className="h-[43px] px-8 py-3 bg-[#5856d6] rounded-md justify-start items-start gap-2.5 inline-flex overflow-hidden">
+                <p className="text-white text-sm font-semibold">Explore {data?.industryName} Solutions</p>
+              </Link>
             </div>
           </div>
         </div>

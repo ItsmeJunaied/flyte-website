@@ -24,10 +24,10 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
     );
 
   const {
-    title,
-    short_title,
-    short_description,
-    image,
+    title:heroTitle,
+    short_title:heroSubtitle,
+    short_description:heroDesctiption,
+    image:heroImage,
     location,
     category,
     service,
@@ -42,9 +42,11 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
     impactful,
   } = caseStudies?.data || {};
 
+  console.log("from case studies: ", caseStudies?.data);
+
   return (
     <div>
-      <HeroBanner bannerData={{ title, short_title, short_description, image }} />
+      <HeroBanner bannerData={{ heroTitle, heroSubtitle, heroDesctiption, heroImage }} />
       <CaseInfo data={{ location, category, service, partnership }} />
       <StepCard
         data={{

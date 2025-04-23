@@ -1,73 +1,146 @@
-import React from "react";
+import { FC, useRef } from "react";
 
-type PaginationProps = {
-  currentPage: number;
-  setCurrentPage: (page: number) => void;
-  total: number;
-  perPage: number;
-};
+interface PaginationProps {
+  current_page: number;
+  last_page: number;
+  onPageChange: (page: number) => void;
+  visibleRange?: number;
+  isLoading?: boolean;
+}
 
-const Pagination: React.FC<PaginationProps> = ({ 
-  currentPage, 
-  setCurrentPage, 
-  total, 
-  perPage, 
+const Pagination: FC<PaginationProps> = ({
+  current_page,
+  last_page,
+  onPageChange,
+  visibleRange = 2,
+  isLoading = false,
 }) => {
-  const totalPages = Math.ceil(total / perPage);
+  const userInteracted = useRef(false);
 
-  const scrollToTop = () => {
+  // Handle scroll with conditional offset - ONLY for pagination changes
+  const handlePageChangeWithScroll = (newPage: number) => {
+    userInteracted.current = true;
+    onPageChange(newPage);
+
+    // Add a small delay to allow the data to load before scrolling
     setTimeout(() => {
-      window.scrollTo({ top: 850, behavior: "smooth" });
-    }, 100); // Small delay to ensure smooth transition
+      window.scrollTo({
+        top: 850, // Fixed scroll position for pagination
+        behavior: "smooth",
+      });
+    }, 100);
   };
-  
 
-   const handlePrevious = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-      scrollToTop()
+  // Don't render if there's only one page
+  if (last_page <= 1) return null;
+
+  // Generate page numbers to display
+  const generatePageNumbers = () => {
+    const pages = [];
+    const leftBound = Math.max(2, current_page - visibleRange);
+    const rightBound = Math.min(last_page - 1, current_page + visibleRange);
+
+    // Always add first page
+    pages.push(1);
+
+    // Add ellipsis if needed after first page
+    if (leftBound > 2) {
+      pages.push("...");
+    }
+
+    // Add middle range pages
+    for (let i = leftBound; i <= rightBound; i++) {
+      pages.push(i);
+    }
+
+    // Add ellipsis if needed before last page
+    if (rightBound < last_page - 1) {
+      pages.push("...");
+    }
+
+    // Always add last page if different from first
+    if (last_page > 1) {
+      pages.push(last_page);
+    }
+
+    return pages;
+  };
+
+  // Handler for previous button
+  const handlePrevious = () => {
+    if (current_page > 1) {
+      handlePageChangeWithScroll(current_page - 1);
     }
   };
 
-  // Handle Next Button Click
+  // Handler for next button
   const handleNext = () => {
-    if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1);
-      scrollToTop()
+    if (current_page < last_page) {
+      handlePageChangeWithScroll(current_page + 1);
     }
   };
+
+  // Handler for page number clicks
+  const handlePageClick = (page: number) => {
+    if (page !== current_page) {
+      handlePageChangeWithScroll(page);
+    }
+  };
+
+  const pageNumbers = generatePageNumbers();
 
   return (
-    <div className="py-8 border-b">
-    {/* Next and Previous Buttons */}
-    <div className="flex justify-center gap-2">
-      {/* previous button  */}
+    <nav className="flex items-center justify-center gap-2 mt-8">
+      {/* Previous Button */}
       <button
         onClick={handlePrevious}
-        className={`text-xs lg:text-sm w-10 h-10 text-white bgGradientNevyBlue rounded-full ${
-          currentPage === 1 ? "cursor-not-allowed opacity-50" : "cursor-pointer"
+        disabled={current_page === 1 || isLoading}
+        className={`px-2.5 py-2 text-sm rounded-md ${
+          current_page === 1 || isLoading
+            ? "text-[#cccccc] cursor-not-allowed"
+            : "text-[#333333] hover:text-blue-900 transition-colors"
         }`}
-        disabled={currentPage === 1}
+        aria-label="Previous page"
       >
-        <i className="fa-solid fa-less-than"></i>
+        Prev
       </button>
 
-      <span className="px-4 py-2 text-sm font-semibold">
-        Page {currentPage} of {totalPages}
-      </span>
+      {/* Page Numbers */}
+      <div className="flex items-center gap-[5px]">
+        {pageNumbers.map((page, index) => (
+          <button
+            key={index}
+            onClick={() => typeof page === "number" && handlePageClick(page)}
+            disabled={page === "..." || isLoading || page === current_page}
+            className={`w-8 h-8 rounded-md flex items-center justify-center border ${
+              page === current_page
+                ? "bg-[#2f80ed] text-white font-medium"
+                : page === "..."
+                ? "pointer-events-none"
+                : "text-black hover:bg-gray-300 transition-colors duration-500"
+            }`}
+            aria-current={page === current_page ? "page" : undefined}
+            aria-label={page === "..." ? "Ellipsis" : `Go to page ${page}`}
+          >
+            {page}
+          </button>
+        ))}
+      </div>
 
-      {/* next button  */}
+      {/* Next Button */}
       <button
         onClick={handleNext}
-        className={`text-xs lg:text-sm w-10 h-10 text-white bgGradientNevyBlue rounded-full ${
-          currentPage === totalPages ? "cursor-not-allowed opacity-50" : "cursor-pointer hover:bg-blue-600"
+        disabled={current_page === last_page || isLoading}
+        className={`px-2.5 py-2 text-sm rounded-md ${
+          current_page === last_page || isLoading
+            ? "text-[#cccccc] cursor-not-allowed"
+            : "text-[#333333] hover:text-blue-900 transition-colors"
         }`}
-        disabled={currentPage === totalPages}
+        aria-label="Next page"
       >
-        <i className="fa-solid fa-greater-than"></i>
+        Next
       </button>
-    </div>
-  </div>
+    </nav>
   );
 };
 

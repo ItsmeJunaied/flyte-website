@@ -42,7 +42,7 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ projectData }) => {
             key={index}
             className="flex justify-center bg-white rounded-[20px] w-full md:max-w-[1200px]"
           >
-            <Link  href={`case-studies/${project?.slug}`}>
+            <Link  href={`/case-studies/${project?.slug}`}>
               <div className="bg-[#f7f7f7] w-full h-[500px] rounded-xl flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-10 p-6 opacity-90 hover:opacity-100 transition-opacity duration-300">
                 <div className="w-full lg:w-1/2 h-[200px] lg:h-[450px]">
                   <img src={project?.image} alt={project?.title} className="w-[100%]  rounded-xl" />

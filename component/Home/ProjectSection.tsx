@@ -17,7 +17,7 @@ const ProjectSection: React.FC = () => {
     <div className="relative overflow-hidden bg-white px-5 py-4 lg:py-6">
       <div className="container mb-3 lg:mb-6">
         <Subtitle Subtitle="Case Studies" />
-        <Title fontColor="" title="Driving Success Through Proven SOlutions" width="full" />
+        <Title fontColor="" title="Driving Success Through Proven Solutions!" width="full" />
       </div>
 
       <div className="hidden lg:block">

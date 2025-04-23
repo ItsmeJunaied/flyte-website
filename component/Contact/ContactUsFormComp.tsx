@@ -5,7 +5,6 @@ import PhoneInput from "react-phone-number-input";
 import { toast } from "react-toastify";
 import { GrAttachment } from "react-icons/gr";
 import { SubmitHandler, useForm } from "react-hook-form";
-// import { submitContactForm } from "@/api/useContactUsForm";
 import { useAddContactMutation } from "@/redux/api/contactApi";
 
 type Inputs = {
@@ -15,12 +14,13 @@ type Inputs = {
   phone: string;
   message: string;
   attachment: File[];
+  ndaCheckbox: string;
 };
 
 const ContactUsFormComp: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [phoneValue, setPhoneValue] = useState(true);
-  const [isChecked, setIsChecked] = useState(false);
   const [files, setFiles] = useState<File[]>([]);
   const [addContact] = useAddContactMutation();
   const {
@@ -41,12 +41,8 @@ const ContactUsFormComp: React.FC = () => {
       setPhoneValue(true);
     }
 
-    if (!isChecked) {
-      toast.error("Please agree to the NDA to proceed.");
-      return;
-    }
-
     try {
+      setIsLoading(true);
       const postData = new FormData();
       postData.append("name", data.name);
       postData.append("company_name", data.company_name);
@@ -85,12 +81,17 @@ const ContactUsFormComp: React.FC = () => {
         toast.success("Your message has been sent successfully!");
         reset();
         setFiles([]);
-        setIsChecked(false);
+        // setIsChecked(false);
         setIsSubmitted(false);
+        setIsLoading(false);
       }
     } catch (error) {
       toast.error("Something went wrong. Please try again.");
       console.error("Error:", error);
+      setIsSubmitted(false);
+      setIsLoading(false);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -161,49 +162,6 @@ const ContactUsFormComp: React.FC = () => {
         </div>
       </div>
 
-      {/* <div className="w-full flex flex-col lg:flex-row justify-start items-start gap-8 ">
-        <div className="w-full   flex-col justify-start items-start gap-2 inline-flex">
-          <label className="self-stretch text-[#666666] text-xs font-semibold font-['DM Sans'] leading-[18px]">
-            Service
-          </label>
-          <Select>
-            <SelectTrigger className="self-stretch h-14 p-4 bg-white rounded-lg border border-[#cccccc] text-[#666666] text-sm font-normal font-['DM Sans'] leading-normal outline-none hover:border-btnColor focus:border-btnColor">
-              <SelectValue placeholder="Choose from our range of services" />
-            </SelectTrigger>
-            <SelectContent className="max-w-full overflow-x-hidden">
-              <SelectItem value="webDevelopment">Web Development</SelectItem>
-              <SelectItem value="mobileDevelopment">
-                Mobile App Development
-              </SelectItem>
-              <SelectItem value="uiUxDesign">UI/UX Design</SelectItem>
-              <SelectItem value="qaTesting">QA Testing</SelectItem>
-              <SelectItem value="cloudServices">Cloud Services</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
-        <div className="w-full   flex-col justify-start items-start gap-2 inline-flex">
-          <label className="self-stretch text-[#666666] text-xs font-semibold font-['DM Sans'] leading-[18px]">
-            Product
-          </label>
-          <Select>
-            <SelectTrigger className="self-stretch h-14 p-4 bg-white rounded-lg border border-[#cccccc] text-[#666666] text-sm font-normal font-['DM Sans'] leading-normal outline-none hover:border-btnColor focus:border-btnColor">
-              <SelectValue placeholder="Choose from our range of products" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="crmSoftware">CRM Software</SelectItem>
-              <SelectItem value="ecommercePlatform">
-                E-commerce Platform
-              </SelectItem>
-              <SelectItem value="projectManagementTool">
-                Project Management Tool
-              </SelectItem>
-              <SelectItem value="erpSystem">ERP System</SelectItem>
-              <SelectItem value="customSolutions">Custom Solutions</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
-      </div> */}
-
       <div className="self-stretch h-[329px] flex-col justify-start items-start gap-2 lg:gap-6 flex">
         <div className="self-stretch h-[265px] flex-col justify-start items-start gap-4 flex">
           <div className="self-stretch h-[159px] flex-col justify-start items-start gap-2 flex">
@@ -272,10 +230,10 @@ const ContactUsFormComp: React.FC = () => {
           <div className="self-stretch py-3 justify-start items-center gap-2.5 inline-flex">
             <div className="flex gap-4">
               <input
+                {...register("ndaCheckbox", { required: "You must agree to the NDA" })} // register the checkbox with validation
                 type="checkbox"
                 className="toggle toggle-primary [--tglbg:white]"
                 id="nda-checkbox"
-                onChange={(e) => setIsChecked(e.target.checked)}
               />
               <div className="text-[#666666] text-xs font-normal font-['DM Sans'] leading-normal">
                 I agree to the Non-Disclosure Agreement (NDA) and confirm that all shared information will
@@ -283,19 +241,23 @@ const ContactUsFormComp: React.FC = () => {
               </div>
             </div>
           </div>
-          {isSubmitted && !isChecked && (
-            <div className="text-red-600 text-xs font-normal font-['DM Sans'] leading-normal">
-              You must agree to the NDA to submit the form.
-            </div>
+
+          {/* Display error message */}
+          {errors.ndaCheckbox && (
+            <div className="text-red-500 text-sm -mt-4">{errors.ndaCheckbox.message}</div>
           )}
         </div>
 
         <div className="self-stretch h-10 flex-col justify-start items-center gap-2 flex">
-          <input
+          <button
             type="submit"
-            value={"Send Message"}
-            className="w-[180px] h-10 px-8 py-3 bg-[#5856d6] rounded-md text-white text-sm font-semibold"
-          />
+            disabled={isLoading}
+            className={`${
+              isLoading ? "cursor-not-allowed bg-gray-400" : "cursor-pointer bgGradientNevyBlue"
+            } w-[180px] h-10 px-8 py-3  rounded-md text-white text-sm font-semibold `}
+          >
+            {isLoading ? "Sending..." : " Send Message"}
+          </button>
         </div>
       </div>
     </form>

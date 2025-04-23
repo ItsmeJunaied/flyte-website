@@ -6,7 +6,7 @@ const CareerBanner = () => {
   return (
     <div className="container pt-5 lg:pt-40 mb-10 md:mb-16 flex flex-col lg:flex-row gap-5 md:gap-20 w-full">
       <div className="flex flex-col gap-5 md:gap-10 lg:w-1/2">
-        <h2 className="text-xl md:text-4xl font-bold">{careerBannerData?.title}</h2>
+        <h2 className="text-xl md:text-4xl font-bold !leading-[46px]">{careerBannerData?.title}</h2>
         <p className="text-sm md:text-base font-normal">{careerBannerData?.description}</p>
         <div className="flex flex-wrap gap-3">
           {careerBannerData?.images?.map((image, index) => (

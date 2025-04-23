@@ -14,6 +14,7 @@ type NavData = {
       icon: string;
       description: string;
       path: string;
+      btnText?: string;
     }[];
   }[];
 };
@@ -22,11 +23,18 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const excludePages = ["/case-studies", "/career", "/company/about-us", "/contact-us", "/hire/application-form"];
+  const excludePages = [
+    "/case-studies",
+    "/career",
+    "/company/about-us",
+    "/contact-us",
+    "/hire/application-form",
+    "/schedule-consultation",
+  ];
   const isExcluded =
     excludePages.includes(pathname) ||
     pathname === "/company" ||
-    pathname.startsWith("/company/news&blogs/") ||
+    pathname.startsWith("/company/news-and-blogs/") ||
     pathname.startsWith("/products/") ||
     pathname.startsWith("/career/");
 
@@ -45,10 +53,10 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
   useEffect(() => {
     const handleScroll = () => {
       const threshold = window.innerHeight * 0.5;
-  
+
       setIsScrolled(window.scrollY > threshold);
     };
-  
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -84,6 +92,7 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                   <li key={index} className={item.type === "dropdown" ? "dropdown__item" : ""}>
                     {item.type === "dropdown" ? (
                       <>
+                        {/* parent list  */}
                         <div className={`nav__link dropdown__button  ${isActive ? "active" : ""}`}>
                           <p
                             className={` hover:text-[#2B6CB0] group-hover:text-black ${
@@ -98,38 +107,75 @@ const Nav: React.FC<{ navData: NavData }> = ({ navData }) => {
                             }`}
                           ></i>
                         </div>
+
+                        {/* child list  */}
                         <div className="dropdown__container">
                           <div className="dropdown__content">
-                            <div className="lg:container grid grid-cols-1 lg:grid-cols-3">
-                              <div className="lg:col-span-1 hidden lg:flex flex-col gap-4 flex-shrink-0 ">
-                                <h1 className="text-lg text-btnColor ">{item.name}</h1>
-                                <p className="text-xs text-[#131313B2]">{item.description}</p>
-                                <Link
-                                  className="bg-btnColor w-fit h-fit text-white px-6 py-3 rounded-lg"
-                                  href={item.path}
-                                >
-                                  <p className="">Learn more</p>
-                                </Link>
+                            <div className="lg:container grid grid-cols-1 lg:grid-cols-3 lg:gap-5">
+                              <div className="lg:col-span-1 hidden lg:flex flex-col gap-4 flex-shrink-0 mt-5">
+                                <h1 className="text-lg font-bold text-btnColor ">
+                                  {item?.path === "/company" ? "Discover Flyte" : item.name}
+                                </h1>
+                                <p className=" text-sm text-[#131313B2]">{item.description}</p>
+                                {item?.path === "/company" ? (
+                                  ""
+                                ) : (
+                                  <Link
+                                    className="bgGradientNevyBlue w-fit h-fit text-white px-6 py-3 rounded-lg"
+                                    href={item?.path}
+                                  >
+                                    <p className="">Learn more</p>
+                                  </Link>
+                                )}
                               </div>
                               <div className="lg:col-span-2 rounded-lg flex-shrink-0">
-                                <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-2">
+                                <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-5">
                                   {item.features?.map((feature, featureIndex) => (
                                     <Link href={feature.path} key={featureIndex}>
-                                      <div className="bg-[#F7FAFF] lg:bg-white flex flex-row items-center gap-2 lg:gap-4 lg:border-2 lg:border-white hover:border-btnColor px-5 lg:px-4 py-1 lg:py-2 lg:rounded-lg lg:h-24 max-w-[406px]">
-                                        <div className="w-7 h-7">
-                                          <i
-                                            className={`w-7 h-7 fa ${feature.icon} text-lg lg:text-3xl text-[#5856d6]`}
-                                          ></i>
+                                      {item.path === "/company" ? (
+                                        <div className="px-4 py-1.5 lg:py-6 bg-[#f7f7f7] lg:border-2 lg:border-[#f1f1f1] hover:border-btnColor lg:rounded-lg max-w-[406px]">
+                                          <div className="flex flex-row items-center gap-2 lg:gap-5">
+                                            <div>
+                                              <i
+                                                className={` fa ${feature.icon} text-lg lg:text-5xl text-[#5856d6]`}
+                                              ></i>
+                                            </div>
+                                            <div>
+                                              <p className="text-btnColor text-xs lg:text-base font-semibold mb-1 lg:mb-2">
+                                                {feature.name}
+                                              </p>
+                                              <p className=" text-[#131313B2] text-xs hidden lg:block">
+                                                {feature.description}
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div className="mt-6 hidden lg:block w-fit mx-auto">
+                                            <button className="px-6 py-1.5 text-[10px] font-semibold hover:text-white bg-white hover:bg-black transition duration-300 rounded-md shadow-[0px_0px_10px_10px_rgba(230,230,230,0.25)] outline outline-1 outline-offset-[-1px] outline-[#dddddd]">
+                                              {feature?.btnText}
+                                            </button>
+                                          </div>
                                         </div>
-                                        <div>
-                                          <p className="text-btnColor text-xs lg:text-base">{feature.name}</p>
-                                          <p className=" text-[#131313B2] text-xs hidden lg:block">
-                                            {feature.description}
-                                          </p>
+                                      ) : (
+                                        <div className="px-5 lg:px-4 py-1 lg:py-2 lg:h-24 bg-[#F7FAFF] lg:bg-white flex flex-row items-center gap-2 lg:gap-4 lg:border-2 lg:border-white hover:border-btnColor lg:rounded-lg max-w-[406px]">
+                                          <div className="w-7 h-7">
+                                            <i
+                                              className={`w-7 h-7 fa ${feature.icon} text-lg lg:text-3xl text-[#5856d6]`}
+                                            ></i>
+                                          </div>
+                                          <div>
+                                            <p className="text-btnColor text-xs lg:text-base">
+                                              {feature.name}
+                                            </p>
+                                            <p className=" text-[#131313B2] text-xs hidden lg:block">
+                                              {feature.description}
+                                            </p>
+                                          </div>
                                         </div>
-                                      </div>
+                                      )}
                                     </Link>
                                   ))}
+
+                                  {/* only for small device  */}
                                   <div className="bg-[#F7FAFF]">
                                     <Link
                                       className="nav-close mx-5 bg-btnColor text-white px-3 w-fit rounded lg:hidden flex justify-center items-center"

@@ -23,11 +23,11 @@ const OverviewStep: React.FC<OverviewStepProps> = ({ agreeToggle, onToggle }) =>
         <div>
           <label className="text-[#666666] text-xs font-semibold mb-2">Name</label>
           <input
-            id="userName"
-            {...register("userName", { required: true })}
+            id="name"
+            {...register("name", { required: true })}
             placeholder="Enter your name"
             className={`w-full text-[#666666] placeholder:text-[#666666] border rounded-[5px] p-3 bg-white outline-none ${
-              errors.userName ? "border-red-500" : "border-[#E5E5E5]"
+              errors.name ? "border-red-500" : "border-[#E5E5E5]"
             }`}
           />
         </div>
@@ -77,10 +77,10 @@ const OverviewStep: React.FC<OverviewStepProps> = ({ agreeToggle, onToggle }) =>
         <div>
           <label className="text-[#666666] text-xs font-semibold mb-2">Team Size</label>
           <select
-            {...register("teamSize", { required: true })}
+            {...register("team_size", { required: true })}
             defaultValue=""
             className={`w-full text-[#666666] placeholder:text-[#666666] border rounded-[5px] px-3 py-3.5 bg-white outline-none ${
-              errors.teamSize ? "border-red-500" : "border-[#E5E5E5]"
+              errors.team_size ? "border-red-500" : "border-[#E5E5E5]"
             }`}
           >
             <option value="" disabled>
@@ -98,10 +98,10 @@ const OverviewStep: React.FC<OverviewStepProps> = ({ agreeToggle, onToggle }) =>
         <div>
           <label className="text-[#666666] text-xs font-semibold mb-2">Project Duration</label>
           <select
-            {...register("projectDuration", { required: true })}
+            {...register("project_duration", { required: true })}
             defaultValue=""
             className={`w-full text-[#666666] placeholder:text-[#666666] border rounded-[5px] px-3 py-3.5 bg-white outline-none ${
-              errors.projectDuration ? "border-red-500" : "border-[#E5E5E5]"
+              errors.project_duration ? "border-red-500" : "border-[#E5E5E5]"
             }`}
           >
             <option value="" disabled>
@@ -118,10 +118,10 @@ const OverviewStep: React.FC<OverviewStepProps> = ({ agreeToggle, onToggle }) =>
         <div>
           <label className="text-[#666666] text-xs font-semibold mb-2">Experience Level</label>
           <select
-            {...register("experienceLevel", { required: true })}
+            {...register("experience_level", { required: true })}
             defaultValue=""
             className={`w-full text-[#666666] placeholder:text-[#666666] border rounded-[5px] px-3 py-3.5 bg-white outline-none ${
-              errors.experienceLevel ? "border-red-500" : "border-[#E5E5E5]"
+              errors.experience_level ? "border-red-500" : "border-[#E5E5E5]"
             }`}
           >
             <option value="" disabled>
@@ -139,10 +139,10 @@ const OverviewStep: React.FC<OverviewStepProps> = ({ agreeToggle, onToggle }) =>
         <div>
           <label className="text-[#666666] text-xs font-semibold mb-2">Tentative Onboarding Time</label>
           <select
-            {...register("onboardTime", { required: true })}
+            {...register("tentative_onboarding_duration", { required: true })}
             defaultValue=""
             className={`w-full text-[#666666] placeholder:text-[#666666] border rounded-[5px] px-3 py-3.5 bg-white outline-none ${
-              errors.onboardTime ? "border-red-500" : "border-[#E5E5E5]"
+              errors.tentative_onboarding_duration ? "border-red-500" : "border-[#E5E5E5]"
             }`}
           >
             <option value="" disabled>

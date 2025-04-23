@@ -15,7 +15,7 @@ const ReadyToTransform = () => {
           </p>
         </div>
         <Link
-          className="px-8 py-3 mt-6 ml-5 bgGradientNevyBlue rounded-md text-white w-fit lg:mx-auto block"
+          className="px-8 py-3 ml-5 bgGradientNevyBlue rounded-md text-white w-fit lg:mx-auto block"
           href="/schedule-consultation"
         >
           Book A Consultation

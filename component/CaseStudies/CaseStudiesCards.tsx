@@ -1,6 +1,6 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Subtitle from "../Common/Subtitle";
 import Title from "../Common/Title";
 import Link from "next/link";
@@ -32,17 +32,54 @@ const CaseStudiesCards = () => {
     name: "All Industries",
     type: "",
   });
-
+  
+  // Reference to track if it's a category change
+  const isCategoryChange = useRef(false);
+  // Reference to store position before category click
+  const scrollPosition = useRef(0);
+  
   const { data: contentCagetories, isLoading: isLoadingContent } = useGetContentCategoryQuery("");
-  const { data: caseStudies, isLoading } = useGetCategoryBasedCaseStudiesQuery({
+  const {
+    data: caseStudies,
+    isLoading,
+    isFetching,
+  } = useGetCategoryBasedCaseStudiesQuery({
     category_id: selectedCategory?.id ?? 0,
     page: currentPage,
   });
 
-  const { categories } = contentCagetories?.data || {};
-  const { current_page, total, per_page } = caseStudies?.data || {};
+  // Restore scroll position after category change
+  useEffect(() => {
+    if (!isLoading && !isFetching && isCategoryChange.current) {
+      // Restore to the saved position
+      setTimeout(() => {
+        window.scrollTo(0, scrollPosition.current);
+        isCategoryChange.current = false;
+      }, 0);
+    }
+  }, [isLoading, isFetching]);
 
-  console.log("Loading", isLoading);
+  const handleCategoryChange = (category: Category) => {
+    if (category.id !== selectedCategory.id) {
+      // Save current scroll position
+      scrollPosition.current = window.scrollY;
+      // Set flag that we're changing category
+      isCategoryChange.current = true;
+      // Change category
+      setSelectedCategory(category);
+      setCurrentPage(1);
+    }
+  };
+
+  const handlePageChange = (newPage: number) => {
+    setCurrentPage(newPage);
+    // We don't set isCategoryChange here, so Pagination's scroll effect will work
+  };
+
+  const { categories } = contentCagetories?.data || {};
+  const { current_page, last_page } = caseStudies?.data || {};
+
+  // console.log("categories", categories);
 
   return (
     <div>
@@ -51,8 +88,8 @@ const CaseStudiesCards = () => {
       ) : (
         <div className="rounded-t-[60px] lg:py-5 lg:px-0 w-full flex justify-center items-center">
           <div className="container">
-            <div className="flex flex-col justify-center items-center gap-3 w-full">
-              <Subtitle Subtitle="Explore Our Success Stories" />
+            <div className="flex flex-col justify-center items-center gap-1 w-full">
+              <Subtitle Subtitle="Case Studies" />
               <Title
                 width="w-full"
                 padding="px-2 lg:px-0"
@@ -63,24 +100,24 @@ const CaseStudiesCards = () => {
             </div>
 
             {/* category tab  */}
-            <div className="flex flex-row flex-wrap gap-2 mt-4 lg:mt-16">
-              {categories?.map((categroy: Category, index: number) => (
+            <div className="flex flex-row flex-wrap gap-2 mt-4 lg:mt-10">
+              {categories?.map((category: Category, index: number) => (
                 <button
                   key={index}
-                  onClick={() => setSelectedCategory(categroy)}
+                  onClick={() => handleCategoryChange(category)}
                   className={`h-9 px-4 py-2 ${
-                    selectedCategory?.name === categroy?.name ? "bg-[#fff]" : "bg-[#FDF6E3]"
+                    selectedCategory?.name === category?.name ? "bg-[#fff]" : "bg-[#FDF6E3]"
                   } hover:bg-[#fff] justify-center items-center gap-2 inline-flex`}
                 >
                   <span className="text-center text-[#4A4A89] text-base font-normal font-['Open Sans'] leading-tight tracking-tight">
-                    {categroy?.name?.toUpperCase()}
+                    {category?.name?.toUpperCase()}
                   </span>
                 </button>
               ))}
             </div>
 
             {/* case studies  */}
-            <div className="pt-5 lg:pt-20">
+            <div className="pt-5 lg:pt-12">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10">
                 {caseStudies?.data?.data?.length === 0 ? (
                   <div className="col-span-2 text-center text-lg text-gray-500 py-5 lg:py-20">
@@ -89,10 +126,10 @@ const CaseStudiesCards = () => {
                 ) : (
                   caseStudies?.data?.data?.map((caseStudy: CaseStudy, index: number) => (
                     <Link
-                      key={index}
+                      key={caseStudy.id || index}
                       href={`/case-studies/${caseStudy?.slug}`}
-                      className={`flex flex-col lg:w-[620px ${
-                        index % 2 !== 0 ? "lg:mt-20" : ""
+                      className={`flex flex-col ${
+                        index % 2 !== 0 ? "lg:mt-10" : ""
                       } bg-white h-fit shadow-[0px_0px_10px_10px_rgba(223,223,223,0.25)]`}
                       data-aos={index % 2 !== 0 ? "fade-up-left" : "fade-up-right"}
                     >
@@ -104,9 +141,12 @@ const CaseStudiesCards = () => {
                         />
                       </div>
 
-                      <div className="flex  bg-[#2b3e50] h-11">
-                        {caseStudy.tag.map((tag, index: number) => (
-                          <div key={index} className="w-full px-6 py-4 h-11 border-r-2 border-[#dda380]">
+                      <div className="flex flex-col lg:flex-row">
+                        {caseStudy?.tag?.slice(0,3)?.map((tag, i: number) => (
+                          <div
+                            key={i}
+                            className="w-full px-6 py-4 bg-[#2b3e50] h-11 border-r-2 border-[#dda380]"
+                          >
                             <p className="text-white text-xs font-semibold text-center">{tag}</p>
                           </div>
                         ))}
@@ -114,12 +154,10 @@ const CaseStudiesCards = () => {
 
                       <div className="flex flex-col gap-3 h-full pb-5 mt-5 w-full">
                         <div className="flex flex-row items-center px-4 lg:px-10 w-full">
-                          <div className="flex flex-row justify-between items-center w-full">
-                            <div>
-                              <h1 className="text-lg lg:text-2xl font-semibold text-black">
-                                {caseStudy?.title}
-                              </h1>
-                            </div>
+                          <div className="flex flex-col lg:flex-row justify-between items-start gap-3 w-full">
+                            <h1 className="text-lg lg:text-2xl font-semibold text-black lg:h-16 line-clamp-2 overflow-hidden">
+                              {caseStudy?.title}
+                            </h1>
 
                             <div className="px-1 lg:px-2 py-[6.36px] bg-[#ffcc00] rounded-[3.18px] backdrop-blur-[9.55px] flex-col justify-center items-center gap-2 inline-flex">
                               <p className="text-black text-xs font-normal font-['Open Sans']">
@@ -128,7 +166,7 @@ const CaseStudiesCards = () => {
                             </div>
                           </div>
                         </div>
-                        <p className="text-lg font-normal text-[#00000080] px-4 lg:px-10 h-[90px] line-clamp-3">
+                        <p className="text-lg font-normal text-[#00000080] px-4 lg:px-10 h-[90px] line-clamp-3 overflow-hidden">
                           {caseStudy?.short_description}
                         </p>
                       </div>
@@ -139,12 +177,14 @@ const CaseStudiesCards = () => {
             </div>
 
             {/* pagination  */}
-            <Pagination
-              currentPage={current_page}
-              setCurrentPage={setCurrentPage}
-              total={total}
-              perPage={per_page}
-            />
+            {caseStudies?.data && (
+              <Pagination
+                current_page={current_page}
+                last_page={last_page}
+                onPageChange={handlePageChange}
+                isLoading={isFetching}
+              />
+            )}
           </div>
         </div>
       )}

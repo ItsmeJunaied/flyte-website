@@ -5,16 +5,16 @@ import ProductMarquee from "./HomeSubComponents.tsx/ProductMarquee";
 
 const ProductsHomeComp:React.FC = () => {
   return (
-    <div className="container ">
+    <div className="container -mt-5">
       <Subtitle Subtitle="Our Products" />
       <Title
         padding="px-0"
         title={
-          "Bringing your ideas to life with a diverse range of innovative products."
+          "Bringing Your Ideas To Life With a Diverse Range Of Innovative Products."
         }
       />
 
-      <div className=" mt-[24px] flex flex-row">
+      <div className="mt-8 flex flex-row">
         <ProductMarquee />
       </div>
     </div>

@@ -36,7 +36,6 @@ const JobApplicationForm: React.FC<ParamProps> = ({ params }) => {
     return "loading...";
   }
 
-  console.log("career", career?.data);
   const { id, title } = career?.data || {};
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
@@ -66,7 +65,13 @@ const JobApplicationForm: React.FC<ParamProps> = ({ params }) => {
       const response = await addJobApplicationForm(formData);
 
       if (response?.error) {
-        toast.error(`Error: ${JSON.stringify(response.error)}`);
+        let errorMessage = "Something went wrong!";
+      
+        if ("data" in response.error && response.error.data) {
+          errorMessage = (response.error.data as any).message ?? errorMessage;
+        }
+      
+        toast.error(`Error: ${errorMessage}`);
       } else {
         toast.success("Your application was successfully submitted!");
         reset();
@@ -77,7 +82,6 @@ const JobApplicationForm: React.FC<ParamProps> = ({ params }) => {
     } finally {
       setIsLoading(false);
     }
-    console.log("formData", formData);
   };
 
   return (

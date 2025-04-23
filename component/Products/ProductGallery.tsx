@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import { Images } from "./ProductCards";
+import { Images } from "./ProductOverview";
+
+
 
 const ProductGallery: React.FC<{ galleryImages: Images[] }> = ({ galleryImages }) => {
   const [images, setImages] = useState(galleryImages);
