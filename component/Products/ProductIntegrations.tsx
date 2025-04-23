@@ -25,7 +25,7 @@ const ProductIntegrations: React.FC<{ product: productData }> = ({ product }) =>
       <div className="w-fit mx-auto">
         <img className="cover" src={productivity_image} alt={productivity_title} draggable="false" />
       </div>
-      <p className="w-[600px] mx-auto text-center  text-[#353d4f]">{productivity_description}</p>
+      <p className="lg:w-[600px] lg:mx-auto lg:text-center  text-[#353d4f]">{productivity_description}</p>
       <Link
         href={productivity_link}
         target="_blank"
