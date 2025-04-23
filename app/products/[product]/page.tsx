@@ -22,10 +22,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { meta_title, meta_description } = products?.data || {};
 
   return {
-    title: meta_title || "products Details | Flyte Solutions Ltd.",
+    title: meta_title || "Products Details | Flyte Solutions Ltd.",
     description: meta_description || "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
     openGraph: {
-      title: meta_title || "products Details | Flyte Solutions Ltd.",
+      title: meta_title || "Products Details | Flyte Solutions Ltd.",
       description: meta_description || "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
     },
   };
@@ -37,11 +37,13 @@ export async function generateStaticParams() {
   if (!res.ok) return [];
 
   const products = await res.json();
+  console.log("Fetched products: ", products?.data?.data);
+
+  // Ensure that we return all product slugs
   return products.data.data.map((product: { slug: string }) => ({
     product: product.slug,
   }));
 }
-
 
 const Page = async ({ params }: PageProps) => {
   const { product } = await params; 

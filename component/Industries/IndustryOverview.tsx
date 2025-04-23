@@ -17,7 +17,7 @@ const IndustryOverview = ({ params }: OverviewProps) => {
     <div>
       <HeroBanner bannerData={industry} />
       <IndustryAdvantages data={industry?.industryAdvantages} />
-      <OurExpertise data={industry?.features} />
+      <OurExpertise data={industry?.features} title={industry?.name} />
       <IndustryTrendStep data={industry?.trendSteps}/>
       <FeaturesCard Width="w-full sm:w-[250px]" />
     </div>

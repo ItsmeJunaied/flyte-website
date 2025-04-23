@@ -4,7 +4,7 @@ import BookConsultation from "@/component/Common/BookConsultation";
 import SuccessStories from "@/component/Common/SuccessStories";
 import Contact from "@/component/Contact/Contact";
 import TrustedIndustry from "@/component/Common/TrustedIndustry";
-import HireTeamFlexibility from "@/component/Hire/HireTeamFlexibility";
+// import HireTeamFlexibility from "@/component/Hire/HireTeamFlexibility";
 import HireOverview from "@/component/Hire/HireOverview";
 import HireSteps from "@/component/Hire/HireSteps";
 import HirePackages from "@/component/Hire/HirePackages";
@@ -33,7 +33,7 @@ const page = async ({ params }: PageProps) => {
       <BookConsultation />
       <HireSteps/>
       <HirePackages/>
-      <HireTeamFlexibility />
+      {/* <HireTeamFlexibility /> */}
       <TrustedIndustry />
       <SuccessStories />
       <Contact />

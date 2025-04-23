@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Tech } from "./ProductOverview";
+import { toast } from "react-toastify";
 
 type Overview = {
   title: string;
@@ -13,12 +14,27 @@ type Overview = {
 const ProductTechOverview: React.FC<{ overview: Overview }> = ({ overview }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { title, technology, integrations, video: videoUrl, image_one: bgImage } = overview || {};
-  // open modal
-  const openModal = () => {
-    setIsOpen(true);
+
+  // Function to validate if a string is a valid URL
+  const isValidUrl = (url: string) => {
+    try {
+      new URL(url);
+      return true;
+    } catch {
+      return false;
+    }
   };
 
-  // close modal
+  // Open modal
+  const openModal = () => {
+    if (isValidUrl(videoUrl)) {
+      setIsOpen(true);
+    } else {
+      toast.error("Video is not available.");
+    }
+  };
+
+  // Close modal
   const closeModal = () => {
     setIsOpen(false);
   };
@@ -52,7 +68,7 @@ const ProductTechOverview: React.FC<{ overview: Overview }> = ({ overview }) => 
         <div>
           <h2 className="text-xl font-semibold mb-2 md:mb-3 mt-4 md:mt-5">See It in Action</h2>
           <div className="bg-black/30 relative">
-            <img className="mix-blend-multiply w-full lg:h-[295.14px]" src={bgImage} alt={title} />
+            <img className="mix-blend-multiply w-full h-[200px] lg:h-[295.14px]" src={bgImage} alt={title} />
             <button
               onClick={openModal}
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -75,15 +91,45 @@ const ProductTechOverview: React.FC<{ overview: Overview }> = ({ overview }) => 
       {isOpen && (
         <div className="fixed inset-0 bg-black/60 z-[100] px-5" onClick={closeModal}>
           <div className="flex justify-center items-center h-full">
-            <div className="w-[800px] h-[400px] border bg-black/60 relative">
-              <iframe
-                width="100%"
-                height="100%"
-                src={videoUrl}
-                title={title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+            <div
+              className="w-[800px] h-[400px] border bg-black/60 relative"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {(() => {
+                let embedUrl = videoUrl;
+                try {
+                  const url = new URL(videoUrl);
+
+                  if (url.hostname.includes("youtube.com") && url.pathname === "/watch") {
+                    const videoId = url.searchParams.get("v");
+                    embedUrl = `https://www.youtube.com/embed/${videoId}`;
+                  } else if (url.hostname === "youtu.be") {
+                    const videoId = url.pathname.substring(1);
+                    embedUrl = `https://www.youtube.com/embed/${videoId}`;
+                  }
+                } catch (err) {
+                  console.warn("Invalid video URL:", videoUrl, err);
+                }
+
+                const isEmbed = embedUrl.includes("youtube.com/embed") || embedUrl.includes("vimeo.com");
+
+                return isEmbed ? (
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src={embedUrl}
+                    title={title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                ) : (
+                  <video width="100%" height="100%" controls>
+                    <source src={embedUrl} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                );
+              })()}
+
               <button
                 onClick={closeModal}
                 className="text-red-700 hover:text-white absolute -top-4 -right-4 bg-white hover:bg-red-700 rounded-full w-8 h-8 flex justify-center items-center"

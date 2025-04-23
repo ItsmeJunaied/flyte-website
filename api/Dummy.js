@@ -185,7 +185,7 @@ export const navbarData = {
           name: "Cloud Clock In",
           icon: "fa-clock",
           description: "A digital system for tracking employee attendance and work hours in real time.",
-          path: "/products/cloud-clockIn",
+          path: "/products/cloud-clockin",
         },
         {
           name: "Flyte Queue",
@@ -3883,7 +3883,7 @@ export const industrydata = {
           description: "Improving patient health and well-being.",
         },
         {
-          icon: "fas fa-chart-medical ",
+          icon: "fas fa-chart-simple ",
           title: "Health Data Analytics",
           description: "Using data to enhance healthcare delivery.",
         },
