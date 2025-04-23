@@ -8,7 +8,7 @@ type Expertise = {
 };
 
 const OurExpertise: React.FC<{ data: Expertise[]; title: string }> = ({ data, title }) => {
-  console.log("industries data formula: ", data)
+ 
   return (
     <div className="bg-white py-10">
       <div className="container">

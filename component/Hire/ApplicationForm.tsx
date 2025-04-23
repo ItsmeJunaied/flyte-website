@@ -118,8 +118,6 @@ const ApplicationForm = () => {
   
     try {
       const response = await addtHireService(formattedData).unwrap();
-      console.log("response hire: ", response);
-      console.log("response success: ", response?.success);
       if (response?.success) {
         setIsModalOpen(true);
         toast.success("Your application was successfully submitted!");

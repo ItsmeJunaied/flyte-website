@@ -9,8 +9,6 @@ const ShareSocial = () => {
   // const currentUrl = encodeURIComponent(domain + pathname);
   const currentUrl = domain + pathname;
 
-  console.log("url: ",currentUrl); // Log the current URL for debugging
-
   return (
     <div className="mb-5 flex justify-center items-center gap-2.5">
       <p className="text-[#696a75] text-xs">Share On</p>

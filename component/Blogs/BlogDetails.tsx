@@ -12,13 +12,13 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
   const [activeSection, setActiveSection] = useState<string>("");
   const [topPosition, setTopPosition] = useState<number>(180);
   const [isTocVisible, setIsTocVisible] = useState<boolean>(true);
+  const [isTocFixed, setIsTocFixed] = useState<boolean>(true);
   const sectionRefs = useRef<Record<string, HTMLDivElement>>({});
-  const contentRef = useRef<HTMLDivElement>(null); // 👈 For checking visibility
+  const contentRef = useRef<HTMLDivElement>(null);
 
   const { data: blogsData, isLoading } = useGetSingleBlogQuery(params);
   const { blog_section, title, image, tag, date, view_count } = blogsData?.data || {};
 
-  // TOC Show/Hide Logic Based on Content Visibility
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -38,7 +38,6 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
     };
   }, []);
 
-  // Scroll & Active Section
   useEffect(() => {
     const handleScroll = () => {
       setTopPosition(window.scrollY >= 325 ? 110 : 180);
@@ -52,6 +51,11 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
           }
         }
       });
+
+      if (contentRef.current) {
+        const contentRect = contentRef.current.getBoundingClientRect();
+        setIsTocFixed(contentRect.bottom > 100);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -91,7 +95,6 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
       <div className="flex gap-8 mb-8">
         {/* Left Side - Blog Content */}
         <div ref={contentRef} className="w-full h-fit">
-          {/* Tags */}
           <div className="mb-4 flex flex-wrap gap-2">
             {tag?.map((tagItem: string, index: number) => (
               <p key={index} className="px-3 py-1.5 bg-[#4b6bfb] rounded-md text-white w-fit">
@@ -100,16 +103,15 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
             ))}
           </div>
 
-          {/* Title */}
           <h1 className="mb-5 text-2xl lg:text-3xl font-semibold text-[text-[#181a2a]]">{title}</h1>
 
-          {/* Author Info for desktop  */}
+          {/* Author Info Desktop */}
           <div className="hidden lg:block">
             <div className="flex items-center flex-wrap gap-2">
               <img
                 src="https://i.ibb.co.com/7JCbP8nB/Ishrafil.jpg"
                 alt="user image"
-                className="rounded-full w-8 h-8 object-cover border text-[8px] text-center"
+                className="rounded-full w-8 h-8 object-cover border"
               />
               <h4 className="text-[#696A75] text-xs font-semibold">Md Ishrafil Hossain</h4>
               <div className="w-5 h-[1px] bg-[#696A75]" />
@@ -127,14 +129,14 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
             </div>
           </div>
 
-          {/* Author Info for Mobile  */}
+          {/* Author Info Mobile */}
           <div className="lg:hidden">
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <img
                   src="https://i.ibb.co.com/7JCbP8nB/Ishrafil.jpg"
                   alt="user image"
-                  className="rounded-full w-8 h-8 object-cover border text-[8px] text-center"
+                  className="rounded-full w-8 h-8 object-cover border"
                 />
                 <h4 className="text-[#696A75] text-xs font-semibold">Md Ishrafil Hossain</h4>
                 <div className="w-5 h-[1px] bg-[#696A75]" />
@@ -142,7 +144,6 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
                   {date}
                 </time>
               </div>
-
               <div className="px-1 flex items-center gap-2">
                 <div className="text-[#696A75] text-xs">
                   <i className="mr-1 fa-solid fa-bookmark"></i> 5 min read
@@ -155,38 +156,36 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
             </div>
           </div>
 
-          {/* Blog Image */}
           <img src={image} alt={title} className="my-3 lg:my-6 rounded-lg w-full object-cover" />
 
           {/* Blog Sections */}
           <div className="blog-content space-y-4 lg:space-y-6">
             {blog_section?.map((section: { id: number; blog_section_title: string; description: string }) => (
               <div
-                key={section?.id}
+                key={section.id}
                 ref={(el) => {
-                  sectionRefs.current[section?.blog_section_title] = el!;
+                  sectionRefs.current[section.blog_section_title] = el!;
                 }}
-                id={section?.blog_section_title?.replace(/\s+/g, "-")?.toLowerCase()}
+                id={section.blog_section_title.replace(/\s+/g, "-").toLowerCase()}
                 className="space-y-1 lg:space-y-3"
               >
-                <h2 className="text-[#181a2a] text-xl lg:text-2xl font-semibold">{section?.blog_section_title}</h2>
+                <h2 className="text-[#181a2a] text-xl lg:text-2xl font-semibold">{section.blog_section_title}</h2>
                 <div
                   className="text-[#3b3c4a] text-sm lg:text-xl"
-                  dangerouslySetInnerHTML={{ __html: section?.description }}
+                  dangerouslySetInnerHTML={{ __html: section.description }}
                 />
               </div>
             ))}
           </div>
         </div>
 
-        {/* Right Side - Table of Content */}
-        <div className="w-[400px] hidden lg:block">
+        {/* Right Side - TOC */}
+        <div className="w-[400px] hidden lg:block z-1000">
           {isTocVisible && (
             <div
-              className="h-fit"
+              className={`h-fit mb-5 ${isTocFixed ? "fixed" : "static"}`}
               style={{
-                position: "fixed",
-                top: `${topPosition}px`,
+                top: isTocFixed ? `${topPosition}px` : undefined,
                 zIndex: 0,
                 transition: "top 0.5s",
               }}
@@ -194,16 +193,16 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
               <h3 className="px-4 mb-4 text-lg font-semibold">Table of Content</h3>
               <ul className="space-y-2">
                 {blog_section?.map((section: { id: string; blog_section_title: string }) => (
-                  <li key={section?.id}>
+                  <li key={section.id}>
                     <button
-                      onClick={() => scrollToSection(section?.blog_section_title)}
+                      onClick={() => scrollToSection(section.blog_section_title)}
                       className={`block px-4 py-2 bg-[#f7f8fd] border-l-4 transition duration-300 hover:text-[#5856d6] ${
-                        activeSection === section?.blog_section_title
-                          ? " border-[#5856d6] text-[#5856d6] scale-x-110 transition duration-300"
-                          : " border-[#f7f8fd] text-[#181a2a]/80 transition duration-300"
+                        activeSection === section.blog_section_title
+                          ? " border-[#5856d6] text-[#5856d6] scale-x-110"
+                          : " border-[#f7f8fd] text-[#181a2a]/80"
                       }`}
                     >
-                      {section?.blog_section_title}
+                      {section.blog_section_title}
                     </button>
                   </li>
                 ))}
@@ -213,7 +212,7 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
         </div>
       </div>
 
-      {/* social link  */}
+      {/* Social Share */}
       <ShareSocial />
     </div>
   );

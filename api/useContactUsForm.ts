@@ -5,7 +5,7 @@ const api = axios.create({
   baseURL: 'https://admin.flytesolutions.com/api',
 });
 
-console.log(process.env.NEXT_BASE_URL)
+// console.log(process.env.NEXT_BASE_URL)
 export const submitContactForm = async (data: FormData) => {
   try {
     const response = await api.post('/contact', data);

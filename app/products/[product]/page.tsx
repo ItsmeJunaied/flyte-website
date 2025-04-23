@@ -37,7 +37,6 @@ export async function generateStaticParams() {
   if (!res.ok) return [];
 
   const products = await res.json();
-  console.log("Fetched products: ", products?.data?.data);
 
   // Ensure that we return all product slugs
   return products.data.data.map((product: { slug: string }) => ({
