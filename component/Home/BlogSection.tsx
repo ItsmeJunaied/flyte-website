@@ -119,7 +119,7 @@ const BlogSection = () => {
                   {blog?.short_description}
                 </div>
                 <div className="flex-col justify-start items-center flex">
-                  <Link href={`news-and-blogs/${blog.slug}`} className="svg-wrapper">
+                  <Link href={`/company/news-and-blogs/${blog.slug}`} className="svg-wrapper">
                     <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                       <rect className="shape" height="60" width="320" />
                     </svg>

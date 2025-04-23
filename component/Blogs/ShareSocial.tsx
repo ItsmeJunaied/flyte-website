@@ -6,7 +6,10 @@ import React from "react";
 const ShareSocial = () => {
   const domain = "https://fsl.flytesolutions.com";
   const pathname = usePathname();
-  const currentUrl = encodeURIComponent(domain + pathname);
+  // const currentUrl = encodeURIComponent(domain + pathname);
+  const currentUrl = domain + pathname;
+
+  console.log("url: ",currentUrl); // Log the current URL for debugging
 
   return (
     <div className="mb-5 flex justify-center items-center gap-2.5">

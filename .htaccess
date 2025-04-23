@@ -11,3 +11,7 @@ RewriteRule ^([^/]+)/?$ $1.html [L]
 # Redirect nested pages (e.g., /case-studies/sd → /case-studies/sd.html)
 RewriteCond %{DOCUMENT_ROOT}/$1/$2.html -f
 RewriteRule ^([^/]+)/([^/]+)/?$ /$1/$2.html [L]
+
+# Handle nested paths for news and blogs
+RewriteCond %{DOCUMENT_ROOT}/$1/$2/$3.html -f
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/?$ /$1/$2/$3.html [L]
