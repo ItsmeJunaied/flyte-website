@@ -16,7 +16,7 @@ const FooterOverview = () => {
       {isLoading ? (
         <FooterSkeleton />
       ) : (
-        <div className="footer text-base-content py-10 bg-[#2A3342]">
+        <div className="footer text-base-content lg:py-10 bg-[#2A3342]">
           <FooterContact footerContact={footerData?.data || {}} />
           <div className="flex flex-row lg:flex-col justify-start items-start">
             <FooterServices services={services} />

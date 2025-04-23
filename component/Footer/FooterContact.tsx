@@ -20,7 +20,7 @@ const FooterContact: React.FC<{ footerContact: FooterContact }> = ({ footerConta
   return (
     <div className="flex flex-col gap-4">
       <img className="w-[100px] h-[84px]" src={logo_small} alt={title} />
-      <h6 className="footer-title text-neutral-100 opacity-100 text-base">Contact Us</h6>
+      <h6 className="-mt-3 lg:mt-0 footer-title text-neutral-100 opacity-100 text-base">Contact Us</h6>
 
       {/* Location */}
       <div className="max-w-[380px] flex flex-col gap-2">
@@ -83,7 +83,7 @@ const FooterContact: React.FC<{ footerContact: FooterContact }> = ({ footerConta
       </div>
 
       {/* Payment Methods */}
-      <div className="max-w-[380px] flex flex-col gap-2 mt-10">
+      <div className="max-w-[380px] flex flex-col gap-2 mt-5 lg:mt-10">
         <h6 className="footer-title text-[#F5F5F5] opacity-80">Payment Methods</h6>
         <div className="flex flex-row gap-2 items-center">
           <img src="/images/visa.png" alt="visa-payment-method" />
