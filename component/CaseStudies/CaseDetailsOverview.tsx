@@ -59,7 +59,7 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
       />
       <EverythingSection data={services} />
       <TechnologyStack data={apps_list} />
-      <KeyAchievement data={impactful} />
+      <KeyAchievement data={impactful} title={heroTitle}/>
       <FeaturesCard Width="w-full sm:w-[200px]" />
     </div>
   );
