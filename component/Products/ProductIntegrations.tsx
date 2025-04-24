@@ -12,7 +12,7 @@ const ProductIntegrations: React.FC<{ product: productData }> = ({ product }) =>
     productivity_link,
   } = product || {};
   return (
-    <div className="container py-4 lg:py-8 space-y-6">
+    <div className="container lg:px-32 py-4 lg:py-8 space-y-6">
       <div className="block w-fit mx-auto text-center mb-3 lg:mb-6">
         <Subtitle Subtitle={productivity_title} />
         {/* <h2 className="text-xl lg:text-3xl font-semibold">
@@ -22,8 +22,8 @@ const ProductIntegrations: React.FC<{ product: productData }> = ({ product }) =>
       </div>
 
       {/* integrations  */}
-      <div className="w-fit mx-auto">
-        <img className="cover" src={productivity_image} alt={productivity_title} draggable="false" />
+      <div className="w-full mx-auto">
+        <img className="w-full h-full lg:h-[400px] object-cover" src={productivity_image} alt={productivity_title} draggable="false" />
       </div>
       <p className="lg:w-[600px] lg:mx-auto lg:text-center  text-[#353d4f]">{productivity_description}</p>
       <Link
