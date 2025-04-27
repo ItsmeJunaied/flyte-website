@@ -259,7 +259,7 @@ export const navbarData = {
 
 // banner
 export const bannerData = {
-  title: "Achieve <span> Sucess </span> With Innovative <span> Software Solutions </span>",
+  title: "Achieve <span> Success </span> With Innovative <span> Software Solutions </span>",
   description:
     "Our platform empowers your business with cutting-edge software solutions and lightning-fast deployment. Achieve your goals with unmatched efficiency and reliability.",
   industries: [

@@ -30,7 +30,7 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
       }}
       className="flex flex-col pt-10 lg:pt-20 pb-10 lg:pb-0 lg:h-[740px] justify-center items-start gap-5 "
     >
-      <div className=" container flex flex-col gap-[24px]">
+      <div className="container flex flex-col gap-[24px]">
         <div className="w-full flex justify-start items-start">
           <h2
             className="bannerTitle max-w-[1000px] text-start text-white text-2xl lg:text-5xl font-semibold leading-10 lg:leading-[64px]"

@@ -96,14 +96,15 @@ const SuccessStories: React.FC<successStoryProps> = ({ bgColor }) => {
                   >
                     <div className="px-8 md:px-20 py-4 lg:py-6 bg-[#e7e7e7] rounded-md">
                       <div className="relative">
-                        <h1 className="text-[#131313] text-xl mb-3 md:mb-5">{client?.company_name}</h1>
-                        <span className="absolute top-7 -left-5">
+                        <h1 className="h-10 lg:h-full text-[#131313] text-base lg:text-xl mb-3 md:mb-5 line-clamp-2 lg:line-clamp-1 leading-5">
+                          {client?.company_name}
+                        </h1>
+                        <span className="absolute top-10 lg:top-7 -left-4 lg:-left-5 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="30"
-                            height="30"
                             viewBox="0 0 40 41"
                             fill="none"
+                            className="w-5 lg:w-8 h-5 lg:h-8"
                           >
                             <g opacity="0.2">
                               <path
@@ -116,7 +117,7 @@ const SuccessStories: React.FC<successStoryProps> = ({ bgColor }) => {
                       </div>
 
                       <div className="flex flex-col justify-start items-start gap-2 md:gap-5">
-                        <p className="text-[#121212] h-14 text-xs md:text-sm font-semibold md:line-clamp-3">
+                        <p className="text-[#121212] h-12 lg:h-16 text-xs lg:text-sm font-semibold line-clamp-3">
                           {client?.description}
                         </p>
 
