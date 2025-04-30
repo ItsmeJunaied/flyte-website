@@ -26,19 +26,9 @@ const FooterExpertise: React.FC<{ expertise: Expertise }> = ({ expertise }) => {
           <div key={index} className="w-full lg:w-1/4 flex flex-col gap-2 lg:gap-5">
             <h6 className="text-[#F5F5F5] font-bold text-base">{subsection?.name}</h6>
             <ul className="list-none flex flex-col gap-2 lg:gap-3 max-h-[276px overflow-hidden">
-              {/* {subsection?.items?.slice(0, 7).map((item, subIndex) => (
+              {subsection?.items?.slice(0, 9).map((item, subIndex) => (
                 <li key={subIndex}>
-                  <Link href={item?.path} className="text-[#eaeaea] text-sm link link-hover">
-                    {item?.name}
-                  </Link>
-                </li>
-              ))} */}
-              {(subsection?.name === "Case Studies"
-                ? subsection?.items?.slice(0, 7)
-                : subsection?.items?.slice(0, 9)
-              )?.map((item, subIndex) => (
-                <li key={subIndex}>
-                  <Link href={item?.path} className="text-[#eaeaea] text-sm link link-hover">
+                  <Link href={item?.path} className="text-[#eaeaea] text-sm link link-hover line-clamp-1">
                     {item?.name}
                   </Link>
                 </li>
