@@ -154,10 +154,3 @@ const SuccessStories: React.FC<successStoryProps> = ({ bgColor }) => {
 };
 
 export default SuccessStories;
-
-{
-  /* <div className="flex flex-col lg:flex-row gap-4">
-<Skeleton className="w-[290px] lg:w-[574px] h-[200px] lg:h-[284px]" />
-<Skeleton className="w-[290px] lg:w-[574px] h-[200px] lg:h-[284px]" />
-</div> */
-}
