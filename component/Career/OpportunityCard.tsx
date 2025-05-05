@@ -23,7 +23,7 @@ const OpportunityCard: React.FC<{ opportunity: Opportunity }> = ({ opportunity }
       </div>
 
       <Link
-        href={`career/${opportunity?.slug}`}
+        href={`/career/${opportunity?.slug}`}
         className="px-8 py-3 bg-[#191919] hover:bg-[#5856d6] transition duration-300 border rounded-md text-white text-sm font-semibold block mx-auto w-fit"
       >
         View Job Details
