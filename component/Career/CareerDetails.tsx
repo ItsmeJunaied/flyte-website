@@ -36,16 +36,17 @@ const CareerDetails: React.FC<ParamProps> = ({ params }) => {
                 <div className="mt-7 lg:mt-14">
                   <h4 className="mb-3 lg:mb-6 text-xl font-semibold">Skills</h4>
                   <div className="flex flex-wrap gap-4 lg:w-[60%]">
-                    {skills && skills[0] === '["[null]"]' ? (
-                      <p className="text-gray-500">No skills found.</p>
-                    ) : (
+                    {skills && skills.filter((s:string) => s.trim() !== "").length > 0 ? (
                       skills
-                        .map((skill: string) => skill.replace(/^\"|\"$/g, "")) // remove quote from start and end
+                        .filter((s:string) => s.trim() !== "") // remove empty strings
+                        .map((skill: string) => skill.replace(/^\"|\"$/g, "")) // quote remove
                         .map((skill: string, index: number) => (
                           <span key={index} className="px-4 py-2 rounded-md bg-[#F6FAFD]">
                             {skill}
                           </span>
                         ))
+                    ) : (
+                      <p className="text-gray-500">No skills found.</p>
                     )}
                   </div>
                 </div>

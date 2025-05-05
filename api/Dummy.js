@@ -2566,23 +2566,23 @@ export const techData = {
     technologies: [
       {
         name: "Docker",
-        image: "/images/docker.png",
+        image: "/images/docker.webp",
       },
       {
         name: "Kubernetes",
-        image: "/images/kubernetes.png",
+        image: "/images/kubernetes.webp",
       },
       {
         name: "AWS",
-        image: "/images/jenkins.png",
+        image: "/images/aws.webp",
       },
       {
         name: "Azure",
-        image: "/images/azure.png",
+        image: "/images/Azure.webp",
       },
       {
         name: "Jenkins",
-        image: "/images/jenkins.png",
+        image: "/images/jenkins.webp",
       },
     ],
     heroTitle: "Hire Dedicated DevOps Engineers for Seamless User Experiences",
@@ -2720,23 +2720,23 @@ export const techData = {
     technologies: [
       {
         name: "TensorFlow",
-        image: "/images/tensorflow.png",
+        image: "/images/tensorflow.webp",
       },
       {
         name: "PyTorch",
-        image: "/images/pytorch.png",
+        image: "/images/pytorch.webp",
       },
       {
         name: "Keras",
-        image: "/images/keras.png",
+        image: "/images/keras.webp",
       },
       {
         name: "Scikit-learn",
-        image: "/images/scikit-learn.png",
+        image: "/images/scikit-learn.webp",
       },
       {
         name: "OpenCV",
-        image: "/images/opencv.png",
+        image: "/images/opencv.webp",
       },
     ],
     heroTitle: "Hire Dedicated AI & Machine Learning Developers for Seamless User Experiences",
