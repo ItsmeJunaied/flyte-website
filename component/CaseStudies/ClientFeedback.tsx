@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { FaStar, FaRegStar } from "react-icons/fa";
 
 type ClientFeedbackProps = {
   companyName: string;
@@ -66,11 +65,11 @@ const ClientFeedback = (props: ClientFeedbackProps) => {
 
                 {/* Rating */}
                 <div className="flex gap-1 text-btnColor mt-1">
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaRegStar />
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star-half-stroke"></i>
                 </div>
               </div>
             </div>
