@@ -20,9 +20,10 @@ type Inputs = {
 const ContactUsFormComp: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [phoneValue, setPhoneValue] = useState(true);
+  const [phoneValue, setPhoneValue] = useState<string | undefined>("");
   const [files, setFiles] = useState<File[]>([]);
   const [addContact] = useAddContactMutation();
+
   const {
     register,
     handleSubmit,
@@ -32,6 +33,7 @@ const ContactUsFormComp: React.FC = () => {
   } = useForm<Inputs>();
 
   const totalSize = files.reduce((acc, file) => acc + file.size, 0);
+
   const formatBytes = (bytes: number) => {
     if (bytes < 1024) return `${bytes} B`;
     if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
@@ -42,10 +44,8 @@ const ContactUsFormComp: React.FC = () => {
     setIsSubmitted(true);
 
     if (!data.phone) {
-      setPhoneValue(false);
+      toast.error("Phone number is required");
       return;
-    } else {
-      setPhoneValue(true);
     }
 
     const maxTotalSize = 25 * 1024 * 1024; // 25MB
@@ -93,14 +93,12 @@ const ContactUsFormComp: React.FC = () => {
         toast.success("Your message has been sent successfully!");
         reset();
         setFiles([]);
+        setPhoneValue(""); // reset phone input
         setIsSubmitted(false);
-        setIsLoading(false);
       }
     } catch (error) {
       toast.error("Something went wrong. Please try again.");
       console.error("Error:", error);
-      setIsSubmitted(false);
-      setIsLoading(false);
     } finally {
       setIsLoading(false);
     }
@@ -114,164 +112,152 @@ const ContactUsFormComp: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className=" w-full h-full flex-col justify-start items-start gap-4 inline-flex"
+      className="w-full h-full flex-col justify-start items-start gap-4 inline-flex"
     >
-      <div className=" w-full flex flex-col lg:flex-row justify-start items-start gap-4 lg:gap-8 ">
-        <div className="w-full flex-col justify-start items-start gap-2 inline-flex">
-          <label className="self-stretch text-[#666666] text-sm lg:text-base font-semibold font-['DM Sans'] leading-[18px]">
-            Name
-          </label>
+      {/* Name and Company */}
+      <div className="w-full flex flex-col lg:flex-row justify-start items-start gap-4 lg:gap-8">
+        {/* Name */}
+        <div className="w-full flex-col gap-2 inline-flex">
+          <label className="text-[#666666] text-sm lg:text-base font-semibold">Name</label>
           <input
             type="text"
-            className="self-stretch lg:h-14 p-3 lg:p-4 bg-white rounded-lg border border-[#cccccc] text-[#666666] text-sm font-normal font-['DM Sans'] leading-normal outline-none hover:border-btnColor focus:border-btnColor"
+            className="self-stretch lg:h-14 p-3 lg:p-4 bg-white rounded-lg border border-[#cccccc] text-sm outline-none hover:border-btnColor focus:border-btnColor"
             placeholder="Type your name"
-            {...register("name", { required: true })}
+            {...register("name", { required: "Name is required" })}
             autoComplete="off"
           />
-          {errors.name && <span className=" text-red-600 text-xs lg:text-sm">Name is required</span>}
+          {errors.name && <span className="text-red-600 text-xs">{errors.name.message}</span>}
         </div>
-        <div className="w-full flex-col justify-start items-start gap-2 inline-flex">
-          <label className="self-stretch text-[#666666] text-sm lg:text-base font-semibold font-['DM Sans'] leading-[18px]">
-            Company
-          </label>
+
+        {/* Company */}
+        <div className="w-full flex-col gap-2 inline-flex">
+          <label className="text-[#666666] text-sm lg:text-base font-semibold">Company</label>
           <input
             type="text"
-            className="self-stretch lg:h-14 p-3 lg:p-4 bg-white rounded-lg border border-[#cccccc] text-[#666666] text-sm font-normal font-['DM Sans'] leading-normal outline-none hover:border-btnColor focus:border-btnColor"
+            className="self-stretch lg:h-14 p-3 lg:p-4 bg-white rounded-lg border border-[#cccccc] text-sm outline-none hover:border-btnColor focus:border-btnColor"
             placeholder="Type your company name"
-            {...register("company_name", { required: true })}
+            {...register("company_name", { required: "Company name is required" })}
           />
-          {errors.company_name && <span className=" text-red-600 text-xs lg:text-sm">Comapny Name is required</span>}
+          {errors.company_name && <span className="text-red-600 text-xs">{errors.company_name.message}</span>}
         </div>
       </div>
 
+      {/* Email and Phone */}
       <div className="w-full flex flex-col lg:flex-row justify-start items-start gap-4 lg:gap-8">
-        <div className="w-full   flex-col justify-start items-start gap-2 inline-flex">
-          <label className="self-stretch text-[#666666] text-sm lg:text-base font-semibold font-['DM Sans'] leading-[18px]">
-            Email
-          </label>
+        {/* Email */}
+        <div className="w-full flex-col gap-2 inline-flex">
+          <label className="text-[#666666] text-sm lg:text-base font-semibold">Email</label>
           <input
             type="email"
-            className="self-stretch lg:h-14 p-3 lg:p-4 bg-white rounded-lg border border-[#cccccc] text-[#666666] text-sm font-normal font-['DM Sans'] leading-normal outline-none hover:border-btnColor focus:border-btnColor"
+            className="self-stretch lg:h-14 p-3 lg:p-4 bg-white rounded-lg border border-[#cccccc] text-sm outline-none hover:border-btnColor focus:border-btnColor"
             placeholder="Type your email"
-            {...register("email", { required: true })}
+            {...register("email", { required: "Email is required" })}
           />
-          {errors.email && <span className=" text-red-600 text-xs lg:text-sm">Email is required</span>}
+          {errors.email && <span className="text-red-600 text-xs">{errors.email.message}</span>}
         </div>
-        <div className="w-full flex-col justify-start items-start gap-2 inline-flex">
-          <label className="self-stretch text-[#666666] text-sm lg:text-base font-semibold font-['DM Sans'] leading-[18px]">
-            Phone
-          </label>
+
+        {/* Phone */}
+        <div className="w-full flex-col gap-2 inline-flex">
+          <label className="text-[#666666] text-sm lg:text-base font-semibold">Phone</label>
           <PhoneInput
-            className={`self-stretch lg:h-14 p-3 lg:p-4 bg-white rounded-lg border ${
-              errors.phone ? "border-red-600 text-xs lg:text-sm" : "border-[#cccccc]"
-            } text-[#666666] text-sm font-normal font-['DM Sans'] leading-normal outline-none hover:border-btnColor focus:border-btnColor`}
-            placeholder="Enter phone number"
+            value={phoneValue}
+            onChange={(phone) => {
+              setPhoneValue(phone);
+              setValue("phone", phone || "", { shouldValidate: true });
+            }}
             defaultCountry="BD"
-            onChange={(phone) => setValue("phone", phone || "", { shouldValidate: true })}
+            placeholder="Enter phone number"
+            className={`self-stretch lg:h-14 p-3 lg:p-4 bg-white rounded-lg border ${
+              isSubmitted && !phoneValue ? "border-red-600" : "border-[#cccccc]"
+            } text-sm outline-none hover:border-btnColor focus:border-btnColor`}
           />
           {isSubmitted && !phoneValue && <span className="text-red-600 text-xs">Phone is required</span>}
         </div>
       </div>
 
-      <div className="self-stretch flex-col justify-start items-start gap-2 lg:gap-6 flex">
-        <div className="self-stretch flex-col justify-start items-start gap-4 flex">
-          <div className="w-full min-h-[100px] flex flex-col justify-start items-start gap-2">
-            <label className="self-stretch text-[#666666] text-sm lg:text-base font-semibold font-['Noto Sans'] leading-[18px]">
-              How can we help you?
-            </label>
-            <textarea
-              className="w-full min-h-[100px] p-4 bg-white rounded-lg border border-[#cccccc] text-[#666666] text-sm font-normal leading-normal outline-none hover:border-btnColor focus:border-btnColor resize-none"
-              placeholder="Type here"
-              rows={4}
-              {...register("message", { required: true })}
-            />
-            {errors.message && <span className="text-red-600 text-xs lg:text-sm">Message is required</span>}
-          </div>
+      {/* Message */}
+      <div className="w-full flex-col gap-2 flex">
+        <label className="text-[#666666] text-sm lg:text-base font-semibold">How can we help you?</label>
+        <textarea
+          className="w-full min-h-[100px] p-4 bg-white rounded-lg border border-[#cccccc] text-sm outline-none hover:border-btnColor focus:border-btnColor resize-none"
+          placeholder="Type here"
+          rows={4}
+          {...register("message", { required: "Message is required" })}
+        />
+        {errors.message && <span className="text-red-600 text-xs">{errors.message.message}</span>}
+      </div>
 
-          <div className="justify-start items-start gap-2.5 inline-flex flex-col">
-            <input
-              type="file"
-              id="file-upload"
-              className="hidden"
-              accept=".jpg,.png,.pdf,.docx"
-              {...register("attachment", { onChange: handleFileChange })}
-            />
-            {errors.attachment && <span className=" text-red-600">This field is required</span>}
-            <div className=" flex flex-row justify-center items-start lg:items-center gap-4 lg:gap-2.5">
-              <label htmlFor="file-upload" className="flex items-center gap-2 cursor-pointer">
-                <div className="flex lg:items-center gap-1 text-[#5856d6]">
-                  <GrAttachment />
-                  <span className="text-[#5856d6] text-xs text-nowrap font-bold font-['DM Sans']">
-                    Attach files
-                  </span>
-                </div>
-              </label>
+      {/* File Upload */}
+      <div className="flex flex-col gap-2">
+        <input
+          type="file"
+          id="file-upload"
+          className="hidden"
+          accept=".jpg,.png,.pdf,.docx"
+          {...register("attachment", { onChange: handleFileChange })}
+        />
+        <label
+          htmlFor="file-upload"
+          className="flex items-center gap-2 cursor-pointer text-[#5856d6] text-xs font-bold"
+        >
+          <GrAttachment />
+          Attach files
+        </label>
+        <ul className="text-[10px] text-[#5856d6]">
+          <li>Max Size: 25MB per file</li>
+          <li>Supported Formats: .jpg, .png, .pdf, .docx</li>
+        </ul>
 
-              <div className="text-[#5856d6] text-[10px] font-medium font-['DM Sans']">
-                <li>Max Size: 25MB per file</li>
-                <li>Supported Formats: .jpg, .png, .pdf, .docx</li>
-              </div>
-            </div>
+        {files.length > 0 && (
+          <>
+            <ul className="mt-2 text-sm list-disc list-inside text-[#666666] flex flex-wrap gap-3">
+              {files.map((file, index) => (
+                <li
+                  key={index}
+                  className={`font-medium flex flex-row justify-start items-center gap-1 ${
+                    totalSize >= 25 * 1024 * 1024 ? "text-red-600" : "text-green-600"
+                  }`}
+                >
+                  {file.name}
+                  <button
+                    type="button"
+                    onClick={() => setFiles((prev) => prev.filter((_, i) => i !== index))}
+                  >
+                    <i className="fa-solid fa-circle-xmark fa-lg hover:text-[#df3a4a]"></i>
+                  </button>
+                </li>
+              ))}
+            </ul>
+            <p className="text-xs text-[#666666] font-medium mt-1">Total Size: {formatBytes(totalSize)}</p>
+          </>
+        )}
+      </div>
 
-            {files.length > 0 && (
-              <>
-                <ul className="mt-2 text-[#666666] text-sm font-normal font-['DM Sans'] list-disc list-inside flex flex-wrap gap-3">
-                  {files.map((file, index) => (
-                    <li
-                      key={index}
-                      className={`font-medium flex flex-row justify-start items-center gap-1 ${
-                        totalSize >= 25 * 1024 * 1024 ? "text-red-600" : "text-green-600"
-                      }`}
-                    >
-                      {file.name}
-                      <button
-                        onClick={() => {
-                          setFiles((prevFiles) => prevFiles.filter((_, i) => i !== index));
-                        }}
-                      >
-                        <i className="fa-solid fa-circle-xmark fa-lg hover:text-[#df3a4a]"></i>
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-xs text-[#666666] font-medium mt-1">
-                  Total Size: {formatBytes(totalSize)}
-                </p>
-              </>
-            )}
-          </div>
+      {/* NDA Checkbox */}
+      <div className="flex items-start gap-2">
+        <input
+          type="checkbox"
+          {...register("ndaCheckbox", { required: "You must agree to the NDA" })}
+          className="toggle toggle-primary [--tglbg:white]"
+        />
+        <p className="text-xs text-[#666666]">
+          I agree to the Non-Disclosure Agreement (NDA) and confirm that all shared information will remain
+          confidential.
+        </p>
+      </div>
+      {errors.ndaCheckbox && <span className="text-red-600 text-xs">{errors.ndaCheckbox.message}</span>}
 
-          <div className="self-stretch py-3 justify-start items-center gap-2.5 inline-flex">
-            <div className="flex gap-4">
-              <input
-                {...register("ndaCheckbox", { required: "You must agree to the NDA" })}
-                type="checkbox"
-                className="toggle toggle-primary [--tglbg:white]"
-                id="nda-checkbox"
-              />
-              <div className="text-[#666666] text-xs font-normal font-['DM Sans'] leading-normal">
-                I agree to the Non-Disclosure Agreement (NDA) and confirm that all shared information will
-                remain confidential.
-              </div>
-            </div>
-          </div>
-
-          {errors.ndaCheckbox && (
-            <div className="text-red-500 text-xs lg:text-sm -mt-4">{errors.ndaCheckbox.message}</div>
-          )}
-        </div>
-
-        <div className="self-stretch h-10 flex-col justify-start items-center gap-2 flex">
-          <button
-            type="submit"
-            disabled={isLoading}
-            className={`${
-              isLoading ? "cursor-not-allowed bg-gray-400" : "cursor-pointer bgGradientNevyBlue"
-            } w-[180px] h-10 px-8 py-3  rounded-md text-white text-sm font-semibold `}
-          >
-            {isLoading ? "Sending..." : " Send Message"}
-          </button>
-        </div>
+      {/* Submit */}
+      <div className="mt-4">
+        <button
+          type="submit"
+          disabled={isLoading}
+          className={`${
+            isLoading ? "cursor-not-allowed bg-gray-400" : "cursor-pointer bgGradientNevyBlue"
+          } w-[180px] h-10 px-8 py-3 rounded-md text-white text-sm font-semibold`}
+        >
+          {isLoading ? "Sending..." : "Send Message"}
+        </button>
       </div>
     </form>
   );
