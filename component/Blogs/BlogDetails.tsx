@@ -17,7 +17,7 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
   const contentRef = useRef<HTMLDivElement>(null);
 
   const { data: blogsData, isLoading } = useGetSingleBlogQuery(params);
-  const { blog_section, title, image, tag, date, view_count } = blogsData?.data || {};
+  const { blog_section, title, image, tag, date, view_count, admin } = blogsData?.data || {};
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -109,11 +109,11 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
           <div className="hidden lg:block">
             <div className="flex items-center flex-wrap gap-2">
               <img
-                src="https://i.ibb.co.com/7JCbP8nB/Ishrafil.jpg"
-                alt="user image"
+                src={admin?.image}
+                alt="admin image"
                 className="rounded-full w-8 h-8 object-cover border"
               />
-              <h4 className="text-[#696A75] text-xs font-semibold">Md Ishrafil Hossain</h4>
+              <h4 className="text-[#696A75] text-xs font-semibold">{admin?.name}</h4>
               <div className="w-5 h-[1px] bg-[#696A75]" />
               <time className="text-[#696A75] text-xs" dateTime={date}>
                 {date}
@@ -134,11 +134,11 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <img
-                  src="https://i.ibb.co.com/7JCbP8nB/Ishrafil.jpg"
-                  alt="user image"
+                  src={admin?.image}
+                  alt="admin image"
                   className="rounded-full w-8 h-8 object-cover border"
                 />
-                <h4 className="text-[#696A75] text-xs font-semibold">Md Ishrafil Hossain</h4>
+                <h4 className="text-[#696A75] text-xs font-semibold">{admin?.name}</h4>
                 <div className="w-5 h-[1px] bg-[#696A75]" />
                 <time className="text-[#696A75] text-xs" dateTime={date}>
                   {date}
@@ -169,7 +169,9 @@ const BlogDetails: React.FC<ParamProps> = ({ params }) => {
                 id={section.blog_section_title.replace(/\s+/g, "-").toLowerCase()}
                 className="space-y-1 lg:space-y-3"
               >
-                <h2 className="text-[#181a2a] text-xl lg:text-2xl font-semibold">{section.blog_section_title}</h2>
+                <h2 className="text-[#181a2a] text-xl lg:text-2xl font-semibold">
+                  {section.blog_section_title}
+                </h2>
                 <div
                   className="text-[#3b3c4a] text-sm lg:text-xl"
                   dangerouslySetInnerHTML={{ __html: section.description }}
