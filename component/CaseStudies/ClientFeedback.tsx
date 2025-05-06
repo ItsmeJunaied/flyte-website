@@ -2,7 +2,8 @@
 import React from "react";
 import { FaStar, FaRegStar } from "react-icons/fa";
 
-const ClientFeedback = () => {
+const ClientFeedback = (props) => {
+  const { companyName, description, clientImage, clientName, clientdesignation } = props;
   return (
     <div className="container my-10">
       <h2 className="text-xl lg:text-3xl text-center font-semibold lg:leading-[32px]">
@@ -14,11 +15,11 @@ const ClientFeedback = () => {
         Hear what they say about us.
       </p>
 
-      <div className="w-full lg:w-[60%] mx-auto px-2 h-[220px] md:h-[280px] flex justify-center items-center">
+      <div className="w-full lg:w-[715px] mx-auto mt-5 lg:mt-10 px-2 lg:flex justify-center items-center">
         <div className="px-8 md:px-20 py-4 lg:py-6 bg-[#e7e7e7] rounded-md">
           <div className="relative">
             <h1 className="h-10 lg:h-full text-[#131313] text-base lg:text-xl mb-3 md:mb-5 line-clamp-2 lg:line-clamp-1 leading-5">
-              FSA Argentina
+              {companyName || "Missing Company Name"}
             </h1>
             <span className="absolute top-10 lg:top-7 -left-4 lg:-left-5">
               <svg
@@ -38,22 +39,22 @@ const ClientFeedback = () => {
           </div>
 
           <div className="flex flex-col justify-start items-start gap-2 md:gap-5">
-            <p className="text-[#121212] h-12 lg:h-16 text-xs lg:text-sm font-semibold line-clamp-3">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed excepturi saepe consectetur
-              voluptate impedit autem ut harum distinctio perspiciatis soluta similique eligendi
-              necessitatibus, odit quia recusandae voluptates cupiditate ex inventore.
+            <p className="text-[#121212] w-full lg:w-[715px] h-12 lg:h-16 text-xs lg:text-sm font-semibold line-clamp-3">
+              {description || "Missing Description"}
             </p>
 
             <div className="flex flex-row justify-center items-center gap-3">
               <img
-                className="rounded-full w-10 h-10 md:w-[50px] md:h-[50px] object-cover"
-                src=""
+                className="rounded-full w-10 h-10 md:w-[50px] md:h-[50px] text-[10px] object-cover border border-white"
+                src={clientImage}
                 alt="client image"
               />
 
               <div>
-                <h1 className="text-[#121212] text-xs font-medium">Faisal</h1>
-                <p className="text-[#121212] text-[10px] font-normal">Software Engineer</p>
+                <h1 className="text-[#121212] text-xs font-medium">{clientName || "Missing client name"}</h1>
+                <p className="text-[#121212] text-[10px] font-normal">
+                  {clientdesignation || "Missing client designation"}
+                </p>
 
                 {/* Rating */}
                 <div className="flex gap-1 text-btnColor mt-1">

@@ -25,10 +25,10 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
     );
 
   const {
-    title:heroTitle,
-    short_title:heroSubtitle,
-    short_description:heroDesctiption,
-    image:heroImage,
+    title: heroTitle,
+    short_title: heroSubtitle,
+    short_description: heroDesctiption,
+    image: heroImage,
     location,
     category,
     service,
@@ -41,6 +41,11 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
     services,
     apps_list,
     impactful,
+    client_feedback_company_name,
+    client_feedback_description,
+    client_feedback_image,
+    client_feedback_name,
+    client_feedback_designation,
   } = caseStudies?.data || {};
 
   return (
@@ -60,9 +65,15 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
       />
       <EverythingSection data={services} />
       <TechnologyStack data={apps_list} />
-      <KeyAchievement data={impactful} title={heroTitle}/>
+      <KeyAchievement data={impactful} title={heroTitle} />
       <FeaturesCard Width="w-full sm:w-[200px]" />
-      <ClientFeedback/>
+      <ClientFeedback
+        companyName={client_feedback_company_name}
+        description={client_feedback_description}
+        clientImage={client_feedback_image}
+        clientName={client_feedback_name}
+        clientdesignation={client_feedback_designation}
+      />
     </div>
   );
 };
