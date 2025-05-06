@@ -1,13 +1,14 @@
 import React from "react";
 import { techData } from "../../../api/Dummy";
 import BookConsultation from "@/component/Common/BookConsultation";
-import SuccessStories from "@/component/Common/SuccessStories";
+// import SuccessStories from "@/component/Common/SuccessStories";
 import Contact from "@/component/Contact/Contact";
 import TrustedIndustry from "@/component/Common/TrustedIndustry";
 // import HireTeamFlexibility from "@/component/Hire/HireTeamFlexibility";
 import HireOverview from "@/component/Hire/HireOverview";
 import HireSteps from "@/component/Hire/HireSteps";
 import HirePackages from "@/component/Hire/HirePackages";
+import ClutchSuccessStories from "@/component/Common/ClutchSuccessStories";
 
 export const metadata = {
   title: "Hire Details | Flyte Solutions Ltd.",
@@ -35,7 +36,8 @@ const page = async ({ params }: PageProps) => {
       <HirePackages/>
       {/* <HireTeamFlexibility /> */}
       <TrustedIndustry />
-      <SuccessStories />
+      {/* <SuccessStories /> */}
+      <ClutchSuccessStories/>
       <Contact />
     </div>
   );

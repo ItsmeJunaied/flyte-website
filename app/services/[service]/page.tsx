@@ -6,11 +6,12 @@ import BookConsultation from "@/component/Common/BookConsultation";
 import OperationsSections from "@/component/Home/OperationsSections";
 import ProjectSection from "@/component/Home/ProjectSection";
 import Contact from "@/component/Contact/Contact";
-import SuccessStories from "@/component/Common/SuccessStories";
+// import SuccessStories from "@/component/Common/SuccessStories";
 import TrustedIndustry from "@/component/Common/TrustedIndustry";
 import ServiceProcessStep from "@/component/Services/ServiceProcessStep";
 import CustomSoftware from "@/component/Services/CustomSoftware";
 import BoosterCard from "@/component/Common/BoosterCard";
+import ClutchSuccessStories from "@/component/Common/ClutchSuccessStories";
 
 export const metadata = {
   title: "service-details | Flyte Solutions Ltd.",
@@ -39,7 +40,10 @@ const page = async ({ params }: PageProps) => {
       <CustomSoftware />
       <BoosterCard />
       <ProjectSection />
-      <SuccessStories bgColor="bg-white" />
+      <div className="bg-white">
+      <ClutchSuccessStories/>
+      </div>
+      {/* <SuccessStories bgColor="bg-white" /> */}
       <TrustedIndustry />
       <Contact />
     </div>

@@ -3,12 +3,12 @@ import CommonBanner from "@/component/Common/CommonBanner";
 import { productBannerData } from "@/api/Dummy";
 import ProductsSections from "@/component/Products/ProductsSections";
 import Contact from "@/component/Contact/Contact";
-import SuccessStories from "@/component/Common/SuccessStories";
+import ClutchSuccessStories from "@/component/Common/ClutchSuccessStories";
+// import SuccessStories from "@/component/Common/SuccessStories";
 
 export const metadata = {
   title: "Products | Flyte Solutions Ltd.",
-  description:
-    "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
+  description: "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
 };
 
 const page = () => {
@@ -18,7 +18,8 @@ const page = () => {
       <CommonBanner bannerData={productsBannerData} />
       <ProductsSections />
       <div className="container">
-        <SuccessStories />
+        {/* <SuccessStories /> */}
+        <ClutchSuccessStories />
         <Contact />
       </div>
     </div>

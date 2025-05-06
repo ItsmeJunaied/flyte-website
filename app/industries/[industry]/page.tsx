@@ -2,10 +2,11 @@ import React from "react";
 import { industrydata } from "../../../api/Dummy";
 import BookConsultation from "@/component/Common/BookConsultation";
 import ProjectSection from "@/component/Home/ProjectSection";
-import SuccessStories from "@/component/Common/SuccessStories";
+// import SuccessStories from "@/component/Common/SuccessStories";
 import Contact from "@/component/Contact/Contact";
 import TrustedIndustry from "@/component/Common/TrustedIndustry";
 import IndustryOverview from "@/component/Industries/IndustryOverview";
+import ClutchSuccessStories from "@/component/Common/ClutchSuccessStories";
 
 export const metadata = {
   title: "Industry-details | Flyte Solutions Ltd.",
@@ -29,7 +30,8 @@ const page = async ({ params }: PageProps) => {
       <IndustryOverview params={industry}/>
       <ProjectSection />
       <BookConsultation />
-      <SuccessStories/>
+      {/* <SuccessStories/> */}
+      <ClutchSuccessStories/>
       <TrustedIndustry/>
       <Contact />
     </div>

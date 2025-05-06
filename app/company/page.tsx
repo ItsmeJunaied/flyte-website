@@ -1,9 +1,10 @@
 import React from "react";
 import Roadmap from "@/component/Company/AboutUs/Roadmap";
 import BehindFlyte from "@/component/Company/AboutUs/BehindFlyte";
-import SuccessStories from "@/component/Common/SuccessStories";
+// import SuccessStories from "@/component/Common/SuccessStories";
 import Contact from "@/component/Contact/Contact";
 import AboutOverview from "@/component/Company/AboutUs/AboutOverview";
+import ClutchSuccessStories from "@/component/Common/ClutchSuccessStories";
 
 export const metadata = {
   title: "Company | Flyte Solutions Ltd.",
@@ -15,7 +16,8 @@ const page = () => {
       <AboutOverview />
       <Roadmap />
       <BehindFlyte />
-      <SuccessStories />
+      {/* <SuccessStories /> */}
+      <ClutchSuccessStories/>
       <Contact />
     </div>
   );

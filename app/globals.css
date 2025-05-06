@@ -47,6 +47,12 @@ body::-webkit-scrollbar-track {
   background: orange;
 }
 
+/* clutch success stories caurosel */
+ .widgets_wrapper {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .industry-nav {
   position: sticky;
   top: var(--header-height, 60px);
@@ -702,9 +708,6 @@ input::-webkit-spelling-error {
   color: #666666 !important;
   text-decoration: underline wavy red;
 }
-
-
-
 
 /* for job detail page  */
 /* .prose li {

@@ -1,11 +1,12 @@
 import CommonBanner from "@/component/Common/CommonBanner";
 import Subtitle from "@/component/Common/Subtitle";
-import SuccessStories from "@/component/Common/SuccessStories";
+// import SuccessStories from "@/component/Common/SuccessStories";
 import Title from "@/component/Common/Title";
 import Contact from "@/component/Contact/Contact";
 import ServiceCard from "@/component/Services/ServiceCard";
 import React from "react";
 import { servicesBannerData, serviceData } from "@/api/Dummy";
+import ClutchSuccessStories from "@/component/Common/ClutchSuccessStories";
 
 export const metadata = {
   title: "Services | Flyte Solutions Ltd.",
@@ -31,7 +32,8 @@ const page = () => {
       </div>
 
       <div className="container">
-        <SuccessStories />
+        {/* <SuccessStories /> */}
+        <ClutchSuccessStories/>
         <Contact />
       </div>
     </div>

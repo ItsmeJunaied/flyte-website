@@ -1,10 +1,11 @@
 import React from "react";
-import SuccessStories from "@/component/Common/SuccessStories";
+// import SuccessStories from "@/component/Common/SuccessStories";
 import TrustedIndustry from "@/component/Common/TrustedIndustry";
 import Contact from "@/component/Contact/Contact";
 import BoosterCard from "@/component/Common/BoosterCard";
 import { Metadata } from "next";
 import ProductOverview from "@/component/Products/ProductOverview";
+import ClutchSuccessStories from "@/component/Common/ClutchSuccessStories";
 
 type PageProps = {
   params: Promise<{ product: string }>;
@@ -45,14 +46,17 @@ export async function generateStaticParams() {
 }
 
 const Page = async ({ params }: PageProps) => {
-  const { product } = await params; 
+  const { product } = await params;
 
   return (
     <div>
-      <ProductOverview params={product}/>
+      <ProductOverview params={product} />
       <TrustedIndustry />
       <BoosterCard />
-      <SuccessStories bgColor="bg-white" />
+      <div className="bg-white">
+        <ClutchSuccessStories />
+      </div>
+      {/* <SuccessStories bgColor="bg-white" /> */}
       <Contact />
     </div>
   );

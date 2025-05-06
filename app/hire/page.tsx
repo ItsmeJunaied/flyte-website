@@ -5,9 +5,10 @@ import ServiceFitHighlights from "@/component/Hire/ServiceFitHighlights";
 import BookConsultation from "@/component/Common/BookConsultation";
 import OperationsSections from "@/component/Home/OperationsSections";
 import { techData } from "@/api/Dummy";
-import SuccessStories from "@/component/Common/SuccessStories";
+// import SuccessStories from "@/component/Common/SuccessStories";
 import HireSteps from "@/component/Hire/HireSteps";
 import HirePackages from "@/component/Hire/HirePackages";
+import ClutchSuccessStories from "@/component/Common/ClutchSuccessStories";
 
 export const metadata = {
   title: "Hire | Flyte Solutions Ltd.",
@@ -22,7 +23,8 @@ const page = () => {
       <HirePackages />
       <OperationsSections techData={techData} />
       <ServiceFitHighlights />
-      <SuccessStories />
+      {/* <SuccessStories /> */}
+      <ClutchSuccessStories/>
       <BookConsultation />
     </div>
   );

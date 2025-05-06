@@ -1,4 +1,5 @@
-import SuccessStories from "@/component/Common/SuccessStories";
+// import SuccessStories from "@/component/Common/SuccessStories";
+import ClutchSuccessStories from "@/component/Common/ClutchSuccessStories";
 import AboutOverview from "@/component/Company/AboutUs/AboutOverview";
 import BehindFlyte from "@/component/Company/AboutUs/BehindFlyte";
 import Roadmap from "@/component/Company/AboutUs/Roadmap";
@@ -16,7 +17,8 @@ const page = () => {
       <AboutOverview />
       <Roadmap/>
       <BehindFlyte/>
-      <SuccessStories />
+      {/* <SuccessStories /> */}
+      <ClutchSuccessStories/>
       <Contact />
     </div>
   );
