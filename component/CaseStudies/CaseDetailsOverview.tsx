@@ -8,6 +8,7 @@ import EverythingSection from "./EverythingSection ";
 import TechnologyStack from "./TechnologyStack";
 import KeyAchievement from "./KeyAchievement";
 import { useGetSpecificCaseStudyQuery } from "@/redux/api/caseStudiesApi";
+import ClientFeedback from "./ClientFeedback";
 
 type ParamProps = {
   params: string;
@@ -61,6 +62,7 @@ const CaseDetailsOverview: React.FC<ParamProps> = ({ params }) => {
       <TechnologyStack data={apps_list} />
       <KeyAchievement data={impactful} title={heroTitle}/>
       <FeaturesCard Width="w-full sm:w-[200px]" />
+      <ClientFeedback/>
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import CaseDetailsOverview from "@/component/CaseStudies/CaseDetailsOverview";
 import ReadyToTransform from "@/component/CaseStudies/ReadyToTransform";
-import SuccessStories from "@/component/Common/SuccessStories";
 import Contact from "@/component/Contact/Contact";
 import { Metadata } from "next";
 
@@ -64,7 +63,6 @@ export default async function Page({ params }: PageProps) {
   return (
     <div>
       <CaseDetailsOverview params={slug} />
-      <SuccessStories />
       <ReadyToTransform />
       <Contact />
     </div>
