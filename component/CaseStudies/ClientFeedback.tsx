@@ -2,7 +2,15 @@
 import React from "react";
 import { FaStar, FaRegStar } from "react-icons/fa";
 
-const ClientFeedback = (props) => {
+type ClientFeedbackProps = {
+  companyName: string;
+  description: string;
+  clientImage: string;
+  clientName: string;
+  clientdesignation: string;
+};
+
+const ClientFeedback = (props: ClientFeedbackProps) => {
   const { companyName, description, clientImage, clientName, clientdesignation } = props;
   return (
     <div className="container my-10">
