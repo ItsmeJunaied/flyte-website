@@ -22,10 +22,8 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
-        // padding: "50px 20px",
         color: "white",
         textAlign: "center",
-        // height: "740px",
         opacity: "100%",
       }}
       className="flex flex-col pt-10 lg:pt-20 pb-10 lg:pb-0 lg:h-[740px] justify-center items-start gap-5 "

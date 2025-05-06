@@ -20,7 +20,6 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({ serviceData }) => {
     <div className="flex flex-col gap -mt-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <div>
         <Subtitle Subtitle="Our Services" />
-        {/* <Title title={headertitle} /> */}
         <h2 className="max-w-[624px] justify-start text-black text-2xl lg:text-4xl font-semibold lg:leading-[50px]">
           Empowering Your Vision Through A Range Of Professional Services
         </h2>

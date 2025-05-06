@@ -28,12 +28,12 @@ const BoosterCard = () => {
                     <path
                       d="M12.3333 21.373C17.3038 21.373 21.3333 17.3436 21.3333 12.373C21.3333 7.40248 17.3038 3.37305 12.3333 3.37305C7.36269 3.37305 3.33325 7.40248 3.33325 12.373C3.33325 17.3436 7.36269 21.373 12.3333 21.373Z"
                       stroke="black"
-                      stroke-width="2"
+                      strokeWidth="2"
                     />
                     <path
                       d="M8.33325 12.373L11.3333 15.373L16.3333 9.37305"
                       stroke="black"
-                      stroke-width="2"
+                      strokeWidth="2"
                     />
                   </svg>
                   <span className="text-[#3b3c4a] text-sm ">{feature}</span>

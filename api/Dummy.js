@@ -304,7 +304,7 @@ export const bannerData = {
       path: "industries/media-and-entertainment",
     },
   ],
-  bannerImage: "/images/bannerImg.png",
+  bannerImage: "/images/bannerImg.webp",
 };
 
 // brand data
