@@ -14,7 +14,7 @@ const CareerDetails: React.FC<ParamProps> = ({ params }) => {
   const { title, description, short_description, skills } = career?.data || {};
   const processedDescription = description?.replace(/<li>/g, '<li class="list-disc p-1.5 ml-5">');
 
-  return (
+  return ( 
     <div className="lg:pt-[100px]">
       <div className="bg-white mt-[2px]">
         {isLoading ? (
