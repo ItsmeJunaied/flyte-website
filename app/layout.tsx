@@ -8,6 +8,7 @@ import Footer from "../component/Common/Footer";
 import "react-toastify/dist/ReactToastify.css";
 import Script from "next/script";
 import ClientProvider from "@/component/Common/ClientProvider";
+import DriftChat from "@/component/Common/DriftChat";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,6 +47,7 @@ export default function RootLayout({
         <ClientProvider>
           <Nav navData={navbarData} />
           {children}
+          <DriftChat />
           <div className="bg-[#2A3342]">
             <div className="container">
               <Footer />
