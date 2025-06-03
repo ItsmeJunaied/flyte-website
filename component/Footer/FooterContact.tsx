@@ -1,3 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
+"use client";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 type FooterContact = {
@@ -17,6 +21,7 @@ type FooterContact = {
 const FooterContact: React.FC<{ footerContact: FooterContact }> = ({ footerContact }) => {
   const { title, logo_small, address, mobile1, mobile2, contact_email, feedback_email, fb, tw, ln, yt } =
     footerContact || {};
+
   return (
     <div className="flex flex-col gap-4">
       <img className="w-[100px] h-[84px]" src={logo_small} alt={title} />
@@ -30,15 +35,73 @@ const FooterContact: React.FC<{ footerContact: FooterContact }> = ({ footerConta
 
       {/* Success Logos */}
       <div className="grid grid-cols-3 gap-2">
-        <img className="object-cover" src="https://i.ibb.co.com/0p6zVS2H/Clip.png" alt="Success Logo-1" />
-        <img className="object-cover" src="/images/goodfirms.png" alt="Success Logo-2" />
-        <img className="object-cover" src="/images/Untitled-design.png" alt="Success Logo-3" />
+        <Link
+          href="https://www.goodfirms.co/company/flyte-solutions"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="h-[50px] w-full" src="/images/goodfirm.png" alt="GoodFirms Review" />
+        </Link>
+        {/* <iframe
+          src="https://widget.clutch.co/widgets/get/2?ref_domain=clutch.co&uid=122766"
+          width="200"
+          height="50"
+          style={{ border: "none", overflow: "hidden" }}
+          scrolling="no"
+          title="Clutch Reviews Widget"
+        ></iframe> */}
+        <div style={{ position: "relative", width: "200px", height: "50px" }}>
+          <iframe
+            src="https://widget.clutch.co/widgets/get/2?ref_domain=clutch.co&uid=122766"
+            width="200"
+            height="50"
+            style={{ border: "none", overflow: "hidden" }}
+            scrolling="no"
+            title="Clutch Reviews Widget"
+          ></iframe>
+          <a
+            href="https://clutch.co/profile/flyte-solutions"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              zIndex: 2,
+            }}
+          >
+            {/* Empty anchor overlay */}
+          </a>
+        </div>
       </div>
 
       {/* ISO Logos */}
       <div className="flex gap-4">
         <img className="object-cover" src="/images/iso1.png" alt="ISO Logo-1" />
         <img className="object-cover" src="/images/iso2.png" alt="ISO Logo-2" />
+        <Image
+          width={74}
+          height={37}
+          unoptimized
+          className=""
+          src="/images/Untitled-design.png"
+          alt="design rush logo"
+        />
+        <Link
+          href="https://www.designrush.com/agency/profile/flyte-solutions-ltd"
+          className="flex items-center"
+        >
+          <Image
+            width={149}
+            height={50}
+            unoptimized
+            className=""
+            src="/images/design-rush-2.png"
+            alt="design rush logo"
+          />
+        </Link>
       </div>
 
       {/* Phone Numbers */}
