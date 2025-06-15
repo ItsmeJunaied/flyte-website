@@ -34,8 +34,9 @@ export async function generateStaticParams() {
   if (!res.ok) return [];
 
   const career = await res.json();
+  console.log("career slug", career)
   return career?.data?.map((carr: { slug: string }) => ({
-    slug: carr.slug,
+    slug: carr?.slug,
   }));
 }
 

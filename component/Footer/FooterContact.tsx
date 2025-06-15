@@ -81,14 +81,15 @@ const FooterContact: React.FC<{ footerContact: FooterContact }> = ({ footerConta
       <div className="flex gap-4">
         <img className="object-cover" src="/images/iso1.png" alt="ISO Logo-1" />
         <img className="object-cover" src="/images/iso2.png" alt="ISO Logo-2" />
-        <Image
+        {/* D&B logo  */}
+        {/* <Image
           width={74}
           height={37}
           unoptimized
           className=""
           src="/images/Untitled-design.png"
           alt="design rush logo"
-        />
+        /> */}
         <Link
           href="https://www.designrush.com/agency/profile/flyte-solutions-ltd"
           className="flex items-center"
