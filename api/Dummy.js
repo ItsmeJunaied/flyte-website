@@ -388,7 +388,7 @@ export const brandData = {
       alt: "Brand 18",
     },
     {
-      src: "/images/DB_WORDMARK.png",
+      src: "/images/kocsitem-logo.png",
       alt: "Brand 19",
     },
   ],
