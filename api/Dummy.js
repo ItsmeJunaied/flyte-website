@@ -7549,3 +7549,28 @@ export const hireTopTalents = [
     ],
   },
 ];
+
+// Home banner clutch data 
+export const clutchBadges = [
+  {
+    id: 1,
+    src: "https://clutch.co/share/badges/122766/46961/?utm_medium=image_embed%22&utm_source=clutch_top_company_badge",
+    title: "Top Clutch Software Developers Dhaka 2025",
+  },
+  {
+    id: 2,
+    src: "https://clutch.co/share/badges/122766/2484/?utm_medium=image_embed%22&utm_source=clutch_top_company_badge",
+    title: "Top Clutch Software Developers Bangladesh 2025",
+  },
+  {
+    id: 3,
+    src: "https://clutch.co/share/badges/122766/10130/?utm_medium=image_embed%22&utm_source=clutch_top_company_badge",
+    title: "Top Clutch Staff Augmentation Company Bangladesh 2025",
+  },
+  {
+    id: 4,
+    src: "https://clutch.co/share/badges/122766/109197/?utm_medium=image_embed%22&utm_source=clutch_top_company_badge",
+    title: "Top Clutch Software Developers Small Business Dhaka",
+  },
+];
+

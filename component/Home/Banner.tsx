@@ -49,7 +49,8 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
 
         <div className=" flex flex-row gap-2 overflow-x-auto scrollbar-hide ">
           {bannerData.industries.map((industry, index) => (
-            <Link href={industry?.path}
+            <Link
+              href={industry?.path}
               key={index}
               className=" w-[125px] lg:w-[140px] h-40 flex flex-col gap-3 justify-center items-center rounded-[10px] bannerIndustries hover:bg-white group"
             >
@@ -64,7 +65,8 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
         </div>
 
         <div className=" flex flex-col lg:flex-row gap-2">
-          <Link href={`/schedule-consultation`}
+          <Link
+            href={`/schedule-consultation`}
             id="alertButton"
             className="w-fit px-[32px] py-[12px] border border-btnColor hover:border-pink-500 bg-btnColor hover:bg-pink-500 text-white rounded-md"
           >

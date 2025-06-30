@@ -4,13 +4,16 @@ import Subtitle from "../Common/Subtitle";
 // import { FaCheckCircle } from "react-icons/fa";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
+import ClutchBadge from "./ClutchBadge";
 // import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 // import PlaneLottieAboutUs from "./HomeSubComponents.tsx/PlaneLottieAboutUs";
 const AboutUs: React.FC = () => {
   return (
     <div className="container pt-5">
       <Subtitle Subtitle="About Company" />
-      <h2 className="max-w-[492px] justify-start text-black text-2xl lg:text-4xl font-semibold">Solutions That Drive Your Business Forward</h2>
+      <h2 className="max-w-[492px] justify-start text-black text-2xl lg:text-4xl font-semibold">
+        Solutions That Drive Your Business Forward
+      </h2>
 
       <div>
         <div className="pt-6 pb-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -32,19 +35,16 @@ const AboutUs: React.FC = () => {
             {/* <PlaneLottieAboutUs /> */}
 
             {/* Content */}
-            <p className="text-[#9a9a9a] text-base font-normal ">
-              <span className="  ">Flyte</span> Solutions is a trusted global
-              provider of cutting-edge IT services, dedicated to empowering
-              businesses with innovative and efficient solutions. From system
-              integration to cloud technologies, we tailor our expertise to meet
-              the evolving needs of diverse industries.
+            <p className="mb-4 text-[#9a9a9a] text-base font-normal">
+              <span className="  ">Flyte</span> Flyte Solutions is a trusted global provider of innovative IT
+              services, offering tailored solutions in system integration, cloud technologies, and more. With
+              a strong focus on quality and customer satisfaction, our ISO-certified team ensures reliability,
+              efficiency, and business success across diverse industries.
             </p>
-            <p className="text-[#6c757d] text-base leading-7 mb-8">
-              With a focus on quality and customer satisfaction, Flyte has
-              earned global recognition, including ISO certification. Our
-              commitment to excellence drives operational success, ensuring
-              reliability and top-tier service at every step.
-            </p>
+            {/* <p className="text-[#6c757d] text-base leading-7 mb-4">
+              With a strong focus on quality and customer satisfaction, our ISO-certified team ensures
+              reliability, efficiency, and long-term business success.
+            </p> */}
 
             {/* Features List */}
             <div className=" w-full flex flex-col lg:flex-row justify-between items-center gap-4">
@@ -55,12 +55,8 @@ const AboutUs: React.FC = () => {
                     src="https://i.ibb.co.com/wN59CwQ/flat-color-icons-calendar.png"
                     alt="Years Experience"
                   />
-                  <p className=" text-center text-black text-xl font-bold">
-                    12+
-                  </p>
-                  <p className="text-center text-black text-sm font-medium ">
-                    Years Experience
-                  </p>
+                  <p className=" text-center text-black text-xl font-bold">12+</p>
+                  <p className="text-center text-black text-sm font-medium ">Years Experience</p>
                 </div>
                 <div className="">
                   <Separator orientation="vertical" />
@@ -72,12 +68,8 @@ const AboutUs: React.FC = () => {
                     src="https://i.ibb.co.com/3N1bD6Y/fxemoji-clipboard.png"
                     alt="Projects Completed"
                   />
-                  <p className=" text-center text-black text-xl font-bold">
-                    350+
-                  </p>
-                  <p className="text-center text-black text-sm font-medium ">
-                    Projects Completed
-                  </p>
+                  <p className=" text-center text-black text-xl font-bold">350+</p>
+                  <p className="text-center text-black text-sm font-medium ">Projects Completed</p>
                 </div>
               </div>
 
@@ -92,12 +84,8 @@ const AboutUs: React.FC = () => {
                     src="https://i.ibb.co.com/CBFFjvr/emojione-handshake.png"
                     alt="Recurring Clients"
                   />
-                  <p className=" text-center text-black text-xl font-bold">
-                    97%
-                  </p>
-                  <p className="text-center text-black text-sm font-medium ">
-                    Recurring Clients
-                  </p>
+                  <p className=" text-center text-black text-xl font-bold">97%</p>
+                  <p className="text-center text-black text-sm font-medium ">Recurring Clients</p>
                 </div>
 
                 <div className="flex ">
@@ -111,20 +99,24 @@ const AboutUs: React.FC = () => {
                       src="https://i.ibb.co.com/wcBcfyL/twemoji-delivery-truck.png"
                       alt="Solutions Delivered"
                     />
-                    <p className=" text-center text-black text-xl font-bold">
-                      500+
-                    </p>
-                    <p className="text-center text-black text-sm font-medium ">
-                      Solutions Delivered
-                    </p>
+                    <p className=" text-center text-black text-xl font-bold">500+</p>
+                    <p className="text-center text-black text-sm font-medium ">Solutions Delivered</p>
                   </div>
                 </div>
               </div>
             </div>
 
+            {/* clutch badge  */}
+            <div className="mt-4">
+              <ClutchBadge />
+            </div>
+
             {/* Learn More Button */}
             <div className="w-full flex lg:justify-start justify-center lg:items-start items-center">
-              <Link className="w-fit h-fit bgGradientNevyBlue px-[32px] py-[12px] rounded-lg mt-5 text-white" href={"/company"}>
+              <Link
+                className="w-fit h-fit bgGradientNevyBlue px-[32px] py-[12px] rounded-lg mt-5 text-white"
+                href={"/company"}
+              >
                 <p>Explore Business Solutions</p>
               </Link>
             </div>
