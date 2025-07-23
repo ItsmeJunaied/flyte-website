@@ -259,7 +259,7 @@ export const navbarData = {
 
 // banner
 export const bannerData = {
-  title: "Hire Remote Dev Team or Build Your SaaS MVP - Starting from $3,000",
+  title: "Hire Remote Dev Team or Build Your SaaS MVP - Starting from $3,999",
   description:
     "Supercharge your projects with Flyte Solutions Ltd's resource augmentation services - your gateway to top-tier development talent without the overhead of traditional hiring.",
   industries: [

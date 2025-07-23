@@ -8,7 +8,6 @@ import FooterSkeleton from "./FooterSkeleton";
 
 const FooterOverview = () => {
   const { data: footerData, isLoading } = useGetFooterQuery({});
-
   const { expertise, services } = footerData?.data || {};
 
   return (
