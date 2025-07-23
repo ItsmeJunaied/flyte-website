@@ -36,7 +36,7 @@ const AboutUs: React.FC = () => {
 
             {/* Content */}
             <p className="mb-4 text-[#9a9a9a] text-base font-normal">
-              <span className="  ">Flyte</span> Flyte Solutions is a trusted global provider of innovative IT
+              Flyte Solutions is a trusted global provider of innovative IT
               services, offering tailored solutions in system integration, cloud technologies, and more. With
               a strong focus on quality and customer satisfaction, our ISO-certified team ensures reliability,
               efficiency, and business success across diverse industries.

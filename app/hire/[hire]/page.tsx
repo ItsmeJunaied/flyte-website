@@ -10,10 +10,6 @@ import HireSteps from "@/component/Hire/HireSteps";
 import HirePackages from "@/component/Hire/HirePackages";
 import ClutchSuccessStories from "@/component/Common/ClutchSuccessStories";
 
-export const metadata = {
-  title: "Hire Details | Flyte Solutions Ltd.",
-  description: "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
-};
 
 // Convert techData into an array before mapping
 export function generateStaticParams() {
@@ -25,6 +21,24 @@ export function generateStaticParams() {
 type PageProps = {
   params: Promise<{ hire: string }>;
 };
+
+export async function generateMetadata({ params }: PageProps) {
+  // Await the params Promise to get the actual parameters
+  const resolvedParams = await params;
+  
+  const tech = Object.values(techData).find((item) => item.hireLinkName === resolvedParams.hire);
+   const { title, description } = tech || {};
+
+  return {
+    title: title || "Career Details | Flyte Solutions Ltd.",
+    description: description || "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
+    openGraph: {
+      title: title || "Career Details | Flyte Solutions Ltd.",
+      description: description || "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
+    },
+  };
+}
+
 
 const page = async ({ params }: PageProps) => {
   const { hire } = await params;

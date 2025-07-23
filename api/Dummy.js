@@ -259,9 +259,9 @@ export const navbarData = {
 
 // banner
 export const bannerData = {
-  title: "Achieve <span> Success </span> With Innovative <span> Software Solutions </span>",
+  title: "Hire Remote Dev Team or Build Your SaaS MVP - Starting from $3,000",
   description:
-    "Our platform empowers your business with cutting-edge software solutions and lightning-fast deployment. Achieve your goals with unmatched efficiency and reliability.",
+    "Supercharge your projects with Flyte Solutions Ltd's resource augmentation services - your gateway to top-tier development talent without the overhead of traditional hiring.",
   industries: [
     {
       logo: "fa-solid fa-chart-area",

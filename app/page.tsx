@@ -10,6 +10,34 @@ import ProjectSection from "../component/Home/ProjectSection";
 import AboutUs from "../component/Home/AboutUs";
 import ProductsHomeComp from "@/component/Home/ProductsHomeComp";
 
+export const metadata = {
+  title: "Home | Flyte Solutions Ltd.",
+  description: "Flyte Solutions Ltd. offers cutting-edge web, mobile, and AI-powered software solutions tailored to your business needs. Let's build the future together.",
+  keywords: ["Flyte Solutions", "Web Development", "AI Solutions", "Mobile App", "Software Company", "Bangladesh IT"],
+  openGraph: {
+    title: "Flyte Solutions Ltd. | Empowering Digital Innovation",
+    description: "Flyte Solutions Ltd. provides world-class web, mobile, and AI-powered solutions tailored to your business.",
+    url: "https://flytesolutions.com",
+    siteName: "Flyte Solutions Ltd.",
+    images: [
+      {
+        url: "https://flytesolutions.com/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Flyte Solutions Ltd. - Empowering Digital Innovation",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Flyte Solutions Ltd. | Empowering Digital Innovation",
+    description: "Flyte Solutions Ltd. builds modern, scalable, and AI-powered software for businesses.",
+    images: ["https://flytesolutions.com/logo.png"],
+  },
+};
+
+
 const page = () => {
   return (
     <div>
