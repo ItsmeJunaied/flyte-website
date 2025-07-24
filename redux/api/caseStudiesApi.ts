@@ -10,9 +10,9 @@ const caseStudiesApi = baseApi.injectEndpoints({
 
     // get categroy based case studies
     getCategoryBasedCaseStudies: builder.query({
-      query: ({ category_id, page = 1 }) => ({
+      query: ({ category_id, page = 1, is_featured = 0 }) => ({
         url: "case-studies",
-        params: { category_id, page },
+        params: { category_id, page, is_featured },
       }),
       providesTags: ["CaseStudies"],
     }),
