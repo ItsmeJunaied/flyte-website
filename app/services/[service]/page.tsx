@@ -13,10 +13,7 @@ import CustomSoftware from "@/component/Services/CustomSoftware";
 import BoosterCard from "@/component/Common/BoosterCard";
 import ClutchSuccessStories from "@/component/Common/ClutchSuccessStories";
 
-export const metadata = {
-  title: "service-details | Flyte Solutions Ltd.",
-  description: "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
-};
+
 
 export function generateStaticParams() {
   return serviceData?.map((item) => ({
@@ -27,6 +24,40 @@ export function generateStaticParams() {
 type PageProps = {
   params: Promise<{ service: string }>;
 };
+
+// for metadata 
+export async function generateMetadata({ params }: PageProps) {
+  const resolvedParams = await params;
+
+  const service = serviceData?.find((item) => item?.serviceLinkName === resolvedParams.service);
+
+  const { short_title, description, keywords } = service || {};
+
+  return {
+    title: `${short_title ? `${short_title} | Flyte Solutions Ltd.` : "Service Details | Flyte Solutions Ltd."}`,
+    description: description || "Discover Flyte Solutions Ltd.'s expert software services and how we can help grow your business.",
+    keywords: keywords || [],
+    openGraph: {
+      title: `${short_title ? `${short_title} | Flyte Solutions Ltd.` : "Service Details | Flyte Solutions Ltd."}`,
+      description: description || "Discover Flyte Solutions Ltd.'s expert software services and how we can help grow your business.",
+      images: [
+        {
+          url: "https://flytesolutions.com/logo.png",
+          width: 1200,
+          height: 630,
+          alt: "Flyte Solutions Ltd. - Expert Software Services",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${short_title ? `${short_title} | Flyte Solutions Ltd.` : "Service Details | Flyte Solutions Ltd."}`,
+      description: description || "Discover Flyte Solutions Ltd.'s expert software services and how we can help grow your business.",
+      images: ["https://flytesolutions.com/logo.png"],
+    },
+  };
+}
+
 
 const page = async ({ params }: PageProps) => {
   const { service } = await params;

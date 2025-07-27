@@ -405,7 +405,6 @@ export const serviceData = [
     subTitle: "Team Extension",
     description:
       "Expand your development capabilities with dedicated teams that integrate seamlessly with your existing operations.",
-    keywords: ["outsourcing", "staffing", "developers"],
     image: "/images/service1.png",
     image1: "https://i.ibb.co.com/BzrstK4/Image1.png",
     image2: "https://i.ibb.co.com/QdrF5BQ/Image2.png",
@@ -481,6 +480,7 @@ export const serviceData = [
       button_path: "/schedule-consultation",
       button_name: "Start Team Extension",
     },
+    keywords: ["Team Extension Services", "Dedicated Development Teams", "Remote Software Teams", "Outsourced IT Teams", "Extended Tech Teams", "Agile Team Extension", "Software Development Staffing", "Scalable Development Teams", "IT Team Augmentation", "Team Expansion Solutions"]
   },
   {
     id: 2,
@@ -491,7 +491,6 @@ export const serviceData = [
     subTitle: "Custom Software Development",
     description:
       "Tailored software solutions that align with your business needs, ensuring seamless integration and efficiency.",
-    keywords: ["solutions", "design", "apps"],
     image: "/images/service2.png",
     image1: "https://i.ibb.co.com/997tLysb/Adobe-Stock-508936825-resized-1080x675.jpg",
     image2: "https://i.ibb.co.com/232F2LrY/custom-software-solutions-development.jpg",
@@ -567,6 +566,7 @@ export const serviceData = [
       button_path: "/schedule-consultation",
       button_name: "Start Custom Project",
     },
+    keywords: ["Custom Software Solutions", "Tailored Software Development", "Bespoke Software Services", "Enterprise Software Solutions", "Scalable Software Development", "Agile Custom Development", "Software Integration Services", "Cloud-Based Custom Solutions", "Mobile App Development", "Web Application Development"]
   },
   {
     id: 3,
@@ -577,7 +577,6 @@ export const serviceData = [
     subTitle: "Enterprise Software Development",
     description:
       "Build robust enterprise-level software to support large-scale operations, improve efficiency, and foster innovation.",
-    keywords: ["scalable", "automation", "growth"],
     image: "/images/service3.png",
     image1: "https://i.ibb.co.com/Y4Ph8ydF/enterprize-1.webp",
     image2: "https://i.ibb.co.com/W4vDqymm/enterprize-2.png",
@@ -653,6 +652,7 @@ export const serviceData = [
       button_path: "/schedule-consultation",
       button_name: "Start Enterprise Project",
     },
+    keywords: ["Enterprise Software Solutions", "Business Process Automation", "Custom ERP Development", "Cloud Solutions for Enterprises", "AI in Business", "Data Analytics for Enterprises", "Enterprise App Development", "Digital Transformation Services", "Scalable Business Solutions", "Industry-Specific Software Solutions"]
   },
   {
     id: 4,
@@ -663,7 +663,6 @@ export const serviceData = [
     subTitle: "Mobile App Development",
     description:
       "Design and develop mobile applications for iOS and Android platforms, enhancing user experience and engagement.",
-    keywords: ["iOS", "Android", "apps"],
     image: "/images/service4.svg",
     image1: "https://i.ibb.co.com/qYH97RVF/mobile-app-3.png",
     image2: "https://i.ibb.co.com/23PSHt2g/mobile-app-2.webp",
@@ -739,6 +738,7 @@ export const serviceData = [
       button_path: "/schedule-consultation",
       button_name: "Start Mobile Project",
     },
+    keywords: ["Mobile App Development", "iOS App Development", "Android App Development", "Cross-Platform Apps", "Native Mobile Apps", "Flutter Development", "React Native Development", "Mobile UI/UX Design", "App Store Optimization", "Mobile Backend Integration"]
   },
   {
     id: 5,
@@ -749,7 +749,6 @@ export const serviceData = [
     subTitle: "QA & Testing",
     description:
       "Ensure software quality with comprehensive testing services, from functional to performance testing.",
-    keywords: ["testing", "automation", "bugs"],
     image: "/images/service5.png",
     image1: "https://i.ibb.co.com/dwws7WK9/qa-1.webp",
     image2: "https://i.ibb.co.com/TdKNRWz/qa-2.webp",
@@ -824,6 +823,7 @@ export const serviceData = [
       button_path: "/schedule-consultation",
       button_name: "Start QA & Testing",
     },
+    keywords: ["Quality Assurance", "Software Testing Services", "Automated Testing", "Manual Testing", "Performance Testing", "Security Testing", "Functional Testing", "Regression Testing", "Test Automation Frameworks", "Bug Tracking and Reporting"]
   },
   {
     id: 6,
@@ -834,7 +834,6 @@ export const serviceData = [
     subTitle: "MVP Development",
     description:
       "Build a minimum viable product quickly to test your ideas, validate concepts, and enter the market faster.",
-    keywords: ["MVP", "validation", "startup"],
     image: "/images/service6.png",
     image1: "https://i.ibb.co.com/PzrRVmmK/mvp-1.webp",
     image2: "https://i.ibb.co.com/7dxNMcJN/mvp-2.webp",
@@ -910,6 +909,7 @@ export const serviceData = [
       button_path: "/schedule-consultation",
       button_name: "Build Your MVP",
     },
+    keywords: ["MVP Development", "Lean Startup", "Prototype Development", "User Feedback", "Agile MVP", "Minimum Viable Product", "Startup MVP", "Product Validation", "Rapid Prototyping", "Iterative Development"]
   },
 ];
 
