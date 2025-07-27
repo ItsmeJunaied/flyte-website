@@ -1438,8 +1438,18 @@ export const techData = {
       button_path: "/hire/application-form",
       button_name: "Get Started",
     },
- keywords: ["Frontend Development", "Custom UI Development", "Responsive Web Design", "HTML CSS JavaScript Experts", "Modern Frontend Frameworks", "Pixel Perfect UI Design", "Cross-Browser Compatible Apps", "Frontend Engineering", "User Interface Development", "Frontend Performance Optimization"],
-
+    keywords: [
+      "Frontend Development",
+      "Custom UI Development",
+      "Responsive Web Design",
+      "HTML CSS JavaScript Experts",
+      "Modern Frontend Frameworks",
+      "Pixel Perfect UI Design",
+      "Cross-Browser Compatible Apps",
+      "Frontend Engineering",
+      "User Interface Development",
+      "Frontend Performance Optimization",
+    ],
   },
 
   reactjs: {
@@ -1605,7 +1615,18 @@ export const techData = {
       button_path: "/hire/application-form",
       button_name: "Start with React JS",
     },
-    keywords: ["ReactJS Development", "Custom React Applications", "React Frontend Experts", "Scalable React Web Apps", "Hire ReactJS Developer", "React Component Architecture", "React SPA Development", "React UI/UX Design", "React Performance Optimization", "ReactJS Consulting"]
+    keywords: [
+      "ReactJS Development",
+      "Custom React Applications",
+      "React Frontend Experts",
+      "Scalable React Web Apps",
+      "Hire ReactJS Developer",
+      "React Component Architecture",
+      "React SPA Development",
+      "React UI/UX Design",
+      "React Performance Optimization",
+      "ReactJS Consulting",
+    ],
   },
 
   angular: {
@@ -1769,7 +1790,18 @@ export const techData = {
       button_path: "/hire/application-form",
       button_name: "Start with Angular Development",
     },
-    keywords: ["Angular Development Services", "Enterprise Angular Apps", "Angular SPA Development", "Custom Angular Solutions", "Angular Frontend Experts", "Angular UI Design", "Angular Module Development", "Angular Consulting", "Angular API Integration", "Angular PWA Development"]
+    keywords: [
+      "Angular Development Services",
+      "Enterprise Angular Apps",
+      "Angular SPA Development",
+      "Custom Angular Solutions",
+      "Angular Frontend Experts",
+      "Angular UI Design",
+      "Angular Module Development",
+      "Angular Consulting",
+      "Angular API Integration",
+      "Angular PWA Development",
+    ],
   },
 
   vuejs: {
@@ -1932,7 +1964,18 @@ export const techData = {
       button_path: "/hire/application-form",
       button_name: "Start with Vue.js Development",
     },
-    keywords: ["VueJS Development Services", "Hire VueJS Developer", "VueJS SPA Development", "Custom Vue Applications", "VueJS UI Experts", "Vue Component Architecture", "VueJS Consulting Services", "Lightweight Vue Apps", "VueJS Web Development", "VueJS for Startups"]
+    keywords: [
+      "VueJS Development Services",
+      "Hire VueJS Developer",
+      "VueJS SPA Development",
+      "Custom Vue Applications",
+      "VueJS UI Experts",
+      "Vue Component Architecture",
+      "VueJS Consulting Services",
+      "Lightweight Vue Apps",
+      "VueJS Web Development",
+      "VueJS for Startups",
+    ],
   },
 
   nextjs: {
@@ -2097,7 +2140,18 @@ export const techData = {
       button_path: "/hire/application-form",
       button_name: "Start with Next.js Development",
     },
-    keywords: ["Next.js Development Services", "Server-side Rendering Next.js", "Static Site Generation", "Full-stack Next.js Applications", "SEO with Next.js", "Next.js for React Developers", "Custom Next.js Solutions", "Optimized Next.js Apps", "Scalable Web Apps with Next.js", "Next.js Consulting"]
+    keywords: [
+      "Next.js Development Services",
+      "Server-side Rendering Next.js",
+      "Static Site Generation",
+      "Full-stack Next.js Applications",
+      "SEO with Next.js",
+      "Next.js for React Developers",
+      "Custom Next.js Solutions",
+      "Optimized Next.js Apps",
+      "Scalable Web Apps with Next.js",
+      "Next.js Consulting",
+    ],
   },
 
   backend: {
@@ -2256,7 +2310,18 @@ export const techData = {
       button_path: "/hire/application-form",
       button_name: "Explore Backend Services",
     },
-    keywords: ["Backend Development Services", "Scalable Backend Systems", "REST API Development", "Microservices Architecture", "Secure Backend Solutions", "Node.js Backend", "Cloud-based Backend", "Backend for Mobile Apps", "Backend Infrastructure", "Custom API Solutions"]
+    keywords: [
+      "Backend Development Services",
+      "Scalable Backend Systems",
+      "REST API Development",
+      "Microservices Architecture",
+      "Secure Backend Solutions",
+      "Node.js Backend",
+      "Cloud-based Backend",
+      "Backend for Mobile Apps",
+      "Backend Infrastructure",
+      "Custom API Solutions",
+    ],
   },
 
   mobileDevelopment: {
@@ -2410,7 +2475,18 @@ export const techData = {
       button_path: "/hire/application-form",
       button_name: "Build Your Mobile App",
     },
-    keywords: ["Mobile App Development", "Android and iOS Apps", "Cross-platform Mobile Development", "React Native Development", "Flutter App Development", "Custom Mobile App Solutions", "Native Mobile Apps", "Mobile UI/UX Design", "Mobile Backend Integration", "Mobile Development Company"]
+    keywords: [
+      "Mobile App Development",
+      "Android and iOS Apps",
+      "Cross-platform Mobile Development",
+      "React Native Development",
+      "Flutter App Development",
+      "Custom Mobile App Solutions",
+      "Native Mobile Apps",
+      "Mobile UI/UX Design",
+      "Mobile Backend Integration",
+      "Mobile Development Company",
+    ],
   },
 
   qualityAssurance: {
@@ -2565,7 +2641,18 @@ export const techData = {
       button_path: "/hire/application-form",
       button_name: "Explore QA Services",
     },
-    keywords: ["Quality Assurance Services", "Manual and Automated Testing", "Software Testing Solutions", "End-to-End QA Testing", "Performance Testing", "Functional Testing Services", "QA Outsourcing", "Bug Tracking and Reporting", "Test Automation Experts", "Mobile App Testing"]
+    keywords: [
+      "Quality Assurance Services",
+      "Manual and Automated Testing",
+      "Software Testing Solutions",
+      "End-to-End QA Testing",
+      "Performance Testing",
+      "Functional Testing Services",
+      "QA Outsourcing",
+      "Bug Tracking and Reporting",
+      "Test Automation Experts",
+      "Mobile App Testing",
+    ],
   },
 
   devOps: {
@@ -2720,7 +2807,18 @@ export const techData = {
       button_path: "/hire/application-form",
       button_name: "Start DevOps Transformation",
     },
-    keywords: ["DevOps Services", "CI/CD Pipeline", "Infrastructure Automation", "Kubernetes Deployment", "Cloud DevOps Solutions", "Docker Containerization", "DevOps Monitoring", "Scalable Deployment", "GitOps Best Practices", "DevOps for Enterprise"]
+    keywords: [
+      "DevOps Services",
+      "CI/CD Pipeline",
+      "Infrastructure Automation",
+      "Kubernetes Deployment",
+      "Cloud DevOps Solutions",
+      "Docker Containerization",
+      "DevOps Monitoring",
+      "Scalable Deployment",
+      "GitOps Best Practices",
+      "DevOps for Enterprise",
+    ],
   },
 
   aiML: {
@@ -2875,7 +2973,18 @@ export const techData = {
       button_path: "/hire/application-form",
       button_name: "Unlock AI Power",
     },
-    keywords: ["AI and ML Solutions", "Machine Learning Models", "AI-powered Applications", "Predictive Analytics", "Computer Vision Services", "NLP Integration", "AI Consulting Company", "Custom ML Solutions", "Real-time AI Analytics", "AI for Business Automation"]
+    keywords: [
+      "AI and ML Solutions",
+      "Machine Learning Models",
+      "AI-powered Applications",
+      "Predictive Analytics",
+      "Computer Vision Services",
+      "NLP Integration",
+      "AI Consulting Company",
+      "Custom ML Solutions",
+      "Real-time AI Analytics",
+      "AI for Business Automation",
+    ],
   },
 };
 
@@ -3064,6 +3173,7 @@ export const industrydata = {
       heroImage: "https://i.ibb.co.com/C3vYLnjp/fintech-title-blog.webp",
       heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/C3vYLnjp/fintech-title-blog.webp",
+      keywords: ["Fintech Software Solutions", "Digital Banking Apps", "Mobile Wallet Development", "Financial Technology Services", "Custom Fintech Platforms", "Secure Payment Gateway Integration", "Fintech App Development Bangladesh", "Blockchain Financial Apps", "Online Lending Platforms", "AI in Fintech"]
     },
     {
       name: "Startup",
@@ -3198,6 +3308,7 @@ export const industrydata = {
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
       heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      keywords: ["Fintech Software Solutions", "Digital Banking Apps", "Mobile Wallet Development", "Financial Technology Services", "Custom Fintech Platforms", "Secure Payment Gateway Integration", "Fintech App Development Bangladesh", "Blockchain Financial Apps", "Online Lending Platforms", "AI in Fintech"]
     },
     {
       name: "Logistics",
@@ -3332,6 +3443,7 @@ export const industrydata = {
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
       heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      keywords: ["Logistics Software Solutions", "Supply Chain Management", "Real-Time Tracking", "AI in Logistics", "IoT for Logistics", "Custom Logistics Apps", "Warehouse Management Solutions", "Fleet Management Software", "Logistics Analytics", "Digital Transformation in Logistics"]
     },
     {
       name: "Retail & Manufacturing",
@@ -3466,6 +3578,7 @@ export const industrydata = {
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
       heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      keywords: ["Retail Software Solutions", "Manufacturing Technology", "Supply Chain Management", "Inventory Optimization", "AI in Retail", "IoT for Manufacturing", "Custom Retail Apps", "E-Commerce Solutions", "Smart Factory Solutions", "Retail Analytics"]
     },
     {
       name: "Enterprise",
@@ -3600,6 +3713,7 @@ export const industrydata = {
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
       heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      keywords: ["Enterprise Software Solutions", "Business Process Automation", "Custom ERP Development", "Cloud Solutions for Enterprises", "AI in Business", "Data Analytics for Enterprises", "Enterprise App Development", "Digital Transformation Services", "Scalable Business Solutions", "Industry-Specific Software Solutions"]
     },
     {
       name: "Education",
@@ -3734,6 +3848,7 @@ export const industrydata = {
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
       heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      keywords: ["Education Software Solutions", "E-Learning Platforms", "Student Management Systems", "Online Course Development", "Virtual Classroom Solutions", "AI in Education", "Education App Development", "Learning Management Systems", "EdTech Innovations", "Personalized Learning Solutions"]
     },
     {
       name: "Real Estate",
@@ -3868,6 +3983,7 @@ export const industrydata = {
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
       heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      keywords: ["Real Estate Software Solutions", "Property Management Apps", "Real Estate Analytics", "Virtual Property Tours", "AI in Real Estate", "Blockchain for Real Estate", "Real Estate CRM Solutions", "Mobile Apps for Realtors", "Real Estate Investment Platforms", "Smart Home Technology"]
     },
     {
       name: "Medical & Healthcare",
@@ -4002,6 +4118,7 @@ export const industrydata = {
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
       heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      keywords: ["Healthcare Software Solutions", "Telemedicine Apps", "Health Data Management", "Patient Engagement Tools", "Medical Compliance Software", "Healthcare Analytics", "Digital Health Platforms", "AI in Healthcare", "Remote Patient Monitoring", "Healthcare App Development"]
     },
     {
       name: "Technology Company",
@@ -4136,6 +4253,7 @@ export const industrydata = {
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
       heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      keywords: ["Fintech Software Solutions", "Digital Banking Apps", "Mobile Wallet Development", "Financial Technology Services", "Custom Fintech Platforms", "Secure Payment Gateway Integration", "Fintech App Development Bangladesh", "Blockchain Financial Apps", "Online Lending Platforms", "AI in Fintech"]
     },
     {
       name: "Media & Entertainment",
@@ -4270,6 +4388,7 @@ export const industrydata = {
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
       heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      keywords: ["Media Solutions", "Entertainment Technology", "Digital Media Services", "Interactive Experiences", "Content Delivery Solutions", "Streaming Services", "Media App Development", "AR/VR in Media", "Social Media Integration", "User Engagement Strategies"]
     },
     {
       name: "NGO",
@@ -4404,6 +4523,7 @@ export const industrydata = {
       heroImage: "https://i.ibb.co.com/xKxpBqsk/ss.png",
       heroButton: "Book A Consulation",
       image: "https://i.ibb.co.com/xKxpBqsk/ss.png",
+      keywords: ["NGO Solutions", "Nonprofit Technology", "Social Impact Software", "Community Development", "Fundraising Platforms", "Volunteer Management Systems", "NGO Management Software", "Impact Measurement Tools", "Charity Technology Solutions", "NGO Digital Transformation"]
     },
   ],
 };
@@ -7561,7 +7681,7 @@ export const hireTopTalents = [
   },
 ];
 
-// Home banner clutch data 
+// Home banner clutch data
 export const clutchBadges = [
   {
     id: 1,
@@ -7584,4 +7704,3 @@ export const clutchBadges = [
     title: "Top Clutch Software Developers Small Business Dhaka",
   },
 ];
-
