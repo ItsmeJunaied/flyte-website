@@ -52,6 +52,7 @@ export type productData = {
   productivity_image: string;
   productivity_description: string;
   productivity_link: string;
+  slogan: string;
 };
 
 const ProductOverview: React.FC<{ params: string }> = ({ params }) => {

@@ -1,5 +1,4 @@
 import React from "react";
-// import SuccessStories from "@/component/Common/SuccessStories";
 import TrustedIndustry from "@/component/Common/TrustedIndustry";
 import Contact from "@/component/Contact/Contact";
 import BoosterCard from "@/component/Common/BoosterCard";
@@ -12,9 +11,14 @@ type PageProps = {
 };
 
 const fetchProduct = async (slug: string) => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products/${slug}`);
-  if (!res.ok) return null;
-  return res.json();
+  try {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products/${slug}`);
+    if (!res.ok) return null;
+    return res.json();
+  } catch (error) {
+    console.error('Error fetching product:', error);
+    return null;
+  }
 };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -34,15 +38,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 // Generate static paths for all products
 export async function generateStaticParams() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products`);
-  if (!res.ok) return [];
+   try {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products`);
+    if (!res.ok) return [];
 
-  const products = await res.json();
+    const products = await res.json();
 
-  // Ensure that we return all product slugs
-  return products.data.data.map((product: { slug: string }) => ({
-    product: product.slug,
-  }));
+    // Ensure that we return all product slugs
+    return products.data.data.map((product: { slug: string }) => ({
+      product: product.slug,
+    }));
+  } catch (error) {
+    console.error('Error generating static params:', error);
+    return [];
+  }
 }
 
 const Page = async ({ params }: PageProps) => {
@@ -56,7 +65,6 @@ const Page = async ({ params }: PageProps) => {
       <div className="bg-white">
         <ClutchSuccessStories />
       </div>
-      {/* <SuccessStories bgColor="bg-white" /> */}
       <Contact />
     </div>
   );

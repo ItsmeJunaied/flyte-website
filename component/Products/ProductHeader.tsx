@@ -18,7 +18,7 @@ const ProductHeader: React.FC<{ product: productData }> = ({ product }) => {
       </div>
       <Title title={product?.title} />
       <p className="text-[#696a75] text-xs">
-        Effortlessly track employee attendance and work hours in real time
+        {product?.slogan}
       </p>
       <div className="flex items-center gap-2">
         <p className="text-xs text-gray-600">
