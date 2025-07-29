@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "Flyte Solutions Ltd.",
     images: [
       {
-        url: "https://www.flytesolutions.com/logo.png",
+        url: "https://www.flytesolutions.com/og.png",
         width: 1200,
         height: 630,
         alt: "Flyte Solutions Ltd.",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Flyte Solutions | Hire Remote Software Development Team.",
     description: "Flyte Solutions specializes in providing top remote software development teams, delivering innovative web, mobile, and cloud solutions to accelerate your business growth.",
-    images: ["https://www.flytesolutions.com/logo.png"],
+    images: ["https://www.flytesolutions.com/og.png"],
   },
 };
 
