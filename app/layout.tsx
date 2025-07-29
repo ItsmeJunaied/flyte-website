@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Flyte Solutions | Hire Remote Software Development Team.",
     description:
-      "Empowering businesses with scalable software, mobile apps, and cloud-based digital solutions.",
+      "Flyte Solutions specializes in providing top remote software development teams, delivering innovative web, mobile, and cloud solutions to accelerate your business growth.",
     url: "https://www.flytesolutions.com",
     siteName: "Flyte Solutions Ltd.",
     images: [
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Flyte Solutions | Hire Remote Software Development Team.",
-    description: "Leading software development company delivering scalable and modern digital solutions.",
+    description: "Flyte Solutions specializes in providing top remote software development teams, delivering innovative web, mobile, and cloud solutions to accelerate your business growth.",
     images: ["https://www.flytesolutions.com/logo.png"],
   },
 };

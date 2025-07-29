@@ -17,7 +17,7 @@ export const metadata = {
   keywords: ["Flyte Solutions", "Web Development", "AI Solutions", "Mobile App", "Software Company", "Bangladesh IT"],
   openGraph: {
     title: "Flyte Solutions | Hire Remote Software Development Team.",
-    description: "Flyte Solutions Ltd. provides world-class web, mobile, and AI-powered solutions tailored to your business.",
+    description: "Flyte Solutions specializes in providing top remote software development teams, delivering innovative web, mobile, and cloud solutions to accelerate your business growth.",
     url: "https://flytesolutions.com",
     siteName: "Flyte Solutions Ltd.",
     images: [
@@ -33,7 +33,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Flyte Solutions | Hire Remote Software Development Team.",
-    description: "Flyte Solutions Ltd. builds modern, scalable, and AI-powered software for businesses.",
+    description: "Flyte Solutions specializes in providing top remote software development teams, delivering innovative web, mobile, and cloud solutions to accelerate your business growth.",
     images: ["https://flytesolutions.com/logo.png"],
   },
 };
