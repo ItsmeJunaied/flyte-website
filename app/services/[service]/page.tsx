@@ -14,7 +14,6 @@ import BoosterCard from "@/component/Common/BoosterCard";
 import ClutchSuccessStories from "@/component/Common/ClutchSuccessStories";
 
 
-
 export function generateStaticParams() {
   return serviceData?.map((item) => ({
     service: item?.serviceLinkName,

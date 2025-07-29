@@ -11,11 +11,12 @@ import AboutUs from "../component/Home/AboutUs";
 import ProductsHomeComp from "@/component/Home/ProductsHomeComp";
 
 export const metadata = {
-  title: "Home | Flyte Solutions Ltd.",
-  description: "Flyte Solutions Ltd. offers cutting-edge web, mobile, and AI-powered software solutions tailored to your business needs. Let's build the future together.",
+  title: "Flyte Solutions | Hire Remote Software Development Team.",
+  description:
+    "Flyte Solutions specializes in providing top remote software development teams, delivering innovative web, mobile, and cloud solutions to accelerate your business growth.",
   keywords: ["Flyte Solutions", "Web Development", "AI Solutions", "Mobile App", "Software Company", "Bangladesh IT"],
   openGraph: {
-    title: "Flyte Solutions Ltd. | Empowering Digital Innovation",
+    title: "Flyte Solutions | Hire Remote Software Development Team.",
     description: "Flyte Solutions Ltd. provides world-class web, mobile, and AI-powered solutions tailored to your business.",
     url: "https://flytesolutions.com",
     siteName: "Flyte Solutions Ltd.",
@@ -31,7 +32,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Flyte Solutions Ltd. | Empowering Digital Innovation",
+    title: "Flyte Solutions | Hire Remote Software Development Team.",
     description: "Flyte Solutions Ltd. builds modern, scalable, and AI-powered software for businesses.",
     images: ["https://flytesolutions.com/logo.png"],
   },

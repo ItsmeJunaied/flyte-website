@@ -480,7 +480,7 @@ export const serviceData = [
       button_path: "/schedule-consultation",
       button_name: "Start Team Extension",
     },
-    keywords: ["Team Extension Services", "Dedicated Development Teams", "Remote Software Teams", "Outsourced IT Teams", "Extended Tech Teams", "Agile Team Extension", "Software Development Staffing", "Scalable Development Teams", "IT Team Augmentation", "Team Expansion Solutions"]
+   keywords: ["Team", "Development", "Remote"]
   },
   {
     id: 2,
@@ -566,7 +566,7 @@ export const serviceData = [
       button_path: "/schedule-consultation",
       button_name: "Start Custom Project",
     },
-    keywords: ["Custom Software Solutions", "Tailored Software Development", "Bespoke Software Services", "Enterprise Software Solutions", "Scalable Software Development", "Agile Custom Development", "Software Integration Services", "Cloud-Based Custom Solutions", "Mobile App Development", "Web Application Development"]
+    keywords: ["Custom", "Scalable", "Agile"]
   },
   {
     id: 3,
@@ -652,7 +652,7 @@ export const serviceData = [
       button_path: "/schedule-consultation",
       button_name: "Start Enterprise Project",
     },
-    keywords: ["Enterprise Software Solutions", "Business Process Automation", "Custom ERP Development", "Cloud Solutions for Enterprises", "AI in Business", "Data Analytics for Enterprises", "Enterprise App Development", "Digital Transformation Services", "Scalable Business Solutions", "Industry-Specific Software Solutions"]
+keywords: ["Enterprise", "Automation", "Scalable"]
   },
   {
     id: 4,
@@ -738,7 +738,7 @@ export const serviceData = [
       button_path: "/schedule-consultation",
       button_name: "Start Mobile Project",
     },
-    keywords: ["Mobile App Development", "iOS App Development", "Android App Development", "Cross-Platform Apps", "Native Mobile Apps", "Flutter Development", "React Native Development", "Mobile UI/UX Design", "App Store Optimization", "Mobile Backend Integration"]
+keywords: ["Mobile", "Flutter", "React"]
   },
   {
     id: 5,
@@ -823,7 +823,7 @@ export const serviceData = [
       button_path: "/schedule-consultation",
       button_name: "Start QA & Testing",
     },
-    keywords: ["Quality Assurance", "Software Testing Services", "Automated Testing", "Manual Testing", "Performance Testing", "Security Testing", "Functional Testing", "Regression Testing", "Test Automation Frameworks", "Bug Tracking and Reporting"]
+keywords: ["Testing", "Automation", "Security"]
   },
   {
     id: 6,
@@ -909,7 +909,7 @@ export const serviceData = [
       button_path: "/schedule-consultation",
       button_name: "Build Your MVP",
     },
-    keywords: ["MVP Development", "Lean Startup", "Prototype Development", "User Feedback", "Agile MVP", "Minimum Viable Product", "Startup MVP", "Product Validation", "Rapid Prototyping", "Iterative Development"]
+keywords: ["Testing", "Automation", "Security"]
   },
 ];
 
