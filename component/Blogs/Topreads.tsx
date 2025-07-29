@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useGetBlogTrendingQuery } from "@/redux/api/blogsApi";
 import Link from "next/link";
@@ -40,17 +41,20 @@ const Topreads = () => {
             className=" bg-white flex flex-col lg:flex-row gap-5 transition-transform duration-500 mb-2"
           >
             <div className="flex-1 relative h-auto">
-              <img className="w-full h-full object-cover" src={card?.image} alt={card?.title} />
-              {/* Overlay */}
-              <div className="absolute h-full inset-0 bg-black/25" />
-              {/* Keywords over the image */}
-              <div className="absolute top-2 left-2 flex flex-wrap gap-2">
-                {card?.tag?.map((tagItem, idx) => (
-                  <div key={idx} className="blogs-keyword-div px-3 py-1 rounded-lg text-xs bg-white/50">
-                    <span className="inline-block text-white">{tagItem}</span>
-                  </div>
-                ))}
-              </div>
+              <Link href={`news-and-blogs/${card?.slug}`}>
+                <img className="w-full h-full object-cover" src={card?.image} alt={card?.title} />
+                {/* Overlay */}
+                <div className="absolute h-full inset-0 bg-black/25" />
+
+                {/* Keywords over the image */}
+                <div className="absolute top-2 left-2 flex flex-wrap gap-2">
+                  {card?.tag?.map((tagItem, idx) => (
+                    <div key={idx} className="blogs-keyword-div px-3 py-1 rounded-lg text-xs bg-white/50">
+                      <span className="inline-block text-white">{tagItem}</span>
+                    </div>
+                  ))}
+                </div>
+              </Link>
             </div>
 
             <div className="px-2.5 lg:px-0 w-full lg:w-1/2 py-4 space-y-3">
@@ -85,7 +89,9 @@ const Topreads = () => {
               </div>
 
               {/* description  */}
-              <p className="h-16 overflowHidden text-[#6c757d] text-xs line-clamp-4">{card?.short_description}</p>
+              <p className="h-16 overflowHidden text-[#6c757d] text-xs line-clamp-4">
+                {card?.short_description}
+              </p>
               {/* button  */}
               <div>
                 <Link className="border-black hover:border-btnColor" href={`news-and-blogs/${card?.slug}`}>
