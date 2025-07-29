@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: PageProps) {
       description: description || "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
       images: [
         {
-          url: "https://flytesolutions.com/logo.png",
+          url: "https://flytesolutions.com/og.png",
           width: 1200,
           height: 630,
           alt: "Flyte Solutions Ltd. - Empowering Digital Innovation",
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: PageProps) {
       card: "summary_large_image",
        title: `${title ? `${title} | Flyte Solutions Ltd.` : "Career Details | Flyte Solutions Ltd."}`,
       description: description || "Get in touch with Flyte Solutions Ltd. for any inquiries or support.",
-      images: ["https://flytesolutions.com/logo.png"],
+      images: ["https://flytesolutions.com/og.png"],
     },
   };
 }

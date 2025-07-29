@@ -194,27 +194,28 @@ export const navbarData = {
             "A digital queue management system to streamline customer flow and reduce waiting times.",
           path: "/products/flyte-queue",
         },
-        {
-          name: "Flyte ERP",
-          icon: "fa-poo-storm",
-          description:
-            "A comprehensive platform that integrates and streamlines core business processes for enhanced productivity.",
-          path: "/products/flyte-erp",
-        },
-        {
-          name: "Flyte CRM",
-          icon: "fa-clone",
-          description:
-            "A customer relationship management tool designed to optimize sales, marketing, and customer support operations.",
-          path: "/products/flyte-crm",
-        },
-        {
+         {
           name: "Flyte POS",
           icon: "fa-radiation",
           description:
             "A reliable point-of-sale system for efficient retail transactions and inventory tracking.",
           path: "/products/flyte-pos",
         },
+        {
+          name: "SCB Priority",
+          icon: "fa-poo-storm",
+          description:
+            "Discover SCB Priority - a premium digital banking platform designed for high-net-worth clients.",
+          path: "/products/scb-priority",
+        },
+        {
+          name: "Procurement Software",
+          icon: "fa-clone",
+          description:
+            "A procurement management tool designed to optimize purchasing processes and supplier collaboration.",
+          path: "/products/travel-management",
+        }
+       
       ],
     },
     {
