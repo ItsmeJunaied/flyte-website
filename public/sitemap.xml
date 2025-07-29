@@ -23,6 +23,26 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://flytesolutions.com/hire/reactjs-developer</loc>
+  <lastmod>2025-05-06T11:09:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flytesolutions.com/hire/angular-developer</loc>
+  <lastmod>2025-05-06T11:09:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flytesolutions.com/hire/vuejs-developer</loc>
+  <lastmod>2025-05-06T11:09:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flytesolutions.com/hire/nextjs-developer</loc>
+  <lastmod>2025-05-06T11:09:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://flytesolutions.com/hire/backend-developer</loc>
   <lastmod>2025-05-06T11:08:59+00:00</lastmod>
   <priority>0.80</priority>
@@ -158,8 +178,83 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://flytesolutions.com/products/flyte-pos</loc>
+  <lastmod>2025-05-06T11:09:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flytesolutions.com/products/scb-priority</loc>
+  <lastmod>2025-05-06T11:09:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flytesolutions.com/products/travel-management</loc>
+  <lastmod>2025-05-06T11:09:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://flytesolutions.com/case-studies/</loc>
   <lastmod>2025-05-06T11:08:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flytesolutions.com/case-studies/time-tracker</loc>
+  <lastmod>2025-05-06T11:08:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flytesolutions.com/case-studies/cloud-clockin</loc>
+  <lastmod>2025-05-06T11:08:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flytesolutions.com/case-studies/picture-onGold</loc>
+  <lastmod>2025-05-06T11:08:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flytesolutions.com/case-studies/enterprise-software-for-oil-and-gas-excellence</loc>
+  <lastmod>2025-05-06T11:08:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flytesolutions.com/case-studies/fsa-argentina</loc>
+  <lastmod>2025-05-06T11:08:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flytesolutions.com/case-studies/real-estate-property-management</loc>
+  <lastmod>2025-05-06T11:08:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flytesolutions.com/case-studies/organization-ims</loc>
+  <lastmod>2025-05-06T11:08:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flytesolutions.com/case-studies/clinical-trials-management</loc>
+  <lastmod>2025-05-06T11:08:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flytesolutions.com/case-studies/board-meeting-management-system</loc>
+  <lastmod>2025-05-06T11:08:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flytesolutions.com/case-studies/shopping-management</loc>
+  <lastmod>2025-05-06T11:08:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flytesolutions.com/case-studies/Time2Task</loc>
+  <lastmod>2025-05-06T11:08:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flytesolutions.com/company/</loc>
+  <lastmod>2025-05-06T11:09:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -173,12 +268,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://flytesolutions.com/company/</loc>
-  <lastmod>2025-05-06T11:09:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flytesolutions.com/career/</loc>
+  <loc>https://flytesolutions.com/career</loc>
   <lastmod>2025-05-06T11:08:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -195,28 +285,11 @@
 <url>
   <loc>https://flytesolutions.com/hire/application-form</loc>
   <lastmod>2025-05-06T11:08:59+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://flytesolutions.com/hire/reactjs-developer</loc>
+  <loc>https://flytesolutions.com/privacy-policy</loc>
   <lastmod>2025-05-06T11:08:59+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://flytesolutions.com/hire/angular-developer</loc>
-  <lastmod>2025-05-06T11:08:59+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://flytesolutions.com/hire/vuejs-developer</loc>
-  <lastmod>2025-05-06T11:08:59+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://flytesolutions.com/hire/nextjs-developer</loc>
-  <lastmod>2025-05-06T11:08:59+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
 </urlset>
