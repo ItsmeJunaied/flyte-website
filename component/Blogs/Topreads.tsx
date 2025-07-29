@@ -41,7 +41,7 @@ const Topreads = () => {
             className=" bg-white flex flex-col lg:flex-row gap-5 transition-transform duration-500 mb-2"
           >
             <div className="flex-1 relative h-auto">
-              <Link href={`news-and-blogs/${card?.slug}`}>
+              <Link href={`/company/news-and-blogs/${card?.slug}`}>
                 <img className="w-full h-full object-cover" src={card?.image} alt={card?.title} />
                 {/* Overlay */}
                 <div className="absolute h-full inset-0 bg-black/25" />
@@ -94,7 +94,7 @@ const Topreads = () => {
               </p>
               {/* button  */}
               <div>
-                <Link className="border-black hover:border-btnColor" href={`news-and-blogs/${card?.slug}`}>
+                <Link className="border-black hover:border-btnColor" href={`/company/news-and-blogs/${card?.slug}`}>
                   <div className="text-black hover:text-btnColor text-xs">View Post</div>
                 </Link>
               </div>
