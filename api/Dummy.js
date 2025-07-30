@@ -188,11 +188,11 @@ export const navbarData = {
           path: "/products/cloud-clockin",
         },
         {
-          name: "Flyte Queue",
+          name: "Uber Queue",
           icon: "fa-people-line",
           description:
             "A digital queue management system to streamline customer flow and reduce waiting times.",
-          path: "/products/flyte-queue",
+          path: "/products/uber-queue",
         },
          {
           name: "Flyte POS",
